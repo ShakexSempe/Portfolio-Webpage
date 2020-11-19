@@ -252,7 +252,7 @@ span {
 /*welcome-section*/
 #welcome-section {
     background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1332&q=80');
-    
+    background-size: cover;
     background-position: center;
     position: relative;
     /*to allow overlay of this section*/
