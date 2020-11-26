@@ -42,7 +42,7 @@ p {
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.05rem;
 }
 
@@ -291,7 +291,9 @@ span {
     margin: 0 auto;
     padding: 100px 0;
 }
-
+#skills a{
+    color: crimson;
+}
 #skills .skills-top {
     width: 500px;
     margin: 0px auto;
@@ -309,7 +311,7 @@ span {
 #skills .skills-item {
     flex-basis: 80%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
@@ -322,6 +324,7 @@ span {
     text-overflow: ellipsis;
     filter: grayscale(0.8);
     transition: .3s ease;
+    overflow: hidden;
     /*border radius not visiblie without hidden overflow*/
 }
 #skills .skills-item p{
@@ -362,7 +365,7 @@ span {
 
 #skills .service-item {
     color: #fff;
-    text-align: left;
+    text-align: center;
     font-size: 1.4rem;
     line-height: 1.9rem;
 }
@@ -372,10 +375,13 @@ span {
 }
 #skills .skills-item p {
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 
+
+
 #skills .skills-bottom .icon {
+    
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
@@ -512,16 +518,22 @@ span {
     letter-spacing: 0.2rem;
     margin-bottom: 10px;
 }
-
+#about a{
+    color: crimson;
+}
 #about .col-right p {
     margin-bottom: 20px;
     overflow: auto;
 }
+.camp_hub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+}
 #about .cta {
     color: #dc143c;
-    margin-bottom: 15px;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 2rem;
     width: auto;
     border-radius: 10px;
@@ -568,15 +580,20 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 4px 0px #dc143c;
+    box-shadow: 0px 0px 5px 0 #0000002c;
     transition: .4s ease;
+    filter: grayscale(0.5);
+
 }
 
 #contact .contact-item:hover {
-    box-shadow: 0px 0px 5px 0 #0000002c;
+    box-shadow: 0px 0px 4px 0px #dc143c;
+    
     border-radius: 30px;
     background-color: #f4f4f4;
     color: #dc143c;
+    filter: grayscale(0);
+
 }
 
 #contact .icon {
@@ -657,10 +674,7 @@ span {
 /*Media Query for tablet*/
 @media only screen and (min-width: 768px) {
 
-    .cta {
-        font-size: 2.5rem;
-        padding: 20px 6px;
-    }
+    
 
     h1.section-title {
         font-size: 6rem;
@@ -674,11 +688,12 @@ span {
     /*End of Hero*/
 
     /*Skills Section*/
+    
     #skills .skills-bottom .skills-item {
         flex-basis: 45%;
         margin: 2.5%;
     }
-
+   
     /*End of Service Section*/
 
     /*Project*/
@@ -720,7 +735,7 @@ span {
 
     #about .col-right {
         text-align: left;
-        padding: 30px;
+        padding: 10px;
     }
 
     #about .col-right h1 {
@@ -729,10 +744,19 @@ span {
         padding-bottom: 10px;
     }
 
-    #about .col-right .cta {
-        width: auto;
+    .camp_hub{
+        flex-direction: row;
     }
-    #about 
+    #about .cta {
+        color: #dc143c;
+        padding: 5px;
+        margin: 5px;
+        font-size: 1.5rem;
+        width: auto;
+        border-radius: 10px;
+    }
+      
+    
 
     /*End of About*/
 
@@ -781,7 +805,7 @@ span {
 /*End of Media Query for tablet*/
 
 /*Media Query for Desktop*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     #welcome-section {
         background-size: contain no-repeat;
         background-position: center;
@@ -819,22 +843,25 @@ span {
         margin: 1.5%;
     }
 
-    #about .cta {
-
-        color: #dc143c;
-        margin-bottom: 15px;
-        padding: 10px auto;
-        font-size: 2rem;
-        width: auto;
-        border-radius: 10px;
-    }
+    
     #contact .contact-items {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         padding: 20px;
         margin: 20px auto;
+    }
+    /*about*/
+    #about .cta {
+        color: #dc143c;
+        padding: 5px;
+        margin: 5px;
+        font-size: 2rem;
+        width: auto;
+    }
+    .camp_hub{
+        justify-content: space-evenly;
     }
     
     
@@ -843,9 +870,5 @@ span {
 /*End of Media Query for Desktop*/
 
 /*Media Query for small devices*/
-@media screen and (max-width:400px) {
-    #about .cta {
-        width: auto;
-    }
-}
+
 /*End of Media Query for small devices*/
