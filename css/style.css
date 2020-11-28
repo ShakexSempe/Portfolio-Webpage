@@ -106,7 +106,9 @@ span {
     width: 100vw;
     height: auto;
 }
-
+.hero{
+    margin-left: 20px;
+}
 .hero h1{
     text-align: left;
 }
@@ -315,14 +317,15 @@ span {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
+
     background-image: url(./img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
     text-overflow: ellipsis;
-    filter: grayscale(0.8);
+    filter: grayscale(0.7);
     transition: .3s ease;
     overflow: hidden;
     /*border radius not visiblie without hidden overflow*/
@@ -333,6 +336,8 @@ span {
 #skills .skills-item:hover{
     transition: .3s ease;
     filter: grayscale(0);
+    border-radius: 10px;
+
 }
 #skills .skills-item a{
     color: rgb(5, 255, 5);
@@ -432,6 +437,7 @@ span {
     transition: 1.3s ease;
     filter: grayscale(1);
 }
+
 #projects .project-tile:hover{
     transition: .3s ease;
     filter: grayscale(0);
@@ -490,6 +496,9 @@ span {
 #projects .project-item:hover .project-img img {
     transform: scale(1.1);
 }
+#projects #fpl h1{
+    font-size: 3.5rem;
+}
 
 /*End of Projects Section*/
 
@@ -529,14 +538,16 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
 }
 #about .cta {
     color: #dc143c;
     padding: 10px;
     font-size: 2rem;
-    width: auto;
+    width: 60%;
     border-radius: 10px;
+    
 }
 
 #about .cta:hover {
