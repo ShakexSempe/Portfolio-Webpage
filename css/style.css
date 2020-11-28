@@ -317,7 +317,7 @@ span {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
 
     background-image: url(./img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
     background-size: cover;
@@ -336,7 +336,6 @@ span {
 #skills .skills-item:hover{
     transition: .3s ease;
     filter: grayscale(0);
-    border-radius: 10px;
 
 }
 #skills .skills-item a{
