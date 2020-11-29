@@ -409,7 +409,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 80%;
   margin: 20px auto;
   overflow: hidden;
@@ -437,21 +437,21 @@ span {
 }
 
 #projects .project-tile h1 {
-  font-size: 2.6rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 600;
   line-height: 1em;
   padding-bottom: 10px;
   border-bottom: 1px dashed #fff;
 }
 
 #projects .project-tile h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
   margin-top: 10px;
 }
 
 #projects .project-tile p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #fff;
 }
