@@ -367,10 +367,7 @@ span {
     text-transform: uppercase;
 }
 
-#skills .service-item {
-    color: #fff;
-    text-align: center;
-    font-size: 1.4rem;
+#skills .skills-item {
     line-height: 1.9rem;
 }
 #skills .skills-top{
@@ -427,6 +424,8 @@ span {
     padding: 30px;
     flex-basis: 50%;
     height: 100%;
+    line-height: 1.9rem;
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -443,17 +442,20 @@ span {
 }
 
 #projects .project-tile h1 {
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1em;
+
 }
 
 #projects .project-tile h2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin-top: 10px;
 }
 
 #projects .project-tile p {
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -495,9 +497,7 @@ span {
 #projects .project-item:hover .project-img img {
     transform: scale(1.1);
 }
-#projects #fpl h1{
-    font-size: 3.5rem;
-}
+
 
 /*End of Projects Section*/
 
@@ -541,9 +541,10 @@ span {
 
 }
 #about .cta {
-    color: #dc143c;
-    padding: 10px;
-    font-size: 2rem;
+    background: #dc143c;
+    color: #fff;
+    padding: 3px;
+    font-size: 1.7rem;
     width: 60%;
     border-radius: 10px;
     
@@ -551,7 +552,8 @@ span {
 
 #about .cta:hover {
     transition: .7s ease;
-    color: #fff;
+    color: #dc143c;
+    background-color: #fff;
 
 }
 
@@ -714,6 +716,10 @@ span {
     #projects .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
+    #projects .project-tile h1 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
 
     #projects .project-item {
         height: 400px;
@@ -758,7 +764,6 @@ span {
         flex-direction: row;
     }
     #about .cta {
-        color: #dc143c;
         padding: 5px;
         margin: 5px;
         font-size: 1.5rem;
