@@ -299,6 +299,7 @@ span {
 
   width: 500px;
   margin: 0px auto;
+  text-align: center;
 }
 
 #skills .skills-bottom {
@@ -373,7 +374,7 @@ span {
   line-height: 1.9rem;
 }
 #skills .skills-top {
-  text-align: left;
+  
   width: 90%;
 }
 #skills .skills-item p {
