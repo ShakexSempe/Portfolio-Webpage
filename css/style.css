@@ -318,17 +318,16 @@ span {
   justify-content: center;
   flex-direction: column;
   padding: 30px;
-  border-radius: 4px;
-
   background-image: url(./img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
   background-size: cover;
   margin: 10px 5%;
   position: relative;
   z-index: 1;
   text-overflow: ellipsis;
-  filter: grayscale(0.7);
+  filter: grayscale(0.8);
   transition: 0.3s ease;
   overflow: hidden;
+  
   /*border radius not visiblie without hidden overflow*/
 }
 #skills .skills-item p {
@@ -338,7 +337,7 @@ span {
   transition: 0.3s ease-in-out;
   filter: grayscale(0);
   border-radius: 10px;
-
+  box-shadow: 0px 0px 10px 1px rgb(94, 3, 21);
 
 }
 #skills .skills-item a {
