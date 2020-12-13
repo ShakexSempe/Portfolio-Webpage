@@ -358,6 +358,8 @@ span {
   transition: 0.3s ease-in-out;
   filter: grayscale(0);
   border-radius: 10px;
+  transform: scale(1.05);
+
 }
 #skills .skills-item a {
   color: rgb(5, 255, 5);
