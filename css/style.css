@@ -273,7 +273,8 @@ span {
 /*welcome-section*/
 #welcome-section {
   /*background-image: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1332&q=80");*/
-  background-image: url(/img/unit3-sky.jpg);
+  background-image: url("/img/unit3-sky.jpg");
+  
   background-size: cover;
   background-position: center;
   position: relative;
@@ -338,7 +339,7 @@ span {
   justify-content: center;
   flex-direction: column;
   padding: 30px;
-  background-image: url(/img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+  background-image: url('/img/domenico-loia-hGV2TfOh0ns-unsplash.jpg');
   background-size: cover;
   margin: 10px 5%;
   position: relative;
