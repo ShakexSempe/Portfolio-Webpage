@@ -19,6 +19,25 @@ html {
   /*smooth scroll down the screen*/
 }
 
+/*progress bar*/
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 3px;
+  background: crimson;
+  width: 0%;
+}
+
+/*end of progress bar*/
+
+
 a {
   text-decoration: none;
 }

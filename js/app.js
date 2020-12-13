@@ -12,7 +12,7 @@ hamburger.addEventListener('click', () => {
 //nav transparency on scroll
 document.addEventListener('scroll', () => {
     var scroll_position = window.scrollY;
-    if (scroll_position > 200) {
+    if (scroll_position > 100) {
         header.style.backgroundColor = "#29323c";
     } else {
         header.style.backgroundColor = 'transparent';
@@ -26,3 +26,15 @@ menu_item.forEach((item) =>{
         mobile_menu.classList.toggle('active');
     });
 });
+
+//progress bar
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+/*end of progress bar*/
