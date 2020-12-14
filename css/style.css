@@ -910,6 +910,11 @@ span {
     width: 80%;
     margin:  auto;
   }
+  #skills .skills-item:hover {
+    
+    transform: scale(1.05);
+  
+  }
 
   .container p {
     font-size: 1.8rem;
