@@ -279,6 +279,7 @@ span {
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
+  overflow: hidden;
 }
 
 #welcome-section::after {
