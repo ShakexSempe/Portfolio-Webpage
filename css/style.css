@@ -84,7 +84,7 @@ span {
   color: #dc143c;
 }
 
-.cta {
+#cta-header {
   display: inline-block;
   padding: 10px 30px;
   color: #ffff;
@@ -272,7 +272,6 @@ span {
 
 /*welcome-section*/
 #welcome-section {
-  /*background-image: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1332&q=80");*/
   background-image: url(../img/unit3-sky.jpg);
   background-size: cover;
   background-position: top center;
@@ -287,11 +286,12 @@ span {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: #000;
-  opacity: 0.8;
+  opacity: 0.7;
   z-index: -1;
+  overflow: hidden;
 }
 
 #welcome-section h1 {
@@ -300,6 +300,7 @@ span {
   font-size: 4rem;
   position: relative;
   color: #eee;
+  
 }
 
 /*End of welcome-section*/
@@ -317,7 +318,6 @@ span {
   color: crimson;
 }
 #skills .skills-top {
-
   width: 500px;
   margin: 0px auto;
   text-align: center;
@@ -340,6 +340,7 @@ span {
   flex-direction: column;
   padding: 30px;
   background-image: url(../img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+  
   background-size: cover;
   margin: 10px 5%;
   position: relative;
@@ -352,7 +353,7 @@ span {
   /*border radius not visiblie without hidden overflow*/
 }
 #skills .skills-item p {
-  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #skills .skills-item:hover {
   transition: 0.3s ease-in-out;
@@ -453,12 +454,10 @@ span {
   background-image: var(--overlay);
   color: #eee;
   transition: 1.3s ease;
-  filter: grayscale(1);
 }
 
 #projects .project-tile:hover {
-  transition: 0.3s ease;
-  filter: grayscale(0);
+  transition: 0.4s ease;
 }
 
 #projects .project-tile h1 {
@@ -507,7 +506,7 @@ span {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 /*image transition on hover*/
@@ -538,6 +537,7 @@ span {
 
 #about .col-right {
   width: 100%;
+  height: auto;
 }
 
 #about .col-right h2 {
@@ -546,12 +546,10 @@ span {
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
 }
-#about a {
-  color: crimson;
-}
+
 #about .col-right p {
   margin-bottom: 20px;
-  overflow: auto;
+  text-overflow: ellipsis;
   text-align: left;
 }
 .camp_hub {
@@ -560,19 +558,21 @@ span {
   justify-content: space-between;
   align-items: center;
 }
-#about .cta {
-  background: #dc143c;
+.profile-link {
+  background: var(--overlay);
   color: #fff;
   padding: 3px;
   font-size: 1.7rem;
-  width: 60%;
-  border-radius: 10px;
+  width: 70%;
+  border-radius: 4px;
+  transition: 1s;
+  transition-property: all;
 }
 
-#about .cta:hover {
-  transition: 0.7s ease;
-  color: #dc143c;
-  background-color: #fff;
+.profile-link:hover {
+  transition: .4s ease-in-out ;
+  color: crimson;
+  border-radius: 15px;
 }
 
 #about .col-left .about-img {
@@ -795,12 +795,11 @@ span {
   .camp_hub {
     flex-direction: row;
   }
-  #about .cta {
+  .profile-link {
     padding: 5px;
     margin: 5px;
     font-size: 1.5rem;
-    width: auto;
-    border-radius: 10px;
+    text-align: center;
   }
 
   /*End of About*/
@@ -928,11 +927,9 @@ span {
     margin: 20px auto;
   }
   /*about*/
-  #about .cta {
-    padding: 5px;
-    margin: 5px;
-    font-size: 2rem;
-    width: auto;
+  .profile-link {
+    font-size: 2.2rem;
+    width: 70%;
   }
   .camp_hub {
     justify-content: space-evenly;
