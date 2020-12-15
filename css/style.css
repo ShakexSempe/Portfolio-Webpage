@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/*variables*/
+/*root*/
 :root {
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -106,7 +106,6 @@ span {
 }
 #cta-header {
   font-size: 3rem;
-  letter-spacing: 1;
 }
 .brand h1 {
   font-size: 2.9rem;
@@ -272,7 +271,7 @@ span {
 
 /*welcome-section*/
 #welcome-section {
-  background-image: url(../img/unit3.jpg);
+  background-image: url('../img/unit-3.jpg');
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -346,7 +345,7 @@ span {
   position: relative;
   z-index: 1;
   text-overflow: ellipsis;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   overflow: hidden;
   
   /*border radius not visiblie without hidden overflow*/
@@ -356,10 +355,8 @@ span {
 }
 #skills .skills-item:hover {
   transition: 0.3s ease-in-out;
-  filter: grayscale(0);
   border-radius: 10px;
   transform: scale(1.05);
-
 }
 #skills .skills-item a {
   color: rgb(5, 255, 5);
@@ -481,13 +478,12 @@ span {
 
 #projects .project-tile a {
   color: #eee;
-  background: transparent;
+  background: #333;
 }
 #projects .project-tile a:hover {
   transition: 0.3s ease;
   border-radius: 10px;
-  color: #fff;
-  background: #333;
+  color: crimson;
 }
 
 #projects .project-img {
