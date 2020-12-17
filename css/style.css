@@ -339,7 +339,6 @@ span {
   flex-direction: column;
   padding: 30px;
   background-image: url('../img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg');
-  
   background-size: cover;
   margin: 10px 5%;
   position: relative;
@@ -356,7 +355,6 @@ span {
 #skills .skills-item:hover {
   transition: 0.3s ease-in-out;
   border-radius: 10px;
-  transform: scale(1.05);
 }
 #skills .skills-item a {
   color: rgb(5, 255, 5);
@@ -477,12 +475,12 @@ span {
 }
 
 #projects .project-tile a {
-  color: #eee;
+  color: crimson;
   background: #333;
+  border-radius: 10px;
 }
 #projects .project-tile a:hover {
-  transition: 0.3s ease;
-  border-radius: 10px;
+  transition: 0.4s ease;
   color: crimson;
 }
 
@@ -725,14 +723,24 @@ span {
     margin: 2.5%;
     height: 240px;
   }
+  #skills .skills-item:hover {
+    transform: scale(1.05);
+  }
 
   /*End of Service Section*/
 
   /*Project*/
+  
   #projects .project-item {
     flex-direction: row;
   }
-
+  #projects .project-tile a{
+    color: #eee;
+    border-radius: 0px;
+  }
+  #projects .project-tile a:hover {
+    border-radius: 10px;
+  }
   #projects .project-item:nth-child(even) {
     flex-direction: row-reverse;
   }
