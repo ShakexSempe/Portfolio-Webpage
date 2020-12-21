@@ -346,16 +346,15 @@ span {
   text-overflow: ellipsis;
   transition: 0.3s ease-in-out;
   overflow: hidden;
+  border-radius: 10px;
   
   /*border radius not visiblie without hidden overflow*/
 }
 #skills .skills-item p {
   text-overflow: ellipsis;
 }
-#skills .skills-item:hover {
-  transition: 0.3s ease-in-out;
-  border-radius: 10px;
-}
+
+
 #skills .skills-item a {
   color: rgb(5, 255, 5);
 }
