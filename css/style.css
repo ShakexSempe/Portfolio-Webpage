@@ -100,7 +100,7 @@ span {
   transition-property: background-color, color;
 }
 
-.cta:hover {
+#cta-header:hover {
   color: #fff;
   background-color: crimson;
 }
