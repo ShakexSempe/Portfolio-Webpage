@@ -697,7 +697,15 @@ span {
   font-size: 1.3rem;
 }
 
+/*bs12*/
+  #bs21{
+    display: flex;
+    gap: 1rem;
+  }
+/*end of bs12*/
+
 /*End of Footer*/
+
 
 /*Keyframes*/
 /*End of Keyframes*/
