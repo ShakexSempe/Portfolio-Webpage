@@ -467,7 +467,7 @@ span {
 /*Projects Section*/
 #projectsDropdown{
   background: var(--overlay);
-  width: 90vw;
+  width: 100%;
   border-radius: 10px;
 }
 #projects .projects {
