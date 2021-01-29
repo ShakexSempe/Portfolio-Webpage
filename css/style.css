@@ -445,7 +445,7 @@ span {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  background-color: #f1f1f1;
+  background-color: #f4f4f4;
   width: 100vw;
   z-index: 1;
   justify-content: center;
@@ -466,7 +466,7 @@ span {
 
 /*Projects Section*/
 #projectsDropdown{
-  background: var(--overlay);
+  background-color: rgb(80, 79, 79);
   width: 100%;
   border-radius: 10px;
 }
@@ -494,7 +494,7 @@ span {
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
-  width: 80%;
+  width: 95%;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
