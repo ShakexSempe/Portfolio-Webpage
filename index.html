@@ -60,7 +60,6 @@
           <p>
             I'm a self taught front end developer with a keen interest in Responsive Web Design and React-JS development.
             I was previously a Customer Care Agent at the Compensation Fund, Department of Labour where I gained skills in customer relations.
-            <br> <a href="bSempe CV.pdf" target="_blank">Download Resume</a>
           </p>
         </div>
     <!--Dropdown-->    
@@ -79,11 +78,7 @@
               />
             </div>
             <h2>HTML 5</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul> 
+            
           </div>
             
           <div class="skills-item">
@@ -185,8 +180,21 @@
         <div class="projects-header">
           <h1 class="section-title"><span>Projects</span></h1>
         </div>
-        <di class="all-projects">
-          <div class="project-item">
+
+        <div class="all-projects">
+          
+          <div class="profile-link" >
+            <a 
+              target="_blank"
+              href="https://github.com/ShakexSempe"
+              id="profile-link"
+              >Git<span>Hub</span></a> 
+        </div>
+        <!--Dropdown Projects-->    
+        <div class="dropdown">
+          <button onclick="projectsDropdown()" class="dropbtn">Projects</button>
+          <div id="projectsDropdown" class="dropdown-content">
+        <div class="project-item">
             <div class="project-tile">
               <h1>Tribute Page</h1>
               <a
@@ -316,6 +324,10 @@
               </div>
           </div>
         
+          </div>
+        </div>  
+
+
       </div>
     </section>
     <!--End of Projects Section-->
@@ -337,28 +349,14 @@
             Before becoming a self-taught Web Developer, I was a Customer Care agent at the Compensation Fund
             (Department of Labour).
             I started learning to code in 2019 having previously enrolled in an Introduction of IT Fundamentals course
-            via Coursera. <br><br>
-            My objective is to work as Front End Developer and ultimately as I gain experience progress on to a Full
-            Stack developer.
-
-            <br> You can view my progress via my projects on GitHub and my Free-Code-Camp page via the buttons below:
-          </p>
-          <div class="camp_hub">
-          <a
-                      class="profile-link"
-            target="_blank"
-            href="https://github.com/ShakexSempe"
-            id="profile-link"
-            >Git<span>Hub</span></a
-          >
-          <br />
-          <a
+            via Coursera and then most recently <a
             href="https://www.freecodecamp.org/boitumelo-sempe"
-            target="_blank"
-            class="profile-link"
-            >Free<span>Code</span>Camp</a
-          >
-        </div>
+            target="_blank" class="fcc-link">FreeCodeCamp</a>. <br><br>
+            My objective is to work as Front End Developer and ultimately as I gain experience progress on to a Full MERN
+            Stack Developer.
+            <br><a id="cv" href="bSempe CV.pdf" target="_blank">Download Resume</a>
+          </p>
+          
         </div>
       </div>
     </section>
@@ -475,6 +473,5 @@
     </section>
     <!--End of Footer-->
     <script src="js/app.js"></script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

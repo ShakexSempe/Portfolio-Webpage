@@ -38,6 +38,8 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 /*end of progress bar*/
+
+/*skills dropdown*/
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdown() {
@@ -57,3 +59,24 @@ function dropdown() {
       }
     }
   }
+/*end of skills dropdown*/  
+
+/*projects dropdown*/
+function projectsDropdown() {
+  document.getElementById("projectsDropdown").classList.toggle("show");
+}
+
+//Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/*end of projects dropdown*/
