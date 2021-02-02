@@ -86,24 +86,58 @@ span {
 }
 
 #cta-header {
+  position: relative;
   display: inline-block;
   padding: 10px 30px;
   color: #ffff;
-  background-color: transparent;
-  border: 2px solid crimson;
+  background-color: #a8a1a1;
+  box-shadow: 2px 2px 20px #dc143c;
   font-size: 2rem;
   font-weight: 500;
-  text-transform: capitalize;
-  letter-spacing: 0.5rem;
   border-radius: 10px;
   margin-top: 30px;
   transition: 0.3s ease;
   transition-property: background-color, color;
+  animation: cta-animate .3s ease;
+  
 }
 
-#cta-header:hover {
+
+
+#cta-header span {
+  position: relative;
+  display: inline-block;
   color: #fff;
-  background-color: crimson;
+  font-size: 2.6rem;
+  animation: animate 3s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i))
+}
+/* cta keyframes*/
+@keyframes animate{
+  0%{
+      transform: translateY(0px);
+      
+  }
+  20%{
+      transform: translateY(-5px);
+      color: yellowgreen;
+      background: linear-gradient(0deg, #000, #dc243c, #000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+  }
+  30%{
+    transform: translateX(5px);
+  }
+  40%, 100%{
+      transform: translateY(0);
+      
+  }
+}
+/*end of cta keyframes*/
+
+#cta-header:hover {
+  background: linear-gradient(0deg, #dc134c, #333);
 }
 #cta-header {
   font-size: 3rem;
@@ -465,11 +499,7 @@ span {
 /*End of Skills Section*/
 
 /*Projects Section*/
-#projectsDropdown{
-  background-color: rgb(80, 79, 79);
-  width: 100%;
-  border-radius: 10px;
-}
+
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
