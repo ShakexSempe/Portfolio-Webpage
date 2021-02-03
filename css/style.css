@@ -10,6 +10,7 @@
 /*root*/
 :root {
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --redGradient: linear-gradient(0deg, #000, #dc243c, #000);
 }
 
 html {
@@ -31,7 +32,7 @@ html {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 3px;
-  background: crimson;
+  background: var(--redGradient);
   width: 0%;
 }
 
@@ -87,7 +88,7 @@ span {
 #aka span{
   position: relative;
   display: inline-block;
-  animation: aka 2s infinite ease;
+  animation: aka 5s infinite ease;
 }
 @keyframes aka{
   100%{
@@ -101,7 +102,7 @@ span {
   padding: 10px 30px;
   color: #ffff;
   background-color: #a8a1a1;
-  box-shadow: 2px 2px 20px #dc143c;
+  box-shadow: 2px 2px 10px #dc143c;
   font-size: 2rem;
   font-weight: 500;
   border-radius: 10px;
@@ -109,6 +110,7 @@ span {
   transition: 3s ease;
   transition-property: background-color, color;
   animation: cta-animate .3s ease;
+  
   
 }
 
@@ -120,26 +122,32 @@ span {
   color: #fff;
   font-size: 2.6rem;
   animation: animate 3s ease-in-out infinite;
-  animation-delay: calc(0.1s * var(--i))
+  animation-delay: calc(0.2s * var(--i))
 }
 /* cta keyframes*/
 @keyframes animate{
   0%{
       transform: translateY(0px);
+      background: transparent;
       
   }
   20%{
+
       transform: translateY(-5px);
       color: #dc143c;
       background: linear-gradient(0deg, #000, #dc243c, #000);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-transform: uppercase;
+      
+      
   }
   30%{
+    
   }
   40%, 100%{
       transform: translateY(0);
+      
       
   }
 }
@@ -196,7 +204,7 @@ span {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgb(31, 30, 30);
+  background: rgb(31, 30, 30);
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -217,6 +225,7 @@ span {
 
 #header .nav-list ul.active {
   left: 0%;
+  background: linear-gradient(90deg, #000, #4e0101, #000);
 }
 
 #header .nav-list ul a {
@@ -645,7 +654,16 @@ span {
   background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
   opacity: 0.6;
 }
-
+.tech-list{
+  display: inline-flex;
+ 
+}
+.tech-list li{
+  color: yellowgreen;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
 /*image transition on hover*/
 #projects .project-img img {
   transition: 0.5s ease;
