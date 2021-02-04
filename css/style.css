@@ -71,7 +71,7 @@ span {
 
 .section-title {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 100vw;
   color: #000;
   margin-bottom: 10px;
@@ -81,14 +81,44 @@ span {
 }
 
 .section-title span {
+  position: relative;
   color: #dc143c;
-  animation: section-span 2s infinite;
-  
+  animation: section-span 3s ease-in-out infinite;
+  height: 5px;
 }
 
+/* @keyframes section-span{
+  0%, 50%, 100%{
+    top: 0px;
+    opacity: 1;
+    color: #dc143c;
+  }
+  25%{
+    top: -5px;
+    opacity: 0.4;
+    color: darkblue;
+  } 
+  75%{
+    top: 5px;
+    opacity: 0.4;
+    color: darkblue;
+  }
+} */
 @keyframes section-span{
-  50%{
-    opacity: 0.2;
+  0%, 100%{
+    top: 0px;
+    opacity: 1;
+    color: #dc143c;
+  }
+  45%{
+    top: -25px;
+    opacity: 0;
+    color: darkblue;
+  } 
+  46%{
+    top: 25px;
+    opacity: 0;
+    color: darkblue;
   }
 }
 #aka span{
@@ -363,7 +393,7 @@ span {
 
 /*End of welcome-section*/
 
-/*Services Section*/
+/*Skills Section*/
 
 #skills .skills {
   flex-direction: column;
@@ -372,16 +402,6 @@ span {
   margin: 0 auto;
   padding: 100px 0;
 }
-#skills a {
-  color: crimson;
-}
-
-#skill-h1 span{
-  animation: skill-i 3s ease-in-out infinite;
-}
-  
-
-
 
 #skills .skills-top {
   width: 500px;
@@ -540,7 +560,15 @@ span {
 #projects .projects-header h1 {
   margin-bottom: 50px;
 }
-
+#projects-h1 span{
+  animation:projact 3s infinite ease;
+  transition: 2s text-decoration;
+}
+@keyframes projact{
+  50%{
+   color: darkblue;
+ }
+}
 
 #profile-link{
   color: #fff;
@@ -628,18 +656,7 @@ span {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 }
- #projects-h1 span{
-   animation:projact 3s infinite ease;
-   transition: 2s text-decoration;
- }
- @keyframes projact{
-  30%{
-    color: #333;
-  }
-  60%{
-    color: darkblue;
-  }
- }
+ 
 
 
 #projects .project-tile h2 {
