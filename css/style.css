@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap");
-
-/*remove unexpcted gaps*/
 * {
   padding: 0;
   margin: 0;
@@ -31,7 +29,7 @@ html {
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 3px;
+  height: 4px;
   background: var(--redGradient);
   width: 0%;
 }
@@ -90,7 +88,7 @@ span {
   display: inline-block;
   animation: aka 5s infinite ease;
   margin: 0 40px;
-}
+  }
 @keyframes aka{
   50%{
     transform: translateY(50px);
@@ -131,27 +129,25 @@ span {
 /* cta keyframes*/
 @keyframes animate{
   0%{
+    
       transform: translateY(0px);
-      background: transparent;
       
   }
-  20%{
-
+  20%{      
       transform: translateY(-5px);
-      color: #dc143c;
+      color: #cd143c;
       background: linear-gradient(0deg, #000, #dc243c, #000);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-transform: uppercase;
+      box-shadow: none;
       
       
-  }
-  30%{
-    
+      
+      
   }
   40%, 100%{
       transform: translateY(0);
-      
       
   }
 }
@@ -171,7 +167,7 @@ span {
   color: #fff;
 }
 
-/*end of variables*/
+
 
 /*Header Section*/
 #header {
@@ -377,6 +373,19 @@ span {
 #skills a {
   color: crimson;
 }
+
+#skill-h1 span{
+  animation: skill-i 3s ease-in-out infinite;
+  transform: translateY(-2em);
+}
+@keyframes skill-i{
+  50%{
+    opacity: 0.3;
+  }
+  
+}
+
+
 #skills .skills-top {
   width: 500px;
   margin: 20px auto;
@@ -568,7 +577,7 @@ span {
   color: #fff;
 }
 #profile-link span{
-  animation: spaner 2s infinite ease;
+  animation: spaner 3s infinite ease;
 }
 @keyframes spaner{
   50%{
@@ -603,9 +612,9 @@ span {
   justify-content: center;
   flex-direction: column;
   background-image: var(--overlay);
-  color: #eee;
   transition: 1.3s ease;
 }
+
 
 #projects .project-tile:hover {
   transition: 0.4s ease;
@@ -617,7 +626,24 @@ span {
   line-height: 1em;
   padding-bottom: 10px;
   border-bottom: 1px dashed #fff;
+  
+  background: linear-gradient(0deg , #b9b6b6, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
+ #projects-h1 span{
+   animation:projact 3s infinite ease;
+   transition: 2s text-decoration;
+ }
+ @keyframes projact{
+  30%{
+    color: #333;
+  }
+  60%{
+    color: darkblue;
+  }
+ }
+
 
 #projects .project-tile h2 {
   font-size: 1.7rem;
