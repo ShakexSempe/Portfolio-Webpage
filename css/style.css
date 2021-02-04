@@ -82,6 +82,14 @@ span {
 
 .section-title span {
   color: #dc143c;
+  animation: section-span 2s infinite;
+  
+}
+
+@keyframes section-span{
+  50%{
+    opacity: 0.2;
+  }
 }
 #aka span{
   position: relative;
@@ -112,9 +120,7 @@ span {
   margin: 30px 5px;
   transition: 3s ease;
   transition-property: background-color, color;
-  animation: cta-animate .3s ease;
-  
-  
+  animation: cta-animate .3s ease; 
 }
 
 
@@ -141,11 +147,7 @@ span {
       -webkit-text-fill-color: transparent;
       text-transform: uppercase;
       box-shadow: none;
-      
-      
-      
-      
-  }
+    }
   40%, 100%{
       transform: translateY(0);
       
@@ -376,14 +378,9 @@ span {
 
 #skill-h1 span{
   animation: skill-i 3s ease-in-out infinite;
-  transform: translateY(-2em);
 }
-@keyframes skill-i{
-  50%{
-    opacity: 0.3;
-  }
   
-}
+
 
 
 #skills .skills-top {
@@ -596,7 +593,7 @@ span {
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
-  width: 95%;
+  width: 90%;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
@@ -693,6 +690,7 @@ span {
   list-style: none;
   margin: 5px;
   padding: 5px;
+  font-size: 1.2em;
 }
 /*image transition on hover*/
 #projects .project-img img {
@@ -874,7 +872,7 @@ span {
 /*bs12*/
   #bs21{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
   }
 /*end of bs12*/
 
@@ -1147,6 +1145,9 @@ span {
   .camp_hub {
     justify-content: space-evenly;
   }
+}
+.tech-list li{
+  font-size: 1.6em;
 }
 /*End of Media Query for Desktop*/
 
