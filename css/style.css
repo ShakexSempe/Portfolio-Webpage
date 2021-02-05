@@ -306,7 +306,6 @@ span {
   transform: scale(0.8);
   margin: 3px 20px;
 }
-
 /*hamburger pulse*/
 #header .hamburger:after {
   position: absolute;
@@ -315,9 +314,39 @@ span {
   width: 100%;
   border-radius: 50%;
   border: 3px solid #fff;
-  animation: hamburger_pulse 2s ease infinite;
+  animation: ham-pulse 2s ease infinite;
+}
+#header .hamburger:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  animation: ham-pulse2 2s ease infinite;
+  animation-delay: .5s;
+}
+@keyframes ham-pulse {
+  50%{
+    border-color: #cd143c;  
+
+  }
+  100%{
+  opacity: 0;
+  transform: scale(1.4);
+}
 }
 
+@keyframes ham-pulse2 {
+    50%{
+      border-color: rgb(212, 245, 145);  
+
+    }
+    100%{
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
 /*End of hamburger pulse*/
 
 #header .hamburger .bar {
@@ -561,13 +590,21 @@ span {
   margin-bottom: 50px;
 }
 #projects-h1 span{
-  animation:projact 3s infinite ease;
-  transition: 2s text-decoration;
+  animation:projact 5s infinite ease;
 }
 @keyframes projact{
-  50%{
-   color: darkblue;
- }
+  20%{
+    color: violet;
+  }
+ 40%{
+  color: darkblue;
+}
+60%{
+  color: gray;
+}
+80%{
+  color: black;
+}
 }
 
 #profile-link{
@@ -596,19 +633,21 @@ span {
   transition: all .4s;
 } */
 
-#profile-link:hover {
-  transition: .4s ease-in-out ;
+#profile-link:hover{
+  transition: .2s ease-in-out ;
   border-radius: 10px;
-  color: #fff;
+  color: rgb(180, 174, 174);
 }
-#profile-link span{
-  animation: spaner 3s infinite ease;
+
+/* #profile-link span{
+  animation: spaner 2s infinite ease;
 }
 @keyframes spaner{
   50%{
     color: #fff;
   }
-}
+} */
+
 #projects .all-projects {
   display: flex;
   align-items: center;
