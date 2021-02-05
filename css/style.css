@@ -594,10 +594,10 @@ span {
 }
 @keyframes projact{
   20%{
-    color: violet;
+    color: darkblue;
   }
  40%{
-  color: darkblue;
+  color: violet;
 }
 60%{
   color: gray;
