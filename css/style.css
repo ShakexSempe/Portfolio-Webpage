@@ -111,12 +111,12 @@ span {
     color: #dc143c;
   }
   45%{
-    top: -25px;
+    top: -20px;
     opacity: 0;
     color: darkblue;
   } 
   46%{
-    top: 25px;
+    top: 20px;
     opacity: 0;
     color: darkblue;
   }
@@ -172,7 +172,7 @@ span {
   20%{      
       transform: translateY(-5px);
       color: #cd143c;
-      background: linear-gradient(0deg, #000, #dc243c, #000);
+      background: linear-gradient(0deg, #000, #ff0000, #000);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-transform: uppercase;
@@ -773,10 +773,14 @@ span {
   color: #dc143c;
 }
 .fcc-link:hover{
-  color: #333;
+  color:violet;
 }
 #cv{
+  font-size: 1.4em;
   color: #dc143c;
+}
+#cv:hover{
+  color: violet;
 }
 
 /*end of About Section*/
@@ -809,7 +813,6 @@ span {
 
 #contact .contact-item:hover {
   box-shadow: 0px 0px 4px 0px #dc143c;
-
   border-radius: 30px;
   background-color: #f4f4f4;
   color: #dc143c;
@@ -863,7 +866,7 @@ span {
 
 #footer .social-icon {
   display: flex;
-  margin-bottom: 30px;
+  margin: 5px;
 }
 
 #footer .social-item {
@@ -878,7 +881,8 @@ span {
 }
 
 #footer .social-item img:hover {
-  filter: grayscale(0.6);
+  filter: grayscale(0.7);
+  transform: translateY(-5px);
 }
 
 #footer p {
