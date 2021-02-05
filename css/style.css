@@ -313,7 +313,7 @@ span {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   animation: ham-pulse 2s ease infinite;
 }
 #header .hamburger:before {
@@ -322,7 +322,7 @@ span {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   animation: ham-pulse2 2s ease infinite;
   animation-delay: .5s;
 }
