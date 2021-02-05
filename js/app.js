@@ -39,6 +39,9 @@ function myFunction() {
 }
 /*end of progress bar*/
 
+
+
+
 /*skills dropdown*/
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */

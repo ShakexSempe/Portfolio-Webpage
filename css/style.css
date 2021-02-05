@@ -843,7 +843,15 @@ span {
 #footer {
   background-image: var(--overlay);
 }
-
+#bs21 ul{
+  display: flex;
+  gap: 3em;
+  font-size: 1.3rem;
+  color: #fff;
+}
+#bs21 li{
+  list-style: none;
+}
 #footer .footer {
   min-height: 200px;
   flex-direction: column;
@@ -1169,6 +1177,9 @@ span {
 }
 .tech-list li{
   font-size: 1.6em;
+}
+#footer .social-item{
+  margin: 0 10px;
 }
 /*End of Media Query for Desktop*/
 
