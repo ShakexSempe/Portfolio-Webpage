@@ -64,6 +64,14 @@ function dropdown() {
   }
 /*end of skills dropdown*/  
 
+/*scrollbar*/
+$(function(){
+  $("#content-1").mCustomScrollbar({
+      theme: "dark-thin"
+  });
+});
+/*end of scrollbar*/
+
 // /*projects dropdown*/
 // function projectsDropdown() {
 //   document.getElementById("projectsDropdown").classList.toggle("show");

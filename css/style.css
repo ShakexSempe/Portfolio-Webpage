@@ -15,11 +15,14 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  /*smooth scroll down the screen*/
 }
+/*bootstrap scrollbar*/
+.custom-scrollbar-js{
+  height: 200px;
+}
+/*end of bootstrap scrollbar*/
 
 /*progress bar*/
-
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
@@ -50,11 +53,7 @@ a {
   overflow: hidden;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
 
 p {
   color: #000;
@@ -799,14 +798,20 @@ span {
 
 #about .col-left .about-img {
   height: 100%;
-  width: 80%;
+  width: 100%;
   position: relative;
-  border: 10px solid #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #about .col-left img {
-  border-radius: 10px;
-  margin: 20px auto;
+  margin: 0px auto;
+    border-radius: 10px;
 }
 .fcc-link{
   color: #dc143c;
