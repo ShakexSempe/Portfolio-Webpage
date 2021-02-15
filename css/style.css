@@ -123,17 +123,20 @@ span {
 #aka span{
   position: relative;
   display: inline-block;
-  animation: aka 5s infinite ease;
+  animation: aka 7s infinite ease ;
+  animation-delay: 3s;
   margin: 0 40px;
+  color: #dc143c;
+  opacity: 1;
   }
 @keyframes aka{
   50%{
     transform: translateY(50px);
     opacity: 0;
+    color: #fff;
   }
   100%{
     transform: translateY(0px);
-    opacity: 1;
   }
 }
 #cta-header {
@@ -212,9 +215,52 @@ span {
 .hero {
   margin-left: 20px;
 }
-.hero h1 {
+.hero h1 span{
+  display: inline-block;
+  color: #fff;
   text-align: left;
+  opacity: 1;
+  animation: hero-span 8s ease infinite;
+  animation-delay: calc(.5s * var(--s));
+  transition: color .7s;
 }
+@keyframes hero-span{
+  0%{
+  color: #dc143c;
+  }
+  10%{
+    opacity: 0.2;
+    transform: rotate(4deg);
+    }
+    20%{
+      opacity: 0.4;
+      transform: rotate(-4deg);
+    }
+    30%{
+      transform: rotate(3deg);
+    }
+  40%{
+    opacity: 0.6;
+    transform: rotate(-3deg);
+    
+  }
+  50%{
+    transform: rotate(2deg);
+  }
+  60%{
+    opacity: 0.8;
+    transform: rotate(-2deg);
+  }
+  80%{
+    opacity: 1;
+    transform: rotate(1deg);
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
 
 #header .header {
   min-height: 8vh;
