@@ -219,7 +219,7 @@ span {
   text-align: left;
   opacity: 0.5;
   line-height: 1.6;
-  animation: hero-span 10s ease;
+  animation: hero-span 10s ease infinite;
   animation-delay: calc(.5s * var(--s));
   transition: all 3s;
   
@@ -229,14 +229,13 @@ span {
     opacity: 0.6;
   }
   10%{
-    color: #dc143c;
+    color: #dc143c73;
     opacity: 0.7;
     transform: rotate(3deg);
     }
     20%{
       opacity: 1;
       transform: rotate(-3deg);
-      color: #dc143c;
     }
     30%{
       transform: rotate(3deg);
@@ -371,11 +370,11 @@ span {
   border-radius: 50%;
   border: 2px solid #fff;
   animation: ham-pulse2 2s ease infinite;
-  animation-delay: .5s;
+  animation-delay: .6s;
 }
 @keyframes ham-pulse {
   50%{
-    border-color: #cd143c;  
+    border-color: #fff;  
 
   }
   100%{
@@ -385,8 +384,7 @@ span {
 }
 
 @keyframes ham-pulse2 {
-    50%{
-      border-color: rgb(212, 245, 145);  
+    50%{  
 
     }
     100%{
@@ -400,7 +398,7 @@ span {
   height: 2px;
   width: 30px;
   position: relative;
-  background-color: #fff;
+  background-color: #f4f4f4;
   z-index: -1;
 }
 
