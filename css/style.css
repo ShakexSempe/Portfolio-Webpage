@@ -434,18 +434,19 @@ span {
 
 /*welcome-section*/
 #welcome-section {
-  background-image: url('../img/unit-3.jpg');
-  background-size: cover;
-  background-position: top center;
+  background-image: url('../img/unit-3.jpg') ;
+  background-repeat: no-repeat;
+  background-size: 310%;
+  background-position: top right;
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
   overflow: hidden;
-  animation: unit3 10s ease infinite alternate;
+  animation: unit3 60s ease infinite alternate;
 }
 @keyframes unit3 {
   100%{
-    background-position: bottom center;
+    background-position: bottom left;
   }
 }
 #welcome-section::after {
@@ -1012,6 +1013,9 @@ img {
     font-size: 6rem}
   
   /*Hero*/
+  #welcome-section {
+    background-size: 190%;
+  }
   #welcome-section h1 {
     font-size: 6rem;
   }
@@ -1174,6 +1178,9 @@ img {
   
   .hero{
     text-align: center;
+  }
+  #welcome-section {
+    background-size: cover;
   }
   #hero-h1{
     display: flex;
