@@ -132,9 +132,9 @@ span {
   }
 @keyframes aka{
   100% {
-    opacity: 0.7;
+    opacity: 0.9;
     transform: scale(1);
-    color: #57051560;
+    color: #9c0b28a1;
   }
 }
 #cta-header {
