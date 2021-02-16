@@ -437,7 +437,7 @@ span {
   background-image: url('../img/unit-3.jpg') ;
   background-repeat: no-repeat;
   background-size: 310%;
-  background-position: top right;
+  background-position: right;
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
@@ -446,7 +446,7 @@ span {
 }
 @keyframes unit3 {
   100%{
-    background-position: bottom left;
+  background-position: left;
   }
 }
 #welcome-section::after {
@@ -1181,7 +1181,14 @@ img {
   }
   #welcome-section {
     background-size: cover;
+    background-position: top right;
+    animation: unit3 56s ease-in-out infinite alternate;
+}
+@keyframes unit3 {
+  100%{
+    background-position: bottom left;
   }
+} 
   #hero-h1{
     display: flex;
     flex-direction: column;
