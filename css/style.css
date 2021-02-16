@@ -123,20 +123,16 @@ span {
 #aka span{
   position: relative;
   display: inline-block;
-  animation: aka 7s infinite ease ;
+  animation: aka 3s infinite ease alternate;
   animation-delay: 3s;
   margin: 0 40px;
-  color: #dc143c;
-  opacity: 1;
+  color: #fff;
+  opacity: 0.1;
   }
 @keyframes aka{
-  50%{
-    transform: translateY(50px);
-    opacity: 0;
-    color: #fff;
-  }
-  100%{
-    transform: translateY(0px);
+  100% {
+    opacity: 1;
+    color: #dc143c;
   }
 }
 #cta-header {
@@ -219,40 +215,44 @@ span {
   display: inline-block;
   color: #fff;
   text-align: left;
-  opacity: 1;
-  animation: hero-span 8s ease infinite;
+  opacity: 0.5;
+  line-height: 1.6;
+  animation: hero-span 10s ease;
   animation-delay: calc(.5s * var(--s));
-  transition: color .7s;
+  transition: all 3s;
+  
 }
 @keyframes hero-span{
   0%{
-  color: #dc143c;
+    opacity: 0.6;
   }
   10%{
-    opacity: 0.2;
-    transform: rotate(4deg);
+    color: #dc143c;
+    opacity: 0.7;
+    transform: rotate(3deg);
     }
     20%{
-      opacity: 0.4;
-      transform: rotate(-4deg);
+      opacity: 1;
+      transform: rotate(-3deg);
+      color: #dc143c;
     }
     30%{
       transform: rotate(3deg);
     }
   40%{
-    opacity: 0.6;
+    opacity: 0.9;
     transform: rotate(-3deg);
     
   }
   50%{
     transform: rotate(2deg);
+    color: #fff;
+    opacity: 1;
   }
   60%{
-    opacity: 0.8;
     transform: rotate(-2deg);
   }
   80%{
-    opacity: 1;
     transform: rotate(1deg);
   }
   100%{
@@ -435,14 +435,19 @@ span {
 /*welcome-section*/
 #welcome-section {
   background-image: url('../img/unit-3.jpg');
-  background-size: cover;
+  background-size: 180%;
   background-position: top center;
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
   overflow: hidden;
+  animation: unit3 50s ease infinite alternate;
 }
-
+@keyframes unit3 {
+  100%{
+    background-position: bottom center;
+  }
+}
 #welcome-section::after {
   content: "";
   position: absolute;
