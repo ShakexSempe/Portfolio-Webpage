@@ -435,13 +435,13 @@ span {
 /*welcome-section*/
 #welcome-section {
   background-image: url('../img/unit-3.jpg');
-  background-size: 180%;
+  background-size: cover;
   background-position: top center;
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
   overflow: hidden;
-  animation: unit3 50s ease infinite alternate;
+  animation: unit3 10s ease infinite alternate;
 }
 @keyframes unit3 {
   100%{
@@ -1009,9 +1009,8 @@ img {
 /*Media Query for tablet*/
 @media only screen and (min-width: 768px) {
   h1.section-title {
-    font-size: 6rem;
-  }
-
+    font-size: 6rem}
+  
   /*Hero*/
   #welcome-section h1 {
     font-size: 6rem;
@@ -1172,12 +1171,7 @@ img {
 
 /*Media Query for Desktop*/
 @media only screen and (min-width: 1024px) {
-  #welcome-section {
-    background-size: contain no-repeat;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-  }
+  
   .hero{
     text-align: center;
   }
