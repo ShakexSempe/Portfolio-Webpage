@@ -413,19 +413,22 @@ span {
 
 /*welcome-section*/
 #welcome-section {
-  background-image: url('../img/unit-3.jpg') ;
+  background-image: url('../img/unit-3.jpg');
   background-repeat: no-repeat;
-  background-size: 310%;
+  background-size: cover;
   background-position: right;
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
   overflow: hidden;
-  animation: unit3 60s ease infinite alternate;
+  animation: unit3 60s ease-in-out infinite ;
 }
 @keyframes unit3 {
-  100%{
+  50%{
   background-position: left;
+  }
+  100%{
+    background-position: right;
   }
 }
 #welcome-section::after {
