@@ -161,7 +161,7 @@ span {
   font-size: 3rem;
   font-weight: 700;
   animation: animate 3s ease-in-out infinite;
-  animation-delay: calc(8s + .2s * var(--i))
+  animation-delay: calc(7s + .2s * var(--i))
 }
 /* cta keyframes*/
 @keyframes animate{
