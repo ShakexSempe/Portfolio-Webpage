@@ -86,23 +86,6 @@ span {
   height: 5px;
 }
 
-/* @keyframes section-span{
-  0%, 50%, 100%{
-    top: 0px;
-    opacity: 1;
-    color: #dc143c;
-  }
-  25%{
-    top: -5px;
-    opacity: 0.4;
-    color: darkblue;
-  } 
-  75%{
-    top: 5px;
-    opacity: 0.4;
-    color: darkblue;
-  }
-} */
 @keyframes section-span{
   0%, 100%{
     top: 0px;
@@ -123,42 +106,46 @@ span {
 #aka span{
   position: relative;
   display: inline-block;
-  animation: aka 3s infinite ease alternate;
+  animation: aka 5s 2 ease alternate;
   animation-delay: 5s;
   margin: 0 40px;
   color: #fff;
-  opacity: 0.2;
-  transform: scale(0.6);
+  opacity: 0.5;
+  transform: scale(0.7);
   }
 @keyframes aka{
-  100% {
-    opacity: 0.7;
-    color: #9c0b28a1;
+  50% {
+    opacity: 1;
     transform: scale(1);
+    color: tomato;
   }
 }
 #cta-header {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
-  color: #ffff;
-  background-color: #a8a1a1;
-  box-shadow: 2px 2px 10px #dc143c;
-  font-size: 2rem;
-  font-weight: 500;
+  background-color: #f7f2f227;
+  box-shadow: 5px 8px 5px #dc143c;
   border-radius: 10px;
   margin: 30px 5px;
-  transition: 3s ease;
-  transition-property: background-color, color;
-  animation: cta-animate .3s ease; 
+  width: 240px;
+  text-align: center;
+  transition: 3s ease-in-out;
+  transition-property: color;
 }
 
+#cta-header:hover {
+  transition:  all .8s;
+  box-shadow: 5px 8px 20px #dc143c;
+  
+}
 
 #cta-header span {
   position: relative;
   display: inline-block;
   color: #fff;
-  font-size: 3rem;
+  
+  font-size: 3.5rem;
   font-weight: 700;
   animation: animate 3s ease-in-out infinite;
   animation-delay: calc(7s + .2s * var(--i))
@@ -166,14 +153,13 @@ span {
 /* cta keyframes*/
 @keyframes animate{
   0%{
-    
       transform: translateY(0px);
       
   }
   20%{      
       transform: translateY(-5px);
       color: #cd143c;
-      background: linear-gradient(0deg, #000, #ff0000, #000);
+      background: linear-gradient(0deg, #000, #dc143c, #ff0000, #000);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-transform: uppercase;
@@ -186,14 +172,7 @@ span {
 }
 /*end of cta keyframes*/
 
-#cta-header:hover {
-  transition: .2s;
-  background: linear-gradient(0deg, #dc134c, #333);
-  box-shadow: none;
-}
-#cta-header {
-  font-size: 3rem;
-}
+
 .brand h1 {
   font-size: 2.9rem;
   text-transform: uppercase;
@@ -221,7 +200,7 @@ span {
   padding: 2px;
   opacity: 0.5;
   line-height: 1.3;
-  animation: hero-span 6s ease infinite;
+  animation: hero-span 6s ease 2;
   animation-delay: calc(2s + .5s * var(--s));
   transition: all 3s;
   
@@ -536,7 +515,6 @@ span {
   color: #fff;
   margin-bottom: 10px;
   text-transform: capitalize;
-  text-decoration: underline 2px crimson;
   
 }
 
@@ -1012,6 +990,9 @@ img {
   }
   #cta-header span{
     font-size: 5.4rem;
+  }
+  #cta-header {
+    width: auto;
   }
 #aka span{
   font-size: 4rem;
