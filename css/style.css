@@ -79,6 +79,42 @@ span {
   text-align: center;
 }
 
+/* TEXT-REFLECT CSS */
+
+.section-title, .section-title:before, .text-reflect.section-title span {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title, .section-title:before, .section-title:after {
+  position: relative;
+}
+
+.section-title {
+  top: -6px;
+}
+
+.section-title:before {
+  content: attr(data-text);
+  top: 2.1em;
+  transform: scale(1, -1);
+  backface-visibility: visible; 
+  z-index: 1;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 60px; 
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.205) 0%, rgb(255, 255, 255) 50%);
+  z-index: 2;
+}
+/* END OF TEXT-REFLECT CSS */
+
 .section-title span {
   position: relative;
   color: #dc143c;
