@@ -870,23 +870,23 @@ img {
   color:violet;
 }
 #cv{
-  font-size: 2em;
+  font-size: 1.6em;
   background: #dc143c;
   color: #fff;
   margin: 10px;
   padding: 8px;
   box-shadow: 15px 15px 5px #26262671;
   transition: color .5s;
-  border: 3px solid #dc143c;
-  outline: 3px solid #fff;
-  outline-offset: -3px;
+  border: 2px solid #dc143c;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
   transition: outline-offset 250ms ease;
   animation: cv-button 2s ease-in-out infinite;
 }
 
 @keyframes cv-button {
   50%{
-    outline-offset: -5px;
+    outline-offset: -6px;
   }
 }
 #cv:hover,
