@@ -172,7 +172,7 @@ span {
 
 #cta-header:hover {
   transition:  all .8s;
-  box-shadow:  15px 15px 5px #dc143c;
+  box-shadow:  15px 15px 10px #dc143c98;
   
 }
 #cta-header:hover span{
@@ -587,7 +587,8 @@ span {
   border-radius: 10px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 15px 15px 10px #26262671;
+  box-shadow: 15px 15px 5px #26262671;
+  transition: all .3s;
 
 }
 
@@ -602,7 +603,7 @@ span {
 
 .dropbtn:hover, .dropbtn:focus {
   background: var(--overlay);
-  box-shadow: 15px 15px 15px #26262671;
+  box-shadow: 15px 15px 10px #26262671;
 
 }
 /* Dropdown Content (Hidden by Default) */
@@ -669,7 +670,8 @@ span {
   width: 60%;
   border-radius: 5px;
   transition: all .4s;
-  box-shadow: 15px 15px 10px #26262671;
+  box-shadow: 15px 15px 5px #26262671;
+
 
 }
 
@@ -690,7 +692,7 @@ span {
   transition: .2s ease-in-out ;
   border-radius: 10px;
   color: #ccc;
-  box-shadow: 15px 15px 15px #26262671;
+  box-shadow: 15px 15px 10px #26262671;
 
 }
 
@@ -865,9 +867,7 @@ span {
   transition: all .3s;
 }
 #about .col-left .about-img:hover {
-  box-shadow: 0px 0px 1px 10px #5806066b;
-
-  
+  box-shadow: 15px 15px 10px #26262671;
 }
 img {
   height: 100%;
@@ -903,6 +903,7 @@ img {
 @keyframes cv-button {
   50%{
     outline-offset: -6px;
+    box-shadow: 15px 15px 10px #26262671;
   }
 }
 #cv:hover,
