@@ -671,14 +671,15 @@ span {
   border-radius: 2px;
   transition: all .3s;
   box-shadow: 15px 15px 5px #26262671;
+  
   animation: shadow 2s ease-in-out infinite;
 }
 
 @keyframes shadow {
-  50%{
+  50% {
     box-shadow: 15px 15px 10px #26262671;
-    color: #ddd;
     border-radius: 10px;
+    color: #9e9595;
   }
 }
 
