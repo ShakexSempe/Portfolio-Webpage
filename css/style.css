@@ -642,19 +642,22 @@ span {
 #projects-h1 span{
   animation:projact 5s infinite ease;
 }
-@keyframes projact{
-  20%{
+@keyframes projact {
+  20% {
     color: darkblue;
   }
- 40%{
-  color: darkgreen;
-}
-60%{
-  color: gray;
-}
-80%{
-  color: #000;
-}
+
+  40% {
+    color: darkgreen;
+  }
+
+  60% {
+    color: gray;
+  }
+
+  80% {
+    color: #000;
+  }
 }
 
 #profile-link{
@@ -704,15 +707,6 @@ span {
 
 }
 
-/* #profile-link span{
-  animation: spaner 2s infinite ease;
-}
-@keyframes spaner{
-  50%{
-    color: #fff;
-  }
-} */
-
 #projects .all-projects {
   display: flex;
   align-items: center;
@@ -750,8 +744,8 @@ span {
 }
 
 #projects .project-tile h1 {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 900;
   line-height: 1em;
   padding-bottom: 10px;
   border-bottom: 1px dashed #fff;
@@ -765,18 +759,18 @@ span {
 
 #projects .project-tile h2 {
   font-size: 1.7rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 10px;
 }
 
 #projects .project-tile p {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 200;
   color: #fff;
 }
 
 #projects .project-tile a {
-  color: crimson;
+  color: rgb(253, 80, 114);
   background: #333;
   border-radius: 10px;
 }
@@ -804,7 +798,7 @@ span {
 }
 .tech-list{
   display: inline-flex;
- 
+
 }
 .tech-list li{
   color: yellowgreen;
