@@ -942,13 +942,13 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 6px 5px #35353521;
+  box-shadow: 10px 10px 6px 5px #c90b0b6b;
   transition: 0.4s ease;
   filter: grayscale(0.7);
 }
 
 #contact .contact-item:hover {
-  box-shadow: 10px 10px 2px 5px #dc143c2d;
+  box-shadow: 0px 0px 0px 2px #a8102e75;
   border: 1px #dc143c59 solid;
     border-radius: 20px;
   background-color: #f4f4f4;
