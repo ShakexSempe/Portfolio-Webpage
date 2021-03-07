@@ -942,7 +942,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 6px 5px #dc143cd5;
+  box-shadow: 10px 10px 6px 5px #cc09092f;
   transition: 0.4s ease;
   filter: grayscale(0.7);
 }
