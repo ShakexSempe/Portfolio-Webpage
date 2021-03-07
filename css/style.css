@@ -213,7 +213,7 @@ span {
 
 
 .brand h1 {
-  font-size: 2.9rem;
+  font-size: 3.1rem;
   text-transform: uppercase;
   color: #fff;
   font-family: 'Gruppo', cursive;
@@ -547,10 +547,12 @@ span {
 }
 
 #skills .skills-item h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   margin-bottom: 10px;
   text-transform: capitalize;
+  font-family: 'Gruppo', cursive;
+
   
 }
 
@@ -584,10 +586,10 @@ span {
   cursor: pointer;
   border-radius: 3px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   box-shadow: 15px 15px 5px #26262671;
   transition: all .3s;
   animation: shadow 2s ease-in-out infinite;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Dropdown button on hover & focus */
