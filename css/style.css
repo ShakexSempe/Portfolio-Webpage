@@ -954,7 +954,7 @@ img {
   background-color: #f4f4f4;
   color: #dc143c;
   filter: grayscale(0);
-  transform: scale(0.99);
+  transform: scale(0.95);
 }
 
 #contact .icon {
