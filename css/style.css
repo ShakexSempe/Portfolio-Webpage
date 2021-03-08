@@ -869,14 +869,14 @@ span {
   width: 90%;
   position: relative;
   border: 1px rgb(199, 196, 196) solid;
-  box-shadow: 10px 10px 6px 5px #cc09092f;
+  box-shadow: 10px 10px 6px 5px #25242449;
   filter: grayscale(0.3);
   border-radius: 10px;
   margin-top: 20px;
   transition: all .3s;
 }
 #about .col-left .about-img:hover {
-  box-shadow: 5px 5px 0px 1px #dc143c75;
+  box-shadow: 5px 5px 0px 1px #dc143ca2;
   border: 1px #dc143c solid;
   filter: grayscale(0);
 }
@@ -955,7 +955,7 @@ img {
 }
 
 #contact .contact-item:hover {
-  box-shadow: 5px 5px 0px 1px #dc143c75;
+  box-shadow: 3px 3px 0px 1px #dc143c75;
   border: 1px #dc143c solid;
     border-radius: 20px;
   background-color: #f4f4f4;
