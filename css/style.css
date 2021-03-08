@@ -161,8 +161,8 @@ span {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
-  background-color: #f7f2f227;
-  box-shadow: 15px 15px 5px #dc143c38;
+  background-color: #85848498;
+  box-shadow: 35px 10px 10px #dc143c63;
   border-radius: 10px;
   margin: 30px 5px;
   width: 240px;
@@ -172,12 +172,13 @@ span {
 }
 
 #cta-header:hover {
+  background-color: #f7f2f286;
   transition:  all .8s;
-  box-shadow:  15px 15px 10px #dc143c98;
+  box-shadow:  10px 5px 5px #ce0d3498;
   
 }
 #cta-header:hover span{
-  font-style: italic;
+  transform: scale(1.1);
 }
 #cta-header span {
   position: relative;
@@ -864,14 +865,17 @@ span {
   height: 100%;
   width: 90%;
   position: relative;
-  border: 1px solid #333;
-  box-shadow: 15px 15px 5px #26262671;
+  border: 1px rgb(199, 196, 196) solid;
+  box-shadow: 10px 10px 6px 5px #cc09092f;
+  filter: grayscale(0.3);
   border-radius: 10px;
   margin-top: 20px;
   transition: all .3s;
 }
 #about .col-left .about-img:hover {
-  box-shadow: 15px 15px 10px #26262671;
+  box-shadow: 5px 5px 0px 1px #dc143c75;
+  border: 1px #dc143c solid;
+  filter: grayscale(0);
 }
 img {
   height: 100%;
