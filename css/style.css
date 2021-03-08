@@ -1303,6 +1303,12 @@ img {
     transform: scale(1.05);
   
   }
+  #skills .skills-item h2 {
+    font-size: 3rem;
+  }
+#skills .skills-item ul li{
+  font-size: 1.7rem;
+}
 
   .container p {
     font-size: 1.8rem;
