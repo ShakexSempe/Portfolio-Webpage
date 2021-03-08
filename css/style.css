@@ -948,7 +948,7 @@ img {
 }
 
 #contact .contact-item:hover {
-  box-shadow: 0px 0px 0px 2px #dc143c75;
+  box-shadow: 5px 5px 0px 1px #dc143c75;
   border: 1px #dc143c solid;
     border-radius: 20px;
   background-color: #f4f4f4;
