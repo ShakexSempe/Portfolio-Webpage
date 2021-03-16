@@ -799,6 +799,12 @@ span {
   color: rgb(253, 80, 114);
   background: #333;
   border-radius: 10px;
+  animation: project-link 2s linear infinite;
+}
+@keyframes project-link{
+  50%{
+    color: #ddd;
+  }
 }
 #projects .project-tile a:hover {
   transition: 0.4s ease;
