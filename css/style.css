@@ -602,7 +602,9 @@ span {
 #github-icon img{
   border-radius: 50%;
 }
-
+#git-icon img{
+  border-radius: 50%;
+}
 /*Dropdown*/
 /* Dropdown Button */
 .dropbtn {
