@@ -457,7 +457,7 @@ span {
   background-image: url('../img/unit-3.jpg');
   background-repeat: no-repeat;
   background-size: 310%;
-  background-position: right;
+  background-position: left;
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
@@ -466,7 +466,7 @@ span {
 }
 @keyframes unit3 {
   100%{
-  background-position: left;
+  background-position: right;
   }
 }
 #welcome-section::after {
