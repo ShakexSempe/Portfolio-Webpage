@@ -605,6 +605,9 @@ span {
 #git-icon img{
   border-radius: 50%;
 }
+#netlify-icon img{
+  border-radius: 50%;
+}
 /*Dropdown*/
 /* Dropdown Button */
 .dropbtn {
