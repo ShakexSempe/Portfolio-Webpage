@@ -605,6 +605,9 @@ span {
 #netlify-icon img{
   border-radius: 50%;
 }
+#express-icon img{
+  border-radius: 30px;
+}
 /*Dropdown*/
 /* Dropdown Button */
 .dropbtn {
