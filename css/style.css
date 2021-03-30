@@ -669,7 +669,7 @@ span {
   width: 100%;
   margin: 0 auto;
   padding: 100px 0;
-  background-image: url('../img/unit-3.jpg');
+  background-image: url('../img/tim-foster-BeDY9KuP0sI-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -685,7 +685,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0;
   overflow: hidden;
 }
 
