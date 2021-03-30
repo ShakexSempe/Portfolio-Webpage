@@ -458,6 +458,7 @@ span {
   background-repeat: no-repeat;
   background-size: 310%;
   background-position: left;
+  background-attachment: fixed;
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
@@ -876,7 +877,6 @@ span {
   align-items: center;
   margin-top: 30px;
   
-
 }
 
 #about .col-right {
