@@ -799,7 +799,7 @@ span {
   border-radius: 2px;
   transition: all .3s;
   box-shadow: 15px 15px 5px #26262671;
-
+  border: 1px solid #000;
   animation: shadow 2s ease-in-out infinite;
 }
 
@@ -850,6 +850,7 @@ span {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
+  border: 2px solid #000;
 }
 
 #projects .project-tile {
@@ -863,6 +864,7 @@ span {
   flex-direction: column;
   background-image: var(--overlay);
   transition: 1.3s ease;
+
 }
 
 
