@@ -674,7 +674,6 @@ span {
   background-size: cover;
   background-position: left;
   background-attachment: fixed;
-  position: relative;
 }
 
 .projects-header{
@@ -980,8 +979,21 @@ img {
 /*Contact Section*/
 #contact .contact {
   flex-direction: column;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  padding: 100px 0;
+  background-image: url('/img/tim-foster-BeDY9KuP0sI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-header{
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+  margin-bottom: 50px;
 }
 
 #contact .contact-items {
@@ -992,6 +1004,7 @@ img {
   width: 80%;
   padding: 20px;
   text-align: center;
+  color: #000;
   border: 1px rgb(199, 196, 196) solid;
   border-radius: 10px;
   margin: 30px;
