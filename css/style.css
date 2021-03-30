@@ -501,7 +501,7 @@ span {
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   
 }
 
@@ -656,7 +656,17 @@ span {
   background-attachment: fixed;
   position: relative;
 }
-
+.dropdown-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  overflow: hidden;
+}
 
 
 /* Change color of dropdown links on hover */
@@ -674,8 +684,9 @@ span {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
-  background-image: url('../img/tim-foster-BeDY9KuP0sI-unsplash.jpg');
+  padding: 100px 0 ;
+  background-image: url('../img/charles-deluvio-HTDVSbFsy3U-unsplash.jpg');
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
