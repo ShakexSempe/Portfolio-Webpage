@@ -669,11 +669,24 @@ span {
   width: 100%;
   margin: 0 auto;
   padding: 100px 0;
-  background-image: url('../img/guillermo-ferla-e4Yv_AWY2W4-unsplash.jpg');
+  background-image: url('../img/unit-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   background-attachment: fixed;
+  position: relative;
+}
+
+#projects .projects::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  overflow: hidden;
 }
 
 .projects-header{
@@ -681,6 +694,7 @@ span {
   height: 170px;
   background: rgb(255, 255, 255);
   margin-bottom: 50px;
+  z-index: 2;
 }
 
 #projects .projects-header h1 {
@@ -762,6 +776,7 @@ span {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 100;
 }
 
 #projects .project-item {
@@ -987,6 +1002,20 @@ img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
+}
+
+#contact .contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  overflow: hidden;
+
 }
 
 .contact-header{
@@ -994,17 +1023,19 @@ img {
   height: auto;
   background: rgb(255, 255, 255);
   margin-bottom: 50px;
+  z-index: 10;
 }
 
 #contact .contact-items {
   width: 400px;
+  z-index: 100;
 }
 
 #contact .contact-item {
   width: 80%;
   padding: 20px;
   text-align: center;
-  color: #000;
+  color: #ddd;
   border: 1px rgb(199, 196, 196) solid;
   border-radius: 10px;
   margin: 30px;
