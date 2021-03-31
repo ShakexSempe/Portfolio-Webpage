@@ -744,7 +744,7 @@ span {
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-attachment: fixed;
   position: relative;
 }
