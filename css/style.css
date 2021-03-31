@@ -534,9 +534,16 @@ span {
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
-  margin: 0 auto;
-
+  margin: 0px auto;
+  padding:  0;
 }
+
+
+
+/* .skills-header{
+  width: 100%;
+  background: #fff;
+  } */
 
 #skills .skills-top {
   width: 500px;
@@ -551,6 +558,7 @@ span {
   flex-wrap: wrap;
   /*items wrapped onto multiple lines*/
   margin-top: 50px;
+  padding-top: 50px;
 }
 
 #skills .skills-item {
@@ -560,7 +568,7 @@ span {
   justify-content: center;
   flex-direction: column;
   padding: 30px;
-  background-image: url('../img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg');
+  background: transparent ;
   background-size: cover;
   margin: 10px 5%;
   position: relative;
@@ -569,7 +577,8 @@ span {
   transition: 0.3s ease-in-out;
   overflow: hidden;
   border-radius: 10px;
-  height: 300px;
+  height: auto;
+  border: 1px solid #999595;
 
   /*border radius not visiblie without hidden overflow*/
 }
@@ -581,6 +590,7 @@ span {
   font-size: 1.4rem;
   text-align: left;
   margin: 20px;
+  text-transform: capitalize;
 
 }
 
@@ -687,12 +697,13 @@ span {
   z-index: 1;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg');
+  background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-attachment: fixed;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .dropdown-content::after {
@@ -1283,6 +1294,7 @@ img {
 
   #skills .skills-item:hover {
     transform: scale(1.05);
+    border: 1px solid #dc143c;
   }
 
   #skills .skills-item h2 {
