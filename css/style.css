@@ -536,7 +536,7 @@ span {
   text-align: center;
   max-width: 1500px;
   margin: 0px auto;
-  padding:  30vh 0 0 0;
+  padding:  30vh 0 20vh 0;
 
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
@@ -554,7 +554,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.4;
+  opacity: 0.6;
   overflow: hidden;
 }
 
@@ -565,12 +565,14 @@ span {
   z-index: 30;
 }
 #skills .skills-top {
-  width: 500px;
+  width: 90%;
+  padding: 3px;
   margin: 20px auto;
   text-align: center;
   z-index: 30;
   background: rgb(255, 255, 255);
   border-radius: 10px;
+  border: 1px solid #cd143c;
 }
 
 #skills .skills-bottom {
@@ -651,9 +653,6 @@ span {
   line-height: 1.9rem;
 }
 
-#skills .skills-top {
-  width: 90%;
-}
 
 #skills .skills-item p {
   color: #fff;
@@ -902,6 +901,7 @@ span {
   justify-content: center;
   flex-direction: column;
   background-image: var(--overlay);
+  background: #485563c5;
   transition: 1.3s ease;
 
 }
@@ -1005,7 +1005,7 @@ span {
   margin: 0 auto;
   padding: 100px 20px;
 
-  background-image: url('../img/milky-way2.jpg');
+  background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -1043,7 +1043,7 @@ span {
   z-index: 20;
   background: #fff;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #dc143c;
 }
 
 #about .col-right h2 {
