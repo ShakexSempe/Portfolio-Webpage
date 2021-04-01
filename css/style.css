@@ -538,7 +538,7 @@ span {
   margin: 0px auto;
   padding:  100px 0;
 
-  background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
+  background-image: url('../img/milky-way2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1044,6 +1044,7 @@ span {
   z-index: 20;
   background: #fff;
   border-radius: 5px;
+  border: 1px solid #dc143c;
 }
 
 #about .col-right h2 {
@@ -1057,7 +1058,7 @@ span {
   margin-bottom: 20px;
   text-overflow: ellipsis;
   text-align: left;
-  padding-right: 4px;
+  padding-left: 4px;
 }
 
 
