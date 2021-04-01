@@ -554,7 +554,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.5;
   overflow: hidden;
 }
 
@@ -836,7 +836,7 @@ span {
   border-radius: 2px;
   transition: all .3s;
   box-shadow: 15px 15px 5px #26262671;
-  border: 2px solid #000;
+  border: 3px solid #b4b1b1;
   animation: shadow 2s ease-in-out infinite;
   font-family: 'Gruppo', cursive;
 
@@ -889,7 +889,7 @@ span {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
-  border: 2px solid #000;
+  border: 1px solid #999595;
 }
 
 #projects .project-tile {
@@ -1005,6 +1005,27 @@ span {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px;
+
+  background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#about .about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  overflow: hidden;
+
 }
 
 #about .col-left {
@@ -1014,12 +1035,15 @@ span {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-
+  z-index: 20;
 }
 
 #about .col-right {
   width: 100%;
   height: auto;
+  z-index: 20;
+  background: #fff;
+  border-radius: 5px;
 }
 
 #about .col-right h2 {
@@ -1033,6 +1057,7 @@ span {
   margin-bottom: 20px;
   text-overflow: ellipsis;
   text-align: left;
+  padding-right: 4px;
 }
 
 
@@ -1041,7 +1066,7 @@ span {
   width: 90%;
   position: relative;
   border: 1px rgb(199, 196, 196) solid;
-  box-shadow: 10px 10px 6px 5px #25242449;
+  box-shadow: 10px 10px 5px #4948488f;
   filter: grayscale(0.3);
   border-radius: 10px;
   margin-top: 20px;
@@ -1082,6 +1107,7 @@ img {
   box-shadow: 15px 15px 5px #26262671;
   transition: color .5s;
   border: 2px solid #dc143c;
+  border-radius: 5px;
   outline: 2px solid #fff;
   outline-offset: -2px;
   transition: outline-offset 250ms ease;
@@ -1111,7 +1137,7 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 100px 0;
-  background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
+  background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
