@@ -566,9 +566,9 @@ span {
 }
 #skills .skills-top {
   width: 90%;
-  padding: 2px;
+  padding: 1px;
   margin: 20px auto;
-  text-align: left;
+  text-align: center;
   z-index: 30;
   background: rgb(255, 255, 255);
   border-radius: 10px;
