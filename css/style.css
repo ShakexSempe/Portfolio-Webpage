@@ -536,7 +536,7 @@ span {
   text-align: center;
   max-width: 1500px;
   margin: 0px auto;
-  padding:  30vh 0;
+  padding:  30vh 0 50vh 0;
 
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
@@ -764,7 +764,7 @@ span {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 150px 0;
+  padding: 150px 0;
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
 
   background-repeat: no-repeat;
