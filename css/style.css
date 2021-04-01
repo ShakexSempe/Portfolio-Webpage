@@ -537,15 +537,39 @@ span {
   max-width: 1500px;
   margin: 0px auto;
   padding:  100px 0;
+
+  background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
+#skills .skills::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  overflow: hidden;
+}
 
+.skills-header{
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  z-index: 30;
+}
 #skills .skills-top {
   width: 500px;
   margin: 20px auto;
   text-align: center;
   z-index: 30;
-  background: rgba(255, 255, 255, 0.89);
+  background: rgb(255, 255, 255);
   border-radius: 10px;
 }
 
@@ -662,6 +686,7 @@ span {
   width: 80vw;
   padding: 5px;
   font-size: 2.5em;
+  font-weight: 600;
   cursor: pointer;
   border-radius: 3px;
   text-align: center;
