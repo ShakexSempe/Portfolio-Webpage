@@ -566,13 +566,31 @@ span {
 }
 #skills .skills-top {
   width: 90%;
-  padding: 1px;
+  padding: 1px 1px 30px 1px;
   text-align: center;
-  margin: 20px auto;
-  z-index: 30;
+  margin:5em auto;
   background: rgb(255, 255, 255);
   border-radius: 10px;
-  border: 1px solid #cd143c;
+  border: 2px solid #cd143c;
+  position: relative;
+  z-index: 30;
+}
+
+.skills-top::after{
+  content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-top: 0px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 0px solid #fff;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background: #fff;
 }
 
 
