@@ -1594,6 +1594,7 @@ img {
   /*End of header*/
   #skills .skills-bottom .skills-item {
     flex-basis: 33%;
+    width: 100%;
     margin: 1.5%;
     height: 300px;
   }
