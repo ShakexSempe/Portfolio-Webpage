@@ -889,7 +889,7 @@ span {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
-  border: 2px solid #ddd;
+  border: 1px solid #dc143c;
 }
 
 #projects .project-tile {
