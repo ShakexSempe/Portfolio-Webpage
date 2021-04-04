@@ -546,6 +546,7 @@ span {
   position: relative;
 }
 
+
 #skills .skills::after {
   content: "";
   position: absolute;
@@ -621,7 +622,7 @@ span {
   overflow: hidden;
   border-radius: 10px;
   height: auto;
-  border: 1px solid #999595;
+  border: 1px solid #fff;
 
   /*border radius not visiblie without hidden overflow*/
 }
@@ -748,6 +749,16 @@ span {
   position: relative;
   padding-bottom: 100px;
 }
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #dc143c;
+  opacity: .2;  
+}
 
 .dropdown-content::after {
   content: "";
@@ -757,7 +768,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.3;
+  opacity: 0.6;
   overflow: hidden;
 }
 
@@ -790,6 +801,7 @@ span {
   background-attachment: fixed;
   position: relative;
 }
+
 #projects .projects::after {
   content: "";
   position: absolute;
