@@ -565,7 +565,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.5;
   overflow: auto;
 }
 
@@ -768,8 +768,8 @@ span {
   width: 100%;
   background: #8f0c262c;
   /*glassmorphism effect*/
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 /* .dropdown-content::after {
