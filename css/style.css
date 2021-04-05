@@ -580,11 +580,18 @@ span {
   padding: 1px 1px 30px 1px;
   text-align: center;
   margin:5em auto;
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255); */
+  background-image: var(--overlay);
+  background: #485563e0;
   border-radius: 10px;
   border: 2px solid #cd143c;
   position: relative;
   z-index: 30;
+}
+.skills-top p {
+  color: #fff;
+  background: transparent;
+  overflow: hidden;
 }
 
 .skills-top::after{
@@ -592,16 +599,17 @@ span {
     position: absolute;
     width: 45px;
     height: 45px;
-    border-top: 0px solid #fff;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    border-left: 0px solid #fff;
+    border-top: 0px solid #cd143c;
+    border-right: 2px solid #cd143c;
+    border-bottom: 2px solid #cd143c;
+    border-left: 0px solid #cd143c;
     top: 100%;
     left: 50%;
-    margin-left: -15px;
+    margin-left: auto;
     transform: rotate(45deg);
-    margin-top: -25px;
-    background: #fff;
+    margin-top: -22px;
+    background-image: var(--overlay);
+    background: #485563;
 }
 
 
@@ -1011,6 +1019,7 @@ span {
 
 #projects .project-img {
   flex-basis: 50%;
+  width: 100%;
   height: 300px;
   overflow: hidden;
   position: relative;
