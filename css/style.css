@@ -546,7 +546,17 @@ span {
   position: relative;
 }
 
-
+#skills .skills::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  /*glassmorphism effect*/
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  width: 100%;
+}
 #skills .skills::after {
   content: "";
   position: absolute;
@@ -556,7 +566,7 @@ span {
   width: 100%;
   background-color: #000;
   opacity: 0.7;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .skills-header{
@@ -651,7 +661,7 @@ span {
   height: 100%;
   width: 100%;
   background: var(--overlay);
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -756,8 +766,10 @@ span {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #dc143c;
-  opacity: .2;  
+  background: #dc143c44;
+  /*glassmorphism effect*/
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .dropdown-content::after {
@@ -809,8 +821,10 @@ span {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #dc143c;
-  opacity: .2;  
+  background: #dc143c44;
+  /*glassmorphism effect*/
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);  
 }
 #projects .projects::after {
   content: "";
