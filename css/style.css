@@ -553,8 +553,8 @@ span {
   top: 0;
   height: 100%;
   /*glassmorphism effect*/
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  /* backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px); */
   width: 100%;
 }
 #skills .skills::after {
@@ -565,7 +565,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.2;
+  opacity: 0.6;
   overflow: auto;
 }
 
@@ -766,13 +766,13 @@ span {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #dc143c44;
+  background: #8f0c262c;
   /*glassmorphism effect*/
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
 
-.dropdown-content::after {
+/* .dropdown-content::after {
   content: "";
   position: absolute;
   left: 0;
@@ -782,7 +782,7 @@ span {
   background-color: #000;
   opacity: 0.5;
   overflow: hidden;
-}
+} */
 
 
 /* Change color of dropdown links on hover */
