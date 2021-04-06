@@ -229,7 +229,7 @@ span {
   font-size: 3.5rem;
   font-weight: 700;
   animation: animate 3s ease-in-out infinite;
-  animation-delay: calc(6s + .2s * var(--i))
+  animation-delay: calc(5s + .2s * var(--i))
 }
 
 /* cta keyframes*/
