@@ -584,7 +584,7 @@ span {
   background-image: var(--overlay);
   background: #485563cc;
   border-radius: 10px;
-  border: 2px solid #ddd;
+  border: 1px solid #dc143c;
   position: relative;
   z-index: 30;
 }
@@ -599,16 +599,16 @@ span {
     position: absolute;
     width: 45px;
     height: 45px;
-    border-top: 0px solid #fff;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    border-left: 0px solid #fff;
+    border-top: 0px solid #dc143c;
+    border-right: 1px solid #dc143c;
+    border-bottom: 1px solid #dc143c;
+    border-left: 0px solid #dc143c;
     top: 100%;
     left: 50%;
     margin-left: -22px;
     margin-top: -22px;
     transform: rotate(45deg);
-    background-image: linear-gradient(135deg, transparent 50%, #485563 0%);
+    background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
     
 }
 
