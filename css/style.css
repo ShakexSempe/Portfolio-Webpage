@@ -746,7 +746,8 @@ span {
 .dropbtn:hover,
 .dropbtn:focus {
   background: var(--overlay);
-  box-shadow: 15px 15px 10px #26262671;
+  border: 1px solid #dc143c;
+  outline: none;
   animation: none;
 }
 
