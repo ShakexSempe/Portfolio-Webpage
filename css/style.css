@@ -584,7 +584,7 @@ span {
   background-image: var(--overlay);
   background: #485563cc;
   border-radius: 10px;
-  border: 2px solid #cd143c;
+  border: 2px solid #ddd;
   position: relative;
   z-index: 30;
 }
@@ -599,15 +599,15 @@ span {
     position: absolute;
     width: 45px;
     height: 45px;
-    border-top: 0px solid #cd143c;
-    border-right: 2px solid #cd143c;
-    border-bottom: 2px solid #cd143c;
-    border-left: 0px solid #cd143c;
+    border-top: 0px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 0px solid #fff;
     top: 100%;
     left: 50%;
-    margin-left: auto;
-    transform: rotate(45deg);
+    margin-left: -22px;
     margin-top: -22px;
+    transform: rotate(45deg);
     background-image: var(--overlay);
     background: #485563;
 }
@@ -831,8 +831,8 @@ span {
   width: 100%;
   background: #dc143c44;
   /*glassmorphism effect*/
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);  
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);  
 }
 #projects .projects::after {
   content: "";
