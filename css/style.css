@@ -198,7 +198,7 @@ span {
   background: #e4dedf36;
   filter: blur(5px);
   animation: shadowButton 3s linear infinite;
-  animation-delay: 6.5s;
+  animation-delay: 5s;
 }
 
 @keyframes shadowButton {
