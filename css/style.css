@@ -1230,18 +1230,19 @@ img {
 }
 
 #contact .contact-items {
-  width: 400px;
+  width: 100%;
   z-index: 100;
 }
 
 #contact .contact-item {
-  width: 80%;
-  padding: 20px;
+  width: 75%;
+  height: auto;
+  padding: 10px;
   text-align: center;
   color: #ddd;
   border: 1px rgb(199, 196, 196) solid;
   border-radius: 10px;
-  margin: 30px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
