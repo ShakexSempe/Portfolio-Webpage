@@ -496,7 +496,7 @@ span {
   /*to allow overlay of this section*/
   z-index: 1;
   overflow: hidden;
-  animation: unit3 60s ease infinite alternate;
+  animation: unit3 70s ease infinite alternate;
 }
 
 @keyframes unit3 {
