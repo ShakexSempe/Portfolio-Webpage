@@ -496,7 +496,7 @@ span {
   /*to allow overlay of this section*/
   z-index: 1;
   overflow: hidden;
-  animation: unit3 70s ease infinite alternate;
+  animation: unit3 120s linear infinite alternate;
 }
 
 @keyframes unit3 {
@@ -1129,7 +1129,7 @@ span {
   width: 90%;
   position: relative;
   border: 1px rgb(199, 196, 196) solid;
-  box-shadow: 10px 10px 5px #4948488f;
+  box-shadow: 10px 10px 3px #0a0a0a59;
   filter: grayscale(0.3);
   border-radius: 10px;
   margin-top: 20px;
@@ -1247,9 +1247,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 6px 5px #cec6c62f;
+  box-shadow: 10px 10px 3px #0a0a0a59;
   transition: 0.4s ease;
-  filter: grayscale(0.7);
+  backdrop-filter: blur(1px);
 }
 
 #contact .contact-item:hover {
