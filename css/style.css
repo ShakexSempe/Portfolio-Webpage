@@ -279,38 +279,6 @@ span {
   height: auto;
 }
 
-.hero h1 span {
-  display: inline-block;
-  color: #fff;
-  text-align: left;
-  text-shadow: 0 0 10px #dc143c;
-  opacity: 0.7;
-  line-height: 1.3;
-  animation: hero-span 6s ease-in-out;
-  animation-delay: calc(1s + .5s * var(--s));
-  transition: all 3s;
-
-}
-
-@keyframes hero-span {
-  5% {
-    opacity: 1;
-
-  }
-
-  10% {
-    opacity: 1;
-    color: #dc143c8c;
-    transform: translateX(3px);
-    text-shadow: 0 0 1px #fff;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-
 #header .header {
   min-height: 8vh;
   background-color: rgba(31, 30, 30, 0.5);
@@ -513,11 +481,16 @@ span {
   height: 100vh;
   width: 100vw;
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -1;
   overflow: hidden;
 }
 
+#hero-h1 {
+  /* background: rgba(19, 2, 2, 0.479); */
+  backdrop-filter: blur(0.15em);
+  height: 40vh;
+}
 #welcome-section h1 {
   display: block;
   width: fit-content;
@@ -527,6 +500,35 @@ span {
   font-family: 'Philosopher', sans-serif;
 }
 
+.hero h1 span {
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 0 10px #dc143c;
+  opacity: 0.7;
+  line-height: 1.3;
+  animation: hero-span 6s ease-in-out;
+  animation-delay: calc(1s + .5s * var(--s));
+  transition: all 3s;
+}
+
+@keyframes hero-span {
+  5% {
+    opacity: 1;
+
+  }
+
+  10% {
+    opacity: 1;
+    color: #dc143c8c;
+    transform: translateX(3px);
+    text-shadow: 0 0 1px #fff;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 /*End of welcome-section*/
 
 /*Skills Section*/
@@ -565,7 +567,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.3;
   overflow: auto;
 }
 
@@ -582,7 +584,8 @@ span {
   margin:5em auto;
   /* background: rgb(255, 255, 255); */
   background-image: var(--overlay);
-  background: #485563cc;
+  background: #48556388;
+  backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1px solid #dc143c;
   position: relative;
@@ -591,6 +594,7 @@ span {
 .skills-top p {
   color: #fff;
   background: transparent;
+  
   overflow: hidden;
 }
 
@@ -842,7 +846,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.3;
   overflow: hidden
 }
 
@@ -886,7 +890,7 @@ span {
   color: #fff;
   width: 100%;
   background: linear-gradient(0deg, #dc134c, #333);
-  color: #fff;
+  color: #9e9595;
   text-align: center;
   padding: 3px;
   margin-bottom: 1.5em;
@@ -899,36 +903,25 @@ span {
   border: 2px solid #ddd;
   animation: shadow 2s ease-in-out infinite;
   font-family: 'Gruppo', cursive;
-
+  
 }
 
 @keyframes shadow {
   50% {
-    box-shadow: 15px 15px 10px #26262671;
+  color: #fff;
+  box-shadow: 15px 15px 10px #262626b2;
     border-radius: 10px;
-    color: #9e9595;
+    transform: scale(1.07);
   }
 }
 
-
-/* 
-.profile-link {
-  background: linear-gradient(0deg, #dc134c, #333);
-  color: #fff;
-  text-align: center;
-  padding: 3px;
-  margin: 5px;
-  font-size: 2.5rem;
-  width: 60%;
-  border-radius: 5px;
-  transition: all .4s;
-} */
 
 #profile-link:hover {
   transition: .2s ease-in-out;
   border-radius: 10px;
   color: #ccc;
   box-shadow: 15px 15px 10px #26262671;
+  animation: none;
 
 }
 
@@ -1002,19 +995,22 @@ span {
 #projects .project-tile a {
   color: rgb(253, 80, 114);
   background: #333;
-  border-radius: 10px;
   animation: project-link 2s linear infinite;
+  transform: scale(0.95);
 }
 
 @keyframes project-link {
   50% {
     color: #ddd;
+    transform: scale(1);
+    border-radius: 10px;
   }
 }
 
 #projects .project-tile a:hover {
-  transition: 0.4s ease;
   color: crimson;
+  transform: scale(1);
+  animation: none;
 }
 
 #projects .project-img {
@@ -1033,7 +1029,7 @@ span {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .tech-list {
