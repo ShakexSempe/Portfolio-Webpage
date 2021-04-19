@@ -481,19 +481,23 @@ span {
   height: 100vh;
   width: 100vw;
   background-color: #000;
-  opacity: 0.4;
+  opacity: 0.5;
   z-index: -1;
   overflow: hidden;
 }
 
 #hero-h1 {
-  /* background: rgba(19, 2, 2, 0.479); */
-  backdrop-filter: blur(0.15em);
-  height: 40vh;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(221, 221, 221, 0.096);
+  padding: 15px;
+  border-radius: 5px;
+  height: 50vh;
 }
 #welcome-section h1 {
   display: block;
   width: fit-content;
+  /* box-shadow: 5px 20px 5px rgba(0, 0, 0, 0.185); */
   font-size: 4.8rem;
   position: relative;
   color: #eee;
@@ -567,7 +571,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.3;
+  opacity: 0.4;
   overflow: auto;
 }
 
@@ -833,7 +837,7 @@ span {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #dc143c44;
+  background: #dc143c27;
   /*glassmorphism effect*/
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);  
