@@ -912,7 +912,10 @@ span {
   font-family: 'Gruppo', cursive;
   
 }
-
+#profile-link i {
+  font-size: 2em;
+  margin-right: 0.2em;
+}
 @keyframes shadow {
   50% {
   color: #fff;
@@ -997,6 +1000,7 @@ span {
   font-size: 1.4rem;
   font-weight: 200;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 #projects .project-tile a {
@@ -1004,18 +1008,22 @@ span {
   background: #333;
   animation: project-link 2s linear infinite;
   transform: scale(0.95);
+  border: 1px solid #ddd;
+  padding: 5px;
+  transition: .5s ease;
+
 }
 
 @keyframes project-link {
   50% {
     color: #ddd;
-    transform: scale(1);
     border-radius: 10px;
   }
 }
 
 #projects .project-tile a:hover {
   color: crimson;
+  transition: .5s ease;
   transform: scale(1);
   animation: none;
 }
