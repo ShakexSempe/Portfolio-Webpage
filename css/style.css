@@ -177,14 +177,16 @@ span {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
-  background-color: #85848462;
+  background-color: #8584843a;
   box-shadow: 5px 10px 10px #dc143c63;
   border-radius: 10px;
   margin: 30px 5px;
-  width: 240px;
+  width: 300px;
   text-align: center;
   transition: 3s ease-in-out;
   transition-property: color;
+  font-family: 'Gruppo', cursive;
+
 }
 
 #cta-header::before {
@@ -226,7 +228,7 @@ span {
   display: inline-block;
   color: #fff;
 
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   animation: animate 3s ease-in-out infinite;
   animation-delay: calc(5s + .2s * var(--i))
@@ -1436,7 +1438,7 @@ img {
   }
 
   #cta-header span {
-    font-size: 5.4rem;
+    font-size: 6.4rem;
   }
 
   #cta-header {
@@ -1653,7 +1655,7 @@ img {
   }
 
   #cta-header span {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   #aka span {
