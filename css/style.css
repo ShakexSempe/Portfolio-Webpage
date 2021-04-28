@@ -1079,7 +1079,7 @@ span {
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 10px 100px 10px;
 
   background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
 
@@ -1375,8 +1375,8 @@ img {
   bottom: 3rem;
   right: 3rem;
   background: #dc143c;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   display: grid;
   place-items: center;
   border-radius: 5px;
@@ -1388,14 +1388,14 @@ img {
 }
 .show-link {
   visibility: visible;
-  z-index: 1000;
+  z-index: 100;
 }
 @keyframes bounce {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
