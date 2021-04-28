@@ -1114,7 +1114,8 @@ span {
 }
 
 #about .col-right {
-  width: 100%;
+  width: 90%;
+  margin-right: 30px;
   height: auto;
   z-index: 20;
   background: #fff;
@@ -1382,13 +1383,16 @@ img {
   border-radius: 5px;
   color: #fff;
   animation: bounce 2s ease-in-out infinite;
-
+  transition: .5s ease-in;
+  opacity: 0;
   visibility: hidden;
   z-index: -100;
 }
 .show-link {
+  transition: opacity 1s ease-in-out;
   visibility: visible;
   z-index: 100;
+  opacity: 1;
 }
 @keyframes bounce {
   0% {
