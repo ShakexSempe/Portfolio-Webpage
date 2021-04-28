@@ -551,6 +551,9 @@ span {
   background-attachment: fixed;
   position: relative;
 }
+.skills {
+  justify-content: flex-start;
+}
 
 #skills .skills::before {
   content: "";
