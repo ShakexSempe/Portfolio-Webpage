@@ -577,9 +577,11 @@ span {
 
 .skills-header{
   width: 100%;
-  height: 200px;
+  height: auto;
   background: #fff;
   z-index: 30;
+  /* position: absolute;
+  top: 0; */
 }
 #skills .skills-top {
   width: 90%;
@@ -820,7 +822,7 @@ span {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 0;
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1064,7 +1066,7 @@ span {
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 10px 20px;
 
   background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
 
@@ -1197,7 +1199,7 @@ img {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 0;
   background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
   background-repeat: no-repeat;
   background-size: cover;
