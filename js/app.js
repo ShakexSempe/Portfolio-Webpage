@@ -18,18 +18,18 @@ scrollLinks.forEach(link => {
 
         let position = element.offsetTop;
         
-        if(!fixedNav) {
-            position = position- navHeight;
-        }
-        if(navHeight > 82) {
-            position = position + containerHeight;
-        }
+        // if(!fixedNav) {
+        //     position = position- navHeight;
+        // }
+        // if(navHeight > 82) {
+        //     position = position + containerHeight;
+        // }
 
         window.scrollTo({
             left: 0,
             top: position,
         });
-        linksContainer.style.height = 0;
+        // linksContainer.style.height = 0;
     });
 });
 

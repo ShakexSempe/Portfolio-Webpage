@@ -821,7 +821,7 @@ span {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  /* padding: 150px 0; */
+  padding: 50px 0;
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1066,7 +1066,7 @@ span {
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 80px 20px;
 
   background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
 
@@ -1199,7 +1199,7 @@ img {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5em 0;
+  padding: 60px 0;
   background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
   background-repeat: no-repeat;
   background-size: cover;
