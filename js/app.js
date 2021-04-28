@@ -16,7 +16,7 @@ scrollLinks.forEach(link => {
         const containerHeight = linksContainer.getBoundingClientRect().height;
         const fixedNav = navbar.classList.contains('fixed-nav');
 
-        let position = element.offsetTop;
+        let position = element.offsetTop - navHeight;
         
         // if(!fixedNav) {
         //     position = position- navHeight;
