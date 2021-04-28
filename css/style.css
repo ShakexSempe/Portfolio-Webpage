@@ -228,7 +228,7 @@ span {
   display: inline-block;
   color: #fff;
 
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 700;
   animation: animate 3s ease-in-out infinite;
   animation-delay: calc(5s + .2s * var(--i))
@@ -244,7 +244,7 @@ span {
   20% {
     transform: translateY(-5px);
     color: #cd143c;
-    background: linear-gradient(0deg, #000, #dc143c, #ff0000, #000);
+    background: linear-gradient(0deg, #ff0000, #dc143c, #ff0000, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
@@ -491,7 +491,7 @@ span {
 #hero-h1 {
   background: transparent;
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(221, 221, 221, 0.096);
+  /* border: 1px solid rgba(221, 221, 221, 0.096); */
   padding: 15px;
   border-radius: 5px;
   height: 50vh;
