@@ -180,7 +180,7 @@ span {
   background-color: #8584843a;
   box-shadow: 5px 10px 10px #dc143c63;
   border-radius: 10px;
-  margin: 30px 5px;
+  margin: 10px 5px;
   width: 300px;
   text-align: center;
   transition: 3s ease-in-out;
@@ -794,23 +794,6 @@ span {
   -webkit-backdrop-filter: blur(1px);
 }
 
-/* .dropdown-content::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  overflow: hidden;
-} */
-
-
-/* Change color of dropdown links on hover */
-/* .dropdown-content a:hover {
-  background-color: #ddd
-} */
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
@@ -1389,7 +1372,7 @@ img {
   z-index: -100;
 }
 .show-link {
-  transition: opacity 1s ease-in-out;
+  transition: opacity .5s ease-in-out;
   visibility: visible;
   z-index: 100;
   opacity: 1;
