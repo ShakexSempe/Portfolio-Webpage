@@ -691,6 +691,10 @@ span {
 #skills .skills-bottom .icon {
   height: 80px;
   width: 80px;
+  /* border: 1px solid #eee; */
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px #ddd;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
