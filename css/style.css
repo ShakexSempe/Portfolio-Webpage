@@ -1346,7 +1346,6 @@ img {
 #footer .social-item i:hover {
   filter: grayscale(0.6);
   transform: scale(1.2);
-  box-shadow: 1px 1px 5px rgba(221, 221, 221, 0.695);
 }
 
 #footer p {
