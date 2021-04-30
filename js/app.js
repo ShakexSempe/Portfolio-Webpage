@@ -5,7 +5,6 @@ const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 
 scrollLinks.forEach(link => {
-  console.log(link)
     //prevent default
     link.addEventListener('click', e => {
         e.preventDefault();
@@ -19,29 +18,12 @@ scrollLinks.forEach(link => {
 
         let position = element.offsetTop - navHeight;
         
-        // if(!fixedNav) {
-        //     position = position- navHeight;
-        // }
-        // if(navHeight > 82) {
-        //     position = position + containerHeight;
-        // }
-
         window.scrollTo({
             left: 0,
             top: position,
         });
-        // linksContainer.style.height = 0;
     });
 });
-
-
-
-
-
-
-
-
-
 
 
 //Hamburger Menu
@@ -119,7 +101,7 @@ function dropdown() {
   }
 /*end of skills dropdown*/  
 
-/*scrollbar*/
+/*bootsrap scrollbar*/
 $(function(){
   $("#content-1").mCustomScrollbar({
       theme: "dark-thin"
