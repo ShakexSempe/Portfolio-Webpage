@@ -1296,9 +1296,10 @@ img {
 }
 
 #footer .footer {
-  min-height: 200px;
+  min-height: 250px;
   flex-direction: column;
-  padding-top: 50px;
+  justify-content: space-between;
+  padding-top: 30px;
   padding-bottom: 10px;
 }
 
@@ -1307,7 +1308,7 @@ img {
   font-weight: 500;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -1336,7 +1337,7 @@ img {
   box-shadow: 2px 2px 1px rgba(221, 221, 221, 0.295);
   border-radius: 100%;
   padding: 10px;
-  background: linear-gradient(0deg, rgb(100, 97, 100), rgb(231, 231, 243));
+  background: linear-gradient(0deg, rgb(119, 118, 119), rgb(239, 239, 245));
   /* background: linear-gradient(0deg, rgb(100, 97, 100), rgb(231, 231, 243)); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
