@@ -1331,12 +1331,13 @@ img {
   transition: 0.3s ease;
 }
 #footer .social-item i {
-  font-size: 2em;
+  font-size: 3em;
   margin: 0 10px;
   box-shadow: 2px 2px 1px rgba(221, 221, 221, 0.295);
   border-radius: 100%;
   padding: 10px;
-  background: linear-gradient(0deg, rgb(233, 45, 233), rgb(71, 71, 236));
+  background: linear-gradient(0deg, rgb(100, 97, 100), rgb(231, 231, 243));
+  /* background: linear-gradient(0deg, rgb(100, 97, 100), rgb(231, 231, 243)); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.3s ease;
