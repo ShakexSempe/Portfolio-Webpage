@@ -1318,7 +1318,9 @@ img {
 
 #footer .social-icon {
   display: flex;
-  margin: 5px;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 5px auto;
 }
 
 #footer .social-item {
@@ -1363,9 +1365,6 @@ img {
 
 /*end of bs12*/
 
-#date {
-
-}
 /*End of Footer*/
 
 /*back to top button*/
