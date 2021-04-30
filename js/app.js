@@ -107,3 +107,9 @@ $(function(){
       theme: "dark-thin"
   });
 });
+/*end of bootsrap scrollbar*/
+
+/*set footer date*/
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
+/*end of set footer date*/

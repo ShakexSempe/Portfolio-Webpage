@@ -1348,7 +1348,7 @@ img {
   transform: scale(1.2);
 }
 
-#footer p {
+#footer p, #date {
   color: #f4f4f4;
   font-size: 1.3rem;
 
@@ -1363,6 +1363,9 @@ img {
 
 /*end of bs12*/
 
+#date {
+
+}
 /*End of Footer*/
 
 /*back to top button*/
