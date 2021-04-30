@@ -1330,8 +1330,23 @@ img {
   filter: grayscale(0);
   transition: 0.3s ease;
 }
+#footer .social-item i {
+  font-size: 2em;
+  margin: 0 10px;
+  box-shadow: 1px 1px 10px rgba(221, 221, 221, 0.295);
+  border-radius: 100%;
+  padding: 10px;
+  background: linear-gradient(0deg, rgb(233, 45, 233), rgb(71, 71, 236));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease;
+}
 
 #footer .social-item img:hover {
+  filter: grayscale(0.7);
+  transform: scale(1.2);
+}
+#footer .social-item i:hover {
   filter: grayscale(0.7);
   transform: scale(1.2);
 }
@@ -1721,6 +1736,18 @@ img {
     margin: 20px auto;
   }
 
+  #contact .contact-info h1 {
+    font-size: 3.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgba(221, 221, 221, 0.452);
+  }
+  #contact .contact-info h1:hover{
+    border-bottom: 1px dashed #dc143c;
+  }
+  #contact .contact-info h2 {
+    font-size: 1.5em;
+  }
+
   /*about*/
   .profile-link {
     font-size: 2.2rem;
@@ -1729,7 +1756,18 @@ img {
   .camp_hub {
     justify-content: space-evenly;
   }
+  #footer .social-icon {
+    display: flex;
+    margin: 30px auto;
+    width: 50%;
+    justify-content: space-evenly;
+    font-size: 4em;
+  margin: 0 10px;
+  box-shadow: 1px 1px 10px rgba(221, 221, 221, 0.295);
+  border-radius: 100%;
+  padding: 10px;
 }
+  }
 
 .tech-list li {
   font-size: 1.3em;
