@@ -1333,7 +1333,7 @@ img {
 #footer .social-item i {
   font-size: 2em;
   margin: 0 10px;
-  box-shadow: 1px 1px 10px rgba(221, 221, 221, 0.295);
+  box-shadow: 2px 2px 1px rgba(221, 221, 221, 0.295);
   border-radius: 100%;
   padding: 10px;
   background: linear-gradient(0deg, rgb(233, 45, 233), rgb(71, 71, 236));
@@ -1341,19 +1341,16 @@ img {
   -webkit-text-fill-color: transparent;
   transition: 0.3s ease;
 }
-
-#footer .social-item img:hover {
-  filter: grayscale(0.7);
-  transform: scale(1.2);
-}
 #footer .social-item i:hover {
-  filter: grayscale(0.7);
+  filter: grayscale(0.6);
   transform: scale(1.2);
+  box-shadow: 1px 1px 5px rgba(221, 221, 221, 0.695);
 }
 
 #footer p {
   color: #f4f4f4;
   font-size: 1.3rem;
+
 }
 
 /*bs12*/
@@ -1762,12 +1759,19 @@ img {
     width: 50%;
     justify-content: space-evenly;
     font-size: 4em;
-  margin: 0 10px;
-  box-shadow: 1px 1px 10px rgba(221, 221, 221, 0.295);
-  border-radius: 100%;
-  padding: 10px;
+  
 }
-  }
+
+#footer .social-icon i {
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 1.1em;
+  box-shadow: 1px 1px 5px rgba(221, 221, 221, 0.527);
+}
+#footer .social-icon i:hover {
+  transition: all .3s ease-in-out;
+  box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.827);
+}
 
 .tech-list li {
   font-size: 1.3em;
