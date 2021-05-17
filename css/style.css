@@ -1117,7 +1117,8 @@ span {
 }
 
 #about .col-right p {
-  margin-bottom: 2.1em;
+  margin-bottom: 20px;
+  text-overflow: ellipsis;
   text-align: left;
   padding-left: 4px;
 }
@@ -1126,6 +1127,7 @@ span {
   height: 200px;
   margin-bottom: 2em;
 }
+
 #about .col-left .about-img {
   height: 100%;
   width: 90%;
@@ -1168,7 +1170,6 @@ img {
   background: #dc143c;
   color: #fff;
   padding: 8px;
-  margin: 5px auto;
   box-shadow: 15px 15px 5px #26262671;
   transition: color .5s;
   border: 2px solid #dc143c;
