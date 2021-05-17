@@ -1123,6 +1123,10 @@ span {
   padding-left: 4px;
 }
 
+.custom-scrollbar-js {
+  height: 200px;
+  margin-bottom: 2em;
+}
 
 #about .col-left .about-img {
   height: 100%;
