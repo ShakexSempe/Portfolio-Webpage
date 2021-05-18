@@ -541,7 +541,7 @@ span {
 #skills .skills {
   flex-direction: column;
   text-align: center;
-  max-width: 1500px;
+  width: 100vw;
   margin: 0px auto;
   /* padding:  30vh 0 50vh 0; */
 
@@ -597,7 +597,7 @@ span {
   background: #48556388;
   backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid #dc143c;
+  border: 1px solid #ddd;
   position: relative;
   z-index: 30;
 }
@@ -613,10 +613,10 @@ span {
     position: absolute;
     width: 45px;
     height: 45px;
-    border-top: 0px solid #dc143c;
-    border-right: 1px solid #dc143c;
-    border-bottom: 1px solid #dc143c;
-    border-left: 0px solid #dc143c;
+    border-top: 0px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 0px solid #ddd;
     top: 100%;
     left: 50%;
     margin-left: -22px;
@@ -743,10 +743,11 @@ span {
   font-size: 2.5em;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 10px;
   text-align: center;
   transition: all .3s;
   font-family: 'Gruppo', cursive;
+  box-shadow: 0px 10px 3px rgba(77, 25, 25, 0.651);
 
 }
 
@@ -762,10 +763,13 @@ span {
 
 .dropbtn:hover,
 .dropbtn:focus {
+  transition: all .4s ease;
   background: var(--overlay);
-  border: 1px solid #dc143c;
+  /* border: 1px solid #dc143c; */
+  border-radius: 10px;
   outline: none;
   animation: none;
+  box-shadow: 0px 3px 5px #cc0d33;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -1256,8 +1260,8 @@ img {
 }
 
 #contact .contact-item:hover {
-  box-shadow: 3px 3px 0px 1px #dc143c75;
-  border: 1px #dc143c solid;
+  box-shadow: 5px 5px 1px #dc143c75;
+  /* border: 1px #dc143c solid; */
   border-radius: 20px;
   background-color: #f4f4f4;
   color: #dc143c;
@@ -1393,6 +1397,8 @@ img {
   visibility: hidden;
   z-index: -100;
 }
+
+
 .show-link {
   transition: opacity .5s ease-in-out;
   visibility: visible;
