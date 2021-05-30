@@ -613,10 +613,10 @@ span {
     position: absolute;
     width: 45px;
     height: 45px;
-    border-top: 0px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-left: 0px solid #ddd;
+    border-top: 0px solid #cd143c;
+    border-right: 1px solid #cd143c;
+    border-bottom: 1px solid #cd143c;
+    border-left: 0px solid #cd143c;
     top: 100%;
     left: 50%;
     margin-left: -22px;
