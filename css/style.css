@@ -597,7 +597,7 @@ span {
   background: #48556388;
   backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #cd134c;
   position: relative;
   z-index: 30;
 }
