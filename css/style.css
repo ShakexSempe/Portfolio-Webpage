@@ -770,7 +770,7 @@ span {
   border-radius: 10px;
   outline: none;
   animation: none;
-  box-shadow: 0px 3px 5px #cc0d33;
+  box-shadow: 0px 3px 2px #cc0d33;
 }
 
 /* Dropdown Content (Hidden by Default) */
