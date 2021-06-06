@@ -11,7 +11,9 @@
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
   --redGradient: linear-gradient(0deg, #000, #dc243c, #000);
 }
-
+body  {
+  overflow-x: hidden;
+}
 html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
@@ -541,7 +543,7 @@ span {
 #skills .skills {
   flex-direction: column;
   text-align: center;
-  max-width: 1500px;
+  width: 100vw;
   margin: 0px auto;
   /* padding:  30vh 0 50vh 0; */
 
@@ -597,7 +599,7 @@ span {
   background: #48556388;
   backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid #dc143c;
+  border: 1px solid #cd134c;
   position: relative;
   z-index: 30;
 }
@@ -613,10 +615,10 @@ span {
     position: absolute;
     width: 45px;
     height: 45px;
-    border-top: 0px solid #dc143c;
-    border-right: 1px solid #dc143c;
-    border-bottom: 1px solid #dc143c;
-    border-left: 0px solid #dc143c;
+    border-top: 0px solid #cd143c;
+    border-right: 1px solid #cd143c;
+    border-bottom: 1px solid #cd143c;
+    border-left: 0px solid #cd143c;
     top: 100%;
     left: 50%;
     margin-left: -22px;
@@ -743,7 +745,7 @@ span {
   font-size: 2.5em;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 10px;
   text-align: center;
   transition: all .3s;
   font-family: 'Gruppo', cursive;
@@ -762,10 +764,13 @@ span {
 
 .dropbtn:hover,
 .dropbtn:focus {
+  transition: all .4s ease;
   background: var(--overlay);
-  border: 1px solid #dc143c;
+  /* border: 1px solid #dc143c; */
+  border-radius: 10px;
   outline: none;
   animation: none;
+  box-shadow: 0px 3px 2px #cc0d33;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -1256,8 +1261,8 @@ img {
 }
 
 #contact .contact-item:hover {
-  box-shadow: 3px 3px 0px 1px #dc143c75;
-  border: 1px #dc143c solid;
+  box-shadow: 5px 5px 1px #dc143c75;
+  /* border: 1px #dc143c solid; */
   border-radius: 20px;
   background-color: #f4f4f4;
   color: #dc143c;
@@ -1288,6 +1293,90 @@ img {
 /*Footer*/
 #footer {
   background-image: var(--overlay);
+  height: 100vh;
+}
+#footer .footer-container {
+  display: flex;
+}
+
+#footer .scene {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: sceneRotate 10s infinite linear;
+}
+
+        @keyframes sceneRotate {
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+#footer .cube-container {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-size: 70px;
+    perspective: 20em;
+    perspective-origin: 50% calc(50% - 6em);
+}
+#footer .cube {
+    width: 1em;
+    height: 1em;
+    transform: preserve-3d;
+    position: absolute;
+    bottom: -.5em;
+    left: -.5em;
+
+}
+
+#footer .front,
+        .back,
+        .left,
+        .right {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #0c7b8aaa;
+            box-shadow: 0 0 0.5em #000a inset;
+            pointer-events: none;
+        }
+
+        #footer .cube .front {
+          transform: translateZ(.5em);
+      }
+
+      #footer .cube .right {
+          transform: rotateY(90deg) translateZ(.5em);
+      }
+
+      #footer .cube  .back {
+          transform: rotateY(180deg) translateZ(.5em);
+      }
+
+      #footer .cube  .left {
+          transform: rotateY(270deg) translateZ(.5em);
+      }
+
+#footer .cube .top {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: #0c7b8aaa;
+
+  transform: translateY(-50%) rotateX(90deg);
+  box-shadow: 0 0 0.5em #000a inset;
+}
+
+#footer .cube .bottom {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  bottom: 0;
+  background: #000a;
+
+  transform: translateY(50%) rotateX(90deg);
+  box-shadow: 0 0 0.5em #000;
 }
 
 #bs21 ul {
@@ -1302,9 +1391,8 @@ img {
 }
 
 #footer .footer {
-  min-height: 250px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 30px;
   padding-bottom: 10px;
 }
@@ -1393,6 +1481,8 @@ img {
   visibility: hidden;
   z-index: -100;
 }
+
+
 .show-link {
   transition: opacity .5s ease-in-out;
   visibility: visible;
