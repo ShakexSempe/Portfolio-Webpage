@@ -11,6 +11,8 @@
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
   --redGradient: linear-gradient(0deg, #000, #dc243c, #000);
   --crimson-light: #dc243c;
+  --text-shadow-lg: 2px 2px 1px #000a;
+  --text-shadow-sm: 1px 1px 1px #000a;
 }
 body  {
   overflow-x: hidden;
@@ -600,8 +602,8 @@ span {
   background: #48556388;
   backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid var(--crimson-light);
-  box-shadow: inset 1px 1px 3px #000a, inset -1px -1px 2px #000a;
+  /* border: 2px solid #f351718f; */
+  box-shadow: inset 1px 1px 5px #ddda, inset -1px -1px 5px #f35171b2 ;
   position: relative;
   z-index: 30;
 }
@@ -618,8 +620,8 @@ span {
     width: 45px;
     height: 45px;
     border-top: 0px solid #cd143c;
-    border-right: 1px solid #cd143c;
-    border-bottom: 1px solid #cd143c;
+    border-right: 3px solid #f351718f;
+    border-bottom: 3px solid #f351718f;
     border-left: 0px solid #cd143c;
     top: 100%;
     left: 50%;
@@ -639,6 +641,7 @@ span {
   /*items wrapped onto multiple lines*/
   margin-top: 50px;
   padding-top: 50px;
+  text-shadow: var(--text-shadow-sm);
 }
 
 #skills .skills-item {
