@@ -9,7 +9,7 @@
 /*root*/
 :root {
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  --redGradient: linear-gradient(90deg, #000, #dc243c, #000);
+  --redGradient: linear-gradient(0deg, #000, #dc243c, #000);
   --crimson-light: #dc243c;
 }
 body  {
@@ -998,28 +998,32 @@ span {
 }
 
 #projects .project-tile a {
-  color: rgb(253, 80, 114);
+  color: #fff;
   background: #333;
   animation: project-link 2s linear infinite;
-  transform: scale(0.95);
   border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
   padding: 5px;
-  transition: .5s ease;
+  transition: all .3s ease;
 
 }
 
 @keyframes project-link {
   50% {
-    color: #ddd;
-    border-radius: 10px;
   }
 }
 
 #projects .project-tile a:hover {
   color: crimson;
-  transition: .5s ease;
+  transition: .3s ease;
   transform: scale(1);
   animation: none;
+}
+
+#projects .project-tile a:hover h2 {
+  text-decoration: 1px solid underline#f4f4f4;
+  text-underline-offset: .3em;
 }
 
 #projects .project-img {
