@@ -1588,7 +1588,7 @@ img {
   }
   #skills .skills-item:hover {
     transform: scale(1.05);
-    border: 1px solid #dc143c;
+    border: 3px solid #fff;
   }
 
   #skills .skills-item h2 {
