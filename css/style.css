@@ -603,7 +603,7 @@ span {
   backdrop-filter: blur(2px);
   border-radius: 10px;
   /* border: 2px solid #f351718f; */
-  box-shadow: inset 1px 1px 5px #ddda, inset -1px -1px 5px #f35171b2 ;
+  box-shadow: inset 1px 1px 5px #ddda, inset -1px -1px 5px #f5869cb2 ;
   position: relative;
   z-index: 30;
 }
@@ -620,8 +620,8 @@ span {
     width: 45px;
     height: 45px;
     border-top: 0px solid #cd143c;
-    border-right: 3px solid #f351718f;
-    border-bottom: 3px solid #f351718f;
+    border-right: 3px solid #f5869c86;
+    border-bottom: 3px solid #f5869c86;
     border-left: 0px solid #cd143c;
     top: 100%;
     left: 50%;
