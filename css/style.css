@@ -980,7 +980,6 @@ span {
   line-height: 1em;
   padding-bottom: 10px;
   border-bottom: 1px dashed #fff;
-
   background: linear-gradient(0deg, #b9b6b6, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1027,12 +1026,12 @@ span {
 
 
 #projects .project-tile a i {
-  background-image: linear-gradient(90deg, #fff, #f1eeef75, #fff);
+  background-image: linear-gradient(30deg, #fff 10%, #aef50a , #fff 60% );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 150%;
-  background-position: left;
-  animation: icon-gradient 1s linear infinite alternate;
+  background-size: 900%;
+  background-position: right;
+  animation: icon-gradient 2s linear infinite;
   font-size: 2.5em;
 }
 
@@ -1044,7 +1043,7 @@ span {
 
 @keyframes icon-gradient {
   100% {
-    background-position: right;
+    background-position: left;
   }
 }
 
