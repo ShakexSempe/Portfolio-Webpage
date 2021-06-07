@@ -601,6 +601,7 @@ span {
   backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1px solid var(--crimson-light);
+  box-shadow: inset 1px 1px 3px #000a, inset -1px -1px 2px #000a;
   position: relative;
   z-index: 30;
 }
@@ -1580,7 +1581,9 @@ img {
     margin: 2.5%;
     height: 240px;
   }
-
+  #skills .skills-top p{
+    line-height: 2;
+  }
   #skills .skills-item:hover {
     transform: scale(1.05);
     border: 1px solid #dc143c;
