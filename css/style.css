@@ -10,7 +10,7 @@
 :root {
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
   --redGradient: linear-gradient(0deg, #000, #dc243c, #000);
-  --crimson-light: #dc143c;
+  --crimson-light: #dc243c;
 }
 body  {
   overflow-x: hidden;
@@ -1031,19 +1031,19 @@ span {
   animation: icon-gradient 1s linear infinite alternate;
   font-size: 2.5em;
 }
+
 #projects .project-tile a:hover i {
   transition: 1s ease;
   transform: scale(1.6);
   margin: .3em 0 0 1em;
-
-
 }
 
 @keyframes icon-gradient {
   100% {
     background-position: right;
   }
-} 
+}
+
 #projects .project-img {
   flex-basis: 50%;
   width: 100%;
