@@ -9,7 +9,8 @@
 /*root*/
 :root {
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  --redGradient: linear-gradient(0deg, #000, #dc243c, #000);
+  --redGradient: linear-gradient(90deg, #000, #dc243c, #000);
+  --crimson-light: #dc243c;
 }
 body  {
   overflow-x: hidden;
@@ -40,7 +41,7 @@ html {
   height: 4px;
   background: var(--redGradient);
   width: 0%;
-}
+  border-radius: 10px;}
 
 /*end of progress bar*/
 
@@ -599,7 +600,7 @@ span {
   background: #48556388;
   backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid #cd134c;
+  border: 1px solid var(--crimson-light);
   position: relative;
   z-index: 30;
 }
