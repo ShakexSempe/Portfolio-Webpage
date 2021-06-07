@@ -10,7 +10,7 @@
 :root {
   --overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
   --redGradient: linear-gradient(0deg, #000, #dc243c, #000);
-  --crimson-light: #dc243c;
+  --crimson-light: #920a1c;
 }
 body  {
   overflow-x: hidden;
