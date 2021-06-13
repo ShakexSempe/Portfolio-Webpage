@@ -182,15 +182,15 @@ span {
   display: inline-block;
   padding: .5em 1em;
   background-color: #8584843a;
-  box-shadow: 5px 10px 10px #dc143c63;
+  box-shadow: -5px -10px 5px #dc143c63 ,5px 10px 10px #dc143c63;
   border-radius: 10px;
   margin: 10px 5px;
-  width: 250px;
+  width: 70%;
   text-align: center;
   transition: 3s ease-in-out;
   transition-property: color;
   font-family: 'Gruppo', cursive;
-
+  border-radius: 40px;
 }
 
 #cta-header::before {
