@@ -1204,7 +1204,7 @@ img {
 
 #cv {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 1.6em;
   /* background: #dc143c; */
   background-image: linear-gradient(0deg, #dc143c, #000);
@@ -1226,6 +1226,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 #cv i {
@@ -1905,6 +1906,10 @@ img {
   /*about*/
   .profile-link {
     font-size: 2.2rem;
+  }
+  #cv {
+  justify-content: space-evenly;
+
   }
   #cv:hover {
     color: #333;
