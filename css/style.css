@@ -209,6 +209,7 @@ span {
   filter: blur(5px);
   animation: shadowButton 3s linear infinite;
   animation-delay: 5s;
+  opacity: .3;
 }
 
 @keyframes shadowButton {
@@ -221,9 +222,11 @@ span {
 #cta-header:hover {
   /* background: transparent; */
   transition: all .2s linear;
-  box-shadow: 0 0 5px #dc143c ,0 0 15px #ce0d34e8,
-  inset 3px 3px 2px #dddddd46,
-  inset -3px -3px 2px #000a;
+  box-shadow: 0 0 15px #ce0d3491,
+              -4px 0 15px #dddddd46, 
+              4px 0 15px #000a,
+              inset 4px 4px 5px #000a,
+              inset -4px -4px 5px #dddddd46;
 
 }
 
@@ -235,7 +238,6 @@ span {
   position: relative;
   display: inline-block;
   color: #fff;
-
   font-size: 4rem;
   font-weight: 700;
   animation: animate 3s ease-in-out infinite;
