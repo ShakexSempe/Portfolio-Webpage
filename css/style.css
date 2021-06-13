@@ -180,17 +180,19 @@ span {
 #cta-header {
   position: relative;
   display: inline-block;
+  text-align: center;
+  font-family: 'Gruppo', cursive;
+  
   padding: .5em 1em;
-  background-color: #8584843a;
-  box-shadow: -5px -10px 5px #dc143c63 ,5px 10px 10px #dc143c63;
-  border-radius: 10px;
   margin: 10px 5px;
   width: 70%;
-  text-align: center;
-  transition: 3s ease-in-out;
-  transition-property: color;
-  font-family: 'Gruppo', cursive;
   border-radius: 40px;
+  
+  background-color: #8584843a;
+  box-shadow: -2px -5px 5px #dc143c63 ,3px 5px 5px #dc143ca8;
+  text-shadow: 2px 2px 2px #000;
+
+  transition: .3s linear;
 }
 
 #cta-header::before {
@@ -216,7 +218,7 @@ span {
 
 #cta-header:hover {
   background: transparent;
-  transition: all .8s;
+  transition: all .3s linear;
   box-shadow: inset 0px 0px 20px #ce0d34b9,
     0px 0px 30px rgba(255, 255, 255, 0.61);
   filter: blur(0);
@@ -253,12 +255,13 @@ span {
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     box-shadow: none;
+    text-shadow: none;
   }
 
   40%,
   100% {
     transform: translateY(0);
-
+    
   }
 }
 
@@ -1779,6 +1782,10 @@ img {
 
   h1.section-title {
     font-size: 6rem;
+  }
+
+  #cta-header {
+    width: 75%;
   }
 
   #cta-header span {
