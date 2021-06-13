@@ -520,8 +520,7 @@ span {
   display: inline-block;
   color: #fff;
   text-align: left;
-  text-shadow: 0 0 10px #dc143c;
-  opacity: 1;
+  text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
   line-height: 1.3;
   animation: hero-span 6s ease-in-out;
   animation-delay: calc(1s + .5s * var(--s));
