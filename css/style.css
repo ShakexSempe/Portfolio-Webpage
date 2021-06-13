@@ -183,13 +183,15 @@ span {
   text-align: center;
   font-family: 'Gruppo', cursive;
   
-  padding: .5em 1em;
+  padding: .7em 1em;
   margin: 10px 5px;
   width: 70%;
   border-radius: 40px;
   
   background-color: #8584843a;
-  box-shadow: -2px -5px 5px #dc143c63 ,3px 5px 5px #dc143ca8;
+  box-shadow: 0 0 5px #000a,
+              inset 5px 5px 5px #dddddd46,
+              inset -5px -5px 5px #ce0d344f;
   text-shadow: 2px 2px 2px #000;
 
   transition: .3s linear;
@@ -219,9 +221,9 @@ span {
 #cta-header:hover {
   background: transparent;
   transition: all .3s linear;
-  box-shadow: inset 0px 0px 20px #ce0d34b9,
-    0px 0px 10px rgba(255, 255, 255, 0.61);
-  filter: blur(0);
+  box-shadow: inset 0px 0px 10px #ce0d34b9,
+    3px 3px 5px #000a,
+    -3px -3px 5px #dddddd46;
 
 }
 
