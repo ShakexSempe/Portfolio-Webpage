@@ -1213,9 +1213,6 @@ img {
   padding: 1em;
   box-shadow: 15px 15px 5px #26262671;
   text-transform: uppercase;
-
-  
-  border: 2px solid #dc143c;
   /* border-radius: 5px; */
   outline: 1px solid rgba(255, 255, 255, 0.537);
   outline-offset: -2px;
