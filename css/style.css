@@ -189,12 +189,12 @@ span {
   border-radius: 40px;
   
   background-color: #8584843a;
-  box-shadow: 0 0 10px #000a,
+  box-shadow: 0 0 5px #ce0d3491,
               inset 5px 5px 5px #dddddd46,
-              inset -5px -5px 5px #ce0d344f;
+              inset -5px -5px 5px #000a;
   text-shadow: 2px 2px 2px #000;
 
-  transition: .3s linear;
+  transition: .2s linear;
 }
 
 #cta-header::before {
@@ -219,11 +219,11 @@ span {
 }
 
 #cta-header:hover {
-  background: transparent;
-  transition: all .3s linear;
-  box-shadow: inset 0px 0px 10px #ce0d34b9,
-    3px 3px 5px #000a,
-    -3px -3px 5px #dddddd46;
+  /* background: transparent; */
+  transition: all .2s linear;
+  box-shadow: 0 0 5px #dc143c ,0 0 15px #ce0d34e8,
+  inset 3px 3px 2px #dddddd46,
+  inset -3px -3px 2px #000a;
 
 }
 
