@@ -18,12 +18,34 @@ scrollLinks.forEach(link => {
 
         let position = element.offsetTop - navHeight;
         
+        
         window.scrollTo({
             left: 0,
             top: position,
         });
     });
 });
+
+/* cta scroll to about */
+// const cta = document.getElementById('cta-header');
+// cta.addEventListener("click", (e) => {
+//   const id = e.currentTarget.getAttribute('href').slice(1);
+//   console.log(id)
+
+//   const element = document.getElementById(id);
+//   const navHeight = navbar.getBoundingClientRect().height;
+
+//   let position = element.offsetTop - navHeight;
+//   console.log(position)
+   
+//   window.scrollTo({
+//     left: 0,
+//     top: position,
+// });
+
+
+// });
+/* end of cta scroll to about */
 
 
 //Hamburger Menu
