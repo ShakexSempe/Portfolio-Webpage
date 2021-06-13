@@ -180,12 +180,12 @@ span {
 #cta-header {
   position: relative;
   display: inline-block;
-  padding: 10px 30px;
+  padding: .5em 1em;
   background-color: #8584843a;
   box-shadow: 5px 10px 10px #dc143c63;
   border-radius: 10px;
   margin: 10px 5px;
-  width: 300px;
+  width: 250px;
   text-align: center;
   transition: 3s ease-in-out;
   transition-property: color;
