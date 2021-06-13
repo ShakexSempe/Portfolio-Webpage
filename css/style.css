@@ -1192,7 +1192,7 @@ img {
 }
 
 .fcc-link {
-  color: #dc143c;
+  color: #fff000;
 }
 
 .fcc-link:hover {
@@ -1200,18 +1200,28 @@ img {
 }
 
 #cv {
+  display: flex;
+  justify-content: space-evenly;
   font-size: 1.6em;
   background: #dc143c;
   color: #fff;
+  margin: 0 auto;
   padding: 8px;
   box-shadow: 15px 15px 5px #26262671;
   transition: color .5s;
+  
   border: 2px solid #dc143c;
   border-radius: 5px;
   outline: 2px solid #fff;
   outline-offset: -2px;
   transition: outline-offset 250ms ease;
   animation: cv-button 2s ease-in-out infinite;
+}
+
+#cv i {
+  color: #fff;
+  font-size: 1.2em;
+
 }
 
 @keyframes cv-button {
