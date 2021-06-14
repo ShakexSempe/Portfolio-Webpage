@@ -188,7 +188,9 @@ span {
   border-radius: 40px;
   
   background-color: #8584843a;
-  box-shadow: 0 0 5px #ce0d3491,
+  box-shadow: 1px 1px 5px #000,
+              -1px -1px #ddd,
+              0 0 10px #9414256e,
               inset 5px 5px 5px #dddddd46,
               inset -5px -5px 5px #000a;
   text-shadow: 2px 2px 2px #000;
