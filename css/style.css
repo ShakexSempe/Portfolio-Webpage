@@ -15,7 +15,8 @@
   --text-shadow-sm: 1px 1px 1px #000a;
   --text-shadow: 2px 2px 2px #000;
 
-  --box-shadow: 1px 1px 5px #000,
+  --skills-shadow-hover: inset 4px 2px 5px #382d2daa;
+--box-shadow: 1px 1px 5px #000,
                 -1px -1px #ddd,
                 0 0 10px #9414256e,
                 inset 5px 5px 5px #dddddd46,
@@ -1289,12 +1290,12 @@ img {
 #contact .contact-item {
   width: 75%;
   height: auto;
-  padding: 10px;
+  padding: 1.5em ;
   text-align: center;
   color: #ddd;
   border: 1px rgb(199, 196, 196) solid;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 1.5em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1303,15 +1304,17 @@ img {
   box-shadow: var(--box-shadow);
   transition: 0.3s ease;
   backdrop-filter: blur(1px);
+  cursor: pointer;
 }
 
-#contact .contact-item:hover {
+#contact .contact-item:hover,
+#contact .contact-item:focus {
   /* box-shadow: -5px -5px 1px #dc143c75; */
   /* border: 1px #dc143c solid; */
   /* border-radius: 20px; */
   background-color: #f4f4f4;
   filter: grayscale(0);
-  transform: scale(1.05);
+  transform: scale(.925);
   transition: 0.3s ease;
 }
 
@@ -1319,13 +1322,13 @@ img {
   width: 70px;
   margin: 0 auto;
   margin-bottom: 10px;
-  box-shadow: var(--box-shadow-hover);
-  padding: .3em;
+  box-shadow: var(--box-shadow);
+  padding: .5em;
   transition: .3s ease-out;
   border-radius: 10px;
+  
 }
 #contact .contact-item:hover .icon {
-  box-shadow: var(--box-shadow); 
   /* transform: scale(1.05); */
   transition: .3s ease-out;
 }
@@ -1333,10 +1336,11 @@ img {
 #contact .contact-info h1 {
   font-size: 2.5rem;
   font-weight: 500;
+  letter-spacing: .05em;
   margin-bottom: 5px;
   padding: .2em;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px #000;
+  box-shadow: var(--box-shadow);
   border: 1px solid rgba(255, 255, 255, 0.212);
   transition: .3s ease-out;
 
@@ -1348,8 +1352,6 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: .3s ease-out;
-  /* letter-spacing: .1em; */
-  box-shadow: inset 4px 2px 5px #000a;
 }
 #contact .contact-info h2 {
   font-size: 1.3rem;
@@ -1359,10 +1361,10 @@ img {
   border-radius: 10px;
   margin: .5em auto;
   transition: .3s ease;
+  box-shadow: var(--box-shadow);
 }
 #contact .contact-item:hover h2 {
-  box-shadow: var(--box-shadow-sm); 
-  /* letter-spacing: .1em; */
+  letter-spacing: .159em;
   transition: .3s ease-out;
   color: #000;
   transition: .3s ease;
