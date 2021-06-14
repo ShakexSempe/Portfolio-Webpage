@@ -1320,7 +1320,7 @@ img {
 }
 #contact .contact-item:hover .icon {
   box-shadow: var(--box-shadow); 
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: .3s ease-out;
 }
 
@@ -1342,7 +1342,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: .3s ease-out;
-  letter-spacing: .1em;
+  /* letter-spacing: .1em; */
   box-shadow: inset 4px 2px 5px #000a;
 }
 #contact .contact-info h2 {
@@ -1358,7 +1358,7 @@ img {
   box-shadow: 0 0 5px #a1a1a1aa,
               2px 2px 2px #a1a1a1aa,
               -2px -2px #a1a1a1aa; 
-  letter-spacing: .1em;
+  /* letter-spacing: .1em; */
   transition: .3s ease-out;
   color: #000;
   transition: .3s ease;
