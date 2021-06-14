@@ -1298,7 +1298,7 @@ img {
   padding: 1.5em ;
   text-align: center;
   color: #ddd;
-  border: 1px rgb(199, 196, 196) solid;
+  border: 1px rgba(199, 196, 196, 0.205) solid;
   border-radius: 10px;
   margin: 1.5em auto;
   display: flex;
