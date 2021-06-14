@@ -221,11 +221,13 @@ span {
 }
 
 #cta-header:hover {
-  /* background: transparent; */
+  background: transparent;
   transition: all .2s linear;
-  box-shadow: 0 0 15px #ce0d3491,
+  box-shadow: 0 0 5px #ce0d3491,
               -4px 0 15px #dddddd46, 
               4px 0 15px #000a,
+              inset 1px 1px 3px #000,
+              inset -1px -1px 3px #ddda,
               inset 4px 4px 5px #000a,
               inset -4px -4px 5px #dddddd46;
 
