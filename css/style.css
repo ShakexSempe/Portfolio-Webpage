@@ -233,8 +233,8 @@ span {
 
 }
 
-#cta-header:hover span {
-  transform: scale(1.1);
+#cta-header:hover span, #cta-header:focus span {
+  text-transform: uppercase;
 }
 
 #cta-header span {
