@@ -1320,7 +1320,8 @@ img {
   margin-bottom: 5px;
 }
 #contact .contact-item:hover h1 {
-  background-image: linear-gradient(30deg, purple, #dc143c, blue);
+  background-image: linear-gradient(10deg, purple, #dc1489, skyblue, purple, #dc1489, skyblue );
+  background-size: 250%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
