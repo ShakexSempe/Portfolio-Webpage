@@ -1352,7 +1352,6 @@ img {
   box-shadow: 0 0 5px #a1a1a1aa,
               2px 2px 2px #a1a1a1aa,
               -2px -2px #a1a1a1aa; 
-  transform: scale(1.1);
   letter-spacing: .1em;
   transition: .3s ease-out;
   color: #000;
