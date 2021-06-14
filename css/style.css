@@ -15,7 +15,12 @@
   --text-shadow-sm: 1px 1px 1px #000a;
   --text-shadow: 2px 2px 2px #000;
 
-  --skills-shadow-hover: inset 4px 2px 5px #382d2daa;
+--box-shadow-light: 1px 1px 5px rgba(51, 51, 51, 0.667),
+                -1px -1px #ddda,
+                0 0 10px #9414256e,
+                inset 5px 5px 5px #dddddd46,
+                inset -5px -5px 5px rgba(70, 69, 69, 0.667);
+
 --box-shadow: 1px 1px 5px #000,
                 -1px -1px #ddd,
                 0 0 10px #9414256e,
@@ -1341,7 +1346,6 @@ img {
   padding: .2em;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  border: 1px solid rgba(255, 255, 255, 0.212);
   transition: .3s ease-out;
 
 }
@@ -1361,7 +1365,7 @@ img {
   border-radius: 10px;
   margin: .5em auto;
   transition: .3s ease;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-light);
 }
 #contact .contact-item:hover h2 {
   letter-spacing: .159em;
