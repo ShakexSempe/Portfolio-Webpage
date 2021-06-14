@@ -1330,6 +1330,7 @@ img {
   border-radius: 10px;
   box-shadow: 2px 2px 10px #000;
   border: 1px solid rgba(255, 255, 255, 0.212);
+  transition: .3s ease-out;
 
 }
 #contact .contact-item:hover h1 {
@@ -1338,6 +1339,8 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: .3s ease-out;
+  letter-spacing: .1em;
   box-shadow: inset 4px 2px 5px #000a;
 }
 #contact .contact-info h2 {
