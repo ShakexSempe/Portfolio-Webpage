@@ -33,7 +33,7 @@
                       1px 1px 5px #000,
                       -1px -1px #fffa,
                       inset 5px 5px 10px #fff,
-                      inset -5px -5px 10px #000;
+                      inset -5px -5px 15px #000;
 }
 
 body  {
@@ -823,7 +823,7 @@ span {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #8f0c262c;
+  background-image: radial-gradient(#8d092e71, #000a);
   /*glassmorphism effect*/
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
