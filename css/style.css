@@ -1303,7 +1303,7 @@ img {
 #contact .contact-item:hover {
   box-shadow: -5px -5px 1px #dc143c75;
   /* border: 1px #dc143c solid; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: #f4f4f4;
   filter: grayscale(0);
   transform: scale(0.95);
@@ -1313,6 +1313,13 @@ img {
   width: 70px;
   margin: 0 auto;
   margin-bottom: 10px;
+  box-shadow: var(--box-shadow-hover);
+  padding: .3em;
+}
+#contact .contact-item:hover .icon {
+  box-shadow: var(--box-shadow);
+  transform: scale(1);
+  transition: .3s ease-out;
 }
 
 #contact .contact-info h1 {
