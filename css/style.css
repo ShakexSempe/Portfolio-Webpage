@@ -1128,7 +1128,7 @@ span {
   letter-spacing: 0.3rem;
   margin-bottom: 10px;
   text-decoration: underline rgba(0, 0, 0, 0.24);
-  text-underline-offset: .1em;
+  text-underline-offset: .2em;
 }
 
 #about .col-right p {
