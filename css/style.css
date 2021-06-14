@@ -1301,12 +1301,12 @@ img {
 }
 
 #contact .contact-item:hover {
-  box-shadow: -5px -5px 1px #dc143c75;
+  /* box-shadow: -5px -5px 1px #dc143c75; */
   /* border: 1px #dc143c solid; */
   /* border-radius: 20px; */
   background-color: #f4f4f4;
   filter: grayscale(0);
-  transform: scale(0.95);
+  transform: scale(1.05);
   transition: 0.3s ease;
 }
 
