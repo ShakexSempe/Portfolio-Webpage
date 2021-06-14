@@ -21,6 +21,11 @@
                 inset 5px 5px 5px #dddddd46,
                 inset -5px -5px 5px #000a;
 
+--box-shadow-sm: 1px 1px 5px #000a,
+                -1px -1px #ddd,
+                inset 1px 1px 5px #f5f1f12f,
+                inset -2px -2px 5px #000a;              
+
   --box-shadow-hover: 
                       -4px 0 15px #dddddd46, 
                       4px 0 15px #000a,
@@ -1317,6 +1322,7 @@ img {
   box-shadow: var(--box-shadow-hover);
   padding: .3em;
   transition: .3s ease-out;
+  border-radius: 10px;
 }
 #contact .contact-item:hover .icon {
   box-shadow: var(--box-shadow); 
@@ -1349,15 +1355,13 @@ img {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 500;
-  padding: .2em;
+  padding: .5em;
   border-radius: 10px;
   margin: .5em auto;
   transition: .3s ease;
 }
 #contact .contact-item:hover h2 {
-  box-shadow: 0 0 5px #a1a1a1aa,
-              2px 2px 2px #a1a1a1aa,
-              -2px -2px #a1a1a1aa; 
+  box-shadow: var(--box-shadow-sm); 
   /* letter-spacing: .1em; */
   transition: .3s ease-out;
   color: #000;
