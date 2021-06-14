@@ -1318,7 +1318,7 @@ img {
 }
 #contact .contact-item:hover .icon {
   box-shadow: var(--box-shadow); 
-  transform: scale(1);
+  transform: scale(1.05);
   transition: .3s ease-out;
 }
 
