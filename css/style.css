@@ -1353,7 +1353,7 @@ img {
               2px 2px 2px #a1a1a1aa,
               -2px -2px #a1a1a1aa; 
   transform: scale(1.1);
-  letter-spacing: .2em;
+  letter-spacing: .1em;
   transition: .3s ease-out;
   color: #000;
 }
