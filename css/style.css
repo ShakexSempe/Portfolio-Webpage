@@ -28,6 +28,12 @@
                       inset -1px -1px 3px #ddda,
                       inset 4px 4px 5px #000a,
                       inset -4px -4px 5px #dddddd46 ;
+
+  --box-shadow-bright: 10px 10px 5px #000a,
+                      1px 1px 5px #000,
+                      -1px -1px #fffa,
+                      inset 5px 5px 10px #fff,
+                      inset -5px -5px 10px #000;
 }
 
 body  {
@@ -675,7 +681,8 @@ span {
   overflow: hidden;
   border-radius: 10px;
   height: auto;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
+  box-shadow: var(--box-shadow-bright);
   /*border radius not visiblie without hidden overflow*/
 }
 
