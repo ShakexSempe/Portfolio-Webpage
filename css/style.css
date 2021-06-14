@@ -21,7 +21,7 @@
                 inset 5px 5px 5px #dddddd46,
                 inset -5px -5px 5px #000a;
 
-  --box-shadow-hover: 0 0 5px #ce0d3491,
+  --box-shadow-hover: 
                       -4px 0 15px #dddddd46, 
                       4px 0 15px #000a,
                       inset 1px 1px 3px #000,
@@ -1296,7 +1296,7 @@ img {
   align-items: center;
   /* box-shadow: 10px 10px 3px #0a0a0a59; */
   box-shadow: var(--box-shadow);
-  transition: 0.4s ease;
+  transition: 0.3s ease;
   backdrop-filter: blur(1px);
 }
 
@@ -1307,6 +1307,7 @@ img {
   background-color: #f4f4f4;
   filter: grayscale(0);
   transform: scale(0.95);
+  transition: 0.3s ease;
 }
 
 #contact .icon {
@@ -1315,6 +1316,7 @@ img {
   margin-bottom: 10px;
   box-shadow: var(--box-shadow-hover);
   padding: .3em;
+  transition: .3s ease-out;
 }
 #contact .contact-item:hover .icon {
   box-shadow: var(--box-shadow); 
@@ -1350,6 +1352,7 @@ img {
   padding: .2em;
   border-radius: 10px;
   margin: .5em auto;
+  transition: .3s ease;
 }
 #contact .contact-item:hover h2 {
   box-shadow: 0 0 5px #a1a1a1aa,
@@ -1358,6 +1361,8 @@ img {
   letter-spacing: .1em;
   transition: .3s ease-out;
   color: #000;
+  transition: .3s ease;
+
 }
 
 /*End of Contact Section*/
