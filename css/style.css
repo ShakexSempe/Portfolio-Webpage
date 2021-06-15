@@ -1301,6 +1301,7 @@ img {
   color: #ddd;
   border: 1px rgba(199, 196, 196, 0.062) solid;
   border-radius: 10px;
+  background-color: #f4f4f4;
   margin: 1.5em auto;
   display: flex;
   flex-direction: column;
