@@ -1322,7 +1322,6 @@ img {
   filter: grayscale(0);
   transform: scale(.98);
   transition: 0.3s ease;
-  border: 1px rgba(77, 77, 77, 0.062) solid;
 
 }
 
