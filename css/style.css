@@ -692,7 +692,8 @@ span {
   overflow: hidden;
   border-radius: 10px;
   height: auto;
-  /* border: 1px solid #fff; */
+  /* border: 1px rgba(199, 196, 196, 0.062) solid; */
+
   box-shadow: var(--box-shadow-bright);
   /*border radius not visiblie without hidden overflow*/
 }
@@ -1908,6 +1909,7 @@ img {
   #skills .skills-item:hover {
     filter: grayscale(0);
     transform: scale(1.05);
+    border: none;
 
   }
 
