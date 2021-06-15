@@ -1331,13 +1331,13 @@ img {
   margin-bottom: 10px;
   box-shadow: var(--box-shadow);
   padding: .5em;
-  transition: .3s ease-out;
+  transition: .3s ease;
   border-radius: 10px;
   
 }
 #contact .contact-item:hover .icon {
   /* transform: scale(1.05); */
-  transition: .3s ease-out;
+  transition: .3s ease;
 }
 
 #contact .contact-info h1 {
@@ -1348,7 +1348,7 @@ img {
   padding: .2em;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  transition: .3s ease-out;
+  transition: .3s ease;
 
 }
 #contact .contact-item:hover h1 {
@@ -1357,7 +1357,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: .3s ease-out;
+  transition: .3s ease;
 }
 #contact .contact-info h2 {
   font-size: 1.3rem;
@@ -1371,7 +1371,6 @@ img {
 }
 #contact .contact-item:hover h2 {
   letter-spacing: .159em;
-  transition: .3s ease-out;
   color: #000;
   transition: .3s ease;
 
