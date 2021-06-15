@@ -1320,7 +1320,7 @@ img {
   /* border-radius: 20px; */
   background-color: #f4f4f4;
   filter: grayscale(0);
-  transform: scale(.925);
+  transform: scale(.98);
   transition: 0.3s ease;
   border: 1px rgba(77, 77, 77, 0.062) solid;
 
