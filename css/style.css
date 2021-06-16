@@ -912,13 +912,13 @@ span {
 #projects .projects-header h1 {
   margin-bottom: 50px;
   /* background-image: linear-gradient(90deg, #000, skyblue, #161616 ,#000, skyblue, gold, #dc143c, purple, #dc1489, skyblue, purple, #dc1489, skyblue, #000 ); */
-  background-image: linear-gradient(40deg, #000,purple, skyblue ,#000, skyblue, #dc143c, orange   );
-  background-size: 300%;
+  background-image: linear-gradient(40deg, #000,purple, skyblue ,#000, skyblue, #dc143c,#000, orange, #000 );
+  background-size: 900%;
   background-position: 0%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: projact 10s infinite alternate;
+  animation: projact 20s infinite alternate;
 }
 
 @keyframes projact {
