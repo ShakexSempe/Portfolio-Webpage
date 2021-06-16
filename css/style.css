@@ -1312,7 +1312,7 @@ img {
   transition: 0.3s ease;
   backdrop-filter: blur(1px);
   cursor: pointer;
-  filter: grayscale(.3);
+  filter: grayscale(.7);
 }
 
 #contact .contact-item:hover,
@@ -1323,10 +1323,10 @@ img {
   background-color: #f4f4f4;
   /* filter: grayscale(0); */
   transform: scale(.98);
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   box-shadow: var(--box-shadow-hover);
   border: none;
-  filter: grayscale(0);
+  filter: none;
 
 }
 
@@ -1334,15 +1334,15 @@ img {
   width: 70px;
   margin: 0 auto;
   margin-bottom: 10px;
-  box-shadow: var(--box-shadow);
   padding: .5em;
   transition: .3s ease;
   border-radius: 10px;
   
 }
 #contact .contact-item:hover .icon {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: .2s ease;
+  box-shadow: var(--box-shadow);
 }
 
 #contact .contact-info h1 {
@@ -1352,9 +1352,9 @@ img {
   margin-bottom: 5px;
   padding: .2em;
   border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  transition: .3s ease;
-
+  transition: .2s ease;
+  box-shadow: var(--box-shadow-light);
+  
 }
 #contact .contact-item:hover h1 {
   background-image: linear-gradient(10deg, purple, #dc1489, skyblue, purple, #dc1489, skyblue );
@@ -1362,7 +1362,8 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: .3s ease;
+  transition: .2s ease;
+  box-shadow: var(--box-shadow);
 }
 #contact .contact-info h2 {
   font-size: 1.3rem;
@@ -1371,13 +1372,13 @@ img {
   padding: .5em;
   border-radius: 10px;
   margin: .5em auto;
-  transition: .3s ease;
   box-shadow: var(--box-shadow-light);
-  letter-spacing: .159em;
+  transition: .2s ease;
 }
 #contact .contact-item:hover h2 {
-  transition: .3s ease;
+  transition: .2s ease;
   color: #000;
+  letter-spacing: .159em;
 }
 
 /*End of Contact Section*/
