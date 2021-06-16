@@ -1307,7 +1307,7 @@ img {
   justify-content: center;
   align-items: center;
   box-shadow: var(--box-shadow-hover);
-  transition: 0.3s ease;
+  transition: 0.4s ease;
   cursor: pointer;
   /* filter: grayscale(.8); */
   position: relative;
@@ -1334,7 +1334,7 @@ img {
 
 #contact .contact-item:hover,
 #contact .contact-item:focus {
-  transition: .3s ease;
+  transition: .4s ease;
   background-color: transparent;
   transform: scale(.96);
   box-shadow: var(--box-shadow);
