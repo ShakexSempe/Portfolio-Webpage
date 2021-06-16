@@ -1323,6 +1323,7 @@ img {
   filter: grayscale(0);
   transform: scale(.98);
   transition: 0.3s ease;
+  box-shadow: var(--box-shadow-hover);
 
 }
 
@@ -1371,9 +1372,9 @@ img {
   box-shadow: var(--box-shadow-light);
 }
 #contact .contact-item:hover h2 {
+  transition: .3s ease;
   letter-spacing: .159em;
   color: #000;
-  transition: .3s ease;
 
 }
 
