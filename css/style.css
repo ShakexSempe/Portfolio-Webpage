@@ -918,7 +918,7 @@ span {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: projact 10s infinite alternate;
+  animation: projact 5s infinite alternate;
 }
 
 @keyframes projact {
