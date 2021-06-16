@@ -1337,7 +1337,7 @@ img {
   padding: .5em;
   transition: .3s ease;
   border-radius: 10px;
-  
+  box-shadow: var(--box-shadow-hover);
 }
 #contact .contact-item:hover .icon {
   /* transform: scale(1.05); */
