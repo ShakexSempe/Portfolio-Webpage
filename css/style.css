@@ -15,11 +15,18 @@
   --text-shadow-sm: 1px 1px 1px #000a;
   --text-shadow: 2px 2px 2px #000;
 
---box-shadow-light: 1px 1px 5px rgba(51, 51, 51, 0.667),
+--box-shadow-light: 1px 1px 5px #333333aa,
                 -1px -1px #ddda,
                 0 0 10px #9414256e,
                 inset 5px 5px 5px #dddddd46,
-                inset -5px -5px 5px rgba(70, 69, 69, 0.667);
+                inset -5px -5px 5px #464545aa;
+              
+--box-shadow-light-hover:-4px 0 10px #dddddd46, 
+                          4px 0 10px #000a,
+                          inset 1px 1px 3px #333333aa,
+                          inset -1px -1px 3px #ddda,
+                          inset 4px 4px 5px #464545aa,
+                          inset -4px -4px 5px #dddddd46 ;
 
 --box-shadow: 1px 1px 5px #000,
                 -1px -1px #ddd,
@@ -45,6 +52,8 @@
                       -1px -1px #fffa,
                       inset 5px 5px 10px #fff,
                       inset -5px -5px 15px #000;
+  
+  
 }
 
 body  {
@@ -1299,7 +1308,6 @@ img {
   padding: 1.5em ;
   text-align: center;
   color: #333a;
-  /* border: 1px rgba(199, 196, 196, 0.062) solid; */
   border-radius: 10px;
   background-color: #f4f4f4;
   margin: 1.5em auto;
@@ -1307,12 +1315,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 10px 10px 3px #0a0a0a59; */
   box-shadow: var(--box-shadow);
-  transition: 0.3s ease;
-  backdrop-filter: blur(1px);
+  transition: 0.2s ease;
   cursor: pointer;
-  filter: grayscale(.7);
+  filter: grayscale(.9);
 }
 
 #contact .contact-item:hover,
@@ -1337,7 +1343,7 @@ img {
   padding: .5em;
   transition: .3s ease;
   border-radius: 10px;
-  box-shadow: var(--box-shadow-hover);
+  box-shadow: var(--box-shadow-light-hover);
 }
 #contact .contact-item:hover .icon {
   /* transform: scale(1.05); */
@@ -1353,15 +1359,17 @@ img {
   padding: .2em;
   border-radius: 10px;
   transition: .2s ease;
-  box-shadow: var(--box-shadow-light);
-  
-}
-#contact .contact-item:hover h1 {
+  box-shadow: var(--box-shadow-light-hover);
   background-image: linear-gradient(10deg, purple, #dc1489, skyblue, purple, #dc1489, skyblue );
   background-size: 250%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* box-shadow: var(--box-shadow-light); */
+  
+}
+#contact .contact-item:hover h1 {
+  
   transition: .2s ease;
   box-shadow: var(--box-shadow);
 }
@@ -1372,13 +1380,16 @@ img {
   padding: .5em;
   border-radius: 10px;
   margin: .5em auto;
-  box-shadow: var(--box-shadow-light);
+  box-shadow: var(--box-shadow-light-hover);
+
   transition: .2s ease;
 }
 #contact .contact-item:hover h2 {
   transition: .2s ease;
   color: #000;
   letter-spacing: .159em;
+  box-shadow: var(--box-shadow);
+  
 }
 
 /*End of Contact Section*/
