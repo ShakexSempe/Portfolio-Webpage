@@ -1326,7 +1326,7 @@ img {
 #contact .contact-item:focus {
   transition: 0.2s ease;
   background-color: #f4f4f4;
-  transform: scale(.98);
+  transform: scale(.96);
   box-shadow: var(--box-shadow);
   border: none;
   filter: none;
