@@ -1409,10 +1409,10 @@ img {
   margin: .5em auto;
   box-shadow: var(--box-shadow-light-hover);
 
-  transition: .8s ease;
+  transition: .6s ease;
 }
 #contact .contact-item:hover h2 {
-  transition: .8s ease;
+  transition: .6s ease;
   background-color: #f4f4f4;
   color: #000;
   letter-spacing: .159em;
