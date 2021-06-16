@@ -1328,12 +1328,13 @@ img {
 } 
 #contact .contact-item:hover .contact-item::after {
   opacity: 1;
+  transition: .3s ease;
   
 }
 
 #contact .contact-item:hover,
 #contact .contact-item:focus {
-  transition: 0.3s ease;
+  transition: .3s ease;
   background-color: transparent;
   transform: scale(.96);
   box-shadow: var(--box-shadow);
@@ -1349,11 +1350,11 @@ img {
   padding: .5em;
   border-radius: 10px;
   box-shadow: var(--box-shadow-light-hover);
-  transition: .2s ease;
+  transition: .5s ease;
 }
 #contact .contact-item:hover .icon {
-  /* transform: scale(1.05); */
-  transition: .2s ease;
+  transform: scale(1.09);
+  transition: .5s ease;
   box-shadow: var(--box-shadow);
   background-color: #f4f4f4;
 }
