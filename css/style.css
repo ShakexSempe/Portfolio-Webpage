@@ -1307,24 +1307,42 @@ img {
   height: auto;
   padding: 1.5em ;
   text-align: center;
-  color: #333a;
+  color: #ddd;
   border-radius: 10px;
   border: none;
-  background-color: #f4f4f4;
   margin: 1.5em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: var(--box-shadow-hover);
-  transition: 0.4s ease;
+  transition: 0.3s ease;
   cursor: pointer;
-  filter: grayscale(.8);
+  /* filter: grayscale(.8); */
+  position: relative;
+}
+#contact .contact-item::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  box-shadow: var(--box-shadow-hover);
+  border-radius: 10px;
+  z-index: -2;
+  opacity: 0;
+  transition: .3s ease;
+} 
+#contact .contact-item:hover .contact-item::after {
+  opacity: 1;
+  
 }
 
 #contact .contact-item:hover,
 #contact .contact-item:focus {
-  transition: 0.4s ease;
+  transition: 0.3s ease;
   background-color: transparent;
   transform: scale(.96);
   box-shadow: var(--box-shadow);
@@ -1356,7 +1374,7 @@ img {
   margin-bottom: 5px;
   padding: .2em;
   border-radius: 10px;
-  transition: .2s ease;
+  transition: .3s ease;
   box-shadow: var(--box-shadow-light-hover);
   background-image: linear-gradient(10deg, purple, #dc1489, skyblue, purple, #dc1489, skyblue );
   background-size: 250%;
@@ -1368,7 +1386,7 @@ img {
   
 }
 #contact .contact-item:hover h1 {
-  transition: .2s ease;
+  transition: .3s ease;
   box-shadow: var(--box-shadow);
 
 }
@@ -1383,9 +1401,11 @@ img {
   border-radius: 10px;
   z-index: -1;
   opacity: 0;
+  transition: .3s ease;
 }
 #contact .contact-item:hover h1::after {
   opacity: 1;
+  transition: .3s ease;
 }
 #contact .contact-info h2 {
   font-size: 1.3rem;
@@ -1396,10 +1416,10 @@ img {
   margin: .5em auto;
   box-shadow: var(--box-shadow-light-hover);
 
-  transition: .2s ease;
+  transition: .3s ease;
 }
 #contact .contact-item:hover h2 {
-  transition: .2s ease;
+  transition: .3s ease;
   background-color: #f4f4f4;
   color: #000;
   letter-spacing: .159em;
