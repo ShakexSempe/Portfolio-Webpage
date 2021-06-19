@@ -1162,13 +1162,22 @@ span {
 }
 
 #about .col-right h2 {
+  display: inline-block;
+  border-radius: 10px;
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: 0.3rem;
   margin-bottom: 10px;
-  text-decoration: underline rgba(0, 0, 0, 0.384);
-  text-underline-offset: .3em;
+  padding: .5em;
+  box-shadow: inset 3px 3px 5px #000a,
+              inset -3px -3px 5px #ddda;
+  transition: .3s linear;
 }
+#about .col-right:hover.col-right h2 {
+  letter-spacing: 0.1rem;
+  transition: .3s linear;
+  box-shadow: inset 3px 3px 5px #ddd,
+              inset -3px -3px 5px #000a;
+} 
 
 #about .col-right p {
   margin-bottom: 20px;
