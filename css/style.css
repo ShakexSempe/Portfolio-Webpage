@@ -644,11 +644,11 @@ span {
   box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a ;
   position: relative;
   z-index: 30;
-  transition: .3s linear;
+  transition: .2s linear;
 
 }
 #skills .skills-top:hover {
-  transition: .3s linear;
+  transition: .2s linear;
   transform: scale(1.03);
   box-shadow: inset 4px 4px 5px #000a, 
               inset -4px -4px 5px #ddda ;
