@@ -797,11 +797,14 @@ span {
 .dropbtn {
   background: linear-gradient(0deg, #dc134c, #333);
   color: white;
-  width: 80vw;
-  padding: 5px;
+  /* width: 80vw; */
+  box-shadow: inset 3px 3px 5px #000,
+              inset -3px -3px 5px #fffa;
+  padding: .4em 4em;
   font-size: 2.5em;
   font-weight: 600;
   cursor: pointer;
+  border: none;
   border-radius: 10px;
   text-align: center;
   transition: all .3s;
@@ -823,11 +826,12 @@ span {
 .dropbtn:focus {
   transition: all .2s ease;
   background: var(--overlay);
-  /* border: 1px solid #dc143c; */
+  border: none;
   border-radius: 10px;
   outline: none;
   animation: none;
-  box-shadow: 0px 3px 2px #f5869c86;
+  box-shadow: inset 3px 3px 5px #fffa,
+              inset -3px -3px 5px #000a;
 }
 
 /* Dropdown Content (Hidden by Default) */
