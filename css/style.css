@@ -233,7 +233,7 @@ span {
   box-shadow: var(--box-shadow);
   text-shadow: 2px 2px 2px #000;
 
-  transition: .2s linear;
+  transition: .3s linear;
 }
 
 #cta-header::before {
@@ -259,7 +259,7 @@ span {
 }
 
 #cta-header:hover {
-  transition: all .2s linear;
+  transition: 2s linear;
   box-shadow: var(--box-shadow-hover);
 
 }
@@ -307,7 +307,7 @@ span {
 
 
 .brand h1 {
-  font-size: 3.1rem;
+  font-size: 2.7rem;
   text-transform: uppercase;
   color: #fff;
   font-family: 'Gruppo', cursive;
