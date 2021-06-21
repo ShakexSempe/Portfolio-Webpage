@@ -1054,11 +1054,19 @@ span {
   animation: icon-gradient 2s linear infinite;
   font-size: 2.5em;
 }
+#projects .project-tile a i::after {
+  content: 'click here to open project';
+  font-size: .7em;
+  font-family: 'Gruppo', cursive;
+  font-style: italic;
+
+}
 
 #projects .project-tile a:hover i {
   transition: 1s ease;
-  transform: scale(1.6);
-  margin: .3em 0 0 1em;
+  /* transform: scale(1.6); */
+  /* letter-spacing: .2em; */
+  /* margin: .3em 0 0 1em; */
 }
 
 @keyframes icon-gradient {
@@ -1779,6 +1787,10 @@ img {
     font-size: 1.4rem;
   }
 
+  /* #projects .project-tile a:hover i {
+    transform: none;
+    letter-spacing: .2em;
+  } */
   #projects .project-item {
     height: 400px;
     margin: 0;
