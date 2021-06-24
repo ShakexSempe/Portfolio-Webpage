@@ -1062,7 +1062,7 @@ span {
   font-size: 2.5em;
 }
 #projects .project-tile a i::after {
-  content: 'click here to open project';
+  content: 'view project';
   font-size: .7em;
   font-family: 'Gruppo', cursive;
   font-style: italic;
