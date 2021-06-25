@@ -1943,10 +1943,11 @@ img {
 
   #cta-header {
     width: 75%;
+    padding: .5em 1em;
   }
 
   #cta-header span {
-    font-size: 7rem;
+    font-size: 5.5rem;
   }
 
   #aka span {
