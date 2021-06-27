@@ -413,8 +413,15 @@ span {
   cursor: pointer;
   transform: scale(0.8);
   margin: 3px 20px;
+  transition: .3s ease;
+  box-shadow: inset 3px 3px 5px #ddda,
+              inset -3px -3px 5px #000a;
 }
-
+#header .hamburger:hover {
+  transform: scale(.73);
+  box-shadow: inset 3px 3px 5px #000,
+              inset -3px -3px 5px #ddda;
+}
 /*hamburger pulse*/
 #header .hamburger:after {
   position: absolute;
@@ -426,6 +433,7 @@ span {
   animation: ham-pulse 2s ease infinite;
 }
 
+
 #header .hamburger:before {
   position: absolute;
   content: "";
@@ -436,6 +444,16 @@ span {
   animation: ham-pulse2 2s ease infinite;
   animation-delay: .6s;
 }
+
+#header .hamburger:hover::after,
+#header .hamburger:focus::after {
+  animation: none;  
+}
+
+#header .hamburger:focus::before {
+  animation: none;  
+} 
+
 
 @keyframes ham-pulse {
   50% {
