@@ -1192,7 +1192,48 @@ span {
   border-radius: 5px;
   border: 1px solid #dc143c;
 }
+ 
+#about .col-right .about-title {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+} 
 
+#about .col-right .about-title:hover {
+  cursor: pointer;
+}
+
+#cv-download {
+  width: 40%;
+  text-align: center;
+  margin: 1em 2em;
+  padding: 1em 1.5em;
+  font-size: .9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #dc143c;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 5px #000a,
+              inset 3px 3px 5px #ddda;
+  transition: .5s ease;
+  position: absolute;
+  opacity: 0;
+}
+#about .col-right:hover.col-right #cv-download {
+  transition: 1s ease;
+  transform: translateY(4em);
+  opacity: 1;
+}
+#about .col-right .about-title:hover a{
+  letter-spacing: .2em;
+  box-shadow: inset -3px -3px 5px #ddda,
+              inset 3px 3px 5px #000a;
+}
+@media screen and (min-width: 400px){
+  #about .col-right:hover.col-right #cv-download {
+    transform: translateY(4em);
+  }
+}
 #about .col-right h2 {
   display: inline-block;
   border-radius: 10px;
@@ -1205,7 +1246,7 @@ span {
   transition: .3s linear;
 }
 #about .col-right:hover.col-right h2 {
-  letter-spacing: 0.1rem;
+  /* letter-spacing: 0.1rem; */
   transition: .3s linear;
   box-shadow: inset 3px 3px 5px #ddd,
               inset -3px -3px 5px #000a;
@@ -1217,6 +1258,9 @@ span {
   text-align: left;
   padding-left: 4px;
 }
+
+
+
 
 .custom-scrollbar-js {
   height: 200px;
