@@ -1213,11 +1213,13 @@ span {
   text-transform: uppercase;
   color: #dc143c;
   border-radius: 10px;
-  box-shadow: inset -3px -3px 5px #000a,
-              inset 3px 3px 5px #ddda;
+  box-shadow: inset -3px -3px 5px #000,
+              inset 3px 3px 5px #ddd;
   transition: .5s ease;
   position: absolute;
   opacity: 0;
+  z-index: 20;
+  
 }
 #about .col-right:hover.col-right #cv-download {
   transition: 1s ease;
@@ -1225,7 +1227,7 @@ span {
   opacity: 1;
 }
 #about .col-right .about-title:hover a{
-  letter-spacing: .2em;
+  letter-spacing: .1em;
   box-shadow: inset -3px -3px 5px #ddda,
               inset 3px 3px 5px #000a;
 }
