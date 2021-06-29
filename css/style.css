@@ -1484,10 +1484,17 @@ img {
   background-color: #f4f4f4;
   color: #000;
   letter-spacing: .159em;
+  font-weight: 600;
   box-shadow: var(--box-shadow);
   
 }
-
+#contact .contact-info a {
+  color: #ddda;
+}
+#contact .contact-item:hover a h2 {
+  color: #dc143c;
+  padding: 1em;
+}
 /*End of Contact Section*/
 
 /*Footer*/
