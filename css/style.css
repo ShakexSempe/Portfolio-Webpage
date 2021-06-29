@@ -1213,7 +1213,8 @@ span {
   text-transform: uppercase;
   color: #dc143c;
   border-radius: 10px;
-  box-shadow: inset -3px -3px 5px #000,
+  box-shadow:  4px 4px 5px #000a,
+              inset -3px -3px 5px #000,
               inset 3px 3px 5px #ddd;
   transition: .5s ease;
   position: absolute;
@@ -1421,12 +1422,12 @@ img {
   justify-content: center;
   align-items: center;
   box-shadow: var(--box-shadow-hover);
-  transition: 0.4s ease;
+  transition: .3s ease;
   cursor: pointer;
   /* filter: grayscale(.8); */
   position: relative;
 }
-#contact .contact-item::after {
+/* #contact .contact-item::after {
   position: absolute;
   content: '';
   top: 0;
@@ -1441,15 +1442,15 @@ img {
   transition: .3s ease;
 } 
 #contact .contact-item:hover .contact-item::after {
-  opacity: 1;
+  opacity: 0;
   transition: .3s ease;
   
-}
+} */
 
 #contact .contact-item:hover,
 #contact .contact-item:focus {
   transition: .4s ease;
-  background-color: transparent;
+  /* background-color: transparent; */
   transform: scale(.96);
   box-shadow: var(--box-shadow);
   border: none;
@@ -1462,15 +1463,17 @@ img {
   margin: 0 auto;
   margin-bottom: 10px;
   padding: .5em;
+  background-color: #f4f4f4;
   border-radius: 10px;
   box-shadow: var(--box-shadow-light-hover);
-  transition: .7s ease;
+  transition: .5s ease;
+  transform: scale(.8);
 }
 #contact .contact-item:hover .icon {
-  transform: scale(1.15);
-  transition: .7s ease;
+  transition: .5s ease;
   box-shadow: var(--box-shadow);
-  background-color: #f4f4f4;
+  transform: scale(1);
+
 }
 
 #contact .contact-info h1 {
@@ -1480,7 +1483,7 @@ img {
   margin-bottom: 5px;
   padding: .2em;
   border-radius: 10px;
-  transition: .3s ease;
+  transition: .2s ease;
   box-shadow: var(--box-shadow-light-hover);
   
   position: relative;
@@ -1493,7 +1496,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: .3s ease;
+  transition: .2s ease;
   box-shadow: var(--box-shadow);
 
 }
@@ -1507,21 +1510,22 @@ img {
   background-color: #f4f4f4;
   border-radius: 10px;
   z-index: -1;
-  opacity: 0;
-  transition: .3s ease;
-}
-#contact .contact-item:hover h1::after {
   opacity: 1;
   transition: .3s ease;
 }
+/* #contact .contact-item:hover h1::after {
+  opacity: 1;
+  transition: .3s ease;
+} */
 #contact .contact-info h2 {
   font-size: 1.3rem;
   line-height: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: .5em;
   border-radius: 10px;
   margin: .5em auto;
   box-shadow: var(--box-shadow-light-hover);
+  letter-spacing: .159em;
 
   transition: .6s ease;
 }
@@ -1529,8 +1533,6 @@ img {
   transition: .6s ease;
   background-color: #f4f4f4;
   color: #000;
-  letter-spacing: .159em;
-  font-weight: 600;
   box-shadow: var(--box-shadow);
   
 }
@@ -1539,7 +1541,6 @@ img {
 }
 #contact .contact-item:hover a h2 {
   color: #dc143c;
-  padding: 1em;
 }
 /*End of Contact Section*/
 
