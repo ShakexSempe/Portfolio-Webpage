@@ -1196,7 +1196,7 @@ span {
 #about .col-right .about-title {
   display: flex;
   flex-direction: column;
-  padding: 0 2em 2.5em 2em;
+  padding: 0 2em 3em 2em;
 } 
 
 #about .col-right .about-title:hover {
