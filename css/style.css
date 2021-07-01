@@ -373,12 +373,16 @@ span {
   letter-spacing: 0.2rem;
   text-decoration: none;
   color: #fff;
-
   text-transform: uppercase;
   padding: 20px;
   display: block;
   transition: .2s ease-in-out;
 }
+
+#header .nav-list ul a i {
+  margin: 0 auto;
+  font-size: 2.2rem;
+} 
 
 #header .nav-list ul a::after {
   content: attr(data-after);
@@ -2049,7 +2053,6 @@ img {
 
   #header .nav-list ul li a {
     font-size: 1.8rem;
-    /* text-shadow: 0 0 10px #dc143c; */
   }
   #header .nav-list ul li a i {
     margin-right: .2em;
