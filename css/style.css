@@ -358,7 +358,7 @@ span {
 }
 
 #header .nav-list ul li:hover a {
-  transition: .3s ease-in-out;
+  transition: .3s ease;
   color: crimson;
 }
 
@@ -1834,7 +1834,7 @@ img {
     flex-direction: row;
     border: 1px solid #ddd;
   }
- #projects .pproject-tile{
+ #projects .project-tile{
   flex-basis: 50%;
 
  }
@@ -1993,8 +1993,8 @@ img {
     font-size: 4rem;
   }
 
-  #header .nav-list ul a:hover {
-    text-shadow: 0 0 2px #fff;
+  #header .nav-list ul li a{
+    text-shadow: none;
   }
 
   #hero-h1 {
@@ -2044,13 +2044,19 @@ img {
 
   #header .nav-list ul li {
     display: inline-block;
+    padding:2em 0;
   }
 
   #header .nav-list ul li a {
-    font-size: 2rem;
-    text-shadow: 0 0 10px #dc143c;
+    font-size: 1.8rem;
+    /* text-shadow: 0 0 10px #dc143c; */
   }
-
+  #header .nav-list ul li a i {
+    margin-right: .2em;
+  }
+  #header .nav-list ul li a:hover i {
+    /* transition: .1s ease; */
+  }
   #header .nav-list ul a:after {
     display: none;
   }
