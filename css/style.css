@@ -1192,9 +1192,7 @@ span {
   background-color: #000;
   opacity: 0.6;
   overflow: hidden;
-
 }
-
 #about .col-left {
   width: 100%;
   height: 360px;
@@ -1212,13 +1210,32 @@ span {
   z-index: 20;
   background: #fff;
   border-radius: 5px;
-  border: 1px solid #dc143c;
+  position: relative;
+  /* border: 1px solid #dc143c; */
+  
+}
+#about .col-right::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -10;
+  box-shadow: inset 5px 5px 5px rgba(199, 199, 199, 0.667),
+  inset -5px -5px 5px #000a;
 }
 
+#about .col-right .section-title:after {
+  width: 80%;
+  margin: 0 auto;
+}
 #about .col-right .about-title {
   display: flex;
   flex-direction: column;
   padding: 0 2em 3em 2em;
+  
 } 
 
 #about .col-right .about-title:hover {
@@ -1282,11 +1299,14 @@ span {
   text-overflow: ellipsis;
   text-align: left;
   padding-left: 4px;
+  z-index: 13;
 }
 
 .custom-scrollbar-js {
   height: 200px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  padding: 1em;
 }
 
 #about .col-left .about-img {
