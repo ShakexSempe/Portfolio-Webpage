@@ -925,7 +925,7 @@ span {
   position: relative;
 }
 
-.projects::before {
+/* .projects::before {
   content: "";
   position: absolute;
   left: 0;
@@ -934,10 +934,10 @@ span {
   width: 100%;
   background-image: radial-gradient(#8d092e71, #000a);
 
-  /*glassmorphism effect*/
+  
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);  
-}
+} */
 #projects .projects::after {
   content: "";
   position: absolute;
@@ -946,7 +946,7 @@ span {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.3;
+  opacity: 0.6;
   overflow: hidden
 }
 
@@ -1013,6 +1013,7 @@ span {
   flex-direction: column;
   background-image: var(--overlay);
   background: #485563c5;
+  backdrop-filter: blur(1px);
   transition: 1.3s ease;
   box-shadow: inset 5px 0px  5px rgba(150, 149, 149, 0.667),
               inset -3px -5px 5px #000;
@@ -1123,7 +1124,7 @@ span {
   width: 100%;
   box-shadow: 0 0 5px #000a,
               inset 5px 5px 5px #ddd,
-              inset -5px -5px 5px #000;
+              inset -5px 0px 5px #000;
 
   background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
   opacity: 0.5;
