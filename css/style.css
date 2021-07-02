@@ -556,7 +556,6 @@ span {
 #hero-h1 {
   background: transparent;
   backdrop-filter: blur(4px);
-  /* border: 1px solid rgba(221, 221, 221, 0.096); */
   padding: 15px;
   border-radius: 5px;
   height: 50vh;
@@ -608,7 +607,6 @@ span {
   text-align: center;
   width: 100vw;
   margin: 0px auto;
-  /* padding:  30vh 0 50vh 0; */
 
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
@@ -627,9 +625,6 @@ span {
   left: 0;
   top: 0;
   height: 100%;
-  /*glassmorphism effect*/
-  /* backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px); */
   width: 100%;
 }
 #skills .skills::after {
@@ -649,15 +644,12 @@ span {
   height: auto;
   background: #fff;
   z-index: 30;
-  /* position: absolute;
-  top: 0; */
 }
 #skills .skills-top {
   width: 90%;
   padding: .5em .5em 3em .5em;
   text-align: center;
   margin:5em auto;
-  /* background: rgb(255, 255, 255); */
   background-image: var(--overlay);
   background: #48556388;
   backdrop-filter: blur(2px);
@@ -686,10 +678,6 @@ span {
     width: 45px;
     height: 45px;
     border: none;
-    /* border-top: 0px solid #cd143c; */
-    /* border-right: 3px solid #000; */
-    /* border-bottom: 3px solid #000; */
-    /* border-left: 0px solid #cd143c; */
     top: 100%;
     left: 50%;
     margin-left: -24px;
@@ -734,10 +722,7 @@ span {
   overflow: hidden;
   border-radius: 10px;
   height: auto;
-  /* border: 1px rgba(199, 196, 196, 0.062) solid; */
-
   box-shadow: var(--box-shadow-bright);
-
   /*border radius not visiblie without hidden overflow*/
 }
 
@@ -772,7 +757,6 @@ span {
 #skills .skills-bottom .icon {
   height: 80px;
   width: 80px;
-  /* border: 1px solid #eee; */
   border-radius: 50%;
   box-shadow: -2px -2px 3px #ddd;
   padding: 10px;
@@ -840,8 +824,6 @@ span {
 }
 
 /* Dropdown button on hover & focus */
-
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -869,8 +851,6 @@ span {
               inset -2px -2px 3px #000a;
 }
 
-
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -895,12 +875,10 @@ span {
   height: 100%;
   width: 100%;
   background-image: radial-gradient(#8d092e71, #000a);
-  /*glassmorphism effect*/
+  
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
 }
-
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
@@ -916,7 +894,7 @@ span {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 50px 0;
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -925,19 +903,6 @@ span {
   position: relative;
 }
 
-/* .projects::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: radial-gradient(#8d092e71, #000a);
-
-  
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);  
-} */
 #projects .projects::after {
   content: "";
   position: absolute;
@@ -960,14 +925,13 @@ span {
 
 #projects .projects-header h1 {
   margin-bottom: 50px;
-  /* background-image: linear-gradient(90deg, #000, skyblue, #161616 ,#000, skyblue, gold, #dc143c, purple, #dc1489, skyblue, purple, #dc1489, skyblue, #000 ); */
-  background-image: linear-gradient(40deg, #000,purple, skyblue ,#000, skyblue, #dc143c, #000, skyblue , purple, #000 );
+  background-image: linear-gradient(40deg, #000,purple, skyblue ,#000, skyblue, #dc143c, #000, skyblue , #000, purple );
   background-size: 900%;
   background-position: 0%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: projact 20s infinite alternate;
+  animation: projact 20s infinite;
 }
 
 @keyframes projact {
@@ -993,7 +957,6 @@ span {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
-  /* border: 1px solid #ddda; */
   box-shadow: 0 0 5px #000a,
               inset 5px 5px 5px #ddda,
               inset -5px -5px 5px #000;
@@ -1171,7 +1134,7 @@ span {
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
-  padding: 10px 10px 100px 10px;
+  padding: 40px 10px 100px 10px;
 
   background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
 
