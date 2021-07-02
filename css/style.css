@@ -669,12 +669,6 @@ span {
   transition: .2s linear;
 
 }
-#skills .skills-top:hover {
-  transition: .2s linear;
-  transform: scale(1.03);
-  box-shadow: inset 4px 4px 5px #000a, 
-              inset -4px -4px 5px #ddda ;
-}
 .skills-top p {
   color: #fff;
   background: transparent;
