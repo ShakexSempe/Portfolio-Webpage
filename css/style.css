@@ -1873,7 +1873,7 @@ span {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  border: 1px solid rgb(167, 166, 166);
+  /* border: 1px solid rgb(167, 166, 166); */
   background-image: linear-gradient(0deg, rgb(0, 0, 0), #dc143c);
   width: 3rem;
   height: 3rem;
@@ -1886,6 +1886,8 @@ span {
   opacity: 0;
   visibility: hidden;
   z-index: -100;
+  box-shadow: inset 2px 2px 3px #ddda,
+              inset -2px -2px 3px #000a;
 }
 
 
