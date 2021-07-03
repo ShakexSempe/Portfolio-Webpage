@@ -876,6 +876,8 @@ span {
 .dropbtn:focus {
   transform: scale(.98);
   transition: .2s ease;
+  border: none;
+  outline: none;
 }
 
 .dropbtn:focus {
