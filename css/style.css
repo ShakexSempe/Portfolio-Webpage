@@ -53,6 +53,11 @@
                       inset 5px 5px 10px #fff,
                       inset -5px -5px 15px #000;
   
+  --contact-shadow: inset 5px 5px 10px #ddda,
+                    inset -5px -5px 10px #000a;
+
+  --contact-shadow-hover: inset 5px 5px 10px #000a,
+                          inset -5px -5px 10px #ddda;
   
 }
 
@@ -1326,7 +1331,7 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  transition: .3s ease;
+  transition: 1.5s ease;
   box-shadow: inset 5px 5px 5px #000a,
               inset -5px -5px 5px #a7a6a6aa;
 }
@@ -1344,7 +1349,7 @@ span {
   /* background: #000; */
   opacity: 0;
   border-radius: 10px;
-  transition: .3s ease;
+  transition: 1.5s ease;
   box-shadow: inset 5px 5px 10px #fffa,
               inset -5px -5px 5px #000a;
   
@@ -1361,7 +1366,7 @@ span {
   object-fit: cover;
   margin: 0px auto;
   transform: scale(.9);
-  transition: .3s ease;
+  transition: 1s ease;
 }
 #about .col-left .about-img:hover #me {
   transform: scale(1);
@@ -1489,38 +1494,48 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: var(--box-shadow-hover);
-  transition: .3s ease;
+  transition: .5s ease;
   cursor: pointer;
-  /* filter: grayscale(.8); */
   position: relative;
 }
-/* #contact .contact-item::after {
+#contact .contact-item::before {
   position: absolute;
   content: '';
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
-  box-shadow: var(--box-shadow-hover);
+  border-radius: 10px;
+  /* z-index: -2; */
+  opacity: 1;
+  transition: .5s ease;
+  box-shadow: var(--contact-shadow);
+
+} 
+#contact .contact-item:hover.contact-item::before {
+  opacity: 0;
+  
+}
+#contact .contact-item::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--contact-shadow-hover);
   border-radius: 10px;
   z-index: -2;
   opacity: 0;
-  transition: .3s ease;
+  transition: .5s ease;
 } 
-#contact .contact-item:hover .contact-item::after {
-  opacity: 0;
-  transition: .3s ease;
-  
-} */
+#contact .contact-item:hover.contact-item::after {
+  opacity: 1;
+}
 
 #contact .contact-item:hover,
 #contact .contact-item:focus {
-  transition: .4s ease;
-  /* background-color: transparent; */
   transform: scale(.96);
-  box-shadow: var(--box-shadow);
   border: none;
   filter: none;
 
@@ -1530,51 +1545,87 @@ span {
   margin: 0 auto;
   margin-bottom: 10px;
   padding: .5em 1em;
-  background-color: #f4f4f4;
   border-radius: 10px;
-  box-shadow: var(--box-shadow-light-hover);
+  transition: .5s ease;
+  position: relative;
+}
+#contact .icon::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: var(--contact-shadow);
   transition: .5s ease;
 }
+#contact .contact-item:hover.contact-item .icon::before {
+  opacity: 0;
+}
+#contact .icon::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: var(--contact-shadow-hover);
+  transition: .5s ease;
+}
+#contact .contact-item:hover.contact-item .icon::after {
+  opacity: 1;
+}
+
 #contact .icon img {
   transition: .5s ease;
   transform: scale(.8);
-  width: 100%;
-}
-#contact .contact-item:hover .icon {
-  box-shadow: var(--box-shadow);
-  transition: .5s ease;
 }
 #contact .contact-item:hover .icon img {
   /* box-shadow: var(--box-shadow); */
-  transition: .5s ease;
   transform: scale(1);
 }
 
 
 
+
 #contact .contact-info h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  letter-spacing: .05em;
-  margin-bottom: 5px;
-  padding: .2em;
-  border-radius: 10px;
-  transition: .2s ease;
-  box-shadow: var(--box-shadow-light-hover);
-  
-  position: relative;
-  /* box-shadow: var(--box-shadow-light); */
-  
-}
-#contact .contact-item:hover h1 {
   background-image: linear-gradient(10deg, purple, #dc1489, skyblue, purple, #dc1489, skyblue );
   background-size: 250%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: .2s ease;
-  box-shadow: var(--box-shadow);
-
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: .05em;
+  margin-bottom: 5px;
+  /* box-shadow: var(--contact-shadow); */
+  border-radius: 10px;
+  transition: .5s ease;
+  position: relative;
+  padding: .2em 1em;
+  
+}
+#contact .contact-item h1::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--contact-shadow);
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 1;
+  transition: .5s ease;
+}
+#contact .contact-item:hover h1::before {
+  opacity: 0;
 }
 #contact .contact-item h1::after {
   position: absolute;
@@ -1584,39 +1635,64 @@ span {
   width: 100%;
   height: 100%;
   background-color: #f4f4f4;
+  box-shadow: var(--contact-shadow-hover);
   border-radius: 10px;
   z-index: -1;
-  opacity: 1;
-  transition: .2s ease;
+  opacity: 0;
+  transition: .5s ease;
 }
-/* #contact .contact-item:hover h1::after {
+#contact .contact-item:hover h1::after {
   opacity: 1;
-  transition: .3s ease;
-} */
+}
 #contact .contact-info h2 {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 600;
-  padding: .5em;
+  padding: .5em 2em;
   border-radius: 10px;
   margin: .5em auto;
-  box-shadow: var(--box-shadow-light-hover);
-  background-color: #f4f4f4;
-  
   color: #000a;
-  transition: .2s ease;
+  transition: .5s ease;
+  position: relative;
 }
 #contact .contact-item:hover h2 {
-  letter-spacing: .159em;
-  color: #000;
-  transition: .2s ease;
-  box-shadow: var(--box-shadow);
-  
-}
-#contact .contact-item:hover a h2 {
+  transform: scaleX(1.1)
   /* transition: .2s ease; */
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
+#contact .contact-info h2::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: var(--contact-shadow);
+}
+
+#contact .contact-item:hover.contact-item h2::before {
+  opacity: 0;
+}
+#contact .contact-info h2::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #f4f4f4;
+  z-index: -1;
+  border-radius: 10px;
+  transition: .5s ease;
+  box-shadow: var(--contact-shadow-hover);
+}
+
+#contact .contact-item:hover.contact-item h2::after {
+  opacity: 1;
+}
+
 /*End of Contact Section*/
 
 /*Footer*/
