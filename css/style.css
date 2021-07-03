@@ -1449,7 +1449,7 @@ span {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 30px 0;
   background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1486,10 +1486,9 @@ span {
 #contact .contact-item {
   width: 75%;
   height: auto;
-  padding: 1.5em ;
   text-align: center;
   border-radius: 10px;
-  border: none;
+  padding: 1.5em ;
   margin: 1.5em auto;
   display: flex;
   flex-direction: column;
@@ -1512,7 +1511,7 @@ span {
   /* z-index: -2; */
   opacity: 1;
   transition: .5s ease;
-  box-shadow: var(--contact-shadow);
+  box-shadow: var(--contact-shadow-hover);
 } 
 #contact .contact-item:hover.contact-item::before {
   opacity: 0;
@@ -1525,13 +1524,13 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: var(--contact-shadow-hover);
-  /* backdrop-filter: blur(.3em);
-  -webkit-backdrop-filter: blur(.15em); */
+  box-shadow: var(--contact-shadow);
+  backdrop-filter: blur(.15em);
+  -webkit-backdrop-filter: blur(.15em);
   border-radius: 10px;
   z-index: -2;
   opacity: 0;
-  transition: .2s ease;
+  transition: .5s ease;
 } 
 #contact .contact-item:hover.contact-item::after {
   opacity: 1;
@@ -1540,18 +1539,18 @@ span {
 #contact .contact-item:hover,
 #contact .contact-item:focus {
   transform: scale(.96);
-  border: none;
-  filter: none;
+  transition: .5s ease;
 
 }
 
 #contact .icon {
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 5px auto 10px auto;
   padding: .5em 1em;
   border-radius: 10px;
   transition: .5s ease;
   position: relative;
+  display: grid;
+  place-items: center;
 }
 #contact .icon::before {
   position: absolute;
@@ -1562,7 +1561,7 @@ span {
   height: 100%;
   background: #f4f4f4;
   border-radius: 10px;
-  box-shadow: var(--contact-shadow);
+  box-shadow: var(--contact-shadow-hover);
   transition: .5s ease;
 }
 #contact .contact-item:hover.contact-item .icon::before {
@@ -1579,7 +1578,7 @@ span {
   z-index: -1;
   background: #f4f4f4;
   border-radius: 10px;
-  box-shadow: var(--contact-shadow-hover);
+  box-shadow: var(--contact-shadow);
   transition: .5s ease;
 }
 #contact .contact-item:hover.contact-item .icon::after {
@@ -1588,7 +1587,7 @@ span {
 
 #contact .icon img {
   transition: .5s ease;
-  transform: scale(.8);
+  transform: scale(.85);
 }
 #contact .contact-item:hover .icon img {
   transform: scale(1.1);
@@ -1620,7 +1619,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: var(--contact-shadow);
+  box-shadow: var(--contact-shadow-hover);
   border-radius: 10px;
   opacity: 1;
   transition: .5s ease;
@@ -1637,7 +1636,7 @@ span {
   height: 100%;
   background-color: #f4f4f4;
   z-index: -1;
-  box-shadow: var(--contact-shadow-hover);
+  box-shadow: var(--contact-shadow);
   border-radius: 10px;
   opacity: 0; 
   transition: .5s ease;
@@ -1649,7 +1648,8 @@ span {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 600;
-  padding: .5em 2em;
+  letter-spacing: .1em;
+  padding: .5em 1.3em;
   border-radius: 10px;
   margin: .5em auto;
   color: #000a;
@@ -1657,9 +1657,7 @@ span {
   position: relative;
 }
 #contact .contact-item:hover h2 {
-  transform: scaleX(1.1)
-  /* transition: .2s ease; */
-  /* text-decoration: underline; */
+  transform: scaleX(1.12)
 }
 #contact .contact-info h2::before {
   position: absolute;
@@ -1670,7 +1668,7 @@ span {
   height: 100%;
   border-radius: 10px;
   transition: .5s ease;
-  box-shadow: var(--contact-shadow);
+  box-shadow: var(--contact-shadow-hover);
 }
 
 #contact .contact-item:hover.contact-item h2::before {
@@ -1688,7 +1686,7 @@ span {
   z-index: -1;
   border-radius: 10px;
   transition: .5s ease;
-  box-shadow: var(--contact-shadow-hover);
+  box-shadow: var(--contact-shadow);
 }
 
 #contact .contact-item:hover.contact-item h2::after {
