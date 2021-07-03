@@ -1389,13 +1389,17 @@ span {
   color: #fff;
   margin: 0 auto;
   padding: 1em;
-  box-shadow: 15px 15px 5px #26262671;
+  box-shadow: 
+              inset 5px 0px 5px #c7c7c7aa,
+              inset -5px -5px 5px #000a;
   text-transform: uppercase;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   /* border-radius: 5px; */
-  outline: 1px solid rgba(255, 255, 255, 0.537);
-  outline-offset: -2px;
-  transition: outline-offset 250ms ease;
-  animation: cv-button 2s ease-in-out infinite;
+  /* outline: 1px solid rgba(255, 255, 255, 0.537); */
+  /* outline-offset: -2px; */
+  /* transition: outline-offset 250ms ease; */
+  /* animation: cv-button 2s ease-in-out infinite; */
 }
 #cv a{
   transition: .3s ease;
