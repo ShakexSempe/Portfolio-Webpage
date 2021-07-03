@@ -784,7 +784,9 @@ span {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-
+#skills .skills-bottom .icon img {
+  width: 100%;
+}
 #skills .skills-item h2 {
   font-size: 2.5rem;
   color: #fff;
@@ -812,11 +814,14 @@ span {
 }
 
 #git-icon img {
+  width: 100%;
   border-radius: 50%;
 }
 
 #netlify-icon img {
   border-radius: 50%;
+  width: 100%;
+
 }
 
 #express-icon img {
