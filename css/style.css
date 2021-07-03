@@ -2280,6 +2280,10 @@ span {
   }
 
   /*about*/
+
+  #about .col-right .section-title:after {
+    width: 100%;
+  }
   .profile-link {
     font-size: 2.2rem;
   }
