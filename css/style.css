@@ -1762,14 +1762,16 @@ span {
   right: 0;
   bottom: 0;
   left: 0;
+  font-family: 'Font Awesome 5 Free';
+  transition: 3s ease;
+  border-radius: 5px;
 }
 #footer .brand h1::before {
-  content: '';
+  content: '\f337';
+  text-align: center;
   background: var(--overlay);
   box-shadow: inset 3px 3px 5px rgba(221, 221, 221, 0.156),
               inset -3px -3px 5px rgba(0, 0, 0, 0.156);
-  border-radius: 5px;
-  transition: 3s ease;
   /* animation: typewriter 5s ease-in infinite; */
 }
 #footer .brand h1 span {
