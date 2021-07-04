@@ -1923,33 +1923,69 @@ span {
   padding:  2em;
   border-radius: 5px;
   position: relative;
+  transform-style: preserve-3d;
 }
 #footer .social-icon::before {
   content: "\f0c0";
   position: absolute;
   font-family: 'Font Awesome 5 Free';
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   color: #ddd;
+  font-weight: 600;
+  padding: .3em;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  /* background-color: green; */
-  box-shadow: inset 3px 3px 5px #ddd,
+  /* background-image: var(--overlay); */
+  /* opacity: .5; */
+  background-image: linear-gradient(0deg, transparent, #29323cd8);
+  box-shadow: inset 3px 3px 5px #f4f4f4,
               inset -3px 0px 5px #000;
+  pointer-events: none;
+  transition: 1s ease;
 }
+#footer .social-icon:hover.social-icon::before{
+  opacity: 0;
+  z-index: -1;
+}
+#footer .social-icon::after {
+  content: "\f0c0";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 2em;
+  font-weight: 600;
+  padding: .3em;
+  text-align: center;
+  color: rgba(221, 221, 221, 0.307);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  background-image: linear-gradient(0deg, transparent, #29323cc2);
+  box-shadow: inset 3px 3px 5px #000a,
+              inset -3px 0px 5px #ddda;
+  transition: 1s ease;
+}
+#footer .social-icon:hover.social-icon::after{
+  opacity: 1;
+  z-index: -1;
+}
+
 
 #footer .social-item {
   height: 50px;
   width: 50px;
   margin: 0 5px;
 }
-
 #footer .social-item img {
   filter: grayscale(0);
   transition: 0.3s ease;
+
 }
 #footer .social-item i {
   font-size: 3em;
@@ -2423,7 +2459,13 @@ span {
     width: 50%;
     justify-content: space-evenly;
     font-size: 4em;
-  
+}
+
+#footer .social-icon::before{
+  font-size: 1em;
+}
+#footer .social-icon::after{
+  font-size: 1em;
 }
 
 #footer .social-icon i {
