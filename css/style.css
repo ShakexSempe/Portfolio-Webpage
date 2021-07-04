@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&family=Philosopher:wght@700&family=Shippori+Mincho+B1:wght@700&family=Gruppo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@200;400;500;700&family=Philosopher:wght@400;700&family=Shippori+Mincho:wght@700&family=Source+Code+Pro:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
 
 * {
   padding: 0;
@@ -59,6 +59,9 @@
   --contact-shadow-hover: inset 5px 5px 10px #000a,
                           inset -5px -5px 10px #ddda;
   
+  --bg-color: hsl(49 37% 94%);
+  --typeWriterSpeed: 6s;
+  --typeWriterCharacters: 15;
 }
 
 body  {
@@ -1701,11 +1704,69 @@ span {
 /*Footer*/
 #footer {
   background-image: var(--overlay);
+  background-color: #333;
   height: 100vh;
 }
 #footer .footer-container {
   display: flex;
 }
+#footer .brand h1 {
+  font-family: 'Gruppo', cursive;
+  text-shadow: none;
+  letter-spacing: .3em;
+  position: relative;
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  width: max-content;
+} 
+#footer .brand h1::before,
+#footer .brand h1::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#footer .brand h1::before {
+  background: var(--overlay);
+  animation: typewriter 5s infinite;
+            /* steps(var(--typeWriterCharacters)) 2s infinite; */
+}
+/* h1::after {
+  width: .1em;
+  background: #000;
+  animation:     
+    typewriter 5s steps(var(--typeWriterCharacters)) 2s infinite,
+    blink 750ms steps(var(--typeWriterCharacters)) infinite; 
+} */
+/* footer keyframes */
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent; 
+  }
+}
+/* end of footer keyframes */
+
+#footer .brand h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 #footer .scene {
     position: relative;
@@ -1805,18 +1866,7 @@ span {
   padding-bottom: 10px;
 }
 
-#footer h2 {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 #footer .social-icon {
   display: flex;
