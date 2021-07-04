@@ -1920,6 +1920,25 @@ span {
   justify-content: space-evenly;
   width: 90%;
   margin: 5px auto;
+  padding:  2em;
+  border-radius: 5px;
+  position: relative;
+}
+#footer .social-icon::before {
+  content: "\f0c0";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 3em;
+  text-align: center;
+  color: #ddd;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* background-color: green; */
+  box-shadow: inset 3px 3px 5px #ddd,
+              inset -3px 0px 5px #000;
 }
 
 #footer .social-item {
