@@ -1568,8 +1568,7 @@ span {
   opacity: 1;
 }
 
-#contact .contact-item:hover,
-#contact .contact-item:focus {
+#contact .contact-item:hover{
   transform: scale(.96);
   transition: .5s ease;
 
