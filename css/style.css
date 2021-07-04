@@ -1769,7 +1769,7 @@ span {
   box-shadow: inset 3px 3px 5px rgba(221, 221, 221, 0.156),
               inset -3px -3px 5px rgba(0, 0, 0, 0.156);
   border-radius: 5px;
-  transition: 5s;
+  transition: 3s ease;
   /* animation: typewriter 5s ease-in infinite; */
 }
 #footer .brand h1 span {
