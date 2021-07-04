@@ -1710,6 +1710,43 @@ span {
 #footer .footer-container {
   display: flex;
 }
+#footer .brand {
+  padding: 1em;
+  overflow: hidden;
+  border-radius: 10px;
+  
+  position: relative;
+}
+#footer .brand::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 3px 3px 5px #ddda,
+              inset -3px 0px 5px #000a;
+  transition: 1s ease;            
+}
+#footer .brand:hover.brand::before {
+  opacity: 0;
+}
+#footer .brand::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 3px 3px 5px #000a,
+              inset -3px 0px 5px #ddda;
+  transition: 1s ease;           
+  opacity: 0;
+
+}
+#footer .brand:hover.brand::after {
+  opacity: 1;
+}
 #footer .brand h1 {
   font-family: 'Gruppo', cursive;
   text-shadow: none;
@@ -1720,7 +1757,6 @@ span {
 } 
 #footer .brand h1::before,
 #footer .brand h1::after{
-  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -1728,17 +1764,40 @@ span {
   left: 0;
 }
 #footer .brand h1::before {
+  content: '';
   background: var(--overlay);
-  animation: typewriter 5s infinite;
-            /* steps(var(--typeWriterCharacters)) 2s infinite; */
+  box-shadow: inset 3px 3px 5px rgba(221, 221, 221, 0.156),
+              inset -3px -3px 5px rgba(0, 0, 0, 0.156);
+  border-radius: 5px;
+  transition: 5s;
+  /* animation: typewriter 5s ease-in infinite; */
 }
-/* h1::after {
-  width: .1em;
-  background: #000;
-  animation:     
-    typewriter 5s steps(var(--typeWriterCharacters)) 2s infinite,
-    blink 750ms steps(var(--typeWriterCharacters)) infinite; 
-} */
+#footer .brand h1 span {
+  font-size: 1.1em;
+}
+#footer .brand:hover.brand h1::before {
+  left: 100%;
+}
+#footer .brand h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(4em);
+  opacity: 0;
+  transition: 2s;
+}
+#footer .brand:hover.brand h2 {
+  transform: translateY(.5em);
+  opacity: 1;
+}
 /* footer keyframes */
 @keyframes typewriter {
   to {
@@ -1752,21 +1811,6 @@ span {
   }
 }
 /* end of footer keyframes */
-
-#footer .brand h2 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 
 #footer .scene {
     position: relative;
