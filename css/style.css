@@ -1356,7 +1356,9 @@ span {
   /* filter: grayscale(0.3); */
   border-radius: 10px;
   margin-top: 20px;
-  transition: .3s ease;
+  transition: .5s ease;
+  transform: preserve-3d;
+
 }
 #about .col-left .about-img::before {
   position: absolute;
@@ -1381,7 +1383,6 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: #000; */
   opacity: 0;
   border-radius: 10px;
   transition: 1s ease;
@@ -1392,6 +1393,7 @@ span {
 
 #about .col-left .about-img:hover.about-img::after {
   opacity: 1;
+  transform-style: preserve-3d;
 }
 
 #me {
@@ -1400,7 +1402,9 @@ span {
   border-radius: 10px;
   object-fit: cover;
   margin: 0px auto;
-  transform: scale(.9);
+  transform: scale(.8) rotateY(40deg) skewX(20deg);
+  transform: preserve-3d;
+  /* transform: scale(.9); */
   transition: 1s ease;
 }
 #about .col-left .about-img:hover #me {
