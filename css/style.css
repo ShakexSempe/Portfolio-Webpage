@@ -1201,16 +1201,6 @@ span {
   opacity: 0.6;
   overflow: hidden;
 }
-#about .col-left {
-  width: 100%;
-  height: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  z-index: 20;
-}
-
 #about .col-right {
   width: 90%;
   margin-right: 30px;
@@ -1348,6 +1338,17 @@ span {
   padding: 1em;
 }
 
+#about .col-left {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  z-index: 20;
+  transform-style: preserve-3d;
+}
+/* about image  */
 #about .col-left .about-img {
   height: 100%;
   width: 90%;
@@ -1403,8 +1404,10 @@ span {
   transition: 1s ease;
 }
 #about .col-left .about-img:hover #me {
+  transform-style: preserve-3d;
   transform: scale(1);
 }
+/* end of about image  */
 
 .fcc-link {
   color: #dc143c;
@@ -1428,11 +1431,6 @@ span {
   text-transform: uppercase;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /* border-radius: 5px; */
-  /* outline: 1px solid rgba(255, 255, 255, 0.537); */
-  /* outline-offset: -2px; */
-  /* transition: outline-offset 250ms ease; */
-  /* animation: cv-button 2s ease-in-out infinite; */
 }
 #cv a{
   transition: .3s ease;
@@ -1802,6 +1800,7 @@ span {
 }
 #footer .brand:hover.brand h1::before {
   left: 100%;
+  color: #dc143c;
 }
 #footer .brand h2 {
   font-family: 'Ubuntu', sans-serif;
