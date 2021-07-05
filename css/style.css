@@ -1625,7 +1625,7 @@ span {
 }
 
 #contact .icon img {
-  transition: .5s ease;
+  transition: 1s ease;
   transform: scale(.85) rotateY(40deg) skewX(20deg);
   transform: preserve-3d;
 }
