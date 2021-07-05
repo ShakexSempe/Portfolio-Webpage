@@ -1488,6 +1488,7 @@ span {
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  transform-style: preserve-3d;
 }
 
 #contact .contact::before {
@@ -1541,6 +1542,7 @@ span {
   height: 100%;
   border-radius: 10px;
   transition: .5s ease;
+  transform: preserve-3d;
   box-shadow: var(--contact-shadow-hover);
 } 
 #contact .contact-item:hover.contact-item::before {
@@ -1560,7 +1562,7 @@ span {
   border-radius: 10px;
   z-index: -2;
   opacity: 0;
-  transition: 1s ease;
+  transition: .5s ease;
 } 
 #contact .contact-item:hover.contact-item::after {
   opacity: 1;
@@ -1568,8 +1570,8 @@ span {
 
 #contact .contact-item:hover{
   transform: scale(.96);
-  transition: .5s ease;
-
+  transition: 1s ease;
+  transform: preserve-3d;
 }
 
 #contact .icon {
@@ -1592,6 +1594,8 @@ span {
   border-radius: 10px;
   box-shadow: var(--contact-shadow-hover);
   transition: 1s ease;
+  transform: preserve-3d;
+
 }
 #contact .contact-item:hover.contact-item .icon::before {
   opacity: 0;
@@ -1609,6 +1613,8 @@ span {
   border-radius: 10px;
   box-shadow: var(--contact-shadow);
   transition: .5s ease;
+  transform: preserve-3d;
+
 }
 #contact .contact-item:hover.contact-item .icon::after {
   opacity: 1;
@@ -1616,10 +1622,15 @@ span {
 
 #contact .icon img {
   transition: .5s ease;
-  transform: scale(.85);
+  transform: scale(.85) rotateY(40deg) skewX(20deg);
+  transform: preserve-3d;
 }
+
+
 #contact .contact-item:hover .icon img {
   transform: scale(1.1);
+  transform: preserve-3d;
+
 }
 
 #contact .contact-info h1 {
