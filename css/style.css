@@ -2496,6 +2496,7 @@ span {
   #footer .social-icon {
     display: flex;
     margin: 30px auto;
+    padding: .5em 1em;
     width: 50%;
     justify-content: space-evenly;
     font-size: 4em;
