@@ -1616,7 +1616,7 @@ span {
   background: #f4f4f4;
   border-radius: 10px;
   box-shadow: var(--contact-shadow);
-  transition: .5s ease;
+  transition: 1s ease;
   transform: preserve-3d;
 
 }
