@@ -30,7 +30,7 @@ const projects = [
     {
         id: 4,
         title: "Valoir &trade;",
-        link: "https://shakexsempe.github.io/valoir.netlify.app/",
+        link: "https://valoir.netlify.app/",
         img: "img/valoir.bmp",
         head: "CSS 3 showcase project",
         desc: "Sticky Parallax scrolling effect project",
@@ -54,7 +54,6 @@ const projects = [
         desc: "page featuring links to javascript tutorial repositories",
         alt: 'javascript',
     },
-
 ];
 
 const allProjects = document.querySelector('.all-projects');
@@ -63,3 +62,30 @@ window.addEventListener('DOMContentLoaded', () => {
     displayProjects(projects);
 });
 
+displayProjects = (projectsItems) => {
+    let displayProject = projectsItems.map(project => {
+        return `<div class="project-item">
+        <div class="project-tile">
+            <h1>${project.title}</h1>
+            <a href=${project.link} target="_blank">
+                <i class="fas fa-link"></i>
+                <h2>${project.head}</h2>
+                <p>
+                    ${project.desc}
+                </p>
+            </a>
+            <ul class="tech-list">
+                <li>HTML</li>
+                <li>Sass</li>
+                <li>Javascript</li>
+            </ul>
+            </div>
+            <div class="project-img">
+            <img src=${project.img} alt="img" />
+            </div>
+        </div>`
+    });
+    displayProject = displayProject.join("");
+    console.log(displayProject);
+    allProjects.innerHTML = displayProject;
+}
