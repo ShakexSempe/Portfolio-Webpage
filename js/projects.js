@@ -18,6 +18,43 @@ const projects = [
         desc: "CSS animations and positioning tutorial project",
         alt: 'earth moon',
     },
+    {
+        id: 3,
+        title: "Thato Technical Drawings",
+        link: "https://shakexsempe.github.io/thato-tech-drawings/",
+        img: "img/thato.bmp",
+        head: "Technical Drawings Lecturer Website",
+        desc: "CSS animations and positioning tutorial project",
+        alt: 'technical drawing',
+    },
+    {
+        id: 4,
+        title: "Valoir &trade;",
+        link: "https://shakexsempe.github.io/valoir.netlify.app/",
+        img: "img/valoir.bmp",
+        head: "CSS 3 showcase project",
+        desc: "Sticky Parallax scrolling effect project",
+        alt: 'img',
+    },
+    {
+        id: 5,
+        title: "Munch Up&trade;",
+        link: "https://shakexsempe.github.io/munch-up/",
+        img: "img/munch-logo.jpg",
+        head: "Bakery & cupcake shop webpage",
+        desc: "Small business website for a local cake & cupcake shop",
+        alt: 'cakes',
+    },
+    {
+        id: 6,
+        title: "javascript projects",
+        link: "https://shakexsempe.github.io/javascript-projects-portfolio/",
+        img: "img/projects.bmp",
+        head: "javascript portfolio page",
+        desc: "page featuring links to javascript tutorial repositories",
+        alt: 'javascript',
+    },
+
 ];
 
 const allProjects = document.querySelector('.all-projects');
@@ -26,31 +63,3 @@ window.addEventListener('DOMContentLoaded', () => {
     displayProjects(projects);
 });
 
-displayProjects = (projectItems) => {
-    let displayProject = projectItems.map( project => {
-        return `<div class="project-item">
-        <div class="project-tile">
-          <h1>${project.title}</h1>
-          <a href=${project.link} target="_blank">
-            <i class="fas fa-link"></i> 
-            <h2>${project.head}</h2>
-            <p>
-              ${project.desc}
-            </p>
-          </a>
-          <ul class="tech-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-        </div>
-        <div class="project-img">
-          <img src=${project.img} alt=${project.alt} />
-          
-        </div>
-      </div>`
-    });
-    displayProject.join("");
-    allProjects.innerHTML = displayProject;
-
-}
