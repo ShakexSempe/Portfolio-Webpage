@@ -3,7 +3,7 @@ const projects = [
         id: 1,
         title: "tribute page",
         link: "https://shakexsempe.github.io/lewis-hamilton-tribute-page/",
-        img: "../img/lewis.bmp",
+        img: "img/lewis.bmp",
         head: "FreeCodeCamp Responsive Web Design Project #1",
         desc:`<strike>Six</strike> Seven time Formula One World Champion Lewis Hamilton tribute
         page`,
@@ -13,7 +13,7 @@ const projects = [
         id: 2,
         title: "Planet Animation",
         link: "https://shakexsempe.github.io/Planet-Animation/",
-        img: "../img/planets.bmp",
+        img: "img/planets.bmp",
         head: "Advanced CSS3 Tutorial",
         desc: "CSS animations and positioning tutorial project",
         alt: 'earth moon',
