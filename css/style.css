@@ -1155,9 +1155,8 @@ span {
 
 }
 
-.tech-list li {
+#projects .tech-list p {
   color: yellowgreen;
-  list-style: none;
   margin: 5px;
   padding: 5px;
   font-size: 1.2em;
@@ -2521,9 +2520,6 @@ span {
   box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.827);
 }
 
-.tech-list li {
-  font-size: 1.3em;
-}
 
 #footer .social-item {
   margin: 0 10px;

@@ -8,6 +8,7 @@ const projects = [
         desc:`<strike>Six</strike> Seven time Formula One World Champion Lewis Hamilton tribute
         page`,
         alt: 'lewis hamilton',
+        tech: "css",
     },
     {
         id: 2,
@@ -17,6 +18,8 @@ const projects = [
         head: "Advanced CSS3 Tutorial",
         desc: "CSS animations and positioning tutorial project",
         alt: 'earth moon',
+        tech: 'css3',
+
     },
     {
         id: 3,
@@ -26,6 +29,8 @@ const projects = [
         head: "Technical Drawings Lecturer Website",
         desc: "CSS animations and positioning tutorial project",
         alt: 'technical drawing',
+        tech: 'scss',
+
     },
     {
         id: 4,
@@ -35,6 +40,8 @@ const projects = [
         head: "CSS 3 showcase project",
         desc: "Sticky Parallax scrolling effect project",
         alt: 'img',
+        tech: 'scss',
+
     },
     {
         id: 5,
@@ -44,6 +51,8 @@ const projects = [
         head: "Bakery & cupcake shop webpage",
         desc: "Small business website for a local cake & cupcake shop",
         alt: 'cakes',
+        tech: 'scss',
+
     },
     {
         id: 6,
@@ -53,6 +62,8 @@ const projects = [
         head: "javascript portfolio page",
         desc: "page featuring links to javascript tutorial repositories",
         alt: 'javascript',
+        tech: 'javascript',
+
     },
 ];
 
@@ -74,18 +85,15 @@ displayProjects = (projectsItems) => {
                     ${project.desc}
                 </p>
             </a>
-            <ul class="tech-list">
-                <li>HTML</li>
-                <li>Sass</li>
-                <li>Javascript</li>
-            </ul>
+            <div class="tech-list">
+                <p>${project.tech}<p>
+            </div>
             </div>
             <div class="project-img">
             <img src=${project.img} alt="img" />
             </div>
         </div>`
-    });
+    }); 
     displayProject = displayProject.join("");
-    console.log(displayProject);
     allProjects.innerHTML = displayProject;
 }
