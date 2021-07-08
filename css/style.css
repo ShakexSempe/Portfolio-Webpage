@@ -1037,6 +1037,7 @@ span {
   font-weight: 900;
   line-height: 1em;
   padding-bottom: 10px;
+  text-transform: capitalize;
   border-bottom: 1px dashed #fff;
   background: linear-gradient(0deg, #b9b6b6, #fff);
   -webkit-background-clip: text;
