@@ -615,7 +615,7 @@ span {
   text-align: center;
   width: 100vw;
   margin: 0 auto;
-  padding: 1em 0;
+  padding-bottom: 1em;
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -730,7 +730,7 @@ span {
   overflow: hidden;
   border-radius: 10px;
   height: auto;
-  box-shadow: var(--box-shadow-bright);
+  /* box-shadow: var(--box-shadow-bright); */
   /*border radius not visiblie without hidden overflow*/
 }
 
@@ -756,17 +756,31 @@ span {
   left: 0;
   top: 0;
   height: 100%;
+  border-radius: 10px;
   width: 100%;
   background: var(--overlay);
   opacity: 0.7;
   z-index: -1;
 }
-
+#skills .skills-item::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: inset 4px 4px 5px #ddda,
+              inset -4px -4px 5px #000;
+  z-index: 2;
+}
 #skills .skills-bottom .icon {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  box-shadow: -2px -2px 3px #ddd;
+  box-shadow: 2px 2px 5px #000,
+              inset 2px 2px 3px #ddda,
+              inset -2px -2px 5px #000a;
   padding: 10px;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -819,8 +833,8 @@ span {
 /* Dropdown Button */
 .dropbtn {
   color: #fff;
-  width: 80vw;
-  padding: 1em;
+  /* width: 80vw; */
+  padding:.4em 4em;
   font-size: 2.2em;
   font-weight: 600;
   cursor: pointer;
@@ -836,35 +850,26 @@ span {
 
 }
 .dropbtn::before {
-  content: '\f107';
-  font-family: "Font Awesome 5 Free";
-  display: grid;
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  letter-spacing: .1em;
-  color: #ddda;
   /* background: linear-gradient(0deg, #dc134c, #333); */
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  transition: .2s;
+  transition: .5s;
   box-shadow: 5px 10px 5px #000,
               inset 3px 3px 5px #000a,
               inset -3px -3px 5px #fffa;
 }
 
 .dropbtn::after {
-  content: '\f106';
-  letter-spacing: .1em;
-  font-family: "Font Awesome 5 Free";
   position: absolute;
-  display: grid;
-  color: #ddda;
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
-  /* background: linear-gradient(0deg, #dc134c, #333); */
   height: 100%;
   opacity: 0;
   border-radius: 10px;
@@ -873,10 +878,10 @@ span {
               inset 3px 3px 5px #fffa,
               inset -3px -3px 5px #000a;
 }
-.dropbtn:focus.dropbtn::after {
+.dropbtn:hover.dropbtn::after {
   opacity: 1;
 }
-.dropbtn:focus.dropbtn::before {
+.dropbtn:hover.dropbtn::before {
   opacity: 0;
 }
 
