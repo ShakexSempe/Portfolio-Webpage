@@ -614,8 +614,8 @@ span {
   flex-direction: column;
   text-align: center;
   width: 100vw;
-  margin: 0px auto;
-
+  margin: 0 auto;
+  padding: 1em 0;
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -818,57 +818,59 @@ span {
 /*Dropdown*/
 /* Dropdown Button */
 .dropbtn {
-  background: linear-gradient(0deg, #dc134c, #333);
-  color: white;
-  /* width: 80vw; */
-  
-  padding: .4em 4em;
-  font-size: 2.5em;
+  color: #fff;
+  width: 80vw;
+  padding: 1em;
+  font-size: 2.2em;
   font-weight: 600;
   cursor: pointer;
   border: none;
   border-radius: 10px;
+  background: none;
   text-align: center;
-  transition: .5s ease;
+  transition: .2s ease;
   font-family: 'Gruppo', cursive;
   position: relative;
+  overflow: hidden;
 
 }
 .dropbtn::before {
-  content: '';
+  content: '\f107   My Skills';
+  font-family: "Font Awesome 5 Free";
+  display: grid;
+  place-items: center;
   position: absolute;
   top: 0;
   left: 0;
+  letter-spacing: .1em;
+  background: linear-gradient(0deg, #dc134c, #333);
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  transition: .5s;
+  transition: .2s;
   box-shadow: 5px 10px 5px #000,
               inset 3px 3px 5px #000a,
               inset -3px -3px 5px #fffa;
 }
-.dropbtn:hover.dropbtn::before {
-  opacity: 0;
-}
 
 .dropbtn::after {
-  content: '';
+  content: '\f106  My Skills';
+  letter-spacing: .1em;
+  font-family: "Font Awesome 5 Free";
   position: absolute;
+  display: grid;
+  place-items: center;
   top: 0;
   left: 0;
   width: 100%;
+  background: linear-gradient(0deg, #dc134c, #333);
   height: 100%;
   opacity: 0;
-  z-index: -1;
   border-radius: 10px;
   transition: .5s;
-  background: var(--overlay);
-  box-shadow: 0px 0px 10px #000,
+  box-shadow: 0px 0px 10px #000a,
               inset 3px 3px 5px #fffa,
               inset -3px -3px 5px #000a;
-}
-.dropbtn:hover.dropbtn::after {
-  opacity: .5;
 }
 .dropbtn:focus.dropbtn::after {
   opacity: 1;
@@ -877,14 +879,10 @@ span {
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus {
-  transform: scale(.98);
   transition: .2s ease;
+  transform: scale(.96);
   border: none;
   outline: none;
-}
-
-.dropbtn:focus {
-  transform: scale(.96);
 }
 
 /* The container <div> - needed to position the dropdown content */
