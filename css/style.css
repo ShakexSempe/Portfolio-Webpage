@@ -826,7 +826,8 @@ span {
   cursor: pointer;
   border: none;
   border-radius: 10px;
-  background: none;
+  background: linear-gradient(0deg, #dc134c, #333);
+  /* background: none; */
   text-align: center;
   transition: .2s ease;
   font-family: 'Gruppo', cursive;
@@ -835,15 +836,15 @@ span {
 
 }
 .dropbtn::before {
-  content: '\f107   My Skills';
+  content: '\f107';
   font-family: "Font Awesome 5 Free";
   display: grid;
-  place-items: center;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   letter-spacing: .1em;
-  background: linear-gradient(0deg, #dc134c, #333);
+  color: #ddda;
+  /* background: linear-gradient(0deg, #dc134c, #333); */
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -854,16 +855,16 @@ span {
 }
 
 .dropbtn::after {
-  content: '\f106  My Skills';
+  content: '\f106';
   letter-spacing: .1em;
   font-family: "Font Awesome 5 Free";
   position: absolute;
   display: grid;
-  place-items: center;
+  color: #ddda;
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(0deg, #dc134c, #333);
+  /* background: linear-gradient(0deg, #dc134c, #333); */
   height: 100%;
   opacity: 0;
   border-radius: 10px;
@@ -874,6 +875,9 @@ span {
 }
 .dropbtn:focus.dropbtn::after {
   opacity: 1;
+}
+.dropbtn:focus.dropbtn::before {
+  opacity: 0;
 }
 
 /* Dropdown button on hover & focus */
