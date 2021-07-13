@@ -359,19 +359,19 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: right;
+  
   z-index: 1;
   overflow-x: hidden;
   transition: 0.5s ease left;
 }
-
 #header .nav-list ul li:hover a {
   transition: .3s ease;
   color: crimson;
 }
 
 #header .nav-list ul.active {
-  left: 0%;
+  left: 20%;
   background: linear-gradient(90deg, #000, #4e0101, #000);
 }
 
@@ -389,7 +389,9 @@ span {
 
 #header .nav-list ul a i {
   margin: 0 auto;
-  font-size: 2rem;
+  padding-right: 1em;
+  /* font-size: 2rem; */
+  color: #fffa;
 } 
 
 #header .nav-list ul a::after {
@@ -780,7 +782,7 @@ span {
   border-radius: 50%;
   box-shadow: 2px 2px 5px #000,
               inset 2px 2px 3px #ddda,
-              inset -2px -2px 5px #000a;
+              inset -2px -2px 5px rgba(148, 29, 29, 0.667);
   padding: 10px;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -1966,6 +1968,7 @@ span {
   padding:  2em;
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
   transform-style: preserve-3d;
 }
 #footer .social-icon::before {
@@ -2032,6 +2035,7 @@ span {
 
 }
 #footer .social-item i {
+  position: relative;
   font-size: 3em;
   margin: 0 10px;
   box-shadow: 2px 2px 1px rgba(221, 221, 221, 0.295);
@@ -2420,8 +2424,9 @@ span {
   }
   
   #header .nav-list ul li a i {
-    margin: .2em auto;
-    font-size: 1.7rem;
+    margin: 0 auto;
+    padding: .1em;
+    /* font-size: 1.1rem; */
   }
   #header .nav-list ul a:after {
     display: none;
