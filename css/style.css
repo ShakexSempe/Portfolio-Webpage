@@ -384,6 +384,7 @@ span {
   text-transform: uppercase;
   padding: 20px;
   display: block;
+  text-align: left;
   transition: .2s ease-in-out;
 }
 
