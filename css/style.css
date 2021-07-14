@@ -957,7 +957,7 @@ span {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 30vh 0;
+  padding: 0 0 20vh 0;
   background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1008,7 +1008,7 @@ span {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 100;
+  z-index: 10;
 }
 
 #projects .project-item {
@@ -1109,11 +1109,12 @@ span {
   background-size: 900%;
   background-position: right;
   animation: icon-gradient 2s linear infinite;
-  font-size: 2.5em;
+  font-size: 1.8em;
+  padding: .2em;
 }
 #projects .project-tile a i::after {
   content: 'view project';
-  font-size: .7em;
+  font-size: 1em;
   font-family: 'Gruppo', cursive;
   font-style: italic;
 
