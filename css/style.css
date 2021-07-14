@@ -1082,15 +1082,24 @@ span {
   color: #fff;
   background: #333;
   animation: project-link 2s linear infinite;
-  /* border: 1px solid #ddd; */
-  box-shadow: inset 3px 3px 5px #ddda,
-              inset -3px -3px 5px #000a;
+  
   border-radius: 5px;
   margin: 5px auto;
   /* margin-top: 5px; */
   padding: 10px;
   transition: all .3s ease;
-
+  position: relative;
+}
+#projects .project-tile a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: inset 3px 3px 5px #ddda,
+  inset -3px -3px 5px #000a; 
 }
 
 @keyframes project-link {
