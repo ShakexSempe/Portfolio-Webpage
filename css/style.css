@@ -1068,6 +1068,7 @@ span {
   font-size: 1.7rem;
   font-weight: 500;
   margin-top: 10px;
+  text-transform: capitalize;
 }
 
 #projects .project-tile p {
@@ -1081,10 +1082,13 @@ span {
   color: #fff;
   background: #333;
   animation: project-link 2s linear infinite;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
+  box-shadow: inset 3px 3px 5px #ddda,
+              inset -3px -3px 5px #000a;
   border-radius: 5px;
-  margin-top: 5px;
-  padding: 5px;
+  margin: 5px auto;
+  /* margin-top: 5px; */
+  padding: 10px;
   transition: all .3s ease;
 
 }

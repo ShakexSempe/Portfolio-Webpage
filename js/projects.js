@@ -63,7 +63,16 @@ const projects = [
         desc: "page featuring links to javascript tutorial repositories",
         alt: 'javascript',
         tech: 'javascript',
-
+    },
+    {
+        id: 7,
+        title: "responsive cards",
+        link: "https://shakexsempe.github.io/responsive-cards/",
+        img: "img/cards.bmp",
+        head: "Responsive Web Design",
+        desc: "mobile first css grid project featuring the hottest hatchbacks",
+        alt: 'css3',
+        tech: 'css3',
     },
 ];
 
