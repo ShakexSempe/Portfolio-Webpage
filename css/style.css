@@ -1108,7 +1108,7 @@ span {
 }
 
 #projects .project-tile a:hover {
-  color: crimson;
+  color: #aef50a;
   transition: .3s ease;
   transform: scale(1);
   animation: none;
