@@ -2216,7 +2216,6 @@ span {
   /*Project*/
   #projects .project-item {
     flex-direction: row;
-    /* border: 1px solid #ddd; */
   }
  #projects .project-tile{
   flex-basis: 50%;
@@ -2227,6 +2226,7 @@ span {
   #projects .project-tile a {
     color: #eee;
     border-radius: 0px;
+    margin: 5px;
   }
 
   #projects .project-tile a:hover {
