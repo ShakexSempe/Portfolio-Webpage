@@ -14,13 +14,14 @@
 -Features a dropdown menu within which hoverable skills item tiles are placed. 
 
 ## Projects Section
--
+- Items added dynamically using javascript template literal syntax to display each indivdual project.
+- Project-tile below the image is a link to the project webpage
 
 ## Contact Section
--
+- contact details visible on hover
 
 ## Footer
--
+- decorative css3 rotating cube and social media links.
 
 
 ## FreeCodeCamp
