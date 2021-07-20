@@ -1666,6 +1666,58 @@ span {
   transition: .5s ease;
   transform: preserve-3d;
 }
+/* contact item heading */
+#contact .contact-item h1 {
+  background-image: linear-gradient(50deg, skyblue, #dc1489, skyblue, #dc1489, skyblue);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: left;
+  animation: contact-h1 5s ease infinite alternate;
+  padding: .2em 1em;
+  margin: .2em auto;
+  font-size: 2.5em;
+  font-weight: 600;
+  position: relative;
+}
+/* h1 animation */
+  @keyframes contact-h1 {
+    100% {
+      background-position: right;
+    }
+  }
+/* end of h1 animation */
+#contact .contact-item h1::before,
+#contact .contact-item h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+#contact .contact-item h1::before{
+  box-shadow: inset 2px 2px 5px #000a,
+              inset -2px -2px 5px #ddda;
+}
+#contact .contact-item h1::after{
+  opacity: 0;
+  background: #f4f4f4;
+  z-index: -1;
+  box-shadow: inset 2px 2px 5px #ddda,
+              inset -2px -2px 5px #000a;
+}
+#contact .contact-item:hover.contact-item h1::before{
+  opacity: 0;
+}
+#contact .contact-item:hover.contact-item h1::after{
+  opacity: 1;
+}
+/* end of contact item heading */
+
 
 #contact .icon {
   margin: 5px auto 10px auto;
@@ -1706,7 +1758,7 @@ span {
   z-index: -1;
   opacity: 0;
   background: #f4f4f4;
-  border-radius: 10px;
+  border-radius: 50%;
   box-shadow: var(--contact-shadow);
   transition: 1s ease;
   transform: preserve-3d;
@@ -1727,61 +1779,8 @@ span {
 #contact .contact-item:hover .icon img {
   transform: scale(1);
   transform: preserve-3d;
-
 }
 
-#contact .contact-info h1 {
-  background-image: linear-gradient(10deg, purple, #dc1489, skyblue, purple, #dc1489, skyblue);
-  background-size: 250%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: .05em;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  transition: .5s ease;
-  position: relative;
-  padding: .2em 1em;
-  /* z-index: 10; */
-}
-
-#contact .contact-item h1::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: var(--contact-shadow-hover);
-  border-radius: 10px;
-  opacity: 1;
-  transition: .5s ease;
-}
-
-#contact .contact-item:hover h1::before {
-  opacity: 0;
-}
-
-#contact .contact-item h1::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f4f4f4;
-  z-index: -1;
-  box-shadow: var(--contact-shadow);
-  border-radius: 10px;
-  opacity: 0;
-  transition: .5s ease;
-}
-
-#contact .contact-item:hover h1::after {
-  opacity: 1;
-}
 
 #contact .contact-info h2 {
   font-size: 1.3rem;
@@ -2625,8 +2624,8 @@ span {
   }
 
   #contact .contact-info h2 {
-    font-size: 1.2em;
-    padding: .3em;
+    font-size: 1.4em;
+    padding: .5em 1em;
   }
 
   #contact .icon {
