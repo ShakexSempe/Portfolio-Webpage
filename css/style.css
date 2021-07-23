@@ -285,7 +285,35 @@ span {
   transition: 0.5s ease left;
 }
 
-#header .nav-list ul li:hover a {
+/* nav image */
+#header .links-container .nav-avi {
+  height: 7em;
+  width: 7em;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+@media only screen and (max-width: 360px){
+  #header .links-container .nav-avi {
+    height: 5em;
+    width: 5em;
+  }
+}
+#header .links-container .nav-avi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+  pointer-events: none;
+}
+#header .links-container .nav-avi:hover img {
+  transform: scale(1.2);
+}
+/* end of nav image */
+
+#header .nav-list ul li:hover .scroll-link {
   transition: .3s ease;
   color: crimson;
 }
@@ -300,7 +328,7 @@ span {
   background-color: #29323c;
 }
 
-#header .nav-list ul a {
+#header .nav-list ul .scroll-link {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
@@ -2230,6 +2258,7 @@ span {
   h1.section-title {
     font-size: 6rem
   }
+  
 
   /*Hero*/
   #welcome-section {
@@ -2314,7 +2343,7 @@ span {
     margin: 5px;
   }
   #projects .project-tile a i {
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding: .2em;
   }
 
@@ -2466,7 +2495,9 @@ span {
   .hero {
     text-align: center;
   }
-
+  #header .links-container .nav-avi {
+    display: none;
+  }
   #welcome-section {
     background-size: cover;
     background-position: top right;
