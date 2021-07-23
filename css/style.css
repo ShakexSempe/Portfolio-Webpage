@@ -328,8 +328,8 @@ span {
   background-color: #29323c;
 }
 
-#header .nav-list ul .scroll-link {
-  font-size: 2rem;
+#header .nav-list ul li a {
+  font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-decoration: none;
