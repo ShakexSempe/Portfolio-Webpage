@@ -287,8 +287,8 @@ span {
 
 /* nav image */
 #header .links-container .nav-avi {
-  height: 7em;
-  width: 7em;
+  height: 8.5em;
+  width: 8.5em;
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
@@ -297,8 +297,8 @@ span {
 }
 @media only screen and (max-width: 360px){
   #header .links-container .nav-avi {
-    height: 5em;
-    width: 5em;
+    height: 6em;
+    width: 6em;
   }
 }
 #header .links-container .nav-avi img {
