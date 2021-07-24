@@ -344,10 +344,10 @@ span {
 #header .nav-list ul a i {
   margin: 0 auto;
   margin-right: .5em;
-  padding: .4em;
+  padding: .5em;
   text-align: left;
   color: #fffa;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: inset 2px 2px 3px #ddda,
     inset -2px -2px 3px #000a;
 }
