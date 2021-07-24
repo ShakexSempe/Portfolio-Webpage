@@ -374,37 +374,34 @@ span {
 #header .hamburger {
   height: 60px;
   width: 60px;
+  margin: 5px 20px;
   display: inline-block;
-  border: 3px solid #fff;
   border-radius: 50%;
   position: relative;
+  background: #29323c;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 10;
   cursor: pointer;
   transform: scale(0.8);
-  margin: 3px 20px;
   transition: .3s ease;
-  box-shadow: inset 3px 3px 5px #ddda,
-    inset -3px -3px 5px #000a;
 }
-
-#header .hamburger:hover {
-  transform: scale(.73);
-  box-shadow: inset 3px 3px 5px #000,
-    inset -3px -3px 5px #ddda;
+#header .hamburger:active {
+  transform: scale(.6);
+  transition: .3s;
 }
-
 /*hamburger pulse*/
-#header .hamburger:after {
+#header .hamburger:after,
+#header .hamburger:before{
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 2px solid #fff;
-  animation: ham-pulse 2s ease infinite;
+  border: none;
+  outline:none;
+  transition: .5s;
 }
 
 
@@ -413,19 +410,21 @@ span {
   content: "";
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  animation: ham-pulse2 2s ease infinite;
-  animation-delay: .6s;
+  border: 2px solid #ddda;
+  animation: ham-pulse 2s ease infinite;
 }
-
+#header .hamburger:after {
+  opacity: 1;
+  box-shadow: inset 3px 3px 5px #ddd,
+              inset -3px -3px 5px #000;
+}
+#header .hamburger:hover::before,
+#header .hamburger:focus::before {
+  opacity: 0;
+}
 #header .hamburger:hover::after,
 #header .hamburger:focus::after {
-  animation: none;
-}
-
-#header .hamburger:focus::before {
-  animation: none;
+  opacity: .6;
 }
 
 
@@ -437,19 +436,9 @@ span {
 
   100% {
     opacity: 0;
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 }
-
-@keyframes ham-pulse2 {
-  50% {}
-
-  100% {
-    opacity: 0;
-    transform: scale(1.3);
-  }
-}
-
 /*End of hamburger pulse*/
 
 #header .hamburger .bar {
