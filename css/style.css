@@ -1108,14 +1108,14 @@ span {
 
 
 #projects .project-tile h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-top: 10px;
   text-transform: capitalize;
 }
 
 #projects .project-tile p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   color: #fff;
   margin-bottom: 10px;
@@ -1215,15 +1215,17 @@ span {
 }
 
 .tech-list {
-  display: inline-flex;
+  padding: 2em;
+}
+.tech-list ul {
+  display: flex;
+  flex-wrap: wrap;
 
 }
-
-#projects .tech-list p {
-  color: rgb(173, 245, 29);
-  margin: 5px;
-  padding: 5px;
-  font-size: 1.4em;
+.tech-list ul li {
+  color: #adf51d;
+  list-style: none;
+  padding: .4em;
 }
 
 /*image transition on hover*/

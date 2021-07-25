@@ -8,7 +8,9 @@ const projects = [
         desc:`<strike>Six</strike> Seven time Formula One World Champion Lewis Hamilton tribute
         page`,
         alt: 'lewis hamilton',
-        tech: "css",
+        tech: `<li>#appliedVisualDesign</li>
+                <li>#css3</li>
+                <li>#semantic markup</li>`,
     },
     {
         id: 2,
@@ -16,18 +18,22 @@ const projects = [
         link: "https://shakexsempe.github.io/thato-tech-drawings/",
         img: "img/thato.bmp",
         head: "Technical Drawings Lecturer Website",
-        desc: "CSS animations and positioning tutorial project",
+        desc: "Made with Scss, this single page webpage serves a link to a Youtube channel for technical drawing students and professionals.",
         alt: 'technical drawing',
-        tech: 'scss',
+        tech: `<li>#scss</li>
+                <li>#mixins</li>
+                <li>#_partials</li>`,
     },
     {id: 3,
         title: "Munch Up&trade;",
         link: "https://shakexsempe.github.io/munch-up/",
         img: "img/munch-logo.jpg",
         head: "Bakery & cupcake shop webpage",
-        desc: "Small business website for a local cake & cupcake shop",
+        desc: "Single page website for a cake & cupcake bakery.",
         alt: 'cakes',
-        tech: 'scss',       
+        tech: `<li>#scss</li>
+                <li>#mxins</li>
+                <li>#_partials</li>`,     
     },
     {
         id: 4,
@@ -37,7 +43,9 @@ const projects = [
         head: "CSS 3 showcase project",
         desc: "Sticky Parallax scrolling effect project",
         alt: 'img',
-        tech: 'scss',
+        tech: `<li>#parallax</li>
+                <li>#css3</li>
+                <li>scss</li>`,
     },
     {
         id: 5,
@@ -47,7 +55,9 @@ const projects = [
         head: "Advanced CSS3 Tutorial",
         desc: "CSS animations and positioning tutorial project",
         alt: 'earth moon',
-        tech: 'css3',
+        tech: `<li>#animations</li>
+                <li>#css3</li>
+                <li>flexBox</li>`,
     },
     {
         id: 6,
@@ -55,9 +65,11 @@ const projects = [
         link: "https://shakexsempe.github.io/javascript-projects-portfolio/",
         img: "img/projects.bmp",
         head: "javascript portfolio page",
-        desc: "page featuring links to javascript tutorial repositories",
+        desc: "page featuring links to my javascript tutorial repositories",
         alt: 'javascript',
-        tech: 'javascript',
+        tech: `<li>#vanillaJavascript</li>
+                <li>#es6</li>
+                <li>#algorithms</li>`,
     },
     {
         id: 7,
@@ -65,9 +77,11 @@ const projects = [
         link: "https://shakexsempe.github.io/responsive-cards/",
         img: "img/cards.bmp",
         head: "Responsive Web Design",
-        desc: "mobile first css grid project featuring the hottest hatchbacks",
+        desc: "A mobile-first grid layout page featuring modern hatchbacks",
         alt: 'css3',
-        tech: 'css3',
+        tech: `<li>#responsiveWebDesign</li>
+                <li>#data-set</li>
+                <li>#cssGrid</li>`,
     },
 ];
 
@@ -90,7 +104,7 @@ displayProjects = (projectsItems) => {
                 </p>
             </a>
             <div class="tech-list">
-                <p>${project.tech}<p>
+                <ul>${project.tech}<ul>
             </div>
             </div>
             <div class="project-img">
