@@ -12,17 +12,6 @@ const projects = [
     },
     {
         id: 2,
-        title: "Planet Animation",
-        link: "https://shakexsempe.github.io/Planet-Animation/",
-        img: "img/planets.bmp",
-        head: "Advanced CSS3 Tutorial",
-        desc: "CSS animations and positioning tutorial project",
-        alt: 'earth moon',
-        tech: 'css3',
-
-    },
-    {
-        id: 3,
         title: "Thato Technical Drawings",
         link: "https://shakexsempe.github.io/thato-tech-drawings/",
         img: "img/thato.bmp",
@@ -30,7 +19,15 @@ const projects = [
         desc: "CSS animations and positioning tutorial project",
         alt: 'technical drawing',
         tech: 'scss',
-
+    },
+    {id: 3,
+        title: "Munch Up&trade;",
+        link: "https://shakexsempe.github.io/munch-up/",
+        img: "img/munch-logo.jpg",
+        head: "Bakery & cupcake shop webpage",
+        desc: "Small business website for a local cake & cupcake shop",
+        alt: 'cakes',
+        tech: 'scss',       
     },
     {
         id: 4,
@@ -41,18 +38,16 @@ const projects = [
         desc: "Sticky Parallax scrolling effect project",
         alt: 'img',
         tech: 'scss',
-
     },
     {
         id: 5,
-        title: "Munch Up&trade;",
-        link: "https://shakexsempe.github.io/munch-up/",
-        img: "img/munch-logo.jpg",
-        head: "Bakery & cupcake shop webpage",
-        desc: "Small business website for a local cake & cupcake shop",
-        alt: 'cakes',
-        tech: 'scss',
-
+        title: "Planet Animation",
+        link: "https://shakexsempe.github.io/Planet-Animation/",
+        img: "img/planets.bmp",
+        head: "Advanced CSS3 Tutorial",
+        desc: "CSS animations and positioning tutorial project",
+        alt: 'earth moon',
+        tech: 'css3',
     },
     {
         id: 6,
