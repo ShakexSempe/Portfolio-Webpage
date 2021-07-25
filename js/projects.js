@@ -10,7 +10,7 @@ const projects = [
         alt: 'lewis hamilton',
         tech: `<li>#appliedVisualDesign</li>
                 <li>#css3</li>
-                <li>#semantic markup</li>`,
+                <li>#semanticMarkup</li>`,
     },
     {
         id: 2,
@@ -24,7 +24,8 @@ const projects = [
                 <li>#mixins</li>
                 <li>#_partials</li>`,
     },
-    {id: 3,
+    {
+        id: 3,
         title: "Munch Up&trade;",
         link: "https://shakexsempe.github.io/munch-up/",
         img: "img/munch-logo.jpg",
@@ -45,7 +46,7 @@ const projects = [
         alt: 'img',
         tech: `<li>#parallax</li>
                 <li>#css3</li>
-                <li>scss</li>`,
+                <li>#scss</li>`,
     },
     {
         id: 5,
@@ -57,7 +58,7 @@ const projects = [
         alt: 'earth moon',
         tech: `<li>#animations</li>
                 <li>#css3</li>
-                <li>flexBox</li>`,
+                <li>#flexBox</li>`,
     },
     {
         id: 6,

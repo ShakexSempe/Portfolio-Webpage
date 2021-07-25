@@ -1232,6 +1232,7 @@ span {
   color: #adf51d;
   list-style: none;
   padding: .4em;
+  font-style: italic;
 }
 
 /*image transition on hover*/
