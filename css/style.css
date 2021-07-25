@@ -306,17 +306,19 @@ span {
   height: 100%;
   object-fit: cover;
   transition: .5s;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 #header .links-container .nav-avi:hover img {
   transform: scale(1.2);
 }
 /* end of nav image */
 
-#header .nav-list ul li:hover .scroll-link {
+#header .nav-list ul li:hover .scroll-li {
   transition: .3s ease;
   color: crimson;
 }
+
+
 
 #header .nav-list ul li:hover i {
   transition: .3s ease;
@@ -327,7 +329,6 @@ span {
   left: 20%;
   background-color: #29323c;
 }
-
 #header .nav-list ul li a {
   font-size: 1.7rem;
   font-weight: 500;
