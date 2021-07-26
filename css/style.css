@@ -770,10 +770,10 @@ span {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 1em;
   background: transparent;
   background-size: cover;
-  margin: 10px 5%;
+  margin: 1em auto;
   position: relative;
   z-index: 1;
   text-overflow: ellipsis;
@@ -791,7 +791,7 @@ span {
   color: #fff;
   font-size: 1.4rem;
   text-align: left;
-  margin: 20px;
+  margin: 1em;
   text-transform: capitalize;
 
 }
@@ -2311,20 +2311,20 @@ span {
   #skills .skills-bottom .skills-item {
     flex-basis: 45%;
     margin: 2.5%;
-    height: 240px;
+    height: 300px;
+    pointer-events: none;
   }
 
-  #skills .skills-top p {
-    line-height: 2;
-  }
 
   #skills .skills-item:hover {
     transform: scale(1.05);
     border: 3px solid #fff;
   }
-
+#skills .skills-item .icon {
+  transform: scale(.8);
+}
   #skills .skills-item h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .dropbtn {
@@ -2624,7 +2624,9 @@ span {
     border: none;
 
   }
-
+  #skills .skills-item .icon {
+    transform: scale(1);
+  }
   #skills .skills-item h2 {
     font-size: 3rem;
   }
