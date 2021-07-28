@@ -1217,7 +1217,7 @@ span {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transform: scale(.97);
+  transform: scale(.999);
 
 
   border-radius: 0px;
