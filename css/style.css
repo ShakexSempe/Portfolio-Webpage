@@ -1462,7 +1462,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/img/me.jpg');
+  background-image: url('../img/me.jpg');
   background-size: cover;
   border-radius: 10px;
   transition: 1s ease;
@@ -1484,7 +1484,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/img/shakexblue.jpg');
+  background-image: url('../img/shakexblue.jpg');
   background-size: cover;
   background-position: top;
   border-radius: 10px;
