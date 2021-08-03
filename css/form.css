@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Gruppo', cursive; }
 
 .form-nav h1 {
   font-size: 2em; }
@@ -26,10 +26,11 @@
     color: green;
     background: pink; }
   .welcome-section .form-container {
-    border: 1px solid yellow;
+    border: none;
+    outline: none;
     background: #fff;
     width: 330px;
-    margin-top: 10vh;
+    margin-top: 8vh;
     text-align: center;
     border-radius: 5px;
     padding: 50px 35px 10px 35px; }
@@ -49,7 +50,7 @@
           .welcome-section .form-container .form-outer form .page .title {
             text-align: left;
             font-size: 25px;
-            font-weight: 500; }
+            font-weight: 900; }
           .welcome-section .form-container .form-outer form .page .field {
             width: 100%;
             height: 45px;
@@ -59,10 +60,11 @@
             .welcome-section .form-container .form-outer form .page .field .label {
               position: absolute;
               top: -30px;
-              font-weight: 500;
-              color: blue;
+              font-weight: 800;
+              color: #dc143c;
               font-size: 1.4em; }
             .welcome-section .form-container .form-outer form .page .field input {
+              font-family: 'Poppins', sans-serif;
               height: 100%;
               width: 100%;
               border: 1px solid lightgrey;
@@ -79,7 +81,6 @@
               width: 100%;
               height: calc(100% + 5px);
               border: none;
-              background: #dc143c;
               margin-top: -20px;
               border-radius: 5px;
               color: #fff;
@@ -88,9 +89,36 @@
               font-weight: 500;
               letter-spacing: 1px;
               text-transform: uppercase;
-              transition: 0.5s ease; }
-              .welcome-section .form-container .form-outer form .page .field button:hover {
-                background: #29323c; }
+              transition: 0.5s ease;
+              position: relative; }
+              .welcome-section .form-container .form-outer form .page .field button::before, .welcome-section .form-container .form-outer form .page .field button::after {
+                position: absolute;
+                content: 'next';
+                display: grid;
+                letter-spacing: .15em;
+                place-items: center;
+                font-weight: 600;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                transition: .2s; }
+              .welcome-section .form-container .form-outer form .page .field button::before {
+                background: #dc143c;
+                z-index: 2;
+                box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
+              .welcome-section .form-container .form-outer form .page .field button::after {
+                opacity: 0;
+                background: #29323c;
+                box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #fffa; }
+              .welcome-section .form-container .form-outer form .page .field button:hover::before {
+                opacity: 0; }
+              .welcome-section .form-container .form-outer form .page .field button:hover::after {
+                opacity: 1; }
+              .welcome-section .form-container .form-outer form .page .field button:active {
+                transition: .2s;
+                transform: scale(0.9); }
           .welcome-section .form-container .form-outer form .page .btns button {
             margin-top: -20px !important; }
             .welcome-section .form-container .form-outer form .page .btns button.prev {
@@ -106,9 +134,10 @@
       .welcome-section .form-container .form-progress-bar .step {
         text-align: center;
         width: 100%;
-        position: relative; }
+        position: relative;
+        margin: 1em auto; }
         .welcome-section .form-container .form-progress-bar .step p {
-          font-weight: 500;
+          font-weight: 800;
           font-size: 1.6em;
           color: #000;
           margin-bottom: 8px; }
@@ -129,7 +158,8 @@
             transform: translateX(-50%);
             font-weight: 500;
             font-size: 17px;
-            line-height: 25px; }
+            line-height: 25px;
+            font-family: 'Poppins', sans-serif; }
           .welcome-section .form-container .form-progress-bar .step .bullet:active span {
             display: none; }
           .welcome-section .form-container .form-progress-bar .step .bullet::before, .welcome-section .form-container .form-progress-bar .step .bullet::after {
