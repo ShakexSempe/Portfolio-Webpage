@@ -486,7 +486,7 @@ span {
 /*End of Header Section*/
 
 /*welcome-section*/
-#welcome-section {
+.welcome-section {
   background-image: url('../img/unit-3.jpg');
   background-repeat: no-repeat;
   background-size: 310%;
@@ -505,7 +505,7 @@ span {
   }
 }
 
-#welcome-section::after {
+.welcome-section::after {
   content: "";
   position: absolute;
   left: 0;
@@ -528,7 +528,7 @@ span {
   top: 15%;
 }
 
-#welcome-section h1 {
+.welcome-section h1 {
   display: block;
   width: fit-content;
   font-size: 4.8rem;
@@ -2304,15 +2304,15 @@ span {
   
 
   /*Hero*/
-  #welcome-section {
+  .welcome-section {
     background-size: 190%;
   }
 
-  #welcome-section h1 {
+  .welcome-section h1 {
     font-size: 8rem;
   }
 
-  #welcome-section .cta {
+  .welcome-section .cta {
     font-size: 4rem;
   }
 
@@ -2541,7 +2541,7 @@ span {
   #header .links-container .nav-avi {
     display: none;
   }
-  #welcome-section {
+  .welcome-section {
     background-size: cover;
     background-position: top right;
     animation: unit3 56s ease-in-out infinite alternate;
