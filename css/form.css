@@ -5,15 +5,16 @@
   outline: none;
   font-family: 'Gruppo', cursive; }
 
-.form-nav h1 {
-  font-size: 2em; }
-
-.form-nav #form-toggle {
-  transform: scale(0.5); }
-  .form-nav #form-toggle:active {
-    transform: scale(1.4); }
-  .form-nav #form-toggle:hover {
-    transform: scale(0.7); }
+.form-nav {
+  background: #29323c; }
+  .form-nav h1 {
+    font-size: 2em; }
+  .form-nav #form-toggle {
+    transform: scale(0.5); }
+    .form-nav #form-toggle:active {
+      transform: scale(1.4); }
+    .form-nav #form-toggle:hover {
+      transform: scale(0.7); }
 
 .welcome-section {
   animation: none;
@@ -70,7 +71,8 @@
               border: 1px solid lightgrey;
               border-radius: 5px;
               padding-left: 15px;
-              font-size: 18px; }
+              font-size: 18px;
+              text-transform: capitalize; }
             .welcome-section .form-container .form-outer form .page .field select {
               width: 100%;
               padding-left: 10px;

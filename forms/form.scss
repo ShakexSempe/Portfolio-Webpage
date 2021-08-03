@@ -7,6 +7,7 @@
   font-family: 'Gruppo', cursive;
 }
 .form-nav {
+    background: #29323c;
     h1 {
         font-size: 2em;
     }
@@ -85,6 +86,7 @@
                         }
 
                         input {
+                            //  ubuntu font
                             font-family: 'Poppins', sans-serif;
                             height: 100%;
                             width: 100%;
@@ -92,6 +94,9 @@
                             border-radius: 5px;
                             padding-left: 15px;
                             font-size: 18px;
+                            text-transform: capitalize;
+
+                        
                         }
 
                         select {
