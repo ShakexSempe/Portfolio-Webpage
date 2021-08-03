@@ -7,7 +7,7 @@
   font-family: 'Gruppo', cursive;
 }
 .form-nav {
-    background: #29323c;
+    background: transparent;
     h1 {
         font-size: 2em;
     }
@@ -25,11 +25,15 @@
 
 .welcome-section {
     animation: none;
+    background-image: none;
+    background-color: #29323c;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
+
+
 
     
 
@@ -47,6 +51,8 @@
         text-align: center;
         border-radius: 5px;
         padding: 50px 35px 10px 35px;
+        box-shadow: inset 3px 3px 5px #ddda,
+                    inset -3px -3px 5px #000a;
 
         header {
             text-transform: capitalize;
@@ -102,6 +108,10 @@
                             padding-left: 15px;
                             font-size: 18px;
                             text-transform: capitalize;
+
+                            &:focus {
+                                border: 1px solid skyblue;
+                            }
 
                         
                         }
@@ -216,8 +226,8 @@
                     
 
                     &:active {
-                        border-color: #d43f8d;
-                        background: #d43f8d;
+                        border-color: #dc143c;
+                        background: #dc143c;
                     }
 
                     span {
