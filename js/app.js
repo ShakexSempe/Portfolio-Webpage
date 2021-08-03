@@ -72,7 +72,7 @@ document.addEventListener('scroll', () => {
     header.style.backgroundColor = 'transparent';
   };
 
-  if (scrollHeight > 600) {
+  if (scrollHeight > 400) {
     topLink.classList.add('show-link');
   } else {
     topLink.classList.remove('show-link');
