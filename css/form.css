@@ -1,1 +1,166 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif; }
+
+.form-nav h1 {
+  font-size: 2em; }
+
+.form-nav #form-toggle {
+  transform: scale(0.5); }
+  .form-nav #form-toggle:active {
+    transform: scale(1.4); }
+  .form-nav #form-toggle:hover {
+    transform: scale(0.7); }
+
+.welcome-section {
+  animation: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden; }
+  .welcome-section ::selection {
+    color: green;
+    background: pink; }
+  .welcome-section .form-container {
+    border: 1px solid yellow;
+    background: #fff;
+    width: 330px;
+    margin-top: 10vh;
+    text-align: center;
+    border-radius: 5px;
+    padding: 50px 35px 10px 35px; }
+    .welcome-section .form-container header {
+      font-size: 35px;
+      font-weight: 600;
+      margin: 0 0 30px 0; }
+    .welcome-section .form-container .form-outer {
+      width: 100%;
+      overflow: hidden; }
+      .welcome-section .form-container .form-outer form {
+        display: flex;
+        width: 400%; }
+        .welcome-section .form-container .form-outer form .page {
+          width: 25%;
+          transition: margin-left .3s ease-in-out; }
+          .welcome-section .form-container .form-outer form .page .title {
+            text-align: left;
+            font-size: 25px;
+            font-weight: 500; }
+          .welcome-section .form-container .form-outer form .page .field {
+            width: 100%;
+            height: 45px;
+            margin: 45px auto;
+            display: flex;
+            position: relative; }
+            .welcome-section .form-container .form-outer form .page .field .label {
+              position: absolute;
+              top: -30px;
+              font-weight: 500;
+              color: blue;
+              font-size: 1.4em; }
+            .welcome-section .form-container .form-outer form .page .field input {
+              height: 100%;
+              width: 100%;
+              border: 1px solid lightgrey;
+              border-radius: 5px;
+              padding-left: 15px;
+              font-size: 18px; }
+            .welcome-section .form-container .form-outer form .page .field select {
+              width: 100%;
+              padding-left: 10px;
+              font-size: 17px;
+              font-weight: 500;
+              border: 1px solid pink; }
+            .welcome-section .form-container .form-outer form .page .field button {
+              width: 100%;
+              height: calc(100% + 5px);
+              border: none;
+              background: #dc143c;
+              margin-top: -20px;
+              border-radius: 5px;
+              color: #fff;
+              cursor: pointer;
+              font-size: 18px;
+              font-weight: 500;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              transition: 0.5s ease; }
+              .welcome-section .form-container .form-outer form .page .field button:hover {
+                background: #29323c; }
+          .welcome-section .form-container .form-outer form .page .btns button {
+            margin-top: -20px !important; }
+            .welcome-section .form-container .form-outer form .page .btns button.prev {
+              margin-right: 3px;
+              font-size: 17px;
+              color: #ddd; }
+            .welcome-section .form-container .form-outer form .page .btns button.next {
+              margin-left: 3px; }
+    .welcome-section .form-container .form-progress-bar {
+      display: flex;
+      margin: 40px 0;
+      user-select: none; }
+      .welcome-section .form-container .form-progress-bar .step {
+        text-align: center;
+        width: 100%;
+        position: relative; }
+        .welcome-section .form-container .form-progress-bar .step p {
+          font-weight: 500;
+          font-size: 1.6em;
+          color: #000;
+          margin-bottom: 8px; }
+        .welcome-section .form-container .form-progress-bar .step .bullet {
+          height: 25px;
+          width: 25px;
+          border: 2px solid #000;
+          display: inline-block;
+          border-radius: 50%;
+          position: relative;
+          transition: 0.2s; }
+          .welcome-section .form-container .form-progress-bar .step .bullet:active {
+            border-color: #d43f8d;
+            background: #d43f8d; }
+          .welcome-section .form-container .form-progress-bar .step .bullet span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 25px; }
+          .welcome-section .form-container .form-progress-bar .step .bullet:active span {
+            display: none; }
+          .welcome-section .form-container .form-progress-bar .step .bullet::before, .welcome-section .form-container .form-progress-bar .step .bullet::after {
+            position: absolute;
+            content: '';
+            bottom: 50%;
+            right: -35px;
+            height: 3px;
+            width: 25px;
+            background: #262626; }
+          .welcome-section .form-container .form-progress-bar .step .bullet::after {
+            background: #dc143c;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: animate 0.3s linear forwards; }
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1); } }
+        .welcome-section .form-container .form-progress-bar .step:last-child.bullet::before, .welcome-section .form-container .form-progress-bar .step:last-child.bullet::after {
+          display: none; }
+        .welcome-section .form-container .form-progress-bar .step p:active {
+          color: #d43f8d;
+          transition: .2s linear; }
+        .welcome-section .form-container .form-progress-bar .step .check {
+          position: absolute;
+          left: 50%;
+          top: 75%;
+          font-size: 15px;
+          transform: translate(-50%, -50%);
+          display: none; }
+          .welcome-section .form-container .form-progress-bar .step .check:active {
+            display: block;
+            color: #fff; }

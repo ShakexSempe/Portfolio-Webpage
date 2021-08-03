@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+.form-nav {
+    h1 {
+        font-size: 2em;
+    }
+
+    #form-toggle {
+        transform: scale(.5);
+        &:active {
+            transform: scale(1.4);
+        }
+        &:hover {
+            transform: scale(.7);
+        }
+    }
+}
+
+.welcome-section {
+    animation: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+    ::selection {
+        color: green;
+        background: pink;
+    }
+
+    .form-container {
+        border: 1px solid yellow;
+        background: #fff;
+        width: 330px;
+        margin-top: 10vh;
+        text-align: center;
+        border-radius: 5px;
+        padding: 50px 35px 10px 35px;
+
+        header {
+            font-size: 35px;
+            font-weight: 600;
+            margin: 0 0 30px 0;
+        }
+
+        .form-outer {
+            width: 100%;
+            overflow: hidden;
+
+            form {
+                display: flex;
+                width: 400%;
+
+                .page {
+                    width: 25%;
+                    transition: margin-left .3s ease-in-out;
+
+                    .title {
+                        text-align: left;
+                        font-size: 25px;
+                        font-weight: 500;
+                    }
+
+                    .field { 
+                        width: 100%;
+                        height: 45px;
+                        margin: 45px auto;
+                        display: flex;
+                        position: relative;
+
+                        .label {
+                            position: absolute;
+                            top: -30px;
+                            font-weight: 500;
+                            color: blue;
+                            font-size: 1.4em;
+                        }
+
+                        input {
+                            height: 100%;
+                            width: 100%;
+                            border: 1px solid lightgrey;
+                            border-radius: 5px;
+                            padding-left: 15px;
+                            font-size: 18px;
+                        }
+
+                        select {
+                            width: 100%;
+                            padding-left: 10px;
+                            font-size: 17px;
+                            font-weight: 500;
+                            border: 1px solid pink;
+                        }
+
+                        button {
+                            width: 100%;
+                            height: calc(100% + 5px);
+                            border: none;
+                            background: #dc143c;
+                            margin-top: -20px;
+                            border-radius: 5px;
+                            color: #fff;
+                            cursor: pointer;
+                            font-size: 18px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            transition: 0.5s ease;
+
+                            &:hover {
+                                background: #29323c;
+                            }
+                        }
+                    }
+                    .btns {
+                        button {
+                            margin-top: -20px !important;
+                            &.prev {
+                                margin-right: 3px;
+                                font-size: 17px;
+                                color: #ddd;
+                            }
+                            &.next {
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .form-progress-bar {
+            display: flex;
+            margin: 40px 0;
+            user-select: none;
+
+            .step {
+                text-align: center;
+                width: 100%;
+                position: relative;
+
+                p {
+                    font-weight: 500;
+                    font-size: 1.6em;
+                    color: #000;
+                    margin-bottom: 8px;
+                }
+
+                .bullet {
+                    height: 25px;
+                    width: 25px;
+                    border: 2px solid #000;
+                    display: inline-block;
+                    border-radius: 50%;
+                    position: relative;
+                    transition: 0.2s;
+                    
+
+                    &:active {
+                        border-color: #d43f8d;
+                        background: #d43f8d;
+                    }
+
+                    span {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 25px;
+                    }
+                    &:active {
+                        span {
+                            display: none;
+                        }
+                    }
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        bottom: 50%;
+                        right: -35px;
+                        height: 3px;
+                        width: 25px;
+                        background: #262626;
+                    }
+                    &::after {
+                        background: #dc143c;
+                            transform: scaleX(0);
+                            transform-origin: left;
+                            animation: animate 0.3s linear forwards;
+                            
+                    }
+                    @keyframes animate {
+                        100% {
+                            transform: scaleX(1);
+                        }
+                    }
+                    // &:active {
+                    //     &::after {
+                            
+                    //     }
+                    // }
+                }
+                &:last-child {
+                    &.bullet {
+                        &::before,
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+                p {
+                    &:active {
+                        color: #d43f8d;
+                        transition: .2s linear;
+                    }
+                }
+                .check {
+                    position: absolute;
+                    left: 50%;
+                    top: 75%;
+                    font-size: 15px;
+                    transform: translate(-50%, -50%);
+                    display: none;
+
+                    &:active {
+                        display: block;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
