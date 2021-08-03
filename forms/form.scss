@@ -194,7 +194,8 @@
                     height: 25px;
                     width: 25px;
                     border: 2px solid #000;
-                    display: inline-block;
+                    display: grid;
+                    place-items: center;
                     border-radius: 50%;
                     position: relative;
                     transition: 0.2s;
@@ -210,8 +211,8 @@
                         left: 50%;
                         transform: translateX(-50%);
                         font-weight: 500;
-                        font-size: 17px;
-                        line-height: 25px;
+                        font-size: 1.5em;
+                        // line-height: 25px;
                         font-family: 'Poppins', sans-serif;
                         
 
