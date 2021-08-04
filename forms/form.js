@@ -42,13 +42,13 @@ nextBtnFirst.addEventListener("click", function(event){
     current += 1;
   });
   submitBtn.addEventListener("click", function(e){
-    e.preventDefault();
+    // e.preventDefault();
     bullet[current - 1].classList.add("active");
     progressCheck[current - 1].classList.add("active");
     progressText[current - 1].classList.add("active");
     current += 1;
     setTimeout(function(){
-    //   alert("Your form has been submitted. A confirmation email will be sent shortly");
+      alert("Your form has been submitted. A confirmation email will be sent shortly");
       location.reload();
     },800);
   });
