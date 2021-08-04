@@ -95,7 +95,7 @@
               .welcome-section .form-container .form-outer form .page .field input::placeholder {
                 font-size: .7em; }
               .welcome-section .form-container .form-outer form .page .field input:invalid {
-                background-color: #29323c; }
+                border-color: #29323c; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
                 border: 1px solid skyblue; }
             .welcome-section .form-container .form-outer form .page .field textarea {
