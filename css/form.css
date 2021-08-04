@@ -70,7 +70,8 @@
               top: -30px;
               font-weight: 800;
               color: #dc143c;
-              font-size: 1.4em; }
+              font-size: 1.4em;
+              text-transform: capitalize; }
             .welcome-section .form-container .form-outer form .page .field input {
               font-family: 'Poppins', sans-serif;
               height: 100%;
@@ -78,8 +79,11 @@
               border: 1px solid lightgrey;
               border-radius: 5px;
               padding-left: 15px;
-              font-size: 18px;
-              text-transform: capitalize; }
+              font-size: 18px; }
+              .welcome-section .form-container .form-outer form .page .field input::placeholder {
+                text-transform: capitalize; }
+              .welcome-section .form-container .form-outer form .page .field input:invalid {
+                background-color: yellow; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
                 border: 1px solid skyblue; }
             .welcome-section .form-container .form-outer form .page .field select {
@@ -201,7 +205,7 @@
         .welcome-section .form-container .form-progress-bar .step .check {
           position: absolute;
           left: 50%;
-          top: 75%;
+          top: 80%;
           font-size: 15px;
           transform: translate(-50%, -50%);
           display: none; }
