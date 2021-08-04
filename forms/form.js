@@ -17,7 +17,8 @@ let current = 1;
    
 nextBtnFirst.addEventListener("click", function(event){
     event.preventDefault();
-    console.log("hellllllowoowjow")
+    console.log("hellllllowoowjow");
+    
     slidePage.style.marginLeft = "-25%";
     bullet[current - 1].classList.add("active");
     progressCheck[current - 1].classList.add("active");
@@ -47,7 +48,7 @@ nextBtnFirst.addEventListener("click", function(event){
     progressText[current - 1].classList.add("active");
     current += 1;
     setTimeout(function(){
-      alert("Your Form Successfully Signed up");
+    //   alert("Your Form Successfully Signed up");
       location.reload();
     },800);
   });
