@@ -59,7 +59,7 @@
             position: relative;
             padding: .5em; }
             .welcome-section .form-container .form-outer form .page#message-page textarea {
-              padding: 2em;
+              padding: .2em;
               margin: 1em auto; }
               .welcome-section .form-container .form-outer form .page#message-page textarea::placeholder {
                 color: #333; }
@@ -97,10 +97,11 @@
               .welcome-section .form-container .form-outer form .page .field input::placeholder {
                 font-size: .7em; }
               .welcome-section .form-container .form-outer form .page .field input:invalid {
-                box-shadow: inset 2px 2px 4px #dddc, inset -2px -2px 4px #af2541; }
+                background: #ddd;
+                border: 1px solid #990707; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
                 border: none;
-                box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
+                box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #41061298; }
             .welcome-section .form-container .form-outer form .page .field textarea {
               height: 100px;
               width: 100%; }
