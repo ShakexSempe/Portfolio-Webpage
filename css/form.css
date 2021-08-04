@@ -97,7 +97,7 @@
               .welcome-section .form-container .form-outer form .page .field input::placeholder {
                 font-size: .7em; }
               .welcome-section .form-container .form-outer form .page .field input:invalid {
-                box-shadow: inset 2px 2px 4px #dddc, inset -2px -2px 4px #dc143c; }
+                box-shadow: inset 2px 2px 4px #dddc, inset -2px -2px 4px #af2541; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
                 border: none;
                 box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
