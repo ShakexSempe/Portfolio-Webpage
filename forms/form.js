@@ -17,6 +17,7 @@ let current = 1;
    
 nextBtnFirst.addEventListener("click", function(event){
     event.preventDefault();
+    console.log("hellllllowoowjow")
     slidePage.style.marginLeft = "-25%";
     bullet[current - 1].classList.add("active");
     progressCheck[current - 1].classList.add("active");
