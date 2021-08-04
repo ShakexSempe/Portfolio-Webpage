@@ -32,7 +32,7 @@ nextBtnSec.addEventListener("click", function (event) {
     current += 1;
 });
 nextBtnThird.addEventListener("click", function (event) {
-    // event.preventDefault();
+    event.preventDefault();
     slidePage.style.marginLeft = "-75%";
     bullet[current - 1].classList.add("active");
     progressCheck[current - 1].classList.add("active");
