@@ -46,7 +46,7 @@ submitBtn.addEventListener("click", function (e) {
     progressText[current - 1].classList.add("active");
     current += 1;
     setTimeout(function () {
-        alert("Your form has been submitted. A confirmation email will be sent shortly");
+        
         location.reload();
     }, 800);
 });
