@@ -24,7 +24,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  overflow: hidden;
   overflow: scroll; }
   .welcome-section ::selection {
     color: green;
@@ -87,6 +86,9 @@
                 background-color: orange; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
                 border: 1px solid skyblue; }
+            .welcome-section .form-container .form-outer form .page .field textarea {
+              height: 100px;
+              width: 100%; }
             .welcome-section .form-container .form-outer form .page .field select {
               width: 100%;
               padding-left: 10px;

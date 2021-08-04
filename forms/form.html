@@ -96,7 +96,7 @@
             </div>
 
             <div class="form-outer">
-                <form action="https://formsubmit.co/your@email.com" method="POST">
+                <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                     <div class="page slide-page">
                         <div class="title">
                             Basic Info:
@@ -105,16 +105,16 @@
                             <div class="label">
                                 First name*
                             </div>
-                            <input type="text"  placeholder="first name" required>
+                            <input type="text" name="name" placeholder="first name" required>
                         </div>
                         <div class="field">
                             <div class="label">
                                 Last Name
                             </div>
-                            <input type="text"  placeholder="last name">
+                            <input type="text" name="last-name" placeholder="last name">
                         </div>
                         <div class="field">
-                            <button type="submit" class="firstNext next">Next</button>
+                            <button class="firstNext next">Next</button>
                         </div>
                     </div>
                     <div class="page">
@@ -125,13 +125,13 @@
                             <div class="label">
                                 Email Address
                             </div>
-                            <input type="email" required>
+                            <input type="email" name="email" required>
                         </div>
                         <div class="field">
                             <div class="label">
                                 Phone Number
                             </div>
-                            <input type="tel">
+                            <input type="tel" name="phone-number">
                         </div>
                         <div class="field btns">
                             <button class="prev-1 prev">Previous</button>
@@ -181,9 +181,12 @@
                         </div>
                         <div class="field btns">
                             <button class="prev-3 prev">Previous</button>
-                            <button class="submit">Submit</button>
+                            <button type="submit" class="submit">Submit</button>
                         </div>
                     </div>
+
+                    <!-- form options -->
+                    <input type="hidden" name="_next" value="https://shakexsempe.github.io/Portfolio-Webpage/">
                 </form>
             </div>
         </div>
