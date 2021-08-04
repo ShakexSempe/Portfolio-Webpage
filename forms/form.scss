@@ -124,19 +124,24 @@
                             height: 100%;
                             width: 100%;
                             border: 1px solid lightgrey;
+                            outline: none;
                             border-radius: 5px;
                             padding-left: 15px;
                             font-size: 18px;
+                            transition: .2s;
 
                             &::placeholder {
                             font-size: .7em;
                             }
                             &:invalid {
-                                border-color: #29323c;
+                                box-shadow: inset 2px 2px 4px #dddc,
+                                            inset -2px -2px 4px #dc143c;
                             }
 
                             &:focus {
-                                border: 1px solid skyblue;
+                                border: none;
+                                box-shadow: inset 2px 2px 4px #ddda,
+                                            inset -2px -2px 4px #000a;
                             }
                             
                         

@@ -89,15 +89,18 @@
               height: 100%;
               width: 100%;
               border: 1px solid lightgrey;
+              outline: none;
               border-radius: 5px;
               padding-left: 15px;
-              font-size: 18px; }
+              font-size: 18px;
+              transition: .2s; }
               .welcome-section .form-container .form-outer form .page .field input::placeholder {
                 font-size: .7em; }
               .welcome-section .form-container .form-outer form .page .field input:invalid {
-                border-color: #29323c; }
+                box-shadow: inset 2px 2px 4px #dddc, inset -2px -2px 4px #dc143c; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
-                border: 1px solid skyblue; }
+                border: none;
+                box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
             .welcome-section .form-container .form-outer form .page .field textarea {
               height: 100px;
               width: 100%; }
