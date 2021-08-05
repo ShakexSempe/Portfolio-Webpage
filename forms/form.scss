@@ -124,8 +124,10 @@
                             font-family: 'Poppins', sans-serif;
                             height: 100%;
                             width: 100%;
-                            border: 1px solid lightgrey;
+                            border: none;
                             outline: none;
+                            box-shadow: inset 2px 2px 4px #ddda,
+                                            inset -2px -2px 4px #41061298;
                             border-radius: 5px;
                             padding-left: 15px;
                             font-size: 18px;
@@ -135,8 +137,8 @@
                             font-size: .7em;
                             }
                             &:invalid {
-                                background: #ddd;
-                                border: 1px solid rgb(153, 7, 7);
+                                background: #cf30501e;
+                                // border: 3px solid rgb(153, 7, 7);
                             }
 
                             &:focus {
@@ -150,13 +152,32 @@
                         textarea {
                             height: 100px;
                             width: 100%;
+                            border-radius: 5px;
+                            border: none;
+                            outline: none;
+                            box-shadow: inset 2px 2px 4px #ddda,
+                            inset -2px -2px 4px #41061298;
+                            &:focus {
+                                background: #f4f4f4; 
+                            }
                         }
                         select {
                             width: 100%;
                             padding-left: 10px;
                             font-size: 17px;
                             font-weight: 500;
-                            border: 1px solid pink;
+                            border-radius: 5px;
+                            border: none;
+                            box-shadow: inset 2px 2px 4px #ddd,
+                                        inset -2px -2px 4px #000a;
+
+                            &:focus {
+                                &:focus {
+                                    border: none;
+                                    box-shadow: inset 2px 2px 4px #ddda,
+                                                inset -2px -2px 4px #41061298;
+                                }
+                            }
                         }
 
                         button {
@@ -222,6 +243,9 @@
                                 color: #ddd;
                                 &::before {
                                     background: #a00c2a;
+                                }
+                                &::after {
+                                    background: #161616;
                                 }
                             }
                             &.next {

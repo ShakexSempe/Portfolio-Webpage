@@ -105,16 +105,18 @@
                             <div class="label">
                                 First name*
                             </div>
-                            <input type="text" name="name" placeholder="name & surname" required>
+                            <input tabindex="1" type="text" min="2" name="name" placeholder="name & surname" required>
                         </div>
                         <div class="field">
                             <div class="label">
-                                Gender
+                                Title
                             </div>
-                            <select>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Other</option>
+                            <select tabindex="2" required>
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                                <option>Miss.</option>
+                                <option>Dr.</option>
+                                <option>Prof.</option>
                             </select>
                         </div>
                         <div class="field">
@@ -129,13 +131,13 @@
                             <div class="label">
                                 Email Address*
                             </div>
-                            <input type="email" name="email" required placeholder="eg. youremail@gmail.com">
+                            <input tabindex="3" type="email" name="email" required placeholder="eg. youremail@email.com">
                         </div>
                         <div class="field">
                             <div class="label">
                                 Phone Number
                             </div>
-                            <input type="tel" name="phone-number" placeholder="phone number">
+                            <input tabindex="4" type="tel" name="phone-number" min="9" placeholder="phone number" required>
                         </div>
                         <div class="field btns">
                             <button class="prev-1 prev">Previous</button>
@@ -148,7 +150,7 @@
                             <p>*currently available for employment</p>
                         </div>
                         <div class="field">
-                            <select>
+                            <select tabindex="5">
                                 <option selected="selected" disabled="disabled">Service</option>
                                 <option>One Page Website</option>
                                 <option>Responsive Webpage</option>
@@ -168,7 +170,7 @@
                             <div class="label">
                             Leave a message or request CV 
                             </div>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="request CV">
+                            <textarea tabindex="6" name="textarea" id="textarea" cols="30" rows="10" placeholder="request CV">
                                
                             </textarea>
                         </div>
