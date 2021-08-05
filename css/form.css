@@ -181,13 +181,16 @@
         .welcome-section .form-container .form-progress-bar .step .bullet {
           height: 25px;
           width: 25px;
-          border: 2px solid #000;
+          border: none;
+          outline: none;
           display: inline-block;
           border-radius: 50%;
           position: relative;
-          transition: 0.2s; }
+          transition: 0.2s;
+          box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #000a; }
           .welcome-section .form-container .form-progress-bar .step .bullet.active {
-            border-color: #dc143c;
+            border: none;
+            outline: none;
             background: #dc143c; }
           .welcome-section .form-container .form-progress-bar .step .bullet span {
             color: #000;
