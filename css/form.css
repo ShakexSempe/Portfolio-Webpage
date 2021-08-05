@@ -173,8 +173,6 @@
               color: #ddd; }
               .welcome-section .form-container .form-outer form .page .btns button.prev::before {
                 background: #a00c2a; }
-              .welcome-section .form-container .form-outer form .page .btns button.prev::after {
-                background: #161616; }
             .welcome-section .form-container .form-outer form .page .btns button.next {
               margin-left: 3px; }
     .welcome-section .form-container .form-progress-bar {
