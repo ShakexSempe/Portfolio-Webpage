@@ -186,10 +186,11 @@
           border-radius: 50%;
           position: relative;
           transition: 0.2s; }
-          .welcome-section .form-container .form-progress-bar .step .bullet:active {
+          .welcome-section .form-container .form-progress-bar .step .bullet.active {
             border-color: #dc143c;
             background: #dc143c; }
           .welcome-section .form-container .form-progress-bar .step .bullet span {
+            color: #000;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -197,7 +198,7 @@
             font-size: 1.5em;
             line-height: 22px;
             font-family: 'Poppins', sans-serif; }
-          .welcome-section .form-container .form-progress-bar .step .bullet:active span {
+          .welcome-section .form-container .form-progress-bar .step .bullet.active span {
             display: none; }
           .welcome-section .form-container .form-progress-bar .step .bullet::before, .welcome-section .form-container .form-progress-bar .step .bullet::after {
             position: absolute;
@@ -207,7 +208,7 @@
             height: 3px;
             width: 25px;
             background: #262626; }
-          .welcome-section .form-container .form-progress-bar .step .bullet::after {
+          .welcome-section .form-container .form-progress-bar .step .bullet:active::after {
             background: #dc143c;
             transform: scaleX(0);
             transform-origin: left;
@@ -217,8 +218,8 @@
   100% {
     transform: scaleX(1); } }
         .welcome-section .form-container .form-progress-bar .step:last-child.bullet::before, .welcome-section .form-container .form-progress-bar .step:last-child.bullet::after {
-          display: none; }
-        .welcome-section .form-container .form-progress-bar .step p:active {
+          display: block; }
+        .welcome-section .form-container .form-progress-bar .step p.active {
           color: #d43f8d;
           transition: .2s linear; }
         .welcome-section .form-container .form-progress-bar .step .check {
@@ -228,6 +229,6 @@
           font-size: 15px;
           transform: translate(-50%, -50%);
           display: none; }
-          .welcome-section .form-container .form-progress-bar .step .check:active {
+          .welcome-section .form-container .form-progress-bar .step .check.active {
             display: block;
             color: #fff; }

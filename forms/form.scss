@@ -261,12 +261,13 @@
                     transition: 0.2s;
                     
 
-                    &:active {
+                    &.active {
                         border-color: #dc143c;
                         background: #dc143c;
                     }
 
                     span {
+                        color: #000;
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
@@ -277,10 +278,11 @@
                         
 
                     }
-                    &:active {
+                    &.active {
                         span {
                             display: none;
                         }
+
                     }
                     &::before,
                     &::after {
@@ -292,34 +294,31 @@
                         width: 25px;
                         background: #262626;
                     }
-                    &::after {
-                        background: #dc143c;
-                            transform: scaleX(0);
-                            transform-origin: left;
-                            animation: animate 0.3s linear forwards;
-                            
-                    }
-                    @keyframes animate {
-                        100% {
-                            transform: scaleX(1);
+
+                    &:active {
+                        &::after {
+                            background: #dc143c;
+                                transform: scaleX(0);
+                                transform-origin: left;
+                                animation: animate 0.3s linear forwards;
+                                @keyframes animate {
+                                    100% {
+                                        transform: scaleX(1);
+                                    }
+                            }
                         }
                     }
-                    // &:active {
-                    //     &::after {
-                            
-                    //     }
-                    // }
-                }
+                    }
                 &:last-child {
                     &.bullet {
                         &::before,
                         &::after {
-                            display: none;
+                            display: block;
                         }
                     }
                 }
                 p {
-                    &:active {
+                    &.active {
                         color: #d43f8d;
                         transition: .2s linear;
                     }
@@ -332,7 +331,7 @@
                     transform: translate(-50%, -50%);
                     display: none;
 
-                    &:active {
+                    &.active {
                         display: block;
                         color: #fff;
                     }
