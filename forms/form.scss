@@ -295,7 +295,7 @@
                         background: #262626;
                     }
 
-                    &:active {
+                    &.active {
                         &::after {
                             background: #dc143c;
                                 transform: scaleX(0);
