@@ -66,7 +66,7 @@ document.addEventListener('scroll', () => {
   const topLink = document.querySelector('.top-link');
   const scrollHeight = window.pageYOffset;
 
-  if (scroll_position > 100) {
+  if (scroll_position > 20) {
     header.style.backgroundColor = "#29323c";
   } else {
     header.style.backgroundColor = 'transparent';
