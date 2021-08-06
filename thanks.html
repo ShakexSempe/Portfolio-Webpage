@@ -28,44 +28,22 @@
         </div>
         </nav>
         </div>
-        <!--Progress-bar-->
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
-        <!--end of Progress-bar-->
     </header>
     <!--End of Header-->
-
-    <!--Hero Section-->
-    <section id="home" class="welcome-section">
-        <div class="hero container">
-            <article id="thanks">
-                <h3>Thanks for completing my form.</h3>
-                <a href="index.html"><i class="fas fa-house-user"></i></a>
-            </article>
-        </div>
-    </section>
 
     <!--Footer-->
     <footer id="footer">
         <div class="footer container">
-            <div class="brand">
-                <h1><span>S</span>hakex <span>S</span>empe</h1>
-                <!-- <h1> shakex sempe</h1> -->
-                <h2>Thanks for visiting! </h2>
+            <div class="brand footer-brand">
+                <h1><span>S</span>hakex <span>S</span>empe</h1>                
+                <h2>Hope to work with you soon!</h2>
             </div>
 
-            <section class="cube-container">
-                <div class="scene">
-                    <div class="cube">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                        <div class="left"></div>
-                        <div class="right"></div>
-                        <div class="top"></div>
-                        <div class="bottom"></div>
-                    </div>
-            </section>
+                <article id="thanks">
+                    <h3>Thanks for completing my form.</h3>
+                    <a href="index.html"><i class="fas fa-house-user"></i></a>
+                </article>
+            
 
 
             <div class="social-icon">
@@ -94,7 +72,7 @@
             <div id="bs21">
                 <p>copyright&copy; Boitumelo Sempe.</p>
                 <p><span>s</span>hakex <span>s</span>empe</p>
-                <span class="date"></span>
+                <span style="color: #fff;" id="footer-date"></span>
             </div>
         </div>
 
@@ -106,6 +84,12 @@
     </a>
     <!--end of back to top button-->
 
+<!-- date -->
+    <script>
+        let thanksDate = document.getElementById("footer-date");
+        thanksDate.innerHTML = new Date().getFullYear();
+    </script>
+<!-- end of date -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
