@@ -248,7 +248,7 @@ span {
   left: 0;
   top: 0;
   width: 100vw;
-  height: auto;
+  /* height: auto; */
 }
 
 #header .header {

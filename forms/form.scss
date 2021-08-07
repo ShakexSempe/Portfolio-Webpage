@@ -6,6 +6,7 @@
 //   font-family: 'Poppins', sans-serif;
   font-family: 'Gruppo', cursive;
 }
+
 .form-nav {
     background: #29323c;
     h1 {
@@ -48,6 +49,14 @@
     }
 
     .form-container {
+        @media (max-width: 500px){
+            width: 85%;
+            margin-top: 15vh;
+            padding: 2em;
+        }
+        @media (max-width: 330px){
+            height: 85vh;
+        }
         border: none;
         outline: none;
         background: #fff;
@@ -61,11 +70,16 @@
                     inset -3px -3px 5px #000a;
 
         header {
+            @media (max-width: 500px){
+                font-size: 1.7em;
+                padding: .3em;
+
+            }
             text-transform: capitalize;
             font-size: 2em;
             font-weight: 600;
-            margin: 0 0 30px 0;
-            padding: .2em;
+            margin: .4em auto;
+            padding: .4em;
             border-radius: 5px;
             box-shadow: inset 2px 2px 4px #ddd,
                     inset -2px -2px 4px #000a;
@@ -74,6 +88,7 @@
         .form-outer {
             width: 100%;
             overflow: hidden;
+            
 
             form {
                 display: flex;
@@ -103,7 +118,7 @@
 
                     .title {
                         text-align: left;
-                        font-size: 25px;
+                        font-size: 1.9em;
                         font-weight: 900;
 
                         h3 {
@@ -179,9 +194,10 @@
                             width: 100%;
                             padding-left: 10px;
                             font-size: 17px;
-                            font-weight: 500;
+                            font-weight: 600;
                             border-radius: 5px;
                             border: none;
+                            color: #000;
                             box-shadow: inset 2px 2px 4px #ddd,
                                         inset -2px -2px 4px #000a;
 
@@ -269,7 +285,7 @@
         }
         .form-progress-bar {
             display: flex;
-            margin: 40px 0;
+            margin: 1em auto;
             user-select: none;
 
             .step {
@@ -328,10 +344,10 @@
                         position: absolute;
                         content: '';
                         bottom: 50%;
-                        right: -35px;
+                        right: -30px;
                         height: 3px;
                         width: 25px;
-                        background: #262626;
+                        background: #2626261c;
                     }
 
                     &.active {
@@ -339,7 +355,7 @@
                             background: #dc143c;
                                 transform: scaleX(0);
                                 transform-origin: left;
-                                animation: animate 0.3s linear forwards;
+                                animation: animate .6s linear forwards;
                                 @keyframes animate {
                                     100% {
                                         transform: scaleX(1);
