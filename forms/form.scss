@@ -6,7 +6,6 @@
 //   font-family: 'Poppins', sans-serif;
   font-family: 'Gruppo', cursive;
 }
-
 .form-nav {
     background: #29323c;
     h1 {
@@ -32,8 +31,9 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    // overflow: hidden;
-    overflow: scroll;
+    overflow: hidden;
+    padding: 1em;
+    // overflow: scroll;
 
     &::after {
         display: none;
@@ -416,6 +416,9 @@
 
 }
 .form-footer {
+    .footer {
+        padding-top: 0;
+    }
     .map {
         margin: 1em auto;
         border: none;
