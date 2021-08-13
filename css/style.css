@@ -487,11 +487,12 @@ span {
 
 /*welcome-section*/
 .welcome-section {
-  background-image: url('../img/unit-3.jpg');
+  /* background-image: url('../img/unit-3.jpg');
   background-repeat: no-repeat;
   background-size: 310%;
-  background-position: left;
-  background-attachment: fixed;
+  background-position: left;*/
+  background-attachment: fixed; 
+  background-image: linear-gradient(0deg, #dc143c, #29323c 40%);
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
@@ -513,25 +514,26 @@ span {
   height: 100vh;
   width: 100vw;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0;
   z-index: -1;
   overflow: hidden;
 }
-
+/* hero content (h1 and button) */
 #hero-h1 {
+  /* border: 1px solid red; */
+  margin: 1em;
   background: transparent;
   backdrop-filter: blur(4px);
-  padding: 5px 15px;
+  padding: .5em;
   border-radius: 5px;
-  height: 50vh;
-  position: absolute;
-  top: 15%;
 }
-
+#hero-h1 h1 {
+  margin-bottom: .5em;
+}
 .welcome-section h1 {
   display: block;
   width: fit-content;
-  font-size: 4.8rem;
+  font-size: 3.5em;
   color: #eee;
   font-family: 'Philosopher', sans-serif;
 }
@@ -570,13 +572,16 @@ span {
   display: inline-block;
   text-align: center;
   font-family: 'Gruppo', cursive;
-  padding: .8em 1em;
+  padding: 1em;
   margin: 10px 5px;
-  width: 70%;
+  width: 80%;
   border-radius: 40px;
+  border: none;
+  outline: none;
   background-color: #8584844b;
   text-shadow: 2px 2px 2px #000;
   transition: .3s linear;
+  cursor: pointer;
 }
 #cta-header::before {
   position: absolute;
@@ -605,8 +610,12 @@ span {
 }
 #cta-header:hover,
 #cta-header:focus{
-  transition: .3s linear;
-  transform: scale(.95);
+  transition: .2s ease;
+  transform: scale(.98);
+}
+#cta-header:active {
+  transition: .2s;
+  transform: scale(.94);
 }
 #cta-header:hover#cta-header::before {
   opacity: 0;
@@ -647,11 +656,12 @@ span {
     transform: translateY(0);
   }
 }
-/*end of cta keyframes*/
-
+/* end of cta keyframes*/
 /* end of welcome section button */
 
-/*End of welcome-section*/
+/* hero content (h1 and button) */
+
+/* End of welcome-section*/
 
 /*Skills Section*/
 
