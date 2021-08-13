@@ -75,7 +75,7 @@
             position: relative;
             padding: .5em; }
             .welcome-section .form-container .form-outer form .page#message-page textarea {
-              padding: .2em;
+              padding: .5em;
               margin: 1em auto; }
               .welcome-section .form-container .form-outer form .page#message-page textarea::placeholder {
                 color: #333; }
