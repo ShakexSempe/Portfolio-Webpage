@@ -2333,7 +2333,7 @@ span {
 
 /*back to top button*/
 .top-link {
-  font-size: 2.25rem;
+  font-size: 2em;
   position: fixed;
   bottom: 1em;
   right: 1em;
@@ -2395,11 +2395,11 @@ span {
   }
 
   .welcome-section h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .welcome-section .cta {
-    font-size: 4rem;
+    font-size: 2.5em;
   }
 
   #hero-h1 {
@@ -2413,7 +2413,7 @@ span {
   }
 
   #cta-header span {
-    font-size: 6.4rem;
+    font-size: 2em;
   }
 
   #cta-header {
@@ -2485,19 +2485,19 @@ span {
   }
 
   #projects .project-tile h1 {
-    font-size: 3rem;
+    font-size: 2em;
     font-weight: 600;
   }
 
   #projects .project-tile h2 {
-    font-size: 1.8rem;
+    font-size: 1.5em;
     font-weight: 500;
     line-height: 1.3em;
     margin-bottom: .5em;
   }
 
   #projects .project-tile p {
-    font-size: 1.4rem;
+    font-size: 1em;
   }
 
   #projects .project-tile a:hover i {
@@ -2554,7 +2554,7 @@ span {
 
   #about .col-right h1 {
     text-align: left;
-    font-size: 5rem;
+    font-size: 3em;
     padding-bottom: 10px;
   }
 
@@ -2640,7 +2640,7 @@ span {
   }
 
   .brand h1 {
-    font-size: 3rem;
+    font-size: 2em;
   }
 
   #header .nav-list ul li a {
@@ -2651,7 +2651,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 6rem;
+    font-size: 2.5em;
 
   }
 
@@ -2660,7 +2660,7 @@ span {
   }
 
   h1.section-title {
-    font-size: 6rem;
+    font-size: 4em;
   }
 
   #cta-header {
@@ -2669,11 +2669,11 @@ span {
   }
 
   #cta-header span {
-    font-size: 5.5rem;
+    font-size: 3em;
   }
 
   #aka span {
-    font-size: 4rem;
+    /* font-size: 3em; */
   }
 
   /*Hero*/
@@ -2697,7 +2697,7 @@ span {
   }
 
   #header .nav-list ul li a {
-    font-size: 1.5rem;
+    font-size: 1em;
   }
 
   #header .nav-list ul.active {
@@ -2708,8 +2708,8 @@ span {
   #header .nav-list ul li a i {
     margin: 0 auto;
     margin-right: .2em;
-    padding: .4em;
-    font-size: 1.5rem;
+    padding: .2em;
+    font-size: 1em;
   }
 
   #header .nav-list ul a:after {
@@ -2722,7 +2722,7 @@ span {
   }
 
   #skills .skills-top p {
-    font-size: 1.9em;
+    font-size: 1em;
   }
 
   #skills .skills-bottom .skills-item {
@@ -2750,18 +2750,18 @@ span {
     transform: scale(1);
   }
   #skills .skills-item h2 {
-    font-size: 3rem;
+    font-size: 2em;
   }
 
   #skills .skills-item ul li {
-    font-size: 1.7rem;
+    font-size: 1em;
   }
 
-  .container p {
+  /* .container p {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.6;
-  }
+  } */
 
   #contact .contact-items {
     width: 100%;
@@ -2773,12 +2773,12 @@ span {
   }
 
   #contact .contact-info h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 10px;
   }
 
   #contact .contact-info h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: .5em 1em;
   }
 
@@ -2811,7 +2811,7 @@ span {
     margin: 30px auto;
     padding: 1.5em 1em;
     width: 50%;
-    font-size: 4em;
+    font-size: 2em;
   }
 
   #footer .social-icon::before {
