@@ -8,7 +8,10 @@
 .form-nav {
   background: #29323c; }
   .form-nav h1 {
-    font-size: 2em; }
+    font-size: 1em; }
+    @media (min-width: 768px) {
+      .form-nav h1 {
+        font-size: 1.5em; } }
   .form-nav #form-toggle {
     transform: scale(0.5); }
     .form-nav #form-toggle:active {
@@ -46,21 +49,21 @@
       .welcome-section .form-container {
         width: 85%;
         margin-top: 15vh;
-        padding: 2em; } }
+        padding: 1em; } }
     @media (max-width: 330px) {
       .welcome-section .form-container {
         height: 87vh; } }
     .welcome-section .form-container header {
       text-transform: capitalize;
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 600;
       margin: .4em auto;
-      padding: .4em;
+      padding: .2em;
       border-radius: 5px;
       box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #000a; }
       @media (max-width: 500px) {
         .welcome-section .form-container header {
-          font-size: 1.7em;
+          font-size: 1.5em;
           padding: .3em; } }
     .welcome-section .form-container .form-outer {
       width: 100%;
@@ -76,13 +79,16 @@
             padding: .5em; }
             .welcome-section .form-container .form-outer form .page#message-page textarea {
               padding: .5em;
-              margin: 1em auto; }
+              margin: .5em auto; }
               .welcome-section .form-container .form-outer form .page#message-page textarea::placeholder {
                 color: #333; }
             .welcome-section .form-container .form-outer form .page#message-page .btns {
               position: absolute;
               bottom: 0;
               left: 0; }
+          .welcome-section .form-container .form-outer form .page .service-info {
+            text-align: left;
+            font-size: 1em; }
           .welcome-section .form-container .form-outer form .page .title {
             text-align: left;
             font-size: 1.9em;
@@ -95,7 +101,7 @@
               box-shadow: inset 2px 2px 5px #fffa, inset -2px -2px 5px #000;
               color: #fff;
               letter-spacing: .1em;
-              font-size: 1em; }
+              font-size: .7em; }
             .welcome-section .form-container .form-outer form .page .title p {
               padding: 0;
               font-weight: 600; }
@@ -110,7 +116,7 @@
               top: -30px;
               font-weight: 800;
               color: #dc143c;
-              font-size: 1.4em;
+              font-size: 1em;
               text-transform: capitalize; }
             .welcome-section .form-container .form-outer form .page .field input {
               font-family: 'Poppins', sans-serif;
@@ -122,7 +128,7 @@
               border-radius: 5px;
               background-color: #f4f4f4;
               padding-left: 15px;
-              font-size: 18px;
+              font-size: 1.1em;
               transition: .2s; }
               .welcome-section .form-container .form-outer form .page .field input::placeholder {
                 font-size: .7em; }
@@ -221,7 +227,7 @@
         text-align: center;
         width: 100%;
         position: relative;
-        margin: 1em auto; }
+        margin: .5em auto; }
         .welcome-section .form-container .form-progress-bar .step p {
           font-weight: 800;
           font-size: 1em;
@@ -248,7 +254,7 @@
             left: 50%;
             transform: translateX(-50%);
             font-weight: 500;
-            font-size: 1.5em;
+            font-size: .6em;
             line-height: 22px;
             font-family: 'Poppins', sans-serif; }
           .welcome-section .form-container .form-progress-bar .step .bullet.active span {

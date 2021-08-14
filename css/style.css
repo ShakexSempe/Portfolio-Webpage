@@ -810,7 +810,7 @@ span {
 
 
 #skills .skills-item ul {
-  margin: .2em auto;
+  margin: .2em;
   padding: .5em;
 }
 
@@ -1942,7 +1942,8 @@ span {
   text-shadow: none;
   letter-spacing: .1em;
   position: relative;
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
+  font-size: 2.5em;
   width: max-content;
 }
 
@@ -2325,7 +2326,7 @@ span {
   }
 }
 #footer .footer-brand h2 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 /* end of thank you page */
 
@@ -2395,12 +2396,10 @@ span {
   }
 
   .welcome-section h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
-  .welcome-section .cta {
-    font-size: 2.5em;
-  }
+ 
 
   #hero-h1 {
     display: flex;
@@ -2412,6 +2411,10 @@ span {
     padding-top: 20px;
   }
 
+  #cta-header {
+    font-size: 2em;
+  }
+  
   #cta-header span {
     font-size: 2em;
   }
@@ -2419,11 +2422,6 @@ span {
   #cta-header {
     width: auto;
   }
-
-  #aka span {
-    font-size: 4rem;
-  }
-
   /*End of Hero*/
 
   /*Skills Section*/
@@ -2440,12 +2438,9 @@ span {
     transform: scale(1.05);
     border: 3px solid #fff;
   }
-#skills .skills-item .icon {
+/* #skills .skills-item .icon {
   transform: scale(.8);
-}
-  #skills .skills-item h2 {
-    font-size: 2.2rem;
-  }
+} */
 
   .dropbtn {
     animation: shadow 2s ease-in-out infinite;
@@ -2575,7 +2570,7 @@ span {
   /*Contact*/
   #contact .contact {
     flex-direction: column;
-    padding: 100px 0;
+    /* padding: 100px 0; */
     align-items: center;
     justify-items: center;
     min-width: 20vh;
@@ -2698,6 +2693,8 @@ span {
 
   #header .nav-list ul li a {
     font-size: 1em;
+    padding: .3em .5em;
+    margin: 0 auto;
   }
 
   #header .nav-list ul.active {
@@ -2706,10 +2703,11 @@ span {
   }
 
   #header .nav-list ul li a i {
-    margin: 0 auto;
-    margin-right: .2em;
-    padding: .2em;
+    /* margin: 0 auto; */
+    margin-right: .3em;
+    padding: .5em;
     font-size: 1em;
+    border-radius: 50%;
   }
 
   #header .nav-list ul a:after {
@@ -2806,10 +2804,13 @@ span {
     color: #333;
   }
 
+  #footer .brand h1::before {
+    font-size: .8em;
+  }
   #footer .social-icon {
     display: flex;
     margin: 30px auto;
-    padding: 1.5em 1em;
+    padding: 1em 1em;
     width: 50%;
     font-size: 2em;
   }
@@ -2825,13 +2826,13 @@ span {
   #footer .social-icon i {
     margin-bottom: 50px;
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
     box-shadow: 1px 1px 5px rgba(221, 221, 221, 0.527);
   }
   #footer .social-item a::before {
     font-size: .5em;
-    bottom: -2.8em;
-    left: -50%;
+    bottom: -130%;
+    left: -30%;
   }
   /* freecodecamp icon::before needs additional styling to fit in .social-icon div */
 #footer .social-item:nth-child(3) a::before {

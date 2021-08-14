@@ -9,7 +9,10 @@
 .form-nav {
     background: #29323c;
     h1 {
-        font-size: 2em;
+        font-size: 1em;
+        @media (min-width: 768px){
+            font-size: 1.5em;
+        }
     }
 
     #form-toggle {
@@ -52,7 +55,7 @@
         @media (max-width: 500px){
             width: 85%;
             margin-top: 15vh;
-            padding: 2em;
+            padding: 1em;
         }
         @media (max-width: 330px){
             height: 87vh;
@@ -71,15 +74,15 @@
 
         header {
             @media (max-width: 500px){
-                font-size: 1.7em;
+                font-size: 1.5em;
                 padding: .3em;
 
             }
             text-transform: capitalize;
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: 600;
             margin: .4em auto;
-            padding: .4em;
+            padding: .2em;
             border-radius: 5px;
             box-shadow: inset 2px 2px 4px #ddd,
                     inset -2px -2px 4px #000a;
@@ -102,7 +105,7 @@
                         padding: .5em;
                         textarea {
                             padding: .5em;
-                            margin: 1em auto;
+                            margin: .5em auto;
 
                             &::placeholder {
                                 color: #333;
@@ -114,6 +117,10 @@
                             left: 0;
                         }
                         
+                    }
+                    .service-info {
+                        text-align: left;
+                        font-size: 1em;
                     }
 
                     .title {
@@ -130,7 +137,7 @@
                                         inset -2px -2px 5px #000;
                             color: #fff;
                             letter-spacing: .1em;
-                            font-size: 1em;
+                            font-size: .7em;
                         }
 
                         p {
@@ -151,7 +158,7 @@
                             top: -30px;
                             font-weight: 800;
                             color: #dc143c;
-                            font-size: 1.4em;
+                            font-size: 1em;
                             text-transform: capitalize;
                         }
 
@@ -168,7 +175,7 @@
                             border-radius: 5px;
                             background-color: #f4f4f4;
                             padding-left: 15px;
-                            font-size: 18px;
+                            font-size: 1.1em;
                             transition: .2s;
 
                             &::placeholder {
@@ -311,7 +318,7 @@
                 text-align: center;
                 width: 100%;
                 position: relative;
-                margin: 1em auto;
+                margin: .5em auto;
 
                 p {
                     font-weight: 800;
@@ -346,7 +353,7 @@
                         left: 50%;
                         transform: translateX(-50%);
                         font-weight: 500;
-                        font-size: 1.5em;
+                        font-size: .6em;
                         line-height: 22px;
                         font-family: 'Poppins', sans-serif;
                         
