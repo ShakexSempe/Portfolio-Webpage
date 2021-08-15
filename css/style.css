@@ -478,7 +478,7 @@ span {
   background-size: 310%;
   background-position: left;*/
   background-attachment: fixed; 
-  background-image: linear-gradient(0deg, #dc143c, #29323c 40%);
+  background-image: linear-gradient(0deg, #29323c 60%, #485563 70% );
   position: relative;
   /*to allow overlay of this section*/
   z-index: 1;
