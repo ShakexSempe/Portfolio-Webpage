@@ -1889,6 +1889,27 @@ span {
 #contact .contact-item:hover.contact-item h2::after {
   opacity: 1;
 }
+/* contact-info form link */
+#contact .contact-info a {
+
+  font-size: 1em;
+  line-height: 2rem;
+  letter-spacing: .1em;
+  padding: .3em 1em;
+  border-radius: 10px;
+  margin: .7em auto;
+  background-color: #b60f30;
+  color: #fff;
+  opacity: .6;
+  transition: .5s ease;
+  position: relative;
+  box-shadow: inset 2px 2px 4px #fffa,
+              inset -2px -2px 4px #000a;
+}
+#contact .contact-item:hover .contact-info a {
+  opacity: 1;
+}
+/* end of contact-info form link */
 /* contact-info details */
 
 /*End of Contact Section*/
