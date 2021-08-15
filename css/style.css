@@ -817,12 +817,15 @@ span {
 
 #skills .skills-item li {
   color: #fff;
-  font-size: 1em;
+  font-size: .9em;
   text-align: left;
   margin: .5em;
   padding: .1em .3em;
   text-transform: capitalize;
 
+}
+#skills .skills-item li::marker {
+  color: #ddda;
 }
 
 #skills .skills-item a {
