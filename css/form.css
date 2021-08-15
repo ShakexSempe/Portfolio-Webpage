@@ -63,7 +63,7 @@
       box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #000a; }
       @media (max-width: 500px) {
         .welcome-section .form-container header {
-          font-size: 1.5em;
+          font-size: 1.3em;
           padding: .3em; } }
     .welcome-section .form-container .form-outer {
       width: 100%;
@@ -230,7 +230,7 @@
         margin: .5em auto; }
         .welcome-section .form-container .form-progress-bar .step p {
           font-weight: 800;
-          font-size: 1em;
+          font-size: .9em;
           color: #000;
           margin: .4em auto;
           text-transform: capitalize; }
@@ -254,7 +254,7 @@
             left: 50%;
             transform: translateX(-50%);
             font-weight: 500;
-            font-size: .6em;
+            font-size: .8em;
             line-height: 22px;
             font-family: 'Poppins', sans-serif; }
           .welcome-section .form-container .form-progress-bar .step .bullet.active span {

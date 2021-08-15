@@ -507,7 +507,7 @@ span {
 /* hero content container (h1 and button) */
 #hero-h1 {
   /* border: 1px solid red; */
-  margin: 1em;
+  margin: 1em auto;
   background: transparent;
   backdrop-filter: blur(4px);
   padding: .5em;
@@ -519,7 +519,7 @@ span {
 .welcome-section h1 {
   display: block;
   width: fit-content;
-  font-size: 2.1em;
+  /* font-size: 2.1em; */
   color: #eee;
   font-family: 'Philosopher', sans-serif;
 }
@@ -579,9 +579,9 @@ span {
   display: inline-block;
   text-align: center;
   font-family: 'Gruppo', cursive;
-  padding: .5em;
+  padding: .5em 1em;
   margin: 2em 0;
-  width: 80%;
+  width: 100%;
   border-radius: 40px;
   border: none;
   outline: none;
@@ -1895,7 +1895,8 @@ span {
 }
 
 #footer .brand {
-  padding: 1em;
+  padding: .3em;
+  margin: .5em;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
@@ -1937,29 +1938,32 @@ span {
   opacity: 1;
 }
 
-#footer .brand h1 {
+#footer .brand h3 {
   font-family: 'Gruppo', cursive;
   text-shadow: none;
   letter-spacing: .1em;
   position: relative;
+  padding: .3em;
+  color: #fff;
   /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
-  font-size: 2.5em;
+  font-size: 1.5em;
   width: max-content;
 }
 
-#footer .brand h1::before,
-#footer .brand h1::after {
+#footer .brand h3::before,
+#footer .brand h3::after {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  padding: .3em;
   font-family: 'Font Awesome 5 Free';
   transition: 3s ease;
   border-radius: 5px;
 }
 
-#footer .brand h1::before {
+#footer .brand h3::before {
   content: '\f337';
   text-align: center;
   color: #ddd;
@@ -1968,11 +1972,11 @@ span {
     inset -3px -3px 5px rgba(0, 0, 0, 0.156);
 }
 
-#footer .brand h1 span {
+#footer .brand h3 span {
   font-size: 1.1em;
 }
 
-#footer .brand:hover.brand h1::before {
+#footer .brand:hover.brand h3::before {
   left: 100%;
   color: #dc143c;
 }
@@ -2418,10 +2422,6 @@ span {
   #cta-header span {
     font-size: 2em;
   }
-
-  #cta-header {
-    width: auto;
-  }
   /*End of Hero*/
 
   /*Skills Section*/
@@ -2464,10 +2464,9 @@ span {
   #projects .project-tile a {
     color: #eee;
     border-radius: 0px;
-    margin: 5px;
+    margin: .5em 0;
   }
   #projects .project-tile a i {
-    font-size: 1.4em;
     padding: .2em;
   }
 
@@ -2480,24 +2479,15 @@ span {
   }
 
   #projects .project-tile h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
   }
 
   #projects .project-tile h2 {
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 1.3em;
+    font-size: 1em;
     margin-bottom: .5em;
   }
 
-  #projects .project-tile p {
-    font-size: 1em;
-  }
-
-  #projects .project-tile a:hover i {
-    transform: translateX(1em);
-  }
   #projects .project-item {
     height: 400px;
     margin: .5em;
@@ -2539,8 +2529,9 @@ span {
   #about .col-left {
     width: 600px;
     height: 400px;
-    padding-left: 60px;
+
   }
+
 
   #about .col-right {
     text-align: left;
@@ -2548,7 +2539,7 @@ span {
   }
 
   #about .col-right h1 {
-    text-align: left;
+    text-align: center;
     font-size: 3em;
     padding-bottom: 10px;
   }
@@ -2624,8 +2615,8 @@ span {
   }
   .welcome-section {
     background-size: cover;
-    background-position: top right;
-    animation: unit3 56s ease-in-out infinite alternate;
+    /* background-position: top right; */
+    /* animation: unit3 56s ease-in-out infinite alternate; */
   }
 
   @keyframes unit3 {
@@ -2635,7 +2626,7 @@ span {
   }
 
   .brand h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   #header .nav-list ul li a {
@@ -2646,25 +2637,22 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2.5em;
-
+    padding: .5em ;
   }
 
   #hero-h1 h1 {
     padding-top: 0px;
   }
 
-  h1.section-title {
-    font-size: 4em;
-  }
 
   #cta-header {
-    width: 75%;
-    padding: .5em 1em;
+    width: auto;
+    padding: .2em 1em;
+    font-size: 1.8em;
   }
 
   #cta-header span {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   #aka span {
@@ -2692,8 +2680,8 @@ span {
   }
 
   #header .nav-list ul li a {
-    font-size: 1em;
-    padding: .3em .5em;
+    font-size: .9em;
+    padding: .3em 1em;
     margin: 0 auto;
   }
 
@@ -2803,7 +2791,19 @@ span {
   #cv:hover {
     color: #333;
   }
-
+/* position images on desktop */
+#about .col-left {
+  width: 600px;
+  height: 550px;
+}
+#about .col-left .about-img::before {
+  background-position: center;
+}
+#about .col-left .about-img::after {
+  background-size: top;
+  background-position: center;
+}
+/* position images on desktop */
   #footer .brand h1::before {
     font-size: .8em;
   }
