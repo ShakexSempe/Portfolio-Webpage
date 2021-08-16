@@ -1967,7 +1967,7 @@ span {
 #footer .footer-container {
   display: flex;
 }
-
+/* footer thank you message */
 #footer .brand {
   width: 80%;
   padding: .3em .5em;
@@ -2018,7 +2018,7 @@ span {
   text-shadow: none;
   letter-spacing: .1em;
   position: relative;
-  padding: .3em;
+  padding: .1em;
   color: #fff;
   text-align: center;
   /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
@@ -2033,7 +2033,7 @@ span {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: .3em;
+  padding: .1em;
   font-family: 'Font Awesome 5 Free';
   transition: 2.5s ease;
   border-radius: 5px;
@@ -2045,11 +2045,11 @@ span {
   color: #ddd;
   background: var(--overlay);
   box-shadow: inset 3px 3px 5px rgba(221, 221, 221, 0.156),
-    inset -3px -3px 5px rgba(0, 0, 0, 0.156);
+              inset -3px -3px 5px rgba(0, 0, 0, 0.156);
 }
 
 #footer .brand h3 span {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 #footer .brand:hover.brand h3::before {
@@ -2063,8 +2063,7 @@ span {
   font-weight: 500;
   font-size: 1.2em;
   letter-spacing: .1em;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin: .5em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2075,7 +2074,7 @@ span {
 }
 
 #footer .brand:hover.brand h2 {
-  transform: translateY(.5em);
+  transform: translateY(.2em);
   opacity: 1;
 }
 
@@ -2091,8 +2090,10 @@ span {
     background: transparent;
   }
 }
-
 /* end of footer keyframes */
+
+/* end of footer thank you message */
+
 /* cube */
 #footer .scene {
   position: relative;
@@ -2328,7 +2329,7 @@ span {
 
 #footer .social-icon:hover.social-icon a:before {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(15%);
 
 }
 /* end of social icon labels */
