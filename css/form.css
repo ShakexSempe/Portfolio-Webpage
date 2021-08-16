@@ -8,7 +8,10 @@
 .form-nav {
   background: #29323c; }
   .form-nav h1 {
-    font-size: 2em; }
+    font-size: 1em; }
+    @media (min-width: 768px) {
+      .form-nav h1 {
+        font-size: 1.5em; } }
   .form-nav #form-toggle {
     transform: scale(0.5); }
     .form-nav #form-toggle:active {
@@ -46,21 +49,21 @@
       .welcome-section .form-container {
         width: 85%;
         margin-top: 15vh;
-        padding: 2em; } }
+        padding: 1em; } }
     @media (max-width: 330px) {
       .welcome-section .form-container {
         height: 87vh; } }
     .welcome-section .form-container header {
       text-transform: capitalize;
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 600;
       margin: .4em auto;
-      padding: .4em;
+      padding: .2em;
       border-radius: 5px;
       box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #000a; }
       @media (max-width: 500px) {
         .welcome-section .form-container header {
-          font-size: 1.7em;
+          font-size: 1.3em;
           padding: .3em; } }
     .welcome-section .form-container .form-outer {
       width: 100%;
@@ -76,16 +79,25 @@
             padding: .5em; }
             .welcome-section .form-container .form-outer form .page#message-page textarea {
               padding: .5em;
-              margin: 1em auto; }
+              margin: .5em auto;
+              font-size: 1em;
+              font-family: 'Poppins', sans-serif; }
               .welcome-section .form-container .form-outer form .page#message-page textarea::placeholder {
-                color: #333; }
+                font-weight: 700;
+                font-family: 'Gruppo', cursive;
+                font-size: .9em;
+                color: #333a; }
             .welcome-section .form-container .form-outer form .page#message-page .btns {
               position: absolute;
               bottom: 0;
               left: 0; }
-          .welcome-section .form-container .form-outer form .page .title {
+          .welcome-section .form-container .form-outer form .page .service-info {
             text-align: left;
-            font-size: 1.9em;
+            font-size: .9em; }
+            .welcome-section .form-container .form-outer form .page .service-info p {
+              font-weight: 700; }
+          .welcome-section .form-container .form-outer form .page .title {
+            font-size: 1.5em;
             font-weight: 900; }
             .welcome-section .form-container .form-outer form .page .title h3 {
               text-align: center;
@@ -95,7 +107,7 @@
               box-shadow: inset 2px 2px 5px #fffa, inset -2px -2px 5px #000;
               color: #fff;
               letter-spacing: .1em;
-              font-size: 1em; }
+              font-size: .7em; }
             .welcome-section .form-container .form-outer form .page .title p {
               padding: 0;
               font-weight: 600; }
@@ -110,7 +122,7 @@
               top: -30px;
               font-weight: 800;
               color: #dc143c;
-              font-size: 1.4em;
+              font-size: .9em;
               text-transform: capitalize; }
             .welcome-section .form-container .form-outer form .page .field input {
               font-family: 'Poppins', sans-serif;
@@ -122,7 +134,7 @@
               border-radius: 5px;
               background-color: #f4f4f4;
               padding-left: 15px;
-              font-size: 18px;
+              font-size: 1.1em;
               transition: .2s; }
               .welcome-section .form-container .form-outer form .page .field input::placeholder {
                 font-size: .7em; }
@@ -162,7 +174,7 @@
                 box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #41061298; }
             .welcome-section .form-container .form-outer form .page .field button {
               width: 100%;
-              height: calc(100% + 5px);
+              height: 100%;
               border: none;
               margin-top: -20px;
               border-radius: 5px;
@@ -207,7 +219,7 @@
             margin-top: -20px !important; }
             .welcome-section .form-container .form-outer form .page .btns button.prev {
               margin-right: 3px;
-              font-size: 17px;
+              font-size: .8em;
               color: #ddda; }
               .welcome-section .form-container .form-outer form .page .btns button.prev::before {
                 background: #70081d; }
@@ -221,10 +233,10 @@
         text-align: center;
         width: 100%;
         position: relative;
-        margin: 1em auto; }
+        margin: .5em auto; }
         .welcome-section .form-container .form-progress-bar .step p {
           font-weight: 800;
-          font-size: 1em;
+          font-size: .9em;
           color: #000;
           margin: .4em auto;
           text-transform: capitalize; }
@@ -248,7 +260,7 @@
             left: 50%;
             transform: translateX(-50%);
             font-weight: 500;
-            font-size: 1.5em;
+            font-size: .8em;
             line-height: 22px;
             font-family: 'Poppins', sans-serif; }
           .welcome-section .form-container .form-progress-bar .step .bullet.active span {
