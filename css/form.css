@@ -79,9 +79,10 @@
             padding: .5em; }
             .welcome-section .form-container .form-outer form .page#message-page textarea {
               padding: .5em;
-              margin: .5em auto; }
+              margin: .5em auto;
+              font-weight: 700; }
               .welcome-section .form-container .form-outer form .page#message-page textarea::placeholder {
-                color: #333; }
+                color: #333a; }
             .welcome-section .form-container .form-outer form .page#message-page .btns {
               position: absolute;
               bottom: 0;
@@ -89,6 +90,8 @@
           .welcome-section .form-container .form-outer form .page .service-info {
             text-align: left;
             font-size: 1em; }
+            .welcome-section .form-container .form-outer form .page .service-info p {
+              font-weight: 700; }
           .welcome-section .form-container .form-outer form .page .title {
             text-align: left;
             font-size: 1.9em;
@@ -116,7 +119,7 @@
               top: -30px;
               font-weight: 800;
               color: #dc143c;
-              font-size: 1em;
+              font-size: .9em;
               text-transform: capitalize; }
             .welcome-section .form-container .form-outer form .page .field input {
               font-family: 'Poppins', sans-serif;
