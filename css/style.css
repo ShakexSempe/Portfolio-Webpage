@@ -1142,9 +1142,10 @@ span {
 }
 
 #projects .project-tile h1 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 900;
   line-height: 1em;
+  letter-spacing: .05em;
   padding-bottom: 10px;
   text-transform: capitalize;
   border-bottom: 1px dashed #fff;
@@ -1224,7 +1225,7 @@ span {
 
 
 #projects .project-tile a i {
-  color: #aef50a;
+  color: #b6ec37;
   font-size: .7em;
   padding: .2em;
 }
@@ -1289,7 +1290,7 @@ span {
 }
 .tech-list ul li {
   font-size: .7em;
-  color: #adf51d;
+  color: #fffa;
   list-style: none;
   padding: .4em .3em;
   margin-right: .1em;
