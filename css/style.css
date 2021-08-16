@@ -2357,7 +2357,10 @@ span {
 
 #bs21 p,
 #bs21 span {
-  font-size: 1em;
+  font-size: 1.2em;
+}
+#bs21 span {
+  color: #fff;
 }
 
 /*end of bs12*/
