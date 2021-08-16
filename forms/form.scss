@@ -106,9 +106,14 @@
                         textarea {
                             padding: .5em;
                             margin: .5em auto;
-                            font-weight: 700;
-
+                            font-size: 1em;
+                            font-family: 'Poppins', sans-serif;
+                            
+                            
                             &::placeholder {
+                                font-weight: 700;
+                                font-family: 'Gruppo', cursive;
+                                font-size: .9em;
                                 color: #333a;
                             }
                         }

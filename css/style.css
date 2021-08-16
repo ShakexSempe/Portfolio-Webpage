@@ -1478,7 +1478,7 @@ span {
   text-align: left;
   padding-left: 4px;
   z-index: 13;
-  font-size: .9em;
+  font-size: .8em;
 }
 
 .custom-scrollbar-js {
@@ -2617,7 +2617,9 @@ span {
     text-align: left;
     padding: 10px;
   }
-
+  #about .col-right p {
+    font-size: 1em;
+  }
   #about .col-right h1 {
     text-align: center;
     font-size: 3em;
