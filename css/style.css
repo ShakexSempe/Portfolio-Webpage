@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-padding-top: 5em;
 }
 
 /*root*/
@@ -1498,6 +1499,7 @@ span {
   margin-top: 30px;
   z-index: 20;
   transform-style: preserve-3d;
+
 }
 
 /* about image  */
