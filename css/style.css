@@ -1,5 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@200;400;500;700&family=Philosopher:wght@400;700&family=Shippori+Mincho:wght@700&family=Source+Code+Pro:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
 
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 5em;
+} */
 
 /*root*/
 :root {
@@ -61,9 +67,12 @@
   --typeWriterCharacters: 15;
 }
 
-
+/* body {
+  overflow-x: hidden;
+} */
 
 html {
+  /* font-size: 10px; */
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
@@ -75,15 +84,37 @@ html {
 
 /*end of bootstrap scrollbar*/
 
+/*progress bar*/
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: transparent;
+}
 
+/* The progress bar (scroll indicator) */
+/* .progress-bar {
+  height: 4px;
+  background: var(--redGradient);
+  width: 0%;
+  border-radius: 10px;
+} */
+
+/*end of progress bar*/
 
 
 a {
   text-decoration: none;
 }
 
-
-
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
 
 p {
@@ -98,41 +129,8 @@ span {
   color: #dc143c;
 }
 
-/* navbar logo (my name) */
-.brand h1 {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: 'Gruppo', cursive;
-  text-shadow: 0 0 10px #dc143c;
-}
-/* navbar logo (my name) */
-
 /*Header / Navbar Section*/
-#header {
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  /* height: auto; */
-}
 
-#header .header {
-  min-height: 8vh;
-  background-color: #1f1e1e80;
-  transition: 0.3s ease background-color;
-}
-
-#header #navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  max-width: 1300px;
-  padding: 0 10px;
-}
 /* nav list */
 #header .nav-list ul {
   list-style: none;
@@ -140,7 +138,7 @@ span {
   background: rgb(31, 30, 30);
   width: 100vw;
   height: 100vh;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   left: 100%;
   top: 0;
   display: flex;
@@ -2639,43 +2637,18 @@ span {
 
 
   /*header*/
-  #header .hamburger {
-    display: none;
-  }
 
-  #header .nav-list ul {
-    position: initial;
-    display: block;
-    height: auto;
-    width: fit-content;
-    background-color: transparent;
-  }
 
-  #header .nav-list ul li {
-    display: inline-block;
-  }
-
-  #header .nav-list ul li a {
-    font-size: .9em;
-    padding: .3em 1em;
-    margin: 0 auto;
-  }
-
-  #header .nav-list ul.active {
+  /* #header .nav-list ul.active {
     background: none;
     box-shadow: none;
-  }
+  } */
 
   #header .nav-list ul li a i {
-    /* margin: 0 auto; */
-    margin-right: .3em;
-    padding: .5em;
-    font-size: 1em;
-    border-radius: 50%;
   }
 
   #header .nav-list ul a:after {
-    display: none;
+    /* display: none; */
   }
 
   /*End of header*/
