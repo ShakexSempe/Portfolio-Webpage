@@ -132,30 +132,7 @@ span {
 /*Header / Navbar Section*/
 
 /* nav list */
-#header .nav-list ul {
-  
-}
 
-/* nav image */
-#header .links-container .nav-avi {
-  
-}
-@media only screen and (max-width: 360px){
-  #header .links-container .nav-avi {
-    
-  }
-}
-#header .links-container .nav-avi img {
-  
-}
-#header .links-container .nav-avi:hover img {
-  transform: scale(1.2);
-}
-#header .nav-avi:active {
-  transition: .4s;
-  transform: scale(.7);
-}
-/* end of nav image */
 
 #header .nav-list ul li:hover .scroll-li {
   transition: .3s;
@@ -169,32 +146,8 @@ span {
   color: crimson;
 }
 
-#header .nav-list ul.active {
-  
-}
-#header .nav-list ul li a {
-  font-size: 1em;
-  font-weight: 600;
-  letter-spacing: .15em;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 20px;
-  display: block;
-  text-align: left;
-  font-family: 'Gruppo', cursive;
-  transition: .2s ease-in-out;
-}
-
 #header .nav-list ul a i {
-  margin: 0 auto;
-  margin-right: .5em;
-  padding: .5em;
-  text-align: left;
-  color: #fffa;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 3px #ddda,
-    inset -2px -2px 3px #000a;
+  
 }
 /* sidebar background text */
 #header .nav-list ul a::after {
@@ -336,11 +289,8 @@ span {
   /* background-attachment: fixed;  */
   /* background-image: linear-gradient(0deg, #29323c 60%, #485563 70% ); */
   /* background-image: linear-gradient(0deg, #485563, #29323c 60%  ); */
-  background-color: #29323c;
-  position: relative;
   /*to allow overlay of this section*/
-  z-index: 1;
-  overflow: hidden;
+  
   animation: unit3 120s linear infinite alternate;
 }
 
@@ -350,7 +300,7 @@ span {
   }
 }
 
-.welcome-section::after {
+/* .welcome-section::after {
   content: "";
   position: absolute;
   left: 0;
@@ -361,58 +311,11 @@ span {
   opacity: 0;
   z-index: -1;
   overflow: hidden;
-}
+} */
 /* hero content container (h1 and button) */
-#hero-h1 {
-  /* border: 1px solid red; */
-  margin: 1em auto;
-  background: transparent;
-  backdrop-filter: blur(4px);
-  padding: .5em;
-  border-radius: 5px;
-}
-#hero-h1 h1 {
-  margin-bottom: .2em;
-}
-.welcome-section h1 {
-  display: block;
-  width: fit-content;
-  /* font-size: 2.1em; */
-  color: #eee;
-  font-family: 'Philosopher', sans-serif;
-}
-/* hero h1 */
-.hero h1 span {
-  display: inline-block;
-  color: #fff;
-  text-align: left;
-  font-size: 1.5em;
-  text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
-  line-height: 1.3;
-  animation: hero-span 6s ease-in-out;
-  animation-delay: calc(1s + .5s * var(--s));
-  transition: all 3s;
-}
-/* hero h1 */
 
-/* hero h1 keyframes */
-@keyframes hero-span {
-  5% {
-    opacity: 1;
-  }
 
-  10% {
-    opacity: 1;
-    color: #dc143c8c;
-    transform: translateX(3px);
-    text-shadow: 0 0 1px #fff;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
-/* hero h1 keyframes */
 /* hero 'aka' animated span */
 #aka span {
   position: relative;

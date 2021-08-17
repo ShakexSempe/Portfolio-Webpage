@@ -139,8 +139,10 @@ body {
           object-fit: cover;
           transition: .5s;
           /* pointer-events: none; */ }
+        #header .header #navbar .nav-list .links-container .nav-avi:active {
+          transition: .4s;
+          transform: scale(0.7); }
       #header .header #navbar .nav-list ul {
-        list-style: none;
         position: absolute;
         background: #1f1e1e;
         width: 100vw;
@@ -154,6 +156,28 @@ body {
         z-index: 1;
         overflow-x: hidden;
         transition: 0.5s ease left; }
+        #header .header #navbar .nav-list ul li {
+          list-style: none; }
+          #header .header #navbar .nav-list ul li a {
+            font-size: 1em;
+            font-weight: 600;
+            letter-spacing: .15em;
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 20px;
+            display: block;
+            text-align: left;
+            font-family: 'Gruppo', cursive;
+            transition: .2s ease-in-out; }
+            #header .header #navbar .nav-list ul li a i {
+              margin: 0 auto;
+              margin-right: .5em;
+              padding: .5em;
+              text-align: left;
+              color: #fffa;
+              border-radius: 10px;
+              box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
         #header .header #navbar .nav-list ul.active {
           left: 20%;
           background-color: #29323c; }
@@ -182,3 +206,43 @@ body {
             box-shadow: none; }
         #header .header #navbar .nav-list .hamburger {
           display: none; } }
+
+#home {
+  background-color: #29323c;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  #home .hero #hero-h1 {
+    margin: 1em auto;
+    background: transparent;
+    padding: .5em;
+    border-radius: 5px; }
+    #home .hero #hero-h1 h1 {
+      margin-bottom: .2em;
+      display: block;
+      width: fit-content;
+      color: #eee;
+      font-family: 'Philosopher', sans-serif; }
+      #home .hero #hero-h1 h1 span {
+        display: inline-block;
+        color: #fff;
+        text-align: left;
+        font-size: 1.5em;
+        text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
+        line-height: 1.3;
+        animation: hero-span 6s ease-in-out;
+        animation-delay: calc(1s + .5s * var(--s));
+        transition: all 3s;
+        /* hero h1 keyframes */
+        /* hero h1 keyframes */ }
+
+@keyframes hero-span {
+  5% {
+    opacity: 1; }
+  10% {
+    opacity: 1;
+    color: #dc143c8c;
+    transform: translateX(3px);
+    text-shadow: 0 0 1px #fff; }
+  100% {
+    opacity: 1; } }
