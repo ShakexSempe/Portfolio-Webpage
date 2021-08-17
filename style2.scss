@@ -364,6 +364,265 @@ body {
 // end of hero section
 
 // skills
+#skills {
+
+    // skills container
+    .skills {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        width: 100vw;
+        margin: 0 auto;
+        padding-bottom: 1em;
+        background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+
+        // skills section overlay
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            opacity: 0.4;
+            overflow: auto;
+        }
+
+        // end of skills section overlay
+        // skills section-title
+        &-header {
+            width: 100%;
+            height: auto;
+            background: #fff;
+            z-index: 30;
+        }
+
+        // end of skills section-title
+
+    }
+    // skills top section
+    .skills-top {
+        width: 90%;
+        @media (min-width: 1024px){
+            width: 60%;
+        }
+        padding: .5em .5em 2em .5em;
+        text-align: center;
+        margin: 2em auto;
+        background-image: var(--overlay);
+        background: #48556388;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: none;
+        box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a;
+        position: relative;
+        z-index: 30;
+        transition: .2s linear;
+
+        p {
+            color: #fff;
+            font-size: .9em;
+            background: transparent;
+            overflow: hidden;
+            text-shadow: var(--text-shadow-sm);
+            line-height: 2em;
+        }
+        // skills top 'down arrow'
+        &::after {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            border: none;
+            top: 100%;
+            left: 50%;
+            margin-left: -24px;
+            margin-top: -24px;
+            transform: rotate(45deg);
+            background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
+            transition: .2s;
+            box-shadow: inset -5px -5px 5px #000a,
+                        inset 5px 5px 5px #3d495500;
+        }
+        &:hover {
+            &::after {
+                box-shadow: inset -5px -5px 5px #ddda,
+                    inset 5px 5px 5px #3d495500;
+                transition: .3s linear;
+            }
+        }
+        // end of skills top 'down arrow'
+
+    }
+    // end of skills top section
+    // dropdown section
+    .dropdown {
+        position: relative;
+        margin: 0 auto;
+        z-index: 4;
+
+        // dropdown button
+        .dropbtn {
+            color: #eee;
+            padding: .3em 3em;
+            font-size: 1.5em;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background: linear-gradient(0deg, #dc134c, #333);
+            text-align: center;
+            transition: .3s;
+            font-family: 'Gruppo', cursive;
+            position: relative;
+            overflow: hidden;
+
+            // dropdown button shadows
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                transition: .3s;
+            }
+
+            &::before {
+                box-shadow: 5px 10px 5px #000,
+                    inset 3px 3px 5px #000a,
+                    inset -3px -3px 5px #fffa;
+            }
+
+            &::after {
+                opacity: 0;
+                box-shadow: 0px 0px 10px #000a,
+                    inset 3px 3px 5px #fffa,
+                    inset -3px -3px 5px #000a;
+            }
+
+            // button box shadow states
+            &:hover {
+                &::before {
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            &:active {
+                transform: scale(.9);
+                transition: .3s;
+            }
+
+            // button end of box shadow states
+            // end of dropdown button shadows
+        }
+
+        // end of dropdown button
+        // dropdown content ( ie. skills items)
+        .dropdown-content {
+            
+            // show-contents
+            &.show {
+                display: block;
+            }
+            // end of show-contents
+            display: none;
+            width: 100vw;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            padding-bottom: 10em;
+            // dropdown content overlay
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: #000a;
+            }
+            // end of dropdown content overlay
+            // skills items container
+            .skills-bottom {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                /*items wrapped onto multiple lines*/
+                margin-top: 50px;
+                padding-top: 50px;
+                text-shadow: var(--text-shadow-sm);
+
+                // skills-items
+                .skills-item {
+                    // skills items on tablets
+                    @media (min-width:768px) {
+                        flex-basis: 45%;
+                        margin: 2.5%;
+                        height: 300px;
+                        pointer-events: none;
+                    }
+                    // end of skills items on tablets
+                    // skills items on desktop
+                    @media (min-width: 1024px) {
+                        flex-basis: 33%;
+                        width: 100%;
+                        margin: 1.5%;
+                        height: 300px;
+                        pointer-events: visible;
+                        cursor: pointer;
+                    }
+                    // end of skills items on desktop
+                    flex-basis: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: .5em;
+                    background: transparent;
+                    background-size: cover;
+                    margin: .5em auto;
+                    position: relative;
+                    z-index: 1;
+                    text-overflow: ellipsis;
+                    transition: 0.3s ease-in-out;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    height: auto;
+                }
+                // end of skills-items
+            }
+            // end of skills items container
+
+        }
+
+        // end of dropdown content ( ie. skills items)
+    }
+
+    // end of dropdown section
+}
+
+// end of skills container
 
 // end of skills
 
