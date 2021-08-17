@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@200;400;500;700&family=Philosopher:wght@400;700&family=Shippori+Mincho:wght@700&family=Source+Code+Pro:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-padding-top: 5em;
-}
+
 
 /*root*/
 :root {
@@ -67,12 +61,9 @@
   --typeWriterCharacters: 15;
 }
 
-body {
-  overflow-x: hidden;
-}
+
 
 html {
-  /* font-size: 10px; */
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
@@ -84,37 +75,14 @@ html {
 
 /*end of bootstrap scrollbar*/
 
-/*progress bar*/
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 3px;
-  background: transparent;
-}
 
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 4px;
-  background: var(--redGradient);
-  width: 0%;
-  border-radius: 10px;
-}
-
-/*end of progress bar*/
 
 
 a {
   text-decoration: none;
 }
 
-.container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+
 
 
 
@@ -129,92 +97,6 @@ p {
 span {
   color: #dc143c;
 }
-
-.section-title {
-  font-size: 2.2em;
-  font-weight: 500;
-  max-width: 100vw;
-  color: #000;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  text-align: center;
-  padding: .5em;
-}
-
-/* TEXT-REFLECT CSS */
-
-.section-title,
-.section-title:before,
-.text-reflect.section-title span {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.section-title,
-.section-title:before,
-.section-title:after {
-  position: relative;
-}
-
-.section-title {
-  top: -6px;
-}
-
-.section-title:before {
-  content: attr(data-text);
-  top: 2.1em;
-  transform: scale(1, -1);
-  backface-visibility: visible;
-  z-index: 1;
-}
-
-.section-title:after {
-  content: '';
-  display: block;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.589) 0%, rgb(255, 255, 255) 50%);
-  z-index: 2;
-}
-
-/* END OF TEXT-REFLECT CSS */
-
-/* section titles */
-.section-title span {
-  position: relative;
-  color: #dc143c;
-  animation: section-span 3s ease-in-out infinite;
-  height: 5px;
-}
-/* section title animations */
-@keyframes section-span {
-
-  0%,
-  100% {
-    top: 0px;
-    opacity: 1;
-    color: #dc143c;
-  }
-
-  45% {
-    top: -20px;
-    opacity: 0;
-    color: darkblue;
-  }
-
-  46% {
-    top: 20px;
-    opacity: 0;
-    color: darkblue;
-  }
-}
-/* end of section title animations */
-
-/* end of section titles */
 
 /* navbar logo (my name) */
 .brand h1 {
