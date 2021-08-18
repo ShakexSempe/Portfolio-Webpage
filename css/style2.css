@@ -1031,3 +1031,57 @@ body {
         transform-origin: left; }
       .about .col-left .about-img:hover::after {
         opacity: 1; }
+
+#contact .contact {
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background-image: url("../img/pexels-magda-ehlers-2660262.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  transform-style: preserve-3d; }
+  #contact .contact::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    overflow: hidden; }
+  #contact .contact .contact-header {
+    width: 100%;
+    height: auto;
+    background: white;
+    margin-bottom: 50px;
+    z-index: 10; }
+  #contact .contact .contact-items {
+    width: 100%; }
+    #contact .contact .contact-items .contact-item {
+      width: 85%;
+      /* height: auto; */
+      text-align: center;
+      border-radius: 10px;
+      padding: .5em;
+      margin: 1em auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 1s ease;
+      cursor: pointer;
+      position: relative;
+      transform: preserve-3d;
+      border: none;
+      outline: none;
+      background: none;
+      backdrop-filter: blur(0.1em);
+      -webkit-backdrop-filter: blur(0.1em); }
+      @media (min-width: 768px) {
+        #contact .contact .contact-items .contact-item {
+          width: 30%; } }

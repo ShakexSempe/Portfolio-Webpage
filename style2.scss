@@ -1306,3 +1306,78 @@ body {
     // end of col-left (about image)
 }
 // end of about 
+
+// contact
+#contact {
+    .contact {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        transform-style: preserve-3d;
+        // contact section overlay
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            opacity: 0.4;
+            overflow: hidden;
+        }
+        // end of contact section overlay
+        // section-title
+        .contact-header {
+            width: 100%;
+            height: auto;
+            background: rgb(255, 255, 255);
+            margin-bottom: 50px;
+            z-index: 10;
+        }
+        // end of section-title
+        // contact items container
+        .contact-items {
+            width: 100%;
+            
+            // contact-item
+            .contact-item {
+                // tablet to desktop
+            @media (min-width: 768px){
+                width: 30%;
+            }
+            // tablet to desktop
+                width: 85%;
+                /* height: auto; */
+                text-align: center;
+                border-radius: 10px;
+                padding: .5em;
+                margin: 1em auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: 1s ease;
+                cursor: pointer;
+                position: relative;
+                transform: preserve-3d;
+                border: none;
+                outline: none;
+                background: none;
+                backdrop-filter: blur(.1em);
+                -webkit-backdrop-filter: blur(.1em);
+            }
+            // end of contact-item
+        }
+        // contact items container
+
+    }
+}
+// end of contact 
