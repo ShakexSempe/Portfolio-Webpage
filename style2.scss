@@ -628,6 +628,110 @@ body {
                     overflow: hidden;
                     border-radius: 10px;
                     height: auto;
+                    line-height: 1.3;
+
+                    ul {
+                        margin: .2em;
+                        padding: .5em;
+
+                        li {
+                            color: #fff;
+                            font-size: .9em;
+                            text-align: left;
+                            margin: .5em;
+                            padding: .2em .4em;
+                            text-transform: capitalize;
+                            
+
+                            &::marker {
+                                color: #ddda;
+                            }
+                        }
+
+                    }
+                    // skills item overlay
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        border-radius: 10px;
+                        width: 100%;
+                        background: var(--overlay);
+                        opacity: 0.7;
+                        z-index: -1;
+                    }
+                    // end of skills item overlay
+                    // skills-item box shadow
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        border-radius: 10px;
+                        height: 100%;
+                        box-shadow: inset 4px 4px 5px #ddda,
+                            inset -4px -4px 5px #000;
+                        z-index: 2;
+                    }
+                    // end of skills-item box shadow
+
+                    // item icon
+                    .icon {
+                        &#git-icon, 
+                        &#netlify-icon {
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                        &#express-icon {
+                            img {
+                                border-radius: 30px;
+                            }
+                        }
+                        height: 80px;
+                        width: 80px;
+                        border: none;
+                        outline: none;
+                        padding: 10px;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+                        position: relative;
+                        // icon box shadow
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            box-shadow: 2px 2px 5px #000,
+                                inset 2px 2px 3px #ddda,
+                                inset -2px -2px 5px #000a;
+                        }
+                        // end of icon box shadow
+                        // icon img
+                        img {
+                            width: 100%;
+                        }
+                        // end of icon img
+                    }
+                    // end of item icon
+                    // skills item title (h2)
+                    h2 {
+                        font-size: 1.4em;
+                        color: #fff;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                        font-family: 'Gruppo', cursive;
+                        text-decoration: underline rgba(221, 221, 221, 0.466);
+                        text-underline-offset: .1em;
+                    }
+                    // end of skills item title (h2)
                 }
                 // end of skills-items
             }
