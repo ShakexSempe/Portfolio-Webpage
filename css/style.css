@@ -161,50 +161,6 @@ span {
 
 /* end of nav list */
 
-/*Hamburger menu*/
-
-
-
-/*End of hamburger pulse*/
-
-#header .hamburger .bar {
-  height: 2px;
-  width: 30px;
-  position: relative;
-  background-color: #f4f4f4;
-  z-index: -1;
-}
-
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background-color: #fff;
-  transition: 0.3s ease;
-  transition-property: top, bottom;
-}
-
-#header .hamburger .bar::after {
-  top: 8px;
-}
-
-#header .hamburger .bar::before {
-  bottom: 8px;
-}
-
-#header .hamburger.active .bar::before {
-  bottom: 0;
-}
-
-#header .hamburger.active .bar::after {
-  top: 0;
-}
-
-/*End of Header Section*/
-
 /*welcome-section*/
 .welcome-section {
   /* background-image: url('../img/unit-3.jpg'); */

@@ -182,6 +182,41 @@
         transition: .3s;
     }
     // end of hamburger states
-
+    // hamburger bars
+    .bar {
+        height: 2px;
+        width: 30px;
+        position: relative;
+        background-color: #f4f4f4;
+        z-index: -1;
+        // top and bottom bars
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            background-color: #fff;
+            transition: 0.3s ease;
+            transition-property: top, bottom;
+        }
+        &::before {
+            bottom: 8px;
+        }
+        &::after {
+            top: 8px;
+        }
+        // end of top and bottom bars
+    }
+        // hamburger bars active state
+        &:active {
+            &.bars {
+                &::before {bottom: 0;}
+                &::after {top: 0;}
+            }
+        }
+        // end of hamburger bars active state
+    // end of hamburger bars
 }
 // end of hamburger toggle 
