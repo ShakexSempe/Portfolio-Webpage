@@ -733,12 +733,19 @@ body {
           font-weight: 500;
           margin: .5em 0;
           text-transform: capitalize;
-          color: #fff; }
+          color: #fff;
+          transition: .3s; }
+          @media (min-width: 768px) {
+            #projects .projects .all-projects .project-item .project-tile h2 {
+              font-size: 1.3em; } }
         #projects .projects .all-projects .project-item .project-tile p {
           font-size: .8em;
           font-weight: 200;
           color: #ddd;
           margin: .5em 0; }
+          @media (min-width: 768px) {
+            #projects .projects .all-projects .project-item .project-tile p {
+              font-size: 1em; } }
         #projects .projects .all-projects .project-item .project-tile a {
           color: #fff;
           background: #333;
@@ -758,5 +765,13 @@ body {
             height: 100%;
             border-radius: 5px;
             box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 5px #000a; }
-          #projects .projects .all-projects .project-item .project-tile a:hover {
-            color: pink; }
+          #projects .projects .all-projects .project-item .project-tile a i {
+            color: #b6ec37;
+            font-size: .7em;
+            padding: .2em; }
+            #projects .projects .all-projects .project-item .project-tile a i::after {
+              content: 'view project';
+              font-family: 'Gruppo', cursive;
+              font-style: italic; }
+          #projects .projects .all-projects .project-item .project-tile a:hover h2 {
+            color: yellow; }

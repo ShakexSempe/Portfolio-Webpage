@@ -852,10 +852,17 @@ body {
                         margin: .5em 0;
                         text-transform: capitalize;
                         color: #fff;
+                        transition: .3s;
+                        @media (min-width:768px){
+                            font-size: 1.3em;
+                        }
                     }
                     
                     p {
                         font-size: .8em;
+                        @media (min-width:768px){
+                            font-size: 1em;
+                        }
                         font-weight: 200;
                         color: #ddd;
                         margin: .5em 0;
@@ -885,13 +892,34 @@ body {
                                         inset -2px -2px 5px #000a;
                         }
                         // end of project tile box shadow
-                        &:hover {
-                            color: pink;
+                        // links icon
+                        i {
+                            color: #b6ec37;
+                            font-size: .7em;
+                            padding: .2em;
+                            // icon label (pseudo)
+                            &::after {
+                                content: 'view project';
+                                font-family: 'Gruppo', cursive;
+                                font-style: italic;
+                            }
+
+                            // end of icon label (pseudo)
                         }
+                        // end of links icon
+                        // link hover state
+                        &:hover {
+                             h2 {
+                                 color: yellow;
+                                }
+                        }
+                        // link hover state
+
                     }
                     // end of project link icon 
                 }
                 // end of project tile 
+                
             }
             // end of project item
         }

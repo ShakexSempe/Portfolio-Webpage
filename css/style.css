@@ -227,31 +227,6 @@ span {
 }
 /* project site link */
 
-
-#projects .project-tile a:hover {
-  color: #aef50a;
-  transition: .3s ease;
-  transform: scale(1);
-  animation: none;
-}
-
-
-#projects .project-tile a i {
-  color: #b6ec37;
-  font-size: .7em;
-  padding: .2em;
-}
-
-#projects .project-tile a i::after {
-  content: 'view project';
-  font-family: 'Gruppo', cursive;
-  font-style: italic;
-
-}
-
-#projects .project-tile a:hover i {
-  transition: 1s ease;
-}
 /* end of project site link */
 
 /* end of project-details card */
