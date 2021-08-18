@@ -162,74 +162,9 @@ span {
 /* end of nav list */
 
 /*Hamburger menu*/
-#header .hamburger {
-  height: 60px;
-  width: 60px;
-  margin: 5px auto;
-  display: inline-block;
-  border-radius: 50%;
-  position: relative;
-  background: #29323c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  cursor: pointer;
-  transform: scale(0.8);
-  transition: .3s ease;
-}
-#header .hamburger:active {
-  transform: scale(.6);
-  transition: .3s;
-}
-/*hamburger pulse*/
-#header .hamburger:after,
-#header .hamburger:before{
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: none;
-  outline:none;
-  transition: .5s;
-}
 
 
-#header .hamburger:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  border: 2px solid #ddda;
-  animation: ham-pulse 2s ease infinite;
-}
-#header .hamburger:after {
-  opacity: 1;
-  box-shadow: inset 3px 3px 5px #ddd,
-              inset -3px -3px 5px #000;
-}
-#header .hamburger:hover::before,
-#header .hamburger:focus::before {
-  opacity: 0;
-}
-#header .hamburger:hover::after,
-#header .hamburger:focus::after {
-  opacity: .6;
-}
 
-
-@keyframes ham-pulse {
-  50% {
-    border-color: #fff;
-
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(1.2);
-  }
-}
 /*End of hamburger pulse*/
 
 #header .hamburger .bar {
