@@ -4,14 +4,12 @@
 body {
     overflow-x: hidden;
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-padding-top: 5em;
 }
-
 // header
 #header {
     position: fixed;
@@ -1000,3 +998,108 @@ body {
 // end of projects 
 
 // about 
+#about {
+    // about container
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 10px 100px 10px;
+    background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    // about container overlay
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.6;
+        overflow: hidden;
+    }
+    // about container overlay
+    // end of about container
+    .col-right {
+        // section title
+        .section-title {
+            &::after {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        // end of section title
+        width: 93%;
+        margin-right: 30px;
+        height: auto;
+        z-index: 20;
+        background: #fff;
+        border-radius: 5px;
+        position: relative;
+        // col-right box-shadow
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            z-index: -10;
+            box-shadow: inset 5px 5px 5px rgba(199, 199, 199, 0.667),
+                        inset -5px -5px 5px #000a;
+        }
+        // end of col-right box-shadow
+        .about-title {
+            display: flex;
+            flex-direction: column;
+            padding: 1em 1.3em;
+
+            h2 {
+                display: inline-block;
+                border-radius: 10px;
+                font-size: 1em;
+                font-weight: 500;
+                margin-bottom: 1em;
+                padding: .5em;
+                transition: .5s ease;
+                position: relative;
+                // h2 box shadow
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: .5s ease;
+                    border-radius: 10px;
+                }
+                &::before {
+                    box-shadow: inset 3px 3px 5px #000a,
+                                inset -3px -3px 5px #ddda;
+                }
+                &::after {
+                    opacity: 0;
+                    box-shadow: inset 3px 3px 5px #ddda,
+                                inset -3px -3px 5px #000a;
+                }
+                // end of h2 box shadow
+            }
+        }
+        // about title hover state
+        &:hover {
+            h2 {
+                &::before {opacity: 0};
+                &::after {opacity: 1};
+            }
+        }
+        // end of about title hover state
+    }
+}
+// end of about 
