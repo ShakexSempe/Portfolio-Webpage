@@ -1000,7 +1000,6 @@ body {
 // about 
 .about {
     // about container
-
     flex-direction: column-reverse;
     text-align: center;
     margin: 0 auto;
@@ -1025,6 +1024,7 @@ body {
     }
     // about container overlay
     // end of about container
+    // col-right
     .col-right {
         // section title
         .section-title {
@@ -1159,5 +1159,83 @@ body {
         }
         // end of cv download button on h2 hover 
     }
+    // end of col-right
+    // col-left (about image)
+    .col-left {
+        width: 100%;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        z-index: 20;
+        transform-style: preserve-3d;
+        // about images
+        .about-img {
+            height: 100%;
+            width: 90%;
+            position: relative;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin-top: 20px;
+            transition: .5s ease;
+            transform: preserve-3d;
+            cursor: pointer;
+            overflow: hidden;
+        &::before {
+            position: absolute;
+            content: 'Boitumelo Sempe';
+            color: #000;
+            font-size: 1em;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            padding: .3em;
+            background-image: url('../img/me.jpg');
+            background-size: cover;
+            border-radius: 10px;
+            transition: 1s ease;
+            box-shadow: inset 5px 5px 5px #fffa,
+                        inset -10px -10px 10px #000a;
+        }
+        &::after {
+            position: absolute;
+            content: 'Shakex Sempe';
+            padding: .3em;
+            text-align: left;
+            font-size: 1em;
+            color:#0000ff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-image: url('../img/shakexblue.jpg');
+            background-size: cover;
+            background-position: top;
+            border-radius: 10px;
+            transition: 1s ease;
+            box-shadow: inset 5px 5px 5px #fffa,
+            inset -10px -10px 10px #000a;
+        }
+        // image hover states
+        &:hover {
+            &::before {
+                opacity: 0;
+                transform: scale(1.1);
+                transform-origin: left;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+        // end of image hover states
+    }
+        // end of about images
+    }
+    // end of col-left (about image)
 }
 // end of about 
