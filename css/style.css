@@ -2171,31 +2171,7 @@ span {
     /* display: none; */
   }
 
-  /*End of header*/
   
-
-
-
-  #skills .skills-item {
-    filter: grayscale(0.6);
-  }
-
-  #skills .skills-item:hover {
-    filter: grayscale(0);
-    transform: scale(1.05);
-    border: none;
-
-  }
-  #skills .skills-item .icon {
-    transform: scale(1);
-  }
-  #skills .skills-item h2 {
-    font-size: 2em;
-  }
-
-  #skills .skills-item ul li {
-    font-size: 1em;
-  }
 
   /* .container p {
     font-size: 1.8rem;

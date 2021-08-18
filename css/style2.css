@@ -509,4 +509,13 @@ body {
             margin: 1.5%;
             height: 300px;
             pointer-events: visible;
-            cursor: pointer; } }
+            cursor: pointer;
+            filter: grayscale(0.6);
+            transition: .2s; }
+            #skills .dropdown .dropdown-content .skills-bottom .skills-item:hover {
+              filter: grayscale(0);
+              border: none; }
+            #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
+              font-size: 1.5em; }
+            #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li {
+              font-size: 1em; } }

@@ -595,6 +595,21 @@ body {
                         height: 300px;
                         pointer-events: visible;
                         cursor: pointer;
+                        filter: grayscale(.6);
+                        transition: .2s;
+                        &:hover {
+                            filter: grayscale(0);
+                            border: none;
+                        }
+
+                        h2 {
+                            font-size: 1.5em; 
+                        }
+                        ul {
+                            li {
+                                font-size: 1em;
+                            }
+                        }
                     }
                     // end of skills items on desktop
                     flex-basis: 80%;
