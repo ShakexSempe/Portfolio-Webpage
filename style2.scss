@@ -998,8 +998,9 @@ body {
 // end of projects 
 
 // about 
-#about {
+.about {
     // about container
+
     flex-direction: column-reverse;
     text-align: center;
     margin: 0 auto;
@@ -1058,6 +1059,26 @@ body {
             display: flex;
             flex-direction: column;
             padding: 1em 1.3em;
+            cursor: pointer;
+            // request cv link
+            #cv-download {
+                text-align: center;
+                margin: 2.5em 0;
+                padding: .5em 1em;
+                font-size: .6em;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #dc143c;
+                border-radius: 10px;
+                transition: .5s ease;
+                position: absolute;
+                opacity: 0;
+                z-index: 20;
+                box-shadow: inset 2px 2px 4px #fffa,
+                inset -2px -2px 4px #000a;
+            }
+            // request cv link
 
             h2 {
                 display: inline-block;
@@ -1091,6 +1112,13 @@ body {
                 }
                 // end of h2 box shadow
             }
+            // cv link hover state
+            &:hover {
+                #cv-download {
+                    letter-spacing: .1em;
+                }
+            }
+            // end of cv link hover state
         }
         // about title hover state
         &:hover {
@@ -1100,6 +1128,36 @@ body {
             }
         }
         // end of about title hover state
+        
+        // article
+        article {
+            &.custom-scrollbar-js {
+                height: 200px;
+                margin-bottom: .5em;
+                cursor: pointer;
+                padding: .5em;
+            }
+        // about me paragraph
+            p {
+                margin-bottom: 20px;
+                text-overflow: ellipsis;
+                text-align: left;
+                padding-left: 4px;
+                z-index: 13;
+                font-size: .8em;
+            }
+        // end of about me paragraph
+        }
+        // article
+        // cv download button on h2 hover 
+        &:hover {
+            #cv-download {
+                transition: 1s ease;
+                transform: translateY(100%);
+                opacity: 1;
+            }
+        }
+        // end of cv download button on h2 hover 
     }
 }
 // end of about 

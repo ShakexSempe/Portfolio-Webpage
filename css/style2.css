@@ -817,7 +817,7 @@ body {
       #projects .projects .all-projects .project-item:hover.project-item img {
         transform: scale(1.1); }
 
-#about {
+.about {
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
@@ -828,7 +828,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   position: relative; }
-  #about::after {
+  .about::after {
     content: "";
     position: absolute;
     left: 0;
@@ -838,7 +838,7 @@ body {
     background-color: #000;
     opacity: 0.6;
     overflow: hidden; }
-  #about .col-right {
+  .about .col-right {
     width: 93%;
     margin-right: 30px;
     height: auto;
@@ -846,10 +846,10 @@ body {
     background: #fff;
     border-radius: 5px;
     position: relative; }
-    #about .col-right .section-title::after {
+    .about .col-right .section-title::after {
       width: 80%;
       margin: 0 auto; }
-    #about .col-right:after {
+    .about .col-right:after {
       position: absolute;
       content: '';
       top: 0;
@@ -859,11 +859,27 @@ body {
       border-radius: 5px;
       z-index: -10;
       box-shadow: inset 5px 5px 5px rgba(199, 199, 199, 0.667), inset -5px -5px 5px #000a; }
-    #about .col-right .about-title {
+    .about .col-right .about-title {
       display: flex;
       flex-direction: column;
-      padding: 1em 1.3em; }
-      #about .col-right .about-title h2 {
+      padding: 1em 1.3em;
+      cursor: pointer; }
+      .about .col-right .about-title #cv-download {
+        text-align: center;
+        margin: 2.5em 0;
+        padding: .5em 1em;
+        font-size: .6em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #dc143c;
+        border-radius: 10px;
+        transition: .5s ease;
+        position: absolute;
+        opacity: 0;
+        z-index: 20;
+        box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
+      .about .col-right .about-title h2 {
         display: inline-block;
         border-radius: 10px;
         font-size: 1em;
@@ -872,7 +888,7 @@ body {
         padding: .5em;
         transition: .5s ease;
         position: relative; }
-        #about .col-right .about-title h2::before, #about .col-right .about-title h2::after {
+        .about .col-right .about-title h2::before, .about .col-right .about-title h2::after {
           content: '';
           position: absolute;
           top: 0;
@@ -881,12 +897,30 @@ body {
           height: 100%;
           transition: .5s ease;
           border-radius: 10px; }
-        #about .col-right .about-title h2::before {
+        .about .col-right .about-title h2::before {
           box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #ddda; }
-        #about .col-right .about-title h2::after {
+        .about .col-right .about-title h2::after {
           opacity: 0;
           box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a; }
-    #about .col-right:hover h2::before {
+      .about .col-right .about-title:hover #cv-download {
+        letter-spacing: .1em; }
+    .about .col-right:hover h2::before {
       opacity: 0; }
-    #about .col-right:hover h2::after {
+    .about .col-right:hover h2::after {
+      opacity: 1; }
+    .about .col-right article.custom-scrollbar-js {
+      height: 200px;
+      margin-bottom: .5em;
+      cursor: pointer;
+      padding: .5em; }
+    .about .col-right article p {
+      margin-bottom: 20px;
+      text-overflow: ellipsis;
+      text-align: left;
+      padding-left: 4px;
+      z-index: 13;
+      font-size: .8em; }
+    .about .col-right:hover #cv-download {
+      transition: 1s ease;
+      transform: translateY(100%);
       opacity: 1; }
