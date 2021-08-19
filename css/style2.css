@@ -196,6 +196,14 @@ hamburger
     z-index: 100;
     opacity: 1; }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
 #footer {
   background-image: var(--overlay);
   background-color: #333; }
@@ -410,6 +418,74 @@ hamburger
           #footer .footer #bs21 span {
             font-size: 1em; } }
 
+/* cube */
+#footer .scene {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: sceneRotate 10s infinite linear; }
+
+@keyframes sceneRotate {
+  to {
+    transform: rotateY(360deg); } }
+
+#footer .cube-container {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-size: 70px;
+  perspective: 15em;
+  perspective-origin: 50% calc(50% - 6em); }
+
+#footer .cube {
+  width: 1em;
+  height: 1em;
+  transform: preserve-3d;
+  position: absolute;
+  bottom: -.5em;
+  left: -.5em; }
+
+#footer .front,
+.back,
+.left,
+.right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #c7062056;
+  box-shadow: 0 0 0.5em #000a inset;
+  pointer-events: none; }
+
+#footer .cube .front {
+  transform: translateZ(0.5em); }
+
+#footer .cube .right {
+  transform: rotateY(90deg) translateZ(0.5em); }
+
+#footer .cube .back {
+  transform: rotateY(180deg) translateZ(0.5em); }
+
+#footer .cube .left {
+  transform: rotateY(270deg) translateZ(0.5em); }
+
+#footer .cube .top {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: #c7062056;
+  transform: translateY(-50%) rotateX(90deg);
+  box-shadow: 0 0 0.5em #000a inset; }
+
+#footer .cube .bottom {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  bottom: 0;
+  background: #000a;
+  transform: translateY(50%) rotateX(90deg);
+  box-shadow: 0 0 0.5em #000; }
+
+/* end of cube */
 * {
   padding: 0;
   margin: 0;
@@ -1488,7 +1564,7 @@ body {
         line-height: 2rem;
         font-weight: 600;
         letter-spacing: .1em;
-        padding: .2em 1em;
+        padding: .1em 1em;
         border: none;
         outline: none;
         border-radius: 10px;
@@ -1503,6 +1579,7 @@ body {
           left: 0;
           width: 100%;
           height: 100%;
+          outline: none;
           background-color: #f4f4f4;
           z-index: -1;
           border-radius: 10px;
@@ -1522,7 +1599,8 @@ body {
           transition: .5s ease;
           box-shadow: var(--contact-shadow); }
       #contact .contact .contact-items .contact-item .contact-info a {
-        font-size: 1em;
+        width: 100%;
+        font-size: .8em;
         line-height: 2rem;
         display: inline-block;
         letter-spacing: .1em;
@@ -1536,7 +1614,7 @@ body {
         position: relative;
         box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
         #contact .contact .contact-items .contact-item .contact-info a:hover {
-          transform: scale(0.95);
+          transform: scaleX(1.1);
           transition: .2s; }
         #contact .contact .contact-items .contact-item .contact-info a:active {
           transform: scale(0.9);
@@ -1598,3 +1676,8 @@ body {
     #thanks a i:active {
       transition: .2s;
       transform: scale(0.9); }
+  @media (max-width: 768px) {
+    #thanks {
+      width: 80%; }
+      #thanks h3 {
+        font-size: .8em; } }

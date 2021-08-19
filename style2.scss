@@ -1580,7 +1580,7 @@ body {
                         line-height: 2rem;
                         font-weight: 600;
                         letter-spacing: .1em;
-                        padding: .2em 1em;
+                        padding: .1em 1em;
                         border: none;
                         outline: none;
                         border-radius: 10px;
@@ -1596,6 +1596,7 @@ body {
                             left: 0;
                             width: 100%;
                             height: 100%;
+                            outline: none;
                             background-color: #f4f4f4;
                             z-index: -1;
                             border-radius: 10px;
@@ -1624,7 +1625,8 @@ body {
                     // end of h2
                     // form link
                     a {
-                        font-size: 1em;
+                        width: 100%;
+                        font-size: .8em;
                         line-height: 2rem;
                         display: inline-block;
                         letter-spacing: .1em;
@@ -1640,7 +1642,7 @@ body {
                                     inset -2px -2px 4px #000a;
                         
                                     &:hover {
-                                        transform: scale(.95);
+                                        transform: scaleX(1.1);
                                         transition: .2s;
                                     }
                                     &:active {
@@ -1707,49 +1709,61 @@ body {
     text-align: center;
     margin: 0 auto;
     box-shadow: inset 3px 3px 5px #ddda,
-                inset -3px -3px 5px #000a;
-    
+        inset -3px -3px 5px #000a;
+
     h3 {
         color: #ddd;
         margin: .5em auto;
         font-size: 1em;
+        
     }
     a {
-    i {
-        border: none;
-        outline: none;
-        margin: 1em auto;
-        padding: .5em 3em;
-        text-align: center;
-        color: #dddd;
-        position: relative;
-        // icon box shadow
-        &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            transition: .3s;
-            box-shadow: inset 3px 3px 5px #ddda,
-                        inset -3px -3px 5px #000a;
-        } 
-        // end of icon box shadow 
-        // icon hover and active states
-        &:hover {
-            transition: .2s;
-            transform: scale(.98);
-        }
-        &:active {
-            transition: .2s;
-            transform: scale(.9);
-        }
-        // end of icon hover and active states
+        i {
+            border: none;
+            outline: none;
+            margin: 1em auto;
+            padding: .5em 3em;
+            text-align: center;
+            color: #dddd;
+            position: relative;
 
+            // icon box shadow
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                transition: .3s;
+                box-shadow: inset 3px 3px 5px #ddda,
+                    inset -3px -3px 5px #000a;
+            }
 
+            // end of icon box shadow 
+            // icon hover and active states
+            &:hover {
+                transition: .2s;
+                transform: scale(.98);
+            }
+
+            &:active {
+                transition: .2s;
+                transform: scale(.9);
+            }
+
+            // end of icon hover and active states
+
+        }
+    }
+    @media (max-width: 768px) {
+        width: 80%;
+        
+        h3 {
+            font-size: .8em;
+        }
     }
 }
-}
+
 // end of thank you page
