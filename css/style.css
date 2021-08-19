@@ -222,141 +222,9 @@ span {
 /*Contact Section*/
 /*End of Contact Section*/
 /*Footer*/
-#footer {
-  background-image: var(--overlay);
-  background-color: #333;
-  height: 100vh;
-}
 
-#footer .footer-container {
-  display: flex;
-}
 /* footer thank you message */
-#footer .brand {
-  width: 80%;
-  padding: .3em .5em;
-  margin: .5em;
-  overflow: hidden;
-  border-radius: 10px;
-  cursor: pointer;
 
-  position: relative;
-}
-
-#footer .brand::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 3px 3px 5px #ddda,
-    inset -3px 0px 5px #000a;
-  transition: 1s ease;
-}
-
-#footer .brand:hover.brand::before {
-  opacity: 0;
-}
-
-#footer .brand::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 3px 3px 5px #000a,
-    inset -3px 0px 5px #ddda;
-  transition: 1s ease;
-  opacity: 0;
-
-}
-
-#footer .brand:hover.brand::after {
-  opacity: 1;
-}
-
-#footer .brand h3 {
-  font-family: 'Gruppo', cursive;
-  text-shadow: none;
-  letter-spacing: .1em;
-  position: relative;
-  padding: .1em;
-  color: #fff;
-  text-align: center;
-  /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
-  font-size: 1.5em;
-  /* width: max-content; */
-}
-
-#footer .brand h3::before,
-#footer .brand h3::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: .1em;
-  font-family: 'Font Awesome 5 Free';
-  transition: 2.5s ease;
-  border-radius: 5px;
-}
-
-#footer .brand h3::before {
-  content: '\f337';
-  text-align: center;
-  color: #ddd;
-  background: var(--overlay);
-  box-shadow: inset 3px 3px 5px rgba(221, 221, 221, 0.156),
-              inset -3px -3px 5px rgba(0, 0, 0, 0.156);
-}
-
-#footer .brand h3 span {
-  font-size: 1em;
-}
-
-#footer .brand:hover.brand h3::before {
-  left: 100%;
-  color: #dc143c;
-}
-
-#footer .brand h2 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #ddd;
-  font-weight: 500;
-  font-size: 1.2em;
-  letter-spacing: .1em;
-  margin: .5em auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(4em);
-  opacity: 0;
-  transition: 3s;
-}
-
-#footer .brand:hover.brand h2 {
-  transform: translateY(.2em);
-  opacity: 1;
-}
-
-/* footer keyframes */
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes blink {
-  to {
-    background: transparent;
-  }
-}
-/* end of footer keyframes */
-
-/* end of footer thank you message */
 
 /* cube */
 #footer .scene {
@@ -441,7 +309,7 @@ span {
 }
 
 /* end of cube */
-
+/* 
 #bs21 ul {
   display: flex;
   gap: 3em;
@@ -451,175 +319,9 @@ span {
 
 #bs21 li {
   list-style: none;
-}
+} */
 
-#footer .footer {
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
 /* social icons container */
-
-#footer .social-icon {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 5px auto;
-  padding: .5em;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  transform-style: preserve-3d;
-}
-#footer .social-icon::before,
-#footer .social-icon::after {
-  position: absolute;
-  padding: .3em;
-  font-family: 'Font Awesome 5 Free';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-weight: 600;
-  border-radius: 10px;
-  transition: .5s;
-
-}
-#footer .social-icon::before {
-  content: "\f0c0";
-  font-size: 1.5em;
-  text-align: center;
-  color: #ddd;
-  opacity: 1;
-  background-image: linear-gradient(0deg, #252e36c4, #6e051a9c);
-  box-shadow: inset 3px 3px 5px #ddda,
-              inset -3px 0px 5px #000;
-  pointer-events: none;
-  z-index: 1;
-}
-
-#footer .social-icon:hover.social-icon::before {
-  opacity: 0;
-}
-
-#footer .social-icon::after {
-  content: "\f007";
-  font-size: 1.5em;
-  text-align: center;
-  color: rgba(221, 221, 221, 0.307);
-  opacity: 0;
-  background-image: linear-gradient(0deg, transparent, #29323cc2);
-  box-shadow: inset 3px 3px 5px #000a,
-              inset -3px 0px 5px #ddda;
-  transition: .5s ease;
-}
-
-#footer .social-icon:hover.social-icon::after {
-  opacity: 1;
-  z-index: -1;
-}
-/* end of social icons container */
-
-#footer .social-item {
-  height: 50px;
-  width: 50px;
-  margin: 1em .5em 0;
-  transition: 1s ease;
-}
-
-
-#footer .social-item i {
-  font-size: 1.6em;
-  margin: 0 10px;
-  font-weight: 800;
-  padding: 10px;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgb(119, 118, 119), rgb(239, 239, 245));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 0.3s ease;
-  position: relative;
-  transform: scale(.9);
-}
-#footer .social-item i::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: .3s;
-  border-radius: 100%;
-  box-shadow: 2px 2px 1px rgba(221, 221, 221, 0.595);
-  opacity: .4;
-
-}
-
-#footer .social-item i:hover {
-  transform: scale(1.1);
-}
-#footer .social-item:hover.social-item i::after {
-  opacity: 1;
-}
-/* social icon labels */
-#footer .social-item a {
-  position: relative;
-}
-#footer .social-item a::before {
-  content: attr(data-icon);
-  position: absolute;
-  bottom: -120%;
-  left: 0;
-  font-size: .5em;
-  color: #ddd;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 1s;
-  transform: translateY(100%);
-}
-/* freecodecamp icon::before needs additional styling to fit in .social-icon div */
-#footer .social-item:nth-child(3) a::before {
-  font-size: .5em;
-  bottom: -120%;
-  left: -1em;
-  transform: translateY(100%);
-
-}
-
-
-#footer .social-icon:hover.social-icon a:before {
-  opacity: 1;
-  transform: translateY(15%);
-
-}
-/* end of social icon labels */
-
-#footer p,
-#date {
-  font-family: 'Gruppo', cursive;
-  color: #f4f4f4;
-  font-size: 1em;
-  text-transform: capitalize;
-
-}
-
-/*bs12*/
-#bs21 {
-  width: 100%;
-  text-align: center;
-}
-
-#bs21 p,
-#bs21 span {
-  font-size: 1.2em;
-}
-#bs21 span {
-  color: #fff;
-}
 
 /*end of bs12*/
 
@@ -1091,11 +793,7 @@ span {
     font-size: .8em;
   }
   #footer .social-icon {
-    display: flex;
-    margin: 30px auto;
-    padding: 1em 1em;
-    width: 50%;
-    font-size: 2em;
+    
   }
 
   #footer .social-icon::before {
