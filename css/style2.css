@@ -1639,8 +1639,12 @@ body {
       #contact .contact .contact-items .contact-item:hover .contact-info a {
         opacity: 1; }
 
+.thanks-brand h2 {
+  padding: .2em;
+  font-size: 1em !important;
+  text-align: center; }
+
 #thanks {
-  border: none;
   padding: .5em 1em;
   font-size: 1.5em;
   background-color: #29323c;
