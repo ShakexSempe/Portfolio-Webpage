@@ -235,8 +235,10 @@
                         filter: grayscale(.6);
                         transition: .2s;
                         &:hover {
+                            transform: scale(1.05);
+                            border: 3px solid #fff;
                             filter: grayscale(0);
-                            border: none;
+                            // border: none;
                         }
 
                         h2 {

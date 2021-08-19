@@ -43,6 +43,9 @@ hamburger
 // section-title
 .section-title {
     font-size: 2.3em;
+    @media (min-width:768px){
+        font-size: 3em;
+    }
     font-weight: 500;
     max-width: 100vw;
     color: #000;

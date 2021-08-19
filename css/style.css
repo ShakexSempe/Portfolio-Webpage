@@ -74,172 +74,7 @@
 
 /*Media Query for tablet*/
 @media only screen and (min-width: 768px) {
-  h1.section-title {
-    font-size: 3em
-  }
   
-
-  /*Hero*/
-  .welcome-section {
-    background-size: 190%;
-  }
-
-  .welcome-section h1 {
-    font-size: 2em;
-  }
-
- 
-
-  #hero-h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #hero-h1 h1 {
-    padding-top: 20px;
-  }
-
-  #cta-header {
-    font-size: 2em;
-  }
-  
-  #cta-header span {
-    font-size: 2em;
-  }
-  /*End of Hero*/
-
-  /*Skills Section*/
-
-  #skills .skills-bottom .skills-item {
-    
-  }
-
-
-  #skills .skills-item:hover {
-    transform: scale(1.05);
-    border: 3px solid #fff;
-  }
-/* #skills .skills-item .icon {
-  transform: scale(.8);
-} */
-
-  .dropbtn {
-    animation: shadow 2s ease-in-out infinite;
-
-  }
-
-  /*End of skills Section*/
-
-  /*Project*/
-  #projects .project-item {
-    flex-direction: row;
-  }
-
-  #projects .project-tile {
-    flex-basis: 50%;
-    box-shadow: inset 5px 0px 5px rgba(150, 149, 149, 0.667),
-      inset 0px -5px 5px #000;
-
-  }
-
-  #projects .project-tile a {
-    color: #eee;
-    border-radius: 0px;
-    margin: .5em 0;
-  }
-  #projects .project-tile a i {
-    padding: .2em;
-  }
-
-  #projects .project-tile a:hover {
-    border-radius: 10px;
-  }
-
-  #projects .project-item:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  #projects .project-tile h1 {
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-
-  #projects .project-tile h2 {
-    font-size: 1em;
-    margin-bottom: .5em;
-  }
-
-  #projects .project-item {
-    height: 400px;
-    margin: .5em;
-    width: 90%;
-    border-radius: 5px;
-  }
-
-  #projects .all-projects .project-info {
-    height: 100%;
-  }
-
-  #projects .all-projects .project-img {
-    height: 100%;
-    box-shadow: inset 0px 5px 5px #969595aa,
-      inset -3px -5px 5px #000;
-    border-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  #projects .project-img::after {
-    box-shadow: 0 0 5px #000a,
-      inset -1px 5px 5px #969595aa,
-      inset -5px -5px 5px #000;
-  }
-
-  #profile-link {
-    animation: shadow 2s ease-in-out infinite;
-    color: #ddd;
-  }
-
-  /*End of Project*/
-
-  /*About*/
-  #about .about {
-    flex-direction: row;
-  }
-
-  #about .col-left {
-    width: 600px;
-    height: 400px;
-
-  }
-
-
-  #about .col-right {
-    text-align: left;
-    padding: 10px;
-  }
-  #about .col-right p {
-    font-size: 1em;
-  }
-  #about .col-right h1 {
-    text-align: center;
-    font-size: 3em;
-    padding-bottom: 10px;
-  }
-
-  .camp_hub {
-    flex-direction: row;
-  }
-
-  .profile-link {
-    padding: 5px;
-    margin: 5px;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 30%;
-  }
-
   /*End of About*/
 
   /*Contact*/
@@ -296,24 +131,9 @@
 /*Media Query for Desktop*/
 @media only screen and (min-width: 1024px) {
 
-  .hero {
-    text-align: center;
-  }
-  
-  .welcome-section {
-    background-size: cover;
-    /* background-position: top right; */
-    /* animation: unit3 56s ease-in-out infinite alternate; */
-  }
-
-  @keyframes unit3 {
-    100% {
-      background-position: bottom left;
-    }
-  }
 
   .brand h1 {
-    font-size: 1.5em;
+    font-size: 8em;
   }
 
   #header .nav-list ul li a {
@@ -415,17 +235,6 @@
     color: #333;
   }
 /* position images on desktop */
-#about .col-left {
-  width: 600px;
-  height: 550px;
-}
-#about .col-left .about-img::before {
-  background-position: center;
-}
-#about .col-left .about-img::after {
-  background-size: top;
-  background-position: center;
-}
 /* position images on desktop */
   #footer .brand h1::before {
     font-size: .8em;
