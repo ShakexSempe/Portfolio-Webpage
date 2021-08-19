@@ -1,3 +1,22 @@
+/*
+section containers
+progress bar
+section title and section title reflect
+hamburger 
+
+*/ 
+
+// section containers
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+// end of section containers 
+
 /*progress bar*/
 /* The progress container (grey background) */
 .progress-container {
@@ -13,18 +32,13 @@
     width: 0%;
     border-radius: 10px;
 }
-/*end of progress bar*/
+/* end of progress bar*/
 
-// container 
-// .container {
-// min-height: 100vh;
-//     width: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     overflow: hidden;
-// }
-// end of container 
+/*bootstrap scrollbar*/
+.custom-scrollbar-js {
+    height: 200px;
+}
+/*end of bootstrap scrollbar*/
 
 // section-title
 .section-title {
@@ -220,3 +234,33 @@
     // end of hamburger bars
 }
 // end of hamburger toggle 
+
+// back to top button
+.top-link {
+    font-size: 2em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), #dc143c);
+    width: 1em;
+    height: 1em;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    color: #ddd;
+    animation: bounce 2s ease-in-out infinite;
+    transition: .5s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -100;
+    box-shadow: inset 2px 2px 3px #ddda,
+                inset -2px -2px 3px #000a;
+    
+    &.show-link {
+        transition: opacity .5s ease-in-out;
+        visibility: visible;
+        z-index: 100;
+        opacity: 1;
+    }
+  }
+// end of back to top button
