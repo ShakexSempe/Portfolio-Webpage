@@ -1131,7 +1131,7 @@ body {
           letter-spacing: .05em;
           padding-bottom: 10px;
           text-transform: capitalize;
-          border-bottom: 1px dashed #fff;
+          border-bottom: 1px dashed #fffa;
           background: linear-gradient(0deg, #b9b6b6, #fff);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
@@ -1144,11 +1144,11 @@ body {
           font-weight: 500;
           margin: .5em 0;
           text-transform: capitalize;
-          color: #fff;
+          color: #eee;
           transition: .3s; }
           @media (min-width: 768px) {
             #projects .projects .all-projects .project-item .project-tile h2 {
-              font-size: 1.3em; } }
+              font-size: 1.2em; } }
         #projects .projects .all-projects .project-item .project-tile p {
           font-size: .8em;
           font-weight: 200;
@@ -1177,15 +1177,15 @@ body {
             border-radius: 5px;
             box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 5px #000a; }
           #projects .projects .all-projects .project-item .project-tile a i {
-            color: #b6ec37;
+            color: #bfee50;
             font-size: .7em;
             padding: .2em; }
             #projects .projects .all-projects .project-item .project-tile a i::after {
               content: 'view project';
-              font-family: 'Gruppo', cursive;
+              font-family: "Gruppo", cursive;
               font-style: italic; }
           #projects .projects .all-projects .project-item .project-tile a:hover h2 {
-            color: yellow; }
+            color: #bfee50; }
       #projects .projects .all-projects .project-item .project-img {
         flex-basis: 50%;
         width: 100%;
@@ -1285,7 +1285,7 @@ body {
       height: 100%;
       border-radius: 5px;
       z-index: -10;
-      box-shadow: inset 5px 5px 5px rgba(199, 199, 199, 0.667), inset -5px -5px 5px #000a; }
+      box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     .about .col-right .about-title {
       display: flex;
       flex-direction: column;
@@ -1298,14 +1298,14 @@ body {
         font-size: .6em;
         font-weight: 600;
         text-transform: uppercase;
-        color: #fff;
+        color: #eee;
         background-color: #dc143c;
         border-radius: 10px;
         transition: .5s ease;
         position: absolute;
         opacity: 0;
         z-index: 20;
-        box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
+        box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
       .about .col-right .about-title h2 {
         display: inline-block;
         border-radius: 10px;
@@ -1325,10 +1325,10 @@ body {
           transition: .5s ease;
           border-radius: 10px; }
         .about .col-right .about-title h2::before {
-          box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #ddda; }
+          box-shadow: inset 3px 3px 4px #000a, inset -3px -3px 4px #ddda; }
         .about .col-right .about-title h2::after {
           opacity: 0;
-          box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a; }
+          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a; }
       .about .col-right .about-title:hover #cv-download {
         letter-spacing: .1em; }
     .about .col-right:hover h2::before {
@@ -1358,7 +1358,7 @@ body {
       .about .col-right article#cv a {
         transition: .3s ease;
         color: #fff;
-        text-shadow: var(--text-shadow-sm);
+        text-shadow: 1px 1px 1px #000;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1432,24 +1432,28 @@ body {
       .about .col-left .about-img::before {
         position: absolute;
         content: 'Boitumelo Sempe';
-        color: #000;
+        color: #333;
         font-size: 1em;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         text-align: left;
+        font-weight: 500;
+        font-style: italic;
         padding: .3em;
         background-image: url("../img/me.jpg");
         background-size: cover;
         border-radius: 10px;
         transition: 1s ease;
-        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a; }
+        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a; }
       .about .col-left .about-img::after {
         position: absolute;
         content: 'Shakex Sempe';
         padding: .3em;
         text-align: left;
+        font-weight: 500;
+        font-style: italic;
         font-size: 1em;
         color: #0000ff;
         top: 0;
@@ -1462,7 +1466,7 @@ body {
         background-position: top;
         border-radius: 10px;
         transition: 1s ease;
-        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a; }
+        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a; }
       .about .col-left .about-img:hover::before {
         opacity: 0;
         transform: scale(1.1);
@@ -1495,7 +1499,7 @@ body {
   #contact .contact .contact-header {
     width: 100%;
     height: auto;
-    background: white;
+    background: #fff;
     margin-bottom: 50px;
     z-index: 10; }
   #contact .contact .contact-items {
@@ -1541,7 +1545,7 @@ body {
         border-radius: 10px;
         transition: .5s ease;
         transform: preserve-3d;
-        box-shadow: var(--contact-shadow-hover); }
+        box-shadow: inset 3px 3px 4px #000a, inset -3px -3px 4px #ddda; }
       #contact .contact .contact-items .contact-item::after {
         position: absolute;
         content: '';
@@ -1549,7 +1553,7 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        box-shadow: var(--contact-shadow);
+        box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a;
         border-radius: 10px;
         z-index: -2;
         opacity: 0;
@@ -1595,12 +1599,12 @@ body {
           border-radius: 10px;
           transition: .3s ease; }
         #contact .contact .contact-items .contact-item h1::before {
-          box-shadow: inset 2px 2px 5px #000a, inset -2px -2px 5px #ddda; }
+          box-shadow: inset 3px 3px 4px #000a, inset -3px -3px 4px #ddda; }
         #contact .contact .contact-items .contact-item h1::after {
           opacity: 0;
           background: #f4f4f4;
           z-index: -1;
-          box-shadow: inset 2px 2px 5px #ddda, inset -2px -2px 5px #000a; }
+          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a; }
       #contact .contact .contact-items .contact-item .icon {
         margin: 5px auto 10px auto;
         padding: .3em .7em;
@@ -1627,7 +1631,7 @@ body {
           height: 100%;
           background: #f4f4f4;
           border-radius: 50%;
-          box-shadow: var(--contact-shadow-hover);
+          box-shadow: inset 3px 3px 4px #000a, inset -3px -3px 4px #ddda;
           transition: 1s ease;
           transform: preserve-3d; }
         #contact .contact .contact-items .contact-item .icon::after {
@@ -1641,7 +1645,7 @@ body {
           opacity: 0;
           background: #f4f4f4;
           border-radius: 50%;
-          box-shadow: var(--contact-shadow);
+          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a;
           transition: 1s ease;
           transform: preserve-3d; }
         #contact .contact .contact-items .contact-item .icon img {
@@ -1703,7 +1707,7 @@ body {
         border-radius: 10px;
         margin: .7em auto;
         background-color: #b60f30;
-        color: #fff;
+        color: #eee;
         opacity: .2;
         transition: .5s ease;
         position: relative;
@@ -1718,6 +1722,8 @@ body {
         opacity: 0; }
       #contact .contact .contact-items .contact-item:hover h1::after {
         opacity: 1; }
+      #contact .contact .contact-items .contact-item:hover h2 {
+        color: #000; }
       #contact .contact .contact-items .contact-item:hover .icon::before {
         opacity: 0; }
       #contact .contact .contact-items .contact-item:hover .icon::after {
@@ -1742,7 +1748,7 @@ body {
 #thanks {
   padding: .5em 1em;
   font-size: 1.5em;
-  background-color: #29323c;
+  background-color: #485563;
   border-radius: 5px;
   text-align: center;
   margin: 0 auto;

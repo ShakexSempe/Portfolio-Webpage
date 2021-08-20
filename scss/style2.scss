@@ -544,7 +544,7 @@ body {
                         letter-spacing: .05em;
                         padding-bottom: 10px;
                         text-transform: capitalize;
-                        border-bottom: 1px dashed #fff;
+                        border-bottom: 1px dashed $text-white-trans;
                         background: linear-gradient(0deg, #b9b6b6, #fff);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -557,10 +557,10 @@ body {
                         font-weight: 500;
                         margin: .5em 0;
                         text-transform: capitalize;
-                        color: #fff;
+                        color: $text-white-e;
                         transition: .3s;
                         @media (min-width:768px){
-                            font-size: 1.3em;
+                            font-size: 1.2em;
                         }
                     }
                     
@@ -570,14 +570,14 @@ body {
                             font-size: 1em;
                         }
                         font-weight: 200;
-                        color: #ddd;
+                        color: $text-white-d;
                         margin: .5em 0;
                     }
                     // end of project details (h2 and p)
                     // project link icon
                     a {
-                        color: #fff;
-                        background: #333;
+                        color: $text-white;
+                        background: $background-dark;
                         margin: .4em 0;
                         padding: .5em;
                         border: none;
@@ -600,13 +600,13 @@ body {
                         // end of project tile box shadow
                         // links icon
                         i {
-                            color: #b6ec37;
+                            color: $text-lime;
                             font-size: .7em;
                             padding: .2em;
                             // icon label (pseudo)
                             &::after {
                                 content: 'view project';
-                                font-family: 'Gruppo', cursive;
+                                font-family: $font-gruppo;
                                 font-style: italic;
                             }
 
@@ -616,7 +616,7 @@ body {
                         // link hover state
                         &:hover {
                             h2 {
-                                color: yellow;
+                                color: $text-lime;
                             }
                         }
                         // link hover state
@@ -688,7 +688,7 @@ body {
 
                         li {
                             font-size: .7em;
-                            color: #fffa;
+                            color: $text-white-trans;
                             list-style: none;
                             padding: .4em .3em;
                             margin-right: .1em;
@@ -767,7 +767,7 @@ body {
         margin-right: 30px;
         height: auto;
         z-index: 20;
-        background: #fff;
+        background: $background-light;
         border-radius: 5px;
         position: relative;
         // col-right box-shadow
@@ -780,8 +780,7 @@ body {
             height: 100%;
             border-radius: 5px;
             z-index: -10;
-            box-shadow: inset 5px 5px 5px rgba(199, 199, 199, 0.667),
-                        inset -5px -5px 5px #000a;
+            box-shadow: $box-light-top-bg;
         }
         // end of col-right box-shadow
         .about-title {
@@ -797,15 +796,14 @@ body {
                 font-size: .6em;
                 font-weight: 600;
                 text-transform: uppercase;
-                color: #fff;
+                color: $text-white-e;
                 background-color: #dc143c;
                 border-radius: 10px;
                 transition: .5s ease;
                 position: absolute;
                 opacity: 0;
                 z-index: 20;
-                box-shadow: inset 2px 2px 4px #fffa,
-                inset -2px -2px 4px #000a;
+                box-shadow: $box-light-top-sm;
             }
             // request cv link
 
@@ -831,13 +829,11 @@ body {
                     border-radius: 10px;
                 }
                 &::before {
-                    box-shadow: inset 3px 3px 5px #000a,
-                                inset -3px -3px 5px #ddda;
+                    box-shadow: $box-dark-top-md;
                 }
                 &::after {
                     opacity: 0;
-                    box-shadow: inset 3px 3px 5px #ddda,
-                                inset -3px -3px 5px #000a;
+                    box-shadow: $box-light-top-md;
                 }
                 // end of h2 box shadow
             }
@@ -888,8 +884,8 @@ body {
 
                 a {
                     transition: .3s ease;
-                    color: #fff;
-                    text-shadow: var(--text-shadow-sm);
+                    color: $text-white;
+                    text-shadow: $text-shadow-sm;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -938,9 +934,9 @@ body {
                     font-size: 1em;
                 }
                 .fcc-link {
-                    color: #dc143c;
+                    color: $span-crimson;
                     &:hover {
-                        color: violet;
+                        color: $span-violet;
                     }
                 }
             }
@@ -993,28 +989,31 @@ body {
         &::before {
             position: absolute;
             content: 'Boitumelo Sempe';
-            color: #000;
+            color: $text-dark;
             font-size: 1em;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             text-align: left;
+            font-weight: 500;
+            font-style: italic;
             padding: .3em;
             background-image: url('../img/me.jpg');
             background-size: cover;
             border-radius: 10px;
             transition: 1s ease;
-            box-shadow: inset 5px 5px 5px #fffa,
-                        inset -10px -10px 10px #000a;
+            box-shadow: $box-light-top-lg;
         }
         &::after {
             position: absolute;
             content: 'Shakex Sempe';
             padding: .3em;
             text-align: left;
+            font-weight: 500;
+            font-style: italic;
             font-size: 1em;
-            color:#0000ff;
+            color:$span-blue;
             top: 0;
             left: 0;
             width: 100%;
@@ -1025,8 +1024,7 @@ body {
             background-position: top;
             border-radius: 10px;
             transition: 1s ease;
-            box-shadow: inset 5px 5px 5px #fffa,
-            inset -10px -10px 10px #000a;
+            box-shadow: $box-light-top-lg;
         }
         // image hover states
         &:hover {
@@ -1078,7 +1076,7 @@ body {
         .contact-header {
             width: 100%;
             height: auto;
-            background: rgb(255, 255, 255);
+            background: $background-light;
             margin-bottom: 50px;
             z-index: 10;
         }
@@ -1132,7 +1130,7 @@ body {
                     border-radius: 10px;
                     transition: .5s ease;
                     transform: preserve-3d;
-                    box-shadow: var(--contact-shadow-hover);
+                    box-shadow: $box-dark-top-md;
                 }
                 &::after {
                     position: absolute;
@@ -1141,7 +1139,7 @@ body {
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    box-shadow: var(--contact-shadow);
+                    box-shadow: $box-light-top-md;
                     border-radius: 10px;
                     z-index: -2;
                     opacity: 0;
@@ -1204,15 +1202,13 @@ body {
                         transition: .3s ease;
                     }
                     &::before {
-                        box-shadow: inset 2px 2px 5px #000a,
-                                    inset -2px -2px 5px #ddda;
+                        box-shadow: $box-dark-top-md;
                     }
                     &::after {
                         opacity: 0;
                         background: #f4f4f4;
                         z-index: -1;
-                        box-shadow: inset 2px 2px 5px #ddda,
-                                    inset -2px -2px 5px #000a;
+                        box-shadow: $box-light-top-md;
                     }
                     // end of heading box shadows
                 }
@@ -1247,7 +1243,7 @@ body {
                         height: 100%;
                         background: #f4f4f4;
                         border-radius: 50%;
-                        box-shadow: var(--contact-shadow-hover);
+                        box-shadow: $box-dark-top-md;
                         transition: 1s ease;
                         transform: preserve-3d;
                     }
@@ -1262,7 +1258,7 @@ body {
                         opacity: 0;
                         background: #f4f4f4;
                         border-radius: 50%;
-                        box-shadow: var(--contact-shadow);
+                        box-shadow: $box-light-top-md;
                         transition: 1s ease;
                         transform: preserve-3d;
                     }
@@ -1290,9 +1286,10 @@ body {
                         outline: none;
                         border-radius: 10px;
                         margin: .5em auto;
-                        color: #000a;
+                        color: $text-black-trans;
                         transition: .5s ease;
                         position: relative;
+                        
                         @media (min-width: 768px){
                             width: 100%;
                             text-align: center;
@@ -1344,8 +1341,8 @@ body {
                         padding: .2em .5em;
                         border-radius: 10px;
                         margin: .7em auto;
-                        background-color: #b60f30;
-                        color: #fff;
+                        background-color: $link-crimson-dark;
+                        color: $text-white-e;
                         opacity: .2;
                         transition: .5s ease;
                         position: relative;
@@ -1371,6 +1368,9 @@ body {
                     h1 {
                         &::before {opacity:0}
                         &::after {opacity:1}
+                    }
+                    h2 {
+                        color: $text-black;
                     }
                     .icon {
                         &::before {opacity: 0;}
@@ -1421,7 +1421,7 @@ body {
 #thanks {
     padding: .5em 1em;
     font-size: 1.5em;
-    background-color: #29323c;
+    background-color: $overlay-blue-light;
     border-radius: 5px;
     text-align: center;
     margin: 0 auto;

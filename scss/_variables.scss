@@ -1,5 +1,5 @@
 // fonts 
-
+$font-gruppo: 'Gruppo', cursive;
 // text colors 
 $text-black: #000;
 $text-white: #fff;
@@ -9,18 +9,22 @@ $text-black-trans: #000a;
 $text-light: #ddd;
 $text-white-e: #eee;
 $text-white-d: #ddd;
+$text-lime: #bfee50;
 
 // span
 $span-crimson: #dc143c;
+$span-violet: violet;
+$span-blue: #0000ff;
 $span-crimson-dark: #dc143c8c;
 $span-orange: tomato ;
 // $span-crimson: #dc143c;
 // link colors
 $link-blue: skyblue;
 $link-crimson: #dc143c;
+$link-crimson-dark:#b60f30;
 // background colors
 $background-light: #fff;
-$background-dark: #161616;
+$background-dark: #333;
 $overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
 $overlay-blue-dark:#29323c;
 $overlay-blue-light: #485563;
@@ -42,5 +46,15 @@ $box-dark-top-sm: inset 2px 2px 3px #000a,
 $box-dark-top-bg: inset 4px 4px 5px #000a,
                     inset -4px -4px 5px #ddda;
 
+$box-dark-top-md: inset 3px 3px 4px #000a,
+                    inset -3px -3px 4px #ddda;
+                    
+$box-light-top-md: inset 3px 3px 4px #ddda,
+                    inset -3px -3px 4px #000a;
+
+$box-light-top-lg: inset 5px 5px 5px #fffa,
+                    inset -10px -10px 10px #000a;
 // text-shadows
 $text-shadow-red: #dc143c;
+$text-shadow-sm: 1px 1px 1px #000;
+$text-shadow-lg: 2px 2px 2px #000;
