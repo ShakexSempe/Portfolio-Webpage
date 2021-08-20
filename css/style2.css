@@ -780,13 +780,13 @@ body {
 
 #header {
   position: fixed;
-  z-index: 1000;
+  z-index: 50;
   left: 0;
   top: 0;
   width: 100vw; }
   #header .header {
     min-height: 8vh;
-    background-color: #1f1e1e80;
+    background-color: #1f1f1e80;
     transition: 0.3s ease background-color; }
     #header .header #navbar {
       display: flex;
@@ -864,7 +864,7 @@ body {
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%) scale(0);
-              color: rgba(240, 248, 255, 0.178);
+              color: #f0f8ff2d;
               font-size: 3em;
               letter-spacing: 50px;
               z-index: -1;
@@ -876,7 +876,7 @@ body {
               text-align: left;
               color: #fffa;
               border-radius: 10px;
-              box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+              box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
           #header .header #navbar .nav-list ul li:hover {
             transition: .3s; }
             #header .header #navbar .nav-list ul li:hover a {
@@ -888,7 +888,7 @@ body {
             letter-spacing: initial; }
         #header .header #navbar .nav-list ul.active {
           left: 20%;
-          background-color: #29323c; }
+          background-color: #485563; }
       @media (min-width: 1024px) {
         #header .header #navbar .nav-list ul {
           position: initial;
@@ -1013,10 +1013,10 @@ body {
       border-radius: 40px;
       transition: .3s ease; }
     #home .hero #cta-header::before {
-      box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
+      box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     #home .hero #cta-header::after {
       opacity: 0;
-      box-shadow: inset 4px 4px 5px #000a, inset -4px -4px 5px #ddda; }
+      box-shadow: inset 4px 4px 5px #000a, inset -4px -4px 5px #ddda; }
     #home .hero #cta-header:hover {
       transform: scale(0.98); }
       #home .hero #cta-header:hover::before {
@@ -1063,7 +1063,7 @@ body {
   #projects .projects-header {
     width: 100%;
     height: 170px;
-    background: white;
+    background: #fff;
     margin-bottom: 2em;
     z-index: 2; }
     #projects .projects-header h1 {

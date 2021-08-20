@@ -1,0 +1,46 @@
+// fonts 
+
+// text colors 
+$text-black: #000;
+$text-white: #fff;
+$text-white-trans: #fffa;
+$text-dark: #333;
+$text-black-trans: #000a;
+$text-light: #ddd;
+$text-white-e: #eee;
+$text-white-d: #ddd;
+
+// span
+$span-crimson: #dc143c;
+$span-crimson-dark: #dc143c8c;
+$span-orange: tomato ;
+// $span-crimson: #dc143c;
+// link colors
+$link-blue: skyblue;
+$link-crimson: #dc143c;
+// background colors
+$background-light: #fff;
+$background-dark: #161616;
+$overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
+$overlay-blue-dark:#29323c;
+$overlay-blue-light: #485563;
+$nav-background: #1f1f1e80;
+$ul-background: #1f1e1e;
+// button colors
+$button-background-grey: #8584844b;
+
+// box-shadows
+$box-light-top-sm: inset 2px 2px 3px #ddda,
+                    inset -2px -2px 3px #000a;
+
+$box-light-top-bg: inset 4px 4px 5px #ddda,
+                    inset -4px -4px 5px #000a;
+
+$box-dark-top-sm: inset 2px 2px 3px #000a,
+                    inset -2px -2px 3px #ddda;
+
+$box-dark-top-bg: inset 4px 4px 5px #000a,
+                    inset -4px -4px 5px #ddda;
+
+// text-shadows
+$text-shadow-red: #dc143c;
