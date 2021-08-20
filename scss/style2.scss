@@ -61,6 +61,9 @@ body {
             .brand {
                 h1 {
                     font-size: 1.3em;
+                    @media (min-width: 768px) {
+                        font-size: 1.8em;
+                    }
                     text-transform: uppercase;
                     color: #fff;
                     font-family: 'Gruppo', cursive;
@@ -269,6 +272,12 @@ body {
             background: transparent;
             padding: .5em;
             border-radius: 5px;
+            @media (min-width: 768px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: .5em;
+            }
 
             h1 {
                 margin-bottom: .2em;
@@ -750,7 +759,7 @@ body {
         // section title
         .section-title {
             text-align: center;
-            font-size: 3em;
+            font-size: 2.35em;
             padding-bottom: 10px;
             &::after {
                 width: 80%;
@@ -1081,12 +1090,20 @@ body {
         // contact items container
         .contact-items {
             width: 100%;
-            
+            @media (min-width: 768px){
+                width: 100%;
+                display: flex;
+                flex-direction: flex;
+                flex-wrap: nowrap;
+                padding: 0;
+                margin: 0 auto;
+            }
             // contact-item
             .contact-item {
                 // tablet to desktop
             @media (min-width: 768px){
                 width: 30%;
+                
             }
             // tablet to desktop
                 width: 85%;
@@ -1165,6 +1182,10 @@ body {
                     font-size: 1.5em;
                     font-weight: 600;
                     position: relative;
+                    @media (min-width: 768px){
+                        font-size: 1.7em;
+                        margin: .5em auto;
+                    }
                     // h1 animation
                     @keyframes contact-h1 {
                         100% {
@@ -1212,6 +1233,14 @@ body {
                     display: grid;
                     place-items: center;
                     transition: .5s ease;
+                    @media (min-width: 768px) {
+                        height: 80px;
+                        width: 80px;
+                        margin: .3em auto;
+                        img {
+                            object-fit: cover;
+                        }
+                    }
                     // contact icon box shadows
                     &::before {
                         position: absolute;
@@ -1247,6 +1276,7 @@ body {
                     transition: 1s ease;
                     transform: scale(.85) rotateY(40deg) skewX(20deg);
                     transform: preserve-3d;
+
                 }
                 // end of icon image
                 }
@@ -1267,6 +1297,12 @@ body {
                         color: #000a;
                         transition: .5s ease;
                         position: relative;
+                        @media (min-width: 768px){
+                            width: 100%;
+                            text-align: center;
+                            margin: .5em auto;
+                            font-size: .9em;
+                        }
                         // details shadow
                         &::before {
                             position: absolute;

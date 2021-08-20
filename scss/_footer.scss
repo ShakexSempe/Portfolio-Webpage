@@ -213,6 +213,11 @@
                         opacity: 0;
                         transition: 1s;
                         transform: translateY(100%);
+                        @media (min-width: 768px){
+                            font-size: .5em;
+                            bottom: -130%;
+                            left: -30%;
+                        }
                     }
                     // end of link label
                 }
@@ -233,6 +238,14 @@
                     transform: scale(.9);
                     @media (min-width: 768px){
                         transform: scale(.7);
+                        margin-bottom: 50px;
+                        padding: 10px;
+                        box-shadow: 1px 1px 5px rgba(221, 221, 221, 0.527);
+                        
+                        &:hover {
+                            transition: all .3s ease-in-out;
+                            box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.827);
+                        }
                     }
                     // icon shadow
                     &::after {
