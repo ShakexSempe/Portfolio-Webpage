@@ -170,9 +170,9 @@ hamburger
       bottom: 8px; }
     #header .hamburger .bar::after {
       top: 8px; }
-  #header .hamburger:focus.bar::before {
+  #header .hamburger.active .bar::before {
     bottom: 0; }
-  #header .hamburger:focus.bar::after {
+  #header .hamburger.active .bar::after {
     top: 0; }
 
 .top-link {

@@ -227,12 +227,18 @@ hamburger
         // end of top and bottom bars
     }
         // hamburger bars active state
-        &:focus {
-            &.bar {
-                &::before {bottom: 0;}
-                &::after {top: 0;}
+        &.active {
+            .bar {
+                &::before {
+                    bottom: 0;
+                }
+
+                &::after {
+                    top: 0;
+                }
             }
         }
+
         // end of hamburger bars active state
     // end of hamburger bars
 }
