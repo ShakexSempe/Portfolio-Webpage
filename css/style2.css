@@ -351,7 +351,7 @@ hamburger
       /*items wrapped onto multiple lines*/
       margin-top: 50px;
       padding-top: 50px;
-      text-shadow: var(--text-shadow-sm); }
+      text-shadow: 1px 1px 1px #000; }
       #skills .dropdown .dropdown-content .skills-bottom .skills-item {
         flex-basis: 80%;
         display: flex;
@@ -388,7 +388,6 @@ hamburger
             transition: .2s; }
             #skills .dropdown .dropdown-content .skills-bottom .skills-item:hover {
               transform: scale(1.05);
-              border: 3px solid #fff;
               filter: grayscale(0); }
             #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
               font-size: 1.5em; }
@@ -414,7 +413,7 @@ hamburger
           height: 100%;
           border-radius: 10px;
           width: 100%;
-          background: var(--overlay);
+          background: linear-gradient(60deg, #29323c 0%, #485563 100%);
           opacity: 0.7;
           z-index: -1; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item:before {
@@ -457,7 +456,7 @@ hamburger
           color: #fff;
           margin-bottom: 10px;
           text-transform: capitalize;
-          font-family: 'Gruppo', cursive;
+          font-family: "Gruppo", cursive;
           text-decoration: underline rgba(221, 221, 221, 0.466);
           text-underline-offset: .1em; }
 

@@ -212,7 +212,7 @@
                 /*items wrapped onto multiple lines*/
                 margin-top: 50px;
                 padding-top: 50px;
-                text-shadow: var(--text-shadow-sm);
+                text-shadow: $text-shadow-sm;
 
                 // skills-items
                 .skills-item {
@@ -236,7 +236,6 @@
                         transition: .2s;
                         &:hover {
                             transform: scale(1.05);
-                            border: 3px solid #fff;
                             filter: grayscale(0);
                             // border: none;
                         }
@@ -283,7 +282,7 @@
                             
 
                             &::marker {
-                                color: #ddda;
+                                color: $text-white-trans-d;
                             }
                         }
 
@@ -297,7 +296,7 @@
                         height: 100%;
                         border-radius: 10px;
                         width: 100%;
-                        background: var(--overlay);
+                        background: $overlay;
                         opacity: 0.7;
                         z-index: -1;
                     }
@@ -366,7 +365,7 @@
                         color: #fff;
                         margin-bottom: 10px;
                         text-transform: capitalize;
-                        font-family: 'Gruppo', cursive;
+                        font-family: $font-gruppo;
                         text-decoration: underline rgba(221, 221, 221, 0.466);
                         text-underline-offset: .1em;
                     }
