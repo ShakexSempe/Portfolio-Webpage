@@ -107,10 +107,10 @@ displayProjects = (projectsItems) => {
             <div class="tech-list">
                 <ul>${project.tech}<ul>
             </div>
-            </div>
-            <div class="project-img">
+        </div>
+        <div class="project-img">
             <img src=${project.img} alt="img" />
-            </div>
+        </div>
         </div>`
     }); 
     displayProject = displayProject.join("");
