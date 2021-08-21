@@ -787,7 +787,7 @@ body {
   width: 100vw; }
   #header .header {
     min-height: 8vh;
-    background-color: #3c3329;
+    background-color: #29323c;
     transition: 0.3s ease background-color; }
     #header .header #navbar {
       display: flex;
