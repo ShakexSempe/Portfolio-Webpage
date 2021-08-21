@@ -1429,7 +1429,7 @@ body {
         inset -3px -3px 5px #000a;
 
     h3 {
-        color: #ddd;
+        color: $text-white-e;
         margin: .5em auto;
         font-size: 1em;
         
@@ -1441,7 +1441,7 @@ body {
             margin: 1em auto;
             padding: .5em 3em;
             text-align: center;
-            color: #dddd;
+            color: $text-white-e;
             position: relative;
 
             // icon box shadow
