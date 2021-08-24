@@ -237,6 +237,8 @@
                     transition: 0.3s ease;
                     position: relative;
                     transform: scale(.9);
+                    opacity: .3;
+                    transition: .3git s;
                     @media (min-width: 768px){
                         transform: scale(.7);
                         margin-bottom: 50px;
@@ -280,6 +282,7 @@
             }
             // icon label pop up
             &:hover {
+                i {opacity: 1;}
                 a {
                     &::before {
                         opacity: 1;
