@@ -1094,7 +1094,9 @@ hamburger
           -webkit-text-fill-color: transparent;
           transition: 0.3s ease;
           position: relative;
-          transform: scale(0.9); }
+          transform: scale(0.9);
+          opacity: .3;
+          transition: .3git s; }
           @media (min-width: 768px) {
             #footer .footer .social-icon .social-item i {
               transform: scale(0.7);
@@ -1119,6 +1121,8 @@ hamburger
             transform: scale(1.05); }
         #footer .footer .social-icon .social-item:hover i::after {
           opacity: 1; }
+      #footer .footer .social-icon:hover i {
+        opacity: 1; }
       #footer .footer .social-icon:hover a::before {
         opacity: 1;
         transform: translateY(0%); }
