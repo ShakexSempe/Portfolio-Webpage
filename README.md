@@ -1,7 +1,11 @@
 # Portfolio-Webpage
 
+### Screenshot
+![](./img/desktop-footer.png)
 
 ## Welcome Section (Home/Hero)
+### Screenshot
+![](./img/desktop.png)
 -Brand NavBar fixed to the top of the page. Navbar links used to navigate through the page to the corresponding section heading.
 
 -Welcome section covers entire viewport and features animated background and animated text as an introduction.
@@ -20,7 +24,16 @@
 ## Contact Section
 - contact details visible on hover
 
+## CV Request Form
+- Desktop form 
+![](./img/desktop-form.png)
+- mobile form
+![](./img/mobile-form.png)
+
+
 ## Footer
+![](./img/desktop-footer.png)
+
 - decorative css3 rotating cube and social media links.
 
 
