@@ -1248,8 +1248,10 @@ body {
       justify-content: space-between;
       width: 100%;
       height: 100%;
-      max-width: 1300px;
-      padding: 0 10px; }
+      max-width: 1300px; }
+      @media (max-width: 768px) {
+        #header .header #navbar {
+          padding: 0 5vw; } }
       #header .header #navbar .brand h1 {
         font-size: 1.3em;
         text-transform: uppercase;
