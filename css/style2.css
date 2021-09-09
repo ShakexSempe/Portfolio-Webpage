@@ -108,8 +108,8 @@ hamburger
 
 /* end of section title span animation */
 #header .hamburger {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   margin: 5px auto;
   display: inline-block;
   border-radius: 50%;
