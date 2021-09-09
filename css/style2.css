@@ -108,8 +108,8 @@ hamburger
 
 /* end of section title span animation */
 #header .hamburger {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   margin: 5px auto;
   display: inline-block;
   border-radius: 50%;
@@ -499,6 +499,7 @@ hamburger
         padding: 0;
         margin: 0 auto; } }
     #contact .contact .contact-items .contact-item {
+      transform: scale(0.95);
       width: 85%;
       /* height: auto; */
       text-align: center;
@@ -539,13 +540,14 @@ hamburger
         left: 0;
         width: 100%;
         height: 100%;
+        background-color: #485563;
         box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a;
         border-radius: 10px;
         z-index: -2;
         opacity: 0;
         transition: .5s ease; }
       #contact .contact .contact-items .contact-item:hover {
-        transform: scale(0.96);
+        transform: scale(1);
         transition: .5s ease;
         transform: preserve-3d; }
         #contact .contact .contact-items .contact-item:hover::before {
@@ -1248,8 +1250,10 @@ body {
       justify-content: space-between;
       width: 100%;
       height: 100%;
-      max-width: 1300px;
-      padding: 0 10px; }
+      max-width: 1300px; }
+      @media (max-width: 768px) {
+        #header .header #navbar {
+          padding: 0 5vw; } }
       #header .header #navbar .brand h1 {
         font-size: 1.3em;
         text-transform: uppercase;
@@ -1405,21 +1409,20 @@ body {
         color: #fff;
         text-align: left;
         font-size: 1.5em;
+        opacity: 0;
         text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
         line-height: 1.3;
-        animation: hero-span 6s ease-in-out;
+        animation: hero-span 5s ease-in-out;
+        animation-fill-mode: forwards;
         animation-delay: calc(1s + .5s * var(--s));
-        transition: all 3s;
         /* hero h1 keyframes */
         /* hero h1 keyframes */ }
 
 @keyframes hero-span {
-  5% {
-    opacity: 1; }
   10% {
     opacity: 1;
     color: #dc143c8c;
-    transform: translateX(3px);
+    transform: translateX(10px);
     text-shadow: 0 0 1px #fff; }
   100% {
     opacity: 1; } }
@@ -1428,16 +1431,20 @@ body {
         display: inline-block;
         animation: aka 5s ease alternate;
         animation-delay: 4s;
+        animation-fill-mode: forwards;
         margin: .5em 0;
         color: #fff;
-        opacity: 0.5;
+        opacity: 0;
         transform: scale(0.7); }
 
 @keyframes aka {
   50% {
     opacity: 1;
     transform: scale(1);
-    color: tomato; } }
+    color: tomato; }
+  100% {
+    opacity: 1;
+    color: #eee; } }
   #home .hero #cta-header {
     font-size: 1.3em;
     position: relative;
@@ -1450,6 +1457,9 @@ body {
     border-radius: 40px;
     border: none;
     outline: none;
+    opacity: 0;
+    animation: show-cta 2s 5s;
+    animation-fill-mode: forwards;
     background-color: #8584844b;
     text-shadow: 2px 2px 2px #000;
     transition: .3s linear;
@@ -1457,6 +1467,10 @@ body {
     @media (min-width: 768px) {
       #home .hero #cta-header {
         font-size: 1.5em; } }
+
+@keyframes show-cta {
+  100% {
+    opacity: 1; } }
     #home .hero #cta-header::before, #home .hero #cta-header::after {
       position: absolute;
       content: '';
