@@ -297,22 +297,21 @@ body {
                     color: $text-white;
                     text-align: left;
                     font-size: 1.5em;
-                    
+                    opacity: 0;
                     text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
                     line-height: 1.3;
                     animation: hero-span 6s ease-in-out;
+                    animation-fill-mode: forwards;
                     animation-delay: calc(1s + .5s * var(--s));
-                    transition: all 3s;
+                    // transition: all 3s;
                     /* hero h1 keyframes */
                     @keyframes hero-span {
-                        5% {
-                            opacity: 1;
-                        }
+                        
 
                         10% {
                             opacity: 1;
                             color: $span-crimson-dark;
-                            transform: translateX(3px);
+                            transform: translateX(10px);
                             text-shadow: 0 0 1px #fff;
                         }
 
@@ -329,9 +328,10 @@ body {
                         display: inline-block;
                         animation: aka 5s ease alternate;
                         animation-delay: 4s;
+                        animation-fill-mode: forwards;
                         margin: .5em 0;
                         color: $text-white;
-                        opacity: 0.5;
+                        opacity: 0;
                         transform: scale(0.7);
                     }
                     @keyframes aka {
@@ -340,6 +340,10 @@ body {
                             transform: scale(1);
                             color: $span-orange;
                         }
+                         100% {
+                             opacity: 1;
+                             color: $text-white-e;
+                         }
                     }
                 }
                 // end of "aka" span
@@ -363,10 +367,20 @@ body {
             border-radius: 40px;
             border: none;
             outline: none;
+            opacity: 0;
+            animation: show-cta 2s 5s;
+            animation-fill-mode: forwards;
             background-color: $button-background-grey;
             text-shadow: 2px 2px 2px #000;
             transition: .3s linear;
             cursor: pointer;
+            // show cta
+            @keyframes show-cta {
+                100% {
+                    opacity: 1;
+                }
+            }
+            // end of show cta
             // button shadows
             &::before,
             &::after {
