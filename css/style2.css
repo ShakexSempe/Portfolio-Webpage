@@ -1452,10 +1452,10 @@ body {
     border-radius: 40px;
     border: none;
     outline: none;
-    opacity: 0;
+    opacity: 1;
     animation: show-cta 2s 6s;
     animation-fill-mode: forwards;
-    transition: 1s linear;
+    transition: .3s linear;
     cursor: pointer;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     z-index: 2; }
@@ -1481,13 +1481,15 @@ body {
       box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     #home .hero #cta-header::after {
       opacity: 1;
-      background-image: linear-gradient(40deg, #dc143c, #485563);
+      background-image: linear-gradient(90deg, #dc143c, #485563);
+      background-position: 0, 0;
+      background-size: 300%;
       z-index: -1; }
-    #home .hero #cta-header:hover {
-      transform: scale(0.98); }
+    #home .hero #cta-header:hover::after {
+      background-position: 100%; }
     #home .hero #cta-header:active {
       transition: .2s;
-      transform: scale(0.94); }
+      transform: scale(0.95); }
     #home .hero #cta-header span {
       position: relative;
       display: inline-block;
