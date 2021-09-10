@@ -1410,7 +1410,6 @@ body {
         text-align: left;
         font-size: 1.5em;
         opacity: 0;
-        text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
         line-height: 1.3;
         animation: hero-span 5s ease-in-out;
         animation-fill-mode: forwards;
@@ -1420,10 +1419,8 @@ body {
 
 @keyframes hero-span {
   10% {
-    opacity: 1;
-    color: #dc143c8c;
-    transform: translateX(10px);
-    text-shadow: 0 0 1px #fff; }
+    opacity: .7;
+    transform: translateX(10px); }
   100% {
     opacity: 1; } }
       #home .hero #hero-h1 h1#aka span {
@@ -1433,18 +1430,16 @@ body {
         animation-delay: 4s;
         animation-fill-mode: forwards;
         margin: .5em 0;
-        color: #fff;
+        color: tomato;
         opacity: 0;
         transform: scale(0.7); }
 
 @keyframes aka {
   50% {
     opacity: 1;
-    transform: scale(1);
-    color: tomato; }
+    transform: scale(1); }
   100% {
-    opacity: 1;
-    color: #eee; } }
+    opacity: .8; } }
   #home .hero #cta-header {
     font-size: 1.3em;
     position: relative;
@@ -1458,12 +1453,14 @@ body {
     border: none;
     outline: none;
     opacity: 0;
-    animation: show-cta 2s 5s;
+    animation: show-cta 2s 6s;
     animation-fill-mode: forwards;
     background-color: #8584844b;
     text-shadow: 2px 2px 2px #000;
-    transition: .3s linear;
-    cursor: pointer; }
+    transition: 1s linear;
+    cursor: pointer;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    z-index: 2; }
     @media (min-width: 768px) {
       #home .hero #cta-header {
         font-size: 1.5em; } }
@@ -1483,8 +1480,9 @@ body {
     #home .hero #cta-header::before {
       box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     #home .hero #cta-header::after {
-      opacity: 0;
-      box-shadow: inset 4px 4px 5px #000a, inset -4px -4px 5px #ddda; }
+      opacity: 1;
+      background-image: linear-gradient(40deg, #dc143c, #485563);
+      z-index: -1; }
     #home .hero #cta-header:hover {
       transform: scale(0.98); }
       #home .hero #cta-header:hover::before {
@@ -1497,6 +1495,7 @@ body {
     #home .hero #cta-header span {
       position: relative;
       display: inline-block;
+      text-transform: uppercase;
       color: #fff;
       font-size: 2em;
       font-weight: 700;
@@ -1509,14 +1508,7 @@ body {
   0% {
     transform: translateY(0px); }
   20% {
-    transform: translateY(-5px);
-    color: #cd143c;
-    background: linear-gradient(0deg, #ff0000, #dc143c, #ff0000, #000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-shadow: none; }
+    transform: translateY(-10px) scale(1.1); }
   40%,
   100% {
     transform: translateY(0); } }

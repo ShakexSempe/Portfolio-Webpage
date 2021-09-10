@@ -298,7 +298,7 @@ body {
                     text-align: left;
                     font-size: 1.5em;
                     opacity: 0;
-                    text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
+                    // text-shadow: 0 0 5px #000, 0 0 10px #dc143c;
                     line-height: 1.3;
                     animation: hero-span 5s ease-in-out;
                     animation-fill-mode: forwards;
@@ -307,10 +307,8 @@ body {
                     /* hero h1 keyframes */
                     @keyframes hero-span {
                         10% {
-                            opacity: 1;
-                            color: $span-crimson-dark;
+                            opacity: .7;
                             transform: translateX(10px);
-                            text-shadow: 0 0 1px #fff;
                         }
 
                         100% {
@@ -328,7 +326,7 @@ body {
                         animation-delay: 4s;
                         animation-fill-mode: forwards;
                         margin: .5em 0;
-                        color: $text-white;
+                        color: $span-orange;
                         opacity: 0;
                         transform: scale(0.7);
                     }
@@ -336,12 +334,11 @@ body {
                         50% {
                             opacity: 1;
                             transform: scale(1);
-                            color: $span-orange;
                         }
-                         100% {
-                            opacity: 1;
-                            color: $text-white-e;
-                         }
+
+                        100% {
+                            opacity: .8;
+                        }
                     }
                 }
                 // end of "aka" span
@@ -366,12 +363,14 @@ body {
             border: none;
             outline: none;
             opacity: 0;
-            animation: show-cta 2s 5s;
+            animation: show-cta 2s 6s;
             animation-fill-mode: forwards;
             background-color: $button-background-grey;
             text-shadow: 2px 2px 2px #000;
-            transition: .3s linear;
+            transition: 1s linear;
             cursor: pointer;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+            z-index: 2;
             // show cta
             @keyframes show-cta {
                 100% {
@@ -391,12 +390,15 @@ body {
                 border-radius: 40px;
                 transition: .3s ease;
             }
+            // ::before = box shadow
             &::before {
                 box-shadow: $box-light-top-bg;
             }
+            // ::after = background gradient
             &::after {
-                opacity: 0;
-                box-shadow: $box-dark-top-bg;
+                opacity: 1;
+                background-image: linear-gradient(40deg,#dc143c, $overlay-blue-light);
+                z-index: -1;
             }
             // button hover, focus and active states
             &:hover {
@@ -415,6 +417,7 @@ body {
             span {
                 position: relative;
                 display: inline-block;
+                text-transform: uppercase;
                 color: $text-white;
                 font-size: 2em;
                 font-weight: 700;
@@ -426,14 +429,7 @@ body {
                         transform: translateY(0px);
                     }
                     20% {
-                        transform: translateY(-5px);
-                        color: #cd143c;
-                        background: linear-gradient(0deg, #ff0000, #dc143c, #ff0000, #000);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        text-transform: uppercase;
-                        box-shadow: none;
-                        text-shadow: none;
+                        transform: translateY(-10px) scale(1.1);
                     }
                     40%,
                     100% {
