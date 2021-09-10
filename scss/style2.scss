@@ -362,7 +362,7 @@ body {
             border-radius: 40px;
             border: none;
             outline: none;
-            opacity: 1;
+            opacity: 0;
             animation: show-cta 2s 6s;
             animation-fill-mode: forwards;
             // background-color: $button-background-grey;
@@ -426,7 +426,7 @@ body {
                 font-size: 2em;
                 font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
-                animation-delay: calc(6.5s + .2s * var(--i));
+                animation-delay: calc(5s + .2s * var(--i));
                 /* cta keyframes*/
                 @keyframes animate {
                     0% {
