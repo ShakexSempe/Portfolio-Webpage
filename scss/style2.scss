@@ -365,8 +365,7 @@ body {
             opacity: 0;
             animation: show-cta 2s 6s;
             animation-fill-mode: forwards;
-            background-color: $button-background-grey;
-            text-shadow: 2px 2px 2px #000;
+            // background-color: $button-background-grey;
             transition: 1s linear;
             cursor: pointer;
             -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
@@ -389,6 +388,8 @@ body {
                 height: 100%;
                 border-radius: 40px;
                 transition: .3s ease;
+                border: none;
+                outline: none;
             }
             // ::before = box shadow
             &::before {
@@ -399,13 +400,13 @@ body {
                 opacity: 1;
                 background-image: linear-gradient(40deg,#dc143c, $overlay-blue-light);
                 z-index: -1;
+
             }
             // button hover, focus and active states
             &:hover {
                 transform: scale(.98);
-
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
+                // &::before {opacity: 0;}
+                // &::after {opacity: 1;}
             }
             &:active {
                 transition: .2s;
@@ -422,7 +423,7 @@ body {
                 font-size: 2em;
                 font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
-                animation-delay: calc(5s + .2s * var(--i));
+                animation-delay: calc(6.5s + .2s * var(--i));
                 /* cta keyframes*/
                 @keyframes animate {
                     0% {
