@@ -255,9 +255,9 @@ hamburger
   #skills .skills-top p {
     color: #fff;
     font-size: .9em;
+    font-weight: 500;
     background: transparent;
     overflow: hidden;
-    text-shadow: var(--text-shadow-sm);
     line-height: 2em; }
     @media (min-width: 768px) {
       #skills .skills-top p {

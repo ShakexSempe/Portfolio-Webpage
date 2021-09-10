@@ -66,12 +66,12 @@
         p {
             color: #fff;
             font-size: .9em;
+            font-weight: 500;
             @media (min-width: 768px){
                 font-size: 1em;
             }
             background: transparent;
             overflow: hidden;
-            text-shadow: var(--text-shadow-sm);
             line-height: 2em;
         }
         // skills top 'down arrow'
