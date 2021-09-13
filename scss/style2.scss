@@ -363,7 +363,7 @@ body {
             border: none;
             outline: none;
             opacity: 0;
-            animation: show-cta 2s 6s;
+            animation: show-cta 4s 6s;
             animation-fill-mode: forwards;
             // background-color: $button-background-grey;
             transition: .3s linear;
@@ -403,6 +403,7 @@ body {
                 background-size: 300%;
                 z-index: -1;
                 animation: 3s cta-btn infinite;
+                animation-delay: 6s;
                 transition: .3s;
                 outline: none;
                 border: none;
