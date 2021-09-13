@@ -426,7 +426,7 @@ body {
                 font-size: 2em;
                 font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
-                animation-delay: calc(5s + .2s * var(--i));
+                animation-delay: calc(6.5s + .2s * var(--i));
                 /* cta keyframes*/
                 @keyframes animate {
                     0% {
