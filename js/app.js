@@ -89,10 +89,10 @@ menu_item.forEach((item) => {
 //  end of remove hamburger after click 
 
 //  remove sidebar after click on img 
-// avi.addEventListener("click", () => {
-//   hamburger.classList.toggle('active');
-//   mobile_menu.classList.toggle('active');
-// })
+avi.addEventListener("click", () => {
+  hamburger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
+})
 //  end of remove sidebar after click on img 
 
 
