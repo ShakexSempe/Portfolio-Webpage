@@ -759,6 +759,16 @@ body {
             border-radius: 10px;
             transition: 1s ease;
             box-shadow: $box-light-top-lg;
+            animation: fade-out 5s infinite;
+
+            @keyframes fade-out {
+                0% {
+                    transform-origin: right;
+                }
+                50% {
+                    opacity: 0;
+                }
+            }
         }
         &::after {
             position: absolute;
@@ -780,6 +790,13 @@ body {
             border-radius: 10px;
             transition: 1s ease;
             box-shadow: $box-light-top-lg;
+            animation: fade-in 5s infinite;
+
+            @keyframes fade-in {
+                50% {
+                    opacity: 1;
+                }
+            }
         }
         // image hover states
         &:hover {

@@ -1738,7 +1738,14 @@ body {
         background-size: cover;
         border-radius: 10px;
         transition: 1s ease;
-        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a; }
+        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a;
+        animation: fade-out 5s infinite; }
+
+@keyframes fade-out {
+  0% {
+    transform-origin: right; }
+  50% {
+    opacity: 0; } }
       .about .col-left .about-img::after {
         position: absolute;
         content: 'Shakex Sempe';
@@ -1758,7 +1765,12 @@ body {
         background-position: top;
         border-radius: 10px;
         transition: 1s ease;
-        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a; }
+        box-shadow: inset 5px 5px 5px #fffa, inset -10px -10px 10px #000a;
+        animation: fade-in 5s infinite; }
+
+@keyframes fade-in {
+  50% {
+    opacity: 1; } }
       .about .col-left .about-img:hover::before {
         opacity: 0;
         transform: scale(1.1);
