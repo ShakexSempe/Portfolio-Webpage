@@ -76,6 +76,22 @@ body {
 
             .nav-list {
                 .links-container {
+                    @media (max-width: 768px) {
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        width: 100vw;
+                        height: 100vh;
+                        background-color: $nav-active-background;
+                        transition: .5s ease;
+
+                        ul {
+                            margin: 20vh 5vw;
+                        }
+                    }
+                    &.active {
+                        left: 0;
+                    }
                     // hide nav avi on desktop
                     @media (min-width:768px) {
                         .nav-avi { display: none;}
@@ -116,12 +132,13 @@ body {
                 }
                 // mobile screens style
                 ul {
-                    position: absolute;
-                    background: $ul-background;
-                    width: 100vw;
-                    height: 100vh;
-                    left: 100%;
-                    top: 0;
+                    // position: absolute;
+                    // background: $ul-background;
+                    background: $overlay-blue-dark;
+                    // width: 100vw;
+                    // height: 100vh;
+                    // left:0;
+                    // bottom: 5vh
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -193,10 +210,10 @@ body {
                         }
                     }
                     // display nav list on toggle 
-                    &.active {
-                        left: 20%;
-                        background-color: $nav-active-background;
-                    }
+                    // &.active {
+                    //     left: 20%;
+                    //     background-color: $nav-active-background;
+                    // }
                 }
                 // end of mobile screens style
                 // desktop nav-list style
