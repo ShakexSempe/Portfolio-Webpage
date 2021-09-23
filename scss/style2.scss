@@ -44,8 +44,7 @@ body {
     width: 100vw;
 
     .header {
-        min-height: 8vh;
-        // height: 10vh;
+        min-height: 10vh;
         background-color: $nav-background;
         transition: 0.3s ease background-color;
 
@@ -55,8 +54,8 @@ body {
             justify-content: space-between;
             width: 100%;
             height: 100%;
-            max-width: 1300px;
-            @media (max-width: 768px) {
+            padding: 3vh 5vw;
+            @media (max-width: 1024px) {
                 padding: 0 5vw;
             }
             // corner logo
@@ -64,7 +63,7 @@ body {
                 h1 {
                     font-size: 1.3em;
                     @media (min-width: 768px) {
-                        font-size: 1.8em;
+                        font-size: 1.5em;
                     }
                     text-transform: uppercase;
                     color: #fff;
@@ -76,7 +75,7 @@ body {
 
             .nav-list {
                 .links-container {
-                    @media (max-width: 768px) {
+                    @media (max-width: 1024px) {
                         position: absolute;
                         top: 0;
                         left: 100%;
@@ -93,7 +92,7 @@ body {
                         left: 0;
                     }
                     // hide nav avi on desktop
-                    @media (min-width:1024px) {
+                    @media (min-width: 1024px) {
                         .nav-avi { display: none;}
                     }
                     // end of hide nav avi on desktop
@@ -215,7 +214,7 @@ body {
                 }
                 // end of mobile screens style
                 // desktop nav-list style
-                @media (min-width: 1024px){
+                @media (min-width: 1025px){
                     ul {
                         position: initial;
                         display: block;

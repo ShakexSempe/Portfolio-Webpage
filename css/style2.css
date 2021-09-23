@@ -1241,7 +1241,7 @@ body {
   top: 0;
   width: 100vw; }
   #header .header {
-    min-height: 8vh;
+    min-height: 10vh;
     background-color: #29323c;
     transition: 0.3s ease background-color; }
     #header .header #navbar {
@@ -1250,8 +1250,8 @@ body {
       justify-content: space-between;
       width: 100%;
       height: 100%;
-      max-width: 1300px; }
-      @media (max-width: 768px) {
+      padding: 3vh 5vw; }
+      @media (max-width: 1024px) {
         #header .header #navbar {
           padding: 0 5vw; } }
       #header .header #navbar .brand h1 {
@@ -1262,8 +1262,8 @@ body {
         text-shadow: 0 0 10px #dc143c; }
         @media (min-width: 768px) {
           #header .header #navbar .brand h1 {
-            font-size: 1.8em; } }
-      @media (max-width: 768px) {
+            font-size: 1.5em; } }
+      @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
           position: absolute;
           top: 0;
@@ -1356,7 +1356,7 @@ body {
           #header .header #navbar .nav-list ul li:hover a::after {
             transform: translate(-50%, -50%) scale(1);
             letter-spacing: initial; }
-      @media (min-width: 1024px) {
+      @media (min-width: 1025px) {
         #header .header #navbar .nav-list ul {
           position: initial;
           display: block;
