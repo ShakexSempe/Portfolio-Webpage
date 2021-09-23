@@ -93,7 +93,7 @@ body {
                         left: 0;
                     }
                     // hide nav avi on desktop
-                    @media (min-width:768px) {
+                    @media (min-width:1024px) {
                         .nav-avi { display: none;}
                     }
                     // end of hide nav avi on desktop
@@ -110,8 +110,8 @@ body {
                         border-radius: 50%;
                         overflow: hidden;
                         position: absolute;
-                        top: 1em;
-                        left: 1em;
+                        top: .5em;
+                        left: 5vw;
                         cursor: pointer;
 
                         img {
@@ -132,20 +132,18 @@ body {
                 }
                 // mobile screens style
                 ul {
-                    // position: absolute;
-                    // background: $ul-background;
                     background: $overlay-blue-dark;
-                    // width: 100vw;
-                    // height: 100vh;
-                    // left:0;
-                    // bottom: 5vh
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: right;
+                    border-radius: 5px;
                     z-index: 1;
                     overflow-x: hidden;
                     transition: 0.5s ease left;
+                    position: relative;
+                    border: none;
+                    outline: none;
 
                     li {
                         list-style: none;
@@ -169,7 +167,7 @@ body {
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%) scale(0);
-                                color: #f0f8ff2d;
+                                color: #f0f8ff1a;
                                 font-size: 3em;
                                 letter-spacing: 50px;
                                 z-index: -1;
