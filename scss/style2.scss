@@ -166,24 +166,9 @@ body {
                     overflow-x: hidden;
                     transition: 0.5s ease left;
                     position: relative;
-                    border: none;
+                    border: 2px solid $trans-border;
                     outline: none;
                     padding: 1em 0;
-                    position: relative;
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        opacity: .5;
-                        border-radius: 5px;
-                        border: none;
-                        outline: none;
-                        box-shadow: inset 2px 2px 4px #fffa,
-                                    inset -2px -2px 4px #000a;
-                    }
 
                     li {
                         list-style: none;
@@ -256,12 +241,6 @@ body {
                         height: auto;
                         width: fit-content;
                         background-color: transparent;
-                        border: 1px solid $trans-border;
-                        // hide mobile list box shadow
-                        &::after {
-                            display: none;
-                        }
-                        // end of hide mobile list box shadow
 
                         li {
                             display: inline-block;

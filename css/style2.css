@@ -1330,22 +1330,9 @@ body {
         overflow-x: hidden;
         transition: 0.5s ease left;
         position: relative;
-        border: none;
+        border: 2px solid rgba(255, 255, 255, 0.155);
         outline: none;
-        padding: 1em 0;
-        position: relative; }
-        #header .header #navbar .nav-list ul::after {
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          opacity: .5;
-          border-radius: 5px;
-          border: none;
-          outline: none;
-          box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
+        padding: 1em 0; }
         #header .header #navbar .nav-list ul li {
           list-style: none; }
           #header .header #navbar .nav-list ul li a {
@@ -1393,10 +1380,7 @@ body {
           display: block;
           height: auto;
           width: fit-content;
-          background-color: transparent;
-          border: 1px solid rgba(255, 255, 255, 0.155); }
-          #header .header #navbar .nav-list ul::after {
-            display: none; }
+          background-color: transparent; }
           #header .header #navbar .nav-list ul li {
             display: inline-block;
             position: relative; }
