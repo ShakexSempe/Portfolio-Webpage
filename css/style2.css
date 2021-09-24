@@ -1319,6 +1319,8 @@ body {
           display: block;
           color: #fffa;
           padding: .4em 0; }
+          #header .header #navbar .nav-list .links-container figcaption a span i {
+            margin-left: .5em; }
       #header .header #navbar .nav-list ul {
         background: #29323c;
         display: flex;
