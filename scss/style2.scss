@@ -75,7 +75,7 @@ body {
 
             .nav-list {
                 .links-container {
-                    @media (max-width: 350px) {
+                    @media (max-width: 380px) {
                         overflow-y: scroll;
                     }
                     @media (max-width: 1024px) {
@@ -148,7 +148,7 @@ body {
                             padding: .4em 0;
 
                             i {
-                                
+
                             }
                         }
                     }

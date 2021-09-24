@@ -1263,7 +1263,7 @@ body {
         @media (min-width: 768px) {
           #header .header #navbar .brand h1 {
             font-size: 1.5em; } }
-      @media (max-width: 350px) {
+      @media (max-width: 380px) {
         #header .header #navbar .nav-list .links-container {
           overflow-y: scroll; } }
       @media (max-width: 1024px) {
