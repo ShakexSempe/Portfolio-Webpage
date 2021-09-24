@@ -1263,6 +1263,9 @@ body {
         @media (min-width: 768px) {
           #header .header #navbar .brand h1 {
             font-size: 1.5em; } }
+      @media (max-width: 350px) {
+        #header .header #navbar .nav-list .links-container {
+          overflow-y: scroll; } }
       @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
           position: absolute;
@@ -1273,10 +1276,10 @@ body {
           background-color: #1b2127;
           transition: .5s ease; }
           #header .header #navbar .nav-list .links-container ul {
-            margin: 20vh 5vw; } }
+            margin: 25vh 5vw; } }
       #header .header #navbar .nav-list .links-container.active {
         left: 0; }
-      @media (min-width: 1024px) {
+      @media (min-width: 1025px) {
         #header .header #navbar .nav-list .links-container .nav-avi {
           display: none; } }
       #header .header #navbar .nav-list .links-container .nav-avi {
@@ -1285,7 +1288,7 @@ body {
         border-radius: 50%;
         overflow: hidden;
         position: absolute;
-        top: .5em;
+        top: 2vh;
         left: 5vw;
         cursor: pointer; }
         @media (max-width: 360px) {
@@ -1301,6 +1304,21 @@ body {
         #header .header #navbar .nav-list .links-container .nav-avi:active {
           transition: .4s;
           transform: scale(0.7); }
+      @media (min-width: 1025px) {
+        #header .header #navbar .nav-list .links-container figcaption {
+          display: none; } }
+      #header .header #navbar .nav-list .links-container figcaption a {
+        text-transform: capitalize;
+        color: #fff;
+        font-size: .9em;
+        display: block;
+        position: absolute;
+        top: 15vh;
+        left: 5vw; }
+        #header .header #navbar .nav-list .links-container figcaption a span {
+          display: block;
+          color: #fffa;
+          padding: .4em 0; }
       #header .header #navbar .nav-list ul {
         background: #29323c;
         display: flex;

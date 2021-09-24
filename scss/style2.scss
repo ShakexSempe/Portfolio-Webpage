@@ -75,6 +75,9 @@ body {
 
             .nav-list {
                 .links-container {
+                    @media (max-width: 350px) {
+                        overflow-y: scroll;
+                    }
                     @media (max-width: 1024px) {
                         position: absolute;
                         top: 0;
@@ -85,14 +88,14 @@ body {
                         transition: .5s ease;
 
                         ul {
-                            margin: 20vh 5vw;
+                            margin: 25vh 5vw;
                         }
                     }
                     &.active {
                         left: 0;
                     }
                     // hide nav avi on desktop
-                    @media (min-width: 1024px) {
+                    @media (min-width: 1025px) {
                         .nav-avi { display: none;}
                     }
                     // end of hide nav avi on desktop
@@ -109,7 +112,7 @@ body {
                         border-radius: 50%;
                         overflow: hidden;
                         position: absolute;
-                        top: .5em;
+                        top: 2vh;
                         left: 5vw;
                         cursor: pointer;
 
@@ -125,6 +128,30 @@ body {
                             transition: .4s;
                             transform: scale(.7);
                         }
+                    }
+                    figcaption {
+                        @media (min-width: 1025px){
+                            display: none;
+                        }
+                        a {
+                            text-transform: capitalize;
+                        color:$text-white;
+                        font-size: .9em;
+                        // margin: 15vh 5vw 0;
+                        display: block;
+                        position: absolute;
+                        top: 15vh;
+                        left: 5vw;
+                        span {
+                            display: block;
+                            color: $text-white-trans;
+                            padding: .4em 0;
+
+                            i {
+                                
+                            }
+                        }
+                    }
                     }
                     // end of nav avi < 768px
 
