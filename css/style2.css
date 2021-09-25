@@ -1273,8 +1273,7 @@ body {
           background-color: #1b2127;
           transition: .5s ease; }
           #header .header #navbar .nav-list .links-container ul {
-            margin: 25vh 5vw;
-            overflow-y: scroll; } }
+            margin: 25vh 5vw; } }
       #header .header #navbar .nav-list .links-container.active {
         left: 0; }
       @media (min-width: 1025px) {

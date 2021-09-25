@@ -1,8 +1,18 @@
 // ********** smooth scroll ************
-// select links
+// variables
+// navbar links
 const linksContainer = document.querySelector('.links-container');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
+//Hamburger Menu
+const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
+const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
+const header = document.querySelector('.header.container');
+const avi = document.querySelector('.header #navbar .nav-list .nav-avi img');
+
+// end of variables
+// event listeners
 
 scrollLinks.forEach(link => {
   //prevent default
@@ -26,58 +36,17 @@ scrollLinks.forEach(link => {
   });
 });
 
-/* cta scroll to about */
-// const cta = document.getElementById('cta-header');
-// cta.addEventListener("click", (e) => {
-//   const id = e.currentTarget.getAttribute('href').slice(1);
-//   console.log(id)
 
-//   const element = document.getElementById(id);
-//   const navHeight = navbar.getBoundingClientRect().height;
-
-//   let position = element.offsetTop - navHeight;
-//   console.log(position)
-
-//   window.scrollTo({
-//     left: 0,
-//     top: position,
-// });
+// end of event listeners
 
 
-// });
-/* end of cta scroll to about */
 
-
-//Hamburger Menu
-const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
-const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
-const header = document.querySelector('.header.container');
-const avi = document.querySelector('.header #navbar .nav-list .nav-avi img');
-console.log(mobile_menu)
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
 });
 
-//nav transparency on scroll
-document.addEventListener('scroll', () => {
-  var scroll_position = window.scrollY;
-  const topLink = document.querySelector('.top-link');
-  const scrollHeight = window.pageYOffset;
 
-  if (scroll_position > 20) {
-    header.style.backgroundColor = "#29323c";
-  } else {
-    header.style.backgroundColor = 'transparent';
-  };
-
-  if (scrollHeight > 400) {
-    topLink.classList.add('show-link');
-  } else {
-    topLink.classList.remove('show-link');
-  }
-});
 
 //  remove hamburger after click 
 menu_item.forEach((item) => {
