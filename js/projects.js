@@ -72,18 +72,6 @@ const projects = [
                 <li>#es6</li>
                 <li>#algorithms</li>`,
     },
-    {
-        id: 7,
-        title: "responsive cards",
-        link: "https://shakexsempe.github.io/responsive-cards/",
-        img: "img/cards.bmp",
-        head: "Responsive Web Design",
-        desc: "A mobile-first grid layout page featuring modern hatchbacks",
-        alt: 'css3',
-        tech: `<li>#responsiveWebDesign</li>
-                <li>#data-set</li>
-                <li>#cssGrid</li>`,
-    },
 ];
 
 const allProjects = document.querySelector('.all-projects');

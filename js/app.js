@@ -1,5 +1,5 @@
-// ********** smooth scroll ************
-// variables
+// ********** VARIABLES ************
+
 // navbar links
 const linksContainer = document.querySelector('.links-container');
 const scrollLinks = document.querySelectorAll('.scroll-link');
@@ -10,10 +10,20 @@ const mobile_menu = document.querySelector('.header #navbar .nav-list .links-con
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
 const header = document.querySelector('.header.container');
 const avi = document.querySelector('.header #navbar .nav-list .nav-avi img');
+// date
+const date = document.getElementById('date');
 
-// end of variables
-// event listeners
+// ********** END OF VARIABLES ************
 
+// ********** EVENT LISTENERS ************
+
+// hamburger select
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
+});
+// end of hamburger select
+// scroll to link
 scrollLinks.forEach(link => {
   //prevent default
   link.addEventListener('click', e => {
@@ -25,9 +35,8 @@ scrollLinks.forEach(link => {
     const navHeight = navbar.getBoundingClientRect().height;
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const fixedNav = navbar.classList.contains('fixed-nav');
-
+    // scroll to link with a offset to the height of the navbar
     let position = element.offsetTop - navHeight;
-
 
     window.scrollTo({
       left: 0,
@@ -35,19 +44,7 @@ scrollLinks.forEach(link => {
     });
   });
 });
-
-
-// end of event listeners
-
-
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobile_menu.classList.toggle('active');
-});
-
-
-
+// end of scroll to link
 //  remove hamburger after click 
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
@@ -56,63 +53,61 @@ menu_item.forEach((item) => {
   });
 });
 //  end of remove hamburger after click 
-
-//  remove sidebar after click on img 
+//  remove sidebar after click on sidebar img 
 avi.addEventListener("click", () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
 })
-//  end of remove sidebar after click on img 
-
-
+//  end of remove sidebar after click on sidebar img
 //  progress bar
 //  When the user scrolls the page, execute myFunction
 window.onscroll = function () {
-  myFunction()
+  progressBar()
 };
+/*  end of progress bar*/
 
-function myFunction() {
+// ********** END OF EVENT LISTENERS ************
+
+// ********** FUNCTIONS ************
+// page progress bar
+progressBar = () => {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-/*  end of progress bar*/
+// end of page progress bar
 
-
-
-
-/*  skills dropdown*/
+//  skills dropdown
 /*  When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function dropdown() {
+dropdown = () => {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
 //  Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-/*  end of skills dropdown*/
+// window.onclick = function (event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+// end of skills dropdown
 
-/*  bootsrap scrollbar*/
+/*  bootstrap scrollbar*/
 $(function () {
   $("#content-1").mCustomScrollbar({
     theme: "dark-thin"
   });
 });
-/*  end of bootsrap scrollbar*/
+/*  end of bootstrap scrollbar*/
+// ********** END OF FUNCTIONS ************
 
 /*  set footer date*/
-const date = document.getElementById('date');
 date.innerHTML = new Date().getFullYear();
 /*  end of set footer date*/
