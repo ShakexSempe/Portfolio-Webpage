@@ -1,3 +1,5 @@
+// ********** VARIABLES ************
+// projects array
 const projects = [
     {
         id: 1,
@@ -73,13 +75,15 @@ const projects = [
                 <li>#algorithms</li>`,
     },
 ];
-
+// projects container
 const allProjects = document.querySelector('.all-projects');
 
+// ********** EVENT LISTENERS ************
 window.addEventListener('DOMContentLoaded', () => {
     displayProjects(projects);
 });
 
+// ********** FUNCTIONS ************
 displayProjects = (projectsItems) => {
     let displayProject = projectsItems.map(project => {
         return `<div class="project-item">
