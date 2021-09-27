@@ -293,15 +293,17 @@ hamburger
     border: none;
     outline: none;
     border-radius: 10px;
-    background: linear-gradient(0deg, #dc134c, #333);
+    background: #485563;
     text-align: center;
     transition: .3s;
     font-family: 'Gruppo', cursive;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    isolation: isolate; }
     #skills .dropdown .dropbtn::before, #skills .dropdown .dropbtn::after {
       position: absolute;
       content: '';
+      z-index: -1;
       top: 0;
       left: 0;
       width: 100%;
@@ -309,14 +311,18 @@ hamburger
       border-radius: 10px;
       transition: .3s; }
     #skills .dropdown .dropbtn::before {
-      box-shadow: 5px 10px 5px #000, inset 3px 3px 5px #000a, inset -3px -3px 5px #fffa; }
+      background: linear-gradient(0deg, #dc134c, #581212);
+      box-shadow: inset 3px 3px 3px #000a, inset -3px -3px 3px #fffa; }
     #skills .dropdown .dropbtn::after {
+      background: linear-gradient(0deg, #581212, #dc134c);
       opacity: 0;
-      box-shadow: 0px 0px 10px #000a, inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
-    #skills .dropdown .dropbtn:hover::before {
-      opacity: 0; }
-    #skills .dropdown .dropbtn:hover::after {
-      opacity: 1; }
+      box-shadow: 0px 0px 10px #000a, inset 3px 3px 3px #fffa, inset -3px -3px 3px #000a; }
+    #skills .dropdown .dropbtn:hover {
+      transform: scale(0.97); }
+      #skills .dropdown .dropbtn:hover::before {
+        opacity: 0; }
+      #skills .dropdown .dropbtn:hover::after {
+        opacity: 1; }
     #skills .dropdown .dropbtn:active {
       transform: scale(0.9);
       transition: .3s; }

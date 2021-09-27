@@ -118,18 +118,20 @@
             border: none;
             outline: none;
             border-radius: 10px;
-            background: linear-gradient(0deg, #dc134c, #333);
+            background: $overlay-blue-light;
             text-align: center;
             transition: .3s;
             font-family: 'Gruppo', cursive;
             position: relative;
             overflow: hidden;
+            isolation: isolate;
 
             // dropdown button shadows
             &::before,
             &::after {
                 position: absolute;
                 content: '';
+                z-index: -1;
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -139,20 +141,23 @@
             }
 
             &::before {
-                box-shadow: 5px 10px 5px #000,
-                    inset 3px 3px 5px #000a,
-                    inset -3px -3px 5px #fffa;
+                // background: linear-gradient(0deg, #dc134c, #333);
+                background: linear-gradient(0deg, #dc134c, #581212);
+                box-shadow: inset 3px 3px 3px #000a,
+                            inset -3px -3px 3px #fffa;
             }
 
             &::after {
+                background: linear-gradient(0deg, #581212, #dc134c);
                 opacity: 0;
                 box-shadow: 0px 0px 10px #000a,
-                    inset 3px 3px 5px #fffa,
-                    inset -3px -3px 5px #000a;
+                    inset 3px 3px 3px #fffa,
+                    inset -3px -3px 3px #000a;
             }
 
             // button box shadow states
             &:hover {
+                transform: scale(.97);
                 &::before {
                     opacity: 0;
                 }
@@ -161,7 +166,6 @@
                     opacity: 1;
                 }
             }
-
             &:active {
                 transform: scale(.9);
                 transition: .3s;
