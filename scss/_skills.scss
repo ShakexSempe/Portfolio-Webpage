@@ -356,7 +356,7 @@
                             box-shadow: 
                                         inset 2px 2px 3px #ddda,
                                         inset -2px -2px 5px #000a,
-                                        5px 5px 4px #000;
+                                        3px 3px 4px #000;
                             animation: skill-icon 10s linear infinite;
 
                             @keyframes skill-icon {
@@ -364,7 +364,7 @@
                                     box-shadow: 
                                             inset -2px 3px 3px #ddda,
                                             inset 2px -2px 5px #000a,
-                                            -5px 5px 4px #000;
+                                            -3px 3px 4px #000;
                                 }
                                 50% {
                                     box-shadow: inset 0px -1px 3px #ddda,
