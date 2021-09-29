@@ -1569,8 +1569,10 @@ body {
 @keyframes cta-btn {
   50% {
     background-position: 100%; } }
-    #home .hero #cta-header:hover::after {
-      background-position: 100%; }
+    #home .hero #cta-header:hover {
+      transform: scale(0.97); }
+      #home .hero #cta-header:hover::after {
+        background-position: 100%; }
     #home .hero #cta-header:active {
       transition: .2s;
       transform: scale(0.95); }

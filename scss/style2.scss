@@ -479,6 +479,7 @@ body {
             }
             // button hover, focus and active states
             &:hover {
+                transform: scale(.97);
                 // &::before {opacity: 0;}
                 &::after {
                     background-position: 100%;
