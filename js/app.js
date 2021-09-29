@@ -10,12 +10,34 @@ const mobile_menu = document.querySelector('.header #navbar .nav-list .links-con
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
 const header = document.querySelector('.header.container');
 const avi = document.querySelector('.header #navbar .nav-list .nav-avi img');
+
 // date
 const date = document.getElementById('date');
 
 // ********** END OF VARIABLES ************
 
 // ********** EVENT LISTENERS ************
+
+// background and back-to-top link
+document.addEventListener("scroll", () => {
+  // scroll variables
+const scroll_position = window.scrollY;
+const scrollHeight = window.pageYOffset;
+const topLink = document.querySelector('.top-link');
+// background-color ()
+  if (scroll_position < 20) {
+    header.style.backgroundColor = "#485563"
+  } else {
+    header.style.backgroundColor = "#29323c"
+  };
+// top-link ()
+  if(scrollHeight > 200) {
+    topLink.classList.add('show-link');
+  } else {
+    topLink.classList.remove('show-link');
+  };
+});
+// end of background and back-to-top link
 
 // hamburger select
 hamburger.addEventListener('click', () => {
