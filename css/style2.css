@@ -1193,7 +1193,7 @@ hamburger
 #footer .cube {
   width: 1em;
   height: 1em;
-  transform: preserve-3d;
+  transform-style: preserve-3d;
   position: absolute;
   bottom: -.5em;
   left: -.5em; }
@@ -1435,6 +1435,10 @@ body {
               padding: .3em 1em;
               margin: 0 auto;
               display: block; }
+              #header .header #navbar .nav-list ul li a:focus {
+                color: skyblue; }
+                #header .header #navbar .nav-list ul li a:focus i {
+                  color: skyblue; }
               #header .header #navbar .nav-list ul li a i {
                 margin-right: .3em;
                 padding: .5em;
@@ -1445,9 +1449,9 @@ body {
             #header .header #navbar .nav-list ul li:hover a {
               transition: .3s ease;
               color: skyblue; }
-            #header .header #navbar .nav-list ul li:hover i {
-              transition: .3s ease;
-              color: skyblue; }
+              #header .header #navbar .nav-list ul li:hover a i {
+                transition: .3s;
+                color: #fff; }
           #header .header #navbar .nav-list ul.active {
             background: none;
             box-shadow: none; }

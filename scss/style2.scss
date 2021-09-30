@@ -278,6 +278,12 @@ body {
                                 padding: .3em 1em;
                                 margin: 0 auto;
                                 display: block;
+                                &:focus {
+                                    color: $link-blue;
+                                    i {
+                                        color: $link-blue;
+                                    }
+                                }
 
                                 i {
                                     margin-right: .3em;
@@ -295,10 +301,11 @@ body {
                                 a {
                                     transition: .3s ease;
                                     color: $link-blue;
-                                }
-                                i {
-                                    transition: .3s ease;
-                                    color: $link-blue;
+
+                                    i {
+                                        transition: .3s;
+                                        color: $text-white;
+                                    }
                                 }
                             }
                             // links and icon hover state

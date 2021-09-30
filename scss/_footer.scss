@@ -341,7 +341,7 @@
 #footer .cube {
     width: 1em;
     height: 1em;
-    transform: preserve-3d;
+    transform-style: preserve-3d;
     position: absolute;
     bottom: -.5em;
     left: -.5em;
