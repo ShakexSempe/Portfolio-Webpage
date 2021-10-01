@@ -58,10 +58,22 @@
         backdrop-filter: blur(5px);
         border-radius: 10px;
         border: none;
-        box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a;
         position: relative;
         z-index: 30;
         transition: .2s linear;
+        // skills top box shadow
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: $box-light-top-md;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
 
         p {
             color: #ddd;
@@ -73,6 +85,10 @@
             background: transparent;
             overflow: hidden;
             line-height: 2em;
+
+            span {
+                color: $text-light-d-trans;
+            }
         }
         // skills top 'down arrow'
         &::after {
@@ -244,7 +260,7 @@
                         }
 
                         h2 {
-                            font-size: 1.5em; 
+                            font-size: 1.5em;
                         }
                         ul {
                             li {
@@ -274,6 +290,7 @@
                     ul {
                         margin: .2em;
                         padding: .5em;
+                        
 
                         li {
                             color: #fff;
@@ -400,6 +417,7 @@
                     // skills item title (h2)
                     h2 {
                         font-size: 1.4em;
+                        font-weight: 600;
                         color: #fff;
                         margin-bottom: 10px;
                         text-transform: capitalize;
