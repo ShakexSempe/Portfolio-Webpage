@@ -769,20 +769,16 @@ body {
     // end of col-right
     // col-left (about image)
     .col-left {
+        @media (min-width: 1024) {
+            width: 600px;
+            height: 500px;
+        }
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         width: 100%;
         height: 360px;
-        @media (min-width: 768px){
-            width: 600px;
-            height: 400px;
-        }
-        @media (min-width: 1024px) {
-            width: 600px;
-            height: 550px;
-        }
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
+        margin-top: 0;
         z-index: 20;
         transform-style: preserve-3d;
         // about images

@@ -891,15 +891,23 @@ hamburger
             border-radius: 5px;
             box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 5px #000a; }
           #projects .projects .all-projects .project-item .project-tile a i {
-            color: #bfee50;
+            transition: .2s;
+            color: #ddd;
             font-size: .9em;
-            padding: .2em; }
+            padding: .2em;
+            margin-right: .5em; }
             #projects .projects .all-projects .project-item .project-tile a i::after {
               content: 'view project';
               font-family: "Gruppo", cursive;
-              font-style: italic; }
+              font-style: italic;
+              color: #bfee50;
+              transition: .3s; }
           #projects .projects .all-projects .project-item .project-tile a:hover h2 {
             color: #bfee50; }
+          #projects .projects .all-projects .project-item .project-tile a:hover i {
+            color: #bfee50; }
+            #projects .projects .all-projects .project-item .project-tile a:hover i::after {
+              color: #ddd; }
       #projects .projects .all-projects .project-item .project-img {
         flex-basis: 50%;
         width: 100%;
@@ -953,8 +961,12 @@ hamburger
             letter-spacing: .05em; }
       #projects .projects .all-projects .project-item:hover.project-item::after {
         opacity: 1; }
-      #projects .projects .all-projects .project-item:hover.project-item img {
+      #projects .projects .all-projects .project-item:hover.project-item .project-img img {
         transform: scale(1.1); }
+      #projects .projects .all-projects .project-item:hover.project-item .project-img::after {
+        opacity: 0; }
+      #projects .projects .all-projects .project-item:hover.project-item .project-tile a i {
+        transform: scale(1.1) translateX(0.5em); }
 
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -1783,20 +1795,13 @@ body {
   .about .col-left {
     width: 100%;
     height: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+    margin-top: 0;
     z-index: 20;
     transform-style: preserve-3d; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024) {
       .about .col-left {
         width: 600px;
-        height: 400px; } }
-    @media (min-width: 1024px) {
-      .about .col-left {
-        width: 600px;
-        height: 550px; } }
+        height: 500px; } }
     .about .col-left .about-img {
       height: 100%;
       width: 90%;

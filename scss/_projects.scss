@@ -164,14 +164,18 @@
                         // end of project tile box shadow
                         // links icon
                         i {
-                            color: $text-lime;
+                            transition: .2s;
+                            color: $text-light-d;
                             font-size: .9em;
                             padding: .2em;
+                            margin-right: .5em;
                             // icon label (pseudo)
                             &::after {
                                 content: 'view project';
                                 font-family: $font-gruppo;
                                 font-style: italic;
+                                color: $text-lime;
+                                transition: .3s;
                             }
 
                             // end of icon label (pseudo)
@@ -181,6 +185,13 @@
                         &:hover {
                             h2 {
                                 color: $text-lime;
+                            }
+                            i {
+                                color: $text-lime;
+
+                                &::after {
+                                    color: $text-light-d;
+                                }
                             }
                         }
                         // link hover state
@@ -273,8 +284,23 @@
                         &::after {
                             opacity: 1;
                         }
-                        img {
-                            transform: scale(1.1);
+
+                        .project-img {
+                            img {
+                                transform: scale(1.1);
+                            }
+
+                            &::after {
+                                opacity: 0;
+                            }
+                        }
+
+                        .project-tile {
+                            a {
+                                i {
+                                    transform: scale(1.1) translateX(.5em);
+                                }
+                            }
                         }
                     }
                 }
