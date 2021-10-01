@@ -356,10 +356,9 @@ hamburger
       flex-wrap: wrap;
       /*items wrapped onto multiple lines*/
       margin-top: 50px;
-      padding-top: 50px;
-      text-shadow: 1px 1px 1px #000; }
+      padding-top: 50px; }
       #skills .dropdown .dropdown-content .skills-bottom .skills-item {
-        flex-basis: 80%;
+        flex-basis: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -367,7 +366,7 @@ hamburger
         padding: .5em;
         background: transparent;
         background-size: cover;
-        margin: .5em auto;
+        margin: .5em 5vw;
         position: relative;
         z-index: 1;
         text-overflow: ellipsis;
@@ -420,7 +419,7 @@ hamburger
           border-radius: 10px;
           width: 100%;
           background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-          opacity: 0.7;
+          opacity: 0.8;
           z-index: -1; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item:before {
           position: absolute;

@@ -216,7 +216,6 @@
                 /*items wrapped onto multiple lines*/
                 margin-top: 50px;
                 padding-top: 50px;
-                text-shadow: $text-shadow-sm;
 
                 // skills-items
                 .skills-item {
@@ -254,7 +253,7 @@
                         }
                     }
                     // end of skills items on desktop
-                    flex-basis: 80%;
+                    flex-basis: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -262,7 +261,7 @@
                     padding: .5em;
                     background: transparent;
                     background-size: cover;
-                    margin: .5em auto;
+                    margin: .5em 5vw;
                     position: relative;
                     z-index: 1;
                     text-overflow: ellipsis;
@@ -301,7 +300,7 @@
                         border-radius: 10px;
                         width: 100%;
                         background: $overlay;
-                        opacity: 0.7;
+                        opacity: 0.8;
                         z-index: -1;
                     }
                     // end of skills item overlay
