@@ -227,7 +227,7 @@ hamburger
     height: 100%;
     width: 100%;
     background-color: #000;
-    opacity: 0.4;
+    opacity: 0.8;
     overflow: auto; }
   #skills .skills-header {
     width: 100%;
@@ -881,7 +881,7 @@ hamburger
             box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 5px #000a; }
           #projects .projects .all-projects .project-item .project-tile a i {
             color: #bfee50;
-            font-size: .7em;
+            font-size: .9em;
             padding: .2em; }
             #projects .projects .all-projects .project-item .project-tile a i::after {
               content: 'view project';
@@ -904,7 +904,8 @@ hamburger
           width: 100%;
           box-shadow: 0 0 5px #000a, inset 5px 5px 5px #ddda, inset -5px 0px 5px #000a;
           background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
-          opacity: 0.5; }
+          opacity: 0.5;
+          transition: .5s; }
         #projects .projects .all-projects .project-item .project-img img {
           height: 100%;
           width: 100%;
@@ -915,6 +916,8 @@ hamburger
           transition: 0.5s ease; }
         #projects .projects .all-projects .project-item .project-img:hover {
           transition: 0.5s ease; }
+          #projects .projects .all-projects .project-item .project-img:hover::after {
+            opacity: 0; }
         @media (min-width: 768px) {
           #projects .projects .all-projects .project-item .project-img {
             height: 100%;
@@ -937,6 +940,8 @@ hamburger
             margin-right: .1em;
             font-style: italic;
             letter-spacing: .05em; }
+      #projects .projects .all-projects .project-item:hover.project-item::after {
+        opacity: 1; }
       #projects .projects .all-projects .project-item:hover.project-item img {
         transform: scale(1.1); }
 
