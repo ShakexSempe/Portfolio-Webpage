@@ -349,7 +349,7 @@ hamburger
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    padding-bottom: 10em; }
+    padding-bottom: 15vh; }
     #skills .dropdown .dropdown-content.show {
       display: block; }
     #skills .dropdown .dropdown-content::before {
