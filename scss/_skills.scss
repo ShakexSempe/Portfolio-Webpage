@@ -76,7 +76,7 @@
         }
 
         p {
-            color: #ddd;
+            color: $text-white;
             font-size: .9em;
             font-weight: 500;
             @media (min-width: 768px){
@@ -87,7 +87,7 @@
             line-height: 2em;
 
             span {
-                color: $text-light-d-trans;
+                color: $text-light-d;
             }
         }
         // skills top 'down arrow'

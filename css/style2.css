@@ -262,7 +262,7 @@ hamburger
     border: none;
     outline: none; }
   #skills .skills-top p {
-    color: #ddd;
+    color: #fff;
     font-size: .9em;
     font-weight: 500;
     background: transparent;
@@ -272,7 +272,7 @@ hamburger
       #skills .skills-top p {
         font-size: 1em; } }
     #skills .skills-top p span {
-      color: #ddda; }
+      color: #ddd; }
   #skills .skills-top::after {
     content: '';
     position: absolute;
