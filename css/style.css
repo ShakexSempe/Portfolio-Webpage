@@ -906,7 +906,7 @@ hamburger
               transition: .3s;
               opacity: 0;
               margin-left: .5em;
-              transition: .5s; }
+              transition: .3s ease; }
           #projects .projects .all-projects .project-item .project-tile a:hover h2 {
             color: #bfee50; }
           #projects .projects .all-projects .project-item .project-tile a:hover i {
