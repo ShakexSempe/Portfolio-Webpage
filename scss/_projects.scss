@@ -176,6 +176,9 @@
                                 font-style: italic;
                                 color: $text-lime;
                                 transition: .3s;
+                                opacity: 0;
+                                margin-left: .5em;
+                                transition: .5s;
                             }
 
                             // end of icon label (pseudo)
@@ -191,6 +194,8 @@
 
                                 &::after {
                                     color: $text-light-d;
+                                    margin-left: .2em;
+                                    letter-spacing: 0;
                                 }
                             }
                         }
@@ -291,14 +296,18 @@
                             }
 
                             &::after {
-                                opacity: 0;
+                                opacity: .2;
                             }
                         }
 
                         .project-tile {
                             a {
                                 i {
-                                    transform: scale(1.1) translateX(.5em);
+                                    transform: scale(1.2) translateX(.5em);
+                                    &::after {
+                                        opacity: 1;
+                                        letter-spacing: .2em;
+                                    }
                                 }
                             }
                         }
