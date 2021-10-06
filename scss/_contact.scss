@@ -70,9 +70,7 @@
                 transform: preserve-3d;
                 border: none;
                 outline: none;
-                background: none;
-                backdrop-filter: blur(.1em);
-                -webkit-backdrop-filter: blur(.1em);
+                transform: scale(.85);
                 // item box shadows
                 &::before {
                     position: absolute;
@@ -84,7 +82,10 @@
                     border-radius: 10px;
                     transition: .5s ease;
                     transform: preserve-3d;
-                    box-shadow: $box-dark-top-md;
+                    background: #000a;
+                    // box-shadow: $box-dark-top-sm;
+                    box-shadow: inset 3px 3px 4px #ffffff50,
+                                inset -3px -3px 4px #ffffff50;
                 }
                 &::after {
                     position: absolute;
@@ -102,7 +103,7 @@
                 }
                 &:hover {
                     transform: scale(1);
-                    transition: .5s ease;
+                    transition: .4s ease;
                     transform: preserve-3d;
 
                     // box shadows hover state
