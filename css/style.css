@@ -973,7 +973,7 @@ hamburger
       #projects .projects .all-projects .project-item:hover.project-item .project-img::after {
         opacity: .2; }
       #projects .projects .all-projects .project-item:hover.project-item .project-tile a i {
-        transform: scale(1.2) translateX(0.5em); }
+        transform: scale(1.15) translateX(0.5em); }
         #projects .projects .all-projects .project-item:hover.project-item .project-tile a i::after {
           opacity: 1;
           letter-spacing: .2em; }
