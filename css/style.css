@@ -1320,7 +1320,7 @@ body {
         #header .header #navbar {
           padding: 0 5vw; } }
       #header .header #navbar .brand {
-        transition: 1s;
+        transition: 1s ease;
         opacity: 0; }
         #header .header #navbar .brand h1 {
           font-size: 1.3em;
