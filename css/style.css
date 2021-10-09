@@ -549,7 +549,7 @@ hamburger
       border: none;
       outline: none;
       transform: scale(0.85);
-      transition: .5s ease; }
+      transition: .8s ease; }
       @media (min-width: 768px) {
         #contact .contact .contact-items .contact-item {
           width: 30%; } }
