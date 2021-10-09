@@ -45,7 +45,7 @@ body {
 
     .header {
         min-height: 10vh;
-        background-color: $nav-background;
+        background-color: $overlay-blue-light;
         transition: 0.3s ease background-color;
 
         #navbar {
@@ -61,6 +61,7 @@ body {
             // corner logo
             .brand {
                 transition: 1s;
+                opacity: 0;
                 h1 {
                     font-size: 1.3em;
                     @media (min-width: 768px) {

@@ -26,7 +26,7 @@ const scrollHeight = window.pageYOffset;
 const topLink = document.querySelector('.top-link');
 const brand = document.querySelector('.brand');
 // background-color ()
-  if (scroll_position < 25) {
+  if (scroll_position < 100) {
     header.style.backgroundColor = "#485563";
     brand.style.opacity = 0;
   }  else {

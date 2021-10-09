@@ -1307,7 +1307,7 @@ body {
   width: 100vw; }
   #header .header {
     min-height: 10vh;
-    background-color: #29323c;
+    background-color: #485563;
     transition: 0.3s ease background-color; }
     #header .header #navbar {
       display: flex;
@@ -1320,7 +1320,8 @@ body {
         #header .header #navbar {
           padding: 0 5vw; } }
       #header .header #navbar .brand {
-        transition: 1s; }
+        transition: 1s;
+        opacity: 0; }
         #header .header #navbar .brand h1 {
           font-size: 1.3em;
           text-transform: uppercase;
