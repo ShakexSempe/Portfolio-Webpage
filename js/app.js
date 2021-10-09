@@ -24,12 +24,16 @@ document.addEventListener("scroll", () => {
 const scroll_position = window.scrollY;
 const scrollHeight = window.pageYOffset;
 const topLink = document.querySelector('.top-link');
+const brand = document.querySelector('.brand');
 // background-color ()
-  if (scroll_position < 20) {
-    header.style.backgroundColor = "#485563"
-  } else {
-    header.style.backgroundColor = "#29323c"
+  if (scroll_position < 25) {
+    header.style.backgroundColor = "#485563";
+    brand.style.opacity = 0;
+  }  else {
+    header.style.backgroundColor = "#29323c";
+    brand.style.opacity = 1;
   };
+  // if (scroll_position)
 // top-link ()
   if(scrollHeight > 200) {
     topLink.classList.add('show-link');

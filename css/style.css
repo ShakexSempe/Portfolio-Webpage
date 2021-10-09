@@ -1319,15 +1319,17 @@ body {
       @media (max-width: 1024px) {
         #header .header #navbar {
           padding: 0 5vw; } }
-      #header .header #navbar .brand h1 {
-        font-size: 1.3em;
-        text-transform: uppercase;
-        color: #fff;
-        font-family: 'Gruppo', cursive;
-        text-shadow: 0 0 10px #dc143c; }
-        @media (min-width: 768px) {
-          #header .header #navbar .brand h1 {
-            font-size: 1.5em; } }
+      #header .header #navbar .brand {
+        transition: 1s; }
+        #header .header #navbar .brand h1 {
+          font-size: 1.3em;
+          text-transform: uppercase;
+          color: #fff;
+          font-family: 'Gruppo', cursive;
+          text-shadow: 0 0 10px #dc143c; }
+          @media (min-width: 768px) {
+            #header .header #navbar .brand h1 {
+              font-size: 1.5em; } }
       @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
           position: absolute;
