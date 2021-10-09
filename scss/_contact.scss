@@ -48,6 +48,7 @@
             // contact-item
             .contact-item {
                 transform: scale(.95);
+                transition: 1s ease;
                 // tablet to desktop
             @media (min-width: 768px){
                 width: 30%;
@@ -64,13 +65,13 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transition: 1s ease;
                 cursor: pointer;
                 position: relative;
                 transform: preserve-3d;
                 border: none;
                 outline: none;
                 transform: scale(.85);
+                transition: .5s ease;
                 // item box shadows
                 &::before {
                     position: absolute;
@@ -103,7 +104,6 @@
                 }
                 &:hover {
                     transform: scale(1);
-                    transition: .4s ease;
                     transform: preserve-3d;
 
                     // box shadows hover state
@@ -155,7 +155,7 @@
                         background: #f4f4f4;
                         z-index: -1;
                         border-radius: 10px;
-                        transition: .3s ease;
+                        transition: .5s ease;
                     }
                     &::before {
                         box-shadow: $box-dark-top-md;
@@ -165,6 +165,7 @@
                         background: #f4f4f4;
                         z-index: -1;
                         box-shadow: $box-light-top-md;
+                        transition: .5s ease;
                     }
                     // end of heading box shadows
                 }
@@ -200,7 +201,7 @@
                         background: #f4f4f4;
                         border-radius: 50%;
                         box-shadow: $box-dark-top-md;
-                        transition: 1s ease;
+                        transition: .5s ease;
                         transform: preserve-3d;
                     }
                     &::after {
@@ -215,7 +216,7 @@
                         background: #f4f4f4;
                         border-radius: 50%;
                         box-shadow: $box-light-top-md;
-                        transition: 1s ease;
+                        transition: .5s ease;
                         transform: preserve-3d;
                     }
                     // end of contact icon box shadows
