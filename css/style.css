@@ -506,11 +506,7 @@ hamburger
   width: 100%;
   margin: 0 auto;
   padding-bottom: 30px;
-  background-image: url("../img/pexels-magda-ehlers-2660262.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: #29323c;
   position: relative;
   transform-style: preserve-3d; }
   #contact .contact::before {
@@ -520,7 +516,7 @@ hamburger
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #000a;
     opacity: 0.4;
     overflow: hidden; }
   #contact .contact .contact-header {
@@ -693,7 +689,8 @@ hamburger
         margin: .5em auto;
         color: #000a;
         transition: .5s ease;
-        position: relative; }
+        position: relative;
+        z-index: -1; }
         @media (min-width: 768px) {
           #contact .contact .contact-items .contact-item .contact-info h2 {
             width: 100%;
@@ -761,6 +758,7 @@ hamburger
         transform: scale(1);
         transform: preserve-3d; }
       #contact .contact .contact-items .contact-item:hover .contact-info h2 {
+        transition: .5s ease;
         transform: scaleX(1.1); }
         #contact .contact .contact-items .contact-item:hover .contact-info h2::before {
           opacity: 0; }

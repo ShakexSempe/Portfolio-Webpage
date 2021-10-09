@@ -5,11 +5,7 @@
         width: 100%;
         margin: 0 auto;
         padding-bottom: 30px;
-        background-image: url('../img/pexels-magda-ehlers-2660262.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        background: $overlay-blue-dark;
         position: relative;
         transform-style: preserve-3d;
         // contact section overlay
@@ -20,7 +16,7 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background-color: #000;
+            background-color: #000a;
             opacity: 0.4;
             overflow: hidden;
         }
@@ -246,6 +242,7 @@
                         color: $text-black-trans;
                         transition: .5s ease;
                         position: relative;
+                        z-index: -1;
                         
                         @media (min-width: 768px){
                             width: 100%;
@@ -339,6 +336,7 @@
                     }
                     .contact-info {
                         h2 {
+                            transition: .5s ease;
                             transform: scaleX(1.1);
 
                             &::before {
