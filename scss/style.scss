@@ -46,7 +46,7 @@ body {
     .header {
         min-height: 10vh;
         background-color: $overlay-blue-light;
-        transition: 0.3s ease background-color;
+        transition: 1s ease background-color;
 
         #navbar {
             display: flex;

@@ -1308,7 +1308,7 @@ body {
   #header .header {
     min-height: 10vh;
     background-color: #485563;
-    transition: 0.3s ease background-color; }
+    transition: 1s ease background-color; }
     #header .header #navbar {
       display: flex;
       align-items: center;
