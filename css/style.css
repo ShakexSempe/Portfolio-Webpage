@@ -211,6 +211,7 @@ hamburger
   justify-content: flex-start;
   text-align: center;
   width: 100vw;
+  padding-bottom: 30vh;
   margin: 0 auto;
   background-image: url("../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg");
   background-repeat: no-repeat;
@@ -345,7 +346,11 @@ hamburger
     z-index: 1;
     justify-content: center;
     align-items: center;
-    background: #29323c;
+    background-image: url("../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     position: relative;
     padding-bottom: 15vh; }
     #skills .dropdown .dropdown-content.show {
@@ -356,7 +361,8 @@ hamburger
       left: 0;
       top: 0;
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      background: rgba(0, 0, 0, 0.556); }
     #skills .dropdown .dropdown-content .skills-bottom {
       display: flex;
       align-items: center;
