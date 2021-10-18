@@ -153,27 +153,28 @@ hamburger
         border-radius: 50%;
         border: none;
         outline: none;
-        transition: .5s;
+        transition: .5s ease;
     }
     // hamburger box shadow
     &.hamburger::after {
         opacity: 1;
-        box-shadow: inset 3px 3px 5px #ddd,
-                    inset -3px -3px 5px #000;
+        box-shadow: inset 2px 2px 3px #ddda,
+                    inset -2px -2px 2px #000a;
     }
     // end of hamburger box shadow
     // pulse
     &.hamburger:before {
         border: 2px solid #ddda;
+        opacity: 0;
         animation: ham-pulse 2s ease infinite;
         @keyframes ham-pulse {
             50% {
-                border-color: #fff;
+                opacity: 1;
             }
 
             100% {
                 opacity: 0;
-                transform: scale(1.2);
+                transform: scale(1.18);
             }
         }
     }
@@ -184,12 +185,12 @@ hamburger
     &:focus {
     // no animation on hover
         &::before {
-            opacity: 0;
+            animation: ham-pulse 5s ease infinite;
         }
         // no animation on hover
         // box shadow dim on hover
         &::after {
-            opacity: .6
+            opacity: .6;
         }
         // box shadow dim on hover
     }
