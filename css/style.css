@@ -179,7 +179,7 @@ hamburger
   position: fixed;
   bottom: 1em;
   right: 1em;
-  background-image: linear-gradient(0deg, #660909, #dc143c);
+  background-image: linear-gradient(0deg, black, #dc143c);
   display: grid;
   place-items: center;
   border-radius: 5px;
