@@ -145,7 +145,7 @@ hamburger
     opacity: 0;
     transform: scale(1.18); } }
   #header .hamburger:hover::before, #header .hamburger:focus::before {
-    animation: ham-pulse 5s ease infinite; }
+    animation: none; }
   #header .hamburger:hover::after, #header .hamburger:focus::after {
     opacity: .6; }
   #header .hamburger:active {

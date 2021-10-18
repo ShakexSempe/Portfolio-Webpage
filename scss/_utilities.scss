@@ -185,7 +185,7 @@ hamburger
     &:focus {
     // no animation on hover
         &::before {
-            animation: ham-pulse 5s ease infinite;
+            animation: none;
         }
         // no animation on hover
         // box shadow dim on hover
