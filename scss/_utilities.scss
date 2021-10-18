@@ -245,25 +245,27 @@ hamburger
 
 // back to top button
 .top-link {
-    font-size: 2em;
     position: fixed;
     bottom: 1em;
     right: 1em;
-    background-image: linear-gradient(0deg, rgb(0, 0, 0), #dc143c);
-    width: 1em;
-    height: 1em;
+    background-image: linear-gradient(0deg, rgb(102, 9, 9), #dc143c);
+    
     display: grid;
     place-items: center;
     border-radius: 5px;
-    color: #ddd;
     animation: bounce 2s ease-in-out infinite;
     transition: .5s ease-in;
     opacity: 0;
     visibility: hidden;
-    z-index: -100;
+    z-index: -10;
     box-shadow: inset 2px 2px 3px #ddda,
                 inset -2px -2px 3px #000a;
     
+    i {
+        color: #ddd;
+        padding: .3em;
+        font-size: 1.5em;
+    }
     &.show-link {
         transition: opacity .5s ease-in-out;
         visibility: visible;
@@ -281,6 +283,14 @@ hamburger
 
         100% {
             transform: scale(1);
+        }
+    }
+
+    &:hover {
+        animation: none;
+        i {
+            transform: translateY(-.2em);
+            transition: .2s;
         }
     }
 }

@@ -52,12 +52,12 @@
                 width: 90%;
                 // project items on desktop : row
                 @media (min-width: 768px) {
-                    height: 400px;
-                    margin: .5em;
+                    height: 350px;
                     width: 90%;
                     border-radius: 5px;
                     flex-direction: row;
-                    margin: .5em auto;
+                    margin: 1.5em auto;
+                    position: relative;
 
                     &:nth-child(even) {
                         flex-direction: row-reverse;
