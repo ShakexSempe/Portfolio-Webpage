@@ -290,7 +290,7 @@ hamburger
     &:hover {
         animation: none;
         i {
-            transform: translateY(-.2em);
+            transform: scale(.97);
             transition: .2s;
         }
     }

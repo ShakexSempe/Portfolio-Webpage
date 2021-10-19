@@ -13,6 +13,8 @@ const projects = [
         tech: `<li>#appliedVisualDesign</li>
                 <li>#css3</li>
                 <li>#semanticMarkup</li>`,
+        imgTech: `<li>html5</li>
+                <li>css3</li>`,
     },
     {
         id: 2,
@@ -25,6 +27,9 @@ const projects = [
         tech: `<li>#scss</li>
                 <li>#mixins</li>
                 <li>#_partials</li>`,
+        imgTech: `<li>html5</li>
+                <li>sass</li>
+                <li>javascript</li>`,
     },
     {
         id: 3,
@@ -36,7 +41,10 @@ const projects = [
         alt: 'cakes',
         tech: `<li>#scss</li>
                 <li>#mxins</li>
-                <li>#_partials</li>`,     
+                <li>#_partials</li>`, 
+        imgTech: `<li>html5</li>
+                <li>sass</li>
+                <li>javascript</li>`,    
     },
     {
         id: 4,
@@ -49,6 +57,9 @@ const projects = [
         tech: `<li>#parallax</li>
                 <li>#css3</li>
                 <li>#scss</li>`,
+        imgTech: `<li>html5</li>
+                <li>parallax</li>
+                <li>sass</li>`,
     },
     {
         id: 5,
@@ -59,20 +70,23 @@ const projects = [
         desc: "CSS animations and positioning tutorial project",
         alt: 'earth moon',
         tech: `<li>#animations</li>
-                <li>#css3</li>
+                <li>#transitions</li>
                 <li>#flexBox</li>`,
+        imgTech: `<li>html5</li>
+                <li>css3</li>`,
     },
     {
         id: 6,
-        title: "javascript projects",
+        title: "javascript portfolio",
         link: "https://shakexsempe.github.io/javascript-projects-portfolio/",
         img: "img/js.png",
-        head: "javascript portfolio page",
+        head: "javascript projects portfolio",
         desc: "page featuring links to my javascript tutorial repositories",
         alt: 'javascript',
         tech: `<li>#vanillaJavascript</li>
                 <li>#es6</li>
                 <li>#algorithms</li>`,
+        imgTech: `<li>javascript</li>`,
     },
 ];
 // projects container
@@ -102,6 +116,9 @@ displayProjects = (projectsItems) => {
         </div>
         <div class="project-img">
             <img src=${project.img} alt="img" loading="lazy"/>
+            <div class="project-img-desc">
+                <ul>${project.imgTech}<ul>
+            </div>
         </div>
         </div>`
     }); 
