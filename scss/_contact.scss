@@ -22,10 +22,11 @@
         // contact items container
         .contact-items {
             width: 100%;
-            @media (min-width: 768px){
+            @media (min-width: 1024px){
                 width: 100%;
                 display: flex;
-                flex-direction: flex;
+                flex-direction: row;
+                justify-content: space-between;
                 flex-wrap: nowrap;
                 padding: 0 5vw;
                 margin: 0 auto;
@@ -33,7 +34,7 @@
             // contact-item
             .contact-item {
                 // tablet to desktop
-            @media (min-width: 768px){
+            @media (min-width: 1024px){
                 width: 30%;
                 
             }
@@ -43,7 +44,7 @@
                 text-align: center;
                 border-radius: 10px;
                 padding: .5em;
-                margin: 1em auto;
+                margin: 5vh auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -53,7 +54,7 @@
                 transform: preserve-3d;
                 border: none;
                 outline: none;
-                transform: scale(.9);
+                // transform: scale(.9);
                 transition: .8s ease;
                 // item box shadows
                 &::before {
@@ -71,7 +72,7 @@
                     // box-shadow: $box-dark-top-sm;
                     box-shadow: inset 3px 3px 4px #ffffff50,
                                 inset -3px -3px 4px #ffffff50,
-                                10px 10px 5px rgba(0, 0, 0, 0.400);
+                                10px 10px 10px rgba(0, 0, 0, 0.300);
                 }
                 &::after {
                     position: absolute;
@@ -83,14 +84,14 @@
                     background-color: $overlay-blue-light;
                     box-shadow: inset 3px 3px 4px #fffa,
                                 inset -3px -3px 4px #000a,
-                                        5px 15px 10px rgba(0, 0, 0, 0.300);
+                                        10px 15px 5px rgba(0, 0, 0, 0.400);
                     border-radius: 10px;
                     z-index: -2;
                     opacity: 0;
                     transition: .5s ease;
                 }
                 &:hover {
-                    transform: scale(1);
+                    transform: scale(.9);
                     transform: preserve-3d;
 
                     // box shadows hover state
