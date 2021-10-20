@@ -289,9 +289,23 @@ hamburger
 
     &:hover {
         animation: none;
+        // transform: translateY(-100%);
+
         i {
             transform: scale(.97);
             transition: .2s;
+        }
+    }
+    &:focus {
+        animation: scrollUp 1s ease;
+        animation-fill-mode: forwards;
+
+        @keyframes scrollUp {
+            100% {
+                    transform: translateY(-100%);
+                
+            }
+
         }
     }
 }

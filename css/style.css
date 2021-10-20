@@ -211,6 +211,13 @@ hamburger
     .top-link:hover i {
       transform: scale(0.97);
       transition: .2s; }
+  .top-link:focus {
+    animation: scrollUp 1s ease;
+    animation-fill-mode: forwards; }
+
+@keyframes scrollUp {
+  100% {
+    transform: translateY(-100%); } }
 
 #skills .skills {
   flex-direction: column;
