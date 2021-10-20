@@ -1361,7 +1361,7 @@ body {
         transition: 1s ease;
         opacity: 0; }
         #header .header #navbar .brand h1 {
-          font-size: 1.3em;
+          font-size: 1.2em;
           text-transform: uppercase;
           color: #fff;
           font-family: 'Gruppo', cursive;
@@ -1369,6 +1369,8 @@ body {
           @media (min-width: 768px) {
             #header .header #navbar .brand h1 {
               font-size: 1.5em; } }
+          #header .header #navbar .brand h1 span {
+            color: #f72751; }
       @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
           position: absolute;
