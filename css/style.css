@@ -959,9 +959,6 @@ hamburger
           border: none;
           outline: none;
           overflow: hidden;
-          border-radius: 0px;
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
           font-size: 1.4em;
           opacity: .1;
           background-color: #29323c;
@@ -1005,11 +1002,12 @@ hamburger
       #projects .projects .all-projects .project-item:hover.project-item::after {
         opacity: 1; }
       #projects .projects .all-projects .project-item:hover.project-item .project-img img {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        transform-origin: left; }
       #projects .projects .all-projects .project-item:hover.project-item .project-img::after {
         opacity: 0; }
       #projects .projects .all-projects .project-item:hover.project-item .project-img .project-img-desc {
-        opacity: 1; }
+        opacity: .9; }
         #projects .projects .all-projects .project-item:hover.project-item .project-img .project-img-desc ul li {
           transition: .3s;
           opacity: 1;

@@ -254,13 +254,10 @@
                         width: 100%;
                         top: 0;
                         left: 0;
-                        color: #fff;
+                        color:$text-light;
                         border: none;
                         outline: none;
                         overflow: hidden;
-                        border-radius: 0px;
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
                         font-size: 1.4em;
                         opacity: .1;
                         background-color:$overlay-blue-dark;
@@ -332,13 +329,14 @@
                         .project-img {
                             img {
                                 transform: scale(1.1);
+                                transform-origin: left;
                             }
 
                             &::after {
                                 opacity: 0;
                             }
                             .project-img-desc {
-                                opacity: 1;
+                                opacity: .9;
 
                                 ul {
                                     li {
