@@ -247,14 +247,19 @@ hamburger
     height: auto;
     background: #fff;
     z-index: 30; }
+  @media (max-width: 768px) {
+    #skills .skills {
+      background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+      background-size: 200%; }
+      #skills .skills::after {
+        display: none; } }
 
 #skills .skills-top {
   width: 90%;
-  padding: .5em .5em 2em .5em;
+  padding: .5em 1.5em 2em .5em;
   text-align: center;
   margin: 2em auto;
-  background-image: var(--overlay);
-  background: #48556388;
+  background: #29323c;
   backdrop-filter: blur(5px);
   border-radius: 10px;
   border: none;
