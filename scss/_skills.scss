@@ -86,10 +86,10 @@
 
         p {
             color: $text-white;
-            font-size: .9em;
+            font-size: .8em;
             font-weight: 500;
             @media (min-width: 768px){
-                font-size: .8em;
+                font-size: 1em;
             }
             background: transparent;
             overflow: hidden;

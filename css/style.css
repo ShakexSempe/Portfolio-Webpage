@@ -282,14 +282,14 @@ hamburger
     outline: none; }
   #skills .skills-top p {
     color: #fff;
-    font-size: .9em;
+    font-size: .8em;
     font-weight: 500;
     background: transparent;
     overflow: hidden;
     line-height: 2em; }
     @media (min-width: 768px) {
       #skills .skills-top p {
-        font-size: .8em; } }
+        font-size: 1em; } }
     #skills .skills-top p span {
       color: #ddd; }
   #skills .skills-top::after {
@@ -546,7 +546,6 @@ hamburger
       width: 85%;
       /* height: auto; */
       text-align: center;
-      border-radius: 10px;
       padding: .5em;
       margin: 5vh auto;
       display: flex;
