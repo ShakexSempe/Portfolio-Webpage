@@ -84,14 +84,14 @@
                     background-color: $overlay-blue-light;
                     box-shadow: inset 3px 3px 4px #fffa,
                                 inset -3px -3px 4px #000a,
-                                        10px 15px 5px rgba(0, 0, 0, 0.400);
+                                        5px 5px 5px rgba(0, 0, 0, 0.400);
                     border-radius: 10px;
                     z-index: -2;
                     opacity: 0;
                     transition: .5s ease;
                 }
                 &:hover {
-                    transform: scale(.9);
+                    transform: scale(.95);
                     transform: preserve-3d;
 
                     // box shadows hover state
