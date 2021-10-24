@@ -289,7 +289,7 @@ hamburger
     line-height: 2em; }
     @media (min-width: 768px) {
       #skills .skills-top p {
-        font-size: 1em; } }
+        font-size: .8em; } }
     #skills .skills-top p span {
       color: #ddd; }
   #skills .skills-top::after {
