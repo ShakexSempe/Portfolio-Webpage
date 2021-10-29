@@ -65,8 +65,9 @@
                     width: 100%;
                     height: 100%;
                     border-radius: 10px;
-                    transition: .5s ease;
+                    transition: 1s ease;
                     transform: preserve-3d;
+                    // background: $overlay-blue-dark;
                     background: $overlay-blue-dark;
                     z-index: -1;
                     // box-shadow: $box-dark-top-sm;
@@ -91,7 +92,7 @@
                     transition: .5s ease;
                 }
                 &:hover {
-                    transform: scale(.95);
+                    // transform: scale(.98);
                     transform: preserve-3d;
 
                     // box shadows hover state
@@ -146,15 +147,15 @@
                         transition: .5s ease;
                     }
                     &::before {
-                        box-shadow: $box-dark-top-md;
-                    }
-                    &::after {
-                        opacity: 0;
-                        background: #f4f4f4;
-                        z-index: -1;
                         box-shadow: $box-light-top-md;
-                        transition: .5s ease;
                     }
+                    // &::after {
+                    //     opacity: 0;
+                    //     background: #f4f4f4;
+                    //     z-index: -1;
+                    //     box-shadow: $box-light-top-md;
+                    //     transition: .5s ease;
+                    // }
                     // end of heading box shadows
                 }
                 // end of item headings (h1)
@@ -163,7 +164,6 @@
                 .icon {
                     margin: 5px auto 10px auto;
                     padding: .3em .7em;
-                    border-radius: 10px;
                     border: none;
                     outline: none;
                     position: relative;
@@ -173,9 +173,11 @@
                     @media (min-width: 768px) {
                         height: 80px;
                         width: 80px;
-                        margin: .3em auto;
+                        // margin: .3em auto;
+                        margin: 0;
+                        padding: 0;
                         img {
-                            object-fit: cover;
+                            object-fit: contain;
                         }
                     }
                     // contact icon box shadows
@@ -186,21 +188,6 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        background: #f4f4f4;
-                        border-radius: 50%;
-                        box-shadow: $box-dark-top-md;
-                        transition: .5s ease;
-                        transform: preserve-3d;
-                    }
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        z-index: -1;
-                        opacity: 0;
                         background: #f4f4f4;
                         border-radius: 50%;
                         box-shadow: $box-light-top-md;
@@ -231,7 +218,7 @@
                         outline: none;
                         border-radius: 10px;
                         margin: .5em auto;
-                        color: $text-black-trans;
+                        color: $text-black;
                         transition: .5s ease;
                         position: relative;
                         z-index: -1;
@@ -255,25 +242,8 @@
                             z-index: -1;
                             border-radius: 10px;
                             transition: .5s ease;
-                            box-shadow: $box-dark-top-sm;
-                        }
-                        &::after {
-                            position: absolute;
-                            content: '';
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            opacity: 0;
-                            background: #f4f4f4;
-                            z-index: -1;
-                            border-radius: 10px;
-                            transition: .5s ease;
                             box-shadow: $box-light-top-sm;
                         }
-                        // detail shadow states
-
-                        // detail shadow states
                         // end of details shadow
                     }
                     // end of h2
@@ -289,7 +259,7 @@
                         margin: .7em auto;
                         background-color: $link-crimson-dark;
                         color: $text-white-e;
-                        opacity: .2;
+                        opacity: .8;
                         transition: .5s ease;
                         position: relative;
                         box-shadow: inset 2px 2px 4px #fffa,
@@ -311,34 +281,11 @@
 
                 // item shadows hover state
                 &:hover {
-                    h1 {
-                        &::before {opacity:0}
-                        &::after {opacity:1}
-                    }
-                    h2 {
-                        color: $text-black;
-                    }
-                    .icon {
-                        &::before {opacity: 0;}
-                        &::after {opacity: 1;}
-                    }
                     img {
                         transform: scale(1);
                         transform: preserve-3d;
                     }
                     .contact-info {
-                        h2 {
-                            transition: .5s ease;
-                            transform: scaleX(1.1);
-
-                            &::before {
-                                opacity: 0;
-                            }
-
-                            &::after {
-                                opacity: 1;
-                            }
-                        }
 
                         a {
                             opacity: 1;

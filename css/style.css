@@ -569,7 +569,7 @@ hamburger
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        transition: .5s ease;
+        transition: 1s ease;
         transform: preserve-3d;
         background: #29323c;
         z-index: -1;
@@ -588,7 +588,6 @@ hamburger
         opacity: 0;
         transition: .5s ease; }
       #contact .contact .contact-items .contact-item:hover {
-        transform: scale(0.95);
         transform: preserve-3d; }
         #contact .contact .contact-items .contact-item:hover::before {
           opacity: 0; }
@@ -627,17 +626,10 @@ hamburger
           border-radius: 10px;
           transition: .5s ease; }
         #contact .contact .contact-items .contact-item h1::before {
-          box-shadow: inset 3px 3px 4px #000a, inset -3px -3px 4px #ddda; }
-        #contact .contact .contact-items .contact-item h1::after {
-          opacity: 0;
-          background: #f4f4f4;
-          z-index: -1;
-          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a;
-          transition: .5s ease; }
+          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a; }
       #contact .contact .contact-items .contact-item .icon {
         margin: 5px auto 10px auto;
         padding: .3em .7em;
-        border-radius: 10px;
         border: none;
         outline: none;
         position: relative;
@@ -648,9 +640,10 @@ hamburger
           #contact .contact .contact-items .contact-item .icon {
             height: 80px;
             width: 80px;
-            margin: .3em auto; }
+            margin: 0;
+            padding: 0; }
             #contact .contact .contact-items .contact-item .icon img {
-              object-fit: cover; } }
+              object-fit: contain; } }
         #contact .contact .contact-items .contact-item .icon::before {
           position: absolute;
           content: '';
@@ -658,20 +651,6 @@ hamburger
           left: 0;
           width: 100%;
           height: 100%;
-          background: #f4f4f4;
-          border-radius: 50%;
-          box-shadow: inset 3px 3px 4px #000a, inset -3px -3px 4px #ddda;
-          transition: .5s ease;
-          transform: preserve-3d; }
-        #contact .contact .contact-items .contact-item .icon::after {
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-          opacity: 0;
           background: #f4f4f4;
           border-radius: 50%;
           box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a;
@@ -691,7 +670,7 @@ hamburger
         outline: none;
         border-radius: 10px;
         margin: .5em auto;
-        color: #000a;
+        color: #000;
         transition: .5s ease;
         position: relative;
         z-index: -1; }
@@ -713,19 +692,6 @@ hamburger
           z-index: -1;
           border-radius: 10px;
           transition: .5s ease;
-          box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda; }
-        #contact .contact .contact-items .contact-item .contact-info h2::after {
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          background: #f4f4f4;
-          z-index: -1;
-          border-radius: 10px;
-          transition: .5s ease;
           box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
       #contact .contact .contact-items .contact-item .contact-info a {
         width: 100%;
@@ -738,7 +704,7 @@ hamburger
         margin: .7em auto;
         background-color: #b60f30;
         color: #eee;
-        opacity: .2;
+        opacity: .8;
         transition: .5s ease;
         position: relative;
         box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
@@ -748,26 +714,9 @@ hamburger
         #contact .contact .contact-items .contact-item .contact-info a:active {
           transform: scale(0.9);
           transition: .2s; }
-      #contact .contact .contact-items .contact-item:hover h1::before {
-        opacity: 0; }
-      #contact .contact .contact-items .contact-item:hover h1::after {
-        opacity: 1; }
-      #contact .contact .contact-items .contact-item:hover h2 {
-        color: #000; }
-      #contact .contact .contact-items .contact-item:hover .icon::before {
-        opacity: 0; }
-      #contact .contact .contact-items .contact-item:hover .icon::after {
-        opacity: 1; }
       #contact .contact .contact-items .contact-item:hover img {
         transform: scale(1);
         transform: preserve-3d; }
-      #contact .contact .contact-items .contact-item:hover .contact-info h2 {
-        transition: .5s ease;
-        transform: scaleX(1.1); }
-        #contact .contact .contact-items .contact-item:hover .contact-info h2::before {
-          opacity: 0; }
-        #contact .contact .contact-items .contact-item:hover .contact-info h2::after {
-          opacity: 1; }
       #contact .contact .contact-items .contact-item:hover .contact-info a {
         opacity: 1; }
 
