@@ -45,6 +45,19 @@ const projects = [
     },
     {
         id: 4,
+        title: "javascript portfolio",
+        link: "https://shakexsempe.github.io/javascript-projects-portfolio/",
+        img: "img/js.png",
+        head: "javascript projects portfolio",
+        desc: "page featuring links to my javascript tutorial repositories",
+        alt: 'javascript',
+        tech: `<li>#vanillaJavascript</li>
+                <li>#es6</li>
+                <li>#algorithms</li>`,
+        imgTech: `<li>javascript</li>`,
+    },
+    {
+        id: 5,
         title: "Valoir &trade;",
         link: "https://valoir.netlify.app/",
         img: "img/valoir.png",
@@ -59,7 +72,7 @@ const projects = [
                 <li>sass</li>`,
     },
     {
-        id: 5,
+        id: 6,
         title: "Planet Animation",
         link: "https://shakexsempe.github.io/Planet-Animation/",
         img: "img/planets.png",
@@ -72,19 +85,7 @@ const projects = [
         imgTech: `<li>html5</li>
                 <li>css3</li>`,
     },
-    {
-        id: 6,
-        title: "javascript portfolio",
-        link: "https://shakexsempe.github.io/javascript-projects-portfolio/",
-        img: "img/js.png",
-        head: "javascript projects portfolio",
-        desc: "page featuring links to my javascript tutorial repositories",
-        alt: 'javascript',
-        tech: `<li>#vanillaJavascript</li>
-                <li>#es6</li>
-                <li>#algorithms</li>`,
-        imgTech: `<li>javascript</li>`,
-    },
+    
 ];
 // projects container
 const allProjects = document.querySelector('.all-projects');
