@@ -3,18 +3,15 @@
 const projects = [
     {
         id: 1,
-        title: "tribute page",
-        link: "https://shakexsempe.github.io/lewis-hamilton-tribute-page/",
-        img: "img/hamilton.png",
-        head: "FreeCodeCamp Responsive Web Design Project #1",
-        desc:`<strike>Six</strike> Seven time Formula One World Champion Lewis Hamilton tribute
-        page`,
-        alt: 'lewis hamilton',
-        tech: `<li>#appliedVisualDesign</li>
-                <li>#css3</li>
-                <li>#semanticMarkup</li>`,
+        title: "freeCodeCamp Portfolio",
+        link: "https://shakexsempe.github.io/FreeCodeCamp-portfolio/",
+        img: "img/fcc.png",
+        head: "FreeCodeCamp Responsive Projects Portfolio",
+        desc: "",
+        alt: 'freecodecamp',
+        tech: `<li>#ResponsiveWebDesign</li>`,
         imgTech: `<li>html5</li>
-                <li>css3</li>`,
+                <li>SASS</li>`,
     },
     {
         id: 2,
