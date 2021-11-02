@@ -792,7 +792,8 @@ hamburger
             flex-basis: 50%;
             box-shadow: inset 5px 0px 5px rgba(150, 149, 149, 0.667), inset 0px -5px 5px #000a; } }
         #projects .projects .all-projects .project-item .project-tile h1 {
-          font-size: 1em;
+          font-size: 1.15em;
+          width: 100%;
           color: #ddd;
           font-weight: 900;
           line-height: 1em;
@@ -800,11 +801,11 @@ hamburger
           padding-bottom: 10px;
           text-transform: capitalize;
           border-bottom: 1px dashed #fffa; }
-          @media (min-width: 768px) {
+          @media (min-width: 1024px) {
             #projects .projects .all-projects .project-item .project-tile h1 {
               font-size: 2em; } }
         #projects .projects .all-projects .project-item .project-tile h2 {
-          font-size: .8em;
+          font-size: .9em;
           line-height: 1.3;
           font-weight: 500;
           margin: .5em 0;
@@ -844,7 +845,7 @@ hamburger
           #projects .projects .all-projects .project-item .project-tile a i {
             transition: .2s;
             color: #bfee50;
-            font-size: .7em;
+            font-size: .8em;
             padding: .2em;
             margin-right: .5em; }
             #projects .projects .all-projects .project-item .project-tile a i::after {
@@ -854,7 +855,7 @@ hamburger
               color: #bfee50;
               transition: .3s;
               opacity: 0;
-              margin-left: .5em;
+              margin-left: 1em;
               transition: .3s ease; }
           #projects .projects .all-projects .project-item .project-tile a:hover h2 {
             color: #bfee50; }
@@ -881,7 +882,7 @@ hamburger
           width: 100%;
           box-shadow: 0 0 5px #000a, inset 5px 5px 5px #ddda, inset -5px 0px 5px #000a;
           background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
-          opacity: 0;
+          opacity: .4;
           transition: .5s;
           z-index: 3; }
         #projects .projects .all-projects .project-item .project-img img {
