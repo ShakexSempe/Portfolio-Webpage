@@ -93,11 +93,44 @@ body {
 
                         ul {
                             margin: 25vh 5vw;
-                            // overflow-y: scroll;
+                            // list items active transition
+                            li {
+                                transform: translateX(10%);
+                                opacity: .1;
+                            }
                         }
                     }
                     &.active {
                         left: 0;
+
+                        ul li {
+                            transition: .5s .5s;
+                            transform: translateX(0);
+                            opacity: 1;
+
+                            &:nth-child(1){
+                                transition-delay: .2s;
+                            }
+                            &:nth-child(2){
+                                transition-delay: .3s;
+                            }
+                            &:nth-child(3){
+                                transition-delay: .4s;
+                            }
+                            &:nth-child(4){
+                                transition-delay: .5s;
+                            }
+                            &:nth-child(5){
+                                transition-delay: .6s;
+                            }
+                            &:nth-child(6){
+                                transition-delay: .7s;
+                            }
+                            
+                            a {
+                                letter-spacing: normal;
+                            }
+                        }
                     }
                     // hide nav avi on desktop
                     @media (min-width: 1025px) {
