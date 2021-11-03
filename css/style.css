@@ -971,12 +971,43 @@ hamburger
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   background-color: #333; }
   #footer .footer {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 30px;
+    justify-content: space-between;
+    padding-top: 15vh;
     padding-bottom: 10px; }
+    #footer .footer form {
+      background-color: #29323c;
+      width: 90%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin: 5vh auto;
+      padding: 5vh 1em; }
+      @media (min-width: 1024px) {
+        #footer .footer form {
+          width: 50%; } }
+      #footer .footer form h1 {
+        color: #eee;
+        text-align: center; }
+      #footer .footer form .input-div {
+        position: relative;
+        padding: 1em 0 .5em;
+        margin-bottom: 5vh; }
+        #footer .footer form .input-div label {
+          position: absolute;
+          top: 0%;
+          color: #fff; }
+        #footer .footer form .input-div input {
+          padding: .5em;
+          width: 100%;
+          margin: .5em 0; }
+        #footer .footer form .input-div textarea {
+          padding: .5em;
+          margin: .5em 0;
+          width: 100%; }
     #footer .footer .brand {
       width: 80%;
       padding: .3em .5em;
