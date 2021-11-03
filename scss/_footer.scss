@@ -8,8 +8,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 15vh;
-        padding-bottom: 10px;
+        padding: 5vh 0;
 
         // form
         form {
@@ -24,7 +23,7 @@
             margin: 5vh auto;
             padding: 5vh 1em;
             border-radius: 5px;
-            // font-family: $font-gruppo;
+            font-family: $font-ubuntu;
 
             h1 {
                 color: #eee;
@@ -41,6 +40,7 @@
                 label {
                     position: absolute;
                     top: 0%;
+                    transform: translateY(-.5em);
                     color: #fff;
                     text-transform: uppercase;
                     transition: .3s;
@@ -54,6 +54,8 @@
                     transition: .5s;
                     border: none;
                     outline: none;
+                    font-weight: 600;
+                    letter-spacing: .15em;
 
                     &:invalid {
                         background-color: $background-invalid;
@@ -84,7 +86,8 @@
                 // input hover state
                 &:hover {
                     label {
-                        transform: translateX(1em);
+                        transform: translateX(1em) translateY(-.2em);
+                        color: #ddd;
                     }
                 }
                 // end of input hover state
@@ -92,6 +95,7 @@
                     font-family: $font-gruppo;
                     font-weight: 700;
                     color: #333;
+                    text-transform: capitalize;
                 }
             }
 

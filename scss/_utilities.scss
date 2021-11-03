@@ -258,7 +258,7 @@ hamburger
     transition: .5s ease-in;
     opacity: 0;
     visibility: hidden;
-    z-index: -10;
+    z-index: 1;
     box-shadow: inset 2px 2px 3px #ddda,
                 inset -2px -2px 3px #000a;
     

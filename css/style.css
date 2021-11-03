@@ -187,7 +187,7 @@ hamburger
   transition: .5s ease-in;
   opacity: 0;
   visibility: hidden;
-  z-index: -10;
+  z-index: 1;
   box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
   .top-link i {
     color: #ddd;
@@ -976,8 +976,7 @@ hamburger
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 15vh;
-    padding-bottom: 10px; }
+    padding: 5vh 0; }
     #footer .footer form {
       background-color: #29323c;
       width: 90%;
@@ -986,7 +985,8 @@ hamburger
       flex-direction: column;
       margin: 5vh auto;
       padding: 5vh 1em;
-      border-radius: 5px; }
+      border-radius: 5px;
+      font-family: "Ubuntu", sans-serif; }
       @media (min-width: 1024px) {
         #footer .footer form {
           width: 50%; } }
@@ -1001,6 +1001,7 @@ hamburger
         #footer .footer form .input-div label {
           position: absolute;
           top: 0%;
+          transform: translateY(-0.5em);
           color: #fff;
           text-transform: uppercase;
           transition: .3s; }
@@ -1011,7 +1012,9 @@ hamburger
           border-radius: 5px;
           transition: .5s;
           border: none;
-          outline: none; }
+          outline: none;
+          font-weight: 600;
+          letter-spacing: .15em; }
           #footer .footer form .input-div input:invalid {
             background-color: #f7cdd5c7;
             color: #000; }
@@ -1030,11 +1033,13 @@ hamburger
           #footer .footer form .input-div textarea:focus {
             outline: 3px dashed #fffa; }
         #footer .footer form .input-div:hover label {
-          transform: translateX(1em); }
+          transform: translateX(1em) translateY(-0.2em);
+          color: #ddd; }
         #footer .footer form .input-div ::placeholder {
           font-family: "Gruppo", cursive;
           font-weight: 700;
-          color: #333; }
+          color: #333;
+          text-transform: capitalize; }
       #footer .footer form button {
         position: relative;
         background: linear-gradient(0deg, #581212, #dc134c);
