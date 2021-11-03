@@ -58,7 +58,8 @@
                         color: $text-valid;
                     }
                     &:focus {
-                        outline: 2px dashed #fffa;
+                        outline: 3px dashed #fffa;
+                        background: #f4f4f4;
                     }
                 }
 
