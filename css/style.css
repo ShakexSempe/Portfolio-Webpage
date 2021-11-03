@@ -1031,6 +1031,10 @@ hamburger
             outline: 3px dashed #fffa; }
         #footer .footer form .input-div:hover label {
           transform: translateX(1em); }
+        #footer .footer form .input-div ::placeholder {
+          font-family: "Gruppo", cursive;
+          font-weight: 700;
+          color: #333; }
       #footer .footer form button {
         position: relative;
         background: linear-gradient(0deg, #581212, #dc134c);

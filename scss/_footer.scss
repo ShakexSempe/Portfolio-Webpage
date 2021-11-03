@@ -88,6 +88,11 @@
                     }
                 }
                 // end of input hover state
+                ::placeholder {
+                    font-family: $font-gruppo;
+                    font-weight: 700;
+                    color: #333;
+                }
             }
 
             button {
