@@ -24,24 +24,30 @@
             margin: 5vh auto;
             padding: 5vh 1em;
             border-radius: 5px;
+            // font-family: $font-gruppo;
 
             h1 {
                 color: #eee;
                 text-align: center;
+                margin-bottom: 1em;
             }
             .input-div {
                 position: relative;
                 // border: 1px solid yellow;
                 padding: 1em 0 .5em;
                 margin-bottom: 5vh;
+
+                
                 label {
                     position: absolute;
                     top: 0%;
                     color: #fff;
+                    text-transform: uppercase;
+                    transition: .3s;
                 }
 
                 input {
-                    padding: .5em;
+                    padding: .7em;
                     width: 100%;
                     margin: .5em 0;
                     border-radius: 5px;
@@ -60,6 +66,7 @@
                     &:focus {
                         outline: 3px dashed #fffa;
                     }
+
                 }
 
                 textarea {
@@ -74,6 +81,13 @@
                         outline: 3px dashed #fffa;
                     }
                 }
+                // input hover state
+                &:hover {
+                    label {
+                        transform: translateX(1em);
+                    }
+                }
+                // end of input hover state
             }
 
             button {
@@ -81,6 +95,7 @@
                 background: linear-gradient(0deg, #581212, #dc134c);
                 padding: 1em ;
                 color: #eee;
+                font-family: $font-gruppo;
                 font-weight: 600;
                 letter-spacing: .2em;
                 text-transform: uppercase;

@@ -992,7 +992,8 @@ hamburger
           width: 50%; } }
       #footer .footer form h1 {
         color: #eee;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 1em; }
       #footer .footer form .input-div {
         position: relative;
         padding: 1em 0 .5em;
@@ -1000,9 +1001,11 @@ hamburger
         #footer .footer form .input-div label {
           position: absolute;
           top: 0%;
-          color: #fff; }
+          color: #fff;
+          text-transform: uppercase;
+          transition: .3s; }
         #footer .footer form .input-div input {
-          padding: .5em;
+          padding: .7em;
           width: 100%;
           margin: .5em 0;
           border-radius: 5px;
@@ -1026,11 +1029,14 @@ hamburger
           outline: none; }
           #footer .footer form .input-div textarea:focus {
             outline: 3px dashed #fffa; }
+        #footer .footer form .input-div:hover label {
+          transform: translateX(1em); }
       #footer .footer form button {
         position: relative;
         background: linear-gradient(0deg, #581212, #dc134c);
         padding: 1em;
         color: #eee;
+        font-family: "Gruppo", cursive;
         font-weight: 600;
         letter-spacing: .2em;
         text-transform: uppercase;
