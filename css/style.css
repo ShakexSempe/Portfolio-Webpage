@@ -1019,7 +1019,7 @@ hamburger
             background-color: #cdf7d3c7;
             color: #000; }
           #footer .footer form .input-div input:focus {
-            outline: 3px dashed #fffa; }
+            outline: 2px dashed #fffa; }
         #footer .footer form .input-div textarea {
           padding: .5em;
           margin: .5em 0;
