@@ -23,6 +23,7 @@
             flex-direction: column;
             margin: 5vh auto;
             padding: 5vh 1em;
+            border-radius: 5px;
 
             h1 {
                 color: #eee;
@@ -43,12 +44,56 @@
                     padding: .5em;
                     width: 100%;
                     margin: .5em 0;
+                    border-radius: 5px;
+                    transition: .5s;
+                    border: none;
+                    outline: none;
+
+                    &:invalid {
+                        background-color: $background-invalid;
+                        color: $text-invalid;
+                    }
+                    &:valid {
+                        background-color: $background-valid;
+                        color: $text-valid;
+                    }
+                    &:focus {
+                        outline: 2px dashed #fffa;
+                    }
                 }
 
                 textarea {
                     padding: .5em;
                     margin: .5em 0;
                     width: 100%;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+
+                    &:focus {
+                        outline: 3px dashed #fffa;
+                    }
+                }
+            }
+
+            button {
+                position: relative;
+                background-color: $span-crimson;
+                padding: 1em ;
+                color: #eee;
+                font-weight: 600;
+                letter-spacing: .2em;
+                text-transform: uppercase;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                opacity: .9;
+                transition: .2s ease;
+                cursor: pointer;
+                
+                &:hover {
+                    transform: scale(.98);
+                    letter-spacing: 0;
                 }
             }
         }

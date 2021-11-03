@@ -403,23 +403,25 @@
   <footer id="footer">
     <div class="footer container">
       <!-- contact form -->
-      <form class="contact-form">
+      <form class="contact-form" target="_blank" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
         <h1>Get In Touch</h1>
 
         <div class="input-div">
-          <label for="username">Username:</label>
-          <input type="text" name="username" id="username" required>
+          <label for="username">name:</label>
+          <input type="text" name="username" id="username" required minlength="2">
         </div>
 
         <div class="input-div">
           <label for="email">email:</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" required>
         </div>
 
         <div class="input-div">
           <label for="message">message:</label>
-          <textarea rows="3" cols="30" name="message" id="message"></textarea>
+          <textarea rows="3" cols="50" name="message" id="message"></textarea>
         </div>
+
+        <button type="submit">send</button>
       </form>
       <!-- end of contact form -->
 

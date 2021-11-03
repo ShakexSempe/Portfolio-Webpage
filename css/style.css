@@ -985,7 +985,8 @@ hamburger
       display: flex;
       flex-direction: column;
       margin: 5vh auto;
-      padding: 5vh 1em; }
+      padding: 5vh 1em;
+      border-radius: 5px; }
       @media (min-width: 1024px) {
         #footer .footer form {
           width: 50%; } }
@@ -1003,11 +1004,45 @@ hamburger
         #footer .footer form .input-div input {
           padding: .5em;
           width: 100%;
-          margin: .5em 0; }
+          margin: .5em 0;
+          border-radius: 5px;
+          transition: .5s;
+          border: none;
+          outline: none; }
+          #footer .footer form .input-div input:invalid {
+            background-color: #f7cdd5c7;
+            color: #000; }
+          #footer .footer form .input-div input:valid {
+            background-color: #cdf7d3c7;
+            color: #000; }
+          #footer .footer form .input-div input:focus {
+            outline: 2px dashed #fffa; }
         #footer .footer form .input-div textarea {
           padding: .5em;
           margin: .5em 0;
-          width: 100%; }
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          outline: none; }
+          #footer .footer form .input-div textarea:focus {
+            outline: 3px dashed #fffa; }
+      #footer .footer form button {
+        position: relative;
+        background-color: #dc143c;
+        padding: 1em;
+        color: #eee;
+        font-weight: 600;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        opacity: .9;
+        transition: .2s ease;
+        cursor: pointer; }
+        #footer .footer form button:hover {
+          transform: scale(0.98);
+          letter-spacing: 0; }
     #footer .footer .brand {
       width: 80%;
       padding: .3em .5em;

@@ -30,6 +30,8 @@ $link-crimson-dark:#b60f30;
 // background colors
 $background-light: #fff;
 $background-dark: #333;
+$background-light: #fff;
+
 $overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
 $overlay-blue-dark:#29323c;
 $overlay-blue-light: #485563;
@@ -38,6 +40,12 @@ $nav-active-background: #1b2127;
 $ul-background: #1f1e1e;
 // button colors
 $button-background-grey: #8584844b;
+
+// form 
+$background-invalid: #f7cdd5c7;
+$text-invalid: #000;
+$background-valid: #cdf7d3c7;
+$text-valid: #000;
 
 // box-shadows
 $box-light-top-sm: inset 2px 2px 3px #ddda,
