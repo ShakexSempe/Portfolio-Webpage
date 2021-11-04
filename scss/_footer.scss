@@ -138,7 +138,7 @@
         // end of form
         // social media links
         .socialMedia-links {
-            @media (min-width: 768px) {
+            @media (min-width: 1024px) {
                 width: 50%;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -157,13 +157,18 @@
                 a {
                     background: $overlay-blue-light;
                     display: block;
-                    padding: .3em .5em;
-                    width: 60%;
+                    padding: .3em .5em .3em 0;
+                    width: 70%;
                     margin: 0 auto;
                     color: #fff;
                     border-radius: 5px;
                     position: relative;
                     transition: .2s ease;
+                    // desktop links
+                    @media (min-width: 768px) {
+                        width: 85%;
+                    }
+                    // end of desktop links
                     // link box shadow
                     &::after {
                         position: absolute;

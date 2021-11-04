@@ -1058,7 +1058,7 @@ hamburger
       width: 100%;
       margin: 2em 5vw;
       padding: .5em; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         #footer .footer .socialMedia-links {
           width: 50%;
           display: grid;
@@ -1069,13 +1069,16 @@ hamburger
         #footer .footer .socialMedia-links .socialMedia-item a {
           background: #485563;
           display: block;
-          padding: .3em .5em;
-          width: 60%;
+          padding: .3em .5em .3em 0;
+          width: 70%;
           margin: 0 auto;
           color: #fff;
           border-radius: 5px;
           position: relative;
           transition: .2s ease; }
+          @media (min-width: 768px) {
+            #footer .footer .socialMedia-links .socialMedia-item a {
+              width: 85%; } }
           #footer .footer .socialMedia-links .socialMedia-item a::after {
             position: absolute;
             content: '';
