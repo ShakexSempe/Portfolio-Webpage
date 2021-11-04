@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5vh 0;
+        padding: 5vh 5vw;
 
         // form
         form {
@@ -16,7 +16,7 @@
                 width: 50%;
             }
             background-color: $overlay-blue-dark;
-            width: 90%;
+            width: 100%;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -136,6 +136,64 @@
             }
         }
         // end of form
+        // social media links
+        .socialMedia-links {
+            @media (min-width: 768px) {
+                width: 50%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            grid-template-columns: 1fr;
+            background-color: $overlay-blue-dark;
+            border: 1px solid white;
+            width: 100%;
+            margin: 2em 5vw;
+            padding: .5em;
+
+            .socialMedia-item {
+                border: 1px solid rgba(0, 0, 0, 0.226);
+                padding: .5em 0;
+
+                a {
+                    background: $overlay-blue-light;
+                    display: block;
+                    padding: .3em .5em;
+                    width: 60%;
+                    margin: 0 auto;
+                    color: #fff;
+                    border-radius: 5px;
+                    position: relative;
+                    transition: .2s ease;
+                    // link box shadow
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        box-shadow: inset 2px 2px 4px #fffa,
+                                    inset -2px -2px 4px #000a;
+                    }
+                    // end of link box shadow
+                    
+                    i {
+                        color: #fff;
+                        margin-right: 1em;
+                        padding: .5em;
+                    }
+
+                    // active state
+                    &:active {
+                        transform: scale(.97);
+                    }
+                    // end of active state
+                }
+            }
+        }
+        // end of social media links
+
         // footer thank you message
         .brand {
             width: 80%;
@@ -254,6 +312,8 @@
             }
         }
         // end of footer thank you message
+        
+
         // social icons
         .social-icon {
             @media (min-width: 1000px){
