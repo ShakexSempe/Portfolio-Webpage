@@ -153,20 +153,32 @@
             .socialMedia-item {
                 border: 1px solid rgba(0, 0, 0, 0.226);
                 padding: .5em 0;
+                overflow: hidden;
+                margin: .1em;
 
                 a {
-                    background: $overlay-blue-light;
+                    background: $overlay-blue-dark;
                     display: block;
-                    padding: .3em .5em .3em 0;
-                    width: 70%;
+                    padding: .3em .5em .3em;
+                    width: 75%;
                     margin: 0 auto;
                     color: #fff;
                     border-radius: 5px;
                     position: relative;
                     transition: .2s ease;
-                    // desktop links
+                    // translate out of view leaving only icon
+                    transform: translateX(95%);
+                    transition: .5s ease;
+                    // tablet links
                     @media (min-width: 768px) {
                         width: 85%;
+                        transform: translateX(100%);
+                    }
+                    // end of tablet links
+                    // desktop links
+                    @media (min-width: 1024px) {
+                        width: 85%;
+                        transform: translateX(90%);
                     }
                     // end of desktop links
                     // link box shadow
@@ -185,7 +197,7 @@
                     
                     i {
                         color: #fff;
-                        margin-right: 1em;
+                        margin-right: 1.5em;
                         padding: .5em;
                     }
 
@@ -195,6 +207,16 @@
                     }
                     // end of active state
                 }
+
+                // link item hover state
+                &:hover {
+                    a {
+                        background: $overlay-blue-light;
+                        transform: translateX(0);
+
+                    }
+                }
+                // end of link item hover state
             }
         }
         // end of social media links
