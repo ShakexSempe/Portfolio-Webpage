@@ -157,6 +157,7 @@
                 overflow: hidden;
                 margin: .1em;
                 position: relative;
+                transition: .3s;
 
                 .link-icon {
                     color: #ddda;
@@ -235,6 +236,8 @@
 
                 // link item hover state
                 &:hover {
+                    background-color: $overlay-blue-darker;
+
                     a {
                         background: $overlay-blue-light;
                         transform: translateX(0);
