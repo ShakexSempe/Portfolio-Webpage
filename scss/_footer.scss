@@ -241,8 +241,7 @@
                     }
 
                     .link-icon {
-                        left: .3em;
-                        opacity: .3;
+                        opacity: 0;
                         &::before {
                             opacity: 0;
                         }

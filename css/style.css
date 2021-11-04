@@ -1125,8 +1125,7 @@ hamburger
           background: #485563;
           transform: translateX(0); }
         #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon {
-          left: .3em;
-          opacity: .3; }
+          opacity: 0; }
           #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon::before {
             opacity: 0; }
           #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon::after {
