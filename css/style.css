@@ -1067,7 +1067,15 @@ hamburger
         border: 1px solid rgba(0, 0, 0, 0.226);
         padding: .5em 0;
         overflow: hidden;
-        margin: .1em; }
+        margin: .1em;
+        position: relative; }
+        #footer .footer .socialMedia-links .socialMedia-item .link-icon {
+          color: #ddda;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: .2s ease; }
         #footer .footer .socialMedia-links .socialMedia-item a {
           background: #29323c;
           display: block;
@@ -1106,6 +1114,8 @@ hamburger
         #footer .footer .socialMedia-links .socialMedia-item:hover a {
           background: #485563;
           transform: translateX(0); }
+        #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon {
+          opacity: 0; }
     #footer .footer .brand {
       width: 80%;
       padding: .3em .5em;
