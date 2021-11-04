@@ -622,6 +622,12 @@ body {
         background: $background-light;
         border-radius: 5px;
         position: relative;
+        // desktop
+        @media (min-width: 768px) {
+            width: 100%;
+            margin: 0;
+        }
+        // end of desktop
         // col-right box-shadow
         &:after {
             position: absolute;
@@ -809,8 +815,8 @@ body {
     // end of col-right
     // col-left (about image)
     .col-left {
-        @media (min-width: 768px) {
-            width: 600px;
+        @media (min-width: 1024px) {
+            width: 100%;
             height: 500px;
         }
         // display: flex;
@@ -823,8 +829,10 @@ body {
         transform-style: preserve-3d;
         // about images
         .about-img {
-            @media (min-width:768px){
+            @media (min-width: 1024px){
                 margin-top: 0;
+                height: 100%;
+                width: 80%;
             }
             height: 100%;
             width: 90%;
