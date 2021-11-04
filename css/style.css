@@ -1054,7 +1054,8 @@ hamburger
     #footer .footer .socialMedia-links {
       grid-template-columns: 1fr;
       background-color: #29323c;
-      border: 1px solid white;
+      border: 1px solid #fff;
+      border-radius: 5px;
       width: 100%;
       margin: 2em 5vw;
       padding: .5em; }
@@ -1075,7 +1076,16 @@ hamburger
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
-          transition: .2s ease; }
+          transition: 1s ease; }
+          #footer .footer .socialMedia-links .socialMedia-item .link-icon::before, #footer .footer .socialMedia-links .socialMedia-item .link-icon::after {
+            position: absolute;
+            font-family: 'Font Awesome 5 Free';
+            transition: .5s ease; }
+          #footer .footer .socialMedia-links .socialMedia-item .link-icon::before {
+            content: '\f0a8'; }
+          #footer .footer .socialMedia-links .socialMedia-item .link-icon::after {
+            content: '\f0a9';
+            opacity: 0; }
         #footer .footer .socialMedia-links .socialMedia-item a {
           background: #29323c;
           display: block;
@@ -1087,7 +1097,7 @@ hamburger
           position: relative;
           transition: .2s ease;
           transform: translateX(95%);
-          transition: .5s ease; }
+          transition: 1s ease; }
           @media (min-width: 768px) {
             #footer .footer .socialMedia-links .socialMedia-item a {
               width: 85%;
@@ -1115,7 +1125,12 @@ hamburger
           background: #485563;
           transform: translateX(0); }
         #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon {
-          opacity: 0; }
+          left: .3em;
+          opacity: .3; }
+          #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon::before {
+            opacity: 0; }
+          #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon::after {
+            opacity: 1; }
     #footer .footer .brand {
       width: 80%;
       padding: .3em .5em;

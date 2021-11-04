@@ -145,7 +145,8 @@
             }
             grid-template-columns: 1fr;
             background-color: $overlay-blue-dark;
-            border: 1px solid white;
+            border: 1px solid #fff;
+            border-radius: 5px;
             width: 100%;
             margin: 2em 5vw;
             padding: .5em;
@@ -163,7 +164,21 @@
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
-                    transition: .2s ease;
+                    transition: 1s ease;
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        font-family: 'Font Awesome 5 Free';
+                        transition: .5s ease;
+                    }
+
+                    &::before {
+                        content: '\f0a8';
+                    }
+                    &::after {
+                        content: '\f0a9';
+                        opacity: 0;
+                    }
                 }
 
                 a {
@@ -178,7 +193,7 @@
                     transition: .2s ease;
                     // translate out of view leaving only icon
                     transform: translateX(95%);
-                    transition: .5s ease;
+                    transition: 1s ease;
                     // tablet links
                     @media (min-width: 768px) {
                         width: 85%;
@@ -226,7 +241,14 @@
                     }
 
                     .link-icon {
-                        opacity: 0;
+                        left: .3em;
+                        opacity: .3;
+                        &::before {
+                            opacity: 0;
+                        }
+                        &::after {
+                            opacity: 1;
+                        }
                     }
                 }
                 // end of link item hover state
