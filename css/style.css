@@ -960,6 +960,11 @@ hamburger
     flex-direction: column;
     justify-content: space-between;
     padding: 5vh 5vw; }
+    #footer .footer .footer-section-title {
+      color: #eee;
+      text-align: center;
+      margin-bottom: 1.5em;
+      font-size: 2em; }
     #footer .footer form {
       background-color: #29323c;
       width: 100%;
@@ -974,10 +979,6 @@ hamburger
       @media (min-width: 1024px) {
         #footer .footer form {
           width: 50%; } }
-      #footer .footer form h1 {
-        color: #eee;
-        text-align: center;
-        margin-bottom: 1em; }
       #footer .footer form .input-div {
         position: relative;
         padding: 1em 0 .5em;
@@ -1062,14 +1063,18 @@ hamburger
       padding: .5em; }
       @media (min-width: 1024px) {
         #footer .footer .socialMedia-links {
-          width: 50%;
+          width: 50%; } }
+      @media (min-width: 1024px) {
+        #footer .footer .socialMedia-links .links-grid {
+          width: 100%;
           display: grid;
           grid-template-columns: 1fr 1fr; } }
       #footer .footer .socialMedia-links .socialMedia-item {
-        border: 1px solid rgba(0, 0, 0, 0.25);
+        border: 2px solid rgba(0, 0, 0, 0.5);
         padding: .5em 0;
+        border-radius: 5px;
         overflow: hidden;
-        margin: .1em;
+        margin: .5em .1em;
         position: relative;
         transition: .3s; }
         #footer .footer .socialMedia-links .socialMedia-item .link-icon {

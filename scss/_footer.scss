@@ -9,7 +9,14 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 5vh 5vw;
-
+        // section title
+        .footer-section-title {
+                color: #eee;
+                text-align: center;
+                margin-bottom: 1.5em;
+                font-size: 2em;
+        }
+        // section title
         // form
         form {
             @media (min-width: 1024px) {
@@ -26,11 +33,7 @@
             border: 1px solid #fffa;
             font-family: $font-ubuntu;
 
-            h1 {
-                color: #eee;
-                text-align: center;
-                margin-bottom: 1em;
-            }
+            
             .input-div {
                 position: relative;
                 // border: 1px solid yellow;
@@ -141,8 +144,6 @@
         .socialMedia-links {
             @media (min-width: 1024px) {
                 width: 50%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
             }
             grid-template-columns: 1fr;
             background-color: $overlay-blue-dark;
@@ -151,12 +152,21 @@
             width: 100%;
             margin: 2em 5vw;
             padding: .5em;
-
+            .links-grid{
+                // display: none;
+                // border: 1px solid yellow;
+                @media (min-width: 1024px) {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
             .socialMedia-item {
-                border: 1px solid hsla(0, 0%, 0%, 0.25);
+                border: 2px solid hsla(0, 0%, 0%, 0.5);
                 padding: .5em 0;
+                border-radius: 5px;
                 overflow: hidden;
-                margin: .1em;
+                margin: .5em .1em;
                 position: relative;
                 transition: .3s;
 
