@@ -187,10 +187,12 @@
                 a {
                     background: $overlay-blue-dark;
                     display: block;
+                    text-align: center;
                     padding: .3em .5em .3em;
                     width: 75%;
                     margin: 0 auto;
                     color: #fff;
+                    opacity: 0;
                     border-radius: 5px;
                     position: relative;
                     transition: .2s ease;
@@ -225,7 +227,7 @@
                     
                     i {
                         color: #fffa;
-                        margin-right: 1.5em;
+                        // margin-right: 1.5em;
                         padding: .5em;
                         transition: .5s;
                     }
@@ -244,6 +246,7 @@
                     a {
                         background: $overlay-blue-light;
                         transform: translateX(0);
+                        opacity: 1;
 
                         i {
                             color: #fff;
@@ -261,6 +264,25 @@
                     }
                 }
                 // end of link item hover state
+                // link colors
+                &.linkedin {
+                    a {
+                        background: blue;
+                    }
+                    p {
+                        color: #fff;
+                    }
+                }
+                &.github {
+                    i {
+                        color: yellow;
+                        margin-right: .5em;
+                    }
+                    p {
+                        color: yellow;
+                    }
+                }
+                // end of link colors
             }
         }
         // end of social media links
