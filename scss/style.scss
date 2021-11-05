@@ -817,7 +817,7 @@ body {
     .col-left {
         @media (min-width: 1024px) {
             width: 100%;
-            height: 500px;
+            height: 550px;
         }
         // display: flex;
         // justify-content: center;
@@ -916,20 +916,14 @@ body {
 // end of about 
 
 // thank you page
-.thanks-brand {
-    h2 {
-        padding: .2em;
-        font-size: 1em !important;
-        text-align: center;
-    }
-}
+
 #thanks {
     padding: .5em 1em;
     font-size: 1.5em;
     background-color: $overlay-blue-light;
     border-radius: 5px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10vh auto 0;
     box-shadow: inset 3px 3px 5px #ddda,
         inset -3px -3px 5px #000a;
 

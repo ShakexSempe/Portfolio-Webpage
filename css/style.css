@@ -1998,7 +1998,7 @@ body {
     @media (min-width: 1024px) {
       .about .col-left {
         width: 100%;
-        height: 500px; } }
+        height: 550px; } }
     .about .col-left .about-img {
       height: 100%;
       width: 90%;
@@ -2064,18 +2064,13 @@ body {
       .about .col-left .about-img:hover::after {
         opacity: 1; }
 
-.thanks-brand h2 {
-  padding: .2em;
-  font-size: 1em !important;
-  text-align: center; }
-
 #thanks {
   padding: .5em 1em;
   font-size: 1.5em;
   background-color: #485563;
   border-radius: 5px;
   text-align: center;
-  margin: 0 auto;
+  margin: 10vh auto 0;
   box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a; }
   #thanks h3 {
     color: #eee;
