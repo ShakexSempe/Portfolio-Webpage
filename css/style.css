@@ -1066,14 +1066,16 @@ hamburger
           display: grid;
           grid-template-columns: 1fr 1fr; } }
       #footer .footer .socialMedia-links .socialMedia-item {
-        border: 1px solid rgba(0, 0, 0, 0.226);
+        border: 1px solid rgba(0, 0, 0, 0.25);
         padding: .5em 0;
         overflow: hidden;
         margin: .1em;
         position: relative;
         transition: .3s; }
         #footer .footer .socialMedia-links .socialMedia-item .link-icon {
-          font-size: 1.5em;
+          font-size: 1.3em;
+          text-transform: capitalize;
+          font-family: "Gruppo", cursive;
           color: #fff;
           position: absolute;
           left: 50%;
@@ -1088,20 +1090,19 @@ hamburger
           width: 75%;
           margin: 0 auto;
           color: #fff;
-          opacity: 0;
+          text-transform: capitalize;
+          opacity: 1;
           border-radius: 5px;
           position: relative;
           transition: .2s ease;
-          transform: translateX(95%);
+          transform: translateX(150%);
           transition: 1s ease; }
           @media (min-width: 768px) {
             #footer .footer .socialMedia-links .socialMedia-item a {
-              width: 85%;
-              transform: translateX(100%); } }
+              width: 85%; } }
           @media (min-width: 1024px) {
             #footer .footer .socialMedia-links .socialMedia-item a {
-              width: 85%;
-              transform: translateX(90%); } }
+              width: 85%; } }
           #footer .footer .socialMedia-links .socialMedia-item a::after {
             position: absolute;
             content: '';
@@ -1128,14 +1129,20 @@ hamburger
           #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon {
             opacity: 0; }
         #footer .footer .socialMedia-links .socialMedia-item.linkedin a {
-          background: blue; }
+          background: #0077b5; }
         #footer .footer .socialMedia-links .socialMedia-item.linkedin p {
           color: #fff; }
-        #footer .footer .socialMedia-links .socialMedia-item.github i {
-          color: yellow;
-          margin-right: .5em; }
-        #footer .footer .socialMedia-links .socialMedia-item.github p {
-          color: yellow; }
+        #footer .footer .socialMedia-links .socialMedia-item.twitter a {
+          background: #1ca0f2; }
+        #footer .footer .socialMedia-links .socialMedia-item.twitter p {
+          color: #fff; }
+        #footer .footer .socialMedia-links .socialMedia-item.github a {
+          background-color: #333;
+          color: #f4f4f4; }
+        #footer .footer .socialMedia-links .socialMedia-item.fcc a {
+          background: #0a0a23; }
+        #footer .footer .socialMedia-links .socialMedia-item.fcc p {
+          color: #fff; }
     #footer .footer .brand {
       width: 80%;
       padding: .3em .5em;

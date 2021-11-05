@@ -153,7 +153,7 @@
             padding: .5em;
 
             .socialMedia-item {
-                border: 1px solid rgba(0, 0, 0, 0.226);
+                border: 1px solid hsla(0, 0%, 0%, 0.25);
                 padding: .5em 0;
                 overflow: hidden;
                 margin: .1em;
@@ -161,27 +161,15 @@
                 transition: .3s;
 
                 .link-icon {
-                    font-size: 1.5em;
+                    font-size: 1.3em;
+                    text-transform: capitalize;
+                    font-family: $font-gruppo;
                     color: #fff;
                     position:absolute;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
                     transition: 1s ease;
-                    // &::before,
-                    // &::after {
-                    //     position: absolute;
-                    //     font-family: 'Font Awesome 5 Free';
-                    //     transition: .5s ease;
-                    // }
-
-                    // &::before {
-                    //     content: '\f0a8';
-                    // }
-                    // &::after {
-                    //     content: '\f0a9';
-                    //     opacity: 0;
-                    // }
                 }
 
                 a {
@@ -192,23 +180,22 @@
                     width: 75%;
                     margin: 0 auto;
                     color: #fff;
-                    opacity: 0;
+                    text-transform: capitalize;
+                    opacity: 1;
                     border-radius: 5px;
                     position: relative;
                     transition: .2s ease;
                     // translate out of view leaving only icon
-                    transform: translateX(95%);
+                    transform: translateX(150%);
                     transition: 1s ease;
                     // tablet links
                     @media (min-width: 768px) {
                         width: 85%;
-                        transform: translateX(100%);
                     }
                     // end of tablet links
                     // desktop links
                     @media (min-width: 1024px) {
                         width: 85%;
-                        transform: translateX(90%);
                     }
                     // end of desktop links
                     // link box shadow
@@ -242,6 +229,7 @@
                 // link item hover state
                 &:hover {
                     background-color: $overlay-blue-darker;
+                    // border-color: hsla(100%, 100%, 100%, 0.250);
 
                     a {
                         background: $overlay-blue-light;
@@ -255,31 +243,38 @@
 
                     .link-icon {
                         opacity: 0;
-                        // &::before {
-                        //     opacity: 0;
-                        // }
-                        // &::after {
-                        //     opacity: 1;
-                        // }
                     }
                 }
                 // end of link item hover state
                 // link colors
                 &.linkedin {
                     a {
-                        background: blue;
+                        background: #0077b5;
+                    }
+                    p {
+                        color: #fff;
+                    }
+                }
+                &.twitter {
+                    a {
+                        background: hsl(203, 89%, 53%);
                     }
                     p {
                         color: #fff;
                     }
                 }
                 &.github {
-                    i {
-                        color: yellow;
-                        margin-right: .5em;
+                    a {
+                        background-color: #333;
+                        color: #f4f4f4;
+                    }
+                }
+                &.fcc {
+                    a {
+                        background: #0a0a23;
                     }
                     p {
-                        color: yellow;
+                        color: #fff;
                     }
                 }
                 // end of link colors
