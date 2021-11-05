@@ -13,6 +13,7 @@
         .footer-section-title {
                 color: #eee;
                 text-align: center;
+                text-transform: capitalize;
                 margin-bottom: 1.5em;
                 font-size: 2em;
         }
@@ -46,8 +47,10 @@
                     top: 0%;
                     transform: translateY(-.5em);
                     color: #fff;
+                    font-weight: 700;
                     text-transform: uppercase;
                     transition: .3s;
+                    font-family: $font-gruppo;
                 }
 
                 input {
@@ -151,7 +154,7 @@
             border-radius: 5px;
             width: 100%;
             margin: 2em 5vw;
-            padding: .5em;
+            padding: 5vh 1em;
             .links-grid{
                 // display: none;
                 // border: 1px solid yellow;
@@ -588,11 +591,6 @@
                 color: #f4f4f4;
                 font-size: 1em;
                 text-transform: capitalize;
-                font-size: .8em;
-
-                @media (min-width:768px) {
-                    font-size: 1em;
-                }
             }
         }
         // end of bs21

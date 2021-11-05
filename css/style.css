@@ -963,6 +963,7 @@ hamburger
     #footer .footer .footer-section-title {
       color: #eee;
       text-align: center;
+      text-transform: capitalize;
       margin-bottom: 1.5em;
       font-size: 2em; }
     #footer .footer form {
@@ -988,8 +989,10 @@ hamburger
           top: 0%;
           transform: translateY(-0.5em);
           color: #fff;
+          font-weight: 700;
           text-transform: uppercase;
-          transition: .3s; }
+          transition: .3s;
+          font-family: "Gruppo", cursive; }
         #footer .footer form .input-div input {
           padding: .7em;
           width: 100%;
@@ -1060,7 +1063,7 @@ hamburger
       border-radius: 5px;
       width: 100%;
       margin: 2em 5vw;
-      padding: .5em; }
+      padding: 5vh 1em; }
       @media (min-width: 1024px) {
         #footer .footer .socialMedia-links {
           width: 50%; } }
@@ -1362,12 +1365,7 @@ hamburger
         font-family: "Gruppo", cursive;
         color: #f4f4f4;
         font-size: 1em;
-        text-transform: capitalize;
-        font-size: .8em; }
-        @media (min-width: 768px) {
-          #footer .footer #bs21 p,
-          #footer .footer #bs21 span {
-            font-size: 1em; } }
+        text-transform: capitalize; }
 
 /* cube */
 #footer .scene {
