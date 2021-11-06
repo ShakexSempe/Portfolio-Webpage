@@ -1798,12 +1798,22 @@ body {
   100% {
     transform: translateY(0); } }
 
+#pad {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/pexels-magda-ehlers-2660262.jpg);
+  background-color: #29323c;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  background-attachment: fixed; }
+
 .about {
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
   padding: 50px 10px 100px 10px;
-  background-color: #485563; }
+  background-color: #29323c; }
   @media (min-width: 768px) {
     .about {
       flex-direction: row;
