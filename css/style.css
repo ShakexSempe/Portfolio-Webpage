@@ -1809,7 +1809,7 @@ body {
   background-attachment: fixed; }
   @media (max-width: 768px) {
     #pad {
-      background-size: 100%; } }
+      background-size: cover; } }
 
 .about {
   flex-direction: column-reverse;
