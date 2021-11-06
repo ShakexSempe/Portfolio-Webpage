@@ -1828,27 +1828,12 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 50px 10px 100px 10px;
-  background-image: url("../img/pexels-magda-ehlers-2660262.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative; }
+  background-color: #485563; }
   @media (min-width: 768px) {
     .about {
       flex-direction: row;
       align-items: center;
       padding: 5vh 5vw; } }
-  .about::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 0.6;
-    overflow: hidden; }
   .about .col-right {
     width: 93%;
     margin-right: 30px;
