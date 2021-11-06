@@ -578,6 +578,9 @@ body {
     background-size: contain;
     background-position: center bottom;
     background-attachment: fixed;
+    @media (max-width: 768px) {
+        background-size: 100%;
+    }
 }
 // about 
 .about {
