@@ -1096,7 +1096,8 @@ hamburger
           #footer .footer .socialMedia-links .socialMedia-item a:active {
             transform: scale(0.97); }
         #footer .footer .socialMedia-links .socialMedia-item:hover {
-          background-color: #20262e; }
+          background-color: #20262e;
+          border-color: rgba(255, 255, 255, 0.25); }
           #footer .footer .socialMedia-links .socialMedia-item:hover a {
             background: #485563;
             transform: translateX(0);
