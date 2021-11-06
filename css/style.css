@@ -1055,6 +1055,8 @@ hamburger
           position: absolute;
           left: 50%;
           top: 50%;
+          text-align: center;
+          width: 100%;
           transform: translate(-50%, -50%);
           transition: 1s ease; }
         #footer .footer .socialMedia-links .socialMedia-item a {
@@ -1062,7 +1064,7 @@ hamburger
           display: block;
           text-align: center;
           padding: .3em .5em .3em;
-          width: 75%;
+          width: 80%;
           margin: 0 auto;
           color: #fff;
           text-transform: capitalize;
@@ -1118,6 +1120,11 @@ hamburger
           background: #0a0a23; }
         #footer .footer .socialMedia-links .socialMedia-item.fcc p {
           color: #fff; }
+        #footer .footer .socialMedia-links .socialMedia-item.fem a {
+          background: #ddd;
+          color: #111; }
+          #footer .footer .socialMedia-links .socialMedia-item.fem a i {
+            color: #000; }
     #footer .footer .brand {
       width: 80%;
       padding: .3em .5em;

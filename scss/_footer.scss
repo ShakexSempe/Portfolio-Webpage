@@ -181,6 +181,8 @@
                     position:absolute;
                     left: 50%;
                     top: 50%;
+                    text-align: center;
+                    width: 100%;
                     transform: translate(-50%, -50%);
                     transition: 1s ease;
                 }
@@ -190,7 +192,7 @@
                     display: block;
                     text-align: center;
                     padding: .3em .5em .3em;
-                    width: 75%;
+                    width: 80%;
                     margin: 0 auto;
                     color: #fff;
                     text-transform: capitalize;
@@ -289,6 +291,16 @@
                     p {
                         color: #fff;
                     }
+                }
+                &.fem {
+                    a {
+                        background: #ddd;
+                        color: #111;
+                        i {
+                            color: #000;
+                        }
+                    }
+                    
                 }
                 // end of link colors
             }
