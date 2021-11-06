@@ -111,9 +111,7 @@
                         padding-bottom: 10px;
                         text-transform: capitalize;
                         border-bottom: 1px dashed $text-white-trans;
-                        // background: linear-gradient(0deg, #b9b6b6, #fff);
-                        // -webkit-background-clip: text;
-                        // -webkit-text-fill-color: transparent;
+                        
                     }
                     // end of project Title (h1)
                     // project details (h2 and p)
@@ -247,37 +245,6 @@
 
 
                     }
-                    .project-img-desc {
-                        z-index: 2;
-                        position: absolute;
-                        display: grid;
-                        place-items: center;
-                        height: 100%;
-                        width: 100%;
-                        top: 0;
-                        left: 0;
-                        color:$text-light;
-                        border: none;
-                        outline: none;
-                        overflow: hidden;
-                        font-size: 1.4em;
-                        opacity: .1;
-                        background-color:$overlay-blue-dark;
-                        transition: .5s ease;
-                        ul {
-                            list-style: none;
-
-                            li {
-                                padding: .5em 0;
-                                text-transform: capitalize;
-                                transform: translateX(-2em);
-                                opacity: 0;
-                            }
-                        }
-                        @media (max-width: 768px) {
-                            font-size: 1em;
-                        }
-                    }
                     // end of image
                     &:hover {
                         &::after {
@@ -331,23 +298,12 @@
                         .project-img {
                             img {
                                 transform: scale(1.1);
-                                transform-origin: left;
                             }
 
                             &::after {
-                                opacity: 0;
+                                opacity: .7;
                             }
-                            .project-img-desc {
-                                opacity: .9;
-
-                                ul {
-                                    li {
-                                        transition: .3s;
-                                        opacity: 1;
-                                        transform: translateX(0);
-                                    }
-                                }
-                            }
+                            
                         }
 
                         .project-tile {
