@@ -779,10 +779,11 @@ hamburger
           width: 100%;
           color: #ddd;
           font-weight: 900;
+          text-transform: capitalize;
           line-height: 1em;
           letter-spacing: .05em;
-          padding-bottom: 10px;
-          text-transform: capitalize;
+          margin-bottom: .5em;
+          padding-bottom: .5em;
           border-bottom: 1px dashed #fffa; }
           @media (min-width: 1024px) {
             #projects .projects .all-projects .project-item .project-tile h1 {
@@ -791,7 +792,7 @@ hamburger
           font-size: .9em;
           line-height: 1.3;
           font-weight: 500;
-          margin: .5em 0;
+          margin: .8em 0;
           text-transform: capitalize;
           color: #eee;
           transition: .3s; }
@@ -809,7 +810,7 @@ hamburger
         #projects .projects .all-projects .project-item .project-tile a {
           color: #fff;
           background: #333;
-          margin: .4em 0;
+          margin: .5em 0;
           padding: .5em;
           border: none;
           outline: none;
@@ -897,7 +898,7 @@ hamburger
           display: flex;
           flex-wrap: wrap; }
           #projects .projects .all-projects .project-item .tech-list ul li {
-            font-size: .7em;
+            font-size: .95em;
             color: #fffa;
             list-style: none;
             padding: .4em .3em;
@@ -1810,8 +1811,7 @@ body {
     position: relative; }
     .about .col-right .section-title {
       text-align: center;
-      font-size: 2.35em;
-      padding-bottom: 10px; }
+      font-size: 2.35em; }
       .about .col-right .section-title::after {
         width: 80%;
         margin: 0 auto; }
@@ -1880,9 +1880,8 @@ body {
       opacity: 1; }
     .about .col-right article.custom-scrollbar-js {
       height: 200px;
-      margin-bottom: .5em;
       cursor: pointer;
-      padding: .5em; }
+      margin-bottom: .5em; }
     .about .col-right article#cv {
       display: flex;
       justify-content: space-between;
@@ -1929,7 +1928,7 @@ body {
       margin-bottom: 20px;
       text-overflow: ellipsis;
       text-align: left;
-      padding-left: 4px;
+      padding-left: 1em;
       z-index: 13;
       font-size: .8em; }
       @media (min-width: 768px) {
