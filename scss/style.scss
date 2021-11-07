@@ -569,17 +569,25 @@ body {
 // end of hero section
 
 // pad sectiion 
-#pad {
+.paralax {
     height: 100vh;
     width: 100vw;
-    background-image: url(../img/pexels-magda-ehlers-2660262.jpg);
     background-color: $overlay-blue-dark;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
     background-attachment: fixed;
-    @media (max-width: 768px) {
-        background-size: cover;
+
+    &.px1 {
+        background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg);
+    }
+    &.px2 {
+        background-image: url(../img/pexels-magda-ehlers-2660262.jpg);
+    }
+
+    @media (max-width: 500px) {
+        background-size: contain;
+        background-position: center;
     }
 }
 // about 
