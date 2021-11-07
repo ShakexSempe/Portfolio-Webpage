@@ -1808,11 +1808,14 @@ body {
   background-attachment: fixed; }
   .paralax.px1 {
     background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg); }
+    @media (min-width: 768px) {
+      .paralax.px1 {
+        display: none; } }
   .paralax.px2 {
     background-image: url(../img/pexels-magda-ehlers-2660262.jpg); }
   @media (max-width: 500px) {
     .paralax {
-      background-size: contain;
+      background-size: cover;
       background-position: center; } }
 
 .about {
