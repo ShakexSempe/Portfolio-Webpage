@@ -91,14 +91,8 @@
                 // end of item box shadows
                 // item headings (h1)
                 h1 {
-                    background-image: linear-gradient(50deg, skyblue, #dc1489, skyblue, #dc1489, skyblue);
-                    background-size: 300%;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-position: left;
-                    animation: contact-h1 5s ease infinite alternate;
-                    padding: .1em 1em;
+                    color: #fff;
+                    padding: .2em 1em;
                     margin: .2em auto;
                     font-size: 1.5em;
                     font-weight: 600;
@@ -107,13 +101,7 @@
                         font-size: 1.7em;
                         margin: .5em auto;
                     }
-                    // h1 animation
-                    @keyframes contact-h1 {
-                        100% {
-                            background-position: right;
-                        }
-                    }
-                    // end of h1 animation
+                    
                     // heading box shadows
                     &::before,
                     &:after {
@@ -123,21 +111,12 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        background: #f4f4f4;
+                        background-color: $overlay-blue-dark;
                         z-index: -1;
                         border-radius: 10px;
                         transition: .5s ease;
-                    }
-                    &::before {
                         box-shadow: $box-light-top-md;
                     }
-                    // &::after {
-                    //     opacity: 0;
-                    //     background: #f4f4f4;
-                    //     z-index: -1;
-                    //     box-shadow: $box-light-top-md;
-                    //     transition: .5s ease;
-                    // }
                     // end of heading box shadows
                 }
                 // end of item headings (h1)
