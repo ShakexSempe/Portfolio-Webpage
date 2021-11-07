@@ -582,6 +582,7 @@ body {
         @media(min-width: 768px){
             display: none;
         }
+        height: 70vh;
         background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg);
     }
     &.px2 {
@@ -589,7 +590,7 @@ body {
     }
 
     @media (max-width: 500px) {
-        background-size: cover;
+        background-size: 100%;
         background-position: center;
     }
 }
