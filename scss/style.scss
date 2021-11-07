@@ -584,14 +584,16 @@ body {
         }
         height: 70vh;
         background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg);
+        // background-position: center;
     }
     &.px2 {
+        height: 80vh;
         background-image: url(../img/pexels-magda-ehlers-2660262.jpg);
     }
 
     @media (max-width: 500px) {
         background-size: 100%;
-        background-position: center;
+        background-position: center bottom;
     }
 }
 // about 
