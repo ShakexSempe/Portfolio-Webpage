@@ -1890,12 +1890,19 @@ body {
     .about .col-right:hover h2::after {
       opacity: 1; }
     .about .col-right button {
-      color: red;
+      background-color: #29323c;
+      color: #ddd;
       margin: 1em auto;
-      padding: .5em 1em; }
+      padding: .5em 1em;
+      cursor: pointer;
+      border-radius: 15px;
+      text-transform: uppercase;
+      transition: .3s; }
+      .about .col-right button:hover {
+        transform: scale(0.97); }
     .about .col-right article.about-article {
       padding: .5em 1em;
-      height: auto;
+      height: 10vh;
       overflow: auto;
       transition: .3s ease; }
       @media (max-width: 768px) {

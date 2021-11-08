@@ -728,16 +728,25 @@ body {
         
         // read more button
         button {
-            color: red;
+            background-color: $overlay-blue-dark;
+            color: #ddd;
             margin: 1em auto;
             padding: .5em 1em;
+            cursor: pointer;
+            border-radius: 15px;
+            text-transform: uppercase;
+            transition: .3s;
+
+            &:hover {
+                transform: scale(.97);
+            }
         }
         // end of read more button
         // article
         article {
             &.about-article {
                 padding: .5em 1em;
-                height: auto;
+                height: 10vh;
                 overflow: auto;
                 transition: .3s ease;
                 @media (max-width: 768px) {
