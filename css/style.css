@@ -1816,7 +1816,7 @@ body {
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
-  padding: 50px 10px 100px 10px;
+  padding: 10vh 5vw;
   background-color: #29323c; }
   @media (min-width: 768px) {
     .about {
@@ -1824,8 +1824,7 @@ body {
       align-items: center;
       padding: 5vh 5vw; } }
   .about .col-right {
-    width: 93%;
-    margin-right: 30px;
+    width: 100%;
     height: auto;
     z-index: 20;
     background: #fff;
@@ -1900,10 +1899,30 @@ body {
       opacity: 0; }
     .about .col-right:hover h2::after {
       opacity: 1; }
-    .about .col-right article.custom-scrollbar-js {
-      height: 200px;
-      cursor: pointer;
-      margin-bottom: .5em; }
+    .about .col-right article.about-article {
+      padding: .5em; }
+      .about .col-right article.about-article p {
+        margin-bottom: 1em;
+        text-overflow: ellipsis;
+        text-align: left;
+        z-index: 1;
+        font-size: .85em;
+        font-weight: 500; }
+        .about .col-right article.about-article p#b::first-letter {
+          font-size: 2.5em;
+          float: left;
+          background: #29323c;
+          color: #fff;
+          padding: 0 .1em;
+          margin-right: .1em;
+          box-shadow: -3px 3px 0 #485563; }
+        @media (min-width: 768px) {
+          .about .col-right article.about-article p {
+            font-size: 1em; } }
+        .about .col-right article.about-article p .fcc-link {
+          color: #dc143c; }
+          .about .col-right article.about-article p .fcc-link:hover {
+            color: violet; }
     .about .col-right article#cv {
       display: flex;
       justify-content: space-between;
@@ -1946,20 +1965,6 @@ body {
           transition: .3s ease;
           transform: scale(1.1);
           opacity: .8; }
-    .about .col-right article p {
-      margin-bottom: 20px;
-      text-overflow: ellipsis;
-      text-align: left;
-      padding-left: 1em;
-      z-index: 13;
-      font-size: .8em; }
-      @media (min-width: 768px) {
-        .about .col-right article p {
-          font-size: 1em; } }
-      .about .col-right article p .fcc-link {
-        color: #dc143c; }
-        .about .col-right article p .fcc-link:hover {
-          color: violet; }
     .about .col-right:hover #cv-download {
       transition: 1s ease;
       transform: translateY(100%);

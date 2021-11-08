@@ -613,7 +613,8 @@ body {
     // end of big screen layout
     text-align: center;
     margin: 0 auto;
-    padding: 50px 10px 100px 10px;
+    // padding: 50px 10px 100px 10px;
+    padding: 10vh 5vw;
     background-color: $overlay-blue-dark;
     
     // end of about container
@@ -630,8 +631,7 @@ body {
             }
         }
         // end of section title
-        width: 93%;
-        margin-right: 30px;
+        width: 100%;
         height: auto;
         z-index: 20;
         background: $background-light;
@@ -729,12 +729,39 @@ body {
         
         // article
         article {
-            // border: 1px solid red;
-            &.custom-scrollbar-js {
-                height: 200px;
-                cursor: pointer;
-                margin-bottom: .5em;
-                // padding: 0 .5em;
+            &.about-article {
+                padding: .5em;
+                // about me paragraph
+            p {
+                margin-bottom: 1em;
+                text-overflow: ellipsis;
+                text-align: left;
+                z-index: 1;
+                font-size: .85em;
+                font-weight: 500;
+
+                &#b::first-letter {
+                    font-size: 2.5em;
+                    float: left;
+                    background: $overlay-blue-dark;
+                    color: #fff;
+                    padding: 0 .1em;
+                    margin-right: .1em;
+                    box-shadow: -3px 3px 0 $overlay-blue-light;
+                }
+                
+                @media (min-width:768px){
+                    font-size: 1em;
+                }
+                .fcc-link {
+                    color: $span-crimson;
+                    &:hover {
+                        color: $span-violet;
+                    }
+                }
+            }
+            
+        // end of about me paragraph
             }
             // links
             &#cv {
@@ -796,27 +823,7 @@ body {
 
             // end of links
 
-        // about me paragraph
-            p {
-                margin-bottom: 20px;
-                text-overflow: ellipsis;
-                text-align: left;
-                padding-left: 1em;
-                z-index: 13;
-                font-size: .8em;
-                
-                @media (min-width:768px){
-                    font-size: 1em;
-                }
-                .fcc-link {
-                    color: $span-crimson;
-                    &:hover {
-                        color: $span-violet;
-                    }
-                }
-            }
-            
-        // end of about me paragraph
+        
         }
         // article
         // cv download button on h2 hover 
