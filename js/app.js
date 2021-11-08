@@ -10,7 +10,10 @@ const mobile_menu = document.querySelector('.header #navbar .nav-list .links-con
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
 const header = document.querySelector('.header.container');
 const avi = document.querySelector('.header #navbar .nav-list .nav-avi img');
-
+// about section
+const readBtn = document.getElementById('readBtn');
+let article = document.querySelector('.about-article');
+  article.classList.remove('active');
 // date
 const date = document.getElementById('date');
 
@@ -128,13 +131,12 @@ dropdown = () => {
 // }
 // end of skills dropdown
 
-/*  bootstrap scrollbar*/
-$(function () {
-  $("#content-1").mCustomScrollbar({
-    theme: "dark-thin"
-  });
+// read more
+readBtn.addEventListener("click", ()=> {
+  article.classList.toggle('active');
+  // let body = document.querySelector('.about-body');
 });
-/*  end of bootstrap scrollbar*/
+
 // ********** END OF FUNCTIONS ************
 
 /*  set footer date*/

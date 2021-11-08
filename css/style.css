@@ -1840,16 +1840,6 @@ body {
       .about .col-right {
         width: 100%;
         margin: 0; } }
-    .about .col-right:after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      z-index: -10;
-      box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     .about .col-right .about-title {
       display: flex;
       flex-direction: column;
@@ -1899,8 +1889,19 @@ body {
       opacity: 0; }
     .about .col-right:hover h2::after {
       opacity: 1; }
+    .about .col-right button {
+      color: red;
+      margin: 1em auto;
+      padding: .5em 1em; }
     .about .col-right article.about-article {
-      padding: .5em; }
+      padding: .5em 1em;
+      height: auto;
+      overflow: auto;
+      transition: .3s ease; }
+      @media (max-width: 768px) {
+        .about .col-right article.about-article {
+          height: 25vh;
+          transition: .3s ease; } }
       .about .col-right article.about-article p {
         margin-bottom: 1em;
         text-overflow: ellipsis;
@@ -1908,7 +1909,7 @@ body {
         z-index: 1;
         font-size: .85em;
         font-weight: 500; }
-        .about .col-right article.about-article p#b::first-letter {
+        .about .col-right article.about-article p#intro::first-letter {
           font-size: 2.5em;
           float: left;
           background: #29323c;
@@ -1916,6 +1917,16 @@ body {
           padding: 0 .1em;
           margin-right: .1em;
           box-shadow: -3px 3px 0 #485563; }
+        .about .col-right article.about-article p#intro span {
+          color: green;
+          cursor: pointer;
+          transition: .2s; }
+          .about .col-right article.about-article p#intro span:hover {
+            color: pink; }
+        .about .col-right article.about-article p.about-body {
+          transition: opacity 4s ease;
+          opacity: 0;
+          display: none; }
         @media (min-width: 768px) {
           .about .col-right article.about-article p {
             font-size: 1em; } }
@@ -1923,6 +1934,17 @@ body {
           color: #dc143c; }
           .about .col-right article.about-article p .fcc-link:hover {
             color: violet; }
+      .about .col-right article.about-article.active {
+        height: 70vh;
+        transition: .5s ease;
+        overflow-y: auto; }
+        @media (min-width: 768px) {
+          .about .col-right article.about-article.active {
+            height: 50vh; } }
+        .about .col-right article.about-article.active .about-body {
+          transition: opacity 4s ease;
+          display: block;
+          opacity: 1; }
     .about .col-right article#cv {
       display: flex;
       justify-content: space-between;

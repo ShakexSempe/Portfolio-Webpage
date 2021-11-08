@@ -624,7 +624,6 @@ body {
         .section-title {
             text-align: center;
             font-size: 2.35em;
-            // padding-bottom: 10px;
             &::after {
                 width: 80%;
                 margin: 0 auto;
@@ -644,17 +643,17 @@ body {
         }
         // end of desktop
         // col-right box-shadow
-        &:after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            z-index: -10;
-            box-shadow: $box-light-top-bg;
-        }
+        // &:after {
+        //     position: absolute;
+        //     content: '';
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     border-radius: 5px;
+        //     z-index: -10;
+        //     box-shadow: $box-light-top-bg;
+        // }
         // end of col-right box-shadow
         .about-title {
             display: flex;
@@ -727,10 +726,24 @@ body {
         }
         // end of about title hover state
         
+        // read more button
+        button {
+            color: red;
+            margin: 1em auto;
+            padding: .5em 1em;
+        }
+        // end of read more button
         // article
         article {
             &.about-article {
-                padding: .5em;
+                padding: .5em 1em;
+                height: auto;
+                overflow: auto;
+                transition: .3s ease;
+                @media (max-width: 768px) {
+                    height: 25vh;
+                    transition: .3s ease;                   
+                }
                 // about me paragraph
             p {
                 margin-bottom: 1em;
@@ -740,7 +753,7 @@ body {
                 font-size: .85em;
                 font-weight: 500;
 
-                &#b::first-letter {
+                &#intro::first-letter {
                     font-size: 2.5em;
                     float: left;
                     background: $overlay-blue-dark;
@@ -749,7 +762,21 @@ body {
                     margin-right: .1em;
                     box-shadow: -3px 3px 0 $overlay-blue-light;
                 }
-                
+                &#intro {
+                    span {
+                        color: green;
+                        cursor: pointer;
+                        transition: .2s;
+                        &:hover {
+                            color: pink;
+                        }
+                    }
+                }
+                &.about-body {
+                    transition: opacity 4s ease;
+                    opacity:0 ;
+                    display: none;
+                }
                 @media (min-width:768px){
                     font-size: 1em;
                 }
@@ -761,7 +788,26 @@ body {
                 }
             }
             
+            &.active {
+                height: 70vh;
+                transition: .5s ease;
+                @media (min-width: 768px){
+                    height: 50vh;
+                }
+                overflow-y: auto;
+                .about-body {
+                    transition: opacity 4s ease;
+                    display: block;
+                    opacity: 1;
+                }
+            }
+
+            
         // end of about me paragraph
+        // small screens
+        // @media (max-width: 768px) {
+        //     height: 25vh;
+        // }
             }
             // links
             &#cv {
@@ -822,8 +868,7 @@ body {
             }
 
             // end of links
-
-        
+       
         }
         // article
         // cv download button on h2 hover 
@@ -835,6 +880,7 @@ body {
             }
         }
         // end of cv download button on h2 hover 
+
     }
     // end of col-right
     // col-left (about image)
