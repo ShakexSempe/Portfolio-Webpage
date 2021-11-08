@@ -588,7 +588,11 @@ body {
     }
     &.px2 {
         height: 80vh;
-        background-image: url(../img/pexels-magda-ehlers-2660262.jpg);
+        background-image: url(../img/me.jpg);
+    }
+    &.px3 {
+        height: 80vh;
+        background-image: url(../img/shakexblue.jpg);
     }
 
     @media (max-width: 500px) {
@@ -828,6 +832,7 @@ body {
     // end of col-right
     // col-left (about image)
     .col-left {
+        display: none;
         @media (min-width: 1024px) {
             width: 100%;
             height: 550px;
