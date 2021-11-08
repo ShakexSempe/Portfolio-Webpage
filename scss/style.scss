@@ -747,7 +747,7 @@ body {
             &.about-article {
                 padding: .5em 1em;
                 height: 10vh;
-                overflow: auto;
+                overflow: hidden;
                 transition: .3s ease;
                 @media (max-width: 768px) {
                     height: 25vh;
