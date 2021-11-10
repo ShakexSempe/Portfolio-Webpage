@@ -226,7 +226,7 @@ hamburger
   width: 100vw;
   padding-bottom: 30vh;
   margin: 0 auto;
-  background-image: url("../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg");
+  background-image: url("../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1797,16 +1797,16 @@ body {
   background-attachment: fixed; }
   .paralax.px1 {
     height: 70vh;
-    background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg); }
+    background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg); }
     @media (min-width: 768px) {
       .paralax.px1 {
         display: none; } }
   .paralax.px2 {
     height: 80vh;
-    background-image: url(../img/me.jpg); }
+    background-image: url(../img/me-min.jpg); }
   .paralax.px3 {
     height: 80vh;
-    background-image: url(../img/shakexblue.jpg); }
+    background-image: url(../img/shakexblue-min.jpg); }
   @media (max-width: 500px) {
     .paralax {
       background-size: 100%;
@@ -2045,7 +2045,7 @@ body {
       .about .col-left .about-img::before {
         content: 'Boitumelo Sempe';
         color: #333;
-        background-image: url("../img/me.jpg");
+        background-image: url("../img/me-min.jpg");
         background-position: center;
         animation: fade-out 5s infinite; }
 
@@ -2059,7 +2059,7 @@ body {
         content: 'Shakex Sempe';
         color: #0000ff;
         opacity: 0;
-        background-image: url("../img/shakexblue.jpg");
+        background-image: url("../img/shakexblue-min.jpg");
         background-position: top;
         transition: 1s ease;
         animation: fade-in 5s infinite; }

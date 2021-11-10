@@ -583,16 +583,16 @@ body {
             display: none;
         }
         height: 70vh;
-        background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash.jpg);
+        background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg);
         // background-position: center;
     }
     &.px2 {
         height: 80vh;
-        background-image: url(../img/me.jpg);
+        background-image: url(../img/me-min.jpg);
     }
     &.px3 {
         height: 80vh;
-        background-image: url(../img/shakexblue.jpg);
+        background-image: url(../img/shakexblue-min.jpg);
     }
 
     @media (max-width: 500px) {
@@ -948,7 +948,7 @@ body {
         &::before {
             content: 'Boitumelo Sempe';
             color: $text-dark;
-            background-image: url('../img/me.jpg');
+            background-image: url('../img/me-min.jpg');
             background-position: center;
             animation: fade-out 5s infinite;
             @keyframes fade-out {
@@ -965,7 +965,7 @@ body {
             content: 'Shakex Sempe';
             color:$span-blue;
             opacity: 0;
-            background-image: url('../img/shakexblue.jpg');
+            background-image: url('../img/shakexblue-min.jpg');
             background-position: top;
             transition: 1s ease;
             animation: fade-in 5s infinite;
