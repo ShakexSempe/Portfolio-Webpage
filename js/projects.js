@@ -44,6 +44,22 @@ const projects = [
                 <li>javascript</li>`,    
     },
     {
+        id: 5,
+        title: "front end mentor portfolio",
+        link: "https://shakexsempe.github.io/front-end-mentor-links/",
+        img: "img/fem.png",
+        head: "front end web development projects",
+        desc: "links to the various projects build from the figma sketches presented by the front end mentor platform",
+        alt: 'img',
+        tech: ` <li>orderSummaryPage</li>
+                <li>#loopstudiosLandingPage</li>
+                <li>#sunnySideLandingPage</li>
+                <li>#calculatorApp</li>`,
+        imgTech: `<li>html5</li>
+                <li>javascript</li>
+                <li>sass</li>`,
+    },
+    {
         id: 4,
         title: "javascript portfolio",
         link: "https://shakexsempe.github.io/javascript-projects-portfolio/",
@@ -56,21 +72,7 @@ const projects = [
                 <li>#algorithms</li>`,
         imgTech: `<li>javascript</li>`,
     },
-    {
-        id: 5,
-        title: "Valoir &trade;",
-        link: "https://valoir.netlify.app/",
-        img: "img/valoir-min.png",
-        head: "CSS 3 showcase project",
-        desc: "Sticky Parallax scrolling effect project",
-        alt: 'img',
-        tech: `<li>#parallax</li>
-                <li>#css3</li>
-                <li>#scss</li>`,
-        imgTech: `<li>html5</li>
-                <li>parallax</li>
-                <li>sass</li>`,
-    },
+    
     {
         id: 6,
         title: "Planet Animation",
@@ -85,7 +87,21 @@ const projects = [
         imgTech: `<li>html5</li>
                 <li>css3</li>`,
     },
-    
+    // {
+    //     id: 5,
+    //     title: "Valoir &trade;",
+    //     link: "https://valoir.netlify.app/",
+    //     img: "img/valoir-min.png",
+    //     head: "CSS 3 showcase project",
+    //     desc: "Sticky Parallax scrolling effect project",
+    //     alt: 'img',
+    //     tech: `<li>#parallax</li>
+    //             <li>#css3</li>
+    //             <li>#scss</li>`,
+    //     imgTech: `<li>html5</li>
+    //             <li>parallax</li>
+    //             <li>sass</li>`,
+    // },
 ];
 // projects container
 const allProjects = document.querySelector('.all-projects');
