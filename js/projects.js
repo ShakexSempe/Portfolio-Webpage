@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         title: "freeCodeCamp Portfolio",
-        link: "https://shakexsempe.github.io/FreeCodeCamp-portfolio/",
+        link: "https://freecodecamp-boitumelo-sempe-portfolio.netlify.app/",
         img: "img/fcc-min.png",
         head: "FreeCodeCamp Responsive Projects Portfolio",
         desc: "",
@@ -16,7 +16,7 @@ const projects = [
     {
         id: 2,
         title: "Thato Technical Drawings",
-        link: "https://shakexsempe.github.io/thato-tech-drawings/",
+        link: "https://thato-technical-drawings.netlify.app/",
         img: "img/thato-min.png",
         head: "Technical Drawings Lecturer Website",
         desc: "Made with Scss, this single page webpage serves a link to a Youtube channel for technical drawing students and professionals.",
@@ -31,7 +31,7 @@ const projects = [
     {
         id: 3,
         title: "Munch Up&trade;",
-        link: "https://shakexsempe.github.io/munch-up/",
+        link: "https://munch-up.netlify.app/",
         img: "img/munch-logo-min.png",
         head: "Bakery & cupcake shop webpage",
         desc: "Single page website for a cake & cupcake bakery.",
@@ -46,7 +46,7 @@ const projects = [
     {
         id: 5,
         title: "front end mentor portfolio",
-        link: "https://shakexsempe.github.io/front-end-mentor-links/",
+        link: "https://front-end-mentor-portfolio.netlify.app/",
         img: "img/fem.png",
         head: "front end web development projects",
         desc: "links to the various projects build from the figma sketches presented by the front end mentor platform",
@@ -62,7 +62,7 @@ const projects = [
     {
         id: 4,
         title: "javascript portfolio",
-        link: "https://shakexsempe.github.io/javascript-projects-portfolio/",
+        link: "https://javascript-portfolio-boitumelo-sempe.netlify.app/",
         img: "img/js-min.png",
         head: "javascript projects portfolio",
         desc: "page featuring links to my javascript tutorial repositories",
