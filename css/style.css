@@ -634,10 +634,10 @@ hamburger
           transform: preserve-3d; }
       #contact .contact .contact-items .contact-item .contact-info h2 {
         font-size: .8em;
-        line-height: 2rem;
+        line-height: 1.3;
         font-weight: 600;
         letter-spacing: .1em;
-        padding: .1em 1em;
+        padding: 1em;
         border: none;
         outline: none;
         border-radius: 10px;
@@ -646,6 +646,11 @@ hamburger
         transition: .5s ease;
         position: relative;
         z-index: -1; }
+        #contact .contact .contact-items .contact-item .contact-info h2 span {
+          display: block;
+          margin-top: .2em;
+          color: #000;
+          opacity: .8; }
         @media (min-width: 768px) {
           #contact .contact .contact-items .contact-item .contact-info h2 {
             width: 100%;
