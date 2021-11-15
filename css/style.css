@@ -552,7 +552,6 @@ hamburger
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
       position: relative;
       transform: preserve-3d;
       border: none;
@@ -561,6 +560,12 @@ hamburger
       @media (min-width: 1024px) {
         #contact .contact .contact-items .contact-item {
           width: 30%; } }
+      #contact .contact .contact-items .contact-item:nth-child(1) {
+        cursor: help; }
+      #contact .contact .contact-items .contact-item:nth-child(2) {
+        cursor: alias; }
+      #contact .contact .contact-items .contact-item:nth-child(3) {
+        cursor: alias; }
       #contact .contact .contact-items .contact-item::after {
         position: absolute;
         content: '';
@@ -682,6 +687,7 @@ hamburger
         background-color: #b60f30;
         color: #eee;
         opacity: .8;
+        cursor: pointer;
         transition: .5s ease;
         position: relative;
         box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
