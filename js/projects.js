@@ -87,21 +87,17 @@ const projects = [
         imgTech: `<li>html5</li>
                 <li>css3</li>`,
     },
-    // {
-    //     id: 5,
-    //     title: "Valoir &trade;",
-    //     link: "https://valoir.netlify.app/",
-    //     img: "img/valoir-min.png",
-    //     head: "CSS 3 showcase project",
-    //     desc: "Sticky Parallax scrolling effect project",
-    //     alt: 'img',
-    //     tech: `<li>#parallax</li>
-    //             <li>#css3</li>
-    //             <li>#scss</li>`,
-    //     imgTech: `<li>html5</li>
-    //             <li>parallax</li>
-    //             <li>sass</li>`,
-    // },
+    {
+        id: 5,
+        title: "Syntex",
+        link: "https://syntex.netlify.app/",
+        img: "img/syntex-min.png",
+        head: "React landing page",
+        desc: "react fundamentals tutorial project",
+        alt: 'img',
+        tech: `<li>#react js</li>
+                <li>#css</li>`,
+    },
 ];
 // projects container
 const allProjects = document.querySelector('.all-projects');
