@@ -180,7 +180,7 @@ body {
                         left: 5vw;
                         span {
                             display: block;
-                            color: $text-white-trans;
+                            color: $span-gold;
                             padding: .4em 0;
 
                             i {
@@ -261,9 +261,9 @@ body {
                         &:hover {
                             transition: .3s;
                             a {
-                                color: $link-blue;
+                                color: $link-gold;
                                 i {
-                                    color: $link-blue;
+                                    color: $link-gold;
                                 }
                             }
                         }

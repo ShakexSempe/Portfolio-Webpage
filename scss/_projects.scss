@@ -166,7 +166,7 @@
                         // links icon
                         i {
                             transition: .2s;
-                            color: $text-lime;
+                            color: $span-gold;
                             font-size: .8em;
                             padding: .2em;
                             margin-right: .5em;
@@ -175,7 +175,7 @@
                                 content: 'view project';
                                 font-family: $font-gruppo;
                                 font-style: italic;
-                                color: $text-lime;
+                                color: $span-gold;
                                 transition: .3s;
                                 opacity: 0;
                                 margin-left: 1em;
@@ -188,10 +188,10 @@
                         // link hover state
                         &:hover {
                             h2 {
-                                color: $text-lime;
+                                color: $span-gold;
                             }
                             i {
-                                color: $text-lime;
+                                color: $span-gold;
 
                                 &::after {
                                     color: $text-light-d;
