@@ -29,6 +29,8 @@ const scrollHeight = window.pageYOffset;
 const topLink = document.querySelector('.top-link');
 const brand = document.querySelector('.brand');
 // background-color ()
+// change navbar background color when screen scroll position < 30
+// hidden brand logo which becomes visible when screen scroll position < 150
   if (scroll_position < 30) {
     header.style.backgroundColor = "#485563";
   }
@@ -39,7 +41,6 @@ const brand = document.querySelector('.brand');
     header.style.backgroundColor = "#29323c";
 
   };
-  // if (scroll_position)
 // top-link ()
   if(scrollHeight > 200) {
     topLink.classList.add('show-link');
