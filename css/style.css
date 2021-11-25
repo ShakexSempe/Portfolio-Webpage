@@ -403,29 +403,6 @@ hamburger
         border-radius: 10px;
         height: auto;
         line-height: 1.3; }
-        @media (min-width: 768px) {
-          #skills .dropdown .dropdown-content .skills-bottom .skills-item {
-            flex-basis: 45%;
-            margin: 2.5%;
-            height: 300px;
-            pointer-events: none; } }
-        @media (min-width: 1024px) {
-          #skills .dropdown .dropdown-content .skills-bottom .skills-item {
-            flex-basis: 33%;
-            width: 100%;
-            margin: 1.5%;
-            height: 300px;
-            pointer-events: visible;
-            cursor: pointer;
-            filter: grayscale(0.6);
-            transition: .2s; }
-            #skills .dropdown .dropdown-content .skills-bottom .skills-item:hover {
-              transform: scale(1.05);
-              filter: grayscale(0); }
-            #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
-              font-size: 1.5em; }
-            #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li {
-              font-size: 1em; } }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item ul {
           margin: .2em;
           padding: .5em; }
@@ -515,6 +492,27 @@ hamburger
           font-family: "Gruppo", cursive;
           text-decoration: underline rgba(221, 221, 221, 0.466);
           text-underline-offset: .1em; }
+        @media (min-width: 768px) {
+          #skills .dropdown .dropdown-content .skills-bottom .skills-item {
+            flex-basis: 45%;
+            margin: 2.5%;
+            height: 300px;
+            pointer-events: none; } }
+        @media (min-width: 1024px) {
+          #skills .dropdown .dropdown-content .skills-bottom .skills-item {
+            flex-basis: 33%;
+            width: 100%;
+            margin: 1.5%;
+            height: 300px;
+            pointer-events: visible;
+            cursor: pointer;
+            transition: .2s; }
+            #skills .dropdown .dropdown-content .skills-bottom .skills-item:hover {
+              transform: scale(1.05); }
+            #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
+              font-size: 1.5em; }
+            #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li {
+              font-size: 1em; } }
 
 #contact .contact {
   flex-direction: column;

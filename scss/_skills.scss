@@ -238,40 +238,6 @@
 
                 // skills-items
                 .skills-item {
-                    // skills items on tablets
-                    @media (min-width:768px) {
-                        flex-basis: 45%;
-                        margin: 2.5%;
-                        height: 300px;
-                        pointer-events: none;
-                    }
-                    // end of skills items on tablets
-                    // skills items on desktop
-                    @media (min-width: 1024px) {
-                        flex-basis: 33%;
-                        width: 100%;
-                        margin: 1.5%;
-                        height: 300px;
-                        pointer-events: visible;
-                        cursor: pointer;
-                        filter: grayscale(.6);
-                        transition: .2s;
-                        &:hover {
-                            transform: scale(1.05);
-                            filter: grayscale(0);
-                            // border: none;
-                        }
-
-                        h2 {
-                            font-size: 1.5em;
-                        }
-                        ul {
-                            li {
-                                font-size: 1em;
-                            }
-                        }
-                    }
-                    // end of skills items on desktop
                     flex-basis: 100%;
                     display: flex;
                     align-items: center;
@@ -429,6 +395,37 @@
                         text-underline-offset: .1em;
                     }
                     // end of skills item title (h2)
+                    // skills items on tablets
+                    @media (min-width:768px) {
+                        flex-basis: 45%;
+                        margin: 2.5%;
+                        height: 300px;
+                        pointer-events: none;
+                    }
+                    // end of skills items on tablets
+                    // skills items on desktop
+                    @media (min-width: 1024px) {
+                        flex-basis: 33%;
+                        width: 100%;
+                        margin: 1.5%;
+                        height: 300px;
+                        pointer-events: visible;
+                        cursor: pointer;
+                        transition: .2s;
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+
+                        h2 {
+                            font-size: 1.5em;
+                        }
+                        ul {
+                            li {
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                    // end of skills items on desktop
                 }
                 // end of skills-items
             }
