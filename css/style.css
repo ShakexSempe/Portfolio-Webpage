@@ -1804,7 +1804,7 @@ body {
   background-position: center bottom;
   background-attachment: fixed; }
   .paralax.paralax-hero {
-    background-image: url(/img/shakex-logo-min.png);
+    background-image: url(../img/shakex-logo-min.png);
     background-position: center; }
   .paralax.px1 {
     height: 70vh;
