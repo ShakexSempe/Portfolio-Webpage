@@ -1805,7 +1805,8 @@ body {
   background-attachment: fixed; }
   .paralax.paralax-hero {
     background-image: url(../img/shakex-logo-min.png);
-    background-position: center; }
+    background-position: center;
+    background-size: 100%; }
   .paralax.px1 {
     height: 70vh;
     background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg); }
