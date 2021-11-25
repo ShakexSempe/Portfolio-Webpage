@@ -577,7 +577,10 @@ body {
     background-size: contain;
     background-position: center bottom;
     background-attachment: fixed;
-
+    &.paralax-hero {
+        background-image: url(/img/shakex-logo-min.png);
+        background-position: center;
+    }
     &.px1 {
         @media(min-width: 768px){
             display: none;
