@@ -1907,7 +1907,7 @@ body {
       opacity: 1; }
     .about .col-right button {
       background-color: #29323c;
-      color: #ddd;
+      color: #ead2a1;
       margin: 1em auto;
       padding: .5em 1em;
       cursor: pointer;
@@ -1936,10 +1936,11 @@ body {
           font-size: 2.5em;
           float: left;
           background: #29323c;
-          color: #fff;
+          color: #ead2a1;
           padding: 0 .1em;
           margin-right: .1em;
-          box-shadow: -3px 3px 0 #485563; }
+          border-radius: 2px;
+          box-shadow: -3px 3px 0 #4855634b; }
         .about .col-right article.about-article p#intro span {
           color: green;
           cursor: pointer;

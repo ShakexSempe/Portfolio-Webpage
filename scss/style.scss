@@ -739,7 +739,7 @@ body {
         // read more button
         button {
             background-color: $overlay-blue-dark;
-            color: #ddd;
+            color: $link-gold;
             margin: 1em auto;
             padding: .5em 1em;
             cursor: pointer;
@@ -776,10 +776,11 @@ body {
                     font-size: 2.5em;
                     float: left;
                     background: $overlay-blue-dark;
-                    color: #fff;
+                    color: $span-gold;
                     padding: 0 .1em;
                     margin-right: .1em;
-                    box-shadow: -3px 3px 0 $overlay-blue-light;
+                    border-radius: 2px;
+                    box-shadow: -3px 3px 0 #4855634b;
                 }
                 &#intro {
                     span {
