@@ -84,7 +84,7 @@ hamburger
 /* section title span animation */
 .section-title span {
   position: relative;
-  color: #dc143c;
+  color: #29323c;
   animation: section-span 3s ease-in-out infinite;
   height: 5px;
   /* section title animations */
@@ -99,11 +99,11 @@ hamburger
   45% {
     top: -20px;
     opacity: 0;
-    color: darkblue; }
+    color: #29323c; }
   46% {
     top: 20px;
     opacity: 0;
-    color: darkblue; } }
+    color: #485563; } }
 
 /* end of section title span animation */
 #header .hamburger {
@@ -1456,14 +1456,13 @@ body {
         #header .header #navbar .brand h1 {
           font-size: 1.2em;
           text-transform: uppercase;
-          color: #fff;
-          font-family: 'Gruppo', cursive;
-          text-shadow: 0 0 10px #dc143c; }
+          color: #f4f4f4;
+          font-family: 'Gruppo', cursive; }
           @media (min-width: 768px) {
             #header .header #navbar .brand h1 {
               font-size: 1.5em; } }
           #header .header #navbar .brand h1 span {
-            color: #f72751;
+            color: #dc143c;
             font-size: 1.3em; }
       @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
@@ -1619,7 +1618,7 @@ body {
               width: 0%;
               opacity: 0;
               height: 3px;
-              background-color: skyblue;
+              background-color: #ead2a1;
               transition: .3s ease; }
             #header .header #navbar .nav-list ul li:hover::before {
               width: 30%;
@@ -1630,9 +1629,9 @@ body {
               margin: 0 auto;
               display: block; }
               #header .header #navbar .nav-list ul li a:focus {
-                color: skyblue; }
+                color: #ead2a1; }
                 #header .header #navbar .nav-list ul li a:focus i {
-                  color: skyblue; }
+                  color: #ead2a1; }
               #header .header #navbar .nav-list ul li a i {
                 margin-right: .3em;
                 padding: .5em;
@@ -1642,7 +1641,7 @@ body {
                 display: none; }
             #header .header #navbar .nav-list ul li:hover a {
               transition: .3s ease;
-              color: skyblue; }
+              color: #ead2a1; }
               #header .header #navbar .nav-list ul li:hover a i {
                 transition: .3s;
                 color: #fff; }
@@ -1703,7 +1702,7 @@ body {
         animation-delay: 4s;
         animation-fill-mode: forwards;
         margin: .5em 0;
-        color: tomato;
+        color: #ead2a1;
         opacity: 0;
         transform: scale(0.7); }
 
@@ -1807,7 +1806,11 @@ body {
     background-image: url(../img/shakex-logo-min.png);
     background-position: center;
     background-size: 100%;
-    padding: 10vh 10vw; }
+    height: 75vh; }
+    @media (min-width: 768px) {
+      .paralax.paralax-logo {
+        background-size: 60%;
+        height: 85vh; } }
   .paralax.px1 {
     height: 70vh;
     background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg); }

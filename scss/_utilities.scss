@@ -96,7 +96,7 @@ hamburger
 /* section title span animation */
 .section-title span {
     position: relative;
-    color: #dc143c;
+    color: $overlay-blue-dark;
     animation: section-span 3s ease-in-out infinite;
     height: 5px;
 
@@ -113,13 +113,13 @@ hamburger
         45% {
             top: -20px;
             opacity: 0;
-            color: darkblue;
+            color: $overlay-blue-dark;
         }
 
         46% {
             top: 20px;
             opacity: 0;
-            color: darkblue;
+            color: $overlay-blue-light;
         }
     }
     /* end of section title animations */

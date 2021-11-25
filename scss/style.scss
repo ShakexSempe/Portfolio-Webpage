@@ -68,18 +68,18 @@ body {
                         font-size: 1.5em;
                     }
                     text-transform: uppercase;
-                    color: #fff;
+                    color: #f4f4f4;
                     font-family: 'Gruppo', cursive;
-                    text-shadow: 0 0 10px $text-shadow-red;
+                    // text-shadow: 0 0 5px $text-shadow-red;
                     
                     span {
-                        color: $span-brand;
+                        color: $span-crimson;
                         font-size: 1.3em;
                     }
                 }
             }
             // corner logo
-
+            // hamburger nav style
             .nav-list {
                 .links-container {
                     @media (max-width: 1024px) {
@@ -300,7 +300,7 @@ body {
                                 width: 0%;
                                 opacity: 0;
                                 height: 3px;
-                                background-color: $link-blue;
+                                background-color: $link-gold;
                                 transition: .3s ease;
                             }
                             &:hover {
@@ -317,9 +317,9 @@ body {
                                 margin: 0 auto;
                                 display: block;
                                 &:focus {
-                                    color: $link-blue;
+                                    color: $link-gold;
                                     i {
-                                        color: $link-blue;
+                                        color: $link-gold;
                                     }
                                 }
 
@@ -338,7 +338,7 @@ body {
                             &:hover {
                                 a {
                                     transition: .3s ease;
-                                    color: $link-blue;
+                                    color: $link-gold;
 
                                     i {
                                         transition: .3s;
@@ -434,7 +434,7 @@ body {
                         animation-delay: 4s;
                         animation-fill-mode: forwards;
                         margin: .5em 0;
-                        color: $span-orange;
+                        color: $span-gold;
                         opacity: 0;
                         transform: scale(0.7);
                     }
@@ -581,7 +581,12 @@ body {
         background-image: url(../img/shakex-logo-min.png);
         background-position: center;
         background-size: 100%;
-        padding: 10vh 10vw;
+        // padding: 10vh 10vw;
+        height: 75vh;
+        @media(min-width: 768px){
+            background-size: 60%;
+            height: 85vh;
+        }
     }
     &.px1 {
         @media(min-width: 768px){
