@@ -63,7 +63,7 @@ body {
                 transition: 1s ease;
                 opacity: 0;
                 h1 {
-                    font-size: 1.2em;
+                    font-size: 1.25em;
                     @media (min-width: 768px) {
                         font-size: 1.5em;
                     }
@@ -74,7 +74,8 @@ body {
                     
                     span {
                         color: $span-gold;
-                        font-size: 1.3em;
+                        padding: 0;
+                        margin: 0;
                     }
                 }
             }
@@ -442,7 +443,7 @@ body {
             padding: .5em 1em;
             margin: 2em 0;
             width: 100%;
-            border-radius: 40px;
+            border-radius: 20px;
             border: none;
             outline: none;
             opacity: 0;
@@ -469,7 +470,7 @@ body {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: 40px;
+                border-radius: 20px;
                 transition: .3s ease;
                 border: none;
                 outline: none;
@@ -481,7 +482,7 @@ body {
             // ::after = background gradient
             &::after {
                 opacity: 1;
-                background-image: linear-gradient(90deg, $overlay-blue-dark, $overlay-blue-dark);
+                background: linear-gradient(0deg, #581212, #dc134c);
                 background-position: 0, 0;
                 background-size: 300%;
                 z-index: -1;
@@ -490,12 +491,6 @@ body {
                 transition: .3s;
                 outline: none;
                 border: none;
-
-                @keyframes cta-btn {
-                    50% {
-                        background-position: 100%;
-                    }
-                }
             }
             // button hover, focus and active states
             &:hover {

@@ -128,7 +128,7 @@
 
         // dropdown button
         .dropbtn {
-            color: $span-gold;
+            color: $text-light;
             padding: .3em 3em;
             font-size: 1.5em;
             font-weight: 600;
@@ -161,12 +161,13 @@
             }
 
             &::before {
-                background: linear-gradient(0deg, #161616, $overlay-blue-darker 10%, $overlay-blue-dark);
+                background: linear-gradient(0deg, #3f0d0d, #dc134c);
                 box-shadow: $box-light-top-sm;
             }
 
             &::after {
-                background: linear-gradient(0deg,  $overlay-blue-dark 10%, $overlay-blue-darker, #161616);
+                background: linear-gradient(0deg, #dc134c, #581212);
+            
                 opacity: 0;
                 box-shadow: $box-dark-top-sm;
             }

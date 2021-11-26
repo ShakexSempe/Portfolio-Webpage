@@ -46,7 +46,7 @@
                     position: absolute;
                     top: 0%;
                     transform: translateY(-.5em);
-                    color: #fff;
+                    color: $span-gold;
                     font-weight: 700;
                     text-transform: uppercase;
                     transition: .3s;
@@ -65,8 +65,8 @@
                     letter-spacing: .15em;
 
                     &:invalid {
-                        background-color: $background-invalid;
-                        color: $text-invalid;
+                        background-color: $span-gold;
+                        color: #000;
                     }
                     &:valid {
                         background-color: $background-valid;
@@ -94,7 +94,7 @@
                 &:hover {
                     label {
                         transform: translateX(1em) translateY(-.2em);
-                        color: #ddd;
+                        color: $text-light;
                     }
                 }
                 // end of input hover state

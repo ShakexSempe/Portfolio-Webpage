@@ -89,7 +89,7 @@ const projects = [
     },
     {
         id: 5,
-        title: "Syntex",
+        title: "Syntex - Landing Page",
         link: "https://syntex.netlify.app/",
         img: "img/syntex-min.png",
         head: "React landing page",

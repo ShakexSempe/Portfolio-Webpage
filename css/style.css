@@ -318,7 +318,7 @@ hamburger
   margin: 0 auto;
   z-index: 4; }
   #skills .dropdown .dropbtn {
-    color: #ead2a1;
+    color: #fff;
     padding: .3em 3em;
     font-size: 1.5em;
     font-weight: 600;
@@ -346,10 +346,10 @@ hamburger
       outline: none;
       transition: .3s; }
     #skills .dropdown .dropbtn::before {
-      background: linear-gradient(0deg, #161616, #20262e 10%, #29323c);
+      background: linear-gradient(0deg, #3f0d0d, #dc134c);
       box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
     #skills .dropdown .dropbtn::after {
-      background: linear-gradient(0deg, #29323c 10%, #20262e, #161616);
+      background: linear-gradient(0deg, #dc134c, #581212);
       opacity: 0;
       box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda; }
     #skills .dropdown .dropbtn:hover {
@@ -582,7 +582,7 @@ hamburger
       #contact .contact .contact-items .contact-item:hover {
         transform: preserve-3d; }
       #contact .contact .contact-items .contact-item h1 {
-        color: #fff;
+        color: #ead2a1;
         padding: .2em 1em;
         margin: .2em auto;
         font-size: 1.5em;
@@ -964,7 +964,7 @@ hamburger
           position: absolute;
           top: 0%;
           transform: translateY(-0.5em);
-          color: #fff;
+          color: #ead2a1;
           font-weight: 700;
           text-transform: uppercase;
           transition: .3s;
@@ -980,7 +980,7 @@ hamburger
           font-weight: 600;
           letter-spacing: .15em; }
           #footer .footer form .input-div input:invalid {
-            background-color: #f7cdd5c7;
+            background-color: #ead2a1;
             color: #000; }
           #footer .footer form .input-div input:valid {
             background-color: #cdf7d3c7;
@@ -998,7 +998,7 @@ hamburger
             outline: 3px dashed #fffa; }
         #footer .footer form .input-div:hover label {
           transform: translateX(1em) translateY(-0.2em);
-          color: #ddd; }
+          color: #fff; }
         #footer .footer form .input-div ::placeholder {
           font-family: "Gruppo", cursive;
           font-weight: 700;
@@ -1466,7 +1466,7 @@ body {
         transition: 1s ease;
         opacity: 0; }
         #header .header #navbar .brand h1 {
-          font-size: 1.2em;
+          font-size: 1.25em;
           text-transform: uppercase;
           color: #f4f4f4;
           font-family: 'Gruppo', cursive; }
@@ -1475,7 +1475,8 @@ body {
               font-size: 1.5em; } }
           #header .header #navbar .brand h1 span {
             color: #ead2a1;
-            font-size: 1.3em; }
+            padding: 0;
+            margin: 0; }
       @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
           position: absolute;
@@ -1712,7 +1713,7 @@ body {
     padding: .5em 1em;
     margin: 2em 0;
     width: 100%;
-    border-radius: 40px;
+    border-radius: 20px;
     border: none;
     outline: none;
     opacity: 0;
@@ -1736,7 +1737,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      border-radius: 40px;
+      border-radius: 20px;
       transition: .3s ease;
       border: none;
       outline: none; }
@@ -1744,7 +1745,7 @@ body {
       box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     #home .hero #cta-header::after {
       opacity: 1;
-      background-image: linear-gradient(90deg, #29323c, #29323c);
+      background: linear-gradient(0deg, #581212, #dc134c);
       background-position: 0, 0;
       background-size: 300%;
       z-index: -1;
@@ -1753,10 +1754,6 @@ body {
       transition: .3s;
       outline: none;
       border: none; }
-
-@keyframes cta-btn {
-  50% {
-    background-position: 100%; } }
     #home .hero #cta-header:hover {
       transform: scale(0.97); }
       #home .hero #cta-header:hover::after {
