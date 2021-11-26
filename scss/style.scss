@@ -133,6 +133,7 @@ body {
                     // hide nav avi on desktop
                     @media (min-width: 1025px) {
                         .nav-avi { display: none;}
+                        .nav-logo { display: none;}
                     }
                     // end of hide nav avi on desktop
                     // nav avi < 768px
@@ -197,6 +198,22 @@ body {
                     }
                     }
                     // end of nav avi < 768px
+                    // nav-logo 
+                    .nav-logo {
+                        position: absolute;
+                        right: 0%;
+                        top: 0;
+                        // transform: translateX(-50%);
+                        opacity: .4;
+                        z-index: 1;
+                        height: 50vh;
+                        width: 50vw;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
 
                 }
                 // mobile screens style
@@ -868,7 +885,7 @@ body {
                         font-size: 1.5em;
                         margin: .2em auto;
                         text-shadow: none;
-                        animation: icon-shine 3s linear infinite;
+                        animation: icon-shine 3s linear infinite alternate;
                         // icon color animation
                         @keyframes icon-shine {
                             100% {

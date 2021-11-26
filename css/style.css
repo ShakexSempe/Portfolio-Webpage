@@ -1505,6 +1505,8 @@ body {
             transition-delay: .8s; }
       @media (min-width: 1025px) {
         #header .header #navbar .nav-list .links-container .nav-avi {
+          display: none; }
+        #header .header #navbar .nav-list .links-container .nav-logo {
           display: none; } }
       #header .header #navbar .nav-list .links-container .nav-avi {
         height: 5em;
@@ -1550,6 +1552,17 @@ body {
 @keyframes bird {
   100% {
     transform: rotateY(360deg); } }
+      #header .header #navbar .nav-list .links-container .nav-logo {
+        position: absolute;
+        right: 0%;
+        top: 0;
+        opacity: .4;
+        z-index: 1;
+        height: 50vh;
+        width: 50vw;
+        overflow: hidden; }
+        #header .header #navbar .nav-list .links-container .nav-logo img {
+          width: 100%; }
       #header .header #navbar .nav-list ul {
         background: #29323c;
         display: flex;
@@ -2008,7 +2021,7 @@ body {
           font-size: 1.5em;
           margin: .2em auto;
           text-shadow: none;
-          animation: icon-shine 3s linear infinite; }
+          animation: icon-shine 3s linear infinite alternate; }
 
 @keyframes icon-shine {
   100% {
