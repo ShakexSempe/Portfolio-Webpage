@@ -34,7 +34,7 @@ const brand = document.querySelector('.brand');
   if (scroll_position < 30) {
     header.style.backgroundColor = "#20262e";
   }
-  if (scroll_position < 150) {
+  if (scroll_position < 350) {
     brand.style.opacity = 0;
   } else {
     brand.style.opacity = 1;

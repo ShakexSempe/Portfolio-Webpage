@@ -134,16 +134,18 @@ hamburger
     opacity: 1;
     box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 2px #000a; }
   #header .hamburger.hamburger:before {
-    border: 2px solid #ddda;
+    border: 2px solid #fff;
     opacity: 0;
     animation: ham-pulse 2s ease infinite; }
 
 @keyframes ham-pulse {
   50% {
-    opacity: 1; }
+    opacity: .5;
+    border-color: #ead2a1; }
   100% {
     opacity: 0;
-    transform: scale(1.18); } }
+    transform: scale(1.18);
+    border-color: #fff; } }
   #header .hamburger:hover::before, #header .hamburger:focus::before {
     animation: none; }
   #header .hamburger:hover::after, #header .hamburger:focus::after {
@@ -163,17 +165,21 @@ hamburger
       height: 100%;
       width: 100%;
       left: 0;
-      background-color: #fff;
+      background-color: #ead2a1;
       transition: 0.3s ease;
       transition-property: top, bottom; }
     #header .hamburger .bar::before {
       bottom: 8px; }
     #header .hamburger .bar::after {
       top: 8px; }
-  #header .hamburger.active .bar::before {
-    bottom: 0; }
-  #header .hamburger.active .bar::after {
-    top: 0; }
+  #header .hamburger.active .bar {
+    background-color: #ead2a1; }
+    #header .hamburger.active .bar::before {
+      background-color: #ead2a1;
+      bottom: 0; }
+    #header .hamburger.active .bar::after {
+      background-color: #ead2a1;
+      top: 0; }
 
 .top-link {
   position: fixed;
@@ -1502,6 +1508,7 @@ body {
       #header .header #navbar .nav-list .links-container.active {
         left: 0; }
         #header .header #navbar .nav-list .links-container.active .nav-logo {
+          transition: 1.5s;
           opacity: 1;
           transform: translateX(0); }
         #header .header #navbar .nav-list .links-container.active ul li {
@@ -1537,7 +1544,7 @@ body {
         position: sticky;
         top: 1em;
         transform: translateX(50%);
-        transition: 1s ease .2s; }
+        transition: 1s ease; }
         #header .header #navbar .nav-list .links-container .nav-logo img {
           width: 100%;
           height: 100%;

@@ -120,6 +120,7 @@ body {
                     &.active {
                         left: 0;
                         .nav-logo {
+                            transition: 1.5s;
                             opacity: 1;
                             transform: translateX(0);
                         }
@@ -173,7 +174,7 @@ body {
                         position: sticky;
                         top: 1em;
                         transform: translateX(50%);
-                        transition: 1s ease .2s;
+                        transition: 1s ease;
                     
 
                         img {

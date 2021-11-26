@@ -162,19 +162,21 @@ hamburger
                     inset -2px -2px 2px #000a;
     }
     // end of hamburger box shadow
-    // pulse
+    // pulse 
     &.hamburger:before {
-        border: 2px solid #ddda;
+        border: 2px solid #fff;
         opacity: 0;
         animation: ham-pulse 2s ease infinite;
         @keyframes ham-pulse {
             50% {
-                opacity: 1;
+                opacity: .5;
+                border-color: $span-gold;
             }
 
             100% {
                 opacity: 0;
                 transform: scale(1.18);
+                border-color: #fff;
             }
         }
     }
@@ -216,7 +218,7 @@ hamburger
             height: 100%;
             width: 100%;
             left: 0;
-            background-color: #fff;
+            background-color: $span-gold;
             transition: 0.3s ease;
             transition-property: top, bottom;
         }
@@ -229,13 +231,18 @@ hamburger
         // end of top and bottom bars
     }
         // hamburger bars active state
+        
         &.active {
             .bar {
+                background-color: $span-gold;
+
                 &::before {
+                    background-color: $span-gold;
                     bottom: 0;
                 }
 
                 &::after {
+                    background-color: $span-gold;
                     top: 0;
                 }
             }
