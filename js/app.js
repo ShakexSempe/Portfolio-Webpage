@@ -32,7 +32,7 @@ const brand = document.querySelector('.brand');
 // change navbar background color when screen scroll position < 30
 // hidden brand logo which becomes visible when screen scroll position < 150
   if (scroll_position < 30) {
-    header.style.backgroundColor = "#485563";
+    header.style.backgroundColor = "#20262e";
   }
   if (scroll_position < 150) {
     brand.style.opacity = 0;
@@ -87,10 +87,7 @@ menu_item.forEach((item) => {
 });
 //  end of remove hamburger after click 
 //  remove sidebar after click on sidebar img 
-avi.addEventListener("click", () => {
-  hamburger.classList.toggle('active');
-  mobile_menu.classList.toggle('active');
-})
+
 //  end of remove sidebar after click on sidebar img
 //  progress bar
 //  When the user scrolls the page, execute myFunction
