@@ -65,8 +65,8 @@
                     letter-spacing: .15em;
 
                     &:invalid {
-                        background-color: $span-gold;
-                        color: #000;
+                        background-color: $background-invalid;
+                        color: $text-invalid;
                     }
                     &:valid {
                         background-color: $background-valid;

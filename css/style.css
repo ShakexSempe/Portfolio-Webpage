@@ -980,7 +980,7 @@ hamburger
           font-weight: 600;
           letter-spacing: .15em; }
           #footer .footer form .input-div input:invalid {
-            background-color: #ead2a1;
+            background-color: #f7cdd5c7;
             color: #000; }
           #footer .footer form .input-div input:valid {
             background-color: #cdf7d3c7;
@@ -1450,7 +1450,6 @@ body {
   width: 100vw; }
   #header .header {
     min-height: 10vh;
-    background-color: #485563;
     transition: 1s ease background-color; }
     #header .header #navbar {
       display: flex;
@@ -1765,7 +1764,7 @@ body {
       position: relative;
       display: inline-block;
       text-transform: uppercase;
-      color: #ead2a1;
+      color: #fff;
       font-size: 2em;
       font-weight: 700;
       animation: animate 3s ease-in-out infinite;
