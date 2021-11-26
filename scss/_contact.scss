@@ -249,6 +249,14 @@
                                         transform: scale(.9);
                                         transition: .2s;
                                     }
+                        
+                        i {
+                            font-size: 1.5em;
+                            position: relative;
+                            transform: translateY(100%);
+                            opacity: 0;
+                            transition: .3s ease;
+                        }
                     }
                     // end of form link
 
@@ -265,6 +273,11 @@
 
                         a {
                             opacity: 1;
+
+                            i {
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
                         }
                     }
                 }

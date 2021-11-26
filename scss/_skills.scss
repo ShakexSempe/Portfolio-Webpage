@@ -116,13 +116,6 @@
             box-shadow: inset -5px -5px 5px #000a,
                         inset 5px 5px 5px #3d495500;
         }
-        &:hover {
-            &::after {
-                box-shadow: inset -5px -5px 5px #ddda,
-                    inset 5px 5px 5px #3d495500;
-                transition: .3s linear;
-            }
-        }
         // end of skills top 'down arrow'
 
     }
@@ -135,7 +128,7 @@
 
         // dropdown button
         .dropbtn {
-            color: #eee;
+            color: $span-gold;
             padding: .3em 3em;
             font-size: 1.5em;
             font-weight: 600;
@@ -168,12 +161,12 @@
             }
 
             &::before {
-                background: linear-gradient(0deg, #581212, #dc134c);
+                background: linear-gradient(0deg, #161616, $overlay-blue-darker 10%, $overlay-blue-dark);
                 box-shadow: $box-light-top-sm;
             }
 
             &::after {
-                background: linear-gradient(0deg, #dc134c, #581212);
+                background: linear-gradient(0deg,  $overlay-blue-dark 10%, $overlay-blue-darker, #161616);
                 opacity: 0;
                 box-shadow: $box-dark-top-sm;
             }
@@ -387,11 +380,11 @@
                     h2 {
                         font-size: 1.4em;
                         font-weight: 600;
-                        color: #fff;
+                        color: $text-light;
                         margin-bottom: 10px;
                         text-transform: capitalize;
                         font-family: $font-gruppo;
-                        text-decoration: underline rgba(221, 221, 221, 0.466);
+                        text-decoration: underline $span-gold;
                         text-underline-offset: .1em;
                     }
                     // end of skills item title (h2)

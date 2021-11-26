@@ -306,16 +306,13 @@ hamburger
     background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
     transition: .2s;
     box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #3d495500; }
-  #skills .skills-top:hover::after {
-    box-shadow: inset -5px -5px 5px #ddda, inset 5px 5px 5px #3d495500;
-    transition: .3s linear; }
 
 #skills .dropdown {
   position: relative;
   margin: 0 auto;
   z-index: 4; }
   #skills .dropdown .dropbtn {
-    color: #eee;
+    color: #ead2a1;
     padding: .3em 3em;
     font-size: 1.5em;
     font-weight: 600;
@@ -343,10 +340,10 @@ hamburger
       outline: none;
       transition: .3s; }
     #skills .dropdown .dropbtn::before {
-      background: linear-gradient(0deg, #581212, #dc134c);
+      background: linear-gradient(0deg, #161616, #20262e 10%, #29323c);
       box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
     #skills .dropdown .dropbtn::after {
-      background: linear-gradient(0deg, #dc134c, #581212);
+      background: linear-gradient(0deg, #29323c 10%, #20262e, #161616);
       opacity: 0;
       box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda; }
     #skills .dropdown .dropbtn:hover {
@@ -490,7 +487,7 @@ hamburger
           margin-bottom: 10px;
           text-transform: capitalize;
           font-family: "Gruppo", cursive;
-          text-decoration: underline rgba(221, 221, 221, 0.466);
+          text-decoration: underline #ead2a1;
           text-underline-offset: .1em; }
         @media (min-width: 768px) {
           #skills .dropdown .dropdown-content .skills-bottom .skills-item {
@@ -694,11 +691,20 @@ hamburger
         #contact .contact .contact-items .contact-item .contact-info a:active {
           transform: scale(0.9);
           transition: .2s; }
+        #contact .contact .contact-items .contact-item .contact-info a i {
+          font-size: 1.5em;
+          position: relative;
+          transform: translateY(100%);
+          opacity: 0;
+          transition: .3s ease; }
       #contact .contact .contact-items .contact-item:hover img {
         transform: scale(1);
         transform: preserve-3d; }
       #contact .contact .contact-items .contact-item:hover .contact-info a {
         opacity: 1; }
+        #contact .contact .contact-items .contact-item:hover .contact-info a i {
+          opacity: 1;
+          transform: translateY(0); }
 
 #projects .projects {
   flex-direction: column;
@@ -1462,7 +1468,7 @@ body {
             #header .header #navbar .brand h1 {
               font-size: 1.5em; } }
           #header .header #navbar .brand h1 span {
-            color: #dc143c;
+            color: #ead2a1;
             font-size: 1.3em; }
       @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
@@ -1753,7 +1759,7 @@ body {
       box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     #home .hero #cta-header::after {
       opacity: 1;
-      background-image: linear-gradient(90deg, #dc143c, #485563);
+      background-image: linear-gradient(90deg, #29323c, #29323c);
       background-position: 0, 0;
       background-size: 300%;
       z-index: -1;
@@ -1777,7 +1783,7 @@ body {
       position: relative;
       display: inline-block;
       text-transform: uppercase;
-      color: #fff;
+      color: #ead2a1;
       font-size: 2em;
       font-weight: 700;
       animation: animate 3s ease-in-out infinite;
@@ -1973,8 +1979,8 @@ body {
       display: flex;
       justify-content: space-between;
       font-size: 1em;
-      background-image: linear-gradient(0deg, #dc143c, #000);
-      color: #fff;
+      background: linear-gradient(0deg, #161616, #20262e 10%, #29323c);
+      color: #ead2a1;
       margin: 0 auto;
       padding: 1em;
       box-shadow: inset 5px 0px 5px #c7c7c7aa, inset -5px -5px 5px #000a;
@@ -1986,14 +1992,14 @@ body {
           justify-content: space-evenly; } }
       .about .col-right article#cv a {
         transition: .3s ease;
-        color: #fff;
+        color: #ead2a1;
         text-shadow: 1px 1px 1px #000;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative; }
         .about .col-right article#cv a i {
-          background-image: linear-gradient(60deg, #fff 30%, rgba(209, 207, 207, 0.829) 60%, #fff 60%);
+          background-image: linear-gradient(60deg, #ead2a1 30%, rgba(209, 207, 207, 0.829) 60%, #fff 60%);
           background-size: 300%;
           background-position: right;
           background-clip: text;
