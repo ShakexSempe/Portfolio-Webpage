@@ -684,7 +684,7 @@ hamburger
         padding: .2em .5em;
         border-radius: 10px;
         margin: .7em auto;
-        background-color: #b60f30;
+        background: linear-gradient(0deg, #581212, #dc134c);
         color: #eee;
         opacity: .8;
         cursor: pointer;
