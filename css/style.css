@@ -165,7 +165,7 @@ hamburger
       height: 100%;
       width: 100%;
       left: 0;
-      background-color: #ead2a1;
+      background-color: #f4f4f4;
       transition: 0.3s ease;
       transition-property: top, bottom; }
     #header .hamburger .bar::before {
