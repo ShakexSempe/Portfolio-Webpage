@@ -81,6 +81,7 @@ body {
             // corner logo
             // hamburger nav style
             .nav-list {
+                // mobile navbar
                 .links-container {
                     @media (max-width: 1024px) {
                         position: absolute;
@@ -90,9 +91,23 @@ body {
                         height: 100vh;
                         background-color: $nav-active-background;
                         transition: .5s ease;
+                        overflow-y: auto;
 
                         ul {
-                            margin: 25vh 5vw;
+                            margin: 2em 5vw;
+                            background: $overlay-blue-dark;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: right;
+                            border-radius: 5px;
+                            z-index: 1;
+                            overflow-x: hidden;
+                            transition: 0.5s ease left;
+                            position: relative;
+                            border: 2px solid $trans-border;
+                            outline: none;
+                            padding: 1em 0;
                             // list items active transition
                             li {
                                 transform: translateX(10%);
@@ -101,13 +116,25 @@ body {
                             }
                         }
                     }
+                    // active mobile  navbar
                     &.active {
                         left: 0;
+                        .nav-logo {
 
+                            img {
+                                transition: 1s ease 1s;
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
                         ul li {
                             transition: .5s;
                             transform: translateX(0);
                             opacity: 1;
+                            i {
+                                transition: 1s ease 1s;
+                                color: $span-gold;
+                            }
 
                             &:nth-child(1){
                                 transition-delay: .3s;
@@ -130,110 +157,45 @@ body {
                             
                         }
                     }
+                    // end of active mobile  navbar
+
                     // hide nav avi on desktop
                     @media (min-width: 1025px) {
-                        .nav-avi { display: none;}
                         .nav-logo { display: none;}
                     }
                     // end of hide nav avi on desktop
-                    // nav avi < 768px
-                    .nav-avi {
-                        // nav avi on small screens
-                        @media (max-width: 360px){
-                            height: 3.5em;
-                            width: 3.5em;
-                        }
-                        // end of nav avi on small screens
-                        height: 5em;
-                        width: 5em;
-                        border-radius: 50%;
+                    
+                    // nav-logo 
+                    .nav-logo {
+                        margin: 1em 5vw;
+                        opacity: 1;
+                        z-index: 1;
+                        height: 15%;
+                        width: 40%;
+                        border-radius: 5px;
                         overflow: hidden;
-                        position: absolute;
-                        top: 2vh;
-                        left: 5vw;
-                        cursor: pointer;
+                        position: sticky;
+                        top: 1em;
+                        transition: .5s ease .2s;
+                    
 
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            transition: .5s;
-                            /* pointer-events: none; */
-                        }
-
-                        &:active {
-                            transition: .4s;
-                            transform: scale(.7);
-                        }
-                    }
-                    figcaption {
-                        @media (min-width: 1025px){
-                            display: none;
-                        }
-                        a {
-                            text-transform: capitalize;
-                        color:$text-white;
-                        font-size: .9em;
-                        // margin: 15vh 5vw 0;
-                        display: block;
-                        position: absolute;
-                        top: 15vh;
-                        left: 5vw;
-                        span {
-                            display: block;
-                            color: $span-gold;
-                            padding: .4em 0;
-
-                            i {
-                                margin-left: .5em;
-                                animation: bird 5s infinite ;
-
-                                @keyframes bird {
-                                    100% {
-                                        transform: rotateY(360deg);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    }
-                    // end of nav avi < 768px
-                    // nav-logo 
-                    .nav-logo {
-                        position: absolute;
-                        right: 0%;
-                        top: 0;
-                        // transform: translateX(-50%);
-                        opacity: .25;
-                        z-index: 1;
-                        height: 50vh;
-                        width: 50vw;
-                        overflow: hidden;
-
-                        img {
-                            width: 100%;
+                            transform: translateY(100%);
+                            opacity: 0;
                         }
                     }
 
                 }
                 // mobile screens style
                 ul {
-                    background: $overlay-blue-dark;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: right;
-                    border-radius: 5px;
-                    z-index: 1;
-                    overflow-x: hidden;
-                    transition: 0.5s ease left;
-                    position: relative;
-                    border: 2px solid $trans-border;
-                    outline: none;
-                    padding: 1em 0;
+                    
 
                     li {
                         list-style: none;
+                        
 
                         a {
                             font-size: 1em;

@@ -1478,19 +1478,40 @@ body {
           width: 100vw;
           height: 100vh;
           background-color: #1b2127;
-          transition: .5s ease; }
+          transition: .5s ease;
+          overflow-y: auto; }
           #header .header #navbar .nav-list .links-container ul {
-            margin: 25vh 5vw; }
+            margin: 2em 5vw;
+            background: #29323c;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: right;
+            border-radius: 5px;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: 0.5s ease left;
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.155);
+            outline: none;
+            padding: 1em 0; }
             #header .header #navbar .nav-list .links-container ul li {
               transform: translateX(10%);
               opacity: 0;
               transition: .3s; } }
       #header .header #navbar .nav-list .links-container.active {
         left: 0; }
+        #header .header #navbar .nav-list .links-container.active .nav-logo img {
+          transition: 1s ease 1s;
+          transform: translateY(0);
+          opacity: 1; }
         #header .header #navbar .nav-list .links-container.active ul li {
           transition: .5s;
           transform: translateX(0);
           opacity: 1; }
+          #header .header #navbar .nav-list .links-container.active ul li i {
+            transition: 1s ease 1s;
+            color: #ead2a1; }
           #header .header #navbar .nav-list .links-container.active ul li:nth-child(1) {
             transition-delay: .3s; }
           #header .header #navbar .nav-list .links-container.active ul li:nth-child(2) {
@@ -1504,121 +1525,67 @@ body {
           #header .header #navbar .nav-list .links-container.active ul li:nth-child(6) {
             transition-delay: .8s; }
       @media (min-width: 1025px) {
-        #header .header #navbar .nav-list .links-container .nav-avi {
-          display: none; }
         #header .header #navbar .nav-list .links-container .nav-logo {
           display: none; } }
-      #header .header #navbar .nav-list .links-container .nav-avi {
-        height: 5em;
-        width: 5em;
-        border-radius: 50%;
+      #header .header #navbar .nav-list .links-container .nav-logo {
+        margin: 1em 5vw;
+        opacity: 1;
+        z-index: 1;
+        height: 15%;
+        width: 40%;
+        border-radius: 5px;
         overflow: hidden;
-        position: absolute;
-        top: 2vh;
-        left: 5vw;
-        cursor: pointer; }
-        @media (max-width: 360px) {
-          #header .header #navbar .nav-list .links-container .nav-avi {
-            height: 3.5em;
-            width: 3.5em; } }
-        #header .header #navbar .nav-list .links-container .nav-avi img {
+        position: sticky;
+        top: 1em;
+        transition: .5s ease .2s; }
+        #header .header #navbar .nav-list .links-container .nav-logo img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: .5s;
-          /* pointer-events: none; */ }
-        #header .header #navbar .nav-list .links-container .nav-avi:active {
-          transition: .4s;
-          transform: scale(0.7); }
-      @media (min-width: 1025px) {
-        #header .header #navbar .nav-list .links-container figcaption {
-          display: none; } }
-      #header .header #navbar .nav-list .links-container figcaption a {
-        text-transform: capitalize;
-        color: #fff;
-        font-size: .9em;
-        display: block;
-        position: absolute;
-        top: 15vh;
-        left: 5vw; }
-        #header .header #navbar .nav-list .links-container figcaption a span {
+          transform: translateY(100%);
+          opacity: 0; }
+      #header .header #navbar .nav-list ul li {
+        list-style: none; }
+        #header .header #navbar .nav-list ul li a {
+          font-size: 1em;
+          font-weight: 600;
+          letter-spacing: .15em;
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 1em;
           display: block;
-          color: #ead2a1;
-          padding: .4em 0; }
-          #header .header #navbar .nav-list .links-container figcaption a span i {
-            margin-left: .5em;
-            animation: bird 5s infinite; }
-
-@keyframes bird {
-  100% {
-    transform: rotateY(360deg); } }
-      #header .header #navbar .nav-list .links-container .nav-logo {
-        position: absolute;
-        right: 0%;
-        top: 0;
-        opacity: .25;
-        z-index: 1;
-        height: 50vh;
-        width: 50vw;
-        overflow: hidden; }
-        #header .header #navbar .nav-list .links-container .nav-logo img {
-          width: 100%; }
-      #header .header #navbar .nav-list ul {
-        background: #29323c;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: right;
-        border-radius: 5px;
-        z-index: 1;
-        overflow-x: hidden;
-        transition: 0.5s ease left;
-        position: relative;
-        border: 2px solid rgba(255, 255, 255, 0.155);
-        outline: none;
-        padding: 1em 0; }
-        #header .header #navbar .nav-list ul li {
-          list-style: none; }
-          #header .header #navbar .nav-list ul li a {
-            font-size: 1em;
-            font-weight: 600;
-            letter-spacing: .15em;
-            text-decoration: none;
-            color: #fff;
-            text-transform: uppercase;
-            padding: 1em;
-            display: block;
+          text-align: left;
+          font-family: 'Gruppo', cursive;
+          transition: .2s ease-in-out; }
+          #header .header #navbar .nav-list ul li a::after {
+            content: attr(data-after);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            color: #f0f8ff1a;
+            font-size: 3em;
+            letter-spacing: 50px;
+            z-index: -1;
+            transition: 0.3s ease letter-spacing; }
+          #header .header #navbar .nav-list ul li a i {
+            margin: 0 auto;
+            margin-right: .5em;
+            padding: .5em;
             text-align: left;
-            font-family: 'Gruppo', cursive;
-            transition: .2s ease-in-out; }
-            #header .header #navbar .nav-list ul li a::after {
-              content: attr(data-after);
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%) scale(0);
-              color: #f0f8ff1a;
-              font-size: 3em;
-              letter-spacing: 50px;
-              z-index: -1;
-              transition: 0.3s ease letter-spacing; }
-            #header .header #navbar .nav-list ul li a i {
-              margin: 0 auto;
-              margin-right: .5em;
-              padding: .5em;
-              text-align: left;
-              color: #fffa;
-              border-radius: 10px;
-              box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
-          #header .header #navbar .nav-list ul li:hover {
-            transition: .3s; }
-            #header .header #navbar .nav-list ul li:hover a {
+            color: #fffa;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+        #header .header #navbar .nav-list ul li:hover {
+          transition: .3s; }
+          #header .header #navbar .nav-list ul li:hover a {
+            color: #ead2a1; }
+            #header .header #navbar .nav-list ul li:hover a i {
               color: #ead2a1; }
-              #header .header #navbar .nav-list ul li:hover a i {
-                color: #ead2a1; }
-          #header .header #navbar .nav-list ul li:hover a::after {
-            transform: translate(-50%, -50%) scale(1);
-            letter-spacing: initial; }
+        #header .header #navbar .nav-list ul li:hover a::after {
+          transform: translate(-50%, -50%) scale(1);
+          letter-spacing: initial; }
       @media (min-width: 1025px) {
         #header .header #navbar .nav-list ul {
           display: block;
