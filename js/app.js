@@ -9,7 +9,7 @@ const hamburger = document.querySelector('.header #navbar .nav-list .hamburger')
 const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
 const header = document.querySelector('.header.container');
-const avi = document.querySelector('.header #navbar .nav-list .nav-avi img');
+const navLogo = document.querySelector('.header #navbar #nav-logo');
 // about section
 const readBtn = document.getElementById('readBtn');
 let article = document.querySelector('.about-article');
@@ -85,6 +85,12 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle('active');
   });
 });
+
+navLogo.addEventListener("click", () => {
+  hamburger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
+  console.log('nav logo clicked')
+})
 //  end of remove hamburger after click 
 //  remove sidebar after click on sidebar img 
 

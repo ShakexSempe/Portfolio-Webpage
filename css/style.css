@@ -1484,23 +1484,23 @@ body {
           width: 100vw;
           height: 100vh;
           background-color: #1b2127;
-          transition: .5s ease;
-          overflow-y: auto; }
+          transition: .5s ease; }
           #header .header #navbar .nav-list .links-container ul {
             margin: 2em 5vw;
             background: #29323c;
             display: flex;
+            height: auto;
             flex-direction: column;
             justify-content: center;
             align-items: right;
             border-radius: 5px;
             z-index: 1;
-            overflow-x: hidden;
             transition: 0.5s ease left;
             position: relative;
-            border: 2px solid rgba(255, 255, 255, 0.155);
+            border: 2px solid #ead2a15e;
             outline: none;
-            padding: 1em 0; }
+            padding: 1em 0;
+            overflow-y: auto; }
             #header .header #navbar .nav-list .links-container ul li {
               transform: translateX(10%);
               opacity: 0;
@@ -1511,25 +1511,27 @@ body {
           transition: 1.5s;
           opacity: 1;
           transform: translateX(0); }
-        #header .header #navbar .nav-list .links-container.active ul li {
-          transition: .5s;
-          transform: translateX(0);
-          opacity: 1; }
-          #header .header #navbar .nav-list .links-container.active ul li i {
-            transition: 1s ease 1s;
-            color: #ead2a1; }
-          #header .header #navbar .nav-list .links-container.active ul li:nth-child(1) {
-            transition-delay: .3s; }
-          #header .header #navbar .nav-list .links-container.active ul li:nth-child(2) {
-            transition-delay: .4s; }
-          #header .header #navbar .nav-list .links-container.active ul li:nth-child(3) {
-            transition-delay: .5s; }
-          #header .header #navbar .nav-list .links-container.active ul li:nth-child(4) {
-            transition-delay: .6s; }
-          #header .header #navbar .nav-list .links-container.active ul li:nth-child(5) {
-            transition-delay: .7s; }
-          #header .header #navbar .nav-list .links-container.active ul li:nth-child(6) {
-            transition-delay: .8s; }
+        #header .header #navbar .nav-list .links-container.active ul {
+          overflow-y: scroll; }
+          #header .header #navbar .nav-list .links-container.active ul li {
+            transition: .5s;
+            transform: translateX(0);
+            opacity: 1; }
+            #header .header #navbar .nav-list .links-container.active ul li i {
+              transition: 1s ease 1s;
+              color: #ead2a1; }
+            #header .header #navbar .nav-list .links-container.active ul li:nth-child(1) {
+              transition-delay: .3s; }
+            #header .header #navbar .nav-list .links-container.active ul li:nth-child(2) {
+              transition-delay: .4s; }
+            #header .header #navbar .nav-list .links-container.active ul li:nth-child(3) {
+              transition-delay: .5s; }
+            #header .header #navbar .nav-list .links-container.active ul li:nth-child(4) {
+              transition-delay: .6s; }
+            #header .header #navbar .nav-list .links-container.active ul li:nth-child(5) {
+              transition-delay: .7s; }
+            #header .header #navbar .nav-list .links-container.active ul li:nth-child(6) {
+              transition-delay: .8s; }
       @media (min-width: 1025px) {
         #header .header #navbar .nav-list .links-container .nav-logo {
           display: none; } }
@@ -1540,15 +1542,20 @@ body {
         height: 15%;
         width: 40%;
         border-radius: 5px;
-        overflow: hidden;
         position: sticky;
         top: 1em;
         transform: translateX(50%);
-        transition: 1s ease; }
+        transition: 1s ease;
+        outline: none;
+        overflow: hidden;
+        border: 2px solid #ead2a15e; }
         #header .header #navbar .nav-list .links-container .nav-logo img {
           width: 100%;
           height: 100%;
-          object-fit: cover; }
+          object-fit: cover;
+          border-radius: 5px; }
+        #header .header #navbar .nav-list .links-container .nav-logo:hover {
+          background-color: #20262e; }
       #header .header #navbar .nav-list ul li {
         list-style: none; }
         #header .header #navbar .nav-list ul li a {
