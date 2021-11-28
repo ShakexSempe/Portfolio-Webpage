@@ -1554,8 +1554,6 @@ body {
           height: 100%;
           object-fit: cover;
           border-radius: 5px; }
-        #header .header #navbar .nav-list .links-container .nav-logo:hover {
-          background-color: #20262e; }
       #header .header #navbar .nav-list ul li {
         list-style: none; }
         #header .header #navbar .nav-list ul li a {
