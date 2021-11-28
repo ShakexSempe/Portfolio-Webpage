@@ -85,11 +85,10 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle('active');
   });
 });
-
+// nav logo click
 navLogo.addEventListener("click", () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
-  console.log('nav logo clicked')
 })
 //  end of remove hamburger after click 
 //  remove sidebar after click on sidebar img 
