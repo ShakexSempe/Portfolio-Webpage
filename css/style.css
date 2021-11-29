@@ -1497,7 +1497,7 @@ body {
             z-index: 1;
             transition: 0.5s ease left;
             position: relative;
-            border: 2px solid #ead2a15e;
+            border: 2px solid rgba(255, 255, 255, 0.155);
             outline: none;
             padding: 1em 0;
             overflow-y: auto; }
