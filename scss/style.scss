@@ -108,7 +108,7 @@ body {
                             border: 2px solid $trans-border;
                             outline: none;
                             padding: 1em 0;
-                            overflow-y: auto;
+                            // overflow-y: auto;
                             // list items active transition
                             li {
                                 transform: translateX(10%);
@@ -127,7 +127,8 @@ body {
                         }
 
                         ul {
-                            overflow-y: scroll;
+                            overflow-y: auto;
+                            overflow-x: hidden;
                             li {
                                 transition: .5s;
                                 transform: translateX(0);
@@ -453,13 +454,16 @@ body {
             text-align: center;
             font-family: 'Gruppo', cursive;
             padding: .5em 1em;
-            margin: 2em 0;
+            margin: 0;
             width: 100%;
             border-radius: 20px;
             border: none;
             outline: none;
-            opacity: 0;
+            opacity: 1;
+            transform: rotateX(-90deg) ;
+            transform-style: preserve-3d;
             animation: show-cta 4s 5.5s;
+            // animation: show-cta 4s;
             animation-fill-mode: forwards;
             // background-color: $button-background-grey;
             transition: .3s linear;
@@ -470,6 +474,7 @@ body {
             @keyframes show-cta {
                 100% {
                     opacity: 1;
+                    transform: rotateX(0) translateY(5%);
                 }
             }
             // end of show cta
