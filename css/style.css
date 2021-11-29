@@ -440,6 +440,8 @@ hamburger
           box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000;
           z-index: 2; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {
+          display: grid;
+          place-items: center;
           height: 80px;
           width: 80px;
           border: none;
@@ -449,11 +451,11 @@ hamburger
           margin-bottom: 20px;
           position: relative;
           isolation: isolate; }
-          #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon#git-icon img, #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon#netlify-icon img {
-            width: 100%;
-            border-radius: 50%; }
-          #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon#express-icon img {
-            border-radius: 30px; }
+          #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon img {
+            width: 100%; }
+          #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon i {
+            color: #ead2a1;
+            font-size: 3em; }
           #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon::before {
             content: '';
             position: absolute;
@@ -484,8 +486,6 @@ hamburger
             border-radius: 50%;
             z-index: -2;
             opacity: .4; }
-          #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon img {
-            width: 100%; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
           font-size: 1.4em;
           font-weight: 600;

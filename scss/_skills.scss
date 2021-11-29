@@ -300,19 +300,20 @@
                     // end of skills-item box shadow
 
                     // item icon
+                    
                     .icon {
-                        &#git-icon, 
-                        &#netlify-icon {
-                            img {
-                                width: 100%;
-                                border-radius: 50%;
-                            }
+                        display: grid;
+                        place-items: center;
+                        // icon img
+                        img {
+                            width: 100%;
                         }
-                        &#express-icon {
-                            img {
-                                border-radius: 30px;
-                            }
+                        // end of icon img
+                        i {
+                            color:$span-gold;
+                            font-size: 3em;
                         }
+                        
                         height: 80px;
                         width: 80px;
                         border: none;
@@ -370,11 +371,7 @@
                             opacity: .4;
                         }
                         // end of icon box shadow
-                        // icon img
-                        img {
-                            width: 100%;
-                        }
-                        // end of icon img
+                        
                     }
                     // end of item icon
                     // skills item title (h2)
