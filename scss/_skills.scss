@@ -265,7 +265,7 @@
                             
 
                             &::marker {
-                                color: $text-white-trans-d;
+                                color: $span-gold;
                             }
                         }
 
@@ -381,7 +381,7 @@
                     h2 {
                         font-size: 1.4em;
                         font-weight: 600;
-                        color: $text-light;
+                        color: $span-gold;
                         margin-bottom: 10px;
                         text-transform: capitalize;
                         font-family: $font-gruppo;
@@ -416,6 +416,7 @@
                         ul {
                             li {
                                 font-size: 1em;
+                                
                             }
                         }
                     }

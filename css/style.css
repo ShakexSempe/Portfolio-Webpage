@@ -417,7 +417,7 @@ hamburger
             padding: .2em .4em;
             text-transform: capitalize; }
             #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li::marker {
-              color: #ddda; }
+              color: #ead2a1; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item::after {
           content: "";
           position: absolute;
@@ -489,7 +489,7 @@ hamburger
         #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
           font-size: 1.4em;
           font-weight: 600;
-          color: #fff;
+          color: #ead2a1;
           margin-bottom: 10px;
           text-transform: capitalize;
           font-family: "Gruppo", cursive;
@@ -1497,7 +1497,7 @@ body {
             z-index: 1;
             transition: 0.5s ease left;
             position: relative;
-            border: 2px solid rgba(255, 255, 255, 0.155);
+            border: 2px solid #ead2a15e;
             outline: none;
             padding: 1em 0; }
             #header .header #navbar .nav-list .links-container ul li {
