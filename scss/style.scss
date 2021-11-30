@@ -370,6 +370,8 @@ body {
             background: transparent;
             padding: .5em;
             border-radius: 5px;
+            position: absolute;
+            top: 20vh;
             @media (min-width: 768px){
                 display: flex;
                 flex-direction: column;

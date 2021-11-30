@@ -166,7 +166,7 @@ hamburger
     &.hamburger:before {
         border: 2px solid #fff;
         opacity: 0;
-        animation: ham-pulse 2s ease infinite;
+        animation: ham-pulse 2.5s ease infinite 5.5s;
         @keyframes ham-pulse {
             50% {
                 opacity: .5;

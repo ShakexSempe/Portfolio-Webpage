@@ -136,7 +136,7 @@ hamburger
   #header .hamburger.hamburger:before {
     border: 2px solid #fff;
     opacity: 0;
-    animation: ham-pulse 2s ease infinite; }
+    animation: ham-pulse 2.5s ease infinite 5.5s; }
 
 @keyframes ham-pulse {
   50% {
@@ -1656,7 +1656,9 @@ body {
     margin: 1em auto;
     background: transparent;
     padding: .5em;
-    border-radius: 5px; }
+    border-radius: 5px;
+    position: absolute;
+    top: 20vh; }
     @media (min-width: 768px) {
       #home .hero #hero-h1 {
         display: flex;
