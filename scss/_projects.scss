@@ -95,8 +95,8 @@
                     background: #485563c5;
                     backdrop-filter: blur(1px);
                     transition: 1.3s ease;
-                    box-shadow: inset 5px 0px 5px rgba(150, 149, 149, 0.667),
-                                inset -3px -5px 5px #000a;
+                    box-shadow: inset 5px 0px 3px rgba(150, 149, 149, 0.667),
+                                inset -3px -5px 3px #000a;
                     // project Title (h1)
                     h1 {
                         font-size: 1.15em;
@@ -104,14 +104,14 @@
                         @media (min-width:1024px){
                             font-size: 2em;
                         }
-                        color: #ddd;
+                        color: $span-gold;
                         font-weight: 900;
                         text-transform: capitalize;
                         line-height: 1em;
                         letter-spacing: .05em;
                         margin-bottom: .5em;
                         padding-bottom: .5em;
-                        border-bottom: 1px dashed $text-white-trans;
+                        border-bottom: 1px dashed $span-gold;
                         
                     }
                     // end of project Title (h1)
@@ -302,7 +302,7 @@
                             }
 
                             &::after {
-                                opacity: .5;
+                                opacity: .7;
                             }
                             
                         }

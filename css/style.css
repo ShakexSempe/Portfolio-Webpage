@@ -778,7 +778,7 @@ hamburger
         background: #485563c5;
         backdrop-filter: blur(1px);
         transition: 1.3s ease;
-        box-shadow: inset 5px 0px 5px rgba(150, 149, 149, 0.667), inset -3px -5px 5px #000a; }
+        box-shadow: inset 5px 0px 3px rgba(150, 149, 149, 0.667), inset -3px -5px 3px #000a; }
         @media (min-width: 768px) {
           #projects .projects .all-projects .project-item .project-tile {
             flex-basis: 50%;
@@ -786,14 +786,14 @@ hamburger
         #projects .projects .all-projects .project-item .project-tile h1 {
           font-size: 1.15em;
           width: 100%;
-          color: #ddd;
+          color: #ead2a1;
           font-weight: 900;
           text-transform: capitalize;
           line-height: 1em;
           letter-spacing: .05em;
           margin-bottom: .5em;
           padding-bottom: .5em;
-          border-bottom: 1px dashed #fffa; }
+          border-bottom: 1px dashed #ead2a1; }
           @media (min-width: 1024px) {
             #projects .projects .all-projects .project-item .project-tile h1 {
               font-size: 2em; } }
@@ -919,7 +919,7 @@ hamburger
       #projects .projects .all-projects .project-item:hover.project-item .project-img img {
         transform: scale(1.1); }
       #projects .projects .all-projects .project-item:hover.project-item .project-img::after {
-        opacity: .5; }
+        opacity: .7; }
       #projects .projects .all-projects .project-item:hover.project-item .project-tile a i {
         transform: scale(1.15) translateX(0.5em); }
         #projects .projects .all-projects .project-item:hover.project-item .project-tile a i::after {
