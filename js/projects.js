@@ -113,7 +113,7 @@ displayProjects = (projectsItems) => {
         return `<div class="project-item">
         <div class="project-tile">
             <h1>${project.title}</h1>
-            <a href=${project.link} target="_blank">
+            <a href=${project.link} title="view project" target="_blank">
                 <i class="fas fa-link"></i>
                 <h2>${project.head}</h2>
                 <p>

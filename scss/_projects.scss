@@ -18,7 +18,7 @@
             // section header h1
             h1 {
                 margin-bottom: 50px;
-                background-image: linear-gradient(40deg, #000, purple, skyblue, #000, skyblue, #dc143c, #000, skyblue, #000, purple);
+                background-image: linear-gradient(40deg, #000, $span-gold, skyblue, #000, skyblue, #dc143c, #000, skyblue, #000, $span-gold);
                 background-size: 900%;
                 background-position: 0%;
                 background-clip: text;

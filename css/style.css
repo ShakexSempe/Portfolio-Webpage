@@ -727,7 +727,7 @@ hamburger
     z-index: 2; }
     #projects .projects-header h1 {
       margin-bottom: 50px;
-      background-image: linear-gradient(40deg, #000, purple, skyblue, #000, skyblue, #dc143c, #000, skyblue, #000, purple);
+      background-image: linear-gradient(40deg, #000, #ead2a1, skyblue, #000, skyblue, #dc143c, #000, skyblue, #000, #ead2a1);
       background-size: 900%;
       background-position: 0%;
       background-clip: text;
@@ -1115,6 +1115,11 @@ hamburger
               color: #fff; }
           #footer .footer .socialMedia-links .socialMedia-item:hover .link-icon {
             opacity: 0; }
+        #footer .footer .socialMedia-links .socialMedia-item.codepen a {
+          background-color: #000;
+          color: #f4f4f4; }
+        #footer .footer .socialMedia-links .socialMedia-item.codepen p {
+          color: #fff; }
         #footer .footer .socialMedia-links .socialMedia-item.linkedin a {
           background: #0077b5; }
         #footer .footer .socialMedia-links .socialMedia-item.linkedin p {

@@ -91,7 +91,7 @@
         </h1>
 
         <h1 id="aka"><span>a.k.a</span></h1>
-        <button href="#skills" type="button"  id="cta-header" class="scroll-link">
+        <button href="#skills" type="button" title="Shakex-about"  id="cta-header" class="scroll-link">
           <span style="--i:1;">s</span>
           <span style="--i:2;">h</span>
           <span style="--i:3;">a</span>
@@ -122,7 +122,7 @@
       </div>
       <!--Dropdown-->
       <div class="dropdown">
-        <button onclick="dropdown()" class="dropbtn">My Skills</button>
+        <button onclick="dropdown()" title="skills" class="dropbtn">My Skills</button>
         <div id="myDropdown" class="dropdown-content">
 
           <div class="skills-bottom">
@@ -358,16 +358,16 @@
             stacks such as Python and PHP back end scripting.
           </p>
         </article>
-        <button id="readBtn">read more</button>
+        <button id="readBtn" title="read more">read more</button>
 
         <article id="cv">
-          <a href="https://codepen.io/bSempe" target="_blank" class="fcc-link">
+          <a href="https://codepen.io/bSempe" title='Code-pen' target="_blank" class="fcc-link">
             <i class="fab fa-codepen" aria-hidden="true"></i>CodePen
           </a>
-          <a href="./cv/b-sempe-cv-2021.pdf" target="_blank" class="fcc-link">
+          <a href="./cv/b-sempe-cv-2021.pdf" title="download cv" target="_blank" class="fcc-link">
             <i class="fas fa-user-graduate"></i>cv
           </a>
-          <a href="https://github.com/ShakexSempe" target="_blank" id="profile-link">
+          <a href="https://github.com/ShakexSempe" title="github" target="_blank" id="profile-link">
             <i class="fab fa-github"></i>github
           </a>
         </article>
@@ -394,7 +394,7 @@
           <h1>Address</h1>
           <div class="contact-info">
             <h2>Mahikeng, North West.<span>South Africa</span></h2>
-            <a href="https://goo.gl/maps/8XfqHABUeWN6oEjB6" target="_blank"><i class="fas fa-map-pin"></i>..where?</a>
+            <a href="https://goo.gl/maps/8XfqHABUeWN6oEjB6" title="view in google maps" target="_blank"><i class="fas fa-map-pin"></i>..where?</a>
           </div>
         </div>
 
@@ -405,7 +405,7 @@
           <h1>Email</h1>
           <div class="contact-info">
             <h2>bshakex@gmail.com</h2>
-            <a href="mailto:bshakex@gmail.com"><i class="fas fa-at"></i> ..email me</a>
+            <a href="mailto:bshakex@gmail.com" title="send email to Shakex"><i class="fas fa-at"></i> ..email me</a>
           </div>
         </div>
 
@@ -416,7 +416,7 @@
           <h1>Phone</h1>
           <div id="phone" class="contact-info">
             <h2>+27 72 600 5104</h2>
-            <a href="tel:0726005104"><i class="fas fa-phone-alt"></i> ..call me</a>
+            <a href="tel:0726005104" title="call Shakex"><i class="fas fa-phone-alt"></i> ..call me</a>
           </div>
         </div>
 
@@ -453,7 +453,7 @@
           <textarea rows="3" cols="50" name="message" placeholder="leave a message..." id="message" required></textarea>
         </div>
 
-        <button type="submit">send email</button>
+        <button type="submit" title="submit contact form">send email</button>
         <!-- form options -->
         <input type="hidden" name="_subject" value="New submission!">
         <input type="hidden" name="_autoresponse" value="Shakex has received your form">
@@ -468,7 +468,14 @@
       <section class="socialMedia-links">
         <h1 class="footer-section-title">my links</h1>
         <section class="links-grid">
-
+ <!-- social media link -->
+ <div class="socialMedia-item codepen">
+  <p class="link-icon">codePen</p>
+  <a href="https://codepen.io/bSempe" title="freeCodecamp" data-icon="codepen" target="_blank">
+    <i class="fab fa-codepen"></i>@bsempe
+  </a>
+</div>
+<!-- end of social media link -->
           <!-- social media link -->
           <div class="socialMedia-item fcc">
             <p class="link-icon">freeCodeCamp</p>

@@ -262,6 +262,15 @@
                 }
                 // end of link item hover state
                 // link colors
+                &.codepen {
+                    a {
+                    background-color: #000;
+                    color: #f4f4f4;
+                    }
+                    p {
+                        color:#fff;
+                    }
+                }
                 &.linkedin {
                     a {
                         background: #0077b5;
