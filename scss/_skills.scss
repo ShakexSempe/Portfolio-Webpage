@@ -166,14 +166,15 @@
             }
 
             &::after {
-                background: linear-gradient(0deg, #dc134c, #581212);
+                background: linear-gradient(0deg, $overlay-blue-darker, $overlay-blue-light);
             
                 opacity: 0;
-                box-shadow: $box-dark-top-sm;
+                box-shadow: $box-light-top-sm;
             }
 
             // button box shadow states
             &:hover {
+                color: $span-gold;
                 transform: scale(.97);
                 &::before {
                     opacity: 0;
@@ -186,6 +187,7 @@
             &:active {
                 transform: scale(.9);
                 transition: .3s;
+
             }
 
             // button end of box shadow states
@@ -199,6 +201,7 @@
             // show-contents
             &.show {
                 display: block;
+
             }
             // end of show-contents
             display: none;
@@ -208,7 +211,7 @@
             align-items: center;
             background: $overlay-blue-light;
             position: relative;
-            padding-bottom: 15vh;
+            padding-bottom: 10vh;
             // dropdown content overlay
             &::before {
                 content: "";

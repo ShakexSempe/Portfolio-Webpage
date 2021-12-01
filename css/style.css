@@ -349,10 +349,11 @@ hamburger
       background: linear-gradient(0deg, #3f0d0d, #dc134c);
       box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
     #skills .dropdown .dropbtn::after {
-      background: linear-gradient(0deg, #dc134c, #581212);
+      background: linear-gradient(0deg, #20262e, #485563);
       opacity: 0;
-      box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda; }
+      box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
     #skills .dropdown .dropbtn:hover {
+      color: #ead2a1;
       transform: scale(0.97); }
       #skills .dropdown .dropbtn:hover::before {
         opacity: 0; }
@@ -369,7 +370,7 @@ hamburger
     align-items: center;
     background: #485563;
     position: relative;
-    padding-bottom: 15vh; }
+    padding-bottom: 10vh; }
     #skills .dropdown .dropdown-content.show {
       display: block; }
     #skills .dropdown .dropdown-content::before {
