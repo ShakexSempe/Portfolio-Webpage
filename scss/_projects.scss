@@ -50,6 +50,9 @@
                 justify-content: center;
                 flex-direction: column-reverse;
                 width: 90%;
+                border: 3px solid $span-gold;
+                outline: none;
+                overflow: hidden;
                 // project items on desktop : row
                 @media (min-width: 768px) {
                     height: 350px;
@@ -67,18 +70,15 @@
                 margin: 20px auto;
                 overflow: hidden;
                 border-radius: 10px;
-                box-shadow: 0 0 5px #000a,
-                    inset 5px 5px 5px #ddda,
-                    inset -5px -5px 5px #000;
+                // box-shadow: 0 0 5px #000a,
+                //     inset 5px 5px 5px #ddda,
+                //     inset -5px -5px 5px #000;
                 
                 // project tile
                 .project-tile {
+                    // border: 3px solid $span-gold;
                     @media (min-width: 768px){
                         flex-basis: 50%;
-                        // desktop project tile box shadow
-                        box-shadow: inset 5px 0px 5px rgba(150, 149, 149, 0.667),
-                                    inset 0px -5px 5px #000a;
-                        // end of desktop project tile box shadow
                         
                     }
 
@@ -95,8 +95,8 @@
                     background: #485563c5;
                     backdrop-filter: blur(1px);
                     transition: 1.3s ease;
-                    box-shadow: inset 5px 0px 3px rgba(150, 149, 149, 0.667),
-                                inset -3px -5px 3px #000a;
+                    // box-shadow: inset 5px 0px 3px rgba(150, 149, 149, 0.667),
+                    //             inset -3px -5px 3px #000a;
                     // project Title (h1)
                     h1 {
                         font-size: 1.15em;
@@ -215,6 +215,8 @@
                     position: relative;
                     isolation: isolate;
                     overflow: hidden;
+                    border: none;
+                    outline: none;
                     // project image box shadow
                     &::after {
                         content: "";
@@ -223,9 +225,6 @@
                         top: 0;
                         height: 100%;
                         width: 100%;
-                        box-shadow: 0 0 5px #000a,
-                            inset 5px 5px 5px #ddda,
-                            inset -5px 0px 5px #000a;
                         background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
                         opacity: .4;
                         transition: .5s;
@@ -237,9 +236,6 @@
                         height: 100%;
                         width: 100%;
                         object-fit: cover;
-                        border-radius: 0px;
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
                         transition: 0.5s ease;
                         z-index: 1;
                         overflow: hidden;
@@ -255,16 +251,11 @@
                     }
                     @media (min-width: 768px){
                         height: 100%;
-                        box-shadow: inset 0px 5px 5px #969595aa,
-                                    inset -3px -5px 5px #000;
-                        border-radius: 0;
-                        border-top-left-radius: 0;
-                        border-bottom-left-radius: 0;
-                        &::after {
-                            box-shadow: 0 0 5px #000a,
-                                        inset -1px 5px 5px #969595aa,
-                                        inset -5px -5px 5px #000;
-                        }
+                        // &::after {
+                        //     box-shadow: 0 0 5px #000a,
+                        //                 inset -1px 5px 5px #969595aa,
+                        //                 inset -5px -5px 5px #000;
+                        // }
                     }
                 }
                 // end of project image

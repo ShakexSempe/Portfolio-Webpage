@@ -750,10 +750,12 @@ hamburger
       justify-content: center;
       flex-direction: column-reverse;
       width: 90%;
+      border: 3px solid #ead2a1;
+      outline: none;
+      overflow: hidden;
       margin: 20px auto;
       overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 5px #000a, inset 5px 5px 5px #ddda, inset -5px -5px 5px #000; }
+      border-radius: 10px; }
       @media (min-width: 768px) {
         #projects .projects .all-projects .project-item {
           height: 350px;
@@ -777,12 +779,10 @@ hamburger
         background-image: var(--overlay);
         background: #485563c5;
         backdrop-filter: blur(1px);
-        transition: 1.3s ease;
-        box-shadow: inset 5px 0px 3px rgba(150, 149, 149, 0.667), inset -3px -5px 3px #000a; }
+        transition: 1.3s ease; }
         @media (min-width: 768px) {
           #projects .projects .all-projects .project-item .project-tile {
-            flex-basis: 50%;
-            box-shadow: inset 5px 0px 5px rgba(150, 149, 149, 0.667), inset 0px -5px 5px #000a; } }
+            flex-basis: 50%; } }
         #projects .projects .all-projects .project-item .project-tile h1 {
           font-size: 1.15em;
           width: 100%;
@@ -865,7 +865,9 @@ hamburger
         overflow: hidden;
         position: relative;
         isolation: isolate;
-        overflow: hidden; }
+        overflow: hidden;
+        border: none;
+        outline: none; }
         #projects .projects .all-projects .project-item .project-img::after {
           content: "";
           position: absolute;
@@ -873,7 +875,6 @@ hamburger
           top: 0;
           height: 100%;
           width: 100%;
-          box-shadow: 0 0 5px #000a, inset 5px 5px 5px #ddda, inset -5px 0px 5px #000a;
           background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
           opacity: .4;
           transition: .5s;
@@ -882,9 +883,6 @@ hamburger
           height: 100%;
           width: 100%;
           object-fit: cover;
-          border-radius: 0px;
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
           transition: 0.5s ease;
           z-index: 1;
           overflow: hidden; }
@@ -894,13 +892,7 @@ hamburger
             opacity: 0; }
         @media (min-width: 768px) {
           #projects .projects .all-projects .project-item .project-img {
-            height: 100%;
-            box-shadow: inset 0px 5px 5px #969595aa, inset -3px -5px 5px #000;
-            border-radius: 0;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0; }
-            #projects .projects .all-projects .project-item .project-img::after {
-              box-shadow: 0 0 5px #000a, inset -1px 5px 5px #969595aa, inset -5px -5px 5px #000; } }
+            height: 100%; } }
       #projects .projects .all-projects .project-item .tech-list {
         padding: .5em; }
         #projects .projects .all-projects .project-item .tech-list ul {
@@ -1817,7 +1809,7 @@ body {
 
 .paralax {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #29323c;
   background-repeat: no-repeat;
   background-size: contain;
