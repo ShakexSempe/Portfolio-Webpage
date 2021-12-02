@@ -580,7 +580,7 @@ body {
     background-color: $overlay-blue-dark;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center bottom;
+    background-position: center;
     background-attachment: fixed;
     &.paralax-logo {
         background-image: url(../img/shakex-logo-min.png);
@@ -602,17 +602,29 @@ body {
         // background-position: center;
     }
     &.px2 {
-        height: 80vh;
+        height: 85vh;
         background-image: url(../img/me-min.jpg);
+        background-size: 25%;
+
+        @media (max-width: 1025px) {
+            background-size: 80vw;
+            // background-size: contain;
+        }
     }
     &.px3 {
-        height: 80vh;
+        height: 85vh;
         background-image: url(../img/shakexblue-min.jpg);
+        background-size: 25%;
+
+        @media (max-width: 1025px) {
+            background-size: 80vw;
+            // background-size: contain;
+        }
     }
 
     @media (max-width: 500px) {
-        background-size: 100%;
-        background-position: center bottom;
+        background-size: contain;
+        background-position: center;
     }
 }
 // about 

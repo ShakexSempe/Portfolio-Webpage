@@ -1813,7 +1813,7 @@ body {
   background-color: #29323c;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center bottom;
+  background-position: center;
   background-attachment: fixed; }
   .paralax.paralax-logo {
     background-image: url(../img/shakex-logo-min.png);
@@ -1831,15 +1831,23 @@ body {
       .paralax.px1 {
         display: none; } }
   .paralax.px2 {
-    height: 80vh;
-    background-image: url(../img/me-min.jpg); }
+    height: 85vh;
+    background-image: url(../img/me-min.jpg);
+    background-size: 25%; }
+    @media (max-width: 1025px) {
+      .paralax.px2 {
+        background-size: 80vw; } }
   .paralax.px3 {
-    height: 80vh;
-    background-image: url(../img/shakexblue-min.jpg); }
+    height: 85vh;
+    background-image: url(../img/shakexblue-min.jpg);
+    background-size: 25%; }
+    @media (max-width: 1025px) {
+      .paralax.px3 {
+        background-size: 80vw; } }
   @media (max-width: 500px) {
     .paralax {
-      background-size: 100%;
-      background-position: center bottom; } }
+      background-size: contain;
+      background-position: center; } }
 
 .about {
   flex-direction: column-reverse;
