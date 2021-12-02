@@ -31,10 +31,9 @@
             margin: 5vh auto;
             padding: 5vh 1em;
             border-radius: 5px;
-            border: 1px solid #fffa;
+            border: 1px solid $span-gold;
             font-family: $font-ubuntu;
 
-            
             .input-div {
                 position: relative;
                 // border: 1px solid yellow;
@@ -63,9 +62,11 @@
                     outline: none;
                     font-weight: 600;
                     letter-spacing: .15em;
+                    font-family: $font-ubuntu;
 
                     &:invalid {
-                        background-color: $background-invalid;
+                        // background-color: $background-invalid;
+                        background-color: $span-gold;
                         color: $text-invalid;
                     }
                     &:valid {
@@ -88,6 +89,13 @@
 
                     &:focus {
                         outline: 3px dashed #fffa;
+                        border: none;
+                    }
+                    &:invalid {
+                        // background-color: $background-invalid;
+                        background-color: $span-gold;
+                        color: $text-invalid;
+                        border: 2px solid #fff;
                     }
                 }
                 // input hover state
@@ -101,7 +109,7 @@
                 ::placeholder {
                     font-family: $font-gruppo;
                     font-weight: 700;
-                    color: #333;
+                    color: #000;
                     text-transform: capitalize;
                 }
             }

@@ -952,7 +952,7 @@ hamburger
       margin: 5vh auto;
       padding: 5vh 1em;
       border-radius: 5px;
-      border: 1px solid #fffa;
+      border: 1px solid #ead2a1;
       font-family: "Ubuntu", sans-serif; }
       @media (min-width: 1024px) {
         #footer .footer form {
@@ -979,9 +979,10 @@ hamburger
           border: none;
           outline: none;
           font-weight: 600;
-          letter-spacing: .15em; }
+          letter-spacing: .15em;
+          font-family: "Ubuntu", sans-serif; }
           #footer .footer form .input-div input:invalid {
-            background-color: #f7cdd5c7;
+            background-color: #ead2a1;
             color: #000; }
           #footer .footer form .input-div input:valid {
             background-color: #cdf7d3c7;
@@ -996,14 +997,19 @@ hamburger
           border: none;
           outline: none; }
           #footer .footer form .input-div textarea:focus {
-            outline: 3px dashed #fffa; }
+            outline: 3px dashed #fffa;
+            border: none; }
+          #footer .footer form .input-div textarea:invalid {
+            background-color: #ead2a1;
+            color: #000;
+            border: 2px solid #fff; }
         #footer .footer form .input-div:hover label {
           transform: translateX(1em) translateY(-0.2em);
           color: #fff; }
         #footer .footer form .input-div ::placeholder {
           font-family: "Gruppo", cursive;
           font-weight: 700;
-          color: #333;
+          color: #000;
           text-transform: capitalize; }
       #footer .footer form button {
         position: relative;
