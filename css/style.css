@@ -952,7 +952,8 @@ hamburger
       padding: 5vh 1em;
       border-radius: 5px;
       border: 1px solid #ead2a1;
-      font-family: "Ubuntu", sans-serif; }
+      font-family: "Ubuntu", sans-serif;
+      overflow: hidden; }
       @media (min-width: 1024px) {
         #footer .footer form {
           width: 50%; } }
@@ -979,7 +980,8 @@ hamburger
           outline: none;
           font-weight: 600;
           letter-spacing: .15em;
-          font-family: "Ubuntu", sans-serif; }
+          font-family: "Ubuntu", sans-serif;
+          overflow: hidden; }
           #footer .footer form .input-div input:invalid {
             background-color: #ead2a1;
             color: #000; }
@@ -994,14 +996,14 @@ hamburger
           width: 100%;
           border-radius: 5px;
           border: none;
-          outline: none; }
+          outline: none;
+          overflow: hidden; }
           #footer .footer form .input-div textarea:focus {
             outline: 3px dashed #fffa;
             border: none; }
           #footer .footer form .input-div textarea:invalid {
             background-color: #ead2a1;
-            color: #000;
-            border: 2px solid #fff; }
+            color: #000; }
         #footer .footer form .input-div:hover label {
           transform: translateX(1em) translateY(-0.2em);
           color: #fff; }

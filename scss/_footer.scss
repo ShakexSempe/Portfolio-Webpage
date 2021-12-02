@@ -33,6 +33,7 @@
             border-radius: 5px;
             border: 1px solid $span-gold;
             font-family: $font-ubuntu;
+            overflow: hidden;
 
             .input-div {
                 position: relative;
@@ -63,6 +64,7 @@
                     font-weight: 600;
                     letter-spacing: .15em;
                     font-family: $font-ubuntu;
+                    overflow: hidden;
 
                     &:invalid {
                         // background-color: $background-invalid;
@@ -86,6 +88,7 @@
                     border-radius: 5px;
                     border: none;
                     outline: none;
+                    overflow: hidden;
 
                     &:focus {
                         outline: 3px dashed #fffa;
@@ -95,7 +98,6 @@
                         // background-color: $background-invalid;
                         background-color: $span-gold;
                         color: $text-invalid;
-                        border: 2px solid #fff;
                     }
                 }
                 // input hover state
