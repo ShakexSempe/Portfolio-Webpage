@@ -1602,7 +1602,6 @@ body {
             z-index: -1;
             transition: 0.3s ease letter-spacing; }
           #header .header #navbar .nav-list ul li a i {
-            margin: 0 auto;
             margin-right: .5em;
             padding: .5em;
             text-align: left;
