@@ -270,8 +270,7 @@ hamburger
   border-radius: 10px;
   border: none;
   position: relative;
-  z-index: 30;
-  transition: .2s linear; }
+  z-index: 30; }
   @media (min-width: 1024px) {
     #skills .skills-top {
       width: 60%; } }
@@ -1435,6 +1434,17 @@ hamburger
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+[data-scroll] {
+  transition: 1s;
+  transform: scale(0.5); }
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1); }
+
+[data-scroll="out"] {
+  opacity: 0; }
 
 html {
   scroll-behavior: smooth;

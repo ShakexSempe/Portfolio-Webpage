@@ -113,7 +113,7 @@
       <div class="skills-header">
         <h1 data-text="skills" class="section-title">Sk<span>i</span>lls</h1>
       </div>
-      <div class="skills-top">
+      <div data-scroll class="skills-top">
         <p>
           I'm a Front End Developer with a keen interest Responsive Web Design and UX design.<br>
           I have a certificate in Responsive Web Design from Free-Code-Camp.
@@ -121,7 +121,7 @@
         </p>
       </div>
       <!--Dropdown-->
-      <div class="dropdown">
+      <div data-scroll class="dropdown">
         <button onclick="dropdown()" title="skills" class="dropbtn">My Skills</button>
         <div id="myDropdown" class="dropdown-content">
 
@@ -387,7 +387,7 @@
       </div>
       <div class="contact-items">
 
-        <div class="contact-item">
+        <div data-scroll class="contact-item">
           <div class="icon">
             <img src="/icons/icons8-address-64.png" alt="img" srcset="https://img.icons8.com/nolan/64/address.png" />
           </div>
@@ -398,7 +398,7 @@
           </div>
         </div>
 
-        <div class="contact-item">
+        <div data-scroll class="contact-item">
           <div class="icon">
             <img src="/icons/icons8-email-64.png" alt="img" srcset="https://img.icons8.com/nolan/64/email.png" />
           </div>
@@ -409,7 +409,7 @@
           </div>
         </div>
 
-        <div class="contact-item">
+        <div data-scroll class="contact-item">
           <div class="icon">
             <img src="/icons/icons8-phone-64.png" alt="img" srcset="https://img.icons8.com/nolan/64/phone.png" />
           </div>
@@ -435,7 +435,7 @@
   <footer id="footer">
     <div class="footer container">
       <!-- contact form -->
-      <form class="contact-form" target="_blank" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
+      <form data-scroll class="contact-form" target="_blank" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
         <h1 class="footer-section-title contact">Get In Touch</h1>
 
         <div class="input-div">
@@ -465,7 +465,7 @@
       <!-- end of contact form -->
 
       <!-- social media links -->
-      <section class="socialMedia-links">
+      <section data-scroll class="socialMedia-links">
         <h1 class="footer-section-title">my links</h1>
         <section class="links-grid">
  <!-- social media link -->
@@ -542,8 +542,17 @@
   </a>
   <!--end of back to top button-->
 
+
   <script src="js/app.js"></script>
   <script src="js/projects.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script>
+    ScrollOut({
+      onShown(el) {
+        el.classList.add("animated");
+      }
+    });
+  </script>
 </body>
 
 </html>
