@@ -50,7 +50,7 @@
                 justify-content: center;
                 flex-direction: column-reverse;
                 width: 90%;
-                border: 3px solid $span-gold;
+                border: 2px solid $span-gold;
                 outline: none;
                 overflow: hidden;
                 // project items on desktop : row
@@ -69,11 +69,7 @@
                 // end of project items on desktop : row
                 margin: 20px auto;
                 overflow: hidden;
-                border-radius: 10px;
-                // box-shadow: 0 0 5px #000a,
-                //     inset 5px 5px 5px #ddda,
-                //     inset -5px -5px 5px #000;
-                
+                border-radius: 5px;
                 // project tile
                 .project-tile {
                     // border: 3px solid $span-gold;
@@ -217,6 +213,7 @@
                     overflow: hidden;
                     border: none;
                     outline: none;
+                    transform: scale(1.05);
                     // project image box shadow
                     &::after {
                         content: "";

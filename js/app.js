@@ -33,12 +33,14 @@ const brand = document.querySelector('.brand');
 // hidden brand logo which becomes visible when screen scroll position < 150
   if (scroll_position < 30) {
     header.style.backgroundColor = "#20262e";
+    hamburger.classList.add("no-pulse");
   }
   if (scroll_position < 350) {
     brand.style.opacity = 0;
   } else {
     brand.style.opacity = 1;
     header.style.backgroundColor = "#29323c";
+    hamburger.classList.remove("no-pulse");
 
   };
 // top-link ()

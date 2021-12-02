@@ -166,22 +166,31 @@ hamburger
     &.hamburger:before {
         border: 2px solid #fff;
         opacity: 0;
-        animation: ham-pulse 2.5s ease infinite 5.5s;
+        animation: ham-pulse 2.5s ease infinite .5s;
         @keyframes ham-pulse {
             50% {
-                opacity: .5;
+                opacity: .7;
                 border-color: $span-gold;
             }
 
             100% {
                 opacity: 0;
                 transform: scale(1.18);
-                border-color: #fff;
+                // border-color: #fff;
             }
         }
     }
     // end of pulse
     // end of hamburger pulse
+
+    // js header class
+    &.no-pulse {
+        &.hamburger::before {
+            animation: none;
+            animation-fill-mode: forwards;
+        }
+    }
+    // end of js header class
     // hamburger states
     &:hover,
     &:focus {

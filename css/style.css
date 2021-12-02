@@ -136,16 +136,18 @@ hamburger
   #header .hamburger.hamburger:before {
     border: 2px solid #fff;
     opacity: 0;
-    animation: ham-pulse 2.5s ease infinite 5.5s; }
+    animation: ham-pulse 2.5s ease infinite .5s; }
 
 @keyframes ham-pulse {
   50% {
-    opacity: .5;
+    opacity: .7;
     border-color: #ead2a1; }
   100% {
     opacity: 0;
-    transform: scale(1.18);
-    border-color: #fff; } }
+    transform: scale(1.18); } }
+  #header .hamburger.no-pulse.hamburger::before {
+    animation: none;
+    animation-fill-mode: forwards; }
   #header .hamburger:hover::before, #header .hamburger:focus::before {
     animation: none; }
   #header .hamburger:hover::after, #header .hamburger:focus::after {
@@ -750,12 +752,12 @@ hamburger
       justify-content: center;
       flex-direction: column-reverse;
       width: 90%;
-      border: 3px solid #ead2a1;
+      border: 2px solid #ead2a1;
       outline: none;
       overflow: hidden;
       margin: 20px auto;
       overflow: hidden;
-      border-radius: 10px; }
+      border-radius: 5px; }
       @media (min-width: 768px) {
         #projects .projects .all-projects .project-item {
           height: 350px;
@@ -867,7 +869,8 @@ hamburger
         isolation: isolate;
         overflow: hidden;
         border: none;
-        outline: none; }
+        outline: none;
+        transform: scale(1.05); }
         #projects .projects .all-projects .project-item .project-img::after {
           content: "";
           position: absolute;
