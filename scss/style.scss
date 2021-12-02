@@ -70,7 +70,7 @@ body {
             width: 100%;
             height: 100%;
             padding: 1vh 5vw;
-            @media (max-width: 1024px) {
+            @media (max-width: 1200px) {
                 padding: 0 5vw;
             }
             // corner logo
@@ -99,7 +99,7 @@ body {
             .nav-list {
                 // mobile navbar
                 .links-container {
-                    @media (max-width: 1024px) {
+                    @media (max-width: 1200px) {
                         position: absolute;
                         top: 0;
                         left: 100%;
@@ -140,6 +140,7 @@ body {
                             transition: 1.5s;
                             opacity: 1;
                             transform: translateX(0);
+
                         }
 
                         ul {
@@ -185,7 +186,7 @@ body {
                     // end of active mobile  navbar
 
                     // hide nav avi on desktop
-                    @media (min-width: 1025px) {
+                    @media (min-width: 1200px) {
                         .nav-logo { display: none;}
                     }
                     // end of hide nav avi on desktop
@@ -196,7 +197,7 @@ body {
                         opacity: 1;
                         z-index: 1;
                         height: 15%;
-                        width: 40%;
+                        width: 35%;
                         border-radius: 5px;
                         position: sticky;
                         top: 1em;
@@ -211,6 +212,9 @@ body {
                             height: 100%;
                             object-fit: cover;
                             border-radius: 5px;
+                        }
+                        @media (min-width: 768px) {
+                            width: 20%;
                         }
                     }
 
@@ -285,7 +289,7 @@ body {
                 }
                 // end of mobile screens style
                 // desktop nav-list style
-                @media (min-width: 1025px){
+                @media (min-width: 1200px){
                     ul {
                         display: block;
                         height: auto;
