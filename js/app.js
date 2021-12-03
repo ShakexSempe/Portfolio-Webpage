@@ -139,7 +139,6 @@ dropdown = () => {
 // read more
 readBtn.addEventListener("click", ()=> {
   article.classList.toggle('active');
-  readBtn.classList.toggle("open");
   // let body = document.querySelector('.about-body');
 });
 

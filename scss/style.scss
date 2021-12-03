@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    // border: 1px solid red;
 }
 // SCROLL OUT
 [data-scroll] {
@@ -130,10 +131,35 @@ body {
                                 transform: translateX(10%);
                                 opacity: 0;
                                 transition:.3s;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                margin: 1em auto 1em .5em;
+                                width: 100%;
+
+
+                                a {
+                                    margin-right: auto;
+                                    padding: .5em;
+                                    width: 70%;
+                                    display: block;
+                                    // border: 1px solid yellow;
+                                    border-radius: 5px;
+                                    // background-color: $overlay-blue-darker;
+                                }
+
+                                i {
+                                    flex-basis: 15%;
+                                    text-align: center;
+                                    // margin-right: 1em;
+                                    padding: .5em;
+                                    color: #fffa;
+                                    // border: 1px solid yellow;
+                                    
+                                }
                             }
                         }
-                    }
-                    // active mobile  navbar
+                        // active mobile  navbar
                     &.active {
                         left: 0;
                         .nav-logo {
@@ -184,12 +210,10 @@ body {
                         }
                     }
                     // end of active mobile  navbar
-
-                    // hide nav avi on desktop
-                    @media (min-width: 1200px) {
-                        .nav-logo { display: none;}
                     }
-                    // end of hide nav avi on desktop
+                    
+
+                    
                     
                     // nav-logo 
                     .nav-logo {
@@ -221,11 +245,11 @@ body {
                 }
                 // mobile screens style
                 ul {
-                    
-
                     li {
                         list-style: none;
-                        
+                        display: flex;
+                        // border: 1px solid red;
+                        align-items: center;
 
                         a {
                             font-size: 1em;
@@ -254,16 +278,14 @@ body {
                             }
                             // end of link text on hover
 
-                            
-
-                            i {
-                                margin-right: .5em;
-                                padding: .5em;
-                                text-align: left;
-                                color: $text-white-trans;
-                                border-radius: 10px;
-                                box-shadow: $box-light-top-sm;
-                            }
+                        }
+                        i {
+                            margin-right: .5em;
+                            padding: .5em;
+                            text-align: left;
+                            color: $text-white-trans;
+                            border-radius: 10px;
+                            box-shadow: $box-light-top-sm;
                         }
                         // li hover state
                         &:hover {
@@ -289,15 +311,24 @@ body {
                 // end of mobile screens style
                 // desktop nav-list style
                 @media (min-width: 1200px){
+                    // hide nav avi on desktop
+                        .nav-logo { display: none;}
+                    // end of hide nav avi on desktop
+                    // remove hamburger from desktop view
+                    .hamburger {
+                        display: none;
+                    }
+                    // end of remove hamburger from desktop view
                     ul {
-                        display: block;
+                        display: flex;
                         height: auto;
                         width: fit-content;
                         background-color: transparent;
 
                         li {
-                            display: inline-block;
                             position: relative;
+                            display: flex;
+
                             // list item underline
                             &::before {
                                 position: absolute;
@@ -311,6 +342,7 @@ body {
                                 background-color: $link-gold;
                                 transition: .3s ease;
                             }
+                            
                             &:hover {
                                 &::before {
                                     width: 30%;
@@ -324,48 +356,39 @@ body {
                                 padding: .3em 1em;
                                 margin: 0 auto;
                                 display: block;
-                                &:focus {
-                                    color: $link-gold;
-                                    i {
-                                        color: $link-gold;
-                                    }
-                                }
-
-                                i {
-                                    margin-right: .3em;
-                                    padding: .5em;
-                                    font-size: 1em;
-                                    border-radius: 50%;
-                                }
 
                                 &::after {
                                     display: none;
                                 }
+                            }
+                            i {
+                                color: #fffa;
+                                margin-right: .3em;
+                                padding: .5em;
+                                font-size: 1em;
+                                border-radius: 50%;
                             }
                             // links and icon hover state
                             &:hover {
                                 a {
                                     transition: .3s ease;
                                     color: $link-gold;
-
-                                    i {
-                                        transition: .3s;
-                                        color: $text-white;
-                                    }
+                                }
+                                i {
+                                    transition: .3s;
+                                    color: $text-light;
                                 }
                             }
                             // links and icon hover state
+                            
                         }
                         &.active {
                             background: none;
                             box-shadow: none;
+                            
                         }
                     }
-                    // remove hamburger from desktop view
-                    .hamburger {
-                        display: none;
-                    }
-                    // end of remove hamburger from desktop view
+                    
 
                 }
                 // end of desktop nav-list style
