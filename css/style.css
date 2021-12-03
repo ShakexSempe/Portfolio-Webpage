@@ -1939,7 +1939,22 @@ body {
       cursor: pointer;
       border-radius: 15px;
       text-transform: uppercase;
-      transition: .3s; }
+      transition: .3s;
+      position: relative; }
+      .about .col-right button.open::after {
+        position: absolute;
+        content: 'close';
+        display: grid;
+        place-items: center;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        background-color: #20262e; }
       .about .col-right button:hover {
         transform: scale(0.97); }
     .about .col-right article.about-article {
