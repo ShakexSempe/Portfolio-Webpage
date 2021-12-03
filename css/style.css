@@ -1667,7 +1667,7 @@ body {
               #header .header #navbar .nav-list ul li a::after {
                 display: none; }
             #header .header #navbar .nav-list ul li i {
-              color: #fffa;
+              color: #ead2a1;
               margin-right: .3em;
               padding: .5em;
               font-size: 1em;
@@ -1678,6 +1678,13 @@ body {
             #header .header #navbar .nav-list ul li:hover i {
               transition: .3s;
               color: #fff; }
+            #header .header #navbar .nav-list ul li:focus::before {
+              width: 30%;
+              opacity: 1; }
+            #header .header #navbar .nav-list ul li:focus a {
+              color: #ead2a1; }
+            #header .header #navbar .nav-list ul li:focus i {
+              color: #ead2a1; }
           #header .header #navbar .nav-list ul.active {
             background: none;
             box-shadow: none; } }

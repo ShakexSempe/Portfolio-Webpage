@@ -4,6 +4,7 @@
 const linksContainer = document.querySelector('.links-container');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
+const navItems = document.querySelectorAll('.header .nav-list ul li');
 //Hamburger Menu
 const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');

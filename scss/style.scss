@@ -362,7 +362,7 @@ body {
                                 }
                             }
                             i {
-                                color: #fffa;
+                                color: $link-gold;
                                 margin-right: .3em;
                                 padding: .5em;
                                 font-size: 1em;
@@ -380,7 +380,18 @@ body {
                                 }
                             }
                             // links and icon hover state
-                            
+                            &:focus {
+                                &::before {
+                                    width: 30%;
+                                    opacity: 1;
+                                }
+                                a {
+                                    color: $span-gold;
+                                }
+                                i {
+                                    color: $span-gold;
+                                }
+                            }
                         }
                         &.active {
                             background: none;
