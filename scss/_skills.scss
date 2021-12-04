@@ -10,28 +10,8 @@
         width: 100vw;
         padding-bottom: 30vh;
         margin: 0 auto;
-        // padding-bottom: 1em;
-        background-image: url('../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        position: relative;
-
-        // skills section overlay
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            background-color: #000;
-            opacity: 0.8;
-            overflow: auto;
-        }
-
-        // end of skills section overlay
+        background: $overlay;
+        
         // skills section-title
         &-header {
             width: 100%;
@@ -57,6 +37,7 @@
         width: 90%;
         @media (min-width: 1024px){
             width: 60%;
+            margin: 5vh 0 2em;
         }
         padding: .5em 1em 2em;
         text-align: center;

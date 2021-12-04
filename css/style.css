@@ -234,22 +234,7 @@ hamburger
   width: 100vw;
   padding-bottom: 30vh;
   margin: 0 auto;
-  background-image: url("../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative; }
-  #skills .skills::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 0.8;
-    overflow: auto; }
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%); }
   #skills .skills-header {
     width: 100%;
     height: auto;
@@ -275,7 +260,8 @@ hamburger
   z-index: 30; }
   @media (min-width: 1024px) {
     #skills .skills-top {
-      width: 60%; } }
+      width: 60%;
+      margin: 5vh 0 2em; } }
   #skills .skills-top::before {
     content: '';
     position: absolute;
@@ -902,7 +888,7 @@ hamburger
           display: flex;
           flex-wrap: wrap; }
           #projects .projects .all-projects .project-item .tech-list ul li {
-            font-size: .95em;
+            font-size: .8em;
             color: #fffa;
             list-style: none;
             padding: .4em .3em;
