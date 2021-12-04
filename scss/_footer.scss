@@ -11,7 +11,7 @@
         padding: 5vh 5vw;
         // section title
         .footer-section-title {
-                color: #eee;
+                color: $span-gold;
                 text-align: center;
                 text-transform: capitalize;
                 margin-bottom: 1.5em;
@@ -160,7 +160,7 @@
             }
             grid-template-columns: 1fr;
             background-color: $overlay-blue-dark;
-            border: 1px solid #fffa;
+            border: 1px solid $span-gold;
             border-radius: 5px;
             width: 100%;
             margin: 2em 5vw;
@@ -175,11 +175,13 @@
                 }
             }
             .socialMedia-item {
-                border: 2px solid hsla(0, 0%, 0%, 0.5);
+                // border: 2px solid hsla(0, 0%, 0%, 0.5);
+                border: 2px solid $span-gold;
+                background-color: $overlay-blue-darker;
                 padding: .5em 0;
                 border-radius: 5px;
                 overflow: hidden;
-                margin: .5em .1em;
+                margin: .5em .1em 1em .1em;
                 position: relative;
                 transition: .3s;
 
@@ -187,7 +189,8 @@
                     font-size: 1.4em;
                     text-transform: capitalize;
                     font-family: $font-gruppo;
-                    color: #fff;
+                    color: $text-light;
+                    font-weight: 600;
                     position:absolute;
                     left: 50%;
                     top: 50%;
@@ -277,24 +280,15 @@
                     background-color: #000;
                     color: #f4f4f4;
                     }
-                    p {
-                        color:#fff;
-                    }
                 }
                 &.linkedin {
                     a {
                         background: #0077b5;
                     }
-                    p {
-                        color: #fff;
-                    }
                 }
                 &.twitter {
                     a {
                         background: hsl(203, 89%, 53%);
-                    }
-                    p {
-                        color: #fff;
                     }
                 }
                 &.github {
@@ -306,9 +300,6 @@
                 &.fcc {
                     a {
                         background: #0a0a23;
-                    }
-                    p {
-                        color: #fff;
                     }
                 }
                 &.fem {

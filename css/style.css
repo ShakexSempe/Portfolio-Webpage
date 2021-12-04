@@ -932,7 +932,7 @@ hamburger
     justify-content: space-between;
     padding: 5vh 5vw; }
     #footer .footer .footer-section-title {
-      color: #eee;
+      color: #ead2a1;
       text-align: center;
       text-transform: capitalize;
       margin-bottom: 1.5em;
@@ -1038,7 +1038,7 @@ hamburger
     #footer .footer .socialMedia-links {
       grid-template-columns: 1fr;
       background-color: #29323c;
-      border: 1px solid #fffa;
+      border: 1px solid #ead2a1;
       border-radius: 5px;
       width: 100%;
       margin: 2em 5vw;
@@ -1052,11 +1052,12 @@ hamburger
           display: grid;
           grid-template-columns: 1fr 1fr; } }
       #footer .footer .socialMedia-links .socialMedia-item {
-        border: 2px solid rgba(0, 0, 0, 0.5);
+        border: 2px solid #ead2a1;
+        background-color: #20262e;
         padding: .5em 0;
         border-radius: 5px;
         overflow: hidden;
-        margin: .5em .1em;
+        margin: .5em .1em 1em .1em;
         position: relative;
         transition: .3s; }
         #footer .footer .socialMedia-links .socialMedia-item .link-icon {
@@ -1064,6 +1065,7 @@ hamburger
           text-transform: capitalize;
           font-family: "Gruppo", cursive;
           color: #fff;
+          font-weight: 600;
           position: absolute;
           left: 50%;
           top: 50%;
@@ -1121,23 +1123,15 @@ hamburger
         #footer .footer .socialMedia-links .socialMedia-item.codepen a {
           background-color: #000;
           color: #f4f4f4; }
-        #footer .footer .socialMedia-links .socialMedia-item.codepen p {
-          color: #fff; }
         #footer .footer .socialMedia-links .socialMedia-item.linkedin a {
           background: #0077b5; }
-        #footer .footer .socialMedia-links .socialMedia-item.linkedin p {
-          color: #fff; }
         #footer .footer .socialMedia-links .socialMedia-item.twitter a {
           background: #1ca0f2; }
-        #footer .footer .socialMedia-links .socialMedia-item.twitter p {
-          color: #fff; }
         #footer .footer .socialMedia-links .socialMedia-item.github a {
           background-color: #333;
           color: #f4f4f4; }
         #footer .footer .socialMedia-links .socialMedia-item.fcc a {
           background: #0a0a23; }
-        #footer .footer .socialMedia-links .socialMedia-item.fcc p {
-          color: #fff; }
         #footer .footer .socialMedia-links .socialMedia-item.fem a {
           background: #ddd;
           color: #111; }
