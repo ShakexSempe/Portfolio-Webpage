@@ -1533,7 +1533,7 @@ body {
                 transform: translateX(0);
                 opacity: 1; }
                 #header .header #navbar .nav-list .links-container.active ul li i {
-                  transition: 1s ease 1s;
+                  transition: 1s ease .8s;
                   color: #ead2a1; }
                 #header .header #navbar .nav-list .links-container.active ul li:nth-child(1) {
                   transition-delay: .3s; }
