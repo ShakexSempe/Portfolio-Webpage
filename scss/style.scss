@@ -11,21 +11,7 @@
     box-sizing: border-box;
     // border: 1px solid red;
 }
-// SCROLL OUT
-[data-scroll] {
-    transition: 1s;
-    transform: scale(.5);
-}
 
-[data-scroll="in"] {
-    opacity: 1;
-    transform: scale(1);
-}
-
-[data-scroll="out"] {
-    opacity: 0;
-}
-// END OF SCROLL OUT
 
 html {
     scroll-behavior: smooth;
@@ -823,8 +809,9 @@ body {
                 overflow: hidden;
                 transition: .3s ease;
                 @media (max-width: 768px) {
-                    height: 25vh;
-                    transition: .3s ease;                   
+                    height: 30vh;
+                    transition: .3s ease;    
+                    padding: .5em;               
                 }
                 // about me paragraph
             p {
@@ -834,31 +821,28 @@ body {
                 z-index: 1;
                 font-size: .85em;
                 font-weight: 500;
+                
 
                 &#intro::first-letter {
                     font-size: 2.5em;
                     float: left;
                     background: $overlay-blue-dark;
                     color: $span-gold;
-                    padding: 0 .1em;
+                    padding: 0 .2em 0 .1em;
                     margin-right: .1em;
                     border-radius: 2px;
                     box-shadow: -3px 3px 0 #4855634b;
                 }
                 &#intro {
-                    span {
-                        color: green;
-                        cursor: pointer;
-                        transition: .2s;
-                        &:hover {
-                            color: pink;
-                        }
-                    }
+                    font-style: italic;
                 }
                 &.about-body {
                     transition: opacity 4s ease;
                     opacity:0 ;
                     display: none;
+                    // background-color: $overlay-blue-dark;
+                    // color: $span-gold;
+                    // padding: .3em;
                 }
                 @media (min-width:768px){
                     font-size: 1em;
