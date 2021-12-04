@@ -175,8 +175,7 @@
                 }
             }
             .socialMedia-item {
-                // border: 2px solid hsla(0, 0%, 0%, 0.5);
-                border: 2px solid $span-gold;
+                border: 2px solid hsla(0, 0%, 0%, 0.5);
                 background-color: $overlay-blue-darker;
                 padding: .5em 0;
                 border-radius: 5px;
@@ -189,8 +188,8 @@
                     font-size: 1.4em;
                     text-transform: capitalize;
                     font-family: $font-gruppo;
-                    color: $text-light;
-                    font-weight: 600;
+                    color: $span-gold;
+                    font-weight: 500;
                     position:absolute;
                     left: 50%;
                     top: 50%;

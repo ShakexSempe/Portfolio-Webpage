@@ -1052,7 +1052,7 @@ hamburger
           display: grid;
           grid-template-columns: 1fr 1fr; } }
       #footer .footer .socialMedia-links .socialMedia-item {
-        border: 2px solid #ead2a1;
+        border: 2px solid rgba(0, 0, 0, 0.5);
         background-color: #20262e;
         padding: .5em 0;
         border-radius: 5px;
@@ -1064,8 +1064,8 @@ hamburger
           font-size: 1.4em;
           text-transform: capitalize;
           font-family: "Gruppo", cursive;
-          color: #fff;
-          font-weight: 600;
+          color: #ead2a1;
+          font-weight: 500;
           position: absolute;
           left: 50%;
           top: 50%;
