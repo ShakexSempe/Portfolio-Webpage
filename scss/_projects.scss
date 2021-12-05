@@ -139,7 +139,7 @@
                     a {
                         color: $text-white;
                         background: $background-dark;
-                        margin: .5em 0;
+                        margin: .5em 0 .5em;
                         padding: .5em;
                         border: none;
                         outline: none;
@@ -165,16 +165,22 @@
                             color: $span-gold;
                             font-size: .8em;
                             padding: .2em;
-                            margin-right: .5em;
+                            // margin-right: .5em;
+                            margin: 1em 0 .5em 0;
                             // icon label (pseudo)
                             &::after {
                                 content: 'view project';
                                 font-family: $font-gruppo;
                                 font-style: italic;
-                                color: $span-gold;
+                                color: $text-light;
+                                font-weight: 600;
                                 transition: .3s;
+                                // border: 1px solid red;
+                                background: linear-gradient(0deg, #3f0d0d, #dc134c);
+                                // background: $overlay-blue-darker;
+                                border-radius: 10px;
+                                padding: .5em;
                                 opacity: 0;
-                                margin-left: 1em;
                                 transition: .3s ease;
                             }
 
@@ -187,13 +193,8 @@
                                 color: $span-gold;
                             }
                             i {
-                                color: $span-gold;
-
-                                &::after {
-                                    color: $text-light-d;
-                                    margin-left: .2em;
-                                    letter-spacing: 0;
-                                }
+                                color: $text-light;
+                                transform: translateX(.5em);
                             }
                         }
                         // link hover state
@@ -248,11 +249,6 @@
                     }
                     @media (min-width: 768px){
                         height: 100%;
-                        // &::after {
-                        //     box-shadow: 0 0 5px #000a,
-                        //                 inset -1px 5px 5px #969595aa,
-                        //                 inset -5px -5px 5px #000;
-                        // }
                     }
                 }
                 // end of project image
@@ -298,10 +294,10 @@
                         .project-tile {
                             a {
                                 i {
-                                    transform: scale(1.15) translateX(.5em);
+                                    // move icon right on item tile hover
                                     &::after {
                                         opacity: 1;
-                                        letter-spacing: .2em;
+                                        margin-left: .5em;
                                     }
                                 }
                             }

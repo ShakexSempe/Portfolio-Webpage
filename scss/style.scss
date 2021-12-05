@@ -829,7 +829,7 @@ body {
                     float: left;
                     background: $overlay-blue-dark;
                     color: $span-gold;
-                    padding: 0 .2em 0 .1em;
+                    padding: 0 .1em;
                     margin-right: .1em;
                     border-radius: 2px;
                     box-shadow: -3px 3px 0 #4855634b;
@@ -841,7 +841,7 @@ body {
                     transition: opacity 4s ease;
                     opacity:0 ;
                     display: none;
-                    background-color: #f4f4f4;
+                    // background-color: #f4f4f4;
                     margin-bottom: .5em;
                     // color: $span-gold;
                     // padding: .3em;
