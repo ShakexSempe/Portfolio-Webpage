@@ -813,6 +813,9 @@ body {
                     transition: .3s ease;    
                     padding: .5em;               
                 }
+                @media (max-width: 374px) {
+                    height: 31vh;           
+                }
                 // about me paragraph
             p {
                 padding: .2em;
@@ -841,7 +844,6 @@ body {
                     transition: opacity 4s ease;
                     opacity:0 ;
                     display: none;
-                    // background-color: #f4f4f4;
                     margin-bottom: .5em;
                     // color: $span-gold;
                     // padding: .3em;
@@ -861,7 +863,7 @@ body {
                 height: 50vh;
                 transition: .5s ease;
                 @media (min-width: 768px){
-                    height: 50vh;
+                    height: 45vh;
                 }
                 overflow-y: auto;
                 .about-body {

@@ -1967,6 +1967,9 @@ body {
           height: 20vh;
           transition: .3s ease;
           padding: .5em; } }
+      @media (max-width: 374px) {
+        .about .col-right article.about-article {
+          height: 31vh; } }
       .about .col-right article.about-article p {
         padding: .2em;
         margin-bottom: 1em;
@@ -2004,7 +2007,7 @@ body {
         overflow-y: auto; }
         @media (min-width: 768px) {
           .about .col-right article.about-article.active {
-            height: 50vh; } }
+            height: 45vh; } }
         .about .col-right article.about-article.active .about-body {
           transition: opacity 4s ease;
           display: block;
