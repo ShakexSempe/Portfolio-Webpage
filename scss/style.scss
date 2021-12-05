@@ -809,12 +809,13 @@ body {
                 overflow: hidden;
                 transition: .3s ease;
                 @media (max-width: 768px) {
-                    height: 30vh;
+                    height: 20vh;
                     transition: .3s ease;    
                     padding: .5em;               
                 }
                 // about me paragraph
             p {
+                padding: .2em;
                 margin-bottom: 1em;
                 text-overflow: ellipsis;
                 text-align: left;
@@ -834,13 +835,14 @@ body {
                     box-shadow: -3px 3px 0 #4855634b;
                 }
                 &#intro {
-                    font-style: italic;
+                    font-weight: 600;
                 }
                 &.about-body {
                     transition: opacity 4s ease;
                     opacity:0 ;
                     display: none;
-                    // background-color: $overlay-blue-dark;
+                    background-color: #f4f4f4;
+                    margin-bottom: .5em;
                     // color: $span-gold;
                     // padding: .3em;
                 }
@@ -856,7 +858,7 @@ body {
             }
             
             &.active {
-                height: 70vh;
+                height: 50vh;
                 transition: .5s ease;
                 @media (min-width: 768px){
                     height: 50vh;
