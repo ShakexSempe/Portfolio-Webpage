@@ -255,6 +255,7 @@
 
                 // link item hover state
                 &:hover {
+                    transform: scale(.98);
                     background-color: $overlay-blue-darker;
                     border-color: hsla(100%, 100%, 100%, 0.250);
 
