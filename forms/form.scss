@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Poppins:wght@400;500;600;700&display=swap');
+@import '../scss/variables';
 *{
   margin: 0;
   padding: 0;
@@ -46,14 +47,11 @@
 
     
 
-    ::selection {
-        color: green;
-        background: pink;
-    }
+    
 
     .form-container {
         @media (max-width: 500px){
-            width: 85%;
+            width: 100%;
             margin-top: 15vh;
             padding: 1em;
         }
@@ -63,14 +61,14 @@
         border: none;
         outline: none;
         background: #fff;
-        width: 330px;
+        width: 500px;
         margin-top: 8vh;
         height: auto;
         text-align: center;
         border-radius: 5px;
         padding: 50px 35px 10px 35px;
-        box-shadow: inset 3px 3px 5px #ddda,
-                    inset -3px -3px 5px #000a;
+        box-shadow: inset 3px 3px 3px #ddda,
+                    inset -3px -3px 3px #000a;
 
         header {
             @media (max-width: 500px){
@@ -141,10 +139,10 @@
                             text-align: center;
                             padding: .3em;
                             border-radius: 5px;
-                            background: #485563;
-                            box-shadow: inset 2px 2px 5px #fffa,
-                                        inset -2px -2px 5px #000;
-                            color: #fff;
+                            background: $overlay-blue-darker;
+                            box-shadow: inset 2px 2px 3px #fffa,
+                                        inset -2px -2px 3px #000;
+                            color: $span-gold;
                             letter-spacing: .1em;
                             font-size: .7em;
                         }
@@ -340,8 +338,8 @@
                 }
 
                 .bullet {
-                    height: 25px;
-                    width: 25px;
+                    height: 30px;
+                    width: 30px;
                     border: none;
                     outline: none;
                     display: inline-block;
@@ -354,17 +352,18 @@
                     &.active {
                         border: none;
                         outline: none;
-                        background: #dc143c;
+                        background: $overlay-blue-dark;
                     }
 
                     span {
                         color: #000;
                         position: absolute;
                         left: 50%;
-                        transform: translateX(-50%);
+                        top: 50%;
+                        transform: translate(-50%, -50%);
                         font-weight: 500;
                         font-size: .8em;
-                        line-height: 22px;
+                        // line-height: 22px;
                         font-family: 'Poppins', sans-serif;
                         
 
@@ -380,15 +379,20 @@
                         position: absolute;
                         content: '';
                         bottom: 50%;
-                        right: -30px;
-                        height: 3px;
-                        width: 25px;
+                        right: -50px;
+                        height: 1px;
+                        width: 35px;
                         background: #a3a3a30c;
+                        @media (max-width: 768px) {
+                            width: 20px;
+                            right: -30px;
+                        }
                     }
 
                     &.active {
                         &::after {
-                            background: #dc143c;
+                            background: $span-gold;
+                            border: 2px solid $overlay-blue-dark;
                                 transform: scaleX(0);
                                 transform-origin: left;
                                 animation: animate .6s linear forwards;
@@ -419,12 +423,12 @@
                     left: 50%;
                     top: 80%;
                     font-size: 15px;
-                    transform: translate(-50%, -50%);
+                    transform: translate(-50%, -70%);
                     display: none;
 
                     &.active {
                         display: block;
-                        color: #fff;
+                        color: $span-gold;
                     }
                 }
             }
