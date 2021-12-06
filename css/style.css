@@ -1347,77 +1347,12 @@ hamburger
       #footer .footer #bs21 span {
         font-family: "Gruppo", cursive;
         color: #f4f4f4;
-        font-size: 1em;
+        font-size: 1.1em;
         text-transform: capitalize; }
+      #footer .footer #bs21 span {
+        color: #ead2a1;
+        font-size: .9em; }
 
-/* cube */
-#footer .scene {
-  position: relative;
-  transform-style: preserve-3d;
-  animation: sceneRotate 10s infinite linear; }
-
-@keyframes sceneRotate {
-  to {
-    transform: rotateY(360deg); } }
-
-#footer .cube-container {
-  height: 20vh;
-  display: grid;
-  place-items: center;
-  position: relative;
-  font-size: 70px;
-  perspective: 15em;
-  perspective-origin: 50% calc(50% - 6em); }
-
-#footer .cube {
-  width: 1em;
-  height: 1em;
-  transform-style: preserve-3d;
-  position: absolute;
-  bottom: -.5em;
-  left: -.5em; }
-
-#footer .front,
-.back,
-.left,
-.right {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #c7062056;
-  box-shadow: 0 0 0.5em #000a inset;
-  pointer-events: none; }
-
-#footer .cube .front {
-  transform: translateZ(0.5em); }
-
-#footer .cube .right {
-  transform: rotateY(90deg) translateZ(0.5em); }
-
-#footer .cube .back {
-  transform: rotateY(180deg) translateZ(0.5em); }
-
-#footer .cube .left {
-  transform: rotateY(270deg) translateZ(0.5em); }
-
-#footer .cube .top {
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  background: #c7062056;
-  transform: translateY(-50%) rotateX(90deg);
-  box-shadow: 0 0 0.5em #000a inset; }
-
-#footer .cube .bottom {
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  bottom: 0;
-  background: #000a;
-  transform: translateY(50%) rotateX(90deg);
-  box-shadow: 0 0 0.5em #000; }
-
-/* end of cube */
 * {
   padding: 0;
   margin: 0;
