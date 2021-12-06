@@ -175,12 +175,12 @@
                                 color: $text-light;
                                 font-weight: 600;
                                 transition: .3s;
-                                // border: 1px solid red;
                                 background: linear-gradient(0deg, #3f0d0d, #dc134c);
-                                // background: $overlay-blue-darker;
                                 border-radius: 10px;
-                                padding: .5em;
+                                padding: .5em 1em;
                                 opacity: 0;
+                                box-shadow: inset 1px 1px 3px #fffa,
+                                            inset -1px -1px 3px #000a;
                                 transition: .3s ease;
                             }
 
