@@ -1748,6 +1748,36 @@ body {
   100% {
     transform: translateY(0); } }
 
+.skills-pad {
+  height: 90vh;
+  width: 100%;
+  background-color: #29323c;
+  padding: 10vh 20vw;
+  display: grid;
+  place-items: center; }
+  .skills-pad figure {
+    width: 100%;
+    height: 100%;
+    margin: 5vh auto;
+    border-radius: 5px;
+    overflow: hidden; }
+    .skills-pad figure img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px; }
+  @media (max-width: 1024px) {
+    .skills-pad {
+      height: auto;
+      padding: 0 5vw 5vh;
+      place-items: start; }
+      .skills-pad figure {
+        height: auto;
+        width: 100%; }
+        .skills-pad figure img {
+          border-radius: 5px;
+          object-position: top;
+          object-fit: contain; } }
+
 .paralax {
   height: 100vh;
   width: 100%;
@@ -1768,9 +1798,6 @@ body {
   .paralax.px1 {
     height: 70vh;
     background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg); }
-    @media (min-width: 768px) {
-      .paralax.px1 {
-        display: none; } }
   .paralax.px2 {
     height: 85vh;
     background-image: url(../img/me-min.jpg);
