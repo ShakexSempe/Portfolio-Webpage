@@ -124,50 +124,50 @@
               font-family: 'Poppins', sans-serif;
               height: 100%;
               width: 100%;
-              border: none;
+              border: 1px solid #29323c;
               outline: none;
-              box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a;
               border-radius: 5px;
-              background-color: #f4f4f4;
+              background-color: #29323c;
+              color: #ead2a1;
               padding-left: 15px;
               font-size: 1.1em;
-              transition: .2s; }
+              transition: 1s ease; }
               .welcome-section .form-container .form-outer form .page .field input::placeholder {
                 font-size: .7em; }
               .welcome-section .form-container .form-outer form .page .field input:invalid {
                 background: #cf30501e;
-                border: none;
                 outline: none;
-                box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #79092098; }
+                border: 1px dashed #f4f4f4;
+                color: #000; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
-                border: none;
                 outline: none;
                 box-shadow: none;
-                background-color: rgba(135, 207, 235, 0.233);
-                box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px rgba(28, 39, 100, 0.667); }
+                color: #fff;
+                background-color: #485563; }
             .welcome-section .form-container .form-outer form .page .field textarea {
               height: 100px;
               width: 100%;
               border-radius: 5px;
-              border: none;
-              outline: none;
-              box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #41061298; }
+              border: 2px solid #29323c;
+              outline: none; }
               .welcome-section .form-container .form-outer form .page .field textarea:focus {
                 background: #f4f4f4; }
+              .welcome-section .form-container .form-outer form .page .field textarea:invalid {
+                background: #f7cdd5c7; }
             .welcome-section .form-container .form-outer form .page .field select {
               width: 100%;
               padding-left: 10px;
               font-size: 17px;
               font-weight: 600;
               border-radius: 5px;
-              border: none;
-              color: #000;
-              box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #000a; }
+              border: 2px solid #29323c;
+              outline: none;
+              color: #000; }
               .welcome-section .form-container .form-outer form .page .field select option {
                 font-weight: 600; }
               .welcome-section .form-container .form-outer form .page .field select:focus:focus {
                 border: none;
-                box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #41061298; }
+                outline: 1px dashed #dc143c; }
             .welcome-section .form-container .form-outer form .page .field button {
               width: 100%;
               height: 100%;
@@ -198,16 +198,18 @@
                 border-radius: 5px;
                 transition: .2s; }
               .welcome-section .form-container .form-outer form .page .field button::before {
-                background: #dc143c;
+                background: linear-gradient(0deg, #3f0d0d, #dc134c);
                 box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
               .welcome-section .form-container .form-outer form .page .field button::after {
                 opacity: 0;
                 background: #29323c;
                 box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #fffa; }
-              .welcome-section .form-container .form-outer form .page .field button:hover::before {
-                opacity: 0; }
-              .welcome-section .form-container .form-outer form .page .field button:hover::after {
-                opacity: 1; }
+              .welcome-section .form-container .form-outer form .page .field button:hover {
+                color: #ead2a1; }
+                .welcome-section .form-container .form-outer form .page .field button:hover::before {
+                  opacity: 0; }
+                .welcome-section .form-container .form-outer form .page .field button:hover::after {
+                  opacity: 1; }
               .welcome-section .form-container .form-outer form .page .field button:active {
                 transition: .2s;
                 transform: scale(0.9); }

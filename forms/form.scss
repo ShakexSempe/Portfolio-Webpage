@@ -173,34 +173,31 @@
                             font-family: 'Poppins', sans-serif;
                             height: 100%;
                             width: 100%;
-                            border: none;
+                            border: 1px solid $overlay-blue-dark;
                             outline: none;
-                            box-shadow: inset 2px 2px 4px #ddda,
-                                            inset -2px -2px 4px #000a;
                             border-radius: 5px;
-                            background-color: #f4f4f4;
+                            background-color: $overlay-blue-dark;
+                            color: $span-gold;
                             padding-left: 15px;
                             font-size: 1.1em;
-                            transition: .2s;
+                            transition: 1s ease;
 
                             &::placeholder {
                             font-size: .7em;
                             }
+
                             &:invalid {
                                 background: #cf30501e;
-                                border: none;
                                 outline: none;
-                                box-shadow: inset 2px 2px 4px #ddda,
-                                            inset -2px -2px 4px #79092098;
+                                border: 1px dashed #f4f4f4;
+                                color: #000;
                             }
 
                             &:focus {
-                                border: none;
                                 outline: none;
                                 box-shadow: none;
-                                background-color: rgba(135, 207, 235, 0.233);
-                                box-shadow: inset 2px 2px 4px #ddda,
-                                inset -2px -2px 4px rgba(28, 39, 100, 0.667);
+                                color: $text-light;
+                                background-color: $overlay-blue-light;
                             }
                             
                         
@@ -209,12 +206,13 @@
                             height: 100px;
                             width: 100%;
                             border-radius: 5px;
-                            border: none;
+                            border:2px solid $overlay-blue-dark;
                             outline: none;
-                            box-shadow: inset 2px 2px 4px #ddda,
-                            inset -2px -2px 4px #41061298;
                             &:focus {
                                 background: #f4f4f4; 
+                            }
+                            &:invalid {
+                                background: $background-invalid;
                             }
                         }
                         select {
@@ -223,10 +221,9 @@
                             font-size: 17px;
                             font-weight: 600;
                             border-radius: 5px;
-                            border: none;
+                            border: 2px solid $overlay-blue-dark;
+                            outline: none;
                             color: #000;
-                            box-shadow: inset 2px 2px 4px #ddd,
-                                        inset -2px -2px 4px #000a;
 
                             option {
                                 font-weight: 600;
@@ -235,8 +232,7 @@
                             &:focus {
                                 &:focus {
                                     border: none;
-                                    box-shadow: inset 2px 2px 4px #ddda,
-                                                inset -2px -2px 4px #41061298;
+                                    outline: 1px dashed #dc143c;
                                 }
                             }
                         }
@@ -248,7 +244,7 @@
                             border: none;
                             margin-top: -20px;
                             border-radius: 5px;
-                            color: #fff;
+                            color: $text-light;
                             cursor: pointer;
                             font-size: 18px;
                             font-weight: 500;
@@ -275,7 +271,7 @@
                                 transition: .2s;
                             }
                             &::before {
-                                background: #dc143c;
+                                background: $button-crimson;
                                 box-shadow: inset 3px 3px 5px #fffa,
                                             inset -3px -3px 5px #000a;
                             }
@@ -287,6 +283,7 @@
                             }
 
                             &:hover {
+                                color: $span-gold;
                                 &::before {opacity: 0;}
                                 &::after {opacity: 1;}
                             }
