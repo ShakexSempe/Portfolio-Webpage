@@ -1787,6 +1787,15 @@ body {
   @media (max-width: 500px) {
     .section-pad.pad-me figure {
       width: 100%; } }
+  .section-pad.pad-me-blue figure {
+    width: 50%; }
+    .section-pad.pad-me-blue figure img {
+      object-fit: cover;
+      object-position: top;
+      border-radius: 5px; }
+  @media (max-width: 500px) {
+    .section-pad.pad-me-blue figure {
+      width: 100%; } }
 
 .paralax {
   height: 100vh;

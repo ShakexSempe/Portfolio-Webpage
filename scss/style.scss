@@ -688,6 +688,22 @@ body {
             }
         }
     }
+    &.pad-me-blue {
+        figure {
+            width: 50%;
+            // border: 1px solid red;
+            img {
+                object-fit: cover;
+                object-position: top;
+                border-radius: 5px;
+            }
+        }
+        @media (max-width: 500px) {
+            figure {
+                width: 100%;
+            }
+        }
+    }
 }
 // .section-pad figure[data-scroll="in"] {
 //     transform: scale(3);
