@@ -1749,35 +1749,53 @@ body {
   100% {
     transform: translateY(0); } }
 
-.skills-pad {
+.section-pad {
   height: 90vh;
   width: 100%;
   background-color: #29323c;
   padding: 10vh 20vw;
   display: grid;
-  place-items: center; }
-  .skills-pad figure {
+  place-items: center;
+  z-index: -1;
+  position: relative; }
+  .section-pad figure {
     width: 100%;
     height: 100%;
     margin: 5vh auto;
     border-radius: 5px;
     overflow: hidden; }
-    .skills-pad figure img {
+    .section-pad figure img {
       width: 100%;
       height: 100%;
       border-radius: 5px; }
   @media (max-width: 1024px) {
-    .skills-pad {
+    .section-pad {
       height: auto;
       padding: 0 5vw 5vh;
       place-items: start; }
-      .skills-pad figure {
+      .section-pad figure {
         height: auto;
         width: 100%; }
-        .skills-pad figure img {
+        .section-pad figure img {
           border-radius: 5px;
           object-position: top;
           object-fit: contain; } }
+  .section-pad.pad-logo [data-scroll="in"] {
+    transition: 2s;
+    transform: translateX(0); }
+  .section-pad.pad-logo figure {
+    transform: translateX(-80%); }
+    .section-pad.pad-logo figure img {
+      object-fit: cover; }
+  .section-pad.pad2 figure {
+    transform: translateX(80%); }
+    .section-pad.pad2 figure img {
+      object-fit: cover; }
+  .section-pad.pad2 [data-scroll="in"] {
+    transition: 3s ease;
+    transform: translateX(0); }
+  .section-pad.pad-me figure img {
+    object-fit: contain; }
 
 .paralax {
   height: 100vh;

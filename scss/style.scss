@@ -597,7 +597,7 @@ body {
 // end of hero section
 
 // pad section 
-.skills-pad {
+.section-pad {
     height: 90vh;
     width: 100%;
     background-color: $overlay-blue-dark;
@@ -605,6 +605,8 @@ body {
     padding: 10vh 20vw;
     display: grid;
     place-items: center;
+    z-index: -1;
+    position: relative;
 
     figure {
         width: 100%;
@@ -613,7 +615,7 @@ body {
         border-radius: 5px;
         overflow: hidden;
         // border: 2px solid red;
-
+        
         img {
             width: 100%;
             height: 100%;
@@ -641,7 +643,43 @@ body {
             }
         }
     }
+
+    &.pad-logo {
+        [data-scroll="in"] {
+            transition: 2s;
+            transform: translateX(0);
+        }
+        figure {
+            transform: translateX(-80%);
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    &.pad2 {
+        // background-color: pink;
+        figure {
+            transform: translateX(80%);
+            img {
+                object-fit: cover;
+            }
+        }
+        [data-scroll="in"] {
+            transition: 3s ease;
+            transform: translateX(0);
+        }
+    }
+    &.pad-me {
+        figure {
+            img {
+                object-fit: contain;
+            }
+        }
+    }
 }
+// .section-pad figure[data-scroll="in"] {
+//     transform: scale(3);
+// } 
 .paralax {
     height: 100vh;
     width: 100%;
