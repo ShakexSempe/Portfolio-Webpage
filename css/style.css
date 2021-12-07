@@ -243,7 +243,7 @@ hamburger
   justify-content: flex-start;
   text-align: center;
   width: 100vw;
-  padding-bottom: 30vh;
+  padding-bottom: 15vh;
   margin: 0 auto;
   background: linear-gradient(60deg, #29323c 0%, #485563 100%); }
   #skills .skills-header {
