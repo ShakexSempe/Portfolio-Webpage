@@ -1814,23 +1814,6 @@ body {
       .paralax.paralax-logo {
         background-size: 60%;
         height: 85vh; } }
-  .paralax.px1 {
-    height: 70vh;
-    background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg); }
-  .paralax.px2 {
-    height: 85vh;
-    background-image: url(../img/me-min.jpg);
-    background-size: 25%; }
-    @media (max-width: 1025px) {
-      .paralax.px2 {
-        background-size: 80vw; } }
-  .paralax.px3 {
-    height: 85vh;
-    background-image: url(../img/shakexblue-min.jpg);
-    background-size: 25%; }
-    @media (max-width: 1025px) {
-      .paralax.px3 {
-        background-size: 80vw; } }
   @media (max-width: 500px) {
     .paralax {
       background-size: contain;

@@ -727,34 +727,6 @@ body {
             height: 85vh;
         }
     }
-    &.px1 {
-        @media(min-width: 768px){
-            // display: none;
-        }
-        height: 70vh;
-        background-image: url(../img/nadine-shaabana-0xD40qm07X0-unsplash-min.jpg);
-        // background-position: center;
-    }
-    &.px2 {
-        height: 85vh;
-        background-image: url(../img/me-min.jpg);
-        background-size: 25%;
-
-        @media (max-width: 1025px) {
-            background-size: 80vw;
-            // background-size: contain;
-        }
-    }
-    &.px3 {
-        height: 85vh;
-        background-image: url(../img/shakexblue-min.jpg);
-        background-size: 25%;
-
-        @media (max-width: 1025px) {
-            background-size: 80vw;
-            // background-size: contain;
-        }
-    }
 
     @media (max-width: 500px) {
         background-size: contain;
