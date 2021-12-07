@@ -1745,8 +1745,6 @@ body {
   padding: 10vh 20vw;
   display: grid;
   place-items: center;
-  z-index: -1;
-  overflow: hidden;
   position: relative; }
   .section-pad figure {
     width: 100%;
@@ -1772,7 +1770,6 @@ body {
           object-fit: contain; } }
   @media (max-width: 768px) {
     .section-pad.pad-logo {
-      background-color: pink;
       padding: 0 5vw; }
       .section-pad.pad-logo figure img {
         object-fit: cover; } }
@@ -1782,8 +1779,14 @@ body {
     object-fit: cover; }
   .section-pad.pad2 [data-scroll="in"] {
     transition: 3s ease; }
-  .section-pad.pad-me figure img {
-    object-fit: contain; }
+  .section-pad.pad-me figure {
+    width: 50%; }
+    .section-pad.pad-me figure img {
+      object-fit: cover;
+      border-radius: 5px; }
+  @media (max-width: 500px) {
+    .section-pad.pad-me figure {
+      width: 100%; } }
 
 .paralax {
   height: 100vh;

@@ -605,8 +605,6 @@ body {
     padding: 10vh 20vw;
     display: grid;
     place-items: center;
-    z-index: -1;
-    overflow: hidden;
     position: relative;
 
     figure {
@@ -646,7 +644,7 @@ body {
     &.pad-logo {
         // logo pad on small screens
         @media (max-width: 768px) {
-            background-color: pink;
+            // background-color: pink;
             padding: 0 5vw;
 
             figure {
@@ -677,8 +675,16 @@ body {
     }
     &.pad-me {
         figure {
+            width: 50%;
+            // border: 1px solid red;
             img {
-                object-fit: contain;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+        @media (max-width: 500px) {
+            figure {
+                width: 100%;
             }
         }
     }
