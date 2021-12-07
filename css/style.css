@@ -1780,20 +1780,10 @@ body {
           border-radius: 5px;
           object-position: top;
           object-fit: contain; } }
-  .section-pad.pad-logo [data-scroll="in"] {
-    transition: 2s;
-    transform: translateX(0); }
-  .section-pad.pad-logo figure {
-    transform: translateX(-80%); }
-    .section-pad.pad-logo figure img {
-      object-fit: cover; }
-  .section-pad.pad2 figure {
-    transform: translateX(80%); }
-    .section-pad.pad2 figure img {
-      object-fit: cover; }
+  .section-pad.pad2 figure img {
+    object-fit: cover; }
   .section-pad.pad2 [data-scroll="in"] {
-    transition: 3s ease;
-    transform: translateX(0); }
+    transition: 3s ease; }
   .section-pad.pad-me figure img {
     object-fit: contain; }
 

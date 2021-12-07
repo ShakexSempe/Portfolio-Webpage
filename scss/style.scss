@@ -645,28 +645,17 @@ body {
     }
 
     &.pad-logo {
-        [data-scroll="in"] {
-            transition: 2s;
-            transform: translateX(0);
-        }
-        figure {
-            transform: translateX(-80%);
-            img {
-                object-fit: cover;
-            }
-        }
+        
     }
     &.pad2 {
         // background-color: pink;
         figure {
-            transform: translateX(80%);
             img {
                 object-fit: cover;
             }
         }
         [data-scroll="in"] {
             transition: 3s ease;
-            transform: translateX(0);
         }
     }
     &.pad-me {
