@@ -53,16 +53,7 @@
                 outline: none;
                 // transform: scale(.9);
                 transition: .8s ease;
-                // cursors
-                &:nth-child(1){
-                    cursor: help;
-                }
-                &:nth-child(2){
-                    cursor: alias;
-                }
-                &:nth-child(3){
-                    cursor: alias;
-                }
+                
                 // item box shadows
                 &::after {
                     position: absolute;
@@ -132,45 +123,34 @@
                 .icon {
                     margin: 5px auto 10px auto;
                     padding: .3em .7em;
+                    height: 4em;
+                    width: 4em;
                     border: none;
-                    outline: none;
+                    background: $overlay-blue-darker;
+                    border-radius: 50%;
+                    outline: 2px solid $span-gold;
                     position: relative;
                     display: grid;
                     place-items: center;
                     transition: .5s ease;
+
+                    i {
+                        font-size: 1.5em;
+                        color: $text-light;
+                        transform: scale(.8);
+                        transition: .5s ease;
+                    }
                     @media (min-width: 768px) {
                         height: 80px;
                         width: 80px;
                         // margin: .3em auto;
                         margin: 0;
                         padding: 0;
-                        img {
-                            object-fit: contain;
+
+                        i {
+                            font-size: 2em;
                         }
                     }
-                    // contact icon box shadows
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #f4f4f4;
-                        border-radius: 50%;
-                        box-shadow: $box-light-top-md;
-                        transition: .5s ease;
-                        transform: preserve-3d;
-                    }
-                    // end of contact icon box shadows
-                // icon image
-                img {
-                    transition: 1s ease;
-                    transform: scale(.85) rotateY(40deg) skewX(20deg);
-                    transform: preserve-3d;
-
-                }
-                // end of icon image
                 }
                 // of end of item icon
                 // contact-info (h2)
@@ -262,13 +242,27 @@
 
                 }
                 // end of contact-info (h2 and a)
-
+                // cursors
+                &:nth-child(1){
+                    cursor: help;
+                }
+                &:nth-child(2){
+                    cursor: alias;
+                }
+                &:nth-child(3){
+                    cursor: alias;
+                }
                 // item shadows hover state
                 &:hover {
-                    img {
-                        transform: scale(1);
-                        transform: preserve-3d;
+                    .icon {
+                        outline: 2px dashed $span-gold;
+                        outline-offset: -.5em;
+                        i {
+                            color: $span-gold;
+                            transform: scale(1);
+                        }
                     }
+                    
                     .contact-info {
 
                         a {
