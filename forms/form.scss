@@ -41,12 +41,6 @@
         display: none;
     }
 
-
-
-    
-
-    
-
     .form-container {
         @media (max-width: 500px){
             width: 100%;
@@ -173,8 +167,9 @@
                             font-family: 'Poppins', sans-serif;
                             height: 100%;
                             width: 100%;
-                            border: 1px solid $overlay-blue-dark;
-                            outline: none;
+                            outline: 2px solid $span-gold;
+                            outline-offset: -.2em;
+                            border: none;
                             border-radius: 5px;
                             background-color: $overlay-blue-dark;
                             color: $span-gold;
@@ -187,17 +182,18 @@
                             }
 
                             &:invalid {
+                                // background-color: $overlay-blue-light;
                                 background: #cf30501e;
-                                outline: none;
-                                border: 1px dashed #f4f4f4;
+                                outline: 1px dashed #dc143c;
+                                // border: 2px dashed #000;
                                 color: #000;
                             }
-
                             &:focus {
-                                outline: none;
+                                border: none;
+                                outline: 2px dashed $text-light;
+                                outline-offset: -.3em;
                                 box-shadow: none;
-                                color: $text-light;
-                                background-color: $overlay-blue-light;
+                                // color: $text-light;
                             }
                             
                         
@@ -326,7 +322,7 @@
                 p {
                     font-weight: 800;
                     font-size: .9em;
-                    color: #000;
+                    color: rgba(0, 0, 0, 0.39);
                     margin: .4em auto;
                     text-transform: capitalize;
                     // margin-bottom: 8px;
@@ -336,17 +332,17 @@
                     height: 30px;
                     width: 30px;
                     border: none;
-                    outline: none;
+                    outline: 2px solid $overlay-blue-dark;
                     display: inline-block;
                     border-radius: 50%;
                     position: relative;
                     transition: 0.2s;
-                    box-shadow: inset 2px 2px 4px #ddd,
-                                inset -2px -2px 4px #000a;
+                    // box-shadow: inset 2px 2px 2px #ddd,
+                                // inset -1px -1px 2px #000a;
 
                     &.active {
                         border: none;
-                        outline: none;
+                        outline-color: $span-gold;
                         background: $overlay-blue-dark;
                     }
 
@@ -409,7 +405,7 @@
                 }
                 p {
                     &.active {
-                        color: #d43f8d;
+                        color: #000;
                         transition: .2s linear;
                     }
                 }

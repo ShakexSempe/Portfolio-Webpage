@@ -124,8 +124,9 @@
               font-family: 'Poppins', sans-serif;
               height: 100%;
               width: 100%;
-              border: 1px solid #29323c;
-              outline: none;
+              outline: 2px solid #ead2a1;
+              outline-offset: -.2em;
+              border: none;
               border-radius: 5px;
               background-color: #29323c;
               color: #ead2a1;
@@ -136,14 +137,13 @@
                 font-size: .7em; }
               .welcome-section .form-container .form-outer form .page .field input:invalid {
                 background: #cf30501e;
-                outline: none;
-                border: 1px dashed #f4f4f4;
+                outline: 1px dashed #dc143c;
                 color: #000; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
-                outline: none;
-                box-shadow: none;
-                color: #fff;
-                background-color: #485563; }
+                border: none;
+                outline: 2px dashed #fff;
+                outline-offset: -.3em;
+                box-shadow: none; }
             .welcome-section .form-container .form-outer form .page .field textarea {
               height: 100px;
               width: 100%;
@@ -235,22 +235,21 @@
         .welcome-section .form-container .form-progress-bar .step p {
           font-weight: 800;
           font-size: .9em;
-          color: #000;
+          color: rgba(0, 0, 0, 0.39);
           margin: .4em auto;
           text-transform: capitalize; }
         .welcome-section .form-container .form-progress-bar .step .bullet {
           height: 30px;
           width: 30px;
           border: none;
-          outline: none;
+          outline: 2px solid #29323c;
           display: inline-block;
           border-radius: 50%;
           position: relative;
-          transition: 0.2s;
-          box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #000a; }
+          transition: 0.2s; }
           .welcome-section .form-container .form-progress-bar .step .bullet.active {
             border: none;
-            outline: none;
+            outline-color: #ead2a1;
             background: #29323c; }
           .welcome-section .form-container .form-progress-bar .step .bullet span {
             color: #000;
@@ -288,7 +287,7 @@
         .welcome-section .form-container .form-progress-bar .step:last-child.bullet::before, .welcome-section .form-container .form-progress-bar .step:last-child.bullet::after {
           display: block; }
         .welcome-section .form-container .form-progress-bar .step p.active {
-          color: #d43f8d;
+          color: #000;
           transition: .2s linear; }
         .welcome-section .form-container .form-progress-bar .step .check {
           position: absolute;
