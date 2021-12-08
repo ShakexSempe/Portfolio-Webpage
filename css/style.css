@@ -1771,10 +1771,10 @@ body {
         object-fit: cover; } }
   .section-pad.pad-logo figure img {
     object-fit: cover; }
-  .section-pad.pad2 figure img {
+  .section-pad.pad-intro figure img {
     object-fit: cover; }
-  .section-pad.pad2 [data-scroll="in"] {
-    transition: 3s ease; }
+  .section-pad.pad-intro [data-scroll="in"] {
+    transition: 1.5s ease; }
   .section-pad.pad-me figure {
     width: 50%; }
     .section-pad.pad-me figure img {

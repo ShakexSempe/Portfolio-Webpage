@@ -662,7 +662,7 @@ body {
             }
         }
     }
-    &.pad2 {
+    &.pad-intro {
         // background-color: pink;
         figure {
             img {
@@ -670,7 +670,7 @@ body {
             }
         }
         [data-scroll="in"] {
-            transition: 3s ease;
+            transition: 1.5s ease;
         }
     }
     &.pad-me {
