@@ -406,6 +406,8 @@ hamburger
         border-radius: 10px;
         height: auto;
         line-height: 1.3; }
+        #skills .dropdown .dropdown-content .skills-bottom .skills-item[data-scroll="in"] {
+          transition: 2s; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item ul {
           margin: .2em;
           padding: .5em; }

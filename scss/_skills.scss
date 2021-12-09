@@ -233,6 +233,9 @@
                     border-radius: 10px;
                     height: auto;
                     line-height: 1.3;
+                    &[data-scroll="in"]{
+                        transition: 2s;
+                    }
 
                     ul {
                         margin: .2em;
