@@ -314,6 +314,7 @@ body {
                         li {
                             position: relative;
                             display: flex;
+                            margin-right: 1em;
 
                             // list item underline
                             &::before {
@@ -339,7 +340,7 @@ body {
                             
                             a {
                                 font-size: .9em;
-                                padding: .3em 1em;
+                                padding: .3em .5em;
                                 margin: 0 auto;
                                 display: block;
 
@@ -348,8 +349,8 @@ body {
                                 }
                             }
                             i {
-                                color: $link-gold;
-                                margin-right: .3em;
+                                color: #fffa;
+                                margin-right: .1em;
                                 padding: .5em;
                                 font-size: 1em;
                                 border-radius: 50%;
@@ -362,7 +363,7 @@ body {
                                 }
                                 i {
                                     transition: .3s;
-                                    color: $text-light;
+                                    color: $span-gold;
                                 }
                             }
                             // links and icon hover state
