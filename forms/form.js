@@ -40,13 +40,13 @@ nextBtnThird.addEventListener("click", function (event) {
     current += 1;
 });
 submitBtn.addEventListener("click", function (e) {
-    // e.preventDefault();
+    e.preventDefault();
     bullet[current - 1].classList.add("active");
     progressCheck[current - 1].classList.add("active");
     progressText[current - 1].classList.add("active");
     current += 1;
     setTimeout(function () {
-        alert("Thank you! A confirmation email will be sent when all required information is provided.");
+        alert("Please fill in required fields. A Confirmation email will be sent when all required fields are entered");
         location.reload();
     }, 800);
 });

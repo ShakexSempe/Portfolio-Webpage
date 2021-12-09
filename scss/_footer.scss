@@ -53,8 +53,8 @@
                     font-family: $font-gruppo;
                 }
 
-                input {
-                    padding: .7em;
+                input, textarea {
+                    padding: 1em;
                     width: 100%;
                     margin: .5em 0;
                     border-radius: 5px;
@@ -64,42 +64,44 @@
                     font-weight: 600;
                     letter-spacing: .15em;
                     font-family: $font-ubuntu;
+                    background: $overlay-blue-darker;
+                    outline: 2px solid $span-gold;
+                    color: $span-gold;
                     overflow: hidden;
 
                     &:invalid {
                         // background-color: $background-invalid;
                         background-color: $span-gold;
+                        outline: 2px dashed $overlay-blue-dark;
+                        outline-offset: -4px;
                         color: $text-invalid;
-                    }
-                    &:valid {
-                        background-color: $background-valid;
-                        color: $text-valid;
                     }
                     &:focus {
                         outline: 2px dashed #fffa;
+                        outline-offset: -4px;
                     }
 
                 }
 
-                textarea {
-                    padding: .5em;
-                    margin: .5em 0;
-                    width: 100%;
-                    border-radius: 5px;
-                    border: none;
-                    outline: none;
-                    overflow: hidden;
+                // textarea {
+                //     padding: .5em;
+                //     margin: .5em 0;
+                //     width: 100%;
+                //     border-radius: 5px;
+                //     border: none;
+                //     outline: none;
+                //     overflow: hidden;
 
-                    &:focus {
-                        outline: 3px dashed #fffa;
-                        border: none;
-                    }
-                    &:invalid {
-                        // background-color: $background-invalid;
-                        background-color: $span-gold;
-                        color: $text-invalid;
-                    }
-                }
+                //     &:focus {
+                //         outline: 3px dashed #fffa;
+                //         border: none;
+                //     }
+                //     &:invalid {
+                //         // background-color: $background-invalid;
+                //         background-color: $span-gold;
+                //         color: $text-invalid;
+                //     }
+                // }
                 // input hover state
                 &:hover {
                     label {

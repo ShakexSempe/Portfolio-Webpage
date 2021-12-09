@@ -59,8 +59,6 @@
         text-align: center;
         border-radius: 5px;
         padding: 50px 35px 10px 35px;
-        box-shadow: inset 3px 3px 3px #ddda,
-                    inset -3px -3px 3px #000a;
 
         header {
             @media (max-width: 500px){
@@ -72,10 +70,12 @@
             font-size: 1.5em;
             font-weight: 600;
             margin: .4em auto;
-            padding: .2em;
+            padding: .5em;
             border-radius: 5px;
-            box-shadow: inset 2px 2px 4px #ddd,
-                    inset -2px -2px 4px #000a;
+            background: $overlay-blue-darker;
+            color: $span-gold;
+            outline: 1px solid $span-gold;
+            outline-offset: -4px;
         }
 
         .form-outer {
@@ -127,14 +127,14 @@
                         font-size: 1.5em;
                         font-weight: 900;
                         
-                        h3 {
+                        h2 {
                             text-align: center;
-                            padding: .3em;
+                            padding: .5em;
                             border-radius: 5px;
                             background: $overlay-blue-darker;
-                            box-shadow: inset 2px 2px 3px #fffa,
-                                        inset -2px -2px 3px #000;
-                            color: $span-gold;
+                            outline: 1px solid $text-light;
+                            outline-offset: -4px;
+                            color: $text-light;
                             letter-spacing: .1em;
                             font-size: .7em;
                         }
@@ -336,13 +336,14 @@
                     display: inline-block;
                     border-radius: 50%;
                     position: relative;
-                    transition: 0.2s;
+                    transition: .5s;
                     // box-shadow: inset 2px 2px 2px #ddd,
                                 // inset -1px -1px 2px #000a;
 
                     &.active {
                         border: none;
-                        outline-color: $span-gold;
+                        outline: 1px solid $span-gold;
+                        outline-offset: -3px;                        
                         background: $overlay-blue-dark;
                     }
 

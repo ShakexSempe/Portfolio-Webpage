@@ -947,8 +947,8 @@ hamburger
           text-transform: uppercase;
           transition: .3s;
           font-family: "Gruppo", cursive; }
-        #footer .footer form .input-div input {
-          padding: .7em;
+        #footer .footer form .input-div input, #footer .footer form .input-div textarea {
+          padding: 1em;
           width: 100%;
           margin: .5em 0;
           border-radius: 5px;
@@ -958,29 +958,18 @@ hamburger
           font-weight: 600;
           letter-spacing: .15em;
           font-family: "Ubuntu", sans-serif;
+          background: #20262e;
+          outline: 2px solid #ead2a1;
+          color: #ead2a1;
           overflow: hidden; }
-          #footer .footer form .input-div input:invalid {
+          #footer .footer form .input-div input:invalid, #footer .footer form .input-div textarea:invalid {
             background-color: #ead2a1;
+            outline: 2px dashed #29323c;
+            outline-offset: -4px;
             color: #000; }
-          #footer .footer form .input-div input:valid {
-            background-color: #cdf7d3c7;
-            color: #000; }
-          #footer .footer form .input-div input:focus {
-            outline: 2px dashed #fffa; }
-        #footer .footer form .input-div textarea {
-          padding: .5em;
-          margin: .5em 0;
-          width: 100%;
-          border-radius: 5px;
-          border: none;
-          outline: none;
-          overflow: hidden; }
-          #footer .footer form .input-div textarea:focus {
-            outline: 3px dashed #fffa;
-            border: none; }
-          #footer .footer form .input-div textarea:invalid {
-            background-color: #ead2a1;
-            color: #000; }
+          #footer .footer form .input-div input:focus, #footer .footer form .input-div textarea:focus {
+            outline: 2px dashed #fffa;
+            outline-offset: -4px; }
         #footer .footer form .input-div:hover label {
           transform: translateX(1em) translateY(-0.2em);
           color: #fff; }

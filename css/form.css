@@ -39,8 +39,7 @@
     height: auto;
     text-align: center;
     border-radius: 5px;
-    padding: 50px 35px 10px 35px;
-    box-shadow: inset 3px 3px 3px #ddda, inset -3px -3px 3px #000a; }
+    padding: 50px 35px 10px 35px; }
     @media (max-width: 500px) {
       .welcome-section .form-container {
         width: 100%;
@@ -54,9 +53,12 @@
       font-size: 1.5em;
       font-weight: 600;
       margin: .4em auto;
-      padding: .2em;
+      padding: .5em;
       border-radius: 5px;
-      box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #000a; }
+      background: #20262e;
+      color: #ead2a1;
+      outline: 1px solid #ead2a1;
+      outline-offset: -4px; }
       @media (max-width: 500px) {
         .welcome-section .form-container header {
           font-size: 1.3em;
@@ -95,13 +97,14 @@
           .welcome-section .form-container .form-outer form .page .title {
             font-size: 1.5em;
             font-weight: 900; }
-            .welcome-section .form-container .form-outer form .page .title h3 {
+            .welcome-section .form-container .form-outer form .page .title h2 {
               text-align: center;
-              padding: .3em;
+              padding: .5em;
               border-radius: 5px;
               background: #20262e;
-              box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000;
-              color: #ead2a1;
+              outline: 1px solid #fff;
+              outline-offset: -4px;
+              color: #fff;
               letter-spacing: .1em;
               font-size: .7em; }
             .welcome-section .form-container .form-outer form .page .title p {
@@ -246,10 +249,11 @@
           display: inline-block;
           border-radius: 50%;
           position: relative;
-          transition: 0.2s; }
+          transition: .5s; }
           .welcome-section .form-container .form-progress-bar .step .bullet.active {
             border: none;
-            outline-color: #ead2a1;
+            outline: 1px solid #ead2a1;
+            outline-offset: -3px;
             background: #29323c; }
           .welcome-section .form-container .form-progress-bar .step .bullet span {
             color: #000;
