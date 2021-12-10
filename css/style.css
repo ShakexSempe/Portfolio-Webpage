@@ -725,17 +725,11 @@ hamburger
     z-index: 2; }
     #projects .projects-header h1 {
       margin-bottom: 50px;
-      background-image: linear-gradient(40deg, #000, #ead2a1, skyblue, #000, skyblue, #dc143c, #000, skyblue, #000, #ead2a1);
-      background-size: 900%;
-      background-position: 0%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: project-h1 15s infinite; }
-
-@keyframes project-h1 {
-  100% {
-    background-position: 100%; } }
+      color: #ead2a1;
+      text-shadow: 3px 2px 2px #000;
+      font-weight: 900; }
+      #projects .projects-header h1::before {
+        opacity: .7; }
   #projects .projects .all-projects {
     display: flex;
     align-items: center;
