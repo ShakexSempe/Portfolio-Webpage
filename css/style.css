@@ -36,13 +36,14 @@ hamburger
 .section-title {
   font-size: 2.3em;
   font-weight: 500;
-  max-width: 100vw;
   color: #000;
+  max-width: 100vw;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: .1em;
   text-align: center;
-  padding: .5em; }
+  padding: .5em;
+  font-family: "Ubuntu", sans-serif; }
   @media (min-width: 768px) {
     .section-title {
       font-size: 3em; } }
@@ -73,7 +74,7 @@ hamburger
 .section-title:after {
   content: '';
   display: block;
-  top: -8px;
+  top: -6px;
   left: 0;
   width: 100%;
   height: 60px;
