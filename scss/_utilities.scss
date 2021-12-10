@@ -76,7 +76,7 @@ hamburger
 
 .section-title:before {
     content: attr(data-text);
-    top: 2.1em;
+    top: 2.15em;
     transform: scale(1, -1);
     backface-visibility: visible;
     z-index: 1;
