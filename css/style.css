@@ -73,7 +73,7 @@ hamburger
 .section-title:after {
   content: '';
   display: block;
-  top: -10px;
+  top: -8px;
   left: 0;
   width: 100%;
   height: 60px;
