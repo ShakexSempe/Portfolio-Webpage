@@ -62,11 +62,11 @@ hamburger
   position: relative; }
 
 .section-title {
-  top: -6px; }
+  top: -8px; }
 
 .section-title:before {
   content: attr(data-text);
-  top: 2.15em;
+  top: 2.1em;
   transform: scale(1, -1);
   backface-visibility: visible;
   z-index: 1; }
@@ -730,7 +730,8 @@ hamburger
       text-shadow: 3px 2px 2px #000;
       font-weight: 900; }
       #projects .projects-header h1::before {
-        opacity: .7; }
+        opacity: .7;
+        top: 2.25em; }
   #projects .projects .all-projects {
     display: flex;
     align-items: center;

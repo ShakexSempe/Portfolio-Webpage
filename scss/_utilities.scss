@@ -72,12 +72,12 @@ hamburger
 }
 
 .section-title {
-    top: -6px;
+    top: -8px;
 }
 
 .section-title:before {
     content: attr(data-text);
-    top: 2.15em;
+    top: 2.1em;
     transform: scale(1, -1);
     backface-visibility: visible;
     z-index: 1;
