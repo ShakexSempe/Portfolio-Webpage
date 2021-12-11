@@ -643,6 +643,19 @@ body {
     }
 
     &.pad-logo {
+        overflow: hidden;
+        [data-scroll="in"] {
+            transition: 2s;
+                transform: translateX(0);
+        }
+        
+        figure {
+            transform: translateX(80%);
+            margin: 0 auto;
+            img {
+                object-fit: cover;
+            }
+        }
         // logo pad on small screens
         @media (max-width: 768px) {
             // background-color: pink;
@@ -656,12 +669,6 @@ body {
             
         }
         // end of logo pad on small screens
-
-        figure {
-            img {
-                object-fit: cover;
-            }
-        }
     }
     &.pad-intro {
         // background-color: pink;

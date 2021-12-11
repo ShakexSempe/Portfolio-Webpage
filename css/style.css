@@ -1752,13 +1752,21 @@ body {
           border-radius: 5px;
           object-position: top;
           object-fit: contain; } }
-  @media (max-width: 768px) {
-    .section-pad.pad-logo {
-      padding: 0 5vw; }
+  .section-pad.pad-logo {
+    overflow: hidden; }
+    .section-pad.pad-logo [data-scroll="in"] {
+      transition: 2s;
+      transform: translateX(0); }
+    .section-pad.pad-logo figure {
+      transform: translateX(80%);
+      margin: 0 auto; }
       .section-pad.pad-logo figure img {
-        object-fit: cover; } }
-  .section-pad.pad-logo figure img {
-    object-fit: cover; }
+        object-fit: cover; }
+    @media (max-width: 768px) {
+      .section-pad.pad-logo {
+        padding: 0 5vw; }
+        .section-pad.pad-logo figure img {
+          object-fit: cover; } }
   .section-pad.pad-intro figure img {
     object-fit: cover; }
   .section-pad.pad-intro [data-scroll="in"] {
