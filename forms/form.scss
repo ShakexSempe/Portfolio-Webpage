@@ -5,6 +5,25 @@
   padding: 0;
   font-family: 'Gruppo', cursive;
 }
+.form-header {
+    height: 10vh;
+    overflow: hidden;
+    background-color: $overlay-blue-dark;
+
+    .home-button {
+        padding: 1em 0;
+        a {
+            margin: 0 5vw;
+            padding: 1.5em 0;
+            font-size: 1em;
+
+            i {
+                font-size: 1.5em;
+                color: $span-gold;
+            }
+        }
+    }
+}
 .form-nav {
     background: #29323c;
     h1 {
