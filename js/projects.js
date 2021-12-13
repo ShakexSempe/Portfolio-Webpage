@@ -19,7 +19,7 @@ const projects = [
         link: "https://thato-technical-drawings.netlify.app/",
         img: "img/thato-min.png",
         head: "Technical Drawings Lecturer Website",
-        desc: "Made with Scss, this single page webpage serves a link to a Youtube channel for technical drawing students and professionals.",
+        desc: "Single page webpage made with Sass serves a link to a Youtube channel for technical drawing students and professionals.",
         alt: 'technical drawing',
         tech: `<li>#scss</li>
                 <li>#mixins</li>
