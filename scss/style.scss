@@ -412,6 +412,7 @@ body {
     overflow: hidden;
 
     .hero {
+
         // animated h1 
         #hero-h1 {
             margin: 1em auto;
@@ -420,7 +421,8 @@ body {
             border-radius: 5px;
             position: absolute;
             top: 20vh;
-            @media (min-width: 768px){
+
+            @media (min-width: 768px) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -433,10 +435,12 @@ body {
                 width: fit-content;
                 color: $text-white-e;
                 font-family: 'Philosopher', sans-serif;
+
                 // desktop font size
-                @media (min-width: 768px){
+                @media (min-width: 768px) {
                     font-size: 2em;
                 }
+
                 // end of desktop font size
 
                 span {
@@ -450,6 +454,7 @@ body {
                     animation: hero-span 5s ease-in-out;
                     animation-fill-mode: forwards;
                     animation-delay: calc(1s + .5s * var(--s));
+
                     // transition: all 3s;
                     /* hero h1 keyframes */
                     @keyframes hero-span {
@@ -462,8 +467,10 @@ body {
                             opacity: 1;
                         }
                     }
+
                     /* hero h1 keyframes */
                 }
+
                 // "aka" span
                 &#aka {
                     span {
@@ -477,6 +484,7 @@ body {
                         opacity: 0;
                         transform: scale(0.7);
                     }
+
                     @keyframes aka {
                         50% {
                             opacity: 1;
@@ -488,21 +496,26 @@ body {
                         }
                     }
                 }
+
                 // end of "aka" span
 
             }
         }
+
         // end of animated h1 
         // welcome section button & shadow
         #cta-header {
             font-size: 1.3em;
-            @media (min-width: 768px){
+
+            @media (min-width: 768px) {
                 font-size: 1.5em;
             }
+
             position: relative;
             display: inline-block;
             text-align: center;
-            font-family: 'Gruppo', cursive;
+            font-family: 'Gruppo',
+            cursive;
             padding: .5em 1em;
             margin: 0;
             width: 100%;
@@ -510,7 +523,7 @@ body {
             border: none;
             outline: none;
             opacity: 1;
-            transform: rotateX(-90deg) ;
+            transform: rotateX(-90deg);
             transform-style: preserve-3d;
             animation: show-cta 4s 5.5s;
             // animation: show-cta 4s;
@@ -520,6 +533,7 @@ body {
             cursor: pointer;
             -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
             z-index: 2;
+
             // show cta
             @keyframes show-cta {
                 100% {
@@ -527,6 +541,7 @@ body {
                     transform: rotateX(0) translateY(5%);
                 }
             }
+
             // end of show cta
             // button shadows
             &::before,
@@ -542,36 +557,26 @@ body {
                 border: none;
                 outline: none;
             }
+
             // ::before = box shadow
             &::before {
                 box-shadow: $box-light-top-bg;
+                background: linear-gradient(0deg, #581212, #dc134c);
             }
+
             // ::after = background gradient
             &::after {
                 opacity: 1;
-                background: linear-gradient(0deg, #581212, #dc134c);
-                background-position: 0, 0;
-                background-size: 300%;
                 z-index: -1;
                 animation: 3s cta-btn infinite;
                 animation-delay: 6s;
                 transition: .3s;
                 outline: none;
                 border: none;
+                background: $overlay-blue-light;
+                box-shadow: $box-light-top-bg;
             }
-            // button hover, focus and active states
-            &:hover {
-                transform: scale(.97);
-                // &::before {opacity: 0;}
-                &::after {
-                    background-position: 100%;
-                }
-            }
-            &:active {
-                transition: .2s;
-                transform: scale(.95);
-            }
-            // end of button hover, focus and active states
+
             // end of button shadows
             // animated button text 
             span {
@@ -583,26 +588,58 @@ body {
                 font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
                 animation-delay: calc(6.5s + .2s * var(--i));
+
                 /* cta keyframes*/
                 @keyframes animate {
                     0% {
                         transform: translateY(0px);
                     }
+
                     20% {
                         transform: translateY(-10px) scale(1.1);
                     }
+
                     40%,
                     100% {
                         transform: translateY(0);
                     }
                 }
+
                 /* end of cta keyframes*/
             }
+
             // end of animated button text 
+            // button hover, focus and active states
+            &:hover {
+                span {
+                    color: $span-gold;
+                    animation: none;
+                }
+
+                transform: scale(.97);
+
+                &::before {
+                    opacity: 0;
+                }
+
+                &::after {
+                    background-position: 100%;
+                    opacity: 1;
+                }
             }
+
+            &:active {
+                transition: .2s;
+                transform: scale(.95);
+            }
+
+            // end of button hover, focus and active states
+        }
+
         // end of welcome section button & shadow 
     }
 }
+
 // end of hero section
 
 // pad section 
