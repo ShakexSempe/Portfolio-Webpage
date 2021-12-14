@@ -1624,8 +1624,7 @@ body {
     opacity: .7;
     transform: translateX(10px); }
   100% {
-    opacity: 1;
-    color: #fff; } }
+    opacity: 1; } }
       #home .hero #hero-h1 h1#aka span {
         position: relative;
         display: inline-block;
