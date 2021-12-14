@@ -445,7 +445,7 @@ body {
 
                 span {
                     display: inline-block;
-                    color: $text-white;
+                    color: $span-gold;
                     text-align: left;
                     font-size: 1.5em;
                     opacity: 0;
@@ -465,6 +465,7 @@ body {
 
                         100% {
                             opacity: 1;
+                            color: $text-light;
                         }
                     }
 
@@ -526,7 +527,6 @@ body {
             transform: rotateX(-90deg);
             transform-style: preserve-3d;
             animation: show-cta 4s 5.5s;
-            // animation: show-cta 4s;
             animation-fill-mode: forwards;
             // background-color: $button-background-grey;
             transition: .3s linear;
@@ -587,7 +587,7 @@ body {
                 font-size: 2em;
                 font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
-                animation-delay: calc(6.5s + .2s * var(--i));
+                animation-delay: calc(1s + .2s * var(--i));
 
                 /* cta keyframes*/
                 @keyframes animate {
@@ -611,12 +611,12 @@ body {
             // end of animated button text 
             // button hover, focus and active states
             &:hover {
+                transform: scale(.97);
                 span {
                     color: $span-gold;
                     animation: none;
                 }
 
-                transform: scale(.97);
 
                 &::before {
                     opacity: 0;

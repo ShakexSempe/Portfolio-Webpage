@@ -1608,7 +1608,7 @@ body {
           font-size: 2em; } }
       #home .hero #hero-h1 h1 span {
         display: inline-block;
-        color: #fff;
+        color: #ead2a1;
         text-align: left;
         font-size: 1.5em;
         opacity: 0;
@@ -1624,7 +1624,8 @@ body {
     opacity: .7;
     transform: translateX(10px); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    color: #fff; } }
       #home .hero #hero-h1 h1#aka span {
         position: relative;
         display: inline-block;
@@ -1703,7 +1704,7 @@ body {
       font-size: 2em;
       font-weight: 700;
       animation: animate 3s ease-in-out infinite;
-      animation-delay: calc(6.5s + .2s * var(--i));
+      animation-delay: calc(1s + .2s * var(--i));
       /* cta keyframes*/
       /* end of cta keyframes*/ }
 
