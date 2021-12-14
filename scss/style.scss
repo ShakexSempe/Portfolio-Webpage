@@ -572,7 +572,7 @@ body {
                 transition: .3s;
                 outline: none;
                 border: none;
-                background: $overlay-blue-light;
+                background: linear-gradient(0deg, $overlay-blue-darker, $overlay-blue-light);
                 box-shadow: $box-light-top-bg;
             }
 

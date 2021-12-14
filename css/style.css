@@ -1693,7 +1693,7 @@ body {
       transition: .3s;
       outline: none;
       border: none;
-      background: #485563;
+      background: linear-gradient(0deg, #20262e, #485563);
       box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
     #home .hero #cta-header span {
       position: relative;
