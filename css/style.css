@@ -1384,7 +1384,7 @@ body {
             color: #ead2a1;
             padding: 0;
             margin: 0; }
-      @media (max-width: 1200px) {
+      @media (max-width: 1024px) {
         #header .header #navbar .nav-list .links-container {
           position: absolute;
           top: 0;
@@ -1521,7 +1521,7 @@ body {
         #header .header #navbar .nav-list ul li:hover a::after {
           transform: translate(-50%, -50%) scale(1);
           letter-spacing: initial; }
-      @media (min-width: 1200px) {
+      @media (min-width: 1025px) {
         #header .header #navbar .nav-list .nav-logo {
           display: none; }
         #header .header #navbar .nav-list .hamburger {
@@ -1550,7 +1550,7 @@ body {
               width: 30%;
               opacity: 1; }
             #header .header #navbar .nav-list ul li a {
-              font-size: .9em;
+              font-size: .8em;
               padding: .3em .5em;
               margin: 0 auto;
               display: block; }

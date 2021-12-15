@@ -86,7 +86,7 @@ body {
             .nav-list {
                 // mobile navbar
                 .links-container {
-                    @media (max-width: 1200px) {
+                    @media (max-width: 1024px) {
                         position: absolute;
                         top: 0;
                         left: 100%;
@@ -296,7 +296,7 @@ body {
                 }
                 // end of mobile screens style
                 // desktop nav-list style
-                @media (min-width: 1200px){
+                @media (min-width: 1025px){
                     // hide nav avi on desktop
                         .nav-logo { display: none;}
                     // end of hide nav avi on desktop
@@ -339,7 +339,7 @@ body {
                             // end of list item underline
                             
                             a {
-                                font-size: .9em;
+                                font-size: .8em;
                                 padding: .3em .5em;
                                 margin: 0 auto;
                                 display: block;
