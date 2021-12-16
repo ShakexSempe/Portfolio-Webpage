@@ -24,7 +24,6 @@
         @media (max-width: 768px) {
             background: $overlay;
             background-size: 200%;
-
             &::after {
                 display: none;
             }
@@ -69,7 +68,7 @@
             font-size: .8em;
             font-weight: 500;
             @media (min-width: 768px){
-                font-size: 1.2em;
+                font-size: 1em;
             }
             background: transparent;
             overflow: hidden;
@@ -415,5 +414,37 @@
         // end of dropdown content ( ie. skills items)
     }
     // end of dropdown section
+
+    // git img 
+    .git-img {
+        &[data-scroll="in"] {
+            transition: 2s ease;
+            transform: translateY(0);
+        }
+        margin: 20vh auto 0;
+        width: 90%;
+        overflow: hidden;
+        height: auto;
+        transform: translateY(100%);
+        
+        img {
+            width: 100%;
+            border-radius: 5px;
+            transition: .5s ease;
+        }
+        @media (min-width: 768px) {
+            width: 60%;
+            height: auto;
+            // margin: 20vh auto 5vh;
+        }
+
+        // figure hover state
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+        // end of figure hover state
+    }
 }
 // end of skills
