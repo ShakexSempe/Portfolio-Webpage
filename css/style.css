@@ -538,7 +538,7 @@ hamburger
       width: 60%;
       height: auto; } }
   #skills .git-img:hover img {
-    transform: scale(1.05); }
+    transform: scale(1.2); }
 
 #contact .contact {
   flex-direction: column;
@@ -1766,7 +1766,8 @@ body {
     .section-pad figure img {
       width: 100%;
       height: 100%;
-      border-radius: 5px; }
+      border-radius: 5px;
+      transition: .5s ease; }
   @media (max-width: 1024px) {
     .section-pad {
       height: auto;
@@ -1795,11 +1796,14 @@ body {
         .section-pad.pad-logo figure img {
           object-fit: cover; } }
   .section-pad.pad-intro figure img {
-    object-fit: cover; }
+    object-fit: contain; }
+  .section-pad.pad-intro figure:hover img {
+    transform: scale(1.05); }
   .section-pad.pad-intro [data-scroll="in"] {
     transition: 1.5s ease; }
   .section-pad.pad-me figure {
-    width: 50%; }
+    width: 50%;
+    position: relative; }
     .section-pad.pad-me figure img {
       object-fit: cover;
       border-radius: 5px; }
