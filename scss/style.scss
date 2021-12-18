@@ -379,14 +379,14 @@ body {
                                     color: $span-gold;
                                 }
                             }
-                            // &.active {
-                            //     a {
-                            //     color: yellow;
-                            //     }
-                            //     i {
-                            //         color: pink;
-                            //     }
-                            // }
+                            &.active {
+                                a {
+                                color: yellow;
+                                }
+                                i {
+                                    color: pink;
+                                }
+                            }
                         }
                         &.active {
                             background: none;
