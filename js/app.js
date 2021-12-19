@@ -149,3 +149,5 @@ readBtn.addEventListener("click", ()=> {
 /*  set footer date*/
 date.innerHTML = new Date().getFullYear();
 /*  end of set footer date*/
+
+// section scroll

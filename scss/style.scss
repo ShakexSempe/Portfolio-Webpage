@@ -716,6 +716,9 @@ body {
     &.pad-intro {
         // background-color: pink;
         figure {
+            border-radius: 5px;
+            overflow: hidden;
+            height: auto;
             img {
                 object-fit: contain;
             }
