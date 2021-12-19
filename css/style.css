@@ -23,7 +23,7 @@ hamburger
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 4px;
+  height: 3px;
   background: #ead2a1;
   opacity: .7;
   width: 0%; }
