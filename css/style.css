@@ -24,7 +24,8 @@ hamburger
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 4px;
-  background: var(--redGradient);
+  background: #ead2a1;
+  opacity: .7;
   width: 0%; }
 
 /* end of progress bar*/
