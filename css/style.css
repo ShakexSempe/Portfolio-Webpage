@@ -1597,9 +1597,9 @@ body {
             #header .header #navbar .nav-list ul li:focus i {
               color: #ead2a1; }
             #header .header #navbar .nav-list ul li.active a {
-              color: yellow; }
+              color: #ead2a1; }
             #header .header #navbar .nav-list ul li.active i {
-              color: pink; }
+              color: #ead2a1; }
           #header .header #navbar .nav-list ul.active {
             background: none;
             box-shadow: none; } }

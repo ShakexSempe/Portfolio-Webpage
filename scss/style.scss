@@ -381,10 +381,10 @@ body {
                             }
                             &.active {
                                 a {
-                                color: yellow;
+                                color: $span-gold;
                                 }
                                 i {
-                                    color: pink;
+                                    color: $span-gold;
                                 }
                             }
                         }

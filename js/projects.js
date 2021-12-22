@@ -8,7 +8,7 @@ const projects = [
         img: "img/fcc-min.png",
         head: "FreeCodeCamp Responsive Projects Portfolio",
         desc: "",
-        alt: 'freecodecamp',
+        alt: 'free-code-camp profile',
         tech: `<li>#ResponsiveWebDesign</li>`,
         imgTech: `<li>html5</li>
                 <li>SASS</li>`,
@@ -20,7 +20,7 @@ const projects = [
         img: "img/thato-min.png",
         head: "Technical Drawings Lecturer Website",
         desc: "Single page webpage made with Sass serves a link to a Youtube channel for technical drawing students and professionals.",
-        alt: 'technical drawing',
+        alt: 'technical drawings tutorials',
         tech: `<li>#scss</li>
                 <li>#mixins</li>
                 <li>#_partials</li>`,
@@ -35,7 +35,7 @@ const projects = [
         img: "img/munch-logo-min.png",
         head: "Bakery & cupcake shop webpage",
         desc: "Single page website for a cake & cupcake bakery.",
-        alt: 'cakes cupcakes',
+        alt: 'bakery and cupcake shop',
         tech: `<li>#scss</li>
                 <li>#mxins</li>
                 <li>#_partials</li>`, 
@@ -50,7 +50,7 @@ const projects = [
         img: "img/fem.png",
         head: "front end web development projects",
         desc: "links to the various projects build from the figma sketches presented by the front end mentor platform",
-        alt: 'img',
+        alt: 'boitumelo shakex sempe front-end-mentor profile',
         tech: ` <li>orderSummaryPage</li>
                 <li>#loopstudiosLandingPage</li>
                 <li>#sunnySideLandingPage</li>
@@ -66,7 +66,7 @@ const projects = [
         img: "img/js-min.png",
         head: "javascript projects portfolio",
         desc: "page featuring links to my javascript tutorial repositories",
-        alt: 'javascript',
+        alt: 'boitumelo shakes sempe javascript portfolio',
         tech: `<li>#vanillaJavascript</li>
                 <li>#es6</li>
                 <li>#algorithms</li>`,
@@ -80,7 +80,7 @@ const projects = [
         img: "img/planets-min.png",
         head: "Advanced CSS3 Tutorial",
         desc: "CSS animations and positioning tutorial project",
-        alt: 'earth moon',
+        alt: 'earth moon animation',
         tech: `<li>#animations</li>
                 <li>#transitions</li>
                 <li>#flexBox</li>`,
@@ -94,7 +94,7 @@ const projects = [
         img: "img/syntex-min.png",
         head: "React landing page",
         desc: "react fundamentals tutorial project",
-        alt: 'img',
+        alt: 'react landing page',
         tech: `<li>#react js</li>
                 <li>#css</li>`,
     },
