@@ -15,6 +15,18 @@ const projects = [
     },
     {
         id: 2,
+        title: "React - Landing Page",
+        link: "https://shakex-react-landing-page.netlify.app/",
+        img: "img/react-landing-min.png",
+        head: "Shakex Sempe landing page",
+        desc: "react fundamentals tutorial project",
+        alt: 'react landing page',
+        tech: `<li>#react_js</li>
+                <li>#css</li>
+                <li>#cssTransitions</li>`,
+    },
+    {
+        id: 3,
         title: "Thato Technical Drawings",
         link: "https://thato-technical-drawings.netlify.app/",
         img: "img/thato-min.png",
@@ -29,7 +41,7 @@ const projects = [
                 <li>javascript</li>`,
     },
     {
-        id: 3,
+        id: 4,
         title: "Munch Up&trade;",
         link: "https://munch-up.netlify.app/",
         img: "img/munch-logo-min.png",
@@ -45,6 +57,19 @@ const projects = [
     },
     {
         id: 5,
+        title: "javascript portfolio",
+        link: "https://javascript-portfolio-boitumelo-sempe.netlify.app/",
+        img: "img/js-min.png",
+        head: "javascript projects portfolio",
+        desc: "page featuring links to my javascript tutorial repositories",
+        alt: 'boitumelo shakes sempe javascript portfolio',
+        tech: `<li>#vanillaJavascript</li>
+                <li>#es6</li>
+                <li>#algorithms</li>`,
+        imgTech: `<li>javascript</li>`,
+    },
+    {
+        id: 6,
         title: "front end mentor portfolio",
         link: "https://front-end-mentor-portfolio.netlify.app/",
         img: "img/fem.png",
@@ -60,21 +85,7 @@ const projects = [
                 <li>sass</li>`,
     },
     {
-        id: 4,
-        title: "javascript portfolio",
-        link: "https://javascript-portfolio-boitumelo-sempe.netlify.app/",
-        img: "img/js-min.png",
-        head: "javascript projects portfolio",
-        desc: "page featuring links to my javascript tutorial repositories",
-        alt: 'boitumelo shakes sempe javascript portfolio',
-        tech: `<li>#vanillaJavascript</li>
-                <li>#es6</li>
-                <li>#algorithms</li>`,
-        imgTech: `<li>javascript</li>`,
-    },
-    
-    {
-        id: 6,
+        id: 7,
         title: "Planet Animation",
         link: "https://shakexsempe.github.io/Planet-Animation/",
         img: "img/planets-min.png",
@@ -86,17 +97,6 @@ const projects = [
                 <li>#flexBox</li>`,
         imgTech: `<li>html5</li>
                 <li>css3</li>`,
-    },
-    {
-        id: 5,
-        title: "Syntex - Landing Page",
-        link: "https://syntex.netlify.app/",
-        img: "img/syntex-min.png",
-        head: "React landing page",
-        desc: "react fundamentals tutorial project",
-        alt: 'react landing page',
-        tech: `<li>#react js</li>
-                <li>#css</li>`,
     },
 ];
 // projects container
