@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5em;
+    scroll-padding-top: 5vh;
 }
 body {
     font-family: "Montserrat", sans-serif;
@@ -449,12 +449,12 @@ body {
                     color: $text-light;
                     text-align: left;
                     font-size: 1.5em;
-                    opacity: 1;
+                    opacity: 0;
                     line-height: 1.3;
-                    // animation: hero-span 5s ease-in-out;
+                    animation: hero-span 5s ease-in-out;
                     animation-fill-mode: forwards;
                     animation-delay: calc(1s + .5s * var(--s));
-                    transition: .5s;
+                    transition: 1s;
                     transform-style: preserve-3d;
 
                     /* hero h1 keyframes */
@@ -473,14 +473,8 @@ body {
                     &:hover {
                         color: $span-gold;
                         cursor: grabbing;
-                        transform: scale(1.2) rotateY(30deg);
                         transition: 1s;
-
-                        @keyframes hover {
-                            100% {
-                                transform: scale(1.1);
-                            }
-                        }
+                        transform: scale(1.2) rotateY(30deg);
                     }
                 }
 
@@ -701,6 +695,8 @@ body {
 
     &.pad-logo {
         overflow: hidden;
+        height: 100vh;
+        // background-color: pink;
         [data-scroll="in"] {
             transition: 2s;
                 transform: translateX(0);
@@ -715,8 +711,10 @@ body {
         }
         // logo pad on small screens
         @media (max-width: 768px) {
-            // background-color: pink;
             padding: 0 5vw;
+            height: 90vh;
+            display: grid;
+            place-items: center;
 
             figure {
                 img {
@@ -779,9 +777,6 @@ body {
         }
     }
 }
-// .section-pad figure[data-scroll="in"] {
-//     transform: scale(3);
-// } 
 .paralax {
     height: 100vh;
     width: 100%;
