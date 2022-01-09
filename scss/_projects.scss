@@ -6,7 +6,8 @@
         width: 100%;
         margin: 0 auto;
         padding: 0 0 20vh 0;
-        background-color: $overlay-blue-dark;
+        // background-color: $overlay-blue-dark;
+        background-color: #fff;
         position: relative;
         // section header
         &-header {
@@ -43,7 +44,7 @@
                 justify-content: center;
                 flex-direction: column-reverse;
                 width: 90%;
-                border: 2px solid $span-gold;
+                border: 2px solid $overlay-blue-light;
                 outline: none;
                 overflow: hidden;
                 // project items on desktop : row
@@ -80,7 +81,7 @@
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    background-color: $overlay-blue-light;
+                    background-color: $overlay-blue-dark;
                     transition: 1.3s ease;
                     // project Title (h1)
                     h1 {
@@ -127,7 +128,7 @@
                     // project link icon
                     a {
                         color: $text-white;
-                        background: $background-dark;
+                        background: #161616;
                         margin: .5em 0 .5em;
                         padding: .5em;
                         border: none;

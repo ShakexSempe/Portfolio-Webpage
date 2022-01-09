@@ -738,7 +738,7 @@ hamburger
   width: 100%;
   margin: 0 auto;
   padding: 0 0 20vh 0;
-  background-color: #29323c;
+  background-color: #fff;
   position: relative; }
   #projects .projects-header {
     width: 100%;
@@ -766,7 +766,7 @@ hamburger
       justify-content: center;
       flex-direction: column-reverse;
       width: 90%;
-      border: 2px solid #ead2a1;
+      border: 2px solid #485563;
       outline: none;
       overflow: hidden;
       margin: 20px auto;
@@ -792,7 +792,7 @@ hamburger
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        background-color: #485563;
+        background-color: #29323c;
         transition: 1.3s ease; }
         @media (min-width: 768px) {
           #projects .projects .all-projects .project-item .project-tile {
@@ -833,7 +833,7 @@ hamburger
               font-size: 1em; } }
         #projects .projects .all-projects .project-item .project-tile a {
           color: #fff;
-          background: #333;
+          background: #161616;
           margin: .5em 0 .5em;
           padding: .5em;
           border: none;
