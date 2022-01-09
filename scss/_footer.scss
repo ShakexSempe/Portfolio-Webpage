@@ -610,15 +610,22 @@
             width: 100%;
             text-align: center;
             p,
-            span {
+            a {
                 font-family: $font-gruppo;
                 color: #f4f4f4;
-                font-size: 1.1em;
+                font-size: 1.5em;
                 text-transform: capitalize;
             }
-            span {
+            a {
                 color: $span-gold;
-                font-size: .9em;
+                &:hover {
+                    opacity: .9;
+                }
+            }
+            #date {
+                margin: .5em 0;
+                color: $span-gold;
+                display: block;
             }
         }
         // end of bs21

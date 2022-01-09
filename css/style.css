@@ -1340,14 +1340,19 @@ hamburger
       width: 100%;
       text-align: center; }
       #footer .footer #bs21 p,
-      #footer .footer #bs21 span {
+      #footer .footer #bs21 a {
         font-family: "Gruppo", cursive;
         color: #f4f4f4;
-        font-size: 1.1em;
+        font-size: 1.5em;
         text-transform: capitalize; }
-      #footer .footer #bs21 span {
+      #footer .footer #bs21 a {
+        color: #ead2a1; }
+        #footer .footer #bs21 a:hover {
+          opacity: .9; }
+      #footer .footer #bs21 #date {
+        margin: .5em 0;
         color: #ead2a1;
-        font-size: .9em; }
+        display: block; }
 
 * {
   padding: 0;
