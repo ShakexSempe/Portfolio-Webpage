@@ -749,6 +749,7 @@ body {
             position: relative;
             cursor: pointer;
             isolation: isolate;
+            outline: 2px solid $overlay-blue-dark;
             img {
                 object-fit: cover;
                 border-radius: 5px;
@@ -771,6 +772,7 @@ body {
             }
             // hover state 
             &:hover {
+                outline: 2px solid $overlay-blue-light;
                 img {
                     opacity: 0;
                 }

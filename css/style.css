@@ -1840,7 +1840,8 @@ body {
       width: 50%;
       position: relative;
       cursor: pointer;
-      isolation: isolate; }
+      isolation: isolate;
+      outline: 2px solid #29323c; }
       .section-pad.pad-me figure img {
         object-fit: cover;
         border-radius: 5px;
@@ -1859,8 +1860,10 @@ body {
         background-position: top;
         z-index: -1;
         transition: .5s ease-in; }
-      .section-pad.pad-me figure:hover img {
-        opacity: 0; }
+      .section-pad.pad-me figure:hover {
+        outline: 2px solid #485563; }
+        .section-pad.pad-me figure:hover img {
+          opacity: 0; }
     @media (max-width: 500px) {
       .section-pad.pad-me figure {
         width: 100%; } }
