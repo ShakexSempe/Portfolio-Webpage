@@ -695,6 +695,7 @@ body {
         overflow: hidden;
         height: 100vh;
         background-color: $overlay-blue-dark;
+
         [data-scroll="in"] {
             transition: 2s;
                 transform: translateX(0);

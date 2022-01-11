@@ -332,6 +332,7 @@ hamburger
     text-align: center;
     transition: .3s;
     font-family: 'Gruppo', cursive;
+    text-shadow: 2px 2px 2px #000;
     position: relative;
     overflow: hidden;
     isolation: isolate; }
