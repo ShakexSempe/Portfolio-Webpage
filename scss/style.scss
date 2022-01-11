@@ -651,7 +651,6 @@ body {
 .section-pad {
     height: 90vh;
     width: 100%;
-    background-color: $overlay-blue-dark;
     background-color: $background-light;
     // background-color: yellow;
     padding: 10vh 20vw;
@@ -695,7 +694,7 @@ body {
     &.pad-logo {
         overflow: hidden;
         height: 100vh;
-        // background-color: pink;
+        background-color: $overlay-blue-dark;
         [data-scroll="in"] {
             transition: 2s;
                 transform: translateX(0);

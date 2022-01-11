@@ -609,22 +609,24 @@
         #bs21 {
             width: 100%;
             text-align: center;
+                font-family: $font-ubuntu; 
             p,
             a {
-                font-family: $font-gruppo;
-                color: #f4f4f4;
+                color: $text-light;
                 font-size: 1.1em;
                 text-transform: capitalize;
             }
             a {
+                font-family: $font-gruppo;
                 color: $span-gold;
+                font-size: 1.3em;
                 &:hover {
                     opacity: .9;
                 }
             }
             #date {
                 margin: .5em 0;
-                color: $span-gold;
+                color: $text-light;
                 display: block;
             }
         }

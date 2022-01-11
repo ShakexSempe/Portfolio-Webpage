@@ -1338,20 +1338,22 @@ hamburger
         transform: translateY(0%); }
     #footer .footer #bs21 {
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      font-family: "Ubuntu", sans-serif; }
       #footer .footer #bs21 p,
       #footer .footer #bs21 a {
-        font-family: "Gruppo", cursive;
-        color: #f4f4f4;
+        color: #fff;
         font-size: 1.1em;
         text-transform: capitalize; }
       #footer .footer #bs21 a {
-        color: #ead2a1; }
+        font-family: "Gruppo", cursive;
+        color: #ead2a1;
+        font-size: 1.3em; }
         #footer .footer #bs21 a:hover {
           opacity: .9; }
       #footer .footer #bs21 #date {
         margin: .5em 0;
-        color: #ead2a1;
+        color: #fff;
         display: block; }
 
 * {
@@ -1773,7 +1775,6 @@ body {
 .section-pad {
   height: 90vh;
   width: 100%;
-  background-color: #29323c;
   background-color: #fff;
   padding: 10vh 20vw;
   display: grid;
@@ -1804,7 +1805,8 @@ body {
           object-fit: contain; } }
   .section-pad.pad-logo {
     overflow: hidden;
-    height: 100vh; }
+    height: 100vh;
+    background-color: #29323c; }
     .section-pad.pad-logo [data-scroll="in"] {
       transition: 2s;
       transform: translateX(0); }
