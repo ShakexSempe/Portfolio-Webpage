@@ -726,7 +726,6 @@ body {
         // end of logo pad on small screens
     }
     &.pad-intro {
-        // background-color: pink;
         figure {
             border-radius: 5px;
             overflow: hidden;
@@ -745,6 +744,7 @@ body {
         }
     }
     &.pad-me {
+        background: $background-light;
         figure {
             width: 50%;
             position: relative;
@@ -817,7 +817,8 @@ body {
     margin: 0 auto;
     // padding: 50px 10px 100px 10px;
     padding: 10vh 5vw;
-    background-color: $overlay-blue-dark;
+    // background-color: $overlay-blue-dark;
+    background-color: $background-light;
     
     // end of about container
     // col-right
@@ -956,6 +957,7 @@ body {
         // article
         article {
             &.about-article {
+                // border: 1px solid red;
                 padding: .5em 1em;
                 height: 15vh;
                 overflow: hidden;
@@ -963,7 +965,7 @@ body {
                 @media (max-width: 768px) {
                     height: 20vh;
                     transition: .3s ease;    
-                    padding: .5em;               
+                    padding: .5em 0;               
                 }
                 @media (max-width: 374px) {
                     height: 31vh;           
