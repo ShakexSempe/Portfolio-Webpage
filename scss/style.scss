@@ -471,10 +471,23 @@ body {
                     /* hero h1 keyframes */
 
                     &:hover {
-                        color: $span-gold;
+                        animation: letter-hover 3s infinite;
                         cursor: grabbing;
                         transition: 1s;
                         transform: scale(1.2) rotateY(30deg);
+                        opacity: 1;
+
+                        @keyframes letter-hover {
+                            0% {
+                                color:$span-gold;
+                            }
+                            50% {
+                                color: $span-crimson;
+                            }
+                            100% {
+                                color: $span-gold;
+                            }
+                        }
                     }
                 }
 

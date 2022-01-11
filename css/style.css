@@ -1665,10 +1665,19 @@ body {
   100% {
     opacity: 1; } }
           #home .hero #hero-h1 h1 span:hover {
-            color: #ead2a1;
+            animation: letter-hover 3s infinite;
             cursor: grabbing;
             transition: 1s;
-            transform: scale(1.2) rotateY(30deg); }
+            transform: scale(1.2) rotateY(30deg);
+            opacity: 1; }
+
+@keyframes letter-hover {
+  0% {
+    color: #ead2a1; }
+  50% {
+    color: #dc143c; }
+  100% {
+    color: #ead2a1; } }
         #home .hero #hero-h1 h1#aka span {
           position: relative;
           display: inline-block;
