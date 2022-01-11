@@ -99,6 +99,8 @@
                 font-family: 'Gruppo', cursive;
                 font-size: .9em;
                 color: #333a; }
+            .welcome-section .form-container .form-outer form .page#message-page .next {
+              margin: 5vh auto; }
             .welcome-section .form-container .form-outer form .page#message-page .btns {
               position: absolute;
               bottom: 0;
@@ -165,12 +167,21 @@
               height: 100px;
               width: 100%;
               border-radius: 5px;
-              border: 2px solid #29323c;
-              outline: none; }
+              border: 1px solid #29323c;
+              outline: 2px solid #ead2a1;
+              outline-offset: -4px;
+              transition: .3s;
+              background: #333;
+              color: #ead2a1; }
               .welcome-section .form-container .form-outer form .page .field textarea:focus {
-                background: #f4f4f4; }
+                outline: 1px dashed #333;
+                outline-offset: -4px;
+                color: #333;
+                background: #fff; }
               .welcome-section .form-container .form-outer form .page .field textarea:invalid {
-                background: #f7cdd5c7; }
+                background: #f7cdd5c7;
+                outline: 1px dashed #dc143c;
+                outline-offset: -4px; }
             .welcome-section .form-container .form-outer form .page .field select {
               width: 100%;
               padding-left: 10px;

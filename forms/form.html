@@ -62,7 +62,7 @@
                 </div>
                 <div class="step">
                     <p>
-                        Submit
+                        message
                     </p>
                     <div class="bullet">
                         <span>4</span>
@@ -138,7 +138,7 @@
                             <div class="label">
                                 Phone Number
                             </div>
-                            <input tabindex="4" type="tel" min="9" placeholder="phone number" required>
+                            <input tabindex="4" type="tel" minlength="10" placeholder="phone number" required>
                         </div>
                         <div class="field btns">
                             <button class="prev-2 prev">Previous</button>
@@ -154,8 +154,11 @@
                             <div class="label">
                                 Leave a message or request CV
                             </div>
-                            <textarea tabindex="6" name="Message" id="textarea" cols="50" rows="50"
-                                placeholder="leave a message or request CV"></textarea>
+                            <textarea tabindex="6" 
+                            name="Message" 
+                            id="textarea" cols="50" rows="50"
+                            minlength="2"
+                            placeholder="leave a message or request CV" required></textarea>
                         </div>
                         <div class="field btns">
                             <button class="prev-3 prev">Previous</button>

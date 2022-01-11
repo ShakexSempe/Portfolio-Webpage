@@ -125,7 +125,12 @@
                                 font-size: .9em;
                                 color: #333a;
                             }
+                            
                         }
+                        // button
+                        .next {
+                            margin: 5vh auto;
+                            }
                         .btns {
                             position: absolute;
                             bottom: 0;
@@ -221,13 +226,22 @@
                             height: 100px;
                             width: 100%;
                             border-radius: 5px;
-                            border:2px solid $overlay-blue-dark;
-                            outline: none;
+                            border: 1px solid $overlay-blue-dark;
+                            outline: 2px solid $span-gold;
+                            outline-offset: -4px;
+                            transition: .3s;
+                            background: $background-dark;
+                            color: $span-gold;
                             &:focus {
-                                background: #f4f4f4; 
+                                outline: 1px dashed $text-dark;
+                                outline-offset: -4px;
+                                color: $text-dark;
+                                background: $background-light;
                             }
                             &:invalid {
                                 background: $background-invalid;
+                                outline:   1px dashed $span-crimson;
+                            outline-offset: -4px;
                             }
                         }
                         select {
