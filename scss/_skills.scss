@@ -1,7 +1,6 @@
 
 // skills
 #skills {
-    
     // skills container
     .skills {
         flex-direction: column;
@@ -11,6 +10,7 @@
         padding-bottom: 15vh;
         margin: 0 auto;
         background: $overlay;
+        background: $background-light;
         
         // skills section-title
         &-header {
@@ -22,7 +22,7 @@
 
         // end of skills section-title
         @media (max-width: 768px) {
-            background: $overlay;
+            // background: $overlay;
             background-size: 200%;
             &::after {
                 display: none;

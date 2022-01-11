@@ -652,6 +652,7 @@ body {
     height: 90vh;
     width: 100%;
     background-color: $overlay-blue-dark;
+    background-color: $background-light;
     // background-color: yellow;
     padding: 10vh 20vw;
     display: grid;
@@ -663,9 +664,7 @@ body {
         height: 100%;
         margin: 5vh auto;
         border-radius: 5px;
-        overflow: hidden;
-        // border: 2px solid red;
-        
+        overflow: hidden;        
         img {
             width: 100%;
             height: 100%;
@@ -748,10 +747,33 @@ body {
         figure {
             width: 50%;
             position: relative;
-            // border: 1px solid red;
+            cursor: pointer;
+            isolation: isolate;
             img {
                 object-fit: cover;
                 border-radius: 5px;
+                z-index: 1;
+                transition: .5s ease-in-out;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url(../img/shakexblue-min.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: top;
+                z-index: -1;
+                transition: .5s ease-in;
+            }
+            // hover state 
+            &:hover {
+                img {
+                    opacity: 0;
+                }
             }
         }
         @media (max-width: 500px) {
@@ -814,10 +836,8 @@ body {
     }
     // end of big screen layout
     text-align: center;
-    margin: 0 auto;
-    // padding: 50px 10px 100px 10px;
-    padding: 10vh 5vw;
-    // background-color: $overlay-blue-dark;
+    margin: 0 auto ;
+    padding: 0 5vw ;
     background-color: $background-light;
     
     // end of about container
