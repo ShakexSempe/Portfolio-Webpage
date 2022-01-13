@@ -16,7 +16,8 @@ const readBtn = document.getElementById('readBtn');
 let article = document.querySelector('.about-article');
   article.classList.remove('active');
 // date
-const date = document.getElementById('date');
+const date = document.querySelector('.date');
+console.log(date);
 
 // ********** END OF VARIABLES ************
 

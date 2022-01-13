@@ -228,18 +228,21 @@
 
             </section>
             <!-- end of social media links -->
-            <div id="bs21">
+            <div class="bs21">
                 <p>copyright&copy; Boitumelo Sempe.</p>
-                <p><span>s</span>hakex <span>s</span>empe</p>
-                <span id="date"></span>
-            </div>
+                <a title="Shakex Sempe" href="../index.html">shakex sempe</a>
+                <span class="date" id="form-date"></span>
+              </div>
         </div>
 
     </footer>
     <!--End of Footer-->
 
 
-    
+    <script>
+        const date = document.getElementById("form-date");
+        date.innerHTML = new Date().getFullYear();
+    </script>
     <script src="../forms/form.js"></script>
     <script src="../js/app.js"></script>
     <!-- <script src="js/projects.js"></script> -->
