@@ -236,6 +236,7 @@
                             transform: translateY(100%);
                             opacity: 0;
                             transition: 1s ease;
+                            transition-delay: .5s;
                         }
                     }
                     // end of form link

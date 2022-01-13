@@ -715,7 +715,8 @@ hamburger
           position: relative;
           transform: translateY(100%);
           opacity: 0;
-          transition: 1s ease; }
+          transition: 1s ease;
+          transition-delay: .5s; }
       #contact .contact .contact-items .contact-item:nth-child(1) {
         cursor: help; }
       #contact .contact .contact-items .contact-item:nth-child(2) {
@@ -1836,7 +1837,8 @@ body {
   .section-pad.pad-intro figure {
     border-radius: 5px;
     overflow: hidden;
-    height: auto; }
+    height: auto;
+    border: 2px solid #485563; }
     .section-pad.pad-intro figure img {
       object-fit: contain; }
     .section-pad.pad-intro figure:hover img {

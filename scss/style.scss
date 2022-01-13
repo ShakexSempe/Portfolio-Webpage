@@ -742,6 +742,7 @@ body {
             border-radius: 5px;
             overflow: hidden;
             height: auto;
+            border: 2px solid $overlay-blue-light;
             img {
                 object-fit: contain;
             }
