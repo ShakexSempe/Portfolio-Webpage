@@ -91,6 +91,7 @@
             <div class="form-outer">
                 <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                     <div class="page slide-page">
+                        <!-- BASIC INFO -->
                         <div class="title">
                             <h2>Basic Info</h2>
                         </div>
@@ -100,6 +101,7 @@
                             </div>
                             <input tabindex="1" type="text" minlength="2" name="Name" placeholder="name & surname" required>
                         </div>
+
                         <div class="field">
                             <div class="label">
                                 Title
@@ -113,10 +115,14 @@
                                 <option>Prof.</option>
                             </select>
                         </div>
+                        <!-- END OF BASIC INFO -->
+                        <!-- 'NEXT' BUTTON -->
                         <div class="field">
                             <button tabindex="3" class="firstNext next">Next</button>
                         </div>
+                        <!-- END OF 'NEXT' BUTTON -->
                     </div>
+
                     <div class="page">
                         <div class="title">
                             <h2>Services / Work</h2>
@@ -128,16 +134,18 @@
                         <div class="field">
                             <select tabindex="4" name="work">
                                 <option selected="selected" disabled="disabled">Service / Job Title</option>
-                                <option>Front Web Developer</option>
-                                <option>Junior Web Developer</option>
-                                <option>Freelance</option>
-                                <option>CV Request</option>
+                                <option name="Front Web Developer">Front Web Developer</option>
+                                <option name="Junior Web Developer">Junior Web Developer</option>
+                                <option name="Freelance">Freelance</option>
+                                <option name="CV Request">CV Request</option>
                             </select required>
                         </div>
+                        <!-- 'NEXT' / PREVIOUS BUTTON -->
                         <div class="field btns">
                             <button class="prev-1 prev">Previous</button>
                             <button tabindex="5" class="next-1 next">Next</button>
                         </div>
+                        <!-- END OF 'NEXT' / PREVIOUS BUTTON -->
                     </div>
 
                     <div class="page">
@@ -155,12 +163,14 @@
                             <div class="label">
                                 Phone Number
                             </div>
-                            <input tabindex="7" type="tel" minlength="10" placeholder="phone number" required>
+                            <input tabindex="7" type="tel" minlength="10" name="phone number" placeholder="phone number" required>
                         </div>
+                        <!-- 'NEXT' / PREVIOUS BUTTON -->
                         <div class="field btns">
                             <button class="prev-2 prev">Previous</button>
                             <button tabindex="8" class="next-2 next">Next</button>
                         </div>
+                        <!-- END OF 'NEXT' / PREVIOUS BUTTON -->
                     </div>
                     
                     <div class="page" id="message-page">
@@ -177,10 +187,12 @@
                             minlength="2"
                             placeholder="leave a message or request CV" required></textarea>
                         </div>
+                        <!-- 'SUBMIT' / PREVIOUS BUTTON -->
                         <div class="field btns">
                             <button class="prev-3 prev">Previous</button>
                             <button tabindex="15"type="submit" class="submit">Submit</button>
                         </div>
+                        <!-- END OF 'SUBMIT' / PREVIOUS BUTTON -->
                     </div>
                     <!-- form options -->
                     <input type="hidden" name="_subject" value="New submission!">
