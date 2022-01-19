@@ -935,7 +935,10 @@ hamburger
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5vh 5vw; }
+    padding: 5vh 2px; }
+    @media (min-width: 1024px) {
+      #footer .footer {
+        padding: 5vh 5vw; } }
     #footer .footer .footer-section-title {
       color: #ead2a1;
       text-align: center;
@@ -950,13 +953,14 @@ hamburger
       flex-direction: column;
       margin: 5vh auto;
       padding: 5vh 1em;
-      border-radius: 5px;
+      border-radius: 0;
       border: 1px solid #ead2a1;
       font-family: "Ubuntu", sans-serif;
       overflow: hidden; }
       @media (min-width: 1024px) {
         #footer .footer form {
-          width: 50%; } }
+          width: 50%;
+          border-radius: 5px; } }
       #footer .footer form .input-div {
         position: relative;
         padding: 1em 0 .5em;
@@ -1033,13 +1037,13 @@ hamburger
       grid-template-columns: 1fr;
       background-color: #29323c;
       border: 1px solid #ead2a1;
-      border-radius: 5px;
       width: 100%;
       margin: 2em 5vw;
       padding: 5vh 1em; }
       @media (min-width: 1024px) {
         #footer .footer .socialMedia-links {
-          width: 50%; } }
+          width: 50%;
+          border-radius: 5px; } }
       @media (min-width: 1024px) {
         #footer .footer .socialMedia-links .links-grid {
           width: 100%;
