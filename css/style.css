@@ -1671,7 +1671,8 @@ body {
   100% {
     opacity: 1; } }
           #home .hero #hero-h1 h1 span:hover {
-            animation: letter-hover 3s infinite;
+            animation: letter-hover 3s ease-in-out;
+            animation-fill-mode: forwards;
             cursor: grabbing;
             transition: 1s;
             transform: scale(1.2) rotateY(30deg);

@@ -471,7 +471,8 @@ body {
                     /* hero h1 keyframes */
 
                     &:hover {
-                        animation: letter-hover 3s infinite;
+                        animation: letter-hover 3s ease-in-out;
+                        animation-fill-mode: forwards;
                         cursor: grabbing;
                         transition: 1s;
                         transform: scale(1.2) rotateY(30deg);
