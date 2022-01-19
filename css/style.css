@@ -1857,12 +1857,18 @@ body {
       position: relative;
       cursor: pointer;
       isolation: isolate;
-      outline: 2px solid #29323c; }
+      outline: 2px solid #29323c;
+      outline: none; }
       .section-pad.pad-me figure img {
         object-fit: cover;
         border-radius: 5px;
         z-index: 1;
-        transition: .5s ease-in-out; }
+        transition: .5s ease-in-out;
+        animation: fade-show 5s infinite; }
+
+@keyframes fade-show {
+  50% {
+    opacity: 0; } }
       .section-pad.pad-me figure::after {
         position: absolute;
         content: '';
@@ -1876,10 +1882,8 @@ body {
         background-position: top;
         z-index: -1;
         transition: .5s ease-in; }
-      .section-pad.pad-me figure:hover {
-        outline: 2px solid #485563; }
-        .section-pad.pad-me figure:hover img {
-          opacity: 0; }
+      .section-pad.pad-me figure:hover img {
+        opacity: 0; }
     @media (max-width: 500px) {
       .section-pad.pad-me figure {
         width: 100%; } }

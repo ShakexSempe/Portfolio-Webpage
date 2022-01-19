@@ -764,11 +764,18 @@ body {
             cursor: pointer;
             isolation: isolate;
             outline: 2px solid $overlay-blue-dark;
+            outline: none;
             img {
                 object-fit: cover;
                 border-radius: 5px;
                 z-index: 1;
                 transition: .5s ease-in-out;
+                animation: fade-show 5s infinite;
+                @keyframes fade-show {
+                    50% {
+                        opacity: 0;
+                    }
+                }
             }
             &::after {
                 position: absolute;
@@ -786,12 +793,12 @@ body {
             }
             // hover state 
             &:hover {
-                outline: 2px solid $overlay-blue-light;
                 img {
                     opacity: 0;
                 }
             }
         }
+        
         @media (max-width: 500px) {
             figure {
                 width: 100%;
