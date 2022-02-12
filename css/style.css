@@ -1852,13 +1852,13 @@ body {
   .section-pad.pad-intro figure {
     border-radius: 5px;
     overflow: hidden;
-    height: auto;
-    border: 2px solid #485563; }
+    height: auto; }
     .section-pad.pad-intro figure img {
       object-fit: contain; }
     .section-pad.pad-intro figure:hover img {
       transform: scale(1.05); }
-  .section-pad.pad-intro [data-scroll="in"] {
+  .section-pad.pad-intro [data-scroll] {
+    transform: scale(1);
     transition: 1.5s ease; }
   .section-pad.pad-me {
     background: #fff; }

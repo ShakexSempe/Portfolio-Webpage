@@ -423,6 +423,7 @@
 
     // git img 
     .git-img {
+        
         &[data-scroll="in"] {
             transition: 2s ease;
             transform: translateY(0);

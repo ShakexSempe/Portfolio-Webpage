@@ -743,7 +743,7 @@ body {
             border-radius: 5px;
             overflow: hidden;
             height: auto;
-            border: 2px solid $overlay-blue-light;
+            // border: 2px solid $overlay-blue-light;
             img {
                 object-fit: contain;
             }
@@ -753,7 +753,8 @@ body {
                 }
             }
         }
-        [data-scroll="in"] {
+        [data-scroll] {
+            transform: scale(1);
             transition: 1.5s ease;
         }
     }
