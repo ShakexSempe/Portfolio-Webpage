@@ -771,6 +771,8 @@ hamburger
     justify-content: center;
     flex-direction: column;
     z-index: 10; }
+    #projects .projects .all-projects[data-scroll] {
+      transform: scale(1); }
     #projects .projects .all-projects .project-item {
       display: flex;
       align-items: center;
