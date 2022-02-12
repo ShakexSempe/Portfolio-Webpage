@@ -2029,20 +2029,20 @@ body {
         background-color: #20262e; }
       .about .col-right button:hover {
         transform: scale(0.97); }
-    .about .col-right article.about-article {
+    .about .col-right .article-container article.about-article {
       padding: .5em 1em;
       height: 15vh;
       overflow: hidden;
       transition: .3s ease; }
       @media (max-width: 768px) {
-        .about .col-right article.about-article {
+        .about .col-right .article-container article.about-article {
           height: 20vh;
           transition: .3s ease;
           padding: .5em 0; } }
       @media (max-width: 374px) {
-        .about .col-right article.about-article {
+        .about .col-right .article-container article.about-article {
           height: 31vh; } }
-      .about .col-right article.about-article p {
+      .about .col-right .article-container article.about-article p {
         padding: .2em;
         margin-bottom: 1em;
         text-overflow: ellipsis;
@@ -2050,7 +2050,7 @@ body {
         z-index: 1;
         font-size: .85em;
         font-weight: 500; }
-        .about .col-right article.about-article p#intro::first-letter {
+        .about .col-right .article-container article.about-article p#intro::first-letter {
           font-size: 2.5em;
           float: left;
           background: #29323c;
@@ -2059,32 +2059,32 @@ body {
           margin-right: .1em;
           border-radius: 2px;
           box-shadow: -3px 3px 0 #4855634b; }
-        .about .col-right article.about-article p#intro {
+        .about .col-right .article-container article.about-article p#intro {
           font-weight: 600; }
-        .about .col-right article.about-article p.about-body {
+        .about .col-right .article-container article.about-article p.about-body {
           transition: opacity 4s ease;
           opacity: 0;
           display: none;
           margin-bottom: .5em; }
         @media (min-width: 768px) {
-          .about .col-right article.about-article p {
+          .about .col-right .article-container article.about-article p {
             font-size: 1em; } }
-        .about .col-right article.about-article p .fcc-link {
+        .about .col-right .article-container article.about-article p .fcc-link {
           color: #dc143c; }
-          .about .col-right article.about-article p .fcc-link:hover {
+          .about .col-right .article-container article.about-article p .fcc-link:hover {
             color: violet; }
-      .about .col-right article.about-article.active {
+      .about .col-right .article-container article.about-article.active {
         height: 50vh;
         transition: .5s ease;
         overflow-y: auto; }
         @media (min-width: 768px) {
-          .about .col-right article.about-article.active {
+          .about .col-right .article-container article.about-article.active {
             height: 45vh; } }
-        .about .col-right article.about-article.active .about-body {
+        .about .col-right .article-container article.about-article.active .about-body {
           transition: opacity 4s ease;
           display: block;
           opacity: 1; }
-    .about .col-right article#cv {
+    .about .col-right .article-container article#cv {
       display: flex;
       justify-content: space-between;
       font-size: 1em;
@@ -2097,9 +2097,9 @@ body {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
       @media (min-width: 1024px) {
-        .about .col-right article#cv {
+        .about .col-right .article-container article#cv {
           justify-content: space-evenly; } }
-      .about .col-right article#cv a {
+      .about .col-right .article-container article#cv a {
         transition: .3s ease;
         color: #ead2a1;
         text-shadow: 1px 1px 1px #000;
@@ -2107,7 +2107,7 @@ body {
         flex-direction: column;
         align-items: center;
         position: relative; }
-        .about .col-right article#cv a i {
+        .about .col-right .article-container article#cv a i {
           background-image: linear-gradient(60deg, #ead2a1 30%, rgba(209, 207, 207, 0.829) 60%, #fff 60%);
           background-size: 300%;
           background-position: right;
@@ -2122,10 +2122,13 @@ body {
 @keyframes icon-shine {
   100% {
     background-position: left; } }
-        .about .col-right article#cv a:hover {
+        .about .col-right .article-container article#cv a:hover {
           transition: .3s ease;
           transform: scale(1.1);
           opacity: .8; }
+    .about .col-right .article-container[data-scroll] {
+      transform: scale(1);
+      transition: 1.5s; }
     .about .col-right:hover #cv-download {
       transition: 1s ease;
       transform: translateY(100%);
