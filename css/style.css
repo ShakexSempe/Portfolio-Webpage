@@ -320,6 +320,9 @@ hamburger
     background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
     transition: .2s;
     box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #3d495500; }
+  #skills .skills-top[data-scroll] {
+    transform: scale(1);
+    transition: 1.5s; }
 
 #skills .dropdown {
   position: relative;

@@ -98,6 +98,11 @@
         }
         // end of skills top 'down arrow'
 
+        // SKILLS-TOP DATA-SCROLL
+        &[data-scroll] {
+            transform: scale(1);
+            transition: 1.5s;
+        }
     }
     // end of skills top section
     // dropdown section
