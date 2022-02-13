@@ -86,17 +86,16 @@ const projects = [
     },
     {
         id: 7,
-        title: "Planet Animation",
-        link: "https://shakexsempe.github.io/Planet-Animation/",
-        img: "img/planets-min.png",
-        head: "Advanced CSS3 Tutorial",
-        desc: "CSS animations and positioning tutorial project",
-        alt: 'earth moon animation',
-        tech: `<li>#animations</li>
-                <li>#transitions</li>
-                <li>#flexBox</li>`,
-        imgTech: `<li>html5</li>
-                <li>css3</li>`,
+        title: "Orich Trading & Projects&trade;",
+        link: "https://shakexsempe.github.io/orich-trading/",
+        img: "img/orich-min.png",
+        head: "Local bussiness website",
+        desc: "Full website",
+        alt: 'Orich Trading & Projects logo',
+        tech: `<li>#HTML5</li>
+                <li>#Sass</li>
+                <li>#form-js</li>`,
+        imgTech: `<li>scroll-js</li>`,
     },
 ];
 // projects container
