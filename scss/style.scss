@@ -47,7 +47,7 @@ body {
     width: 100vw;
 
     .header {
-        min-height: 10vh;
+        min-height: 8vh;
         transition: 1s ease background-color;
 
         #navbar {
@@ -352,9 +352,9 @@ body {
                             i {
                                 color: #fffa;
                                 margin-right: .1em;
-                                padding: .5em;
+                                padding: .3rem .5em;
                                 font-size: 1em;
-                                border-radius: 50%;
+                                border-radius: 5px;
                             }
                             // links and icon hover state
                             &:hover {
@@ -809,7 +809,6 @@ body {
 
         &[data-scroll] {
             transition: 1.5s;
-            
         }
     }
     &.pad-me-blue {
