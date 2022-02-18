@@ -806,6 +806,11 @@ body {
                 width: 100%;
             }
         }
+
+        &[data-scroll] {
+            transition: 1.5s;
+            
+        }
     }
     &.pad-me-blue {
         figure {

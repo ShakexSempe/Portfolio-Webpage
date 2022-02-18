@@ -40,7 +40,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" defer />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -146,14 +146,14 @@
       </div>
       <div data-scroll class="skills-top">
         <p>
-          I'm a Front End Developer focused on Responsive Web Design and UX Design.<br>
+          I'm a Front End Developer focused on Responsive Web Design and UX Experience.<br>
           I code immersive webpages using HTML5 semantic markup, advanced CSS3 and Javascript.
           <br><br><span>View my full skill set in the dropdown section below.</span>
         </p>
       </div>
       <!--Dropdown-->
-      <div data-scroll class="dropdown">
-        <button onclick="dropdown()" title="full skillset" class="dropbtn">My Skills</button>
+      <div class="dropdown">
+        <button data-scroll onclick="dropdown()" title="full skillset" class="dropbtn">My Skills</button>
         <div id="myDropdown" class="dropdown-content">
 
           <div class="skills-bottom">
@@ -296,13 +296,24 @@
             </div>
 
             <div title="Netlify" data-scroll class="skills-item">
-              <div id="netlify-icon" class="icon">
+              <div class="icon">
                   <img src="icons/netlify_logo_icon_145039.svg" alt="netlify">
               </div>
               <h2>Netlify</h2>
               <ul>
                 <li>Static websites</li>
                 <li>Responsive websites </li>
+              </ul>
+            </div>
+
+            <div title="webHost" data-scroll class="skills-item">
+              <div id="webHost" class="icon">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+              </div>
+              <h2>Web Hosting</h2>
+              <ul>
+                <li>domain name registration</li>
+                <li>domain management</li>
               </ul>
             </div>
 

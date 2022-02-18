@@ -374,6 +374,8 @@ hamburger
     #skills .dropdown .dropbtn:active {
       transform: scale(0.9);
       transition: .3s; }
+    #skills .dropdown .dropbtn[data-scroll] {
+      transition: 1.5s; }
   #skills .dropdown .dropdown-content {
     display: none;
     width: 100vw;
@@ -418,12 +420,14 @@ hamburger
         overflow: hidden;
         border-radius: 10px;
         height: auto;
-        line-height: 1.3; }
+        line-height: 1.3;
+        isolation: isolate; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item[data-scroll="in"] {
           transition: 1.5s; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item ul {
           margin: .2em;
-          padding: .5em; }
+          padding: .5em;
+          z-index: 5; }
           #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li {
             color: #fff;
             font-size: .9em;
@@ -431,6 +435,8 @@ hamburger
             margin: .5em;
             padding: .2em .4em;
             text-transform: capitalize; }
+            #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li a {
+              color: #f4f4f4; }
             #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li::marker {
               color: #ead2a1; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item::after {
@@ -1899,6 +1905,8 @@ body {
     @media (max-width: 500px) {
       .section-pad.pad-me figure {
         width: 100%; } }
+    .section-pad.pad-me[data-scroll] {
+      transition: 1.5s; }
   .section-pad.pad-me-blue figure {
     width: 50%; }
     .section-pad.pad-me-blue figure img {

@@ -175,9 +175,13 @@
                 transition: .3s;
 
             }
-
-            // button end of box shadow states
+            // end of box shadow states
             // end of dropdown button shadows
+
+            // DATA-SCROLL
+            &[data-scroll] {
+                transition: 1.5s;
+            }
         }
 
         // end of dropdown button
@@ -241,11 +245,12 @@
                     &[data-scroll="in"]{
                         transition: 1.5s;
                     }
-
+                    isolation: isolate;
+                    
                     ul {
                         margin: .2em;
                         padding: .5em;
-                        
+                        z-index: 5;
 
                         li {
                             color: #fff;
@@ -255,6 +260,9 @@
                             padding: .2em .4em;
                             text-transform: capitalize;
                             
+                            a {
+                                color: #f4f4f4;
+                            }
 
                             &::marker {
                                 color: $span-gold;
