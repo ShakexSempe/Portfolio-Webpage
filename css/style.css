@@ -1555,7 +1555,9 @@ body {
                 #header .header #navbar .nav-list .links-container.active ul li:nth-child(5) {
                   transition-delay: .7s; }
                 #header .header #navbar .nav-list .links-container.active ul li:nth-child(6) {
-                  transition-delay: .8s; } }
+                  transition-delay: .8s; }
+                #header .header #navbar .nav-list .links-container.active ul li:nth-child(7) {
+                  transition-delay: .9s; } }
       #header .header #navbar .nav-list .links-container .nav-logo {
         margin: 1em 5vw;
         opacity: 1;
@@ -1650,18 +1652,16 @@ body {
               width: 30%;
               opacity: 1; }
             #header .header #navbar .nav-list ul li a {
-              font-size: .8em;
+              font-size: 1em;
               padding: .3em .5em;
               margin: 0 auto;
-              display: block; }
+              display: block;
+              float: left;
+              color: #fffa; }
               #header .header #navbar .nav-list ul li a::after {
                 display: none; }
             #header .header #navbar .nav-list ul li i {
-              color: #fffa;
-              margin-right: .1em;
-              padding: .3rem .5em;
-              font-size: 1em;
-              border-radius: 5px; }
+              display: none; }
             #header .header #navbar .nav-list ul li:hover a {
               transition: .3s ease;
               color: #ead2a1; }

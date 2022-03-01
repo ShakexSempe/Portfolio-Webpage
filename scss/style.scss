@@ -193,6 +193,9 @@ body {
                                 &:nth-child(6) {
                                     transition-delay: .8s;
                                 }
+                                &:nth-child(7) {
+                                    transition-delay: .9s;
+                                }
 
                             }
                         }
@@ -341,21 +344,24 @@ body {
                             // end of list item underline
                             
                             a {
-                                font-size: .8em;
+                                font-size: 1em;
                                 padding: .3em .5em;
                                 margin: 0 auto;
                                 display: block;
+                                float: left;
+                                color: $text-white-trans;
 
                                 &::after {
                                     display: none;
                                 }
                             }
                             i {
-                                color: #fffa;
-                                margin-right: .1em;
-                                padding: .3rem .5em;
-                                font-size: 1em;
-                                border-radius: 5px;
+                                display: none;
+                                // color: #fffa;
+                                // margin-right: .1em;
+                                // padding: .3rem .5em;
+                                // font-size: 1em;
+                                // border-radius: 5px;
                             }
                             // links and icon hover state
                             &:hover {
