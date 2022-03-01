@@ -8,8 +8,8 @@ hamburger
 */
 #header .hamburger {
   font-size: 10px;
-  height: 4em;
-  width: 4em;
+  height: 3.3em;
+  width: 3.3em;
   margin: 5px auto;
   display: inline-block;
   border-radius: 50%;
@@ -1734,7 +1734,7 @@ body {
       border: none;
       outline: none;
       opacity: 1;
-      transform: rotateX(-90deg);
+      transform: scaleY(0);
       transform-style: preserve-3d;
       animation: show-cta 4s 5.5s;
       animation-fill-mode: forwards;
@@ -1749,7 +1749,7 @@ body {
 @keyframes show-cta {
   100% {
     opacity: 1;
-    transform: rotateX(0) translateY(5%); } }
+    transform: scale(1); } }
       #home .hero #cta-header::before, #home .hero #cta-header::after {
         position: absolute;
         content: '';
