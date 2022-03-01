@@ -14,48 +14,6 @@ const projects = [
                 <li>SASS</li>`,
     },
     {
-        id: 2,
-        title: "React - Landing Page",
-        link: "https://shakex-react-landing-page.netlify.app/",
-        img: "img/react-landing-min.png",
-        head: "Shakex Sempe landing page",
-        desc: "react fundamentals tutorial project",
-        alt: 'react landing page',
-        tech: `<li>#react_js</li>
-                <li>#css</li>
-                <li>#cssTransitions</li>`,
-    },
-    {
-        id: 3,
-        title: "Thato Technical Drawings",
-        link: "https://thato-technical-drawings.netlify.app/",
-        img: "img/thato-min.png",
-        head: "Technical Drawings Lecturer Website",
-        desc: "Single page webpage made with Sass serves a link to a Youtube channel for technical drawing students and professionals.",
-        alt: 'technical drawings tutorials',
-        tech: `<li>#scss</li>
-                <li>#mixins</li>
-                <li>#_partials</li>`,
-        imgTech: `<li>html5</li>
-                <li>sass</li>
-                <li>javascript</li>`,
-    },
-    {
-        id: 4,
-        title: "Munch Up&trade;",
-        link: "https://munch-up.netlify.app/",
-        img: "img/munch-logo-min.png",
-        head: "Bakery & cupcake shop webpage",
-        desc: "Single page website for a cake & cupcake bakery.",
-        alt: 'bakery and cupcake shop',
-        tech: `<li>#scss</li>
-                <li>#mxins</li>
-                <li>#_partials</li>`, 
-        imgTech: `<li>html5</li>
-                <li>sass</li>
-                <li>javascript</li>`,    
-    },
-    {
         id: 5,
         title: "javascript portfolio",
         link: "https://javascript-portfolio-boitumelo-sempe.netlify.app/",
@@ -85,17 +43,16 @@ const projects = [
                 <li>sass</li>`,
     },
     {
-        id: 7,
-        title: "Orich Trading & Projects&trade;",
-        link: "https://shakexsempe.github.io/orich-trading/",
-        img: "img/orich-min.png",
-        head: "Local bussiness website",
-        desc: "Full website",
-        alt: 'Orich Trading & Projects logo',
-        tech: `<li>#HTML5</li>
-                <li>#Sass</li>
-                <li>#form-js</li>`,
-        imgTech: `<li>scroll-js</li>`,
+        id: 2,
+        title: "React - Landing Page",
+        link: "https://shakex-react-landing-page.netlify.app/",
+        img: "img/react-landing-min.png",
+        head: "Shakex Sempe landing page",
+        desc: "react fundamentals tutorial project",
+        alt: 'react landing page',
+        tech: `<li>#react_js</li>
+                <li>#css</li>
+                <li>#cssTransitions</li>`,
     },
 ];
 // projects container
