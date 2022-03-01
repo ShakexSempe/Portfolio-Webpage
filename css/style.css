@@ -268,10 +268,10 @@ hamburger
         display: none; } }
 
 #skills .skills-top {
-  width: 95%;
+  width: 90%;
   text-align: left;
   padding: .5rem;
-  margin: 2em 1rem;
+  margin: 2em auto;
   background: #29323c;
   backdrop-filter: blur(5px);
   border-radius: 10px;
@@ -307,7 +307,7 @@ hamburger
       #skills .skills-top .skills-info p {
         font-size: 1em; } }
     #skills .skills-top .skills-info p span {
-      font-size: 1em;
+      font-size: .85em;
       color: #ead2a1; }
   #skills .skills-top .skills-drop {
     text-align: center;

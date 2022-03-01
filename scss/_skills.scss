@@ -39,10 +39,10 @@
             padding: 5vh 5vw;
             text-align: center;
         }
-        width: 95%;
+        width: 90%;
         text-align: left;
         padding: .5rem;
-        margin: 2em 1rem;
+        margin: 2em auto;
         // background-image: var(--overlay);
         // background: #48556388;
         background: $overlay-blue-dark;
@@ -78,7 +78,7 @@
             line-height: 2em;
 
             span {
-                font-size: 1em;
+                font-size: .85em;
                 color: $span-gold;
             }
             
