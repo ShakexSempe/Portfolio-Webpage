@@ -33,13 +33,15 @@
 
     // skills top section
     .skills-top {
-        width: 90%;
         @media (min-width: 1024px){
-            width: 60%;
+            width: 90%;
             margin: 5vh 0 2em;
+            padding: 5vh 5vw;
+            text-align: center;
         }
+        width: 90%;
+        text-align: left;
         padding: .5em 1em 2em;
-        text-align: center;
         margin: 2em auto;
         // background-image: var(--overlay);
         // background: #48556388;

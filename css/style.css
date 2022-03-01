@@ -269,8 +269,8 @@ hamburger
 
 #skills .skills-top {
   width: 90%;
+  text-align: left;
   padding: .5em 1em 2em;
-  text-align: center;
   margin: 2em auto;
   background: #29323c;
   backdrop-filter: blur(5px);
@@ -280,8 +280,10 @@ hamburger
   z-index: 30; }
   @media (min-width: 1024px) {
     #skills .skills-top {
-      width: 60%;
-      margin: 5vh 0 2em; } }
+      width: 90%;
+      margin: 5vh 0 2em;
+      padding: 5vh 5vw;
+      text-align: center; } }
   #skills .skills-top::before {
     content: '';
     position: absolute;
