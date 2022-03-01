@@ -301,12 +301,12 @@ hamburger
     line-height: 1.6;
     font-weight: 500;
     background: transparent;
-    overflow: hidden;
-    line-height: 2em; }
+    overflow: hidden; }
     @media (min-width: 768px) {
       #skills .skills-top .skills-info p {
         font-size: 1em; } }
     #skills .skills-top .skills-info p span {
+      font-size: .9rem;
       color: #ead2a1; }
   #skills .skills-top .skills-drop {
     text-align: center;
