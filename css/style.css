@@ -368,11 +368,11 @@ hamburger
       transition: .3s; }
     #skills .dropdown .dropbtn::before {
       background: linear-gradient(0deg, #3f0d0d, #dc134c);
-      box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+      box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
     #skills .dropdown .dropbtn::after {
       background: linear-gradient(0deg, #20262e, #485563);
       opacity: 0;
-      box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+      box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
     #skills .dropdown .dropbtn:hover {
       color: #ead2a1;
       transform: scale(0.97); }
@@ -713,7 +713,7 @@ hamburger
           z-index: -1;
           border-radius: 10px;
           transition: .5s ease;
-          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
       #contact .contact .contact-items .contact-item .contact-info a {
         width: 100%;
         font-size: .8em;
@@ -989,7 +989,7 @@ hamburger
         text-align: center;
         text-decoration: none;
         width: 50%;
-        box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda, 3px 3px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2);
         transition: .2s; }
         #work .work-items .work-item a:hover {
           transform: scale(0.95); }
@@ -1102,7 +1102,7 @@ hamburger
           width: 100%;
           height: 100%;
           border-radius: 10px;
-          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
     #footer .footer .socialMedia-links {
       grid-template-columns: 1fr;
       background-color: #29323c;
@@ -1514,7 +1514,8 @@ body {
             position: relative;
             border: 2px solid #ead2a15e;
             outline: none;
-            padding: 1em 0; }
+            padding: 1em 0;
+            overflow-y: auto; }
             #header .header #navbar .nav-list .links-container ul li {
               transform: translateX(10%);
               opacity: 0;
@@ -1620,7 +1621,7 @@ body {
           text-align: left;
           color: #fffa;
           border-radius: 10px;
-          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
         #header .header #navbar .nav-list ul li:hover {
           transition: .3s; }
           #header .header #navbar .nav-list ul li:hover a {
@@ -2041,7 +2042,7 @@ body {
         position: absolute;
         opacity: 0;
         z-index: 20;
-        box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a; }
+        box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
       .about .col-right .about-title h2 {
         display: inline-block;
         border-radius: 10px;
