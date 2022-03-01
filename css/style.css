@@ -603,6 +603,8 @@ hamburger
       @media (min-width: 1024px) {
         #contact .contact .contact-items .contact-item {
           width: 30%; } }
+      #contact .contact .contact-items .contact-item[data-scroll] {
+        transform: scale(1); }
       #contact .contact .contact-items .contact-item::after {
         position: absolute;
         content: '';

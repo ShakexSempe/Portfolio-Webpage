@@ -36,6 +36,10 @@
                 width: 30%;
                 
             }
+            // DATA-SCROLL
+            &[data-scroll] {
+                transform: scale(1);
+            }
             // tablet to desktop
                 width: 85%;
                 /* height: auto; */
