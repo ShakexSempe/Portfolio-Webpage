@@ -1,0 +1,79 @@
+#work {
+    min-height: 100vh;
+    // background: #ddd;
+    padding: 5vh 1rem;
+    @media (min-width: 768px) {
+        padding: 5vh 5vw;
+    }
+
+    .work-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        }
+        .work-item {
+            border: 1px solid $overlay-blue-dark;
+            padding: 5vh 0;
+            width: 100%;
+            border-radius: 5px;
+            .work-title {
+                text-align: center;
+                text-transform: capitalize;
+                font-family: $font-ubuntu;
+            }
+            figure {
+                @media (min-width: 768px) {
+                    width: 10rem;
+                    height: 10rem;
+                }
+                width: 70%;
+                height: 70%;
+                border-radius: 50%;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 1rem auto;
+                // border: 1px solid red;
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transition: .3s;
+                }
+            }
+
+            a {
+                // border: 1px solid blue;
+                border: none;
+                outline: none;
+                background: $overlay-btn;
+                background: $button-crimson;
+                border-radius: 5px;
+                color: $text-light;
+                padding: .35rem;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                width: 50%;
+                box-shadow: $box-dark-top-sm;
+                transition: .2s;
+
+                &:hover {
+                    transform: scale(.95);
+                }
+            }
+            &:hover {
+                figure {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

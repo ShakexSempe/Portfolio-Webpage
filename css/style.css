@@ -758,23 +758,9 @@ hamburger
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 20vh 0;
+  padding: 0 0 10vh 0;
   background-color: #fff;
   position: relative; }
-  #projects .projects-header {
-    width: 100%;
-    height: 170px;
-    background: #fff;
-    margin-bottom: 2em;
-    z-index: 2; }
-    #projects .projects-header h1 {
-      margin-bottom: 50px;
-      color: #ead2a1;
-      text-shadow: 3px 2px 2px #000;
-      font-weight: 900; }
-      #projects .projects-header h1::before {
-        opacity: .7;
-        top: 2.25em; }
   #projects .projects .all-projects {
     display: flex;
     align-items: center;
@@ -834,18 +820,15 @@ hamburger
           border-bottom: 1px dashed #ead2a1; }
           @media (min-width: 1024px) {
             #projects .projects .all-projects .project-item .project-tile h1 {
-              font-size: 1.5em; } }
+              font-size: 1.2rem; } }
         #projects .projects .all-projects .project-item .project-tile h2 {
-          font-size: .9em;
+          font-size: 1em;
           line-height: 1.3;
           font-weight: 500;
           margin: .8em 0;
           text-transform: capitalize;
           color: #eee;
           transition: .3s; }
-          @media (min-width: 768px) {
-            #projects .projects .all-projects .project-item .project-tile h2 {
-              font-size: 1.2em; } }
         #projects .projects .all-projects .project-item .project-tile p {
           font-size: .8em;
           font-weight: 200;
@@ -907,7 +890,7 @@ hamburger
           height: 100%;
           width: 100%;
           background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
-          opacity: .4;
+          opacity: .6;
           transition: .5s;
           z-index: 3; }
         #projects .projects .all-projects .project-item .project-img img {
@@ -946,6 +929,64 @@ hamburger
       #projects .projects .all-projects .project-item:hover.project-item .project-tile a i::after {
         opacity: 1;
         margin-left: .5em; }
+
+#work {
+  min-height: 100vh;
+  padding: 5vh 1rem; }
+  @media (min-width: 768px) {
+    #work {
+      padding: 5vh 5vw; } }
+  #work .work-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; }
+    @media (min-width: 768px) {
+      #work .work-items {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    #work .work-items .work-item {
+      border: 1px solid #29323c;
+      padding: 5vh 0;
+      width: 100%;
+      border-radius: 5px; }
+      #work .work-items .work-item .work-title {
+        text-align: center;
+        text-transform: capitalize;
+        font-family: "Ubuntu", sans-serif; }
+      #work .work-items .work-item figure {
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 1rem auto; }
+        @media (min-width: 768px) {
+          #work .work-items .work-item figure {
+            width: 10rem;
+            height: 10rem; } }
+        #work .work-items .work-item figure img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: .3s; }
+      #work .work-items .work-item a {
+        border: none;
+        outline: none;
+        background: linear-gradient(0deg, #20262e, #485563);
+        background: linear-gradient(0deg, #3f0d0d, #dc134c);
+        border-radius: 5px;
+        color: #fff;
+        padding: .35rem;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        width: 50%;
+        box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda;
+        transition: .2s; }
+        #work .work-items .work-item a:hover {
+          transform: scale(0.95); }
+      #work .work-items .work-item:hover figure img {
+        transform: scale(1.1); }
 
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -1881,6 +1922,8 @@ body {
       isolation: isolate;
       outline: 2px solid #29323c;
       outline: none; }
+      .section-pad.pad-me figure[data-scroll] {
+        transform: scale(1); }
       .section-pad.pad-me figure img {
         object-fit: cover;
         border-radius: 5px;

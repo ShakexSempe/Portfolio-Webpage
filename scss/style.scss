@@ -4,6 +4,7 @@
 @import 'skills';
 @import 'contact';
 @import 'projects';
+@import 'work';
 @import 'footer';
 * {
     padding: 0;
@@ -768,6 +769,10 @@ body {
             isolation: isolate;
             outline: 2px solid $overlay-blue-dark;
             outline: none;
+            // DATA-SCROLL
+            &[data-scroll] {
+                transform: scale(1);
+            }
             img {
                 object-fit: cover;
                 border-radius: 5px;
@@ -1197,6 +1202,7 @@ body {
         transform-style: preserve-3d;
         // about images
         .about-img {
+            
             @media (min-width: 1024px){
                 margin-top: 0;
                 height: 100%;
