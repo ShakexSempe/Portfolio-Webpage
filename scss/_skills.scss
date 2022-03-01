@@ -42,6 +42,7 @@
         width: 90%;
         text-align: left;
         padding: .5em 1em 2em;
+        padding: .5rem;
         margin: 2em auto;
         // background-image: var(--overlay);
         // background: #48556388;
@@ -64,10 +65,11 @@
             border: none;
             outline: none;
         }
-
+        .skills-info {
         p {
             color: $text-light;
-            font-size: .8em;
+            font-size: 1rem;
+            line-height: 1.6;
             font-weight: 500;
             @media (min-width: 768px){
                 font-size: 1em;
@@ -78,6 +80,15 @@
 
             span {
                 font-size: 1em;
+                color: $span-gold;
+            }
+            
+        }
+    }
+        .skills-drop {
+            text-align: center;
+            color: $span-gold;
+            .skills-drop-p {
                 color: $span-gold;
             }
         }
@@ -99,7 +110,7 @@
                         inset 5px 5px 5px #3d495500;
         }
         // end of skills top 'down arrow'
-
+        
         // SKILLS-TOP DATA-SCROLL
         &[data-scroll] {
             transform: scale(1);

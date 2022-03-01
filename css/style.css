@@ -271,6 +271,7 @@ hamburger
   width: 90%;
   text-align: left;
   padding: .5em 1em 2em;
+  padding: .5rem;
   margin: 2em auto;
   background: #29323c;
   backdrop-filter: blur(5px);
@@ -295,18 +296,24 @@ hamburger
     border-radius: 10px;
     border: none;
     outline: none; }
-  #skills .skills-top p {
+  #skills .skills-top .skills-info p {
     color: #fff;
-    font-size: .8em;
+    font-size: 1rem;
+    line-height: 1.6;
     font-weight: 500;
     background: transparent;
     overflow: hidden;
     line-height: 2em; }
     @media (min-width: 768px) {
-      #skills .skills-top p {
+      #skills .skills-top .skills-info p {
         font-size: 1em; } }
-    #skills .skills-top p span {
+    #skills .skills-top .skills-info p span {
       font-size: 1em;
+      color: #ead2a1; }
+  #skills .skills-top .skills-drop {
+    text-align: center;
+    color: #ead2a1; }
+    #skills .skills-top .skills-drop .skills-drop-p {
       color: #ead2a1; }
   #skills .skills-top::after {
     content: '';
