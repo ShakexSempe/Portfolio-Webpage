@@ -39,11 +39,10 @@
             padding: 5vh 5vw;
             text-align: center;
         }
-        width: 90%;
+        width: 95%;
         text-align: left;
-        padding: .5em 1em 2em;
         padding: .5rem;
-        margin: 2em auto;
+        margin: 2em 1rem;
         // background-image: var(--overlay);
         // background: #48556388;
         background: $overlay-blue-dark;
@@ -68,7 +67,7 @@
         .skills-info {
         p {
             color: $text-light;
-            font-size: 1rem;
+            font-size: .85rem;
             line-height: 1.6;
             font-weight: 500;
             @media (min-width: 768px){
@@ -90,6 +89,7 @@
             color: $span-gold;
             .skills-drop-p {
                 color: $span-gold;
+                font-size: .9rem;
             }
         }
         // skills top 'down arrow'
