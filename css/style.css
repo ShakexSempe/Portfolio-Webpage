@@ -1499,7 +1499,8 @@ body {
           width: 100vw;
           height: 100vh;
           background-color: #1b2127;
-          transition: .5s ease; }
+          transition: .5s ease;
+          overflow-y: auto; }
           #header .header #navbar .nav-list .links-container ul {
             margin: 2em 5vw;
             background: #29323c;
