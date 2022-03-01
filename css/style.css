@@ -953,12 +953,13 @@ hamburger
         text-transform: capitalize;
         font-family: "Ubuntu", sans-serif; }
       #work .work-items .work-item figure {
-        width: 70%;
-        height: 70%;
+        width: 65%;
+        height: 65%;
         border-radius: 50%;
         border-radius: 5px;
         overflow: hidden;
-        margin: 1rem auto; }
+        margin: 1rem auto;
+        padding: .5rem; }
         @media (min-width: 768px) {
           #work .work-items .work-item figure {
             width: 10rem;
@@ -981,12 +982,12 @@ hamburger
         text-align: center;
         text-decoration: none;
         width: 50%;
-        box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda;
+        box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda, 3px 3px 3px rgba(0, 0, 0, 0.2);
         transition: .2s; }
         #work .work-items .work-item a:hover {
           transform: scale(0.95); }
       #work .work-items .work-item:hover figure img {
-        transform: scale(1.1); }
+        transform: scale(1.05); }
 
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);

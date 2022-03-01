@@ -29,13 +29,14 @@
                     width: 10rem;
                     height: 10rem;
                 }
-                width: 70%;
-                height: 70%;
+                width: 65%;
+                height: 65%;
                 border-radius: 50%;
                 border-radius: 5px;
                 overflow: hidden;
                 margin: 1rem auto;
                 // border: 1px solid red;
+                padding: .5rem;
 
 
                 img {
@@ -70,7 +71,7 @@
             &:hover {
                 figure {
                     img {
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                     }
                 }
             }
