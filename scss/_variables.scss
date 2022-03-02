@@ -48,6 +48,7 @@ $ul-background: #1f1e1e;
 // button colors
 $button-background-grey: #8584844b;
 $button-crimson: linear-gradient(0deg, #3f0d0d, #dc134c);
+$button-crimson-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
 
 // form  
 $background-invalid: #f7cdd5c7;
@@ -60,6 +61,10 @@ $text-valid: #000;
 $box-light-top-sm: inset 2px 2px 3px #ddda,
                     inset -2px -2px 3px #000a,
                     3px 3px 3px rgba(0, 0, 0, .200);
+
+$box-light-top-sm-hover: inset 2px 2px 3px #ddda,
+                    inset -2px -2px 3px #000a,
+                    2px 3px 2px rgba(0, 0, 0, .350);
 
 $box-light-top-bg: inset 4px 4px 5px #ddda,
                     inset -4px -4px 5px #000a;
