@@ -610,6 +610,7 @@ hamburger
         #contact .contact .contact-items .contact-item {
           width: 30%; } }
       #contact .contact .contact-items .contact-item[data-scroll] {
+        transition: 1.5s;
         transform: scale(1); }
       #contact .contact .contact-items .contact-item::after {
         position: absolute;
@@ -953,7 +954,10 @@ hamburger
       border: 1px solid #29323c;
       padding: 5vh 0;
       width: 100%;
-      border-radius: 5px; }
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
       #work .work-items .work-item[data-scroll] {
         transition: 1.5s;
         transform: scale(1); }
@@ -963,8 +967,10 @@ hamburger
           text-transform: capitalize;
           font-family: "Ubuntu", sans-serif; }
         #work .work-items .work-item .work-title a {
-          color: #ead2a1; }
+          color: #000a;
+          font-size: .8rem; }
       #work .work-items .work-item figure {
+        margin: 5vh auto;
         width: 65%;
         height: 65%;
         border-radius: 50%;

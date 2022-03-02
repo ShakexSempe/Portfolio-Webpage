@@ -19,6 +19,9 @@
             padding: 5vh 0;
             width: 100%;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             // DATA-SCROLL
             &[data-scroll] {
                 transition: 1.5s;
@@ -32,10 +35,12 @@
                 }
                 
                 a {
-                    color: $span-gold;
+                    color: $text-black-trans;
+                    font-size: .8rem;
                 }
             }
             figure {
+                margin: 5vh auto;
                 @media (min-width: 768px) {
                     width: 10rem;
                     height: 10rem;

@@ -38,6 +38,7 @@
             }
             // DATA-SCROLL
             &[data-scroll] {
+                transition: 1.5s;
                 transform: scale(1);
             }
             // tablet to desktop
