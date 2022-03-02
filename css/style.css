@@ -8,9 +8,9 @@ hamburger
 */
 #header .hamburger {
   font-size: 10px;
-  height: 3.3em;
-  width: 3.3em;
-  margin: 1rem auto .5rem;
+  height: 3.5em;
+  width: 3.5em;
+  margin: .5rem auto .5rem;
   display: inline-block;
   border-radius: 50%;
   position: relative;
@@ -1478,14 +1478,25 @@ body {
       justify-content: space-between;
       width: 100%;
       height: 100%;
-      padding: 1vh 5vw;
+      padding: 1rem 5vw;
       z-index: 5; }
       @media (max-width: 1200px) {
         #header .header #navbar {
           padding: 0 5vw; } }
       #header .header #navbar .brand {
         transition: 1s ease;
-        opacity: 0; }
+        opacity: 1; }
+        #header .header #navbar .brand .brand-logo {
+          border: 1px solid #ead2a1;
+          border-radius: 5px;
+          width: 8.5rem;
+          height: 50%;
+          overflow: hidden; }
+          @media (min-width: 768px) {
+            #header .header #navbar .brand .brand-logo {
+              width: 10rem; } }
+          #header .header #navbar .brand .brand-logo img {
+            width: 100%; }
         #header .header #navbar .brand h1 {
           font-size: 1.25em;
           text-transform: uppercase;
@@ -1575,24 +1586,20 @@ body {
                 #header .header #navbar .nav-list .links-container.active ul li:nth-child(7) {
                   transition-delay: .9s; } }
       #header .header #navbar .nav-list .links-container .nav-logo {
-        margin: 1em 5vw;
+        margin: .5rem 5vw 1rem;
         opacity: 1;
         z-index: 1;
-        height: 15%;
-        width: 35%;
+        width: 10rem;
         border-radius: 5px;
         position: sticky;
-        top: 1em;
+        top: .5rem;
         transform: translateX(50%);
         transition: 1s ease;
         outline: none;
         overflow: hidden;
         border: 2px solid #ead2a15e; }
         #header .header #navbar .nav-list .links-container .nav-logo img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 5px; }
+          width: 100%; }
         @media (min-width: 768px) {
           #header .header #navbar .nav-list .links-container .nav-logo {
             width: 20%; } }
@@ -1652,23 +1659,23 @@ body {
           #header .header #navbar .nav-list ul li {
             position: relative;
             display: flex;
-            margin-right: 1em; }
+            margin-right: .5em; }
             #header .header #navbar .nav-list ul li::before {
               position: absolute;
               content: '';
-              bottom: 0;
+              bottom: -.2rem;
               left: 50%;
               transform: translateX(-50%);
               width: 0%;
               opacity: 0;
-              height: 3px;
+              height: 2px;
               background-color: #ead2a1;
               transition: .3s ease; }
             #header .header #navbar .nav-list ul li:hover::before {
-              width: 30%;
+              width: 50%;
               opacity: 1; }
             #header .header #navbar .nav-list ul li a {
-              font-size: 1em;
+              font-size: .9rem;
               padding: .3em .5em;
               margin: 0 auto;
               display: block;

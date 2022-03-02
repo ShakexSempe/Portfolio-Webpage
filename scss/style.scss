@@ -57,7 +57,7 @@ body {
             justify-content: space-between;
             width: 100%;
             height: 100%;
-            padding: 1vh 5vw;
+            padding: 1rem 5vw;
             z-index: 5;
             @media (max-width: 1200px) {
                 padding: 0 5vw;
@@ -65,7 +65,20 @@ body {
             // corner logo
             .brand {
                 transition: 1s ease;
-                opacity: 0;
+                opacity: 1;
+                .brand-logo {
+                    border: 1px solid $span-gold;
+                    border-radius: 5px;
+                    width: 8.5rem;
+                    height: 50%;
+                    overflow: hidden;
+                    @media (min-width: 768px) {
+                        width: 10rem;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
                 h1 {
                     font-size: 1.25em;
                     @media (min-width: 768px) {
@@ -208,14 +221,14 @@ body {
                     
                     // nav-logo 
                     .nav-logo {
-                        margin: 1em 5vw;
+                        margin: .5rem 5vw 1rem;
                         opacity: 1;
                         z-index: 1;
-                        height: 15%;
-                        width: 35%;
+                        // height: 15%;
+                        width: 10rem;
                         border-radius: 5px;
                         position: sticky;
-                        top: 1em;
+                        top: .5rem;
                         transform: translateX(50%);
                         transition: 1s ease;
                         outline: none;
@@ -224,9 +237,6 @@ body {
                     
                         img {
                             width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: 5px;
                         }
                         @media (min-width: 768px) {
                             width: 20%;
@@ -319,32 +329,32 @@ body {
                         li {
                             position: relative;
                             display: flex;
-                            margin-right: 1em;
+                            margin-right: .5em;
 
                             // list item underline
                             &::before {
                                 position: absolute;
                                 content: '';
-                                bottom: 0;
+                                bottom: -.2rem;
                                 left: 50%;
                                 transform: translateX(-50%);
                                 width: 0%;
                                 opacity: 0;
-                                height: 3px;
+                                height: 2px;
                                 background-color: $link-gold;
                                 transition: .3s ease;
                             }
                             
                             &:hover {
                                 &::before {
-                                    width: 30%;
+                                    width: 50%;
                                     opacity: 1;
                                 }
                             }
                             // end of list item underline
                             
                             a {
-                                font-size: 1em;
+                                font-size: .9rem;
                                 padding: .3em .5em;
                                 margin: 0 auto;
                                 display: block;
