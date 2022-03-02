@@ -48,13 +48,13 @@ hamburger
   #header .hamburger.no-pulse.hamburger::before {
     animation: none;
     animation-fill-mode: forwards; }
-  #header .hamburger:hover::before, #header .hamburger:focus::before {
-    animation: none; }
   #header .hamburger:hover::after, #header .hamburger:focus::after {
     opacity: .6; }
   #header .hamburger:active {
     transform: scale(0.6);
     transition: .3s; }
+    #header .hamburger:active::before {
+      animation: none; }
   #header .hamburger .bar {
     height: .2em;
     width: 2em;

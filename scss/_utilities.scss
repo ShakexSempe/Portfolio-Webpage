@@ -75,11 +75,6 @@ hamburger
     // hamburger states
     &:hover,
     &:focus {
-    // no animation on hover
-        &::before {
-            animation: none;
-        }
-        // no animation on hover
         // box shadow dim on hover
         &::after {
             opacity: .6;
@@ -89,7 +84,11 @@ hamburger
     }
     &:active {
         transform: scale(.6);
-        transition: .3s;   
+        transition: .3s;  
+        // NO PULSE ON ACTIVE STATE
+        &::before {
+            animation: none;
+        } 
     }
     // end of hamburger states
     // hamburger bars
