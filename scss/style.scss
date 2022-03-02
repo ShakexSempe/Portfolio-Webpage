@@ -65,7 +65,7 @@ body {
             // corner logo
             .brand {
                 transition: 1s ease;
-                opacity: 1;
+                opacity: 0;
                 .brand-logo {
                     border: 1px solid $span-gold;
                     border-radius: 5px;
@@ -224,7 +224,7 @@ body {
                         margin: .5rem 5vw 1rem;
                         opacity: 1;
                         z-index: 1;
-                        height: auto;
+                        // height: auto;
                         width: 10rem;
                         border-radius: 5px;
                         position: sticky;
@@ -234,9 +234,11 @@ body {
                         outline: none;
                         overflow: hidden;
                         border: 2px solid $border;
+                        background: $overlay-blue-dark;
                     
                         img {
                             width: 100%;
+                            height: auto;
                         }
                         @media (min-width: 768px) {
                             width: 20%;
