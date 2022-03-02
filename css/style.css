@@ -1000,6 +1000,7 @@ hamburger
         text-decoration: none;
         width: 50%;
         transition: .2s;
+        letter-spacing: .05rem;
         position: relative;
         isolation: isolate; }
         #work .work-items .work-item .view-site-btn::before, #work .work-items .work-item .view-site-btn::after {
@@ -1020,7 +1021,8 @@ hamburger
           box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 2px 3px 2px rgba(0, 0, 0, 0.35);
           opacity: 0; }
         #work .work-items .work-item .view-site-btn:hover {
-          transform: scale(0.95); }
+          transform: scale(0.95);
+          letter-spacing: normal; }
           #work .work-items .work-item .view-site-btn:hover::before {
             opacity: 0; }
           #work .work-items .work-item .view-site-btn:hover::after {
