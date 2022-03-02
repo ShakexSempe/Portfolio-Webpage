@@ -19,10 +19,21 @@
             padding: 5vh 0;
             width: 100%;
             border-radius: 5px;
+            // DATA-SCROLL
+            &[data-scroll] {
+                transition: 1.5s;
+                transform: scale(1);
+            }
             .work-title {
                 text-align: center;
-                text-transform: capitalize;
-                font-family: $font-ubuntu;
+                h2 {
+                    text-transform: capitalize;
+                    font-family: $font-ubuntu;
+                }
+                
+                a {
+                    color: $span-gold;
+                }
             }
             figure {
                 @media (min-width: 768px) {
@@ -47,7 +58,7 @@
                 }
             }
 
-            a {
+            .view-site-btn {
                 // border: 1px solid blue;
                 border: none;
                 outline: none;
@@ -67,6 +78,11 @@
                 &:hover {
                     transform: scale(.95);
                 }
+            }
+
+            p {
+                text-align: center;
+                
             }
             &:hover {
                 figure {
