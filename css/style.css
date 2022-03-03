@@ -1740,7 +1740,7 @@ body {
 
 #home {
   background-color: #29323c;
-  background: linear-gradient(-60deg, #29323c 0%, #485563 100%);
+  background: linear-gradient(-60deg, #20262e 0%, #29323c 100%);
   position: relative;
   z-index: 1;
   overflow: hidden; }
