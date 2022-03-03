@@ -34,7 +34,7 @@ const brand = document.querySelector('.brand');
 // change navbar background color when screen scroll position < 30
 // hidden brand logo which becomes visible when screen scroll position < 150
   if (scroll_position < 30) {
-    header.style.backgroundColor = "#20262e";
+    header.style.backgroundColor = "#29323dd9";
     hamburger.classList.add("no-pulse");
   }
   if (scroll_position < 350) {
