@@ -785,7 +785,7 @@ hamburger
       border: 2px solid #485563;
       outline: none;
       overflow: hidden;
-      margin: 20px auto;
+      margin: 1.5rem auto;
       overflow: hidden;
       border-radius: 5px; }
       @media (min-width: 768px) {
@@ -946,10 +946,11 @@ hamburger
   #work .work-items {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem; }
+    gap: 10vh; }
     @media (min-width: 768px) {
       #work .work-items {
-        grid-template-columns: 1fr 1fr 1fr; } }
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem; } }
     #work .work-items .work-item {
       border: 1px solid #29323c;
       padding: 5vh 0;
