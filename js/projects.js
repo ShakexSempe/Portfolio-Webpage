@@ -6,8 +6,8 @@ const projects = [
         title: "freeCodeCamp Portfolio",
         link: "https://freecodecamp-boitumelo-sempe-portfolio.netlify.app/",
         img: "img/fcc-min.png",
-        head: "FreeCodeCamp Responsive Projects Portfolio",
-        desc: "",
+        head: "FreeCodeCamp Certificates",
+        desc: `Responsive Web Design.<br/>Front End Development Libraries.`,
         alt: 'free-code-camp profile',
         tech: `<li>#ResponsiveWebDesign</li>`,
         imgTech: `<li>html5</li>
@@ -18,8 +18,8 @@ const projects = [
         title: "javascript portfolio",
         link: "https://javascript-portfolio-boitumelo-sempe.netlify.app/",
         img: "img/js-min.png",
-        head: "javascript projects portfolio",
-        desc: "page featuring links to my javascript tutorial repositories",
+        head: "vanilla javascript projects",
+        desc: "page featuring links to my javascript tutorial repositories presented by John Smilga",
         alt: 'boitumelo shakes sempe javascript portfolio',
         tech: `<li>#vanillaJavascript</li>
                 <li>#es6</li>
@@ -34,7 +34,7 @@ const projects = [
         head: "front end web development projects",
         desc: "links to the various projects build from the figma sketches presented by the front end mentor platform",
         alt: 'boitumelo shakex sempe front-end-mentor profile',
-        tech: ` <li>orderSummaryPage</li>
+        tech: ` <li>#orderSummaryPage</li>
                 <li>#loopstudiosLandingPage</li>
                 <li>#sunnySideLandingPage</li>
                 <li>#calculatorApp</li>`,
@@ -42,18 +42,18 @@ const projects = [
                 <li>javascript</li>
                 <li>sass</li>`,
     },
-    {
-        id: 2,
-        title: "React - Landing Page",
-        link: "https://shakex-react-landing-page.netlify.app/",
-        img: "img/react-landing-min.png",
-        head: "Shakex Sempe landing page",
-        desc: "react fundamentals tutorial project",
-        alt: 'react landing page',
-        tech: `<li>#react_js</li>
-                <li>#css</li>
-                <li>#cssTransitions</li>`,
-    },
+    // {
+    //     id: 2,
+    //     title: "React - Landing Page",
+    //     link: "https://shakex-react-landing-page.netlify.app/",
+    //     img: "img/react-landing-min.png",
+    //     head: "Shakex Sempe landing page",
+    //     desc: "react fundamentals tutorial project",
+    //     alt: 'react landing page',
+    //     tech: `<li>#react_js</li>
+    //             <li>#css</li>
+    //             <li>#cssTransitions</li>`,
+    // },
 ];
 // projects container
 const allProjects = document.querySelector('.all-projects');

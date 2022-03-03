@@ -843,7 +843,7 @@ hamburger
           margin: .5em 0; }
           @media (min-width: 768px) {
             #projects .projects .all-projects .project-item .project-tile p {
-              font-size: 1em; } }
+              font-size: .9em; } }
         #projects .projects .all-projects .project-item .project-tile a {
           color: #fff;
           background: #161616;
