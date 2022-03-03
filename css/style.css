@@ -1098,8 +1098,6 @@ hamburger
           overflow: hidden; }
           #footer .footer form .input-div input:invalid, #footer .footer form .input-div textarea:invalid {
             background-color: #ead2a1;
-            outline: 2px dashed #29323c;
-            outline-offset: -4px;
             color: #000; }
           #footer .footer form .input-div input:focus, #footer .footer form .input-div textarea:focus {
             outline: 2px dashed #fffa;
@@ -1114,24 +1112,21 @@ hamburger
           text-transform: capitalize; }
       #footer .footer form button {
         position: relative;
-        background: linear-gradient(0deg, #581212, #dc134c);
         padding: 1em;
         color: #eee;
+        background-color: #dc143c8c;
         font-family: "Gruppo", cursive;
         font-weight: 600;
-        letter-spacing: .2em;
+        letter-spacing: .1em;
         text-transform: uppercase;
         border: none;
         outline: none;
         border-radius: 10px;
         opacity: .9;
-        transition: .2s ease;
+        transition: .3s ease;
         cursor: pointer;
         isolation: isolate; }
-        #footer .footer form button:hover {
-          transform: scale(0.98);
-          letter-spacing: 0; }
-        #footer .footer form button::before {
+        #footer .footer form button::before, #footer .footer form button::after {
           content: '';
           position: absolute;
           top: 0;
@@ -1139,7 +1134,24 @@ hamburger
           width: 100%;
           height: 100%;
           border-radius: 10px;
+          border: none;
+          outline: none;
+          z-index: -1;
+          transition: .3s ease; }
+        #footer .footer form button::before {
+          background: linear-gradient(0deg, #3f0d0d, #dc134c);
           box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
+        #footer .footer form button::after {
+          background: linear-gradient(0deg, #dc134c, #3f0d0d);
+          box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda, 3px 3px 3px rgba(0, 0, 0, 0.2);
+          opacity: 0; }
+        #footer .footer form button:hover {
+          transform: scale(0.98);
+          letter-spacing: 0; }
+          #footer .footer form button:hover::before {
+            opacity: 0; }
+          #footer .footer form button:hover::after {
+            opacity: 1; }
     #footer .footer .socialMedia-links {
       grid-template-columns: 1fr;
       background-color: #29323c;
