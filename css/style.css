@@ -291,7 +291,7 @@ hamburger
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a;
+    box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a, 5px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     border: none;
     outline: none; }
@@ -620,14 +620,14 @@ hamburger
         width: 100%;
         height: 100%;
         background-color: #29323c;
-        box-shadow: inset 3px 3px 4px #fffa, inset -3px -3px 4px #000a, 5px 5px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a, 5px 5px 1px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         z-index: -2;
         opacity: 1;
         transition: .5s ease; }
       #contact .contact .contact-items .contact-item:hover {
         transform: preserve-3d; }
-      #contact .contact .contact-items .contact-item h1 {
+      #contact .contact .contact-items .contact-item h2 {
         color: #ead2a1;
         padding: .2em 1em;
         margin: .2em auto;
@@ -635,10 +635,10 @@ hamburger
         font-weight: 600;
         position: relative; }
         @media (min-width: 768px) {
-          #contact .contact .contact-items .contact-item h1 {
+          #contact .contact .contact-items .contact-item h2 {
             font-size: 1.7em;
             margin: .5em auto; } }
-        #contact .contact .contact-items .contact-item h1::before, #contact .contact .contact-items .contact-item h1:after {
+        #contact .contact .contact-items .contact-item h2::before, #contact .contact .contact-items .contact-item h2:after {
           content: '';
           position: absolute;
           top: 0;
@@ -647,9 +647,9 @@ hamburger
           height: 100%;
           background-color: #20262e;
           z-index: -1;
-          border-radius: 10px;
+          border-radius: 5px;
           transition: .5s ease;
-          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a; }
+          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
       #contact .contact .contact-items .contact-item .icon {
         margin: 5px auto 10px auto;
         padding: .3em .7em;
@@ -676,7 +676,7 @@ hamburger
             padding: 0; }
             #contact .contact .contact-items .contact-item .icon i {
               font-size: 2em; } }
-      #contact .contact .contact-items .contact-item .contact-info h2 {
+      #contact .contact .contact-items .contact-item .contact-info p {
         font-size: .8em;
         line-height: 1.3;
         font-weight: 600;
@@ -684,36 +684,24 @@ hamburger
         padding: 1em;
         border: none;
         outline: none;
-        border-radius: 10px;
+        border-radius: 3px;
+        background: #fff;
         margin: .5em auto;
         color: #000;
         transition: .5s ease;
         position: relative;
         z-index: -1; }
-        #contact .contact .contact-items .contact-item .contact-info h2 span {
+        #contact .contact .contact-items .contact-item .contact-info p span {
           display: block;
           margin-top: .2em;
           color: #000;
           opacity: .8; }
         @media (min-width: 768px) {
-          #contact .contact .contact-items .contact-item .contact-info h2 {
+          #contact .contact .contact-items .contact-item .contact-info p {
             width: 100%;
             text-align: center;
             margin: .5em auto;
             font-size: .9em; } }
-        #contact .contact .contact-items .contact-item .contact-info h2::before {
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          outline: none;
-          background-color: #f4f4f4;
-          z-index: -1;
-          border-radius: 10px;
-          transition: .5s ease;
-          box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
       #contact .contact .contact-items .contact-item .contact-info a {
         width: 100%;
         font-size: .8em;
@@ -721,17 +709,17 @@ hamburger
         display: inline-block;
         letter-spacing: .1em;
         padding: .2em .5em;
-        border-radius: 10px;
+        border-radius: 20px;
         margin: .7em auto;
         background: linear-gradient(0deg, #581212, #dc134c);
         color: #eee;
         opacity: .8;
         cursor: pointer;
-        transition: .5s ease;
+        transition: .3s ease;
         position: relative;
-        box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
+        box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
         #contact .contact .contact-items .contact-item .contact-info a:hover {
-          transform: scaleX(1.1);
+          transform: scale(0.97);
           transition: .2s; }
         #contact .contact .contact-items .contact-item .contact-info a:active {
           transform: scale(0.9);
@@ -742,7 +730,7 @@ hamburger
           transform: translateY(100%);
           opacity: 0;
           transition: 1s ease;
-          transition-delay: .5s; }
+          transition-delay: .15s; }
       #contact .contact .contact-items .contact-item:nth-child(1) {
         cursor: help; }
       #contact .contact .contact-items .contact-item:nth-child(2) {
@@ -2111,7 +2099,7 @@ body {
           box-shadow: inset 3px 3px 4px #000a, inset -3px -3px 4px #ddda; }
         .about .col-right .about-title h2::after {
           opacity: 0;
-          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a; }
+          box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px #000a, 5px 5px 1px rgba(0, 0, 0, 0.1); }
       .about .col-right .about-title:hover #cv-download {
         letter-spacing: .1em; }
     .about .col-right:hover h2::before {

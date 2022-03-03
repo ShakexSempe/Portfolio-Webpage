@@ -82,7 +82,8 @@ $box-dark-top-md: inset 3px 3px 4px #000a,
                     inset -3px -3px 4px #ddda;
                     
 $box-light-top-md: inset 3px 3px 4px #ddda,
-                    inset -3px -3px 4px #000a;
+                    inset -3px -3px 4px #000a,
+                    5px 5px 1px rgba(0, 0, 0, .100);
 
 $box-light-top-lg: inset 5px 5px 5px #fffa,
                     inset -10px -10px 10px #000a;
