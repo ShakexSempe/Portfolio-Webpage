@@ -118,9 +118,9 @@
               padding: .5em;
               border-radius: 5px;
               background: #20262e;
-              outline: 1px solid #fff;
+              outline: 1px solid #f4f4f4;
               outline-offset: -4px;
-              color: #fff;
+              color: #f4f4f4;
               letter-spacing: .1em;
               font-size: .7em; }
             .welcome-section .form-container .form-outer form .page .title p {
@@ -160,7 +160,7 @@
                 color: #000; }
               .welcome-section .form-container .form-outer form .page .field input:focus {
                 border: none;
-                outline: 2px dashed #fff;
+                outline: 2px dashed #f4f4f4;
                 outline-offset: -.3em;
                 box-shadow: none; }
             .welcome-section .form-container .form-outer form .page .field textarea {
@@ -202,7 +202,7 @@
               border: none;
               margin-top: -20px;
               border-radius: 5px;
-              color: #fff;
+              color: #f4f4f4;
               cursor: pointer;
               font-size: 18px;
               font-weight: 500;

@@ -361,7 +361,7 @@ body {
                                 margin: 0 auto;
                                 display: block;
                                 float: left;
-                                color: $text-white-trans;
+                                color: $text-light;
 
                                 &::after {
                                     display: none;
@@ -427,12 +427,13 @@ body {
 // hero section
 #home {
     background-color: $overlay-blue-dark;
+    background: $overlay;
     position: relative;
     z-index: 1;
     overflow: hidden;
 
     .hero {
-        cursor: grab;
+        // cursor: grab;
         // animated h1 
         #hero-h1 {
             margin: 1em auto;
@@ -440,7 +441,7 @@ body {
             padding: .5em;
             border-radius: 5px;
             position: absolute;
-            top: 20vh;
+            top: 15vh;
 
             @media (min-width: 768px) {
                 display: flex;
@@ -449,7 +450,7 @@ body {
                 padding: .5em;
             }
 
-            h1 {
+            h2 {
                 margin-bottom: .2em;
                 display: block;
                 width: fit-content;
@@ -489,31 +490,13 @@ body {
                     }
                     /* hero h1 keyframes */
 
-                    &:hover {
-                        animation: letter-hover 3s ease-in-out;
-                        animation-fill-mode: forwards;
-                        cursor: grabbing;
-                        transition: 1s;
-                        transform: scale(1.2) rotateY(30deg);
-                        opacity: 1;
-
-                        @keyframes letter-hover {
-                            0% {
-                                color:$span-gold;
-                            }
-                            50% {
-                                color: $span-crimson;
-                            }
-                            100% {
-                                color: $span-gold;
-                            }
-                        }
-                    }
                 }
-
+            }
                 // "aka" span
-                &#aka {
+                #aka {
                     span {
+                        font-family: 'Philosopher', sans-serif;
+                        font-size: 2rem;
                         position: relative;
                         display: inline-block;
                         animation: aka 5s ease alternate;
@@ -536,10 +519,8 @@ body {
                         }
                     }
                 }
-
                 // end of "aka" span
-
-            }
+            
         }
 
         // end of animated h1 
@@ -612,7 +593,7 @@ body {
                 transition: .3s;
                 outline: none;
                 border: none;
-                background: linear-gradient(0deg, $overlay-blue-darker, $overlay-blue-light);
+                background: linear-gradient(0deg, #dc134c, #581212);
                 box-shadow: $box-light-top-bg;
             }
 
@@ -650,7 +631,7 @@ body {
             // end of animated button text 
             // button hover, focus and active states
             &:hover {
-                transform: scale(.97);
+                transform: scale(.9);
                 span {
                     color: $span-gold;
                     animation: none;
@@ -662,11 +643,12 @@ body {
                 }
 
                 &::after {
-                    background-position: 100%;
                     opacity: 1;
                 }
             }
-
+            &:hover {
+                transform: scale(.97);
+            }
             &:active {
                 transition: .2s;
                 transform: scale(.95);

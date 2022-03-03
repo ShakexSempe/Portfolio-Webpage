@@ -4,7 +4,7 @@ $font-ubuntu: 'Ubuntu',sans-serif;
 // text colors 
 $text-black: #000;
 $text-white: #fff;
-$text-light: #fff;
+$text-light: #f4f4f4;
 $text-white-trans: #fffa;
 $text-white-trans-d: #ddda;
 $text-dark: #333;
@@ -37,7 +37,7 @@ $background-gray: #f4f4f4;
 $background-dark: #333;
 $background-light: #fff;
 
-$overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
+$overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
 $overlay-btn: linear-gradient(0deg, #20262e, #485563 );
 $overlay-blue-dark:#29323c;
 $overlay-blue-darker:#20262e;
