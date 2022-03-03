@@ -2107,7 +2107,7 @@ body {
     .about .col-right:hover h2::after {
       opacity: 1; }
     .about .col-right button {
-      background-color: #29323c;
+      background: linear-gradient(0deg, #20262e, #485563);
       color: #ead2a1;
       margin: 1em auto;
       padding: .5em 1em;
@@ -2129,7 +2129,7 @@ body {
         width: 100%;
         height: 100%;
         opacity: 1;
-        background-color: #20262e; }
+        background: linear-gradient(0deg, #485563, #20262e); }
       .about .col-right button:hover {
         transform: scale(0.97); }
     .about .col-right .article-container article.about-article {
@@ -2161,7 +2161,7 @@ body {
           padding: 0 .1em;
           margin-right: .1em;
           border-radius: 2px;
-          box-shadow: -3px 3px 0 #4855634b; }
+          box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1); }
         .about .col-right .article-container article.about-article p#intro {
           font-weight: 600; }
         .about .col-right .article-container article.about-article p.about-body {
@@ -2190,12 +2190,11 @@ body {
     .about .col-right .article-container article#cv {
       display: flex;
       justify-content: space-between;
-      font-size: 1em;
-      background: linear-gradient(0deg, #161616, #20262e 10%, #29323c);
+      background: linear-gradient(0deg, #20262e, #485563);
       color: #ead2a1;
       margin: 0 auto;
       padding: 1em;
-      box-shadow: inset 5px 0px 5px #c7c7c7aa, inset -5px -5px 5px #000a;
+      box-shadow: inset 3px 0px 3px #c7c7c7aa, inset -3px -3px 3px #000a;
       text-transform: uppercase;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
@@ -2203,6 +2202,7 @@ body {
         .about .col-right .article-container article#cv {
           justify-content: space-evenly; } }
       .about .col-right .article-container article#cv a {
+        font-size: .85rem;
         transition: .3s ease;
         color: #ead2a1;
         text-shadow: 1px 1px 1px #000;
