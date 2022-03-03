@@ -133,11 +133,10 @@
             border: none;
             outline: none;
             border-radius: 10px;
-            background: $overlay-blue-light;
+            background: $link-crimson-dark;
             text-align: center;
             transition: .3s;
             font-family: 'Gruppo', cursive;
-            text-shadow: 2px 2px 2px #000;
             position: relative;
             overflow: hidden;
             isolation: isolate;
@@ -159,12 +158,12 @@
             }
 
             &::before {
-                background: linear-gradient(0deg, #3f0d0d, #dc134c);
+                background: $button-crimson;
                 box-shadow: $box-light-top-sm;
             }
 
             &::after {
-                background: linear-gradient(0deg, $overlay-blue-darker, $overlay-blue-light);
+                background: $overlay-btn;
             
                 opacity: 0;
                 box-shadow: $box-light-top-sm;
