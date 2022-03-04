@@ -419,11 +419,10 @@ hamburger
         padding: .5em;
         background: transparent;
         background-size: cover;
-        margin: .5em 5vw;
+        margin: 10vh 5vw;
         position: relative;
         z-index: 1;
         text-overflow: ellipsis;
-        transition: 0.2s;
         overflow: hidden;
         border-radius: 10px;
         height: auto;
@@ -465,7 +464,7 @@ hamburger
           width: 100%;
           border-radius: 10px;
           height: 100%;
-          box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000;
+          box-shadow: inset 3px 3px 3px #ddda, inset -3px -3px 3px #000;
           z-index: 2; }
         #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {
           display: grid;
@@ -530,15 +529,17 @@ hamburger
             height: 300px; } }
         @media (min-width: 1024px) {
           #skills .dropdown .dropdown-content .skills-bottom .skills-item {
-            flex-basis: 33%;
+            flex-basis: 25%;
             width: 100%;
             margin: 1.5%;
             height: 300px;
+            height: 55vh;
+            justify-content: space-evenly;
             pointer-events: visible;
             cursor: pointer;
             transition: .2s; }
             #skills .dropdown .dropdown-content .skills-bottom .skills-item:hover {
-              transition: .5s;
+              transition: .3s;
               transform: scale(1.05); }
             #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
               font-size: 1.5em; }
