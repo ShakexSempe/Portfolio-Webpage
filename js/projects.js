@@ -28,7 +28,7 @@ const projects = [
     },
     {
         id: 6,
-        title: "front end mentor portfolio",
+        title: "front end mentor",
         link: "https://front-end-mentor-portfolio.netlify.app/",
         img: "img/fem.png",
         head: "front end web development projects",
