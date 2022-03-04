@@ -629,7 +629,7 @@ hamburger
         transform: preserve-3d; }
       #contact .contact .contact-items .contact-item h2 {
         color: #ead2a1;
-        padding: .2em 1em;
+        padding: .2em .5rem;
         margin: .2em auto;
         font-size: 1.5em;
         width: 70%;
