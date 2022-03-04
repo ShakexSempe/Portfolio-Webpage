@@ -1150,6 +1150,7 @@ hamburger
         .about .col-right .article-container article.about-article p.about-body {
           transition: opacity .5s ease;
           opacity: 0;
+          display: none;
           margin-bottom: .5em; }
         @media (min-width: 768px) {
           .about .col-right .article-container article.about-article p {
@@ -1167,6 +1168,7 @@ hamburger
             height: 45vh; } }
         .about .col-right .article-container article.about-article.active .about-body {
           transition: opacity 2s ease;
+          display: block;
           opacity: 1; }
     .about .col-right .article-container article#cv {
       display: flex;

@@ -197,7 +197,7 @@
                         &.about-body {
                             transition: opacity .5s ease;
                             opacity: 0;
-                            // display: none;
+                            display: none;
                             margin-bottom: .5em;
                             // color: $span-gold;
                             // padding: .3em;
@@ -228,7 +228,7 @@
 
                         .about-body {
                             transition: opacity 2s ease;
-                            // display: block;
+                            display: block;
                             opacity: 1;
                         }
                     }
