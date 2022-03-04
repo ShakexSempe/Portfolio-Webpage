@@ -1118,7 +1118,6 @@ hamburger
     .about .col-right .article-container article.about-article {
       padding: .5em 1em;
       height: 15vh;
-      overflow: hidden;
       transition: .3s ease; }
       @media (max-width: 768px) {
         .about .col-right .article-container article.about-article {
