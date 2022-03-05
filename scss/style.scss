@@ -92,14 +92,21 @@ body {
                     color: $span-gold;
                     font-weight: 800;
                     font-family: 'Gruppo', cursive;
+                    border: 1px solid $span-gold;
+                    padding-left: .15rem;
+                    border-radius: 5px;
                     // text-shadow: 0 0 5px $text-shadow-red;
 
                     span {
-                        margin: 0 .05rem;
+                        margin-left: .1rem;
                         padding: .05rem .3rem .05rem .3rem;
                         background: $span-gold;
+                        background: $button-gold;
+                        border: none;
+                        outline: none;
                         color: $overlay-blue-dark;
-                        border-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
                     }
                 }
             }
