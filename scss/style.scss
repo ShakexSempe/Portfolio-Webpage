@@ -67,33 +67,38 @@ body {
             .brand {
                 transition: 1s ease;
                 opacity: 0;
-                .brand-logo {
-                    border: 1px solid $span-gold;
-                    border-radius: 5px;
-                    width: 8.5rem;
-                    height: 50%;
-                    overflow: hidden;
-                    @media (min-width: 768px) {
-                        width: 10rem;
-                    }
-                    img {
-                        width: 100%;
-                    }
-                }
+                // .brand-logo {
+                //     border: 1px solid $span-gold;
+                //     border-radius: 5px;
+                //     width: 8.5rem;
+                //     height: 50%;
+                //     overflow: hidden;
+                //     @media (min-width: 768px) {
+                //         width: 10rem;
+                //     }
+                //     img {
+                //         width: 100%;
+                //     }
+                // }
                 h1 {
                     font-size: 1.25em;
+
                     @media (min-width: 768px) {
                         font-size: 1.5em;
                     }
+
                     text-transform: uppercase;
                     color: #f4f4f4;
+                    font-weight: 800;
                     font-family: 'Gruppo', cursive;
                     // text-shadow: 0 0 5px $text-shadow-red;
-                    
+
                     span {
-                        color: $span-gold;
-                        padding: 0;
-                        margin: 0;
+                        margin: 0 .05rem;
+                        padding: .05rem .3rem .05rem .3rem;
+                        background: $span-gold;
+                        color: $overlay-blue-dark;
+                        border-radius: 5px;
                     }
                 }
             }
