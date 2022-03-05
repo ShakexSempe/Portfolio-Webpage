@@ -5,6 +5,8 @@ const linksContainer = document.querySelector('.links-container');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.header .nav-list ul li');
+const topLink = document.querySelector('.top-link');
+
 //Hamburger Menu
 const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
@@ -28,7 +30,6 @@ document.addEventListener("scroll", () => {
   // scroll variables
 const scroll_position = window.scrollY;
 const scrollHeight = window.pageYOffset;
-const topLink = document.querySelector('.top-link');
 const brand = document.querySelector('.brand');
 // background-color ()
 // change navbar background color when screen scroll position < 30
@@ -58,6 +59,7 @@ const brand = document.querySelector('.brand');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
+  topLink.classList.toggle("show-link");
 });
 // end of hamburger select
 // scroll to link
