@@ -628,6 +628,14 @@
 }
  // bs21
  .bs21 {
+    //  DATA-SCROLL
+    &[data-scroll] {
+        transition: 1.5s;
+        transform: translateY(-50%);
+    }
+    &[data-scroll="in"] {
+        transform: translateY(0);
+    }
     width: 100%;
     text-align: center;
         font-family: $font-ubuntu; 

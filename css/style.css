@@ -1726,6 +1726,11 @@ hamburger
   width: 100%;
   text-align: center;
   font-family: "Ubuntu", sans-serif; }
+  .bs21[data-scroll] {
+    transition: 1.5s;
+    transform: translateY(-50%); }
+  .bs21[data-scroll="in"] {
+    transform: translateY(0); }
   .bs21 p,
   .bs21 a {
     color: #f4f4f4;
