@@ -9,8 +9,8 @@ hamburger
 // hamburger toggle
 #header .hamburger {
     font-size: 10px;
-    height: 3.5em;
-    width: 3.5em;
+    height: 3em;
+    width: 3em;
     margin: .5rem auto .5rem;
     display: inline-block;
     border-radius: 50%;
@@ -38,25 +38,25 @@ hamburger
     }
     // hamburger box shadow
     &.hamburger::after {
-        opacity: 1;
-        box-shadow: inset 2px 2px 3px #ddda,
-                    inset -2px -2px 2px #000a;
+        opacity: .8;
+        border: .2em solid $span-gold;
+        // box-shadow: inset 2px 2px 3px #ddda,
+        //             inset -2px -2px 2px #000a;
     }
     // end of hamburger box shadow
     // pulse 
     &.hamburger:before {
-        border: .2em solid #fff;
+        border: .2em solid $span-gold;
         opacity: 0;
         animation: ham-pulse 2.5s ease infinite .5s;
         @keyframes ham-pulse {
             50% {
                 opacity: .7;
-                border-color: $span-gold;
             }
 
             100% {
                 opacity: 0;
-                transform: scale(1.18);
+                transform: scale(1.3);
                 // border-color: #fff;
             }
         }
@@ -94,7 +94,7 @@ hamburger
     // hamburger bars
     .bar {
         height: .2em;
-        width: 2em;
+        width: 1.5em;
         position: relative;
         background-color: #f4f4f4;
         // border-radius: 50%;
