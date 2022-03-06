@@ -2098,7 +2098,7 @@ body {
     border: none;
     outline: none;
     opacity: 1;
-    transform: scaleY(0);
+    transform: scale(0);
     transform-style: preserve-3d;
     animation: show-cta 4s 5.5s;
     animation-fill-mode: forwards;
