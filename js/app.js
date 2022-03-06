@@ -59,7 +59,6 @@ const brand = document.querySelector('.brand');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
-  topLink.classList.toggle("show-link");
 });
 // end of hamburger select
 // scroll to link

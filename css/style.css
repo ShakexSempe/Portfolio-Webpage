@@ -18,7 +18,7 @@ hamburger
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 51;
   cursor: pointer;
   transition: .3s ease; }
   #header .hamburger.hamburger:after, #header .hamburger.hamburger:before {
@@ -214,7 +214,8 @@ hamburger
     transition: opacity .5s ease-in-out;
     visibility: visible;
     z-index: 100;
-    opacity: 1; }
+    opacity: 1;
+    z-index: 30; }
 
 @keyframes bounce {
   0% {
@@ -1820,7 +1821,8 @@ body {
           height: 100vh;
           background-color: #1b2127;
           transition: .5s ease;
-          overflow-y: auto; }
+          overflow-y: auto;
+          z-index: 51; }
           #header .header #navbar .nav-list .links-container ul {
             margin: 2em 5vw;
             background: #29323c;
@@ -1858,7 +1860,8 @@ body {
                 padding: .5em;
                 color: #fffa; }
           #header .header #navbar .nav-list .links-container.active {
-            left: 0; }
+            left: 0;
+            z-index: 50; }
             #header .header #navbar .nav-list .links-container.active .nav-logo {
               transition: 1.5s;
               opacity: 1;

@@ -67,19 +67,6 @@ body {
             .brand {
                 transition: 1s ease;
                 opacity: 0;
-                // .brand-logo {
-                //     border: 1px solid $span-gold;
-                //     border-radius: 5px;
-                //     width: 8.5rem;
-                //     height: 50%;
-                //     overflow: hidden;
-                //     @media (min-width: 768px) {
-                //         width: 10rem;
-                //     }
-                //     img {
-                //         width: 100%;
-                //     }
-                // }
                 h1 {
                     font-size: 1.25em;
 
@@ -124,6 +111,7 @@ body {
                         background-color: $nav-active-background;
                         transition: .5s ease;
                         overflow-y: auto;
+                        z-index: 51;
 
                         ul {
                             margin: 2em 5vw;
@@ -177,6 +165,7 @@ body {
                         // active mobile  navbar
                     &.active {
                         left: 0;
+                        z-index: 50;
                         .nav-logo {
                             transition: 1.5s;
                             opacity: 1;
@@ -873,7 +862,7 @@ body {
         background-position: center;
     }
 }
- 
+
 
 // thank you page
 
