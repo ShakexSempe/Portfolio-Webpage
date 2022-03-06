@@ -110,9 +110,8 @@
         }
         // end of about title hover state
         
-        // read more button
+        // READ MORE ABOUT BTN
         button {
-            // background-color: $overlay-blue-dark;
             background: $overlay-btn;
             color: $link-gold;
             margin: 1em auto;
@@ -133,12 +132,12 @@
                     top: 0;
                     left: 0;
                     border-radius: 15px;
-                    border: none;
-                    outline: none;
                     width: 100%;
                     height: 100%;
                     opacity: 1;
                     background: $overlay-btn-hover;
+                    transition: .2s;
+
                 }
             }
 
@@ -244,7 +243,7 @@
                 // links
                 &#cv {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-around;
 
                     @media (min-width: 1024px) {
                         justify-content: space-evenly;
