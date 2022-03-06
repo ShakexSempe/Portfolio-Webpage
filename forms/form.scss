@@ -91,10 +91,10 @@
             margin: .4em auto;
             padding: .5em;
             border-radius: 5px;
-            background: $overlay-blue-darker;
-            color: $span-gold;
-            outline: 1px solid $span-gold;
-            outline-offset: -4px;
+            background: $overlay-btn;
+            color: $text-light;
+            // outline: 1px solid $span-gold;
+            // outline-offset: -4px;
         }
 
         .form-outer {
@@ -156,9 +156,9 @@
                             padding: .5em;
                             border-radius: 5px;
                             background: $overlay-blue-darker;
-                            outline: 1px solid $text-light;
-                            outline-offset: -4px;
-                            color: $text-light;
+                            // outline: 1px solid $text-light;
+                            // outline-offset: -4px;
+                            color: $span-gold;
                             letter-spacing: .1em;
                             font-size: .7em;
                         }
@@ -178,11 +178,13 @@
 
                         .label {
                             position: absolute;
-                            top: -30px;
+                            top:  -1rem;
+                            transform: translateY(-.5rem);
                             font-weight: 800;
                             color: #dc143c;
-                            font-size: .9em;
+                            font-size: 1rem;
                             text-transform: capitalize;
+                            transition: .2s;
                         }
 
 
@@ -208,14 +210,14 @@
                             &:invalid {
                                 // background-color: $overlay-blue-light;
                                 background: #cf30501e;
-                                outline: 1px dashed #dc143c;
+                                outline: none;
                                 // border: 2px dashed #000;
                                 color: #000;
                             }
                             &:focus {
                                 border: none;
-                                outline: 2px dashed $text-light;
-                                outline-offset: -.3em;
+                                outline: 1px dashed $text-dark;
+                                // outline-offset: -.3em;
                                 box-shadow: none;
                                 // color: $text-light;
                             }
@@ -233,16 +235,12 @@
                             background: $background-dark;
                             color: $span-gold;
                             &:focus {
-                                outline: 1px dashed $text-dark;
-                                outline-offset: -4px;
                                 color: $text-dark;
                                 background: $background-light;
                             }
                             &:invalid {
                                 background: $background-invalid;
-                                outline:   1px dashed $span-crimson;
-                            outline-offset: -4px;
-                            }
+                                }
                         }
                         select {
                             width: 100%;
@@ -319,6 +317,13 @@
                             &:active {
                                 transition: .2s;
                                 transform: scale(.9);
+                            }
+                        }
+
+                        &:hover {
+                            .label {
+                                transform: translateY(0) translateX(.5rem);
+                                color: $text-dark;
                             }
                         }
                     }
