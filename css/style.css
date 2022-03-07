@@ -2218,8 +2218,10 @@ body {
         opacity: 0;
         background: linear-gradient(0deg, #dc134c, #3f0d0d);
         box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda, 3px 3px 3px rgba(0, 0, 0, 0.2); }
-      #home #cta .cta:hover {
-        transform: scale(0.98); }
+      #home #cta .cta:hover::before {
+        opacity: 0; }
+      #home #cta .cta:hover::after {
+        opacity: 1; }
       #home #cta .cta:active {
         transform: scale(0.98); }
         #home #cta .cta:active::before {
