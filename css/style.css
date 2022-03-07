@@ -196,7 +196,7 @@ hamburger
   position: fixed;
   bottom: 1em;
   right: 1em;
-  background-image: linear-gradient(0deg, black, #dc143c);
+  background: linear-gradient(0deg, #3f0d0d, #dc134c);
   display: grid;
   place-items: center;
   border-radius: 5px;
@@ -753,6 +753,7 @@ hamburger
     flex-direction: column;
     z-index: 10; }
     #projects .projects .all-projects[data-scroll] {
+      transition: 1.5s;
       transform: scale(1); }
     #projects .projects .all-projects .project-item {
       display: flex;
@@ -1311,6 +1312,7 @@ hamburger
       margin-bottom: 1.5em;
       font-size: 2em; }
       #footer .footer .footer-section-title[data-scroll] {
+        transition: 1.5s;
         transform: scale(1); }
     #footer .footer form {
       background-color: #29323c;
