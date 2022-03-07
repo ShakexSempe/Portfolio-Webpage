@@ -1825,13 +1825,12 @@ body {
           height: 100vh;
           background-color: #1b2127;
           transition: .5s ease;
-          overflow-y: auto;
           z-index: 5; }
           #header .header #navbar .nav-list .links-container ul {
-            margin: 2em 5vw;
+            margin: 1.5rem 5vw;
             background: #29323c;
             display: flex;
-            height: auto;
+            height: 80vh;
             flex-direction: column;
             justify-content: center;
             align-items: right;
@@ -1841,7 +1840,7 @@ body {
             position: relative;
             border: 2px solid #ead2a15e;
             outline: none;
-            padding: 1em 0;
+            padding: .5rem 0;
             overflow-y: auto; }
             #header .header #navbar .nav-list .links-container ul li {
               transform: translateX(10%);
@@ -1851,7 +1850,8 @@ body {
               justify-content: flex-start;
               align-items: center;
               margin: 1em auto 1em .5em;
-              width: 100%; }
+              margin: .5rem auto 1rem;
+              width: 95%; }
               #header .header #navbar .nav-list .links-container ul li a {
                 margin-right: auto;
                 padding: .5em;

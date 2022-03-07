@@ -110,14 +110,14 @@ body {
                         height: 100vh;
                         background-color: $nav-active-background;
                         transition: .5s ease;
-                        overflow-y: auto;
+                        // overflow-y: auto;
                         z-index: 5;
 
                         ul {
-                            margin: 2em 5vw;
+                            margin: 1.5rem 5vw;
                             background: $overlay-blue-dark;
                             display: flex;
-                            height: auto;
+                            height: 80vh;
                             flex-direction: column;
                             justify-content: center;
                             align-items: right;
@@ -127,7 +127,7 @@ body {
                             position: relative;
                             border: 2px solid $border;
                             outline: none;
-                            padding: 1em 0;
+                            padding: .5rem 0;
                             overflow-y: auto;
                             // list items active transition
                             li {
@@ -138,7 +138,9 @@ body {
                                 justify-content: flex-start;
                                 align-items: center;
                                 margin: 1em auto 1em .5em;
-                                width: 100%;
+                                margin: .5rem auto 1rem;
+                                // border: 1px solid #fff;
+                                width: 95%;
 
 
                                 a {
