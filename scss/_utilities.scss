@@ -39,14 +39,14 @@ hamburger
     // hamburger box shadow
     &.hamburger::after {
         opacity: .8;
-        border: .2em solid $span-gold;
-        // box-shadow: inset 2px 2px 3px #ddda,
-        //             inset -2px -2px 2px #000a;
+        border: .15em solid $span-gold;
+        box-shadow: inset 2px 2px 2px #ddda,
+                    inset -2px -2px 2px #000a;
     }
     // end of hamburger box shadow
     // pulse 
     &.hamburger:before {
-        border: .2em solid $span-gold;
+        border: .15em solid $span-gold;
         opacity: 0;
         animation: ham-pulse 2.5s ease infinite .5s;
         @keyframes ham-pulse {
