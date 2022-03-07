@@ -136,6 +136,7 @@
             text-align: center;
             transition: .2s;
             font-family: 'Gruppo', cursive;
+            letter-spacing: .1rem;
             position: relative;
             overflow: hidden;
             isolation: isolate;
@@ -171,6 +172,7 @@
             // button box shadow states
             &.active {
                 color: $span-gold;
+                letter-spacing: normal;
                 &::before {opacity: 0}
                 &::after {opacity: 1}
             }
@@ -178,6 +180,7 @@
                 transform: scale(.94);
                 transition: .2s;
                 color: $span-gold;
+                letter-spacing: normal;
                 transform: scale(.97);
                 &::before {
                     opacity: 0;

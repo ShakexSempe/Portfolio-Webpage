@@ -349,6 +349,7 @@ hamburger
     text-align: center;
     transition: .2s;
     font-family: 'Gruppo', cursive;
+    letter-spacing: .1rem;
     position: relative;
     overflow: hidden;
     isolation: isolate; }
@@ -372,7 +373,8 @@ hamburger
       opacity: 0;
       box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda, 3px 3px 3px rgba(0, 0, 0, 0.2); }
     #skills .dropdown .dropbtn.active {
-      color: #ead2a1; }
+      color: #ead2a1;
+      letter-spacing: normal; }
       #skills .dropdown .dropbtn.active::before {
         opacity: 0; }
       #skills .dropdown .dropbtn.active::after {
@@ -381,6 +383,7 @@ hamburger
       transform: scale(0.94);
       transition: .2s;
       color: #ead2a1;
+      letter-spacing: normal;
       transform: scale(0.97); }
       #skills .dropdown .dropbtn:active::before {
         opacity: 0; }
