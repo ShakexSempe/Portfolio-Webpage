@@ -368,19 +368,24 @@ hamburger
       background: linear-gradient(0deg, #3f0d0d, #dc134c);
       box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
     #skills .dropdown .dropbtn::after {
-      background: linear-gradient(0deg, #20262e, #485563);
+      background: linear-gradient(0deg, #dc134c, #3f0d0d);
       opacity: 0;
-      box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2); }
-    #skills .dropdown .dropbtn:hover {
-      color: #ead2a1;
-      transform: scale(0.97); }
-      #skills .dropdown .dropbtn:hover::before {
+      box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda, 3px 3px 3px rgba(0, 0, 0, 0.2); }
+    #skills .dropdown .dropbtn.active {
+      color: #ead2a1; }
+      #skills .dropdown .dropbtn.active::before {
         opacity: 0; }
-      #skills .dropdown .dropbtn:hover::after {
+      #skills .dropdown .dropbtn.active::after {
         opacity: 1; }
     #skills .dropdown .dropbtn:active {
       transform: scale(0.94);
-      transition: .2s; }
+      transition: .2s;
+      color: #ead2a1;
+      transform: scale(0.97); }
+      #skills .dropdown .dropbtn:active::before {
+        opacity: 0; }
+      #skills .dropdown .dropbtn:active::after {
+        opacity: 1; }
     #skills .dropdown .dropbtn[data-scroll] {
       transition: 1.5s; }
   #skills .dropdown .dropdown-content {

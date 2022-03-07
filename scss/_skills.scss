@@ -162,14 +162,21 @@
             }
 
             &::after {
-                background: $overlay-btn;
+                background: $button-crimson-hover;
             
                 opacity: 0;
-                box-shadow: $box-light-top-sm;
+                box-shadow: $box-dark-top-sm;
             }
 
             // button box shadow states
-            &:hover {
+            &.active {
+                color: $span-gold;
+                &::before {opacity: 0}
+                &::after {opacity: 1}
+            }
+            &:active {
+                transform: scale(.94);
+                transition: .2s;
                 color: $span-gold;
                 transform: scale(.97);
                 &::before {
@@ -179,11 +186,6 @@
                 &::after {
                     opacity: 1;
                 }
-            }
-            &:active {
-                transform: scale(.94);
-                transition: .2s;
-
             }
             // end of box shadow states
             // end of dropdown button shadows

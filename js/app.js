@@ -124,6 +124,10 @@ toggle between hiding and showing the dropdown content */
 dropdown = () => {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+const dropbtn = document.querySelector('.dropbtn');
+dropbtn.addEventListener("click", () => {
+  dropbtn.classList.toggle("active");
+})
 //  Close the dropdown menu if the user clicks outside of it
 // window.onclick = function (event) {
 //   if (!event.target.matches('.dropbtn')) {
