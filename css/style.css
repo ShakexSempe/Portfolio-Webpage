@@ -273,7 +273,7 @@ hamburger
   text-align: left;
   padding: .5rem;
   margin: 2em auto;
-  background: linear-gradient(0deg, #29323c 0%, #485563 100%);
+  background: linear-gradient(0deg, #20262e, #29323c 50%);
   border-radius: 10px;
   border: none;
   position: relative;
