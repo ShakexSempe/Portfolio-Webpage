@@ -786,7 +786,7 @@ hamburger
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        background: linear-gradient(0deg, #20262e, #485563);
+        background: linear-gradient(0deg, #20262e, #29323c 50%);
         transition: 1.3s ease; }
         @media (min-width: 768px) {
           #projects .projects .all-projects .project-item .project-tile {
