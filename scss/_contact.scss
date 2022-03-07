@@ -67,11 +67,8 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: $overlay-blue-dark;
+                    background: $overlay-btn;
                     box-shadow: $box-light-top-md;
-                    // box-shadow: inset 3px 3px 4px #fffa,
-                    //             inset -3px -3px 4px #000a,
-                    //                     5px 5px 3px rgba(0, 0, 0, 0.400);
                     border-radius: 10px;
                     z-index: -2;
                     opacity: 1;
@@ -207,7 +204,6 @@
                         margin: .7em auto;
                         background: linear-gradient(0deg, #581212, #dc134c);
                         color: $text-white-e;
-                        opacity: .8;
                         cursor: pointer;
                         transition: .3s ease;
                         position: relative;

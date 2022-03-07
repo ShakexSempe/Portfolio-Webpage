@@ -1,6 +1,6 @@
 // footer
 #footer {
-    background-image: $overlay;
+    background-image: $overlay-dark;
     background-color: $background-dark;
     .footer {
         min-height: 100vh;
@@ -20,6 +20,9 @@
                 text-transform: capitalize;
                 margin-bottom: 1.5em;
                 font-size: 2em;
+                &[data-scroll] {
+                    transform: scale(1);
+                }
         }
         // section title
         // form

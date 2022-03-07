@@ -84,7 +84,8 @@
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    background-color: $overlay-blue-dark;
+                    // background-color: $overlay-blue-dark;
+                    background: $overlay-btn;
                     transition: 1.3s ease;
                     // project Title (h1)
                     h1 {
