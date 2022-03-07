@@ -6,7 +6,7 @@ const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.header .nav-list ul li');
 const topLink = document.querySelector('.top-link');
-const cta = document.getElementById('cta');
+
 //Hamburger Menu
 const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
@@ -34,11 +34,6 @@ const brand = document.querySelector('.brand');
 // background-color ()
 // change navbar background color when screen scroll position < 30
 // hidden brand logo which becomes visible when screen scroll position < 150
-  if (scroll_position < 10 ) {
-    cta.classList.remove("scrollOut");
-  } else {
-    cta.classList.add("scrollOut");
-  }
   if (scroll_position < 30) {
     header.style.backgroundColor = "#29323dd9";
     hamburger.classList.add("no-pulse");
@@ -49,7 +44,6 @@ const brand = document.querySelector('.brand');
     brand.style.opacity = 1;
     header.style.backgroundColor = "#29323c";
     hamburger.classList.remove("no-pulse");
-
 
   };
 // top-link ()

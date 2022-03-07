@@ -40,7 +40,7 @@ $background-light: #fff;
 $overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
 $overlay: linear-gradient(0deg, #29323c 0%, #485563 100%);
 $overlay-dark: linear-gradient(0deg, #20262e 0%, #29323c 100%);
-$overlay-dark: linear-gradient(0deg, #20262e , #29323c 50%);
+$overlay-dark: linear-gradient(0deg, hsl(214, 18%, 15%) , hsl(212, 19%, 25%) 50%);
 $overlay-btn: linear-gradient(0deg, #20262e, #485563 );
 $overlay-btn-hover: linear-gradient(0deg , #485563, #20262e );
 $overlay-blue-dark:#29323c;

@@ -46,7 +46,7 @@ body {
 // hero section
 #home {
     background-color: $overlay-blue-dark;
-    background: $overlay;
+    background: $overlay-dark;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -204,7 +204,7 @@ body {
             // ::before = box shadow
             &::before {
                 box-shadow: $box-light-top-sm;
-                background: $overlay-btn;
+                background: $button-crimson;
                 // background: linear-gradient(0deg, #581212, #dc134c);
             }
 
@@ -217,7 +217,7 @@ body {
                 transition: .3s;
                 outline: none;
                 border: none;
-                background: $overlay-btn-hover;
+                background: $button-crimson-hover;
                 // background: linear-gradient(0deg, #dc134c, #581212);
                 box-shadow: $box-dark-top-sm;
             }
@@ -260,6 +260,7 @@ body {
             &:hover {
                 span {
                     color: $span-gold;
+                    color: $text-light;
                     animation: none;
                 }
 
@@ -287,11 +288,7 @@ body {
         position: absolute;
         bottom: 10vh;
         left: 5vw;
-        transform: translateY(20vh);
         transition: 1s;
-        &.scrollOut {
-            transform: translateY(0);
-        }
         // border: 1px solid red;
         
         .cta {
