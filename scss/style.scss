@@ -149,23 +149,27 @@ body {
 
             @media (min-width: 768px) {
                 font-size: 1.5em;
+                width: 100%;
+                text-align: center;
             }
 
             position: relative;
-            display: inline-block;
+            display: block;
             text-align: center;
+            text-align: left;
             font-family: 'Gruppo',cursive;
-            padding: .5em 1em;
+            padding: .5em;
             margin: 0;
             width: 100%;
-            border-radius: 20px;
+            width: auto;
+            border-radius: 10px;
             border: none;
             outline: none;
-            opacity: 1;
+            opacity: 0;
             // transform: rotateX(-90deg);
-            transform: scale(0);
+            transform: scale(.5);
             transform-style: preserve-3d;
-            animation: show-cta 4s 5.5s;
+            animation: show-cta 4s 6s;
             animation-fill-mode: forwards;
             // background-color: $button-background-grey;
             transition: .3s linear;
@@ -191,7 +195,7 @@ body {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: 20px;
+                border-radius: 10px;
                 transition: .3s ease;
                 border: none;
                 outline: none;
@@ -199,8 +203,9 @@ body {
 
             // ::before = box shadow
             &::before {
-                box-shadow: $box-light-top-bg;
-                background: linear-gradient(0deg, #581212, #dc134c);
+                box-shadow: $box-light-top-sm;
+                background: $overlay-btn;
+                // background: linear-gradient(0deg, #581212, #dc134c);
             }
 
             // ::after = background gradient
@@ -212,8 +217,9 @@ body {
                 transition: .3s;
                 outline: none;
                 border: none;
-                background: linear-gradient(0deg, #dc134c, #581212);
-                box-shadow: $box-light-top-bg;
+                background: $overlay-btn-hover;
+                // background: linear-gradient(0deg, #dc134c, #581212);
+                box-shadow: $box-dark-top-sm;
             }
 
             // end of button shadows
@@ -223,6 +229,7 @@ body {
                 display: inline-block;
                 text-transform: uppercase;
                 color: $text-light;
+                color: $span-gold;
                 font-size: 2em;
                 font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
@@ -235,6 +242,7 @@ body {
                     }
 
                     20% {
+                        color: $text-light;
                         transform: translateY(-10px) scale(1.1);
                     }
 
@@ -250,7 +258,6 @@ body {
             // end of animated button text 
             // button hover, focus and active states
             &:hover {
-                transform: scale(.9);
                 span {
                     color: $span-gold;
                     animation: none;
@@ -265,9 +272,6 @@ body {
                     opacity: 1;
                 }
             }
-            &:hover {
-                transform: scale(.97);
-            }
             &:active {
                 transition: .2s;
                 transform: scale(.95);
@@ -277,6 +281,57 @@ body {
         }
 
         // end of welcome section button & shadow 
+    }
+
+    #cta {
+        position: absolute;
+        bottom: 10vh;
+        left: 5vw;
+        // border: 1px solid red;
+        
+        .cta {
+            font-size: 1.5rem;
+            color: $text-light;
+            text-transform: capitalize;
+            padding: .5rem;
+            border-radius: 20px;
+            cursor: pointer;
+            border: none;
+            position: relative;
+            isolation: isolate;
+            transition: .2s;
+
+            &::before, &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                transition: .2s;
+                border-radius: 20px;
+                z-index: -1;
+            }
+            &::before {
+                background: $button-crimson;
+                box-shadow: $box-light-top-sm;
+            }
+            &::after {
+                opacity: 0;
+                background: $button-crimson-hover;
+                box-shadow: $box-dark-top-sm;
+            }
+            &:hover {
+                transform: scale(.98);
+            }
+            &:active {
+                transform: scale(.98);
+                &::before {opacity: 0;}
+                &::after {opacity: 1;}
+            }
+        }
     }
 }
 // end of hero section
