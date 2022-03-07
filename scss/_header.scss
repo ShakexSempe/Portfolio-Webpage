@@ -40,6 +40,7 @@
                     border: 1px solid $span-gold;
                     padding-left: .15rem;
                     border-radius: 5px;
+                    transition: .2s;
                     // text-shadow: 0 0 5px $text-shadow-red;
 
                     span {
@@ -52,6 +53,19 @@
                         color: $overlay-blue-dark;
                         border-top-right-radius: 5px;
                         border-bottom-right-radius: 5px;
+                        transition: .2s;
+                    }
+
+                    &:hover {
+                        background: $button-gold;
+                        color: $overlay-blue-dark;
+                        border-color: $overlay-blue-dark;
+
+                        span {
+                            background: $overlay-dark;
+                            // background: $overlay-blue-dark;
+                            color: $span-gold;
+                        }
                     }
                 }
             }
