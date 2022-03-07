@@ -287,19 +287,31 @@ body {
         position: absolute;
         bottom: 10vh;
         left: 5vw;
+        transform: translateY(20vh);
+        transition: 1s;
+        &.scrollOut {
+            transform: translateY(0);
+        }
         // border: 1px solid red;
         
         .cta {
             font-size: 1.5rem;
+            font-family: $font-ubuntu;
             color: $text-light;
             text-transform: capitalize;
             padding: .5rem;
+            width: 15rem;
             border-radius: 20px;
+            display: block;
+            text-align: center;
             cursor: pointer;
             border: none;
             position: relative;
             isolation: isolate;
             transition: .2s;
+            letter-spacing: .05rem;
+            // -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, .200));
+            
 
             &::before, &::after {
                 position: absolute;
@@ -324,6 +336,7 @@ body {
                 box-shadow: $box-dark-top-sm;
             }
             &:hover {
+                letter-spacing: normal;
                 &::before {opacity: 0;}
                 &::after {opacity: 1;}
             }
