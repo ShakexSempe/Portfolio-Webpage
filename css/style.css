@@ -645,6 +645,9 @@ hamburger
         opacity: 0; }
       #skills .dropdown .dropbtn:active::after {
         opacity: 1; }
+    @media (min-width: 768px) {
+      #skills .dropdown .dropbtn:hover {
+        transform: scale(0.98); } }
     #skills .dropdown .dropbtn[data-scroll] {
       transition: 1.5s; }
   #skills .dropdown .dropdown-content {

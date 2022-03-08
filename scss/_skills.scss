@@ -190,6 +190,11 @@
                     opacity: 1;
                 }
             }
+            @media (min-width: 768px) {
+                &:hover {
+                    transform: scale(.98);
+                }
+            }
             // end of box shadow states
             // end of dropdown button shadows
 
