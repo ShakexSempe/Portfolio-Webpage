@@ -48,7 +48,7 @@ hamburger
     &.hamburger:before {
         border: .15em solid $span-gold;
         opacity: 0;
-        animation: ham-pulse 2.5s ease infinite .5s;
+        animation: ham-pulse 2.5s ease infinite;
         @keyframes ham-pulse {
             50% {
                 opacity: .7;

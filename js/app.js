@@ -1,51 +1,66 @@
 // ********** VARIABLES ************
 
-// navbar links
+// NAV LINKS
 const linksContainer = document.querySelector('.links-container');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.header .nav-list ul li');
 const topLink = document.querySelector('.top-link');
 
-//Hamburger Menu
+// HAMBURGER MENU
 const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
-const header = document.querySelector('.header.container');
+const header = document.querySelector('header');
 const navLogo = document.querySelector('.header #navbar #nav-logo');
-// about section
+// ABOUT SECTION
 const readBtn = document.getElementById('readBtn');
 let article = document.querySelector('.about-article');
   article.classList.remove('active');
-// date
+// DATE
 const date = document.querySelector('.date');
 console.log(date);
+// INTERSECTION OBSERVER
+const brand = document.querySelector('.brand');
+const sectionOne = document.querySelector('.welcome-section');
+const sectionOneOptions = {
+    rootMargin: "-300px 0px 0px 0px"
+};
 
 // ********** END OF VARIABLES ************
 
+// ********** INTERSECTION OBSERVER ************
+const sectionOneObserver = new IntersectionObserver(
+  function(
+      entries, sectionOneObserver
+  ) {
+      entries.forEach(entry => {
+          if(!entry.isIntersecting) {
+              // header.style.backgroundColor = "red";
+              header.classList.add("header-io");
+              hamburger.classList.remove("no-pulse");
+              brand.style.opacity = "1"
+          } else {
+              header.classList.remove("header-io");
+              hamburger.classList.add("no-pulse");
+              brand.style.opacity = "0";
+
+
+          }
+      });
+  }, sectionOneOptions
+);
+
+sectionOneObserver.observe(sectionOne);
+
+
 // ********** EVENT LISTENERS ************
 
-// background and back-to-top link
+// BACK TO TOP
 document.addEventListener("scroll", () => {
   // scroll variables
 const scroll_position = window.scrollY;
 const scrollHeight = window.pageYOffset;
-const brand = document.querySelector('.brand');
-// background-color ()
-// change navbar background color when screen scroll position < 30
-// hidden brand logo which becomes visible when screen scroll position < 150
-  if (scroll_position < 30) {
-    header.style.backgroundColor = "#29323dd9";
-    hamburger.classList.add("no-pulse");
-  }
-  if (scroll_position < 350) {
-    brand.style.opacity = 0;
-  } else {
-    brand.style.opacity = 1;
-    header.style.backgroundColor = "#29323c";
-    hamburger.classList.remove("no-pulse");
-
-  };
 // top-link ()
   if(scrollHeight > 200) {
     topLink.classList.add('show-link');
@@ -55,13 +70,13 @@ const brand = document.querySelector('.brand');
 });
 // end of background and back-to-top link
 
-// hamburger select
+// HAMBURGER SELECT
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
 });
 // end of hamburger select
-// scroll to link
+// SCROLL TO LINK
 scrollLinks.forEach(link => {
   //prevent default
   link.addEventListener('click', e => {
@@ -83,23 +98,20 @@ scrollLinks.forEach(link => {
   });
 });
 // end of scroll to link
-//  remove hamburger after click 
+//  REMOVE HAMBURGER AFTER CLICK 
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     mobile_menu.classList.toggle('active');
   });
 });
-// nav logo click
+// NAV LOGO CLICK
 navLogo.addEventListener("click", () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
 })
 //  end of remove hamburger after click 
-//  remove sidebar after click on sidebar img 
-
-//  end of remove sidebar after click on sidebar img
-//  progress bar
+//  PROGRESS BAR
 //  When the user scrolls the page, execute myFunction
 window.onscroll = function () {
   progressBar()
@@ -118,7 +130,7 @@ progressBar = () => {
 }
 // end of page progress bar
 
-//  skills dropdown
+//  SKILLS DROPDOWN
 /*  When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 dropdown = () => {
@@ -155,27 +167,3 @@ readBtn.addEventListener("click", ()=> {
 /*  set footer date*/
 date.innerHTML = new Date().getFullYear();
 /*  end of set footer date*/
-
-// section scroll
-// const sections = document.querySelectorAll('section');
-// const navLi = document.querySelectorAll("#navbar .links li");
-
-// window.onscroll = () => {
-//   var current = "";
-
-//   sections.forEach((section) => {
-//     let sectionTop = section.offsetTop;
-//     if (pageYOffset >= sectionTop - 60) {
-//       current = section.getAttribute("id");
-//     }
-//   });
-
-//   navLi.forEach((li) => {
-//     li.classList.remove("active");
-//     if (li.classList.contains(current)) {
-//       console.log(current);
-//       li.classList.add("active");
-//     }
-//   });
-
-// };
