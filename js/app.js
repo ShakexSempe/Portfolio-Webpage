@@ -54,8 +54,6 @@ const sectionOneObserver = new IntersectionObserver(
 sectionOneObserver.observe(sectionOne);
 
 
-// ********** EVENT LISTENERS ************
-
 // BACK TO TOP
 document.addEventListener("scroll", () => {
   // scroll variables
