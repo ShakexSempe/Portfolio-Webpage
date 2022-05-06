@@ -523,11 +523,11 @@ hamburger
 }
 #header .header #navbar .nav-list ul li i {
   margin-right: 0.5em;
-  padding: 0.5em;
+  padding: 0;
   text-align: left;
   color: #fffa;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a, 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid #ead2a1;
 }
 #header .header #navbar .nav-list ul li:hover {
   transition: 0.3s;
@@ -716,8 +716,11 @@ hamburger
   box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #3d495500;
 }
 #skills .skills-top[data-scroll] {
-  transform: scale(1);
+  transform: scale(1) translateY(10vh);
+}
+#skills .skills-top[data-scroll=in] {
   transition: 1.5s;
+  transform: scale(1) translateY(0);
 }
 #skills .dropdown {
   position: relative;

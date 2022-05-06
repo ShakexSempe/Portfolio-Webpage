@@ -111,8 +111,11 @@
         
         // SKILLS-TOP DATA-SCROLL
         &[data-scroll] {
-            transform: scale(1);
+            transform: scale(1) translateY(10vh);
+        }
+        &[data-scroll="in"] {
             transition: 1.5s;
+            transform: scale(1) translateY(0);
         }
     }
     // end of skills top section
