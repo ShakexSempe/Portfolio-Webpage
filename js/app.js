@@ -12,7 +12,8 @@ const hamburger = document.querySelector('.header #navbar .nav-list .hamburger')
 const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
 const header = document.querySelector('header');
-const navLogo = document.querySelector('.header #navbar #nav-logo');
+const navLogo = document.querySelector('.brand');
+console.log(navLogo);
 // ABOUT SECTION
 const readBtn = document.getElementById('readBtn');
 let article = document.querySelector('.about-article');
@@ -72,6 +73,7 @@ hamburger.addEventListener('click', () => {
   if(!header.classList.contains("header-io")){
     header.classList.add("header-io");
   }
+  header.classList.toggle("active-header");
 });
 // end of hamburger select
 // SCROLL TO LINK
@@ -99,14 +101,16 @@ scrollLinks.forEach(link => {
 //  REMOVE HAMBURGER AFTER CLICK 
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
+    hamburger.classList.remove('active');
+    mobile_menu.classList.remove('active');
+    header.classList.remove("active-header");
   });
 });
 // NAV LOGO CLICK
 navLogo.addEventListener("click", () => {
-  hamburger.classList.toggle('active');
-  mobile_menu.classList.toggle('active');
+  hamburger.classList.remove('active');
+    mobile_menu.classList.remove('active');
+    header.classList.remove("active-header");
 })
 //  end of remove hamburger after click 
 //  PROGRESS BAR

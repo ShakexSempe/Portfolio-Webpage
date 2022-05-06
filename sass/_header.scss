@@ -22,6 +22,10 @@
                 }
             }
         }
+        // DARK HEADER BACKGROUND WHEN SIDEBAR VISIBLE
+        &.active-header {
+            background: $overlay-blue-dark;
+        }
     }
     // END OF INTERSECTION CLASS
 
