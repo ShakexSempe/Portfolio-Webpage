@@ -2802,7 +2802,19 @@ body span {
 }
 .section-pad.pad-intro [data-scroll] {
   transform: scale(1);
+}
+.section-pad.pad-intro [data-scroll] img {
+  transform: scale(4);
+  opacity: 0;
+}
+.section-pad.pad-intro [data-scroll=in] {
+  transform: scale(1);
   transition: 1.5s ease;
+}
+.section-pad.pad-intro [data-scroll=in] img {
+  transform: scale(1);
+  transition: 1.5s;
+  opacity: 1;
 }
 .section-pad.pad-me {
   background: #fff;
