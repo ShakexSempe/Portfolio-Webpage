@@ -1467,8 +1467,11 @@ hamburger
   justify-content: space-between;
 }
 #work .work-items .work-item[data-scroll] {
+  transform: scale(1) translateY(10vh);
+}
+#work .work-items .work-item[data-scroll=in] {
   transition: 1.5s;
-  transform: scale(1);
+  transform: scale(1) translateY(0vh);
 }
 #work .work-items .work-item .work-title {
   text-align: center;
