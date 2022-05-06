@@ -39,11 +39,9 @@ const sectionOneObserver = new IntersectionObserver(
               // header.style.backgroundColor = "red";
               header.classList.add("header-io");
               hamburger.classList.remove("no-pulse");
-              brand.style.opacity = "1"
           } else {
               header.classList.remove("header-io");
               hamburger.classList.add("no-pulse");
-              brand.style.opacity = "0";
 
 
           }

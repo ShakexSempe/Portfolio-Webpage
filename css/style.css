@@ -235,10 +235,9 @@ hamburger
   display: grid;
   place-items: center;
   border-radius: 5px;
-  animation: bounce 2s ease-in-out infinite;
   transition: 0.5s ease-in;
   opacity: 0;
-  visibility: hidden;
+  transform: translateY(10vh);
   z-index: 1;
   box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 3px #000a;
 }
@@ -248,10 +247,11 @@ hamburger
   font-size: 1.5em;
 }
 .top-link.show-link {
-  transition: opacity 0.5s ease-in-out;
-  visibility: visible;
-  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  z-index: 5;
   opacity: 1;
+  transform: translateY(0);
+  transition: 1.5s;
   z-index: 30;
 }
 @keyframes bounce {
@@ -308,6 +308,11 @@ hamburger
 #header.header-io {
   background: #29323c;
 }
+#header.header-io .header #navbar .brand {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
 #header .header {
   height: 100%;
   transition: 1s ease background-color;
@@ -329,9 +334,11 @@ hamburger
 #header .header #navbar .brand {
   transition: 0.5s ease;
   opacity: 0;
+  opacity: 1;
+  transform: translateY(-10vh);
 }
 #header .header #navbar .brand h1 {
-  font-size: 1.25em;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #f4f4f4;
   color: #ead2a1;
@@ -362,11 +369,7 @@ hamburger
 #header .header #navbar .brand h1:hover {
   background: linear-gradient(0deg, #deb86e, #ead2a1);
   color: #29323c;
-  border-color: #29323c;
-}
-#header .header #navbar .brand h1:hover span {
-  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
-  color: #ead2a1;
+  border-color: linear-gradient(0deg, #deb86e, #ead2a1);
 }
 @media (max-width: 1024px) {
   #header .header #navbar .nav-list .links-container {

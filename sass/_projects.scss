@@ -1,0 +1,300 @@
+// projects
+#projects {
+    // projects container
+    .projects {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 10vh 0;
+        background-color: $background-light;
+        position: relative;
+        // section header
+        // &-header {
+        //     width: 100%;
+        //     height: 170px;
+        //     background: $background-light;
+        //     margin-bottom: 2em;
+        //     z-index: 2;
+        //     // section header h1
+        //     h1 {
+        //         margin-bottom: 50px;
+        //         color: $span-gold;
+        //         text-shadow: 3px 2px 2px #000;
+        //         font-weight: 900;
+        //         &::before {
+        //             opacity: .7;
+        //             top: 2.25em;
+        //         }
+        //     }
+        //     // end of section header h1
+        // }
+        // end of section header
+        // project items
+        .all-projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 10;
+            // DATA-SCROLL
+            &[data-scroll] {
+                transition: 1.5s;
+                transform: scale(1);
+            }
+            // project item
+            .project-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column-reverse;
+                width: 90%;
+                border: 2px solid $overlay-blue-light;
+                outline: none;
+                overflow: hidden;
+                // project items on desktop : row
+                @media (min-width: 768px) {
+                    height: 350px;
+                    width: 90%;
+                    border-radius: 5px;
+                    flex-direction: row;
+                    margin: 1.5em auto;
+                    position: relative;
+
+                    &:nth-child(even) {
+                        flex-direction: row-reverse;
+                    }
+                }
+                // end of project items on desktop : row
+                margin: 1.5rem auto;
+                overflow: hidden;
+                border-radius: 5px;
+                // project tile
+                .project-tile {
+                    // border: 3px solid $span-gold;
+                    @media (min-width: 768px){
+                        flex-basis: 50%;
+                        padding: 2em;
+                    }
+
+                    padding: 1.5em;
+                    flex-basis: 50%;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 1.2em;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    // background-color: $overlay-blue-dark;
+                    background: $overlay-dark;
+                    transition: 1.3s ease;
+                    // project Title (h1)
+                    h1 {
+                        font-size: 1.15em;
+                        width: 100%;
+                        @media (min-width:1024px){
+                            font-size: 1.2rem;
+                        }
+                        color: $span-gold;
+                        font-weight: 900;
+                        text-transform: capitalize;
+                        line-height: 1em;
+                        letter-spacing: .05em;
+                        margin-bottom: .5em;
+                        padding-bottom: .5em;
+                        border-bottom: 1px dashed $span-gold;
+                        
+                    }
+                    // end of project Title (h1)
+                    // project details (h2 and p)
+                    h2 {
+                        font-size: 1em;
+                        line-height: 1.3;
+                        font-weight: 500;
+                        margin: .8em 0;
+                        text-transform: capitalize;
+                        color: $text-white-e;
+                        transition: .3s;
+                        // @media (min-width:768px){
+                        //     font-size: 1.2em;
+                        // }
+                    }
+                    
+                    p {
+                        font-size: .8em;
+                        @media (min-width:768px){
+                            font-size: .9em;
+                        }
+                        font-weight: 200;
+                        color: $text-white-d;
+                        margin: .5em 0;
+                    }
+                    // end of project details (h2 and p)
+                    // project link icon
+                    a {
+                        color: $text-white;
+                        background: #161616;
+                        margin: .5em 0 .5em;
+                        padding: .5em;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        transition: all .3s ease;
+                        border: 2px solid $span-gold;
+                        // end of project tile box shadow
+                        // links icon
+                        i {
+                            transition: .2s;
+                            color: $span-gold;
+                            font-size: .8em;
+                            padding: .2em;
+                            // margin-right: .5em;
+                            margin: 1em 0 .5em 0;
+                            // icon label (pseudo)
+                            &::after {
+                                content: 'view project';
+                                font-family: $font-gruppo;
+                                font-style: italic;
+                                color: $text-light;
+                                font-weight: 600;
+                                transition: .3s;
+                                background: linear-gradient(0deg, #3f0d0d, #dc134c);
+                                border-radius: 10px;
+                                padding: .5em 1em;
+                                opacity: 0;
+                                box-shadow: inset 1px 1px 3px #fffa,
+                                            inset -1px -1px 3px #000a;
+                                transition: .3s ease;
+                            }
+
+                            // end of icon label (pseudo)
+                        }
+                        // end of links icon
+                        // link hover state
+                        &:hover {
+                            h2 {
+                                color: $span-gold;
+                            }
+                            i {
+                                color: $text-light;
+                                transform: translateX(.5em);
+                            }
+                        }
+                        // link hover state
+
+                    }
+                    // end of project link icon 
+                }
+                // end of project tile 
+                // project image
+                .project-img {
+                    flex-basis: 50%;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    isolation: isolate;
+                    overflow: hidden;
+                    border: none;
+                    outline: none;
+                    transform: scale(1.05);
+                    // project image box shadow
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-image: linear-gradient(60deg, #29323c, 0%, #585563 100%);
+                        opacity: .6;
+                        transition: .5s;
+                        z-index: 3;
+                    }
+                    // end of project image box shadow
+                    // image 
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: 0.5s ease;
+                        z-index: 1;
+                        overflow: hidden;
+
+
+                    }
+                    // end of image
+                    &:hover {
+                        &::after {
+                            opacity: 0;
+                        }
+                        transition: 0.5s ease;
+                    }
+                    @media (min-width: 768px){
+                        height: 100%;
+                    }
+                }
+                // end of project image
+                // project tech list
+                .tech-list {
+                    padding: .5em;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            font-size: .8em;
+                            color: $text-white-trans;
+                            list-style: none;
+                            padding: .4em .3em;
+                            margin-right: .1em;
+                            font-style: italic;
+                            letter-spacing: .05em;
+                        }
+                    }
+
+                }
+                // end of project tech list
+                // project item img hover state
+                &:hover {
+                    &.project-item {
+                        &::after {
+                            opacity: 1;
+                        }
+
+                        .project-img {
+                            img {
+                                transform: scale(1.1);
+                            }
+
+                            &::after {
+                                opacity: .7;
+                            }
+                            
+                        }
+
+                        .project-tile {
+                            a {
+                                i {
+                                    // move icon right on item tile hover
+                                    &::after {
+                                        opacity: 1;
+                                        margin-left: .5em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // end of project item img hover state 
+            }
+            
+            // end of project item
+        }
+        // end of project items
+    }
+    // end of projects container
+} 
+// end of projects 
