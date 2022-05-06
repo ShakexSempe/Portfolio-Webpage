@@ -10,14 +10,15 @@
     background: transparent;
     // INTERSECTION CLASS
     &.header-io {
-        background: $overlay-blue-dark;
-
+        background: $overlay-blue-dark-trans;
+        transition: background .5s;
         .header {
             #navbar {
                 .brand {
                     opacity: 1;
                     transform: translateY(0);
                     transition: 1s;
+                    transition-delay: .4s;
                 }
             }
         }
@@ -94,7 +95,7 @@
                 .links-container {
                     @media (max-width: 1024px) {
                         position: absolute;
-                        top: 0;
+                        top: 7vh;
                         left: 100%;
                         width: 100vw;
                         height: 100vh;

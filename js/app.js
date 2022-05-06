@@ -42,8 +42,7 @@ const sectionOneObserver = new IntersectionObserver(
           } else {
               header.classList.remove("header-io");
               hamburger.classList.add("no-pulse");
-
-
+            
           }
       });
   }, sectionOneOptions
@@ -70,6 +69,9 @@ const scrollHeight = window.pageYOffset;
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
+  if(!header.classList.contains("header-io")){
+    header.classList.add("header-io");
+  }
 });
 // end of hamburger select
 // SCROLL TO LINK

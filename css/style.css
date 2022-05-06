@@ -306,12 +306,14 @@ hamburger
   background: transparent;
 }
 #header.header-io {
-  background: #29323c;
+  background: rgba(34, 41, 49, 0.9);
+  transition: background 0.5s;
 }
 #header.header-io .header #navbar .brand {
   opacity: 1;
   transform: translateY(0);
   transition: 1s;
+  transition-delay: 0.4s;
 }
 #header .header {
   height: 100%;
@@ -374,7 +376,7 @@ hamburger
 @media (max-width: 1024px) {
   #header .header #navbar .nav-list .links-container {
     position: absolute;
-    top: 0;
+    top: 7vh;
     left: 100%;
     width: 100vw;
     height: 100vh;
