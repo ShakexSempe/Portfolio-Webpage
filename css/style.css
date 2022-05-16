@@ -2595,15 +2595,15 @@ body span {
   color: #f4f4f4;
   animation: none;
 }
-#home .hero #cta-header:hover::before {
-  opacity: 0;
-}
-#home .hero #cta-header:hover::after {
-  opacity: 1;
-}
 #home .hero #cta-header:active {
   transition: 0.2s;
-  transform: scale(0.95);
+  transform: scale(0.9);
+}
+#home .hero #cta-header:active::before {
+  opacity: 0;
+}
+#home .hero #cta-header:active::after {
+  opacity: 1;
 }
 #home #cta {
   position: absolute;
@@ -2675,7 +2675,7 @@ section {
 }
 section .section-title {
   font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
   max-width: 100vw;
   margin: 5vh 0 10vh;
