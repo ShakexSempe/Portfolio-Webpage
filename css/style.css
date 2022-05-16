@@ -711,10 +711,12 @@ hamburger
 }
 #skills .dropdown .dropbtn::after {
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
+  background: linear-gradient(0deg, #485563, #20262e);
   opacity: 0;
   box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #ddda, 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 #skills .dropdown .dropbtn.active {
+  transform: scale(0.97);
   letter-spacing: normal;
 }
 #skills .dropdown .dropbtn.active::before {
@@ -724,9 +726,7 @@ hamburger
   opacity: 1;
 }
 #skills .dropdown .dropbtn:active {
-  transform: scale(0.94);
   transition: 0.2s;
-  color: #ead2a1;
   letter-spacing: normal;
   transform: scale(0.97);
 }
@@ -746,7 +746,7 @@ hamburger
 }
 #skills .dropdown .dropdown-content {
   display: none;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   justify-content: center;
   align-items: center;
