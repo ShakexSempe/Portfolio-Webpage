@@ -275,10 +275,10 @@ hamburger
     border-radius: 5px;
     // animation: bounce 2s ease-in-out infinite;
     transition: .5s ease-in;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(10vh);
     // visibility: hidden;
-    z-index: 1;
+    z-index: 30;
     box-shadow: inset 2px 2px 3px #ddda,
                 inset -2px -2px 3px #000a;
     
@@ -290,11 +290,11 @@ hamburger
     &.show-link {
         transition: all .5s ease-in-out;
         // visibility: visible;
-        z-index: 5;
+        // z-index: 5;
         opacity: 1;
         transform: translateY(0);
         transition: 1.5s;
-        z-index: 30;
+        // z-index: 30;
     }
     @keyframes bounce {
         0% {
@@ -309,27 +309,21 @@ hamburger
             transform: scale(1);
         }
     }
-
-    &:hover {
-        animation: none;
-        // transform: translateY(-100%);
-
-        i {
-            transform: scale(.97);
-            transition: .2s;
-        }
-    }
-    &:focus {
-        animation: scrollUp 1s ease;
-        animation-fill-mode: forwards;
-
-        @keyframes scrollUp {
-            100% {
-                    transform: translateY(-100%);
-                
+    @media (min-width: 768px) {
+        &:hover {
+            animation: none;
+            // transform: translateY(-100%);
+    
+            i {
+                transform: scale(.97);
+                transition: .2s;
             }
-
         }
+
+    }
+    &:active {
+        transform: scale(.9);
+        transition: .2s;
     }
 }
 // end of back to top button

@@ -109,6 +109,7 @@
         // SKILLS-TOP DATA-SCROLL
         &[data-scroll] {
             transform: scale(1) translateY(10vh);
+            opacity: 1;
         }
         &[data-scroll="in"] {
             transition: 1.5s;
