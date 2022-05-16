@@ -60,8 +60,8 @@ body {
         background-image: url(../img/me-min.jpg);
         background-image: url(../img/shakexblue-min.jpg);
         background-repeat: no-repeat;
-        background-position: left;
         background-position: center;
+        background-position: left;
         background-size: cover;
         z-index: -1;
         opacity: .7;
@@ -120,7 +120,7 @@ body {
                     /* hero h1 keyframes */
                     @keyframes hero-span {
                         10% {
-                            opacity: .7;
+                            opacity: 1;
                             transform: translateX(10px);
                         }
                         100% {
