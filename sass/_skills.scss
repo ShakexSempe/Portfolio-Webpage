@@ -106,15 +106,7 @@
         }
         // end of skills top 'down arrow'
         
-        // SKILLS-TOP DATA-SCROLL
-        &[data-scroll] {
-            transform: scale(1) translateY(10vh);
-            opacity: 1;
-        }
-        &[data-scroll="in"] {
-            transition: 1.5s;
-            transform: scale(1) translateY(0);
-        }
+        
     }
     // end of skills top section
     // dropdown section
@@ -123,6 +115,16 @@
         margin: 0 auto;
         z-index: 4;
 
+        // SKILLS-TOP DATA-SCROLL
+        &[data-scroll] {
+            transform: scale(1) translateY(5vh);
+            opacity: 1;
+        }
+
+        &[data-scroll="in"] {
+            transition: 1.5s;
+            transform: scale(1) translateY(0);
+        }
         // dropdown button
         .dropbtn {
             color: $text-light;
@@ -175,6 +177,7 @@
             &.active {
                 transform: scale(.97);
                 letter-spacing: normal;
+                color: $span-gold;
                 &::before {opacity: 0}
                 &::after {opacity: 1}
             }

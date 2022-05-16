@@ -657,18 +657,18 @@ hamburger
   transition: 0.2s;
   box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #3d495500;
 }
-#skills .skills-top[data-scroll] {
-  transform: scale(1) translateY(10vh);
-  opacity: 1;
-}
-#skills .skills-top[data-scroll=in] {
-  transition: 1.5s;
-  transform: scale(1) translateY(0);
-}
 #skills .dropdown {
   position: relative;
   margin: 0 auto;
   z-index: 4;
+}
+#skills .dropdown[data-scroll] {
+  transform: scale(1) translateY(5vh);
+  opacity: 1;
+}
+#skills .dropdown[data-scroll=in] {
+  transition: 1.5s;
+  transform: scale(1) translateY(0);
 }
 #skills .dropdown .dropbtn {
   color: #f4f4f4;
@@ -714,6 +714,7 @@ hamburger
 #skills .dropdown .dropbtn.active {
   transform: scale(0.97);
   letter-spacing: normal;
+  color: #ead2a1;
 }
 #skills .dropdown .dropbtn.active::before {
   opacity: 0;
