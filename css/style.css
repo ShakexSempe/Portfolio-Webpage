@@ -2457,11 +2457,8 @@ body span {
   position: absolute;
   top: 15vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   #home .hero #hero-h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 0.5em;
   }
 }
