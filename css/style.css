@@ -246,8 +246,8 @@ hamburger
   background: transparent;
 }
 #header.header-io {
-  background: rgba(34, 41, 49, 0.9);
-  transition: background 0.5s;
+  background-color: rgba(34, 41, 49, 0.9);
+  transition: background-color 0.5s;
 }
 #header.header-io .header #navbar .brand {
   opacity: 1;
