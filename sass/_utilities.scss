@@ -266,8 +266,8 @@ hamburger
 // back to top button
 .top-link {
     position: fixed;
-    bottom: 1em;
-    right: 1em;
+    bottom: 0;
+    right: 0;
     // background-image: linear-gradient(0deg, rgb(0, 0, 0), #dc143c);
     background: $button-crimson;
     display: grid;
