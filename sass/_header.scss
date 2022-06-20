@@ -45,7 +45,7 @@
             @media (max-width: 1024px) {
                 padding: 0 5vw;
             }
-            // corner logo
+            // HEADER LOGO
             .brand {
                 transition: .5s ease;
                 opacity: 0;
@@ -83,13 +83,6 @@
                         transition: .2s;
                     }
 
-                    &:hover {
-                        background: $button-gold;
-                        color: $overlay-blue-dark;
-                        border-color: $button-gold;
-
-                        
-                    }
                 }
             }
             // corner logo
@@ -124,6 +117,7 @@
                             outline: none;
                             padding: .5rem 0;
                             overflow-y: auto;
+                            overflow-x: hidden;
                             // list items active transition
                             li {
                                 transform: translateX(10%);
@@ -140,8 +134,8 @@
 
                                 a {
                                     margin-right: auto;
-                                    padding: .5em;
-                                    width: 70%;
+                                    padding: .5em 0;
+                                    width: 100%;
                                     display: block;
                                     // border: 1px solid yellow;
                                     border-radius: 5px;
@@ -149,12 +143,12 @@
                                 }
 
                                 i {
-                                    flex-basis: 15%;
+                                    flex-basis: 5%;
                                     text-align: center;
                                     // margin-right: 1em;
                                     padding: .5em;
                                     color: #fffa;
-                                    // border: 1px solid yellow;
+                                    border: none;
                                     
                                 }
                             }
@@ -171,8 +165,6 @@
                         }
 
                         ul {
-                            overflow-y: auto;
-                            overflow-x: hidden;
                             li {
                                 transition: .5s;
                                 transform: translateX(0);

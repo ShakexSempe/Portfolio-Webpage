@@ -311,11 +311,6 @@ hamburger
   border-bottom-right-radius: 5px;
   transition: 0.2s;
 }
-#header .header #navbar .brand h1:hover {
-  background: linear-gradient(0deg, #deb86e, #ead2a1);
-  color: #29323c;
-  border-color: linear-gradient(0deg, #deb86e, #ead2a1);
-}
 @media (max-width: 1024px) {
   #header .header #navbar .nav-list .links-container {
     position: absolute;
@@ -343,6 +338,7 @@ hamburger
     outline: none;
     padding: 0.5rem 0;
     overflow-y: auto;
+    overflow-x: hidden;
   }
   #header .header #navbar .nav-list .links-container ul li {
     transform: translateX(10%);
@@ -357,16 +353,17 @@ hamburger
   }
   #header .header #navbar .nav-list .links-container ul li a {
     margin-right: auto;
-    padding: 0.5em;
-    width: 70%;
+    padding: 0.5em 0;
+    width: 100%;
     display: block;
     border-radius: 5px;
   }
   #header .header #navbar .nav-list .links-container ul li i {
-    flex-basis: 15%;
+    flex-basis: 5%;
     text-align: center;
     padding: 0.5em;
     color: #fffa;
+    border: none;
   }
   #header .header #navbar .nav-list .links-container.active {
     left: 0;
@@ -376,10 +373,6 @@ hamburger
     transition: 1.5s;
     opacity: 1;
     transform: translateX(0);
-  }
-  #header .header #navbar .nav-list .links-container.active ul {
-    overflow-y: auto;
-    overflow-x: hidden;
   }
   #header .header #navbar .nav-list .links-container.active ul li {
     transition: 0.5s;
