@@ -33,14 +33,16 @@
             }
             .work-title {
                 text-align: center;
+                text-transform: capitalize;
                 h2 {
                     text-transform: capitalize;
                     font-family: $font-ubuntu;
+                    font-size: 1.5rem;
                 }
                 
-                a {
-                    color: $text-black-trans;
-                    font-size: .8rem;
+                p {
+                    color: $text-black;
+                    font-size: 1rem;
                 }
             }
             figure {
