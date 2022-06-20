@@ -779,6 +779,24 @@ hamburger
     opacity: 1;
   }
 }
+#home .hero .slogan {
+  position: absolute;
+  bottom: 20vh;
+  left: 0;
+  padding: 0 5vw;
+  width: 100%;
+}
+#home .hero .slogan p {
+  color: #ffff;
+  text-transform: capitalize;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #home .hero .slogan {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 #skills .skills {
   flex-direction: column;

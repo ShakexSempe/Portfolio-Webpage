@@ -267,7 +267,25 @@
             // end of button hover, focus and active states
         }
 
-        // end of welcome section button & shadow 
+        // SLOGAN 
+        .slogan {
+            // border: 1px solid #fff;
+            position: absolute;
+            bottom: 20vh;
+            left: 0;
+            padding: 0 5vw;
+            width: 100%;
+
+            p {
+                color: #ffff;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            @media (min-width: 1024px) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
     }
 }
 // END OF HERO
