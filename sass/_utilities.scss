@@ -266,26 +266,25 @@ hamburger
 // back to top button
 .top-link {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 5vh;
+    right: 5vw;
     // background-image: linear-gradient(0deg, rgb(0, 0, 0), #dc143c);
     background: $button-crimson;
     display: grid;
     place-items: center;
-    border-radius: 5px;
+    border-radius: .25rem;
     // animation: bounce 2s ease-in-out infinite;
     transition: .5s ease-in;
     opacity: 1;
-    transform: translateY(10vh);
+    transform: translateY(15vh);
     // visibility: hidden;
     z-index: 30;
-    box-shadow: inset 2px 2px 3px #ddda,
-                inset -2px -2px 3px #000a;
+    box-shadow: $box-light-top-sm;
     
     i {
         color: #ddd;
-        padding: .3em;
-        font-size: 1.5em;
+        padding: .5rem;
+        font-size: 1rem;
     }
     &.show-link {
         transition: all .5s ease-in-out;

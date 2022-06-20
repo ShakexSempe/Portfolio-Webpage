@@ -130,7 +130,7 @@
         // end of animated h1 
         // welcome section button & shadow
         #cta-header {
-            font-size: 1.3em;
+            font-size: 1.5rem;
 
             @media (min-width: 768px) {
                 font-size: 1.5em;
@@ -212,7 +212,7 @@
                 display: inline-block;
                 text-transform: uppercase;
                 color: $text-light;
-                font-size: 2em;
+                font-size: 2rem;
                 font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
                 animation-delay: calc(1s + .2s * var(--i));
