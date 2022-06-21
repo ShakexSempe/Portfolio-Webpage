@@ -23,47 +23,51 @@ const date = document.querySelector('.date');
 console.log(date);
 // INTERSECTION OBSERVER
 const brand = document.querySelector('.brand');
-const sectionOne = document.querySelector('.welcome-section');
-const sectionOneOptions = {
-    rootMargin: "-300px 0px 0px 0px"
+const main = document.getElementById('main');
+const mainOptions = {
+    rootMargin: "0px 0px -70% 0px"
 };
 
 // ********** END OF VARIABLES ************
 
 // ********** INTERSECTION OBSERVER ************
-const sectionOneObserver = new IntersectionObserver(
+const mainObserver = new IntersectionObserver(
   function(
-      entries, sectionOneObserver
+      entries, mainObserver
   ) {
       entries.forEach(entry => {
           if(!entry.isIntersecting) {
               // header.style.backgroundColor = "red";
-              header.classList.add("header-io");
-              hamburger.classList.remove("no-pulse");
-          } else {
               header.classList.remove("header-io");
               hamburger.classList.add("no-pulse");
+              topLink.classList.remove('show-link');
+              console.log("main NOT IO")
+          } else {
+              header.classList.add("header-io");
+              hamburger.classList.remove("no-pulse");
+              console.log("main IS IO");
+              topLink.classList.add('show-link');
             
           }
       });
-  }, sectionOneOptions
+  }, mainOptions
 );
 
-sectionOneObserver.observe(sectionOne);
+mainObserver.observe(main);
 
 
 // BACK TO TOP
-document.addEventListener("scroll", () => {
-  // scroll variables
-const scroll_position = window.scrollY;
-const scrollHeight = window.pageYOffset;
-// top-link ()
-  if(scrollHeight > 200) {
-    topLink.classList.add('show-link');
-  } else {
-    topLink.classList.remove('show-link');
-  };
-});
+// document.addEventListener("scroll", () => {
+//   // scroll variables
+// const scroll_position = window.scrollY;
+// const scrollHeight = window.pageYOffset;
+// // top-link ()
+//   if(scrollHeight > 200) {
+//     topLink.classList.add('show-link');
+//   } else {
+//     topLink.classList.remove('show-link');
+//   };
+// });
 // end of background and back-to-top link
 
 // HAMBURGER SELECT

@@ -227,6 +227,7 @@ hamburger
   padding: 0.5rem;
   border-radius: 1rem;
   text-align: center;
+  text-transform: capitalize;
 }
 
 [data-scroll] {
@@ -816,7 +817,8 @@ hamburger
   height: 100vh;
   position: sticky;
   top: 8vh;
-  padding: 5vh 0;
+  top: 0;
+  padding: 10vh 0;
   background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
 }
 #menu .menu-section .menu-title {
@@ -2748,7 +2750,6 @@ hamburger
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5vh;
 }
 
 body {
