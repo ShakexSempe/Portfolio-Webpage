@@ -342,12 +342,18 @@
             gap: 1rem;
             @media (min-width: 820px){
                 flex-direction: row;
+                width: 30rem;
+
+                .btn {
+                    padding: 1rem 0;
+                }
             }
 
             .btn {
                 width: 100%;
                 display: block;
                 color: $span-gold;
+                padding: .5rem 0;
 
                 &.btn-page {
                     width: 50%;
