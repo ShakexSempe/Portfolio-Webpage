@@ -289,3 +289,25 @@
     }
 }
 // END OF HERO
+
+// MENU 
+#menu {
+    border: 2px solid yellow;
+    min-height: 100vh;
+    padding: 0;
+
+    .menu-section {
+        border: 2px solid red;
+        height: 100vh;
+
+        &#menu-1 {
+            background: green;
+        }
+        &#menu-2 {
+            background: pink;
+        }
+        &#menu-3 {
+            background: blue;
+        }
+    }
+}

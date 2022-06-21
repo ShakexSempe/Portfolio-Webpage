@@ -800,6 +800,25 @@ hamburger
   }
 }
 
+#menu {
+  border: 2px solid yellow;
+  min-height: 100vh;
+  padding: 0;
+}
+#menu .menu-section {
+  border: 2px solid red;
+  height: 100vh;
+}
+#menu .menu-section#menu-1 {
+  background: green;
+}
+#menu .menu-section#menu-2 {
+  background: pink;
+}
+#menu .menu-section#menu-3 {
+  background: blue;
+}
+
 #skills .skills {
   flex-direction: column;
   justify-content: flex-start;
@@ -855,7 +874,6 @@ hamburger
 #skills .skills-top .skills-info p {
   color: #f4f4f4;
   font-size: 0.9rem;
-  font-size: 1rem;
   line-height: 1.6;
   font-weight: 500;
   background: transparent;
