@@ -1,5 +1,6 @@
 // HERO
 #home {
+    padding: 0;
     background-color: $overlay-blue-dark;
     background: $overlay-dark;
     position: relative;
@@ -29,13 +30,45 @@
         @media (max-width: 1024px) {
             // background-position: 15% 50%;
             opacity: 1;
-            background-size: cover;
-            background-image: url('../img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg');
+            // background-size: cover;
+            // background-image: url('../img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg');
         }
     }
     
     .hero {
-        // cursor: grab;
+        overflow: hidden;
+        min-height: 100vh;
+        position: relative;
+        .hero-bg {
+            @media (min-width: 820px){
+                display: none;
+            }
+            // border: 2px solid red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            mix-blend-mode: overlay;
+            // &::after {
+            //     position: absolute;
+            //     content: '';
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: $overlay-dark;
+            //     background: #000a;
+            //     // mix-blend-mode: overlay;
+
+            // }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
         // ANIMATED INTRO
         #hero-h1 {
             // margin: 1em auto;
@@ -283,6 +316,7 @@
                 }
             }
             @media (min-width: 1024px) {
+                bottom: 10vh;
                 left: 50%;
                 transform: translateX(-50%);
             }

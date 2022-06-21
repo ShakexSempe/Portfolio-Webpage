@@ -614,6 +614,7 @@ hamburger
 }
 
 #home {
+  padding: 0;
   background-color: #29323c;
   background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
   position: relative;
@@ -646,9 +647,30 @@ hamburger
 @media (max-width: 1024px) {
   #home::after {
     opacity: 1;
-    background-size: cover;
-    background-image: url("../img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg");
   }
+}
+#home .hero {
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+#home .hero .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  mix-blend-mode: overlay;
+}
+@media (min-width: 820px) {
+  #home .hero .hero-bg {
+    display: none;
+  }
+}
+#home .hero .hero-bg img {
+  width: 100%;
+  height: 100%;
 }
 #home .hero #hero-h1 {
   background: transparent;
@@ -851,6 +873,7 @@ hamburger
 }
 @media (min-width: 1024px) {
   #home .hero .slogan {
+    bottom: 10vh;
     left: 50%;
     transform: translateX(-50%);
   }
