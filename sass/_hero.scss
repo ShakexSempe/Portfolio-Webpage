@@ -23,6 +23,7 @@
         @media (min-width: 1024px) {
             background-position: left;
             background-size: contain;
+            background-attachment: fixed;
             background-image: url(../img/shakexblue-min.jpg);
         }
         @media (max-width: 1024px) {
@@ -292,22 +293,76 @@
 
 // MENU 
 #menu {
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
     min-height: 100vh;
     padding: 0;
 
     .menu-section {
-        border: 2px solid red;
+        // border: 2px solid red;
         height: 100vh;
+        position: sticky;
+        top: 8vh;
+        padding: 5vh 0;
+        background: $overlay-dark;
+        // MENU IMAGE
 
-        &#menu-1 {
-            background: green;
+        // MENU TITLE H2 & H3
+        .menu-title {
+            // border: 2px solid #fff;
+            color: #fff;
+            text-align: center;
+            text-transform: capitalize;
+
+            h2 {
+                margin-bottom: .5rem;
+            }
         }
-        &#menu-2 {
-            background: pink;
+        // MENU CONTENT P
+        .menu-content {
+            margin: 1rem 5vw 0;
+
+            p {
+                // border: 1px solid yellow;
+                color: #f4f4f4;
+            }
         }
-        &#menu-3 {
-            background: blue;
+        // MENU CTA 
+        .menu-cta {
+            // border: 1px solid red;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 20rem;
+            position: absolute;
+            bottom: 15vh;
+            left: 50%;
+            transform: translateX(-50%);
+            gap: 1rem;
+            @media (min-width: 820px){
+                flex-direction: row;
+            }
+
+            .btn {
+                width: 100%;
+                display: block;
+                color: $span-gold;
+
+                &.btn-page {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
         }
+        // MENU IMAGES
+        // &#menu-1 {
+        //     background: green;
+        // }
+        // &#menu-2 {
+        //     background: pink;
+        // }
+        // &#menu-3 {
+        //     background: yellow;
+        // }
     }
 }

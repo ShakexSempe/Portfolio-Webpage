@@ -222,6 +222,13 @@ hamburger
   transition: 0.2s;
 }
 
+.btn {
+  border: 2px solid #000;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
 [data-scroll] {
   transition: 1s;
   transform: scale(0.5);
@@ -584,6 +591,7 @@ hamburger
   #home::after {
     background-position: left;
     background-size: contain;
+    background-attachment: fixed;
     background-image: url(../img/shakexblue-min.jpg);
   }
 }
@@ -801,22 +809,55 @@ hamburger
 }
 
 #menu {
-  border: 2px solid yellow;
   min-height: 100vh;
   padding: 0;
 }
 #menu .menu-section {
-  border: 2px solid red;
   height: 100vh;
+  position: sticky;
+  top: 8vh;
+  padding: 5vh 0;
+  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
 }
-#menu .menu-section#menu-1 {
-  background: green;
+#menu .menu-section .menu-title {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
 }
-#menu .menu-section#menu-2 {
-  background: pink;
+#menu .menu-section .menu-title h2 {
+  margin-bottom: 0.5rem;
 }
-#menu .menu-section#menu-3 {
-  background: blue;
+#menu .menu-section .menu-content {
+  margin: 1rem 5vw 0;
+}
+#menu .menu-section .menu-content p {
+  color: #f4f4f4;
+}
+#menu .menu-section .menu-cta {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20rem;
+  position: absolute;
+  bottom: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 1rem;
+}
+@media (min-width: 820px) {
+  #menu .menu-section .menu-cta {
+    flex-direction: row;
+  }
+}
+#menu .menu-section .menu-cta .btn {
+  width: 100%;
+  display: block;
+  color: #ead2a1;
+}
+#menu .menu-section .menu-cta .btn.btn-page {
+  width: 50%;
+  margin: 0 auto;
 }
 
 #skills .skills {
