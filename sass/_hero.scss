@@ -336,6 +336,7 @@
         height: 100vh;
         padding: 10vh 0;
         background: $overlay-dark;
+        position: relative;
         // MENU IMAGE
 
         // MENU TITLE H2 & H3
@@ -347,6 +348,10 @@
 
             h2 {
                 margin-bottom: .5rem;
+            }
+
+            h3 {
+                color: $span-gold;
             }
         }
         // MENU CONTENT P
@@ -360,6 +365,7 @@
         }
         // MENU CTA 
         .menu-cta {
+            z-index: 5;
             // border: 1px solid red;
             padding: 1rem 0;
             display: flex;
@@ -367,7 +373,7 @@
             justify-content: space-between;
             width: 20rem;
             position: absolute;
-            bottom: 15vh;
+            bottom: 10vh;
             left: 50%;
             transform: translateX(-50%);
             gap: 1rem;

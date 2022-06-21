@@ -887,6 +887,7 @@ hamburger
   height: 100vh;
   padding: 10vh 0;
   background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  position: relative;
 }
 #menu .menu-section .menu-title {
   color: #fff;
@@ -896,6 +897,9 @@ hamburger
 #menu .menu-section .menu-title h2 {
   margin-bottom: 0.5rem;
 }
+#menu .menu-section .menu-title h3 {
+  color: #ead2a1;
+}
 #menu .menu-section .menu-content {
   margin: 1rem 5vw 0;
 }
@@ -903,13 +907,14 @@ hamburger
   color: #f4f4f4;
 }
 #menu .menu-section .menu-cta {
+  z-index: 5;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 20rem;
   position: absolute;
-  bottom: 15vh;
+  bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
   gap: 1rem;
