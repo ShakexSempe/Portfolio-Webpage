@@ -885,9 +885,6 @@ hamburger
 }
 #menu .menu-section {
   height: 100vh;
-  position: sticky;
-  top: 8vh;
-  top: 0;
   padding: 10vh 0;
   background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
 }
