@@ -307,8 +307,10 @@ hamburger
 #header.header-io .header #navbar .brand {
   opacity: 1;
   transform: translateY(0);
-  transition: 1s;
-  transition-delay: 0.4s;
+  transition: 0.5s;
+}
+#header.header-io .header #navbar .nav-list ul {
+  transform: translateY(0);
 }
 #header.header-io.active-header {
   background: #29323c;
@@ -483,6 +485,10 @@ hamburger
   #header .header #navbar .nav-list .links-container .nav-logo {
     width: 20%;
   }
+}
+#header .header #navbar .nav-list ul {
+  transform: translateY(-10vh);
+  transition: 0.5s;
 }
 #header .header #navbar .nav-list ul li {
   list-style: none;
@@ -868,6 +874,7 @@ hamburger
   color: #ffff;
   text-transform: capitalize;
   text-align: center;
+  text-align: left;
 }
 #home .hero .slogan p a {
   color: #ead2a1;
@@ -877,6 +884,9 @@ hamburger
     bottom: 10vh;
     left: 50%;
     transform: translateX(-50%);
+  }
+  #home .hero .slogan p {
+    text-align: center;
   }
 }
 
@@ -889,10 +899,12 @@ hamburger
   padding: 10vh 0;
   background-color: #29323c;
   position: relative;
+  text-align: center;
+  text-align: left;
 }
 #menu .menu-section .menu-title {
   color: #fff;
-  text-align: center;
+  padding: 0 5vw;
   text-transform: capitalize;
 }
 #menu .menu-section .menu-title h2 {
@@ -914,16 +926,18 @@ hamburger
   flex-direction: column;
   justify-content: space-between;
   width: 20rem;
+  text-align: left;
   position: absolute;
-  bottom: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 5vh;
+  left: 5vw;
   gap: 1rem;
 }
 @media (min-width: 820px) {
   #menu .menu-section .menu-cta {
     flex-direction: row;
     width: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #menu .menu-section .menu-cta .btn {
     padding: 1rem 0;
@@ -937,7 +951,11 @@ hamburger
 }
 #menu .menu-section .menu-cta .btn.btn-page {
   width: 50%;
-  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #menu .menu-section {
+    text-align: center;
+  }
 }
 
 #skills .skills {

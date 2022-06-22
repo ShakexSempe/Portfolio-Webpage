@@ -17,8 +17,13 @@
                 .brand {
                     opacity: 1;
                     transform: translateY(0);
-                    transition: 1s;
-                    transition-delay: .4s;
+                    transition: .5s;
+                }
+
+                .nav-list {
+                    ul {
+                        transform: translateY(0);
+                    }
                 }
             }
         }
@@ -238,8 +243,11 @@
                     }
 
                 }
-                // mobile screens style
+                // DESKTOP UL
                 ul {
+                    // border: 2px solid red;
+                    transform: translateY(-10vh);
+                    transition: .5s;
                     li {
                         list-style: none;
                         display: flex;

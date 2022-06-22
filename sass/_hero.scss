@@ -301,14 +301,19 @@
                 color: #ffff;
                 text-transform: capitalize;
                 text-align: center;
+                text-align: left;
                 a {
                     color: $span-gold;
                 }
             }
+            // DESKTOP SLOGAN
             @media (min-width: 1024px) {
                 bottom: 10vh;
                 left: 50%;
                 transform: translateX(-50%);
+                p {
+                    text-align: center;
+                }
             }
         }
     }
@@ -327,13 +332,16 @@
         padding: 10vh 0;
         background-color: $overlay-blue-dark;
         position: relative;
+        text-align: center;
+        text-align: left;
         // MENU IMAGE
 
         // MENU TITLE H2 & H3
         .menu-title {
             // border: 2px solid #fff;
             color: #fff;
-            text-align: center;
+            // text-align: center;
+            padding: 0 5vw;
             text-transform: capitalize;
 
             h2 {
@@ -362,15 +370,19 @@
             flex-direction: column;
             justify-content: space-between;
             width: 20rem;
+            text-align: left;
             position: absolute;
-            bottom: 10vh;
-            left: 50%;
-            transform: translateX(-50%);
+            bottom: 5vh;
+            // left: 50%;
+            // transform: translateX(-50%);
+            left: 5vw;
             gap: 1rem;
+            // DESKTOP MENU CTA
             @media (min-width: 820px){
                 flex-direction: row;
                 width: 30rem;
-
+                left: 50%;
+            transform: translateX(-50%);
                 .btn {
                     padding: 1rem 0;
                 }
@@ -384,7 +396,7 @@
 
                 &.btn-page {
                     width: 50%;
-                    margin: 0 auto;
+                    // margin: 0 auto;
                 }
             }
         }
@@ -398,5 +410,10 @@
         // &#menu-3 {
         //     background: yellow;
         // }
+
+        // DESKTOP MENU SECTION STYLE
+        @media (min-width:  768px) {
+            text-align: center;
+        }
     }
 }
