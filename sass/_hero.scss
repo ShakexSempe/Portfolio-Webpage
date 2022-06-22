@@ -426,13 +426,6 @@
                     object-fit: contain;
                 }
             }
-            // RESPONSIVE SECTION
-            &.engage {
-                mix-blend-mode: normal;
-                img {
-                    object-fit: contain;
-                }
-            }
             // HTML
             &.html {
                 // mix-blend-mode: normal;
@@ -440,6 +433,14 @@
                     object-fit: contain;
                 }
             }
+            // JAVASCRIPT
+            &.engage {
+                mix-blend-mode: normal;
+                img {
+                    object-fit: contain;
+                }
+            }
+            
         }
         
 
