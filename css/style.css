@@ -645,7 +645,7 @@ hamburger
 }
 #home .hero #hero-h1 {
   background: transparent;
-  padding: 0;
+  padding: 5vh 0;
   border-radius: 5px;
   position: absolute;
   width: max-content;
@@ -729,6 +729,11 @@ hamburger
   border-radius: 1rem;
   border: none;
   outline: none;
+  opacity: 0;
+  transform: translateY(10vh);
+  transform-style: preserve-3d;
+  animation: show-cta 4s 5.5s;
+  animation-fill-mode: forwards;
   transition: 0.3s linear;
   cursor: pointer;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
@@ -744,7 +749,7 @@ hamburger
 @keyframes show-cta {
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 }
 #home .hero #cta-header::before, #home .hero #cta-header::after {
@@ -799,7 +804,7 @@ hamburger
 @media (max-width: 820px) {
   #home .hero #cta-header:active {
     transition: 0.2s;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   #home .hero #cta-header:active::before {
     opacity: 0;
@@ -811,7 +816,7 @@ hamburger
 @media (min-width: 820px) {
   #home .hero #cta-header:hover {
     transition: 0.2s;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   #home .hero #cta-header:hover::before {
     opacity: 0;
