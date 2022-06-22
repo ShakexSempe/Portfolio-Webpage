@@ -2,7 +2,6 @@
 #home {
     padding: 0;
     background-color: $overlay-blue-dark;
-    background: $overlay-dark;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -22,9 +21,11 @@
         opacity: .7;
         
         @media (min-width: 1024px) {
+            width: 50%;
             background-position: left;
-            background-size: contain;
+            background-size: contain;;
             background-attachment: fixed;
+            opacity: 1;
             background-image: url(../img/shakexblue-min.jpg);
         }
         @media (max-width: 1024px) {
@@ -39,34 +40,26 @@
         overflow: hidden;
         min-height: 100vh;
         position: relative;
+        // HERO IMAGE CONTAINER WITH OVERLAY BLEND MODE
         .hero-bg {
-            @media (min-width: 820px){
-                display: none;
+            @media (min-width: 1024px){
+                // display: none;
+                width: 100%;
+            
             }
             // border: 2px solid red;
             position: absolute;
             top: 0;
-            left: 0;
+            right: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
             mix-blend-mode: overlay;
-            // &::after {
-            //     position: absolute;
-            //     content: '';
-            //     top: 0;
-            //     left: 0;
-            //     width: 100%;
-            //     height: 100%;
-            //     background: $overlay-dark;
-            //     background: #000a;
-            //     // mix-blend-mode: overlay;
-
-            // }
 
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
         // ANIMATED INTRO
@@ -80,7 +73,7 @@
             top: 25vh;
             left: 5vw;
 
-            @media (min-width: 1024px) {
+            @media (min-width: 600px) {
                 // display: flex;
                 // flex-direction: column;
                 // align-items: center;
@@ -90,7 +83,7 @@
             }
 
             h2 {
-                margin-bottom: .2em;
+                margin-bottom: .5rem;
                 display: block;
                 width: fit-content;
                 color: $text-white-e;
@@ -108,13 +101,13 @@
                     color: $text-light;
                     text-align: left;
                     font-size: 1.5em;
-                    opacity: 0;
-                    line-height: 1.3;
-                    animation: hero-span 5s ease-in-out;
-                    animation-fill-mode: forwards;
-                    animation-delay: calc(1s + .5s * var(--s));
-                    transition: 1s;
-                    transform-style: preserve-3d;
+                    // opacity: 0;
+                    // line-height: 1.3;
+                    // animation: hero-span 5s ease-in-out;
+                    // animation-fill-mode: forwards;
+                    // animation-delay: calc(1s + .5s * var(--s));
+                    // transition: 1s;
+                    // transform-style: preserve-3d;
 
                     /* HERO H1 INTRO ANIMATION */
                     @keyframes hero-span {
@@ -139,7 +132,7 @@
                         animation-delay: 4s;
                         animation-fill-mode: forwards;
                         margin: .5em 0;
-                        color: $span-gold;
+                        color: #ddd;
                         opacity: 0;
                         transform: scale(0.7);
                     }
@@ -181,12 +174,11 @@
             border-radius: 1rem;
             border: none;
             outline: none;
-            opacity: 0;
-            // transform: rotateX(-90deg);
-            transform: scale(.5);
-            transform-style: preserve-3d;
-            animation: show-cta 4s 5.5s;
-            animation-fill-mode: forwards;
+            // opacity: 0;
+            // transform: scale(.5);
+            // transform-style: preserve-3d;
+            // animation: show-cta 4s 5.5s;
+            // animation-fill-mode: forwards;
             // background-color: $button-background-grey;
             transition: .3s linear;
             cursor: pointer;
@@ -302,7 +294,7 @@
         .slogan {
             // border: 1px solid #fff;
             position: absolute;
-            bottom: 20vh;
+            bottom: 15vh;
             left: 0;
             padding: 0 5vw;
             width: 100%;
@@ -335,7 +327,7 @@
         // border: 2px solid red;
         height: 100vh;
         padding: 10vh 0;
-        background: $overlay-dark;
+        background-color: $overlay-blue-dark;
         position: relative;
         // MENU IMAGE
 
