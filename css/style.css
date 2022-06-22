@@ -849,11 +849,13 @@ hamburger
 }
 
 #menu {
+  border: 2px solid yellow;
   min-height: 100vh;
   padding: 0;
   z-index: 5;
 }
 #menu .menu-section {
+  border: 2px solid red;
   height: 100vh;
   padding: 10vh 0;
   background-color: #29323c;
@@ -862,120 +864,70 @@ hamburger
   text-align: left;
   isolation: isolate;
 }
-#menu .menu-section .menu-title {
-  color: #fff;
-  padding: 0 5vw;
+#menu .menu-section .menu-img figure {
+  overflow: hidden;
+  border: 1px solid green;
+  width: 100%;
+  height: 100%;
+}
+#menu .menu-section .menu-img figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#menu .menu-section .menu-content .menu-title {
   text-transform: capitalize;
 }
-#menu .menu-section .menu-title h2 {
-  margin-bottom: 0.5rem;
+#menu .menu-section .menu-content .menu-title h2 {
+  color: #fff;
 }
-#menu .menu-section .menu-title h3 {
-  color: #ead2a1;
-}
-#menu .menu-section .menu-content {
-  margin: 1rem 5vw 0;
-  display: none;
-}
-#menu .menu-section .menu-content p {
+#menu .menu-section .menu-content .menu-title p {
   color: #f4f4f4;
 }
-#menu .menu-section .menu-cta {
-  z-index: 5;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 20rem;
-  text-align: left;
-  position: absolute;
-  bottom: 5vh;
-  left: 5vw;
-  gap: 1rem;
-}
-@media (min-width: 820px) {
-  #menu .menu-section .menu-cta {
-    flex-direction: row;
-    width: 30rem;
-  }
-  #menu .menu-section .menu-cta .btn {
-    padding: 1rem 0;
-  }
-}
-#menu .menu-section .menu-cta .btn {
-  width: 100%;
-  display: block;
+#menu .menu-section .menu-content .menu-cta .btn {
   color: #ead2a1;
-  padding: 0.5rem 0;
 }
-#menu .menu-section .menu-cta .btn.btn-page {
-  width: 50%;
-}
-#menu .menu-section .menu-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  height: 17rem;
-  width: 17rem;
-  overflow: hidden;
-  z-index: -1;
-  mix-blend-mode: overlay;
-  mix-blend-mode: normal;
-}
-#menu .menu-section .menu-img img {
-  width: 100%;
-  height: 100%;
-  object-position: center;
-}
-#menu .menu-section .menu-img.devices {
-  mix-blend-mode: normal;
-}
-#menu .menu-section .menu-img.devices img {
-  object-fit: contain;
-}
-#menu .menu-section .menu-img.engage {
-  mix-blend-mode: normal;
-}
-#menu .menu-section .menu-img.engage img {
-  object-fit: contain;
-}
-#menu .menu-section .menu-img.html img {
-  object-fit: contain;
+@media (max-width: 1024px) {
+  #menu .menu-section .menu-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 19rem;
+    height: 19rem;
+  }
+  #menu .menu-section .menu-content .menu-title {
+    text-align: center;
+  }
+  #menu .menu-section .menu-content .menu-cta {
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid red;
+    width: 19rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  #menu .menu-section .menu-content .menu-cta .btn {
+    width: 100%;
+  }
+  #menu .menu-section .menu-content .menu-cta .btn.page-btn {
+    position: absolute;
+    bottom: -10vh;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media (min-width: 1024px) {
   #menu .menu-section {
-    text-align: left;
-    background: #29323c;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  #menu .menu-section:nth-child(odd) {
-    text-align: right;
+    display: flex;
+    position: relative;
   }
   #menu .menu-section .menu-img {
     display: none;
-  }
-  #menu .menu-section#menu-1 {
-    background-image: url("../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg");
-    background-size: contain;
-    background-position: left;
-  }
-  #menu .menu-section#menu-2 {
-    background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
-    background-position: right;
-  }
-  #menu .menu-section#menu-3 {
-    background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
-    background-position: left;
-    background-size: cover;
-  }
-  #menu .menu-section#menu-4 {
-    background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
-    background-position: right;
   }
 }
 

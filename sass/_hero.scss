@@ -320,12 +320,12 @@
 
 // MENU 
 #menu {
-    // border: 2px solid yellow;
+    border: 2px solid yellow;
     min-height: 100vh;
     padding: 0;
     z-index: 5;
     .menu-section {
-        // border: 2px solid red;
+        border: 2px solid red;
         height: 100vh;
         padding: 10vh 0;
         background-color: $overlay-blue-dark;
@@ -333,153 +333,123 @@
         text-align: center;
         text-align: left;
         isolation: isolate;
-        // MENU IMAGE
-
-        // MENU TITLE H2 & H3
-        .menu-title {
-            // border: 2px solid #fff;
-            color: #fff;
-            // text-align: center;
-            padding: 0 5vw;
-            text-transform: capitalize;
-
-            h2 {
-                margin-bottom: .5rem;
-            }
-
-            h3 {
-                color: $span-gold;
-            }
-        }
-        // MENU CONTENT P
-        .menu-content {
-            margin: 1rem 5vw 0;
-            display: none;
-            p {
-                // border: 1px solid yellow;
-                color: #f4f4f4;
-            }
-        }
-        // MENU CTA 
-        .menu-cta {
-            z-index: 5;
-            // border: 1px solid red;
-            padding: 1rem 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 20rem;
-            text-align: left;
-            position: absolute;
-            bottom: 5vh;
-            // left: 50%;
-            // transform: translateX(-50%);
-            left: 5vw;
-            gap: 1rem;
-
-            // DESKTOP MENU CTA
-            @media (min-width: 820px){
-                flex-direction: row;
-                width: 30rem;
-                // left: 50%;
-                // transform: translateX(-50%);
-                .btn {
-                    padding: 1rem 0;
-                }
-            }
-
-            .btn {
-                width: 100%;
-                display: block;
-                color: $span-gold;
-                padding: .5rem 0;
-
-                &.btn-page {
-                    width: 50%;
-                    // margin: 0 auto;
-                }
-            }
-        }
-
+        // GENERAL MENU IMG STYLE
         .menu-img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 100%;
-            height: 17rem;
-            width: 17rem;
-            // width: 100%;
-            overflow: hidden;
-            z-index: -1;
-            mix-blend-mode: overlay;
-            mix-blend-mode: normal;
-            img {
+            figure {
+                overflow: hidden;
+                border: 1px solid green;
                 width: 100%;
                 height: 100%;
-                object-position: center;
-                // object-fit: cover;
-            }
-            // RESPONSIVE SECTION
-            &.devices {
-                mix-blend-mode: normal;
                 img {
+                    width: 100%;
+                    height: 100%;
                     object-fit: contain;
                 }
             }
-            // JAVASCRIPT
-            &.engage {
-                mix-blend-mode: normal;
-                img {
-                    object-fit: contain;
+        }
+        // GENERAL CONTENT DIV STYLE
+        .menu-content {
+            .menu-title {
+                text-transform: capitalize;
+                h2 {
+                    color: #fff;
+                }
+
+                p {
+                    color: #f4f4f4;
                 }
             }
-            // HTML
-            &.html {
-                // mix-blend-mode: normal;
-                img {
-                    object-fit: contain;
+
+            .menu-cta {
+                .btn {
+                    color: $span-gold;
+                }
+            }
+        }
+        // MOBILE MENU SECTION
+        @media (max-width: 1024px){
+            // POSITION IMG DIV IN THE MIDDLE OF EACH MENU SECTION
+            .menu-img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 19rem;
+                height: 19rem;
+            }
+            
+            .menu-content {
+                .menu-title {
+                    text-align: center;
+                }
+                .menu-cta {
+                    position: absolute;
+                    bottom: 20vh;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border: 1px solid red;
+                    width: 19rem;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: .5rem;
+
+                    .btn {
+                        width: 100%;
+                        &.page-btn {
+                            position: absolute;
+                            bottom: -10vh;
+                            width: 50%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+
+        // DESKTOP MENU SECTION STYLE
+        @media (min-width: 1024px) {
+            display: flex;
+            position: relative;
+            .menu-img {
+                display: none;
+                figure {
                 }
             }
         }
         
 
         // DESKTOP MENU SECTION STYLE
-        @media (min-width: 1024px) {
-            text-align: left;
-            &:nth-child(odd){
-                text-align: right;
-            }
-            background: $overlay-blue-dark;
-            .menu-img {
-                display: none;
-            }
-            // GENERAL MENU BACKGROUND STYLE
-            background-repeat: no-repeat;
-            background-size: 50%;
-            background-position: center;
-            background-attachment: fixed;
-            // MENU IMAGES
-            &#menu-1 {
-                background-image: url("../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg");
-                background-size: contain;
-                background-position: left;
-            }
+        // @media (min-width: 1024px) {
+        //     .menu-img {
+        //         display: none;
+        //     }
+        //     // GENERAL MENU BACKGROUND STYLE
+        //     background-repeat: no-repeat;
+        //     background-size: 50%;
+        //     background-position: center;
+        //     background-attachment: fixed;
+        //     // MENU IMAGES
+        //     &#menu-1 {
+        //         background-image: url("../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg");
+        //         background-size: contain;
+        //         background-position: left;
+        //     }
             
-            &#menu-2 {
-                background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
-                background-position: right;
-            }
+        //     &#menu-2 {
+        //         background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+        //         background-position: right;
+        //     }
 
-            &#menu-3 {
-                background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
-                background-position: left;
-                background-size: cover;
-            }
-            &#menu-4 {
-                background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
-                background-position: right;
-            }
-        }
+        //     &#menu-3 {
+        //         background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
+        //         background-position: left;
+        //         background-size: cover;
+        //     }
+        //     &#menu-4 {
+        //         background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+        //         background-position: right;
+        //     }
+        // }
     }
 }
