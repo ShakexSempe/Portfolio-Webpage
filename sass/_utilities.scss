@@ -169,8 +169,7 @@ hamburger
 .progress-container {
     width: 100%;
     height: 3px;
-    background: transparent;
-    z-index: 2;
+    background: transparent;;
 }
 
 /* The progress bar (scroll indicator) */
@@ -178,6 +177,7 @@ hamburger
     height: 3px;
     background: $span-gold;
     opacity: .7;
+    opacity: 0;
     width: 0%;
 }
 /* end of progress bar*/
@@ -188,49 +188,6 @@ hamburger
 }
 /*end of bootstrap scrollbar*/
 
-
-/* TEXT-REFLECT CSS */
-// .section-title,
-// .section-title:before,
-// .text-reflect.section-title span {
-//     display: block;
-//     margin: 0;
-//     padding: 0;
-// }
-
-// .section-title,
-// .section-title:before,
-// .section-title:after {
-//     position: relative;
-    
-// }
-
-// .section-title {
-//     top: -8px;
-// }
-
-// .section-title:before {
-//     content: attr(data-text);
-//     top: 2.1em;
-//     transform: scale(1, -1);
-//     backface-visibility: visible;
-//     z-index: 1;
-
-// }
-
-// .section-title:after {
-//     content: '';
-//     display: block;
-//     top: -6px;
-//     left: 0;
-//     width: 100%;
-//     height: 60px;
-//     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.589) 0%, rgb(255, 255, 255) 50%);
-//     z-index: 2;
-// }
-/* END OF TEXT-REFLECT CSS */
-// end of section-title
-/* section title span animation */
 .section-title span {
     position: relative;
     color: $overlay-blue-dark;
@@ -354,6 +311,7 @@ hamburger
     }
     &::before {
         box-shadow: $box-light-top-sm;
+        background: linear-gradient(0deg, #000a, rgba(0, 0, 0, .300));
     }
     &::after {
         box-shadow: $box-light-top-sm-hover;
@@ -378,6 +336,12 @@ hamburger
         }
     }
 }
+
+
+
+
+
+
 // SCROLL OUT
 [data-scroll] {
     transition: 1s;

@@ -5,36 +5,36 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    &::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position: left;
-        background-size: cover;
-        z-index: -1;
-        mix-blend-mode: overlay;
-        opacity: .7;
+    // &::after {
+    //     position: absolute;
+    //     content: '';
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-position: left;
+    //     background-size: cover;
+    //     z-index: -1;
+    //     mix-blend-mode: overlay;
+    //     opacity: .7;
         
-        @media (min-width: 1024px) {
-            width: 50%;
-            background-position: left;
-            background-size: contain;;
-            background-attachment: fixed;
-            opacity: 1;
-            background-image: url(../img/shakexblue-min.jpg);
-        }
-        @media (max-width: 1024px) {
-            // background-position: 15% 50%;
-            opacity: 1;
-            // background-size: cover;
-            // background-image: url('../img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg');
-        }
-    }
+    //     @media (min-width: 1024px) {
+    //         width: 50%;
+    //         background-position: left;
+    //         background-size: contain;;
+    //         background-attachment: fixed;
+    //         opacity: 1;
+    //         background-image: url(../img/shakexblue-min.jpg);
+    //     }
+    //     @media (max-width: 1024px) {
+    //         // background-position: 15% 50%;
+    //         opacity: 1;
+    //         // background-size: cover;
+    //         // background-image: url('../img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg');
+    //     }
+    // }
     
     .hero {
         overflow: hidden;
@@ -44,7 +44,6 @@
         .hero-bg {
             @media (min-width: 1024px){
                 // display: none;
-                width: 100%;
             
             }
             // border: 2px solid red;
@@ -66,14 +65,17 @@
         #hero-h1 {
             // margin: 1em auto;
             background: transparent;
-            padding: 0;
+            padding: 0; 
             border-radius: 5px;
             position: absolute;
             // border: 1px solid #fff;
-            top: 20vh;
+            width: max-content;
+            text-transform: capitalize;
+            top: 15vh;
             left: 5vw;
 
             @media (min-width: 600px) {
+                // max-width: 50%;
                 // display: flex;
                 // flex-direction: column;
                 // align-items: center;
@@ -83,25 +85,20 @@
             }
 
             h2 {
-                font-size: 1.5rem;
-                margin-bottom: .5rem;
+                font-size: 2.5rem;
+                line-height: 1.4;
+                // margin-bottom: .5rem;
                 display: block;
                 width: fit-content;
                 color: $text-white-e;
                 font-family: 'Philosopher', sans-serif;
 
-                // desktop font size
-                @media (min-width: 768px) {
-                    font-size: 2rem;
-                }
-
-                // end of desktop font size
-
                 span {
                     display: inline-block;
                     color: $text-light;
                     text-align: left;
-                    font-size: 1.5em;
+                    // font-size: 2rem;
+                    margin: .5rem 0;
                     opacity: 0;
                     line-height: 1.3;
                     animation: hero-span 5s ease-in-out;
@@ -109,7 +106,9 @@
                     animation-delay: calc(1s + .5s * var(--s));
                     transition: 1s;
                     transform-style: preserve-3d;
-
+                    @media (min-width: 768px) {
+                        font-size: 3rem;
+                    }
                     /* HERO H1 INTRO ANIMATION */
                     @keyframes hero-span {
                         10% {
@@ -122,7 +121,7 @@
                     }
                 }
             }
-                // "AKA" SPAN
+                // // "AKA" SPAN
                 #aka {
                     span {
                         font-family: 'Philosopher', sans-serif;
@@ -132,7 +131,6 @@
                         animation: aka 5s ease alternate;
                         animation-delay: 4s;
                         animation-fill-mode: forwards;
-                        margin: .5em 0;
                         color: #ddd;
                         opacity: 0;
                         transform: scale(0.7);
@@ -155,11 +153,10 @@
         // end of animated h1 
         // welcome section button & shadow
         #cta-header {
-            font-size: 1.5rem;
 
             @media (min-width: 768px) {
                 font-size: 1.5em;
-                width: 100%;
+                width: 20rem;
                 text-align: center;
             }
             background: $span-crimson;
@@ -173,11 +170,11 @@
             border-radius: 1rem;
             border: none;
             outline: none;
-            opacity: 0;
-            transform: scale(.5);
-            transform-style: preserve-3d;
-            animation: show-cta 4s 5.5s;
-            animation-fill-mode: forwards;
+            // opacity: 0;
+            // transform: scale(.5);
+            // transform-style: preserve-3d;
+            // animation: show-cta 4s 5.5s;
+            // animation-fill-mode: forwards;
             transition: .3s linear;
             cursor: pointer;
             -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
@@ -233,8 +230,8 @@
                 display: inline-block;
                 text-transform: uppercase;
                 color: $text-light;
-                font-size: 2rem;
-                font-weight: 700;
+                font-size: 2.5rem;
+                // font-weight: 700;
                 animation: animate 3s ease-in-out infinite;
                 animation-delay: calc(1s + .2s * var(--i));
 
@@ -313,6 +310,7 @@
                 transform: translateX(-50%);
                 p {
                     text-align: center;
+                    text-align: left;
                 }
             }
         }
@@ -383,8 +381,8 @@
             @media (min-width: 820px){
                 flex-direction: row;
                 width: 30rem;
-                left: 50%;
-            transform: translateX(-50%);
+                // left: 50%;
+                // transform: translateX(-50%);
                 .btn {
                     padding: 1rem 0;
                 }
@@ -409,27 +407,22 @@
             left: 50%;
             transform: translate(-50%, -50%);
             height: 100%;
-            width: 20rem;
-            width: 100%;
+            height: 17rem;
+            width: 17rem;
+            // width: 100%;
             overflow: hidden;
             z-index: -1;
+            mix-blend-mode: overlay;
             mix-blend-mode: normal;
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
-                object-fit: contain;
+                object-position: center;
+                // object-fit: cover;
             }
             // RESPONSIVE SECTION
             &.devices {
                 mix-blend-mode: normal;
-                img {
-                    object-fit: contain;
-                }
-            }
-            // HTML
-            &.html {
-                mix-blend-mode: overlay;
                 img {
                     object-fit: contain;
                 }
@@ -441,12 +434,18 @@
                     object-fit: contain;
                 }
             }
-            
+            // HTML
+            &.html {
+                // mix-blend-mode: normal;
+                img {
+                    object-fit: contain;
+                }
+            }
         }
         
 
         // DESKTOP MENU SECTION STYLE
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             text-align: left;
             &:nth-child(odd){
                 text-align: right;
@@ -454,9 +453,6 @@
             background: $overlay-blue-dark;
             .menu-img {
                 display: none;
-            }
-            .menu-content {
-                // border: 2px solid red;
             }
             // GENERAL MENU BACKGROUND STYLE
             background-repeat: no-repeat;
