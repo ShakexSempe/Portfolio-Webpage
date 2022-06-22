@@ -433,6 +433,13 @@
                     object-fit: contain;
                 }
             }
+            // HTML
+            &.html {
+                // mix-blend-mode: normal;
+                img {
+                    object-fit: contain;
+                }
+            }
         }
         
 
