@@ -973,20 +973,36 @@ hamburger
 }
 @media (min-width: 768px) {
   #menu .menu-section {
-    text-align: center;
+    text-align: left;
+    background: #29323c;
     background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #menu .menu-section:nth-child(odd) {
+    text-align: right;
   }
   #menu .menu-section .menu-img {
     display: none;
   }
   #menu .menu-section#menu-1 {
-    background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+    background-image: url("../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg");
+    background-size: contain;
+    background-position: left;
   }
   #menu .menu-section#menu-2 {
-    background: pink;
+    background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+    background-position: right;
   }
   #menu .menu-section#menu-3 {
-    background: yellow;
+    background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
+    background-position: left;
+    background-size: cover;
+  }
+  #menu .menu-section#menu-4 {
+    background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+    background-position: right;
   }
 }
 

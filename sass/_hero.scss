@@ -425,24 +425,42 @@
 
         // DESKTOP MENU SECTION STYLE
         @media (min-width: 768px) {
-            text-align: center;
-
+            text-align: left;
+            &:nth-child(odd){
+                text-align: right;
+            }
+            background: $overlay-blue-dark;
             .menu-img {
                 display: none;
             }
+            .menu-content {
+                // border: 2px solid red;
+            }
             // GENERAL MENU BACKGROUND STYLE
             background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: center;
+            background-attachment: fixed;
             // MENU IMAGES
             &#menu-1 {
-                background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+                background-image: url("../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg");
+                background-size: contain;
+                background-position: left;
             }
-
+            
             &#menu-2 {
-                background: pink;
+                background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+                background-position: right;
             }
 
             &#menu-3 {
-                background: yellow;
+                background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
+                background-position: left;
+                background-size: cover;
+            }
+            &#menu-4 {
+                background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+                background-position: right;
             }
         }
     }
