@@ -901,6 +901,7 @@ hamburger
   position: relative;
   text-align: center;
   text-align: left;
+  isolation: isolate;
 }
 #menu .menu-section .menu-title {
   color: #fff;
@@ -952,9 +953,39 @@ hamburger
 #menu .menu-section .menu-cta .btn.btn-page {
   width: 50%;
 }
+#menu .menu-section .menu-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 20rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+#menu .menu-section .menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (min-width: 768px) {
   #menu .menu-section {
     text-align: center;
+    background-repeat: no-repeat;
+  }
+  #menu .menu-section .menu-img {
+    display: none;
+  }
+  #menu .menu-section#menu-1 {
+    background-image: url("../img/altumcode-U0tBTn8UR8I-unsplash.jpg");
+  }
+  #menu .menu-section#menu-2 {
+    background: pink;
+  }
+  #menu .menu-section#menu-3 {
+    background: yellow;
   }
 }
 
