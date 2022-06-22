@@ -1001,13 +1001,9 @@ hamburger
   }
 }
 #skills .skills-top {
-  width: 90%;
   text-align: left;
-  padding: 0.5rem 0.3rem;
   margin: 2em auto;
-  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
   border-radius: 0.5rem;
-  border: none;
   position: relative;
   z-index: 30;
 }
@@ -1019,40 +1015,33 @@ hamburger
     text-align: center;
   }
 }
-#skills .skills-top::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
+#skills .skills-top .skills-info {
+  padding: 1rem 0.5rem 2rem 5vw;
 }
 #skills .skills-top .skills-info p {
   color: #f4f4f4;
-  font-size: 0.85rem;
+  color: #29323c;
+  font-size: 0.95rem;
   line-height: 1.6;
-  font-weight: 500;
   background: transparent;
   overflow: hidden;
 }
 @media (min-width: 768px) {
   #skills .skills-top .skills-info p {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 #skills .skills-top .skills-info p span {
-  color: #ead2a1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: inherit;
 }
 #skills .skills-top .skills-drop {
   text-align: center;
   color: #ead2a1;
 }
 #skills .skills-top .skills-drop .skills-drop-p {
-  color: #ead2a1;
+  font-weight: 600;
   font-size: 0.9rem;
 }
 #skills .skills-top::after {
@@ -2879,10 +2868,8 @@ body a {
 }
 body p {
   color: #000;
-  margin-top: 5px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0.05em;
 }
 body span {
   color: #dc143c;

@@ -36,45 +36,49 @@
             padding: 5vh 5vw;
             text-align: center;
         }
-        width: 90%;
+        // width: 90%;
+        // border: 2px solid red;
         text-align: left;
-        padding: .5rem .3rem;
+        // padding: .5rem .3rem;
         margin: 2em auto;
         // background-image: var(--overlay);
         // background: #48556388;
-        background: $overlay-dark;
+        // background: $overlay-dark;
         border-radius: .5rem;
-        border: none;
+        // border: none;
         position: relative;
         z-index: 30;
         // SKILLS TOP BOX SHADOW
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            box-shadow: $box-light-top-sm;
-            border-radius: .5rem;
-            border: none;
-            outline: none;
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     box-shadow: $box-light-top-sm;
+        //     border-radius: .5rem;
+        //     border: none;
+        //     outline: none;
+        // }
         .skills-info {
+            padding: 1rem .5rem 2rem 5vw;
         p {
             color: $text-light;
-            font-size: .85rem;
+            color: $overlay-blue-dark;
+            font-size: .95rem;
+            // font-size: 1rem;
             line-height: 1.6;
-            font-weight: 500;
             @media (min-width: 768px){
-                font-size: 1em;
+                font-size: 1rem;
             }
             background: transparent;
             overflow: hidden;
 
             span {
-                // font-size: 1rem;
-                color: $span-gold;
+                font-size: 1rem;
+                font-weight: 600;
+                color: inherit;
             }
             
         }
@@ -83,7 +87,7 @@
             text-align: center;
             color: $span-gold;
             .skills-drop-p {
-                color: $span-gold;
+                font-weight: 600;
                 font-size: .9rem;
             }
         }
