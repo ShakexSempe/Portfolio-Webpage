@@ -679,7 +679,7 @@ hamburger
   padding: 0;
   border-radius: 5px;
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   left: 5vw;
 }
 @media (min-width: 600px) {
@@ -748,7 +748,7 @@ hamburger
   text-align: left;
   font-family: "Gruppo", cursive;
   padding: 0.5em;
-  margin: 0;
+  margin: 5vh 0;
   width: 100%;
   width: auto;
   border-radius: 1rem;
