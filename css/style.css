@@ -978,6 +978,9 @@ hamburger
 #menu .menu-section .menu-img.devices img {
   object-fit: contain;
 }
+#menu .menu-section .menu-img.engage {
+  mix-blend-mode: normal;
+}
 #menu .menu-section .menu-img.engage img {
   object-fit: contain;
 }
