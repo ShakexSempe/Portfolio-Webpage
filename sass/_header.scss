@@ -36,7 +36,9 @@
 
                 .nav-list {
                     ul {
-                        transform: translateY(0);
+                        li {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -262,16 +264,19 @@
                 // DESKTOP UL
                 ul {
                     // border: 2px solid red;
-                    transform: translateY(-10vh);
                     transition: .5s;
                     li {
                         list-style: none;
                         display: flex;
                         // border: 1px solid red;
                         align-items: center;
+                        opacity: .5;
+                        &:hover {
+                            opacity: 1;
+                        }
 
                         a {
-                            font-size: 1em;
+                            font-size: .8rem;
                             font-weight: 600;
                             letter-spacing: .15em;
                             text-decoration: none;

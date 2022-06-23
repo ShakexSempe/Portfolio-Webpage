@@ -312,8 +312,8 @@ hamburger
   transform: translateY(0);
   transition: 0.5s;
 }
-#header.header-io .header #navbar .nav-list ul {
-  transform: translateY(0);
+#header.header-io .header #navbar .nav-list ul li {
+  opacity: 1;
 }
 #header.header-io.active-header {
   background: #29323c;
@@ -492,16 +492,19 @@ hamburger
   }
 }
 #header .header #navbar .nav-list ul {
-  transform: translateY(-10vh);
   transition: 0.5s;
 }
 #header .header #navbar .nav-list ul li {
   list-style: none;
   display: flex;
   align-items: center;
+  opacity: 0.5;
+}
+#header .header #navbar .nav-list ul li:hover {
+  opacity: 1;
 }
 #header .header #navbar .nav-list ul li a {
-  font-size: 1em;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.15em;
   text-decoration: none;
@@ -1059,8 +1062,8 @@ hamburger
 }
 #skills .skills-top {
   text-align: left;
-  margin: 2em auto;
-  border-radius: 0.5rem;
+  margin: 0 auto 1rem;
+  padding: 1rem 0.5rem 0.5rem 5vw;
   position: relative;
   z-index: 30;
 }
@@ -1071,9 +1074,6 @@ hamburger
     padding: 5vh 5vw;
     text-align: center;
   }
-}
-#skills .skills-top .skills-info {
-  padding: 1rem 0.5rem 2rem 5vw;
 }
 #skills .skills-top .skills-info p {
   color: #f4f4f4;
@@ -1101,21 +1101,6 @@ hamburger
   font-weight: 600;
   font-size: 0.9rem;
 }
-#skills .skills-top::after {
-  content: "";
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  border: none;
-  top: 100%;
-  left: 50%;
-  margin-left: -24px;
-  margin-top: -24px;
-  transform: rotate(45deg);
-  background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
-  transition: 0.2s;
-  box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #3d495500;
-}
 #skills .dropdown {
   position: relative;
   margin: 0 auto;
@@ -1140,6 +1125,7 @@ hamburger
   border-radius: 0.5rem;
   background: #b60f30;
   text-align: center;
+  text-transform: capitalize;
   transition: 0.2s;
   font-family: "Gruppo", cursive;
   letter-spacing: 0.1rem;
@@ -2928,6 +2914,7 @@ body p {
   color: #000;
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.02rem;
 }
 body span {
   color: #dc143c;
