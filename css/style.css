@@ -888,7 +888,7 @@ hamburger
   border-bottom: 2px solid #000;
   height: 100vh;
   padding: 10vh 0;
-  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  background-color: #29323c;
   position: relative;
   text-align: center;
   text-align: left;
