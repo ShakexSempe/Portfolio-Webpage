@@ -10,6 +10,7 @@
         background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
         background-position: center left;
         background-position: 10% 50%;
+        background-attachment: fixed;
         &::after {
                 position: absolute;
                 content: '';
@@ -419,7 +420,11 @@
                 border: 2px solid;
                 width: 50%;
                 text-align: center;
-
+                .menu-title {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
                 .menu-cta {
                     position: relative;
                     top: 20vh;
@@ -435,11 +440,34 @@
 
             }
 
-            background-image: url(../img/syntex-1.jpg);
             background-size: 50%;
             background-position: right;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                background: rgba(0, 0, 0, .3);
+                z-index: -1;
+            }
+
+            // MENU SECTION DESKTOP IMAGE BACKGROUNDS
+            // MENU 1 - RESPONSIVE
+            &#menu-1 {
+                background-image: url(../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg);
+            }
+            // MENU 2 - IMMERSIVE
+            &#menu-2 {
+                background-image: url(../hero/walling-XLqiL-rz4V8-unsplash.jpg);
+            }
+            // MENU 3 - ENGAGING
+            &#menu-3 {
+                background-image: url(../img/altumcode-U0tBTn8UR8I-unsplash.jpg);
+            }
         }
         
 
