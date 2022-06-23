@@ -682,7 +682,7 @@ hamburger
   position: absolute;
   width: max-content;
   text-transform: capitalize;
-  top: 20vh;
+  top: 15vh;
   left: 5vw;
 }
 #home .hero #hero-h1 h2 {
