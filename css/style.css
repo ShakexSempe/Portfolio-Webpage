@@ -1876,6 +1876,7 @@ hamburger
   }
 }
 #work .work-items {
+  margin-top: 15vh;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10vh;
