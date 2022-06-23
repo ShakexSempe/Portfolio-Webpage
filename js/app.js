@@ -30,7 +30,7 @@ const mainOptions = {
 
 // ********** END OF VARIABLES ************
 
-// ********** INTERSECTION OBSERVER ************
+// ********** MAIN SECTION INTERSECTION OBSERVER ************
 const mainObserver = new IntersectionObserver(
   function(
       entries, mainObserver
@@ -55,20 +55,31 @@ const mainObserver = new IntersectionObserver(
 
 mainObserver.observe(main);
 
+// ********** ITEM INTERSECTION OBSERVER ************
+const item = document.querySelectorAll('.io-item');
+const itemOptions = {
+  rootMargin: '0% 0px -20% 0px',
+}
 
-// BACK TO TOP
-// document.addEventListener("scroll", () => {
-//   // scroll variables
-// const scroll_position = window.scrollY;
-// const scrollHeight = window.pageYOffset;
-// // top-link ()
-//   if(scrollHeight > 200) {
-//     topLink.classList.add('show-link');
-//   } else {
-//     topLink.classList.remove('show-link');
-//   };
-// });
-// end of background and back-to-top link
+item.forEach(item => {
+  const itemObserver = new IntersectionObserver(
+    function(entries, itemObserver){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting){
+          console.log('Entry NOT io');
+          item.classList.remove("active-item");
+        } else {
+          console.log("Entry IS io");
+          item.classList.add("active-item");
+        }
+      })
+    }, itemOptions
+  );
+
+  itemObserver.observe(item);
+});
+
+
 
 // HAMBURGER SELECT
 hamburger.addEventListener('click', () => {
@@ -79,10 +90,6 @@ hamburger.addEventListener('click', () => {
   }
   header.classList.toggle("active-header");
 });
-// end of hamburger select
-// SCROLL TO LINK
-
-// end of scroll to link
 //  REMOVE HAMBURGER AFTER CLICK 
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
@@ -97,7 +104,6 @@ navLogo.addEventListener("click", () => {
     mobile_menu.classList.remove('active');
     header.classList.remove("active-header");
 })
-//  end of remove hamburger after click 
 //  PROGRESS BAR
 //  When the user scrolls the page, execute myFunction
 window.onscroll = function () {
@@ -123,9 +129,9 @@ toggle between hiding and showing the dropdown content */
 dropdown = () => {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-const dropbtn = document.querySelector('.dropbtn');
-dropbtn.addEventListener("click", () => {
-  dropbtn.classList.toggle("active");
+const dropBtn = document.querySelector('.dropbtn');
+dropBtn.addEventListener("click", () => {
+  dropBtn.classList.toggle("active");
 })
 //  Close the dropdown menu if the user clicks outside of it
 // window.onclick = function (event) {
@@ -142,7 +148,7 @@ dropbtn.addEventListener("click", () => {
 // }
 // end of skills dropdown
 
-// read more
+// READ MORE DROPDOWN
 readBtn.addEventListener("click", ()=> {
   article.classList.toggle('active');
   readBtn.classList.toggle('open');
@@ -151,6 +157,5 @@ readBtn.addEventListener("click", ()=> {
 
 // ********** END OF FUNCTIONS ************
 
-/*  set footer date*/
+/*  FOOTER DATE*/
 date.innerHTML = new Date().getFullYear();
-/*  end of set footer date*/

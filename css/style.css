@@ -904,6 +904,17 @@ hamburger
   height: 100%;
   object-fit: contain;
 }
+#menu .menu-section .menu-img.io-item img {
+  transform: scale(0.5);
+  transition: 0.3s;
+}
+#menu .menu-section .menu-img.active-item img {
+  transition: 1s ease-out;
+  transform: scale(1);
+}
+#menu .menu-section .menu-content .menu-title {
+  overflow: hidden;
+}
 #menu .menu-section .menu-content .menu-title h2 {
   text-transform: capitalize;
   color: #fff;
@@ -911,6 +922,26 @@ hamburger
 }
 #menu .menu-section .menu-content .menu-title p {
   color: #f4f4f4;
+}
+#menu .menu-section .menu-content .menu-title.io-item h2 {
+  opacity: 0;
+  transform: translateY(5vh);
+  transition: 0.3s;
+}
+#menu .menu-section .menu-content .menu-title.io-item p {
+  opacity: 0;
+  transform: translateY(-5vh);
+  transition: 0.3s;
+}
+#menu .menu-section .menu-content .menu-title.active-item h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+#menu .menu-section .menu-content .menu-title.active-item p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
 }
 #menu .menu-section .menu-content .menu-cta .btn {
   color: #ead2a1;

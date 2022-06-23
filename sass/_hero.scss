@@ -350,10 +350,24 @@
                     object-fit: contain;
                 }
             }
+            // INTERSECTION OBSERVER CLASSES
+            &.io-item {
+                img {
+                    transform: scale(.5);
+                    transition: .3s;
+                }
+            }
+            &.active-item {
+                img {
+                    transition: 1s ease-out;
+                    transform: scale(1);
+                }
+            }
         }
         // GENERAL CONTENT DIV STYLE
         .menu-content {
             .menu-title {
+                overflow: hidden;
                 h2 {
                     text-transform: capitalize;
                     color: #fff;
@@ -362,6 +376,33 @@
 
                 p {
                     color: #f4f4f4;
+                }
+
+                // INTERSECTION OBSERVER CLASSES
+                &.io-item {
+                    h2 {
+                        opacity: 0;
+                        transform: translateY(5vh);
+                        transition: .3s;
+                    }
+                    p {
+                        opacity: 0;
+                        transform: translateY(-5vh);
+                        transition: .3s;
+                    }
+                }
+
+                &.active-item {
+                    h2 {
+                        opacity: 1;
+                        transform: translateY(0);
+                        transition: 1s;
+                    }
+                    p {
+                        opacity: 1;
+                        transform: translateY(0);
+                        transition: 1s;
+                    }
                 }
             }
 
