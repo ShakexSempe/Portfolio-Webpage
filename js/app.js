@@ -81,26 +81,7 @@ hamburger.addEventListener('click', () => {
 });
 // end of hamburger select
 // SCROLL TO LINK
-scrollLinks.forEach(link => {
-  //prevent default
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    //navigate to specific spot
-    const id = e.currentTarget.getAttribute('href').slice(1);
-    const element = document.getElementById(id);
-    //calculate heights
-    const navHeight = navbar.getBoundingClientRect().height;
-    const containerHeight = linksContainer.getBoundingClientRect().height;
-    const fixedNav = navbar.classList.contains('fixed-nav');
-    // scroll to link with a offset to the height of the navbar
-    let position = element.offsetTop - navHeight;
 
-    window.scrollTo({
-      left: 0,
-      top: position,
-    });
-  });
-});
 // end of scroll to link
 //  REMOVE HAMBURGER AFTER CLICK 
 menu_item.forEach((item) => {

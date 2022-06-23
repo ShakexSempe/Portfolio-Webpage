@@ -650,7 +650,7 @@ hamburger
   position: absolute;
   width: max-content;
   text-transform: capitalize;
-  top: 15vh;
+  top: 20vh;
   left: 5vw;
 }
 @media (min-width: 600px) {
@@ -723,9 +723,10 @@ hamburger
   display: block;
   text-align: left;
   font-family: "Gruppo", cursive;
-  padding: 0.5em;
+  padding: 0.5em 1rem;
   margin: 1rem 0;
   width: auto;
+  width: max-content;
   border-radius: 1rem;
   border: none;
   outline: none;
@@ -827,7 +828,7 @@ hamburger
 }
 #home .hero .slogan {
   position: absolute;
-  bottom: 15vh;
+  bottom: 10vh;
   left: 0;
   padding: 0 5vw;
   width: 100%;
