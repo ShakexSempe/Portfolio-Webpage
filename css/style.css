@@ -418,6 +418,7 @@ hamburger
     padding: 0.5em 0;
     width: 100%;
     display: block;
+    font-size: 1rem;
     border-radius: 5px;
   }
   #header .header #navbar .nav-list .links-container ul li i {
@@ -628,6 +629,7 @@ hamburger
 
 #home {
   padding: 0;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -652,7 +654,6 @@ hamburger
 }
 #home .hero {
   overflow: hidden;
-  min-height: 100vh;
   position: relative;
 }
 #home .hero .hero-bg {
@@ -2970,7 +2971,6 @@ body p {
   color: #000;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0.02rem;
 }
 body span {
   color: #dc143c;
