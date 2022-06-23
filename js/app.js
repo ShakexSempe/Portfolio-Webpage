@@ -31,6 +31,28 @@ const mainOptions = {
 // ********** END OF VARIABLES ************
 
 // ********** MAIN SECTION INTERSECTION OBSERVER ************
+const hero = document.getElementById('home');
+const heroOptions = {
+  rootMargin: '-30% 0px 0px 0px',
+}
+const heroObserver = new IntersectionObserver(
+  function(
+      entries, heroObserver
+  ) {
+      entries.forEach(entry => {
+          if(!entry.isIntersecting) {
+              header.classList.add("hero-header");
+              console.log("hero NOT IO");
+          } else {
+              header.classList.remove("hero-header");
+              console.log("hero IS io");
+          }
+      });
+  }, heroOptions
+); 
+heroObserver.observe(hero);
+
+// ********** MAIN SECTION INTERSECTION OBSERVER ************
 const mainObserver = new IntersectionObserver(
   function(
       entries, mainObserver
@@ -52,7 +74,6 @@ const mainObserver = new IntersectionObserver(
       });
   }, mainOptions
 );
-
 mainObserver.observe(main);
 
 // ********** ITEM INTERSECTION OBSERVER ************

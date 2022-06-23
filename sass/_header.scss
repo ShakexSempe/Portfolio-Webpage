@@ -9,6 +9,20 @@
     // overflow: hidden;
     background: transparent;
     // INTERSECTION CLASS
+    // HERO IO
+    // DISPLAY LOGO DURING HERO SCROLL
+    &.hero-header {
+        .header {
+            #navbar {
+                .brand {
+                    opacity: 1;
+                            transform: translateY(0);
+                            transition: .5s;
+                }
+            }
+        }
+    }
+    // MAIN IO
     &.header-io {
         background-color: $overlay-blue-dark-trans;
         transition: background-color .5s;
@@ -67,10 +81,12 @@
                     text-transform: uppercase;
                     color: #f4f4f4;
                     color: $span-gold;
+                    background-color: $overlay-blue-dark;
                     font-weight: 800;
                     font-family: 'Gruppo', cursive;
                     border: 1px solid $span-gold;
                     padding-left: .15rem;
+                    padding-bottom: .1rem;
                     border-radius: 5px;
                     transition: .2s;
                     // text-shadow: 0 0 5px $text-shadow-red;

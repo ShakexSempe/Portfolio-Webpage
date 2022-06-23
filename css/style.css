@@ -298,6 +298,11 @@ hamburger
   height: 8vh;
   background: transparent;
 }
+#header.hero-header .header #navbar .brand {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.5s;
+}
 #header.header-io {
   background-color: rgba(34, 41, 49, 0.9);
   transition: background-color 0.5s;
@@ -342,10 +347,12 @@ hamburger
   text-transform: uppercase;
   color: #f4f4f4;
   color: #ead2a1;
+  background-color: #29323c;
   font-weight: 800;
   font-family: "Gruppo", cursive;
   border: 1px solid #ead2a1;
   padding-left: 0.15rem;
+  padding-bottom: 0.1rem;
   border-radius: 5px;
   transition: 0.2s;
 }
