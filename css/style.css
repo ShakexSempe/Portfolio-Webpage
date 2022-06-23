@@ -888,7 +888,7 @@ hamburger
   border-bottom: 2px solid #000;
   height: 100vh;
   padding: 10vh 0;
-  background-color: #29323c;
+  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
   position: relative;
   text-align: center;
   text-align: left;
@@ -904,11 +904,10 @@ hamburger
   height: 100%;
   object-fit: contain;
 }
-#menu .menu-section .menu-content .menu-title {
-  text-transform: capitalize;
-}
 #menu .menu-section .menu-content .menu-title h2 {
+  text-transform: capitalize;
   color: #fff;
+  margin-bottom: 0.5rem;
 }
 #menu .menu-section .menu-content .menu-title p {
   color: #f4f4f4;
