@@ -180,3 +180,16 @@ readBtn.addEventListener("click", ()=> {
 
 /*  FOOTER DATE*/
 date.innerHTML = new Date().getFullYear();
+
+
+
+const fig = document.querySelector('.fig-js');
+const content = document.querySelector('.title-js');
+
+fig.addEventListener("click", () => {
+  if(content.classList.contains("active-title")){
+    content.classList.remove("active-title");
+  } else {
+    content.classList.add("active-title");
+  }
+})

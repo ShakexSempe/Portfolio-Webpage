@@ -344,10 +344,28 @@
                 // border: 1px solid green;
                 width: 100%;
                 height: 100%;
+                position: relative;
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
+                }
+
+                // IMMERSIVE STYLE
+                &.fig-js {
+                    img {
+                    filter: drop-shadow(.5rem .5rem .5rem #000);
+                    transform-style: preserve-3d;
+                    }
+
+                    &:hover {
+                        img {
+                            transition: 1s;
+                            transform: translateY(-2rem) rotateY(10deg);
+                            filter: drop-shadow(0 1rem .1rem #000a);
+
+                        }
+                    }
                 }
             }
             // INTERSECTION OBSERVER CLASSES
@@ -377,7 +395,27 @@
                 p {
                     color: #f4f4f4;
                 }
-
+                // JS MENU TITLE WITH ANIMATION CLASS ACTIVATED BY IMG CLICK
+                &.title-js {
+                    &.active-title {
+                        h2 {
+                            animation: title 5s 3;
+                            animation-delay: 2s;
+                        }
+                        p {
+                            animation: title 5s 3;
+                            animation-delay: 1s;
+                        }
+                        @keyframes title {
+                            40% {
+                                color: lime;
+                            }
+                            70% {
+                                color: #faed38;
+                            }
+                        }
+                    }
+                }
                 // INTERSECTION OBSERVER CLASSES
                 &.io-item {
                     h2 {

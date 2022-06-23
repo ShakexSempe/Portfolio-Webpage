@@ -908,11 +908,21 @@ hamburger
   overflow: hidden;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 #menu .menu-section .menu-img figure img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+#menu .menu-section .menu-img figure.fig-js img {
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem #000);
+  transform-style: preserve-3d;
+}
+#menu .menu-section .menu-img figure.fig-js:hover img {
+  transition: 1s;
+  transform: translateY(-2rem) rotateY(10deg);
+  filter: drop-shadow(0 1rem 0.1rem #000a);
 }
 #menu .menu-section .menu-img.io-item img {
   transform: scale(0.5);
@@ -932,6 +942,22 @@ hamburger
 }
 #menu .menu-section .menu-content .menu-title p {
   color: #f4f4f4;
+}
+#menu .menu-section .menu-content .menu-title.title-js.active-title h2 {
+  animation: title 5s 3;
+  animation-delay: 2s;
+}
+#menu .menu-section .menu-content .menu-title.title-js.active-title p {
+  animation: title 5s 3;
+  animation-delay: 1s;
+}
+@keyframes title {
+  40% {
+    color: lime;
+  }
+  70% {
+    color: #faed38;
+  }
 }
 #menu .menu-section .menu-content .menu-title.io-item h2 {
   opacity: 0;
