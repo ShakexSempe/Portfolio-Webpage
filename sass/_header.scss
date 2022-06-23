@@ -108,10 +108,9 @@
 
                 }
             }
-            // corner logo
             // hamburger nav style
             .nav-list {
-                // mobile navbar
+                // MOBILE NAV CONTAINER
                 .links-container {
                     @media (max-width: 1024px) {
                         position: absolute;
@@ -282,7 +281,7 @@
                             text-decoration: none;
                             color: $text-white;
                             text-transform: uppercase;
-                            padding: 1em;
+                            // padding: 1em;
                             display: block;
                             text-align: left;
                             font-family: 'Gruppo', cursive;
@@ -334,7 +333,7 @@
                     }
                 }
                 // end of mobile screens style
-                // desktop nav-list style
+                // DESKTOP NAVLIST
                 @media (min-width: 1025px){
                     // hide nav avi on desktop
                         .nav-logo { display: none;}
@@ -353,7 +352,7 @@
                         li {
                             position: relative;
                             display: flex;
-                            margin-right: .5em;
+                            margin-right: .5rem;
 
                             // list item underline
                             &::before {
@@ -379,7 +378,7 @@
                             
                             a {
                                 font-size: 1rem;
-                                padding: .3em .5em;
+                                padding: .5rem;
                                 margin: 0 auto;
                                 display: block;
                                 float: left;
