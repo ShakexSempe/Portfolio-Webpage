@@ -148,7 +148,6 @@
                                 align-items: center;
                                 margin: 1em auto 1em .5em;
                                 margin: .5rem auto 1rem;
-                                // border: 1px solid #fff;
                                 width: 95%;
 
 
@@ -158,18 +157,21 @@
                                     width: 100%;
                                     display: block;
                                     font-size: 1rem;
+                                    font-weight: 400;
                                     // border: 1px solid yellow;
                                     border-radius: 5px;
+                                    font-family: $font-title;
+                                    text-transform: uppercase;
                                     // background-color: $overlay-blue-darker;
                                 }
 
                                 i {
-                                    flex-basis: 5%;
+                                    width: 2.5rem;
                                     text-align: center;
                                     // margin-right: 1em;
-                                    padding: .5em;
+                                    padding: .5rem;
                                     color: #fffa;
-                                    border: none;
+                                    border: 1px solid $span-gold;
                                     
                                 }
                             }
