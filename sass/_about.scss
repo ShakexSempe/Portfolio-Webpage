@@ -51,7 +51,7 @@
                 padding: .5em 1em;
                 font-size: .6em;
                 font-weight: 600;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 color: $text-white-e;
                 background-color: #dc143c;
                 border-radius: 10px;
@@ -115,10 +115,10 @@
             background: $overlay-btn;
             color: $link-gold;
             margin: 1em auto;
-            padding: .5em 1em;
+            padding: .5rem;
             cursor: pointer;
-            border-radius: 15px;
-            text-transform: uppercase;
+            border-radius: 1rem;
+            text-transform: capitalize;
             transition: .3s;
             position: relative;
             // button states
@@ -178,6 +178,7 @@
                         z-index: 1;
                         font-size: .85em;
                         font-weight: 500;
+                        font-family: $font-content;
 
 
                         &#intro::first-letter {
@@ -258,7 +259,7 @@
                     padding: 1em;
                     box-shadow: inset 3px 0px 3px #c7c7c7aa,
                     inset -3px -3px 3px #000a;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;
 

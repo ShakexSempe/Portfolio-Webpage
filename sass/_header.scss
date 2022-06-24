@@ -83,13 +83,11 @@
                     text-transform: uppercase;
                     color: #f4f4f4;
                     color: $span-gold;
-                    background-color: $overlay-blue-dark;
-                    font-weight: 800;
-                    font-family: 'Gruppo', cursive;
+                    background-color: $overlay-blue-darker;
+                    font-weight: 500;
                     border: 1px solid $span-gold;
                     padding-left: .15rem;
-                    padding-bottom: .1rem;
-                    border-radius: 5px;
+                    border-radius: .5rem;
                     transition: .2s;
                     // text-shadow: 0 0 5px $text-shadow-red;
 
@@ -101,8 +99,8 @@
                         border: none;
                         outline: none;
                         color: $overlay-blue-dark;
-                        border-top-right-radius: 5px;
-                        border-bottom-right-radius: 5px;
+                        border-top-right-radius: .5rem;
+                        border-bottom-right-radius: .5rem;
                         transition: .2s;
                     }
 
@@ -276,8 +274,8 @@
                         }
 
                         a {
-                            font-size: .8rem;
-                            font-weight: 600;
+                            font-size: 1rem;
+                            font-weight: 400;
                             letter-spacing: .15em;
                             text-decoration: none;
                             color: $text-white;
@@ -285,7 +283,7 @@
                             // padding: 1em;
                             display: block;
                             text-align: left;
-                            font-family: 'Gruppo', cursive;
+                            font-family: $font-content;
                             transition: .2s ease-in-out;
                             // link text on hover
                             &::after {
@@ -378,8 +376,9 @@
                             // end of list item underline
                             
                             a {
-                                font-size: 1rem;
+                                font-size: .9rem;
                                 padding: .5rem;
+                                font-weight: 400;
                                 margin: 0 auto;
                                 display: block;
                                 float: left;

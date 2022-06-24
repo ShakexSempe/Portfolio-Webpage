@@ -94,9 +94,11 @@
                 display: block;
                 width: fit-content;
                 color: $text-white-e;
-                font-family: 'Philosopher', sans-serif;
-
+                // font-family: 'Philosopher', sans-serif;
+                
                 span {
+                    font-family: $font-title;
+                    font-weight: 500;
                     display: inline-block;
                     color: $text-light;
                     text-align: left;
@@ -127,7 +129,6 @@
                 // "AKA" SPAN
                 #aka {
                     span {
-                        font-family: 'Philosopher', sans-serif;
                         font-size: 2rem;
                         position: relative;
                         display: inline-block;
@@ -140,11 +141,6 @@
                     }
 
                     @keyframes aka {
-                        50% {
-                            opacity: 1;
-                            transform: scale(1);
-                        }
-
                         100% {
                             opacity: .8;
                         }
@@ -166,7 +162,7 @@
             position: relative;
             display: block;
             text-align: left;
-            font-family: 'Gruppo',cursive;
+            
             padding: .5em 1rem;
             margin: 1rem 0;
             width: auto;
@@ -234,8 +230,10 @@
                 display: inline-block;
                 text-transform: uppercase;
                 color: $text-light;
+                font-family: $font-title;
+                font-family: $font-content;
                 font-size: 2.5rem;
-                // font-weight: 700;
+                font-weight: 500;
                 animation: animate 3s ease-in-out infinite;
                 animation-delay: calc(1s + .2s * var(--i));
 
@@ -395,32 +393,13 @@
                     text-transform: capitalize;
                     color: #fff;
                     margin-bottom: .5rem;
+                    font-weight: 700;
+                    // font-family: $font-title;
                 }
 
                 p {
                     color: #f4f4f4;
                 }
-                // JS MENU TITLE WITH ANIMATION CLASS ACTIVATED BY IMG CLICK
-                // &.title-js {
-                //     &.active-title {
-                //         h2 {
-                //             animation: title 3s 2;
-                //             animation-delay: 2s;
-                //         }
-                //         p {
-                //             animation: title 3s 2;
-                //             animation-delay: 1s;
-                //         }
-                //         @keyframes title {
-                //             40% {
-                //                 color: $span-gold;
-                //             }
-                //             70% {
-                //                 color: rgb(140, 247, 140);
-                //             }
-                //         }
-                //     }
-                // }
                 // INTERSECTION OBSERVER CLASSES
                 &.io-item {
                     h2 {
@@ -459,7 +438,7 @@
                     width: 10rem;
                     color: $span-gold;
                     border: none;
-                    border-radius: 1rem;
+                    border-radius: .5rem;
                     padding: .5rem 1rem;
                     letter-spacing: .25rem;
                     text-align: center;
@@ -475,7 +454,7 @@
                         width: 100%;
                         height: 100%;
                         transition: .25s;
-                        border-radius: 1rem;
+                        border-radius: .5rem;
                         z-index: -1;
                     }
                     &::before {
