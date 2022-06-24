@@ -503,8 +503,8 @@ hamburger
   opacity: 1;
 }
 #header .header #navbar .nav-list ul li a {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   letter-spacing: 0.15em;
   text-decoration: none;
   color: #fff;
@@ -582,7 +582,7 @@ hamburger
     opacity: 1;
   }
   #header .header #navbar .nav-list ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0.5rem;
     font-weight: 400;
     margin: 0 auto;
@@ -1779,7 +1779,7 @@ hamburger
 }
 @media (min-width: 1024px) {
   #projects .projects .all-projects .project-item .project-tile h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 #projects .projects .all-projects .project-item .project-tile h2 {
@@ -1788,13 +1788,13 @@ hamburger
   font-weight: 500;
   margin: 0.8em 0;
   text-transform: capitalize;
-  color: #eee;
+  color: #f4f4f4;
   transition: 0.3s;
 }
 #projects .projects .all-projects .project-item .project-tile p {
   font-size: 0.8em;
-  font-weight: 200;
-  color: #ddd;
+  font-weight: 300;
+  color: #f4f4f4;
   margin: 0.5em 0;
 }
 @media (min-width: 768px) {
@@ -1817,7 +1817,7 @@ hamburger
 #projects .projects .all-projects .project-item .project-tile a i {
   transition: 0.2s;
   color: #ead2a1;
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   padding: 0.5rem;
   margin: 1em 0 0.5em 0;
 }
@@ -1829,7 +1829,7 @@ hamburger
   font-weight: 500;
   transition: 0.3s;
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 0.5em 1em;
   opacity: 0;
   box-shadow: inset 1px 1px 3px #fffa, inset -1px -1px 3px #000a;
@@ -1959,6 +1959,7 @@ hamburger
 #work .work-items .work-item .work-title h2 {
   text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }

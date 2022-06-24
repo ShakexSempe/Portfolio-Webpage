@@ -93,7 +93,7 @@
                         font-size: 1.25rem;
                         width: 100%;
                         @media (min-width:1024px){
-                            font-size: 1.2rem;
+                            font-size: 1.5rem;
                         }
                         color: #fff;
                         font-weight: 500;
@@ -114,7 +114,7 @@
                         font-weight: 500;
                         margin: .8em 0;
                         text-transform: capitalize;
-                        color: $text-white-e;
+                        color: #f4f4f4;
                         transition: .3s;
                         // @media (min-width:768px){
                         //     font-size: 1.2em;
@@ -126,8 +126,8 @@
                         @media (min-width:768px){
                             font-size: .9em;
                         }
-                        font-weight: 200;
-                        color: $text-white-d;
+                        font-weight: 300;
+                        color: #f4f4f4;
                         margin: .5em 0;
                     }
                     // end of project details (h2 and p)
@@ -148,7 +148,7 @@
                         i {
                             transition: .2s;
                             color: $span-gold;
-                            font-size: .5rem;
+                            font-size: .65rem;
                             padding: .5rem;
                             // margin-right: .5em;
                             margin: 1em 0 .5em 0;
@@ -161,7 +161,7 @@
                                 font-weight: 500;
                                 transition: .3s;
                                 background: linear-gradient(0deg, #3f0d0d, #dc134c);
-                                border-radius: 10px;
+                                border-radius: 1rem;
                                 padding: .5em 1em;
                                 opacity: 0;
                                 box-shadow: inset 1px 1px 3px #fffa,
