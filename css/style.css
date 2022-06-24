@@ -2200,6 +2200,9 @@ hamburger
 .about .col-right button:hover {
   transform: scale(0.97);
 }
+.about .col-right .article-container {
+  overflow: hidden;
+}
 .about .col-right .article-container article.about-article {
   padding: 0.5em 1em;
   height: 15vh;
