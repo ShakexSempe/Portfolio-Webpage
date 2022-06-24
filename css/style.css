@@ -1135,7 +1135,7 @@ hamburger
   text-align: left;
   margin: 0 auto 1rem;
   padding: 1rem 0.5rem 0.5rem 1rem;
-  padding: 1rem 5vw;
+  padding: 1rem;
   position: relative;
   z-index: 30;
 }
@@ -1150,7 +1150,7 @@ hamburger
 #skills .skills-top .skills-info p {
   color: #f4f4f4;
   color: #29323c;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   line-height: 1.6;
   background: transparent;
   overflow: hidden;
