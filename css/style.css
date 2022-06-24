@@ -2572,7 +2572,7 @@ hamburger
 #footer .footer .socialMedia-links .socialMedia-item {
   border: 2px solid rgba(0, 0, 0, 0.5);
   background-color: #20262e;
-  padding: 0.5em 0;
+  padding: 0.5rem 0;
   border-radius: 5px;
   overflow: hidden;
   margin: 0.5em 0.1em 1em 0.1em;
@@ -2580,14 +2580,15 @@ hamburger
   transition: 0.3s;
 }
 #footer .footer .socialMedia-links .socialMedia-item .link-icon {
-  font-size: 1.4em;
+  font-size: 1.25rem;
   text-transform: capitalize;
   color: #f4f4f4;
-  font-weight: 400;
+  font-weight: 300;
   position: absolute;
   left: 50%;
   top: 50%;
   text-align: center;
+  font-family: "Kanit", sans-serif;
   width: 100%;
   transform: translate(-50%, -50%);
   transition: 1s ease;
@@ -2602,7 +2603,7 @@ hamburger
   color: #fff;
   text-transform: capitalize;
   opacity: 1;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   position: relative;
   transition: 0.2s ease;
   transform: translateX(150%);
@@ -2932,8 +2933,10 @@ hamburger
 }
 .bs21 p,
 .bs21 a {
+  font-family: "Kanit", sans-serif;
   color: #f4f4f4;
   font-size: 1rem;
+  font-weight: 400;
   text-transform: capitalize;
 }
 .bs21 a {

@@ -200,7 +200,7 @@
             .socialMedia-item {
                 border: 2px solid hsla(0, 0%, 0%, 0.5);
                 background-color: $overlay-blue-darker;
-                padding: .5em 0;
+                padding: .5rem 0;
                 border-radius: 5px;
                 overflow: hidden;
                 margin: .5em .1em 1em .1em;
@@ -208,14 +208,15 @@
                 transition: .3s;
 
                 .link-icon {
-                    font-size: 1.4em;
+                    font-size: 1.25rem;
                     text-transform: capitalize;
                     color: $text-light;
-                    font-weight: 400;
+                    font-weight: 300;
                     position:absolute;
                     left: 50%;
                     top: 50%;
                     text-align: center;
+                    font-family: $font-title;
                     width: 100%;
                     transform: translate(-50%, -50%);
                     transition: 1s ease;
@@ -231,7 +232,7 @@
                     color: #fff;
                     text-transform: capitalize;
                     opacity: 1;
-                    border-radius: 5px;
+                    border-radius: .5rem;
                     position: relative;
                     transition: .2s ease;
                     // translate out of view leaving only icon
@@ -642,8 +643,10 @@
     text-align: center;
     p,
     a {
+        font-family: $font-title;
         color: $text-light;
         font-size: 1rem;
+        font-weight: 400;
         text-transform: capitalize;
     }
     a {
