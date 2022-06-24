@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'utilities';
 @import 'header';
+@import 'hero';
 @import 'skills';
 @import 'contact';
 @import 'projects';
@@ -18,22 +19,20 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5vh;
+    // scroll-padding-top: 5vh;
 }
 body {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
-    
+    width: 100%;
     a {
         text-decoration: none;
     }
 
     p {
         color: $text-black;
-        margin-top: 5px;
         line-height: 1.5;
         font-weight: 400;
-        letter-spacing: 0.05em;
     }
 
     span {
@@ -43,309 +42,34 @@ body {
 
 
 
-// hero section
-#home {
-    background-color: $overlay-blue-dark;
-    background: $overlay-dark;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    .hero {
-        // cursor: grab;
-        // animated h1 
-        #hero-h1 {
-            margin: 1em auto;
-            background: transparent;
-            padding: .5em;
-            border-radius: 5px;
-            position: absolute;
-            top: 15vh;
-
-            @media (min-width: 768px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: .5em;
-            }
-
-            h2 {
-                margin-bottom: .2em;
-                display: block;
-                width: fit-content;
-                color: $text-white-e;
-                font-family: 'Philosopher', sans-serif;
-
-                // desktop font size
-                @media (min-width: 768px) {
-                    font-size: 2em;
-                }
-
-                // end of desktop font size
-
-                span {
-                    display: inline-block;
-                    color: $text-light;
-                    text-align: left;
-                    font-size: 1.5em;
-                    opacity: 0;
-                    line-height: 1.3;
-                    animation: hero-span 5s ease-in-out;
-                    animation-fill-mode: forwards;
-                    animation-delay: calc(1s + .5s * var(--s));
-                    transition: 1s;
-                    transform-style: preserve-3d;
-
-                    /* hero h1 keyframes */
-                    @keyframes hero-span {
-                        10% {
-                            opacity: .7;
-                            transform: translateX(10px);
-                        }
-
-                        100% {
-                            opacity: 1;
-                        }
-                    }
-                    /* hero h1 keyframes */
-
-                }
-            }
-                // "aka" span
-                #aka {
-                    span {
-                        font-family: 'Philosopher', sans-serif;
-                        font-size: 2rem;
-                        position: relative;
-                        display: inline-block;
-                        animation: aka 5s ease alternate;
-                        animation-delay: 4s;
-                        animation-fill-mode: forwards;
-                        margin: .5em 0;
-                        color: $span-gold;
-                        opacity: 0;
-                        transform: scale(0.7);
-                    }
-
-                    @keyframes aka {
-                        50% {
-                            opacity: 1;
-                            transform: scale(1);
-                        }
-
-                        100% {
-                            opacity: .8;
-                        }
-                    }
-                }
-                // end of "aka" span
-            
-        }
-
-        // end of animated h1 
-        // welcome section button & shadow
-        #cta-header {
-            font-size: 1.3em;
-
-            @media (min-width: 768px) {
-                font-size: 1.5em;
-                width: 100%;
-                text-align: center;
-            }
-
-            position: relative;
-            display: block;
-            text-align: center;
-            text-align: left;
-            font-family: 'Gruppo',cursive;
-            padding: .5em;
-            margin: 0;
-            width: 100%;
-            width: auto;
-            border-radius: 15px;
-            border: none;
-            outline: none;
-            opacity: 0;
-            // transform: rotateX(-90deg);
-            transform: scale(.5);
-            transform-style: preserve-3d;
-            animation: show-cta 4s 5.5s;
-            animation-fill-mode: forwards;
-            // background-color: $button-background-grey;
-            transition: .3s linear;
-            cursor: pointer;
-            -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-            z-index: 2;
-
-            // show cta
-            @keyframes show-cta {
-                100% {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
-
-            // end of show cta
-            // button shadows
-            &::before,
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 15px;
-                transition: .3s ease;
-                border: none;
-                outline: none;
-            }
-
-            // ::before = box shadow
-            &::before {
-                box-shadow: $box-light-top-sm;
-                background: $button-crimson;
-                // background: linear-gradient(0deg, #581212, #dc134c);
-            }
-
-            // ::after = background gradient
-            &::after {
-                opacity: 1;
-                z-index: -1;
-                animation: 3s cta-btn infinite;
-                animation-delay: 6s;
-                transition: .3s;
-                outline: none;
-                border: none;
-                background: $button-crimson-hover;
-                // background: linear-gradient(0deg, #dc134c, #581212);
-                box-shadow: $box-dark-top-sm;
-            }
-
-            // end of button shadows
-            // animated button text 
-            span {
-                position: relative;
-                display: inline-block;
-                text-transform: uppercase;
-                color: $text-light;
-                font-size: 2em;
-                font-weight: 700;
-                animation: animate 3s ease-in-out infinite;
-                animation-delay: calc(1s + .2s * var(--i));
-
-                /* cta keyframes*/
-                @keyframes animate {
-                    0% {
-                        transform: translateY(0px);
-                    }
-
-                    20% {
-                        transform: translateY(-10px) scale(1.1);
-                    }
-
-                    40%,
-                    100% {
-                        transform: translateY(0);
-                    }
-                }
-
-                /* end of cta keyframes*/
-            }
-
-            // end of animated button text 
-            // button hover, focus and active states
-            &:hover {
-                span {
-                    color: $span-gold;
-                    color: $text-light;
-                    animation: none;
-                }
 
 
-                &::before {
-                    opacity: 0;
-                }
-
-                &::after {
-                    opacity: 1;
-                }
-            }
-            &:active {
-                transition: .2s;
-                transform: scale(.95);
-            }
-
-            // end of button hover, focus and active states
-        }
-
-        // end of welcome section button & shadow 
-    }
-
-    #cta {
-        position: absolute;
-        bottom: 10vh;
-        left: 5vw;
-        transition: 1s;
-        // border: 1px solid red;
+section {
+    padding: 5vh 0;
+    width: 100%;
+    // section-title
+.section-title {
+    font-size: 2.25rem;
+    @media (min-width:768px){
+        font-size: 2.5rem;
         
-        .cta {
-            font-size: 1.5rem;
-            font-family: $font-ubuntu;
-            color: $text-light;
-            text-transform: capitalize;
-            padding: .5rem;
-            width: 15rem;
-            border-radius: 20px;
-            display: block;
-            text-align: center;
-            cursor: pointer;
-            border: none;
-            position: relative;
-            isolation: isolate;
-            transition: .2s;
-            letter-spacing: .05rem;
-            // -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, .200));
-            
-
-            &::before, &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border: none;
-                outline: none;
-                transition: .2s;
-                border-radius: 20px;
-                z-index: -1;
-            }
-            &::before {
-                background: $button-crimson;
-                box-shadow: $box-light-top-sm;
-            }
-            &::after {
-                opacity: 0;
-                background: $button-crimson-hover;
-                box-shadow: $box-dark-top-sm;
-            }
-            &:hover {
-                letter-spacing: normal;
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-            }
-            &:active {
-                transform: scale(.98);
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-            }
-        }
     }
-}
-// end of hero section
+    font-weight: 500;
+    color: #000;
+    max-width: 100vw;
+    margin: 5vh 0 10vh;
+    // border: 2px solid red;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+    // padding: .5em;
+    font-family: $font-ubuntu;
+    -webkit-box-reflect: below -.5rem linear-gradient(transparent, #0004);
 
-// pad section 
+    
+}
+}
+// SECTION IMAGE PAD 
 .section-pad {
     height: 90vh;
     width: 100%;
@@ -556,7 +280,7 @@ body {
 }
 
 
-// thank you page
+// THANK YOU PAGE
 
 #thanks {
     padding: .5em 1em;
@@ -623,4 +347,4 @@ body {
     }
 }
 
-// end of thank you page
+// END OF THANK YOU PAGE

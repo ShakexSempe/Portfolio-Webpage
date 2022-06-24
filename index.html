@@ -112,10 +112,14 @@
   </header>
   <!--End of Header-->
 
-  <!--Hero Section-->
+  <!--HERO-->
   <section id="home" class="section welcome-section">
     <div class="hero container">
+      <div class="hero-bg">
+        <img src="img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg" loading="lazy" alt="">
+      </div>
       <div id="hero-h1">
+        <!-- <h1>my name is boitumelo sempe <span>aka</span></h1> -->
         <h2>
           <span style="--s:1">My</span>
           <span style="--s:2">Name</span>
@@ -126,33 +130,105 @@
           <span style="--s:5">Sempe</span>
         </h2>
 
-        <h3 id="aka"><span>a.k.a</span></h3>
-        <button href="#skills" type="button" title="Shakex Sempe: Web Developer" id="cta-header" class="scroll-link">
+        <h2 id="aka"><span>a.k.a</span></h2>
+        <a href="#menu" type="button" title="Shakex Sempe: Web Developer" id="cta-header" class="scroll-link">
           <span style="--i:1;">s</span>
           <span style="--i:2;">h</span>
           <span style="--i:3;">a</span>
           <span style="--i:4;">k</span>
           <span style="--i:5;">e</span>
           <span style="--i:6;">x</span>
-        </button>
+        </a>
+      </div>
+      <div class="slogan">
+        <p>web developer : </p>
+        <p>Accessible, Immersive & Engaging</p>
+        <p><a href="#menu">responsive websites</a></p>
       </div>
     </div>
     <!-- <div id="cta">
       <a class="cta" title="View my projects" href="#work">view my work</a>
     </div> -->
   </section>
-  <!-- End of Hero Section-->
-
-  <!--Skills section-->
+  <!-- END OF HERO-->
+  <!--  MENU -->
+  <section id="menu">
+    <!-- RESPONSIVE -->
+    <div class="menu-section" id="menu-1">
+      <div class="menu-img io-item">
+        <figure>
+          <img src="hero/devices.png" alt="Devices">
+        </figure>
+      </div>
+      <div class="menu-content">
+        <div class="menu-title io-item">
+          <h2>
+            responsive web design
+          </h2>
+          <p>Webpages that look good on all devices.</p>
+        </div>
+        <div class="menu-cta">
+          <a href="#" class="btn">contact</a>
+          <a href="#" class="btn">view</a>
+          <a href="#menu-2" class="page-btn">next</a>
+        </div>
+      </div>
+    </div>
+    <!-- IMMERSIVE -->
+    <div class="menu-section" id="menu-2">
+      <div class="menu-img io-item">
+        <figure class="fig fig-js">
+          <img src="hero/arrow.png" alt="css3">
+        </figure>
+      </div>
+      <div class="menu-content">
+        <div class="menu-title io-item title-js">
+          <h2>
+            Immersive user Interface
+          </h2>
+          <p>Eye catching & satisfying user experience</p>
+        </div>
+        <div class="menu-cta">
+          <a href="#" class="btn">contact</a>
+          <a href="#" class="btn">view</a>
+          <a href="#menu-3" class="page-btn">next</a>
+        </div>
+      </div>
+    </div>
+    <!-- ENGAGE -->
+    <div class="menu-section" id="menu-3">
+      <div class="menu-img io-item">
+        <figure>
+          <img src="hero/access.png" alt="javascript logo">
+        </figure>
+      </div>
+      <div class="menu-content">
+        <div class="menu-title io-item">
+          <h2>
+            engaging user experience
+          </h2>
+          <p>Dynamic & responisve interfaces</p>
+        </div>
+        <div class="menu-cta">
+          <a href="#" class="btn">contact</a>
+          <a href="#" class="btn">view</a>
+          <a href="#skills" class="page-btn">next</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  END OF MENU -->
+  <main id="main">
+  <!-- SKILLS SECTION-->
   <section class="link-section" id="skills">
     <div class="skills container">
       <div class="skills-header">
         <h1 title="skills" data-text="skills" class="section-title">Sk<span>i</span>lls</h1>
       </div>
-      <div data-scroll class="skills-top">
+      <div class="skills-top">
         <div class="skills-info">
           <p>
-            I'm a Front-End Web Developer focused on Responsive Web Design and User Experience.<br>
+            I'm a Front-End Web Developer focused on Responsive Web Design & User Experience.<br>
             I code webpages that are: <br>
             <span>Accessible</span> by using HTML5 semantic markup and SEO techniques.<br>
             <span>Immersive</span> through Sass preprocessed stylesheets and <br>
@@ -161,11 +237,11 @@
           </p>
         </div>
         <div class="skills-drop">
-          <p class="skills-drop-p">View my full skill set in the dropdown section below.</p>
+          <p class="skills-drop-p">View my full  Web Development skill set in the dropdown section below.</p>
         </div>
       </div>
       <!--Dropdown-->
-      <div class="dropdown">
+      <div data-scroll class="dropdown">
         <button onclick="dropdown()" title="full skillset" class="dropbtn">My Skills</button>
         <div id="myDropdown" class="dropdown-content">
 
@@ -424,7 +500,7 @@
     </div>
 
   </section>
-  <!--End of Skills section-->
+  <!--END OF SKILLS SECTION-->
   <!-- WORK / PORTFOLIO -->
   <section id="work" class="link-section">
     <div class="work">
@@ -436,23 +512,27 @@
         <div data-scroll class="work-item ksauce">
           <div class="work-title">
             <h2>K'Sauce&trade;</h2>
-            <p>Full Responsive Website</p>
+            <p>5 page Responsive Website</p>
           </div>
           <figure>
-            <img src="img/ksauce.jpg" alt="k'Sauce">
+            <a href="https://shakexsempe.github.io/kutlwano-hot-sauce/" target="_blank" title="Github Repository">
+              <img src="img/ksauce.jpg" alt="k'Sauce">
+            </a>
           </figure>
-          <a class="view-site-btn" href="https://shakexsempe.github.io/kutlwano-hot-sauce/" target="_blank">view website</a>
+          <a class="view-site-btn" href="https://ksauce.netlify.app/" target="_blank">view website</a>
         </div>
         <!-- ORICH -->
         <div data-scroll class="work-item">
           <div class="work-title">
             <h2>Orich Trading & projects&trade;</h2>
-            <p>Full Responsive Website</p>
+            <p>5 page Responsive Website</p>
           </div>
           <figure>
-            <img src="img/orich-min.jpg" alt="Orich trading & projects">
+            <a href="https://shakexsempe.github.io/orich-trading/" target="_blank" title="Github Repository">
+            <img src="img/orich-min.jpg" alt="Orich Trading & Projects">
+          </a>
           </figure>
-          <a class="view-site-btn" href="https://shakexsempe.github.io/orich-trading/" target="_blank">view website</a>
+          <a class="view-site-btn" href="https://orich-trading-projects.netlify.app/" target="_blank">view website</a>
         </div>
         <!-- MUNCH UP -->
         <div data-scroll class="work-item">
@@ -461,18 +541,22 @@
             <p>Landing Page</p>
           </div>
           <figure>
+            <a href="https://shakexsempe.github.io/munch-up/" target="_blank" title="Github Repository">
             <img src="img/munch-logo-min.jpg" alt="Munch Up-logo">
+          </a>
           </figure>
           <a class="view-site-btn" href="https://munch-up.netlify.app/" target="_blank">view website</a>
         </div>
-        <!-- NGOVENI -->
+        <!-- MAGOVENI -->
         <div data-scroll class="work-item">
           <div class="work-title">
             <h2 class="work-title">Magoveni Construction&trade;</h2>
             <p>One Page website</p>
           </div>
           <figure>
-            <img src="img/mkansi-min.png" alt="Orich trading & projects">
+            <a href="https://shakexsempe.github.io/ngoveni-construction/" target="_blank" title="Github Repository">
+              <img src="img/mkansi-min.png" alt="Orich trading & projects">
+            </a>
           </figure>
           <a class="view-site-btn" href="https://ngoveni-construction.netlify.app/" target="_blank">view website</a>
         </div>
@@ -483,12 +567,14 @@
             <p>One page landing page</p>
           </div>
           <figure>
-            <img src="img/thato2-logo-min.png" alt="Orich trading & projects">
+            <a href="https://shakexsempe.github.io/thato-tech-drawings/" target="_blank" title="Github Repository">
+              <img src="img/thato2-logo-min.png" alt="Orich trading & projects">
+            </a>
           </figure>
           <a class="view-site-btn" href="https://thato-technical-drawings.netlify.app/" target="_blank">view website</a>
         </div>
         <!-- WORDPRESS -->
-        <div data-scroll class="work-item">
+        <!-- <div data-scroll class="work-item">
           <div class="work-title">
             <h2 class="work-title">WordPress</h2>
             <p>WordPress e-commerce website</p>
@@ -497,11 +583,11 @@
             <img src="img/shakexsempe-logo.png" alt="Shakex Sempe WordPress logo">
           </figure>
           <a class="view-site-btn" href="https://www.shakex.co.za" target="_blank">view website</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
-  <!-- padding section -->
+  <!-- PADDING SECTION -->
   <div id="projects-pad" class="section-pad pad-intro">
     <figure data-scroll>
       <a title="github contribution activity" href="#projects">
@@ -509,8 +595,8 @@
       </a>
     </figure>
   </div>
-  <!-- end of padding section -->
-  <!--Projects Section-->
+  <!-- END OF PADDING SECTION -->
+  <!--PROJECTS SECTION-->
   <section class="link-section" id="projects">
     <div class="projects container">
       <div class="projects-header">
@@ -522,12 +608,10 @@
       </div>
     </div>
   </section>
-  <!--End of Projects Section-->
+  <!-- END OF PROJECTS-->
 
-  <!--About Section-->
+  <!-- ABOUT SECTION-->
   <section class="link-section" id="about">
-
-    <!-- end of padding section -->
     <div id="about-target" class="about container">
       <div class="col-right">
         <div class="about-header">
@@ -578,14 +662,14 @@
       </div>
     </div>
   </section>
-  <!--End of About Section-->
-  <!-- padding section -->
+  <!--END OF ABOUT SECTION-->
+  <!-- PADDING SECTION -->
   <div class="section-pad pad-me">
     <figure data-scroll>
       <img src="img/me-min.jpg" loading="lazy" alt="Boitumelo Sempe">
     </figure>
   </div>
-  <!--Contact Section-->
+  <!-- CONTACT SECTION-->
   <section class="link-section" id="contact">
 
     <div class="contact container">
@@ -594,26 +678,14 @@
       </div>
       <div class="contact-items">
 
-        <article title="location" data-scroll class="contact-item">
-          <div class="icon">
-            <i class="fas fa-map-marked-alt"></i>
-          </div>
-          <h2>Address</h2>
-          <div class="contact-info">
-            <p>Mahikeng, North West.<span>South Africa</span></p>
-            <a href="https://goo.gl/maps/8XfqHABUeWN6oEjB6" title="view in google maps" target="_blank"><i
-                class="fas fa-map-pin"></i>..where?</a>
-          </div>
-        </article>
-
         <article title="email" data-scroll class="contact-item">
           <div class="icon">
             <i class="fas fa-envelope"></i>
           </div>
           <h2>Email</h2>
           <div class="contact-info">
-            <p>shakex@syntex.co.za</p>
-            <a href="mailto:shakex@syntex.co.za" title="Send Email to shakex@syntex.co.za"><i class="fas fa-at"></i>
+            <p>bshakex@gmail.com</p>
+            <a href="mailto:bshakex@gmail.com" title="Send Email to Shakex Sempe"><i class="fas fa-at"></i>
               ..email me</a>
           </div>
         </article>
@@ -629,8 +701,19 @@
           </div>
         </article>
 
+        <article title="location" data-scroll class="contact-item">
+          <div class="icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h2>Address</h2>
+          <div class="contact-info">
+            <p>Mahikeng, North West.<span>South Africa</span></p>
+            <a href="https://goo.gl/maps/8XfqHABUeWN6oEjB6" title="view in google maps" target="_blank"><i
+                class="fas fa-map-pin"></i>..where?</a>
+          </div>
+        </article>
 
-
+ 
       </div>
     </div>
     <!-- padding section -->
@@ -643,9 +726,8 @@
     </div>
     <!-- end of padding section -->
   </section>
-  <!--End of Contact Section-->
-
-  <!--Footer-->
+  <!--END OF CONTACT SECTION-->
+  <!-- FOOTER -->
   <section class="link-section" id="footer">
     <div class="footer container">
 
@@ -752,7 +834,9 @@
     </a>
     <!--end of back to top button-->
   </section>
-  <!--End of Footer-->
+  <!-- END OF FOOTER-->
+</main>
+  
 
   <script src="js/app.js"></script>
   <script src="js/projects.js"></script>

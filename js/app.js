@@ -23,48 +23,84 @@ const date = document.querySelector('.date');
 console.log(date);
 // INTERSECTION OBSERVER
 const brand = document.querySelector('.brand');
-const sectionOne = document.querySelector('.welcome-section');
-const sectionOneOptions = {
-    rootMargin: "-300px 0px 0px 0px"
+const main = document.getElementById('main');
+const mainOptions = {
+    rootMargin: "0px 0px -70% 0px"
 };
 
 // ********** END OF VARIABLES ************
 
-// ********** INTERSECTION OBSERVER ************
-const sectionOneObserver = new IntersectionObserver(
+// ********** MAIN SECTION INTERSECTION OBSERVER ************
+const hero = document.getElementById('home');
+const heroOptions = {
+  rootMargin: '-30% 0px 0px 0px',
+}
+const heroObserver = new IntersectionObserver(
   function(
-      entries, sectionOneObserver
+      entries, heroObserver
+  ) {
+      entries.forEach(entry => {
+          if(!entry.isIntersecting) {
+              header.classList.add("hero-header");
+              console.log("hero NOT IO");
+          } else {
+              header.classList.remove("hero-header");
+              console.log("hero IS io");
+          }
+      });
+  }, heroOptions
+); 
+heroObserver.observe(hero);
+
+// ********** MAIN SECTION INTERSECTION OBSERVER ************
+const mainObserver = new IntersectionObserver(
+  function(
+      entries, mainObserver
   ) {
       entries.forEach(entry => {
           if(!entry.isIntersecting) {
               // header.style.backgroundColor = "red";
-              header.classList.add("header-io");
-              hamburger.classList.remove("no-pulse");
-          } else {
               header.classList.remove("header-io");
               hamburger.classList.add("no-pulse");
+              topLink.classList.remove('show-link');
+              console.log("main NOT IO")
+          } else {
+              header.classList.add("header-io");
+              hamburger.classList.remove("no-pulse");
+              console.log("main IS IO");
+              topLink.classList.add('show-link');
             
           }
       });
-  }, sectionOneOptions
+  }, mainOptions
 );
+mainObserver.observe(main);
 
-sectionOneObserver.observe(sectionOne);
+// ********** ITEM INTERSECTION OBSERVER ************
+const item = document.querySelectorAll('.io-item');
+const itemOptions = {
+  rootMargin: '0% 0px -20% 0px',
+}
 
+item.forEach(item => {
+  const itemObserver = new IntersectionObserver(
+    function(entries, itemObserver){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting){
+          console.log('Entry NOT io');
+          item.classList.remove("active-item");
+        } else {
+          console.log("Entry IS io");
+          item.classList.add("active-item");
+        }
+      })
+    }, itemOptions
+  );
 
-// BACK TO TOP
-document.addEventListener("scroll", () => {
-  // scroll variables
-const scroll_position = window.scrollY;
-const scrollHeight = window.pageYOffset;
-// top-link ()
-  if(scrollHeight > 200) {
-    topLink.classList.add('show-link');
-  } else {
-    topLink.classList.remove('show-link');
-  };
+  itemObserver.observe(item);
 });
-// end of background and back-to-top link
+
+
 
 // HAMBURGER SELECT
 hamburger.addEventListener('click', () => {
@@ -75,29 +111,6 @@ hamburger.addEventListener('click', () => {
   }
   header.classList.toggle("active-header");
 });
-// end of hamburger select
-// SCROLL TO LINK
-scrollLinks.forEach(link => {
-  //prevent default
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    //navigate to specific spot
-    const id = e.currentTarget.getAttribute('href').slice(1);
-    const element = document.getElementById(id);
-    //calculate heights
-    const navHeight = navbar.getBoundingClientRect().height;
-    const containerHeight = linksContainer.getBoundingClientRect().height;
-    const fixedNav = navbar.classList.contains('fixed-nav');
-    // scroll to link with a offset to the height of the navbar
-    let position = element.offsetTop - navHeight;
-
-    window.scrollTo({
-      left: 0,
-      top: position,
-    });
-  });
-});
-// end of scroll to link
 //  REMOVE HAMBURGER AFTER CLICK 
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
@@ -112,7 +125,6 @@ navLogo.addEventListener("click", () => {
     mobile_menu.classList.remove('active');
     header.classList.remove("active-header");
 })
-//  end of remove hamburger after click 
 //  PROGRESS BAR
 //  When the user scrolls the page, execute myFunction
 window.onscroll = function () {
@@ -138,9 +150,9 @@ toggle between hiding and showing the dropdown content */
 dropdown = () => {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-const dropbtn = document.querySelector('.dropbtn');
-dropbtn.addEventListener("click", () => {
-  dropbtn.classList.toggle("active");
+const dropBtn = document.querySelector('.dropbtn');
+dropBtn.addEventListener("click", () => {
+  dropBtn.classList.toggle("active");
 })
 //  Close the dropdown menu if the user clicks outside of it
 // window.onclick = function (event) {
@@ -157,7 +169,7 @@ dropbtn.addEventListener("click", () => {
 // }
 // end of skills dropdown
 
-// read more
+// READ MORE DROPDOWN
 readBtn.addEventListener("click", ()=> {
   article.classList.toggle('active');
   readBtn.classList.toggle('open');
@@ -166,6 +178,18 @@ readBtn.addEventListener("click", ()=> {
 
 // ********** END OF FUNCTIONS ************
 
-/*  set footer date*/
+/*  FOOTER DATE*/
 date.innerHTML = new Date().getFullYear();
-/*  end of set footer date*/
+
+
+
+// const fig = document.querySelector('.fig-js');
+// const content = document.querySelector('.title-js');
+
+// fig.addEventListener("click", () => {
+//   if(content.classList.contains("active-title")){
+//     content.classList.remove("active-title");
+//   } else {
+//     content.classList.add("active-title");
+//   }
+// })

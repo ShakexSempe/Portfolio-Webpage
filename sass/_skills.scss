@@ -6,9 +6,6 @@
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
-        width: 100vw;
-        padding-bottom: 15vh;
-        margin: 0 auto;
         background: $overlay;
         background: $background-light;
         
@@ -39,45 +36,31 @@
             padding: 5vh 5vw;
             text-align: center;
         }
-        width: 90%;
+        // width: 90%;
+        // border: 2px solid red;
         text-align: left;
-        padding: .5rem;
-        margin: 2em auto;
-        // background-image: var(--overlay);
-        // background: #48556388;
-        background: $overlay-dark;
-        border-radius: 10px;
-        border: none;
+        margin: 0 auto 1rem;
+        padding: 1rem .5rem .5rem 1rem;
+        padding: 1rem;
         position: relative;
         z-index: 30;
-        // skills top box shadow
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            box-shadow: $box-light-top-sm;
-            border-radius: 10px;
-            border: none;
-            outline: none;
-        }
         .skills-info {
         p {
             color: $text-light;
-            font-size: .8rem;
-            line-height: 1.7;
-            font-weight: 500;
+            color: $overlay-blue-dark;
+            font-size: .9rem;
+            // font-size: 1rem;
+            line-height: 1.6;
             @media (min-width: 768px){
-                font-size: 1em;
+                font-size: 1rem;
             }
             background: transparent;
             overflow: hidden;
 
             span {
-                font-size: .9rem;
-                color: $span-gold;
+                font-size: 1rem;
+                font-weight: 600;
+                color: inherit;
             }
             
         }
@@ -86,37 +69,30 @@
             text-align: center;
             color: $span-gold;
             .skills-drop-p {
-                color: $span-gold;
+                font-weight: 600;
                 font-size: .9rem;
             }
         }
         // skills top 'down arrow'
-        &::after {
-            content: '';
-            position: absolute;
-            width: 45px;
-            height: 45px;
-            border: none;
-            top: 100%;
-            left: 50%;
-            margin-left: -24px;
-            margin-top: -24px;
-            transform: rotate(45deg);
-            background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
-            transition: .2s;
-            box-shadow: inset -5px -5px 5px #000a,
-                        inset 5px 5px 5px #3d495500;
-        }
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     width: 45px;
+        //     height: 45px;
+        //     border: none;
+        //     top: 100%;
+        //     left: 50%;
+        //     margin-left: -24px;
+        //     margin-top: -24px;
+        //     transform: rotate(45deg);
+        //     background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
+        //     transition: .2s;
+        //     box-shadow: inset -5px -5px 5px #000a,
+        //                 inset 5px 5px 5px #3d495500;
+        // }
         // end of skills top 'down arrow'
         
-        // SKILLS-TOP DATA-SCROLL
-        &[data-scroll] {
-            transform: scale(1) translateY(10vh);
-        }
-        &[data-scroll="in"] {
-            transition: 1.5s;
-            transform: scale(1) translateY(0);
-        }
+        
     }
     // end of skills top section
     // dropdown section
@@ -125,6 +101,16 @@
         margin: 0 auto;
         z-index: 4;
 
+        // SKILLS-TOP DATA-SCROLL
+        &[data-scroll] {
+            transform: scale(1) translateY(5vh);
+            opacity: 1;
+        }
+
+        &[data-scroll="in"] {
+            transition: 1.5s;
+            transform: scale(1) translateY(0);
+        }
         // dropdown button
         .dropbtn {
             color: $text-light;
@@ -134,9 +120,10 @@
             cursor: pointer;
             border: none;
             outline: none;
-            border-radius: 10px;
+            border-radius: .5rem;
             background: $link-crimson-dark;
             text-align: center;
+            text-transform: capitalize;
             transition: .2s;
             font-family: 'Gruppo', cursive;
             letter-spacing: .1rem;
@@ -154,7 +141,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: 10px;
+                border-radius: .5rem;
                 border: none;
                 outline: none;
                 transition: .2s;
@@ -167,6 +154,7 @@
 
             &::after {
                 background: $button-crimson-hover;
+                background: $overlay-btn-hover;
             
                 opacity: 0;
                 box-shadow: $box-dark-top-sm;
@@ -174,14 +162,14 @@
 
             // button box shadow states
             &.active {
+                transform: scale(.97);
                 letter-spacing: normal;
+                color: $span-gold;
                 &::before {opacity: 0}
                 &::after {opacity: 1}
             }
             &:active {
-                transform: scale(.94);
                 transition: .2s;
-                color: $span-gold;
                 letter-spacing: normal;
                 transform: scale(.97);
                 &::before {
@@ -217,7 +205,7 @@
             }
             // end of show-contents
             display: none;
-            width: 100vw;
+            width: 100%;
             z-index: 1;
             justify-content: center;
             align-items: center;
@@ -314,8 +302,9 @@
                         width: 100%;
                         border-radius: 10px;
                         height: 100%;
-                        box-shadow: inset 3px 3px 3px #ddda,
-                            inset -3px -3px 3px #000;
+                        box-shadow: $box-light-top-sm;
+                        // box-shadow: inset 3px 3px 3px #ddda,
+                        //     inset -3px -3px 3px #000;
                         z-index: 2;
                     }
                     // end of skills-item box shadow

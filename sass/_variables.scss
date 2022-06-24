@@ -65,33 +65,33 @@ $text-valid: #000;
 
 
 // box-shadows
-$box-light-top-sm: inset 2px 2px 3px #ddda,
+$box-light-top-sm: inset 2px 2px 3px rgba(221, 221, 221, 0.250),
                     inset -2px -2px 3px #000a,
-                    3px 3px 3px rgba(0, 0, 0, .200);
+                    2px 2px 3px rgba(0, 0, 0, .250);
 
-$box-light-top-sm-hover: inset 2px 2px 3px #ddda,
-                    inset -2px -2px 3px #000a,
+$box-light-top-sm-hover: inset 2px 2px 3px #000a,
+                    inset -2px -2px 3px rgba(221, 221, 221, 0.250),
                     2px 3px 2px rgba(0, 0, 0, .350);
 
-$box-light-top-bg: inset 4px 4px 5px #ddda,
-                    inset -4px -4px 5px #000a;
+$box-light-top-bg: inset 4px 4px 5px rgba(221, 221, 221, 0.500),
+                    inset -4px -4px 5px rgba(0, 0, 0, .200);
 
-$box-dark-top-sm: inset 2px 2px 3px #000a,
-                    inset -2px -2px 3px #ddda,
+$box-dark-top-sm: inset 2px 2px 3px rgba(0, 0, 0, 0.200),
+                    inset -2px -2px 2px rgba(221, 221, 221, 0.300),
                     3px 3px 3px rgba(0, 0, 0, .200);
 
-$box-dark-top-bg: inset 4px 4px 5px #000a,
-                    inset -4px -4px 5px #ddda;
+$box-dark-top-bg: inset 4px 4px 5px rgba(0, 0, 0, .200),
+                    inset -4px -4px 5px rgba(221, 221, 221, 0.500);
 
-$box-dark-top-md: inset 3px 3px 4px #000a,
-                    inset -3px -3px 4px #ddda;
+$box-dark-top-md: inset 3px 3px 4px rgba(0, 0, 0, .200),
+                    inset -3px -3px 4px rgba(221, 221, 221, 0.500);
                     
-$box-light-top-md: inset 3px 3px 4px #ddda,
-                    inset -3px -3px 4px #000a,
+$box-light-top-md: inset 3px 3px 4px rgba(221, 221, 221, 0.500),
+                    inset -3px -3px 4px rgba(0, 0, 0, .200),
                     5px 5px 1px rgba(0, 0, 0, .100);
 
-$box-light-top-lg: inset 5px 5px 5px #fffa,
-                    inset -10px -10px 10px #000a;
+$box-light-top-lg: inset 5px 5px 5px rgba(221, 221, 221, 0.500)
+                    inset -10px -10px 10px rgba(0, 0, 0, .200);
 // text-shadows
 $text-shadow-red: #dc143c;
 $text-shadow-sm: 1px 1px 1px #000;
