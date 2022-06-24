@@ -114,18 +114,19 @@
         // dropdown button
         .dropbtn {
             color: $text-light;
-            padding: .3em 3em;
-            font-size: 1.5em;
-            font-weight: 600;
+            padding: .5rem 1rem;
+            width: 20rem;
+            font-size: 1.25rem;
+            font-weight: 500;
             cursor: pointer;
             border: none;
             outline: none;
             border-radius: .5rem;
-            background: $link-crimson-dark;
+            background: #000a;
             text-align: center;
             text-transform: capitalize;
             transition: .2s;
-            font-family: 'Gruppo', cursive;
+            font-family: $font-content;
             letter-spacing: .1rem;
             position: relative;
             overflow: hidden;
@@ -160,31 +161,16 @@
                 box-shadow: $box-dark-top-sm;
             }
 
-            // button box shadow states
-            &.active {
-                transform: scale(.97);
-                letter-spacing: normal;
-                color: $span-gold;
-                &::before {opacity: 0}
-                &::after {opacity: 1}
-            }
-            &:active {
-                transition: .2s;
-                letter-spacing: normal;
-                transform: scale(.97);
-                &::before {
-                    opacity: 0;
-                }
-
-                &::after {
-                    opacity: 1;
-                }
-            }
-            @media (min-width: 768px) {
-                &:hover {
+            // BUTTON HOVER AND ACTIVE MEDIA QUERY
+            
+                &.active {
                     transform: scale(.98);
+                    letter-spacing: normal;
+                    color: $span-gold;
+                    &::before {opacity: 0}
+                    &::after {opacity: 1}
                 }
-            }
+            
             // end of box shadow states
             // end of dropdown button shadows
 
@@ -230,8 +216,8 @@
                 justify-content: center;
                 flex-wrap: wrap;
                 /*items wrapped onto multiple lines*/
-                margin-top: 50px;
-                padding-top: 50px;
+                margin-top: 5vh;
+                padding-top: 5vh;
 
                 // skills-items
                 .skills-item {
@@ -386,12 +372,12 @@
                     // end of item icon
                     // skills item title (h2)
                     h2 {
-                        font-size: 1.4em;
-                        font-weight: 600;
+                        font-size: 1.5rem;
+                        font-weight: 400;
                         color: $span-gold;
-                        margin-bottom: 10px;
+                        margin-bottom: .5rem;
                         text-transform: capitalize;
-                        font-family: $font-gruppo;
+                        font-family: $font-title;
                         text-decoration: underline $span-gold;
                         text-underline-offset: .1em;
                     }

@@ -15,7 +15,7 @@
         }
         // section title
         .footer-section-title {
-                color: $span-gold;
+                color: #ffff;
                 text-align: center;
                 text-transform: capitalize;
                 margin-bottom: 1.5em;
@@ -40,8 +40,7 @@
             margin: 5vh auto;
             padding: 5vh 1em;
             border-radius: 0;
-            border: 1px solid $span-gold;
-            font-family: $font-ubuntu;
+            // border: 1px solid $span-gold;
             overflow: hidden;
 
             .input-div {
@@ -55,11 +54,12 @@
                     position: absolute;
                     top: 0%;
                     transform: translateY(-.5em);
-                    color: $span-gold;
-                    font-weight: 700;
-                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 400;
+                    letter-spacing: .05rem;
+                    font-family: $font-title;
+                    text-transform: capitalize;
                     transition: .3s;
-                    font-family: $font-gruppo;
                 }
 
                 input, textarea {
@@ -70,9 +70,8 @@
                     transition: .5s;
                     border: none;
                     outline: none;
-                    font-weight: 600;
+                    font-weight: 500;
                     letter-spacing: .15em;
-                    font-family: $font-ubuntu;
                     background: $overlay-blue-darker;
                     outline: 2px solid $span-gold;
                     color: $span-gold;
@@ -118,8 +117,7 @@
                 }
                 // end of input hover state
                 ::placeholder {
-                    font-family: $font-gruppo;
-                    font-weight: 700;
+                    font-weight: 500;
                     color: #000;
                     text-transform: capitalize;
                 }
@@ -127,17 +125,18 @@
 
             button {
                 position: relative;
-                padding: 1em ;
+                padding: .7rem 1rem;
                 color: #eee;
                 background-color: $span-crimson-dark;
-                font-family: $font-gruppo;
-                font-weight: 600;
-                letter-spacing: .1em;
-                text-transform: uppercase;
+                font-family: $font-content;
+                font-weight: 500;
+                font-size: 1rem;
+                letter-spacing: .05rem;
+                text-transform: capitalize;
                 border: none;
                 outline: none;
-                border-radius: 10px;
-                opacity: .9;
+                border-radius: 1rem;
+                // opacity: .9;
                 transition: .3s ease;
                 cursor: pointer;
                 isolation: isolate;
@@ -211,9 +210,8 @@
                 .link-icon {
                     font-size: 1.4em;
                     text-transform: capitalize;
-                    font-family: $font-gruppo;
                     color: $text-light;
-                    font-weight: 500;
+                    font-weight: 400;
                     position:absolute;
                     left: 50%;
                     top: 50%;
@@ -631,7 +629,7 @@
     }
 }
  // bs21
- .bs21 {
+.bs21 {
     //  DATA-SCROLL
     &[data-scroll] {
         transition: 1.5s;
@@ -642,17 +640,14 @@
     }
     width: 100%;
     text-align: center;
-        font-family: $font-ubuntu; 
     p,
     a {
         color: $text-light;
-        font-size: 1.1em;
+        font-size: 1rem;
         text-transform: capitalize;
     }
     a {
-        font-family: $font-gruppo;
         color: $span-gold;
-        font-size: 1.3em;
         &:hover {
             opacity: .9;
         }
