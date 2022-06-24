@@ -351,7 +351,7 @@ hamburger
   font-weight: 500;
   border: 1px solid #ead2a1;
   padding-left: 0.15rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   transition: 0.2s;
 }
 @media (min-width: 768px) {
@@ -367,8 +367,8 @@ hamburger
   border: none;
   outline: none;
   color: #29323c;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
   transition: 0.2s;
 }
 @media (max-width: 1024px) {

@@ -87,7 +87,7 @@
                     font-weight: 500;
                     border: 1px solid $span-gold;
                     padding-left: .15rem;
-                    border-radius: .5rem;
+                    border-radius: .25rem;
                     transition: .2s;
                     // text-shadow: 0 0 5px $text-shadow-red;
 
@@ -99,8 +99,8 @@
                         border: none;
                         outline: none;
                         color: $overlay-blue-dark;
-                        border-top-right-radius: .5rem;
-                        border-bottom-right-radius: .5rem;
+                        border-top-right-radius: .25rem;
+                        border-bottom-right-radius: .25rem;
                         transition: .2s;
                     }
 
