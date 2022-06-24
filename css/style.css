@@ -1071,9 +1071,10 @@ hamburger
     display: none;
   }
   #menu .menu-section .menu-content {
-    border: 2px solid;
     width: 50%;
     text-align: center;
+    position: relative;
+    top: 15vh;
   }
   #menu .menu-section .menu-content .menu-title h2 {
     font-size: 2rem;
@@ -1081,7 +1082,6 @@ hamburger
   #menu .menu-section .menu-content .menu-cta {
     position: relative;
     top: 20vh;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     gap: 1rem;
