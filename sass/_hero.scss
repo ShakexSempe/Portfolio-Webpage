@@ -354,16 +354,21 @@
                 // IMMERSIVE STYLE
                 &.fig-js {
                     img {
-                    filter: drop-shadow(.5rem .5rem .5rem #000);
+                    filter: drop-shadow(.5rem .5rem .25rem #000);
                     transform-style: preserve-3d;
                     }
 
                     &:hover {
                         img {
                             transition: 1s;
-                            transform: translateY(-2rem) rotateY(10deg);
-                            filter: drop-shadow(0 1rem .1rem #000a);
+                            animation: imageTransition 3s infinite;
 
+                            @keyframes imageTransition {
+                                50% {
+                                    filter: drop-shadow(0 1rem .1rem #000);
+                                    transform: translateY(-2rem) rotateY(10deg);
+                                }
+                            }
                         }
                     }
                 }
@@ -396,26 +401,26 @@
                     color: #f4f4f4;
                 }
                 // JS MENU TITLE WITH ANIMATION CLASS ACTIVATED BY IMG CLICK
-                &.title-js {
-                    &.active-title {
-                        h2 {
-                            animation: title 5s 3;
-                            animation-delay: 2s;
-                        }
-                        p {
-                            animation: title 5s 3;
-                            animation-delay: 1s;
-                        }
-                        @keyframes title {
-                            40% {
-                                color: lime;
-                            }
-                            70% {
-                                color: #faed38;
-                            }
-                        }
-                    }
-                }
+                // &.title-js {
+                //     &.active-title {
+                //         h2 {
+                //             animation: title 3s 2;
+                //             animation-delay: 2s;
+                //         }
+                //         p {
+                //             animation: title 3s 2;
+                //             animation-delay: 1s;
+                //         }
+                //         @keyframes title {
+                //             40% {
+                //                 color: $span-gold;
+                //             }
+                //             70% {
+                //                 color: rgb(140, 247, 140);
+                //             }
+                //         }
+                //     }
+                // }
                 // INTERSECTION OBSERVER CLASSES
                 &.io-item {
                     h2 {

@@ -183,13 +183,13 @@ date.innerHTML = new Date().getFullYear();
 
 
 
-const fig = document.querySelector('.fig-js');
-const content = document.querySelector('.title-js');
+// const fig = document.querySelector('.fig-js');
+// const content = document.querySelector('.title-js');
 
-fig.addEventListener("click", () => {
-  if(content.classList.contains("active-title")){
-    content.classList.remove("active-title");
-  } else {
-    content.classList.add("active-title");
-  }
-})
+// fig.addEventListener("click", () => {
+//   if(content.classList.contains("active-title")){
+//     content.classList.remove("active-title");
+//   } else {
+//     content.classList.add("active-title");
+//   }
+// })
