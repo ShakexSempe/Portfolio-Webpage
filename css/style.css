@@ -1034,6 +1034,10 @@ hamburger
   opacity: 0;
 }
 @media (min-width: 820px) {
+  #menu .menu-section .menu-content .menu-cta .page-btn {
+    width: 15rem;
+    padding: 0.7rem 1rem;
+  }
   #menu .menu-section .menu-content .menu-cta .page-btn:hover {
     transform: scale(0.98);
     letter-spacing: normal;

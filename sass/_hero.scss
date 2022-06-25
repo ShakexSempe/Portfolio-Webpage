@@ -504,6 +504,8 @@
                     }
                     // DESKTOP HOVER
                     @media (min-width: 820px){
+                        width: 15rem;
+                        padding: .7rem 1rem;
                         &:hover {
                             transform: scale(.98);
                             letter-spacing: normal;
