@@ -116,8 +116,8 @@
             color: $text-light;
             padding: .5rem 1rem;
             width: 20rem;
-            font-size: 1.25rem;
-            font-weight: 500;
+            font-size: 1.3rem;
+            font-weight: 300;
             cursor: pointer;
             border: none;
             outline: none;
@@ -126,8 +126,8 @@
             text-align: center;
             text-transform: capitalize;
             transition: .2s;
-            font-family: $font-content;
-            letter-spacing: .1rem;
+            font-family: $font-title;
+            letter-spacing: .15rem;
             position: relative;
             overflow: hidden;
             isolation: isolate;
