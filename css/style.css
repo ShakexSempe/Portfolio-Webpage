@@ -929,6 +929,26 @@ hamburger
     transform: translateY(-2rem) rotateY(10deg);
   }
 }
+#menu .menu-section .menu-img figure.fig-response {
+  animation: responseTransition 3s infinite;
+}
+#menu .menu-section .menu-img figure.fig-response:hover {
+  animation: none;
+}
+#menu .menu-section .menu-img figure.fig-response:hover img {
+  transition: 5s;
+}
+@keyframes responseTransition {
+  20% {
+    transform: scaleY(180%);
+  }
+  30% {
+    transform: scaleX(110%);
+  }
+  40% {
+    transform: scaleY(1);
+  }
+}
 #menu .menu-section .menu-img.io-item img {
   transform: scale(0.5);
   transition: 0.3s;

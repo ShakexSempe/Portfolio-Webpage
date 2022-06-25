@@ -348,7 +348,7 @@
                     height: 100%;
                     object-fit: contain;
                 }
-
+                
                 // IMMERSIVE STYLE
                 &.fig-js {
                     img {
@@ -370,7 +370,29 @@
                         }
                     }
                 }
+                // RESPONSE STYLE
+                &.fig-response {
+                    animation: responseTransition 3s infinite;
+                    &:hover {
+                        animation: none;
+                        img {
+                            transition: 5s;
+                            @keyframes responseTransition {
+                                20% {
+                                    transform: scaleY(180%);
+                                }
+                                30% {
+                                    transform: scaleX(110%);
+                                }
+                                40% {
+                                    transform: scaleY(1);
+                                }
+                            }
+                        }
+                    }
+                }
             }
+            
             // INTERSECTION OBSERVER CLASSES
             &.io-item {
                 img {
