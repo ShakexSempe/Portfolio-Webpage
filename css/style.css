@@ -1223,8 +1223,8 @@ hamburger
   color: #f4f4f4;
   padding: 0.5rem 1rem;
   width: 20rem;
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 300;
   cursor: pointer;
   border: none;
   outline: none;
@@ -1233,8 +1233,8 @@ hamburger
   text-align: center;
   text-transform: capitalize;
   transition: 0.2s;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.1rem;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 0.15rem;
   position: relative;
   overflow: hidden;
   isolation: isolate;
