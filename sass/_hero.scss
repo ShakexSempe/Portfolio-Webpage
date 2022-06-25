@@ -471,11 +471,12 @@
 
                 .page-btn {
                     width: 10rem;
-                    color: $span-gold;
+                    color: #fff;
+                    text-transform: capitalize;
                     border: none;
                     border-radius: .5rem;
                     padding: .5rem 1rem;
-                    letter-spacing: .25rem;
+                    letter-spacing: .05rem;
                     text-align: center;
                     transition: .25s;
                     position: relative;
@@ -493,11 +494,11 @@
                         z-index: -1;
                     }
                     &::before {
-                        background: linear-gradient(0deg, #000a, rgba(0,0,0,.2));
+                        background: $button-crimson;
                         box-shadow: $box-light-top-sm;
                     }
                     &::after {
-                        background: linear-gradient(0deg, rgba(0,0,0,.2), #000a);
+                        background: $button-crimson-hover;
                         box-shadow: $box-light-top-sm-hover;
                         opacity: 0;
                     }

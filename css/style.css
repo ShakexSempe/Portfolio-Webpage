@@ -1002,11 +1002,12 @@ hamburger
 }
 #menu .menu-section .menu-content .menu-cta .page-btn {
   width: 10rem;
-  color: #ead2a1;
+  color: #fff;
+  text-transform: capitalize;
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.05rem;
   text-align: center;
   transition: 0.25s;
   position: relative;
@@ -1024,11 +1025,11 @@ hamburger
   z-index: -1;
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::before {
-  background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.2));
+  background: linear-gradient(0deg, #3f0d0d, #dc134c);
   box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::after {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), #000a);
+  background: linear-gradient(0deg, #dc134c, #3f0d0d);
   box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px rgba(221, 221, 221, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.35);
   opacity: 0;
 }
