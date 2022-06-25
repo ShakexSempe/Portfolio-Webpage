@@ -2219,12 +2219,12 @@ hamburger
 }
 .about .col-right .article-container article.about-article {
   padding: 0.5em 1em;
-  height: 15vh;
+  height: 17vh;
   transition: 0.3s ease;
 }
 @media (max-width: 768px) {
   .about .col-right .article-container article.about-article {
-    height: 20vh;
+    height: 23vh;
     transition: 0.3s ease;
     padding: 0.5em 0;
   }
@@ -2235,13 +2235,12 @@ hamburger
   }
 }
 .about .col-right .article-container article.about-article p {
-  padding: 0.2em;
-  margin-bottom: 1em;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   text-overflow: ellipsis;
   text-align: left;
   z-index: 1;
-  font-size: 0.85em;
-  font-weight: 500;
+  font-size: 0.96rem;
   font-family: "Montserrat", sans-serif;
 }
 .about .col-right .article-container article.about-article p#intro::first-letter {
@@ -2255,7 +2254,7 @@ hamburger
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .about .col-right .article-container article.about-article p#intro {
-  font-weight: 600;
+  font-weight: 500;
 }
 .about .col-right .article-container article.about-article p.about-body {
   transition: opacity 0.5s ease;
