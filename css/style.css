@@ -408,7 +408,7 @@ hamburger
     justify-content: flex-start;
     align-items: center;
     margin: 1em auto 1em 0.5em;
-    margin: 0.5rem auto 1rem;
+    margin: 0.5rem auto;
     width: 95%;
   }
   #header .header #navbar .nav-list .links-container ul li a {
@@ -417,10 +417,10 @@ hamburger
     width: 100%;
     display: block;
     font-size: 1rem;
-    font-weight: 400;
-    border-radius: 5px;
+    font-weight: 500;
     font-family: "Kanit", sans-serif;
-    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
   }
   #header .header #navbar .nav-list .links-container ul li i {
     width: 2.5rem;
@@ -506,12 +506,11 @@ hamburger
   opacity: 1;
 }
 #header .header #navbar .nav-list ul li a {
-  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.15em;
   text-decoration: none;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: uppercase;
   display: block;
   text-align: left;
   font-family: "Montserrat", sans-serif;
@@ -1827,15 +1826,10 @@ hamburger
   transition: 0.3s;
 }
 #projects .projects .all-projects .project-item .project-tile p {
-  font-size: 0.8em;
+  font-size: 1rem;
   font-weight: 300;
-  color: #f4f4f4;
-  margin: 0.5em 0;
-}
-@media (min-width: 768px) {
-  #projects .projects .all-projects .project-item .project-tile p {
-    font-size: 0.9em;
-  }
+  color: #ffff;
+  margin: 0.5rem 0;
 }
 #projects .projects .all-projects .project-item .project-tile a {
   color: #fff;
@@ -1857,11 +1851,11 @@ hamburger
   margin: 1em 0 0.5em 0;
 }
 #projects .projects .all-projects .project-item .project-tile a i::after {
-  content: "view project";
-  font-style: italic;
-  text-transform: capitalize;
+  content: "view";
+  text-transform: lowercase;
+  letter-spacing: 0.15rem;
   color: #f4f4f4;
-  font-weight: 500;
+  font-weight: 300;
   transition: 0.3s;
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
   border-radius: 1rem;
