@@ -338,7 +338,7 @@
         // GENERAL MENU IMG STYLE
         .menu-img {
             figure {
-                overflow: hidden;
+                // overflow: hidden;
                 // border: 1px solid green;
                 width: 100%;
                 height: 100%;
@@ -348,49 +348,54 @@
                     height: 100%;
                     object-fit: contain;
                 }
-                
-                // IMMERSIVE STYLE
-                &.fig-js {
-                    img {
-                    filter: drop-shadow(.5rem .5rem .25rem #000);
-                    transform-style: preserve-3d;
-                    }
-
-                    &:hover {
-                        img {
-                            transition: 1s;
-                            animation: imageTransition 3s infinite;
-
-                            @keyframes imageTransition {
-                                50% {
-                                    filter: drop-shadow(0 1rem .1rem #000);
-                                    transform: translateY(-2rem) rotateY(10deg);
-                                }
-                            }
-                        }
-                    }
-                }
+                // FIGURE ANIMATIONS = CLASS = .FIG
                 // RESPONSE STYLE
                 &.fig-response {
                     animation: responseTransition 3s infinite;
-                    &:hover {
-                        animation: none;
-                        img {
-                            transition: 5s;
-                            @keyframes responseTransition {
-                                20% {
-                                    transform: scaleY(180%);
-                                }
-                                30% {
-                                    transform: scaleX(110%);
-                                }
-                                40% {
-                                    transform: scaleY(1);
-                                }
+                    @keyframes responseTransition {
+                        20% {
+                            transform: scaleY(180%);
+                        }
+                        30% {
+                            transform: scaleX(110%);
+                        }
+                        40% {
+                            transform: scaleY(1);
+                        }
+                    }
+                }
+                // IMMERSIVE STYLE
+                &.fig-css {
+                    img {
+                        filter: drop-shadow(0 1rem .25rem rgba(0,0,0,.250));
+
+                        transform-style: preserve-3d;
+                        animation: cssTransition 3s infinite;
+                        @keyframes cssTransition {
+                            50% {
+                                filter: drop-shadow(.5rem .5rem .1rem #000a);
+
+                                transform: rotateY(10deg);
                             }
                         }
                     }
                 }
+                // ENGAGING STYLE
+                &.fig-js {
+                    img {
+                        animation: imageTransition 3s infinite;
+                    filter: drop-shadow(.5rem .5rem .25rem #000);
+                    transform-style: preserve-3d;
+                    }
+                    // FIGURE ANIMATION KEYFRAMES
+                    @keyframes imageTransition {
+                        50% {
+                            filter: drop-shadow(0 1rem .1rem #000);
+                            transform: translateY(-2rem) rotateY(10deg);
+                        }
+                    }
+                }
+                
             }
             
             // INTERSECTION OBSERVER CLASSES
