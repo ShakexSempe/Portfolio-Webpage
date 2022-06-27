@@ -418,8 +418,8 @@ hamburger
     display: block;
     font-size: 1rem;
     font-weight: 500;
-    font-family: "Kanit", sans-serif;
     font-family: "Montserrat", sans-serif;
+    font-family: "Kanit", sans-serif;
     text-transform: capitalize;
   }
   #header .header #navbar .nav-list .links-container ul li i {
@@ -937,18 +937,18 @@ hamburger
     transform: scaleY(1);
   }
 }
-#menu .menu-section .menu-img figure.fig-css img {
-  filter: drop-shadow(0 1rem 0.25rem rgba(0, 0, 0, 0.25));
+#menu .menu-section .menu-img figure.fig-js img {
+  filter: drop-shadow(0 0.5rem 0.15rem #000);
   transform-style: preserve-3d;
   animation: cssTransition 3s infinite;
 }
 @keyframes cssTransition {
   50% {
-    filter: drop-shadow(0.5rem 0.5rem 0.1rem #000a);
-    transform: rotateY(10deg);
+    filter: drop-shadow(0.5rem 1rem 0.25rem rgba(0, 0, 0, 0.25));
+    transform: rotateY(10deg) scale(1.08);
   }
 }
-#menu .menu-section .menu-img figure.fig-js img {
+#menu .menu-section .menu-img figure.fig-css img {
   animation: imageTransition 3s infinite;
   filter: drop-shadow(0.5rem 0.5rem 0.25rem #000);
   transform-style: preserve-3d;
@@ -1234,8 +1234,8 @@ hamburger
   color: #f4f4f4;
   padding: 0.5rem 1rem;
   width: 20rem;
-  font-size: 1.3rem;
-  font-weight: 300;
+  font-size: 1.35rem;
+  font-weight: 500;
   cursor: pointer;
   border: none;
   outline: none;
