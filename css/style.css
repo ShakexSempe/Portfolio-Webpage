@@ -764,9 +764,9 @@ hamburger
   border: none;
   outline: none;
   opacity: 0;
-  transform: translateY(10vh);
+  transform: translateX(-10vw);
   transform-style: preserve-3d;
-  animation: show-cta 4s 5.5s;
+  animation: show-cta 3s ease-in-out 5.5s;
   animation-fill-mode: forwards;
   transition: 0.3s linear;
   cursor: pointer;
@@ -781,9 +781,13 @@ hamburger
   }
 }
 @keyframes show-cta {
+  60% {
+    opacity: 1;
+    transform: scale(1) translateX(2rem);
+  }
   100% {
     opacity: 1;
-    transform: scale(1) translateY(0);
+    transform: translateX(0);
   }
 }
 #home .hero #cta-header::before, #home .hero #cta-header::after {
@@ -920,11 +924,11 @@ hamburger
   object-fit: contain;
 }
 #menu .menu-section .menu-img figure.fig-response {
-  animation: responseTransition 3s infinite;
+  animation: responseTransition 5s infinite;
 }
 @keyframes responseTransition {
-  20% {
-    transform: scaleY(180%);
+  5% {
+    transform: scaleY(140%);
   }
   30% {
     transform: scaleX(110%);
@@ -1100,7 +1104,24 @@ hamburger
     background-attachment: fixed;
   }
   #menu .menu-section .menu-img {
-    display: none;
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    height: 50%;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+  }
+  #menu .menu-section .menu-img figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #menu .menu-section .menu-img figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   #menu .menu-section .menu-content {
     width: 50%;
@@ -1130,15 +1151,6 @@ hamburger
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
     z-index: -1;
-  }
-  #menu .menu-section#menu-1 {
-    background-image: url(../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg);
-  }
-  #menu .menu-section#menu-2 {
-    background-image: url(../hero/walling-XLqiL-rz4V8-unsplash.jpg);
-  }
-  #menu .menu-section#menu-3 {
-    background-image: url(../img/altumcode-U0tBTn8UR8I-unsplash.jpg);
   }
 }
 

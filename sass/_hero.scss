@@ -173,9 +173,9 @@
             border: none;
             outline: none;
             opacity: 0;
-            transform: translateY(10vh);
+            transform: translateX(-10vw);
             transform-style: preserve-3d;
-            animation: show-cta 4s 5.5s;
+            animation: show-cta 3s ease-in-out 5.5s;
             animation-fill-mode: forwards;
             transition: .3s linear;
             cursor: pointer;
@@ -184,9 +184,15 @@
 
             // show cta
             @keyframes show-cta {
+                60% {
+                    opacity: 1;
+                    // transition: ease-out;
+                    transform: scale(1) translateX(2rem);
+                }
                 100% {
                     opacity: 1;
-                    transform: scale(1) translateY(0);
+                    // transition: ease-in;
+                    transform: translateX(0);
                 }
             }
 
@@ -359,10 +365,10 @@
                 // FIGURE ANIMATIONS = CLASS = .FIG
                 // RESPONSE STYLE
                 &.fig-response {
-                    animation: responseTransition 3s infinite;
+                    animation: responseTransition 5s infinite;
                     @keyframes responseTransition {
-                        20% {
-                            transform: scaleY(180%);
+                        5% {
+                            transform: scaleY(140%);
                         }
                         30% {
                             transform: scaleX(110%);
@@ -569,7 +575,29 @@
         // DESKTOP MENU SECTION STYLE
         @media (min-width: 1024px) {
             .menu-img {
-                display: none;
+                position: absolute;
+                right: 5vw;
+                top: 50%;
+                transform: translateY(-50%);
+                // display: none;
+                width: 45%;
+                height: 50%;
+                // overflow: hidden;
+                border: 1px solid#fff;
+                border-radius: .5rem;
+
+                figure {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
             }
             .menu-content {
                 width: 50%;
@@ -614,15 +642,15 @@
             // MENU SECTION DESKTOP IMAGE BACKGROUNDS
             // MENU 1 - RESPONSIVE
             &#menu-1 {
-                background-image: url(../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg);
+                // background-image: url(../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg);
             }
             // MENU 2 - IMMERSIVE
             &#menu-2 {
-                background-image: url(../hero/walling-XLqiL-rz4V8-unsplash.jpg);
+                // background-image: url(../hero/walling-XLqiL-rz4V8-unsplash.jpg);
             }
             // MENU 3 - ENGAGING
             &#menu-3 {
-                background-image: url(../img/altumcode-U0tBTn8UR8I-unsplash.jpg);
+                // background-image: url(../img/altumcode-U0tBTn8UR8I-unsplash.jpg);
             }
         }
     }
