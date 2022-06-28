@@ -76,9 +76,6 @@ displayProjects = (projectsItems) => {
                 </p>
                 <i class="fas fa-link"></i>
             </a>
-            <div class="tech-list">
-                <ul>${project.tech}<ul>
-            </div>
         </div>
         <div class="project-img">
             <img src=${project.img} alt="img" loading="lazy"/>
