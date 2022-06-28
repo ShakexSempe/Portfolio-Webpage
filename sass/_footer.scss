@@ -80,7 +80,9 @@
                     &:invalid {
                         // background-color: $background-invalid;
                         background-color: $span-gold;
+                        background-color:#ddd;
                         color: $text-invalid;
+                        outline: none;
                     }
                     &:focus {
                         outline: 2px dashed #fffa;
@@ -201,14 +203,14 @@
                 border: 2px solid hsla(0, 0%, 0%, 0.5);
                 background-color: $overlay-blue-darker;
                 padding: .5rem 0;
-                border-radius: 5px;
+                border-radius: .5rem;
                 overflow: hidden;
                 margin: .5em .1em 1em .1em;
                 position: relative;
                 transition: .3s;
 
                 .link-icon {
-                    font-size: 1.25rem;
+                    font-size: 1.35rem;
                     text-transform: capitalize;
                     color: $text-light;
                     font-weight: 300;
@@ -256,9 +258,8 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        border-radius: 5px;
-                        box-shadow: inset 2px 2px 4px #fffa,
-                                    inset -2px -2px 4px #000a;
+                        border-radius:.5rem;
+                        box-shadow: $box-light-top-sm;
                     }
                     // end of link box shadow
                     
@@ -626,7 +627,6 @@
             // end of icon label pop up
         } 
         // end of social icons 
-       
     }
 }
  // bs21
