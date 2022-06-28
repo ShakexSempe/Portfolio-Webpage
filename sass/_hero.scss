@@ -362,8 +362,22 @@
                     height: 100%;
                     object-fit: contain;
                 }
+                
+                
+            }
+            
+            // INTERSECTION OBSERVER CLASSES
+            &.io-item {
+                
+                img {
+                    transform: scale(.5);
+                    transition: .3s;
+                }
+            }
+            &.active-item {
                 // FIGURE ANIMATIONS = CLASS = .FIG
                 // RESPONSE STYLE
+                figure {
                 &.fig-response {
                     animation: responseTransition 5s infinite;
                     @keyframes responseTransition {
@@ -387,8 +401,7 @@
                         animation: cssTransition 3s infinite;
                         @keyframes cssTransition {
                             50% {
-                        filter: drop-shadow(.5rem 1rem .25rem rgba(0,0,0,.250));
-
+                                filter: drop-shadow(.5rem 1rem .25rem rgba(0,0,0,.250));
                                 transform: rotateY(10deg) scale(1.08);
                             }
                         }
@@ -409,17 +422,8 @@
                         }
                     }
                 }
-                
             }
-            
-            // INTERSECTION OBSERVER CLASSES
-            &.io-item {
-                img {
-                    transform: scale(.5);
-                    transition: .3s;
-                }
-            }
-            &.active-item {
+                // IMAGE ZOOMS IN ON IO
                 img {
                     transition: 1s ease-out;
                     transform: scale(1);
@@ -583,7 +587,7 @@
                 width: 45%;
                 height: 50%;
                 // overflow: hidden;
-                border: 1px solid#fff;
+                // border: 1px solid#fff;
                 border-radius: .5rem;
 
                 figure {
