@@ -1877,7 +1877,7 @@ hamburger
   transition: 0.3s;
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
   box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
   margin-left: 0.5rem;
   opacity: 1;
@@ -2206,12 +2206,15 @@ hamburger
   opacity: 1;
 }
 .about .col-right button {
-  background: linear-gradient(0deg, #20262e, #485563);
-  color: #ead2a1;
-  margin: 1em auto;
-  padding: 0.5rem;
+  background: linear-gradient(0deg, #3f0d0d, #dc134c);
+  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin: 1rem auto;
+  padding: 0.5em;
+  width: 10rem;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  border: none;
   text-transform: capitalize;
   transition: 0.3s;
   position: relative;
@@ -2223,11 +2226,12 @@ hamburger
   place-items: center;
   top: 0;
   left: 0;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   width: 100%;
   height: 100%;
   opacity: 1;
-  background: linear-gradient(0deg, #485563, #20262e);
+  box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px rgba(221, 221, 221, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, #dc134c, #3f0d0d);
   transition: 0.2s;
 }
 .about .col-right button:hover {
