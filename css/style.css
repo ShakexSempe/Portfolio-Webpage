@@ -954,12 +954,13 @@ hamburger
 }
 #menu .menu-section .menu-img.active-item figure.fig-css img {
   animation: imageTransition 3s infinite;
-  filter: drop-shadow(0.5rem 0.5rem 0.25rem #000);
+  filter: drop-shadow(0.5rem 0.5rem 0.15rem #000);
   transform-style: preserve-3d;
+  transition: 1s;
 }
 @keyframes imageTransition {
   50% {
-    filter: drop-shadow(0 1rem 0.1rem #000);
+    filter: drop-shadow(0 1rem 0.25rem #000);
     transform: translateY(-2rem) rotateY(10deg);
   }
 }

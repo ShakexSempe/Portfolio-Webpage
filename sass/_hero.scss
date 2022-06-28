@@ -368,7 +368,6 @@
             
             // INTERSECTION OBSERVER CLASSES
             &.io-item {
-                
                 img {
                     transform: scale(.5);
                     transition: .3s;
@@ -411,13 +410,14 @@
                 &.fig-css {
                     img {
                         animation: imageTransition 3s infinite;
-                    filter: drop-shadow(.5rem .5rem .25rem #000);
-                    transform-style: preserve-3d;
+                        filter: drop-shadow(.5rem .5rem .15rem #000);
+                        transform-style: preserve-3d;
+                        transition: 1s;
                     }
                     // FIGURE ANIMATION KEYFRAMES
                     @keyframes imageTransition {
                         50% {
-                            filter: drop-shadow(0 1rem .1rem #000);
+                            filter: drop-shadow(0 1rem .25rem #000);
                             transform: translateY(-2rem) rotateY(10deg);
                         }
                     }
