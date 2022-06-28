@@ -1811,7 +1811,7 @@ hamburger
   }
 }
 #projects .projects .all-projects .project-item .project-tile h1 {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   width: 100%;
   color: #fff;
   font-weight: 500;
@@ -1821,11 +1821,11 @@ hamburger
   letter-spacing: 0.05rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px dashed #ead2a1;
+  border-bottom: 1px dashed #f4f4f4;
 }
 @media (min-width: 1024px) {
   #projects .projects .all-projects .project-item .project-tile h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 #projects .projects .all-projects .project-item .project-tile h2 {
@@ -1837,8 +1837,13 @@ hamburger
   color: #f4f4f4;
   transition: 0.3s;
 }
+@media (min-width: 768px) {
+  #projects .projects .all-projects .project-item .project-tile h2 {
+    font-size: 1.25rem;
+  }
+}
 #projects .projects .all-projects .project-item .project-tile p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 300;
   color: #ffff;
   margin: 0.5rem 0;

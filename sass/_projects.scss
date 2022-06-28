@@ -90,10 +90,10 @@
                     transition: 1.3s ease;
                     // project Title (h1)
                     h1 {
-                        font-size: 1.35rem;
+                        font-size: 1.5rem;
                         width: 100%;
                         @media (min-width:1024px){
-                            font-size: 1.5rem;
+                            font-size: 1.8rem;
                         }
                         color: #fff;
                         font-weight: 500;
@@ -103,7 +103,7 @@
                         letter-spacing: .05rem;
                         margin-bottom: 1rem;
                         padding-bottom: .5rem;
-                        border-bottom: 1px dashed $span-gold;
+                        border-bottom: 1px dashed #f4f4f4;
                         
                     }
                     // end of project Title (h1)
@@ -116,13 +116,13 @@
                         text-transform: capitalize;
                         color: #f4f4f4;
                         transition: .3s;
-                        // @media (min-width:768px){
-                        //     font-size: 1.2em;
-                        // }
+                        @media (min-width:768px){
+                            font-size: 1.25rem;
+                        }
                     }
                     
                     p {
-                        font-size: .95rem;
+                        font-size: .9rem;
                         @media (min-width:768px){
                             font-size: 1rem;
                         }
