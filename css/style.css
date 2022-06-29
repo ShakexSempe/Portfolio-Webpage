@@ -2612,7 +2612,6 @@ hamburger
 #footer .footer .socialMedia-links {
   grid-template-columns: 1fr;
   background-color: #29323c;
-  border: 1px solid #ead2a1;
   width: 100%;
   margin: 2em 5vw;
   padding: 5vh 1em;
