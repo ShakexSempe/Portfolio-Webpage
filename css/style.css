@@ -3027,6 +3027,53 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+body .loader_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+}
+body .loader_bg .loader {
+  border: 2px solid #ead2a1;
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: relative;
+}
+body .loader_bg .loader::before, body .loader_bg .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ead2a1;
+  border-radius: 50%;
+  opacity: 0;
+  animation: loader 2s linear infinite;
+}
+body .loader_bg .loader::before {
+  animation-delay: 0.5s;
+}
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
 body a {
   text-decoration: none;
 }
