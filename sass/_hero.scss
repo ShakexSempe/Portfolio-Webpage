@@ -108,7 +108,7 @@
                     line-height: 1.3;
                     animation: hero-span 5s ease-in-out;
                     animation-fill-mode: forwards;
-                    animation-delay: calc(1s + .5s * var(--s));
+                    animation-delay: calc(6.5s + .5s * var(--s));
                     transition: 1s;
                     transform-style: preserve-3d;
                     @media (min-width: 768px) {
@@ -133,7 +133,7 @@
                         position: relative;
                         display: inline-block;
                         animation: aka 5s ease alternate;
-                        animation-delay: 4s;
+                        animation-delay: 9.5s;
                         animation-fill-mode: forwards;
                         color: #ddd;
                         opacity: 0;
@@ -175,7 +175,7 @@
             opacity: 0;
             transform: translateX(-10vw);
             transform-style: preserve-3d;
-            animation: show-cta 3s ease-in-out 5.5s;
+            animation: show-cta 3s ease-in-out 11s;
             animation-fill-mode: forwards;
             transition: .3s linear;
             cursor: pointer;
@@ -362,8 +362,21 @@
                     height: 100%;
                     object-fit: contain;
                 }
+                
+                
+            }
+            
+            // INTERSECTION OBSERVER CLASSES
+            &.io-item {
+                img {
+                    transform: scale(.5);
+                    transition: .3s;
+                }
+            }
+            &.active-item {
                 // FIGURE ANIMATIONS = CLASS = .FIG
                 // RESPONSE STYLE
+                figure {
                 &.fig-response {
                     animation: responseTransition 5s infinite;
                     @keyframes responseTransition {
@@ -387,8 +400,7 @@
                         animation: cssTransition 3s infinite;
                         @keyframes cssTransition {
                             50% {
-                        filter: drop-shadow(.5rem 1rem .25rem rgba(0,0,0,.250));
-
+                                filter: drop-shadow(.5rem 1rem .25rem rgba(0,0,0,.250));
                                 transform: rotateY(10deg) scale(1.08);
                             }
                         }
@@ -398,28 +410,20 @@
                 &.fig-css {
                     img {
                         animation: imageTransition 3s infinite;
-                    filter: drop-shadow(.5rem .5rem .25rem #000);
-                    transform-style: preserve-3d;
+                        filter: drop-shadow(.5rem .5rem .15rem #000);
+                        transform-style: preserve-3d;
+                        transition: 1s;
                     }
                     // FIGURE ANIMATION KEYFRAMES
                     @keyframes imageTransition {
                         50% {
-                            filter: drop-shadow(0 1rem .1rem #000);
+                            filter: drop-shadow(0 1rem .25rem #000);
                             transform: translateY(-2rem) rotateY(10deg);
                         }
                     }
                 }
-                
             }
-            
-            // INTERSECTION OBSERVER CLASSES
-            &.io-item {
-                img {
-                    transform: scale(.5);
-                    transition: .3s;
-                }
-            }
-            &.active-item {
+                // IMAGE ZOOMS IN ON IO
                 img {
                     transition: 1s ease-out;
                     transform: scale(1);
@@ -583,7 +587,7 @@
                 width: 45%;
                 height: 50%;
                 // overflow: hidden;
-                border: 1px solid#fff;
+                // border: 1px solid#fff;
                 border-radius: .5rem;
 
                 figure {

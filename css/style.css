@@ -416,8 +416,8 @@ hamburger
     padding: 0.5em 0;
     width: 100%;
     display: block;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.05rem;
+    font-weight: 400;
     font-family: "Montserrat", sans-serif;
     font-family: "Kanit", sans-serif;
     text-transform: capitalize;
@@ -714,7 +714,7 @@ hamburger
   line-height: 1.3;
   animation: hero-span 5s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: calc(1s + .5s * var(--s));
+  animation-delay: calc(6.5s + .5s * var(--s));
   transition: 1s;
   transform-style: preserve-3d;
   /* HERO H1 INTRO ANIMATION */
@@ -738,7 +738,7 @@ hamburger
   position: relative;
   display: inline-block;
   animation: aka 5s ease alternate;
-  animation-delay: 4s;
+  animation-delay: 9.5s;
   animation-fill-mode: forwards;
   color: #ddd;
   opacity: 0;
@@ -766,7 +766,7 @@ hamburger
   opacity: 0;
   transform: translateX(-10vw);
   transform-style: preserve-3d;
-  animation: show-cta 3s ease-in-out 5.5s;
+  animation: show-cta 3s ease-in-out 11s;
   animation-fill-mode: forwards;
   transition: 0.3s linear;
   cursor: pointer;
@@ -923,7 +923,11 @@ hamburger
   height: 100%;
   object-fit: contain;
 }
-#menu .menu-section .menu-img figure.fig-response {
+#menu .menu-section .menu-img.io-item img {
+  transform: scale(0.5);
+  transition: 0.3s;
+}
+#menu .menu-section .menu-img.active-item figure.fig-response {
   animation: responseTransition 5s infinite;
 }
 @keyframes responseTransition {
@@ -937,7 +941,7 @@ hamburger
     transform: scaleY(1);
   }
 }
-#menu .menu-section .menu-img figure.fig-js img {
+#menu .menu-section .menu-img.active-item figure.fig-js img {
   filter: drop-shadow(0 0.5rem 0.15rem #000);
   transform-style: preserve-3d;
   animation: cssTransition 3s infinite;
@@ -948,20 +952,17 @@ hamburger
     transform: rotateY(10deg) scale(1.08);
   }
 }
-#menu .menu-section .menu-img figure.fig-css img {
+#menu .menu-section .menu-img.active-item figure.fig-css img {
   animation: imageTransition 3s infinite;
-  filter: drop-shadow(0.5rem 0.5rem 0.25rem #000);
+  filter: drop-shadow(0.5rem 0.5rem 0.15rem #000);
   transform-style: preserve-3d;
+  transition: 1s;
 }
 @keyframes imageTransition {
   50% {
-    filter: drop-shadow(0 1rem 0.1rem #000);
+    filter: drop-shadow(0 1rem 0.25rem #000);
     transform: translateY(-2rem) rotateY(10deg);
   }
-}
-#menu .menu-section .menu-img.io-item img {
-  transform: scale(0.5);
-  transition: 0.3s;
 }
 #menu .menu-section .menu-img.active-item img {
   transition: 1s ease-out;
@@ -1110,7 +1111,6 @@ hamburger
     transform: translateY(-50%);
     width: 45%;
     height: 50%;
-    border: 1px solid #fff;
     border-radius: 0.5rem;
   }
   #menu .menu-section .menu-img figure {
@@ -1235,7 +1235,7 @@ hamburger
   padding: 0.5rem 1rem;
   width: 20rem;
   font-size: 1.35rem;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   border: none;
   outline: none;
@@ -1579,9 +1579,9 @@ hamburger
   transform: preserve-3d;
 }
 #contact .contact .contact-items .contact-item h2 {
-  color: #ead2a1;
-  padding: 0.2em 0.5rem;
-  margin: 0.2em auto;
+  color: #fff;
+  padding: 0.5rem 0.5rem 0;
+  margin: 0.5rem auto;
   font-size: 1.5rem;
   width: 70%;
   font-weight: 600;
@@ -1602,6 +1602,7 @@ hamburger
   background: #20262e;
   border-radius: 50%;
   outline: 2px solid #ead2a1;
+  outline: 2px solid #fff;
   position: relative;
   display: grid;
   place-items: center;
@@ -1625,18 +1626,19 @@ hamburger
   }
 }
 #contact .contact .contact-items .contact-item .contact-info {
-  width: 90%;
+  width: 15rem;
 }
 #contact .contact .contact-items .contact-item .contact-info p {
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
   padding: 0.5rem;
   border: none;
   outline: none;
   border-radius: 0.5rem;
-  background: #fff;
   margin: 0.5em auto;
   color: #000;
+  color: #fff;
   transition: 0.5s ease;
   position: relative;
   z-index: -1;
@@ -1645,6 +1647,7 @@ hamburger
   display: block;
   margin-top: 0.2em;
   color: #000;
+  color: inherit;
   opacity: 0.8;
 }
 @media (min-width: 768px) {
@@ -1776,13 +1779,13 @@ hamburger
   overflow: hidden;
   margin: 1.5rem auto;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 @media (min-width: 768px) {
   #projects .projects .all-projects .project-item {
     height: 350px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     flex-direction: row;
     margin: 1.5em auto;
     position: relative;
@@ -1792,7 +1795,7 @@ hamburger
   }
 }
 #projects .projects .all-projects .project-item .project-tile {
-  padding: 1.5em;
+  padding: 1.5rem 1rem;
   flex-basis: 50%;
   width: 100%;
   height: 100%;
@@ -1811,69 +1814,81 @@ hamburger
   }
 }
 #projects .projects .all-projects .project-item .project-tile h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   width: 100%;
   color: #fff;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 1em;
   font-family: "Kanit", sans-serif;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.5em;
-  border-bottom: 1px dashed #ead2a1;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #f4f4f4;
 }
 @media (min-width: 1024px) {
   #projects .projects .all-projects .project-item .project-tile h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 #projects .projects .all-projects .project-item .project-tile h2 {
   font-size: 1rem;
-  line-height: 1.3;
+  line-height: 1.5;
   font-weight: 500;
-  margin: 0.8em 0;
+  margin: 0.5rem 0;
   text-transform: capitalize;
   color: #f4f4f4;
   transition: 0.3s;
 }
+@media (min-width: 768px) {
+  #projects .projects .all-projects .project-item .project-tile h2 {
+    font-size: 1.25rem;
+  }
+}
 #projects .projects .all-projects .project-item .project-tile p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   color: #ffff;
   margin: 0.5rem 0;
 }
+@media (min-width: 768px) {
+  #projects .projects .all-projects .project-item .project-tile p {
+    font-size: 1rem;
+  }
+}
 #projects .projects .all-projects .project-item .project-tile a {
   color: #fff;
-  background: #161616;
+  background: #20262e;
   margin: 0.5em 0 0.5em;
   padding: 0.5em;
   width: 100%;
   border: none;
   outline: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
   border: 2px solid #ead2a1;
 }
 #projects .projects .all-projects .project-item .project-tile a i {
   transition: 0.2s;
   color: #ead2a1;
-  font-size: 0.65rem;
-  padding: 0.5rem;
-  margin: 1em 0 0.5em 0;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
 }
 #projects .projects .all-projects .project-item .project-tile a i::after {
-  content: "view";
-  text-transform: lowercase;
+  content: "view page";
+  font-family: "Kanit", sans-serif;
   letter-spacing: 0.15rem;
+  text-transform: capitalize;
   color: #f4f4f4;
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 0.9rem;
   transition: 0.3s;
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  border-radius: 1rem;
-  padding: 0.5em 1em;
-  opacity: 0;
-  box-shadow: inset 1px 1px 3px #fffa, inset -1px -1px 3px #000a;
+  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  opacity: 1;
   transition: 0.3s ease;
 }
 #projects .projects .all-projects .project-item .project-tile a:hover h2 {
@@ -2199,12 +2214,15 @@ hamburger
   opacity: 1;
 }
 .about .col-right button {
-  background: linear-gradient(0deg, #20262e, #485563);
-  color: #ead2a1;
-  margin: 1em auto;
-  padding: 0.5rem;
+  background: linear-gradient(0deg, #3f0d0d, #dc134c);
+  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin: 1rem auto;
+  padding: 0.5em;
+  width: 10rem;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  border: none;
   text-transform: capitalize;
   transition: 0.3s;
   position: relative;
@@ -2216,11 +2234,12 @@ hamburger
   place-items: center;
   top: 0;
   left: 0;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   width: 100%;
   height: 100%;
   opacity: 1;
-  background: linear-gradient(0deg, #485563, #20262e);
+  box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px rgba(221, 221, 221, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, #dc134c, #3f0d0d);
   transition: 0.2s;
 }
 .about .col-right button:hover {
@@ -2524,7 +2543,9 @@ hamburger
 }
 #footer .footer form .input-div input:invalid, #footer .footer form .input-div textarea:invalid {
   background-color: #ead2a1;
+  background-color: #ddd;
   color: #000;
+  outline: none;
 }
 #footer .footer form .input-div input:focus, #footer .footer form .input-div textarea:focus {
   outline: 2px dashed #fffa;
@@ -2541,7 +2562,7 @@ hamburger
 }
 #footer .footer form button {
   position: relative;
-  padding: 0.7rem 1rem;
+  padding: 1rem;
   color: #eee;
   background-color: #dc143c8c;
   font-family: "Montserrat", sans-serif;
@@ -2591,7 +2612,6 @@ hamburger
 #footer .footer .socialMedia-links {
   grid-template-columns: 1fr;
   background-color: #29323c;
-  border: 1px solid #ead2a1;
   width: 100%;
   margin: 2em 5vw;
   padding: 5vh 1em;
@@ -2613,14 +2633,14 @@ hamburger
   border: 2px solid rgba(0, 0, 0, 0.5);
   background-color: #20262e;
   padding: 0.5rem 0;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   overflow: hidden;
   margin: 0.5em 0.1em 1em 0.1em;
   position: relative;
   transition: 0.3s;
 }
 #footer .footer .socialMedia-links .socialMedia-item .link-icon {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   text-transform: capitalize;
   color: #f4f4f4;
   font-weight: 300;
@@ -2666,8 +2686,8 @@ hamburger
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
-  box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a;
+  border-radius: 0.5rem;
+  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
 }
 #footer .footer .socialMedia-links .socialMedia-item a i {
   color: #fffa;
@@ -3006,6 +3026,53 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   width: 100%;
+}
+body .loader_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+}
+body .loader_bg .loader {
+  border: 1rem solid #ead2a1;
+  border: none;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: relative;
+}
+body .loader_bg .loader::before, body .loader_bg .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ead2a1;
+  border-radius: 50%;
+  opacity: 0;
+  animation: loader 2s linear infinite;
+}
+body .loader_bg .loader::before {
+  animation-delay: 0.5s;
+}
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 body a {
   text-decoration: none;

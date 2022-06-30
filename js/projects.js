@@ -19,7 +19,7 @@ const projects = [
         link: "https://javascript-portfolio-boitumelo-sempe.netlify.app/",
         img: "img/js-min.png",
         head: "vanilla javascript projects",
-        desc: "page featuring links to my javascript tutorial repositories presented by John Smilga",
+        desc: "Page featuring links to my javascript tutorial repositories presented by John Smilga",
         alt: 'boitumelo shakes sempe javascript portfolio',
         tech: `<li>#vanillaJavascript</li>
                 <li>#es6</li>
@@ -31,8 +31,8 @@ const projects = [
         title: "front end mentor",
         link: "https://front-end-mentor-portfolio.netlify.app/",
         img: "img/fem.png",
-        head: "front end web development projects",
-        desc: "links to the various projects build from the figma sketches presented by the front end mentor platform",
+        head: "front end projects",
+        desc: "Links to the various projects build from the figma sketches presented by the front end mentor platform",
         alt: 'boitumelo shakex sempe front-end-mentor profile',
         tech: ` <li>#orderSummaryPage</li>
                 <li>#loopstudiosLandingPage</li>
@@ -70,15 +70,12 @@ displayProjects = (projectsItems) => {
         <div class="project-tile">
             <h1>${project.title}</h1>
             <a href=${project.link} title="view project" target="_blank">
-                <i class="fas fa-link"></i>
                 <h2>${project.head}</h2>
                 <p>
                     ${project.desc}
                 </p>
+                <i class="fas fa-link"></i>
             </a>
-            <div class="tech-list">
-                <ul>${project.tech}<ul>
-            </div>
         </div>
         <div class="project-img">
             <img src=${project.img} alt="img" loading="lazy"/>
