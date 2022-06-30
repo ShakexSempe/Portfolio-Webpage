@@ -41,10 +41,10 @@ body {
         place-items: center;
 
         .loader {
-            border: 2px solid $span-gold;
+            border: 1rem solid $span-gold;
             border: none;
-            height: 5rem;
-            width: 5rem;
+            height: 3.5rem;
+            width: 3.5rem;
             border-radius: 50%;
             position: relative;
 

@@ -714,7 +714,7 @@ hamburger
   line-height: 1.3;
   animation: hero-span 5s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: calc(4.5s + .5s * var(--s));
+  animation-delay: calc(6.5s + .5s * var(--s));
   transition: 1s;
   transform-style: preserve-3d;
   /* HERO H1 INTRO ANIMATION */
@@ -738,7 +738,7 @@ hamburger
   position: relative;
   display: inline-block;
   animation: aka 5s ease alternate;
-  animation-delay: 7.5s;
+  animation-delay: 9.5s;
   animation-fill-mode: forwards;
   color: #ddd;
   opacity: 0;
@@ -766,7 +766,7 @@ hamburger
   opacity: 0;
   transform: translateX(-10vw);
   transform-style: preserve-3d;
-  animation: show-cta 3s ease-in-out 9s;
+  animation: show-cta 3s ease-in-out 11s;
   animation-fill-mode: forwards;
   transition: 0.3s linear;
   cursor: pointer;
@@ -3039,10 +3039,10 @@ body .loader_bg {
   place-items: center;
 }
 body .loader_bg .loader {
-  border: 2px solid #ead2a1;
+  border: 1rem solid #ead2a1;
   border: none;
-  height: 5rem;
-  width: 5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   border-radius: 50%;
   position: relative;
 }
