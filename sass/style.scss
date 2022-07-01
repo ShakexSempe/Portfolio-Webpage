@@ -49,6 +49,8 @@ body {
             border-radius: 50%;
             position: relative;
 
+          
+
             &::before, &::after {
                 content: '';
                 position: absolute;
@@ -78,6 +80,18 @@ body {
                     opacity: 0;
                 }
             }
+        }
+        p {
+            position: absolute;
+            color: $span-gold;
+            bottom: 0vh;
+            left: 50%;
+            transform: translateX(-50%) translateY(20vh);
+            text-align: center;
+            text-transform: capitalize;
+            width: 20rem;
+            // border: 2px solid red;
+            font-size: 1.5rem;
         }
     }
 
