@@ -701,7 +701,7 @@ hamburger
 }
 @keyframes intro {
   0% {
-    transform: scale(1.5);
+    transform: scale(3);
   }
   100% {
     transform: scale(1);
