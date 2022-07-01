@@ -641,6 +641,7 @@ hamburger
     background-position: center left;
     background-position: 10% 50%;
     background-attachment: fixed;
+    animation: desktopIntro 8s linear 4s;
   }
   #home::after {
     position: absolute;
@@ -651,6 +652,14 @@ hamburger
     height: 100%;
     z-index: -1;
     background: radial-gradient(transparent, #000);
+  }
+  @keyframes desktopIntro {
+    0% {
+      background-position: 5% 40%;
+    }
+    100% {
+      background-position: 10% 50%;
+    }
   }
 }
 #home .hero {
