@@ -176,9 +176,13 @@ hamburger
 .progress-bar {
     height: 3px;
     background: $span-gold;
-    opacity: .7;
-    opacity: 0;
+    opacity: .1;
     width: 0%;
+    transition: .5s;
+
+    &.active-bar {  
+        opacity: .8;
+    }
 }
 /* end of progress bar*/
 

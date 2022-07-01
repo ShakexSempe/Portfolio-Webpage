@@ -130,9 +130,12 @@ hamburger
 .progress-bar {
   height: 3px;
   background: #ead2a1;
-  opacity: 0.7;
-  opacity: 0;
+  opacity: 0.1;
   width: 0%;
+  transition: 0.5s;
+}
+.progress-bar.active-bar {
+  opacity: 0.8;
 }
 
 /* end of progress bar*/
