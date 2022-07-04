@@ -6,12 +6,28 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    // @media (max-width: 1024px){
+    // background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
+    //     background-position: 15%;
+    //     background-size: cover;
+    //     &::after {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         background: linear-gradient(120deg, rgba(0, 0, 0, .5) 70%, transparent);
+    //         z-index: -1;
+    //     }
+    // }
     // DESKTOP HERO IMAGE
     @media (min-width: 1024px){
         background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
         background-position: center left;
         background-position: 10% 50%;
         background-attachment: fixed;
+        animation: desktopIntro 8s linear 4s ;
         &::after {
                 position: absolute;
                 content: '';
@@ -21,6 +37,16 @@
                 height: 100%;
                 z-index: -1;
                 background: radial-gradient(transparent, #000);
+        }
+
+        @keyframes desktopIntro {
+            0% {
+                background-position: 50% 50%;
+            }
+
+            100% {
+                background-position: 10% 50%;
+            }
         }
     }
     
@@ -61,6 +87,16 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: -1;
+                animation: intro 6s ease-out 2s;
+                @keyframes intro {
+                    0% {
+                        // transform: scale(1.5);
+                        transform: scale(2.5);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
             }
         }
         // ANIMATED INTRO
@@ -74,7 +110,7 @@
             // overflow-y: hidden;
             width: max-content;
             text-transform: capitalize;
-            top: 15vh;
+            top: 10vh;
             left: 5vw;
 
             @media (min-width: 600px) {
@@ -108,7 +144,7 @@
                     line-height: 1.3;
                     animation: hero-span 5s ease-in-out;
                     animation-fill-mode: forwards;
-                    animation-delay: calc(6.5s + .5s * var(--s));
+                    animation-delay: calc(5.5s + .5s * var(--s));
                     transition: 1s;
                     transform-style: preserve-3d;
                     @media (min-width: 768px) {
@@ -133,7 +169,7 @@
                         position: relative;
                         display: inline-block;
                         animation: aka 5s ease alternate;
-                        animation-delay: 9.5s;
+                        animation-delay: 8.5s;
                         animation-fill-mode: forwards;
                         color: #ddd;
                         opacity: 0;
@@ -165,17 +201,18 @@
             
             padding: .5em 2rem .5rem 1rem;
             margin: 1rem 0;
+            margin: 5vh 0 1rem;
             width: auto;
             width:max-content;
             border-radius: 1rem;
-            border-top-right-radius: 5rem;
-            border-bottom-right-radius: 1rem;
+            // border-top-right-radius: 5rem;
+            // border-bottom-right-radius: 1rem;
             border: none;
             outline: none;
             opacity: 0;
             transform: translateX(-10vw);
             transform-style: preserve-3d;
-            animation: show-cta 3s ease-in-out 11s;
+            animation: show-cta 3s ease-in-out 9.5s;
             animation-fill-mode: forwards;
             transition: .3s linear;
             cursor: pointer;
@@ -207,8 +244,8 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 1rem;
-                border-top-right-radius: 5rem;
-                border-bottom-right-radius: 1rem;
+                // border-top-right-radius: 5rem;
+                // border-bottom-right-radius: 1rem;
                 transition: .3s ease;
                 border: none;
                 outline: none;
@@ -286,6 +323,7 @@
                 &:hover {
                     transition: .2s;
                     transform: scale(.95);
+                    border-top-right-radius: 5rem;
 
                     &::before {
                         border-top-right-radius: 5rem;
@@ -312,11 +350,13 @@
 
             p {
                 color: #ffff;
+                font-size: 1rem;
                 text-transform: capitalize;
                 text-align: center;
                 text-align: left;
                 a {
                     color: $span-gold;
+                    // text-decoration: underline;
                 }
             }
             // DESKTOP SLOGAN

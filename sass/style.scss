@@ -34,11 +34,12 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #000;
         z-index: 100;
         display: grid;
         place-items: center;
+        overflow: hidden;
 
         .loader {
             border: 1rem solid $span-gold;
@@ -47,6 +48,8 @@ body {
             width: 3.5rem;
             border-radius: 50%;
             position: relative;
+
+          
 
             &::before, &::after {
                 content: '';
@@ -77,6 +80,18 @@ body {
                     opacity: 0;
                 }
             }
+        }
+        p {
+            position: absolute;
+            color: $span-gold;
+            bottom: 0vh;
+            left: 50%;
+            transform: translateX(-50%) translateY(20vh);
+            text-align: center;
+            text-transform: capitalize;
+            width: 20rem;
+            // border: 2px solid red;
+            font-size: 1.5rem;
         }
     }
 

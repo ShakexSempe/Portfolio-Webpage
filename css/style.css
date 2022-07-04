@@ -130,9 +130,12 @@ hamburger
 .progress-bar {
   height: 3px;
   background: #ead2a1;
-  opacity: 0.7;
-  opacity: 0;
+  opacity: 0.1;
   width: 0%;
+  transition: 0.5s;
+}
+.progress-bar.active-bar {
+  opacity: 0.8;
 }
 
 /* end of progress bar*/
@@ -641,6 +644,7 @@ hamburger
     background-position: center left;
     background-position: 10% 50%;
     background-attachment: fixed;
+    animation: desktopIntro 8s linear 4s;
   }
   #home::after {
     position: absolute;
@@ -651,6 +655,14 @@ hamburger
     height: 100%;
     z-index: -1;
     background: radial-gradient(transparent, #000);
+  }
+  @keyframes desktopIntro {
+    0% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 10% 50%;
+    }
   }
 }
 #home .hero {
@@ -685,6 +697,15 @@ hamburger
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  animation: intro 6s ease-out 2s;
+}
+@keyframes intro {
+  0% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 #home .hero #hero-h1 {
   background: transparent;
@@ -693,7 +714,7 @@ hamburger
   position: absolute;
   width: max-content;
   text-transform: capitalize;
-  top: 15vh;
+  top: 10vh;
   left: 5vw;
 }
 #home .hero #hero-h1 h2 {
@@ -714,7 +735,7 @@ hamburger
   line-height: 1.3;
   animation: hero-span 5s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: calc(6.5s + .5s * var(--s));
+  animation-delay: calc(5.5s + .5s * var(--s));
   transition: 1s;
   transform-style: preserve-3d;
   /* HERO H1 INTRO ANIMATION */
@@ -738,7 +759,7 @@ hamburger
   position: relative;
   display: inline-block;
   animation: aka 5s ease alternate;
-  animation-delay: 9.5s;
+  animation-delay: 8.5s;
   animation-fill-mode: forwards;
   color: #ddd;
   opacity: 0;
@@ -756,17 +777,16 @@ hamburger
   text-align: left;
   padding: 0.5em 2rem 0.5rem 1rem;
   margin: 1rem 0;
+  margin: 5vh 0 1rem;
   width: auto;
   width: max-content;
   border-radius: 1rem;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 1rem;
   border: none;
   outline: none;
   opacity: 0;
   transform: translateX(-10vw);
   transform-style: preserve-3d;
-  animation: show-cta 3s ease-in-out 11s;
+  animation: show-cta 3s ease-in-out 9.5s;
   animation-fill-mode: forwards;
   transition: 0.3s linear;
   cursor: pointer;
@@ -798,8 +818,6 @@ hamburger
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 1rem;
   transition: 0.3s ease;
   border: none;
   outline: none;
@@ -860,6 +878,7 @@ hamburger
   #home .hero #cta-header:hover {
     transition: 0.2s;
     transform: scale(0.95);
+    border-top-right-radius: 5rem;
   }
   #home .hero #cta-header:hover::before {
     border-top-right-radius: 5rem;
@@ -879,6 +898,7 @@ hamburger
 }
 #home .hero .slogan p {
   color: #ffff;
+  font-size: 1rem;
   text-transform: capitalize;
   text-align: center;
   text-align: left;
@@ -3032,11 +3052,12 @@ body .loader_bg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #000;
   z-index: 100;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 body .loader_bg .loader {
   border: 1rem solid #ead2a1;
@@ -3073,6 +3094,17 @@ body .loader_bg .loader::before {
     transform: scale(1);
     opacity: 0;
   }
+}
+body .loader_bg p {
+  position: absolute;
+  color: #ead2a1;
+  bottom: 0vh;
+  left: 50%;
+  transform: translateX(-50%) translateY(20vh);
+  text-align: center;
+  text-transform: capitalize;
+  width: 20rem;
+  font-size: 1.5rem;
 }
 body a {
   text-decoration: none;
