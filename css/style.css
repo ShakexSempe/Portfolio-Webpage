@@ -905,7 +905,6 @@ hamburger
 }
 #home .hero .slogan p a {
   color: #ead2a1;
-  text-decoration: underline;
 }
 @media (min-width: 1024px) {
   #home .hero .slogan {
