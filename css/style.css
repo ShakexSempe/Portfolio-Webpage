@@ -638,23 +638,6 @@ hamburger
   z-index: 1;
   overflow: hidden;
 }
-@media (max-width: 1024px) {
-  #home {
-    background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
-    background-position: 15%;
-    background-size: cover;
-  }
-  #home::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(0, 0, 0, 0.5) 70%, transparent);
-    z-index: -1;
-  }
-}
 @media (min-width: 1024px) {
   #home {
     background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
@@ -687,7 +670,6 @@ hamburger
   position: relative;
 }
 #home .hero .hero-bg {
-  display: none;
   position: absolute;
   position: relative;
   width: 100vw;
@@ -715,11 +697,10 @@ hamburger
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  animation: intro 5s ease-out 4s;
 }
 @keyframes intro {
   0% {
-    transform: scale(2.5);
+    transform: scale(2);
   }
   100% {
     transform: scale(1);
@@ -795,7 +776,7 @@ hamburger
   text-align: left;
   padding: 0.5em 2rem 0.5rem 1rem;
   margin: 1rem 0;
-  margin: 10vh 0 1rem;
+  margin: 5vh 0 1rem;
   width: auto;
   width: max-content;
   border-radius: 1rem;
@@ -896,6 +877,7 @@ hamburger
   #home .hero #cta-header:hover {
     transition: 0.2s;
     transform: scale(0.95);
+    border-top-right-radius: 5rem;
   }
   #home .hero #cta-header:hover::before {
     border-top-right-radius: 5rem;
