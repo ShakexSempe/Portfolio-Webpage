@@ -350,11 +350,13 @@
 
             p {
                 color: #ffff;
+                font-size: 1.15rem;
                 text-transform: capitalize;
                 text-align: center;
                 text-align: left;
                 a {
                     color: $span-gold;
+                    text-decoration: underline;
                 }
             }
             // DESKTOP SLOGAN

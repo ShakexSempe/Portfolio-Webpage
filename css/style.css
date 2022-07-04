@@ -913,12 +913,14 @@ hamburger
 }
 #home .hero .slogan p {
   color: #ffff;
+  font-size: 1.15rem;
   text-transform: capitalize;
   text-align: center;
   text-align: left;
 }
 #home .hero .slogan p a {
   color: #ead2a1;
+  text-decoration: underline;
 }
 @media (min-width: 1024px) {
   #home .hero .slogan {
