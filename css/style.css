@@ -730,7 +730,7 @@ hamburger
   position: absolute;
   width: max-content;
   text-transform: capitalize;
-  top: 15vh;
+  top: 10vh;
   left: 5vw;
 }
 #home .hero #hero-h1 h2 {
@@ -793,11 +793,10 @@ hamburger
   text-align: left;
   padding: 0.5em 2rem 0.5rem 1rem;
   margin: 1rem 0;
+  margin: 15vh 0 1rem;
   width: auto;
   width: max-content;
   border-radius: 1rem;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 1rem;
   border: none;
   outline: none;
   opacity: 0;
@@ -835,8 +834,6 @@ hamburger
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 1rem;
   transition: 0.3s ease;
   border: none;
   outline: none;
