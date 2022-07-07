@@ -229,7 +229,6 @@ hamburger
     position: fixed;
     bottom: 5vh;
     right: 5vw;
-    // background-image: linear-gradient(0deg, rgb(0, 0, 0), #dc143c);
     background: $button-crimson;
     display: grid;
     place-items: center;
@@ -240,13 +239,34 @@ hamburger
     transform: translateY(15vh);
     // visibility: hidden;
     z-index: 30;
-    box-shadow: $box-light-top-sm;
-    
+    isolation: isolate;
+    // PSEUDO BG
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: .25rem;
+        transition: .25s;
+        z-index: -1;
+    }
+    &::before {
+        background: $button-crimson;
+        box-shadow: $box-light-top-sm;
+    }
+    &::after {
+        background: $button-crimson-hover;
+        box-shadow: $box-light-top-sm-hover;
+        opacity: 0;
+    }
     i {
         color: #ddd;
         padding: .5rem;
         font-size: 1rem;
     }
+
     &.show-link {
         transition: all .5s ease-in-out;
         // visibility: visible;
@@ -255,6 +275,26 @@ hamburger
         transform: translateY(0);
         transition: 1.5s;
         // z-index: 30;
+
+        // HOVER AND ACTIVE STATE
+        // MOBILE ACTIVE CLASS
+        @media (max-width: 768px) {
+            &:active {
+                transition: .2s;
+                transform: translateY(0) scale(.95);
+                &::before {opacity: 0;}
+                &::after {opacity: 1;}
+            }
+        }
+        // DESKTOP HOVER STATE
+        @media (min-width: 768px) {
+            &:hover {
+                transition: .2s;
+                transform: translateY(0) scale(.95);
+                &::before {opacity: 0;}
+                &::after {opacity: 1;}
+            }
+        }
     }
     @keyframes bounce {
         0% {
@@ -280,10 +320,6 @@ hamburger
             }
         }
 
-    }
-    &:active {
-        transform: scale(.9);
-        transition: .2s;
     }
 }
 // end of back to top button
