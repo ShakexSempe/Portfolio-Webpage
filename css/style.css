@@ -2414,8 +2414,8 @@ hamburger
   background: linear-gradient(0deg, #20262e, #485563);
   color: #ead2a1;
   margin: 0 auto;
-  padding: 1em;
-  box-shadow: inset 3px 0px 3px #c7c7c7aa, inset -3px -3px 3px #000a;
+  padding: 1rem;
+  box-shadow: inset 3px 0px 3px rgba(255, 255, 255, 0.3), inset -3px -3px 3px rgba(0, 0, 0, 0.3);
   text-transform: capitalize;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
