@@ -180,9 +180,11 @@
                         text-overflow: ellipsis;
                         text-align: left;
                         z-index: 1;
-                        font-size: .96rem;
+                        font-size: .95rem;
                         font-family: $font-content;
-                        color: $overlay-blue-dark;
+                        color: $overlay-blue-darker;
+                        color: #000;
+                        font-weight: 400;
 
 
                         &#intro::first-letter {
@@ -201,15 +203,8 @@
                         }
 
                         &.about-body {
-                            transition: opacity .5s ease;
+                            transition: opacity .25s ease;
                             opacity: 0;
-                            font-weight: 300;
-                            color: #000;
-                            font-size: .95rem;
-                            // display: none;
-                            margin-bottom: .5em;
-                            // color: $span-gold;
-                            // padding: .3em;
                         }
 
                         @media (min-width:768px) {

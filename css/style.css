@@ -2398,9 +2398,11 @@ hamburger
   text-overflow: ellipsis;
   text-align: left;
   z-index: 1;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   font-family: "Montserrat", sans-serif;
-  color: #29323c;
+  color: #20262e;
+  color: #000;
+  font-weight: 400;
 }
 .about .col-right .article-container article.about-article p#intro::first-letter {
   font-size: 2.5em;
@@ -2416,12 +2418,8 @@ hamburger
   font-weight: 500;
 }
 .about .col-right .article-container article.about-article p.about-body {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.25s ease;
   opacity: 0;
-  font-weight: 300;
-  color: #000;
-  font-size: 0.95rem;
-  margin-bottom: 0.5em;
 }
 @media (min-width: 768px) {
   .about .col-right .article-container article.about-article p {
