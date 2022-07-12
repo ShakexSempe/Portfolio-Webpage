@@ -395,3 +395,70 @@ hamburger
     opacity: 0;
 }
 // END OF SCROLL OUT
+
+// LOADER
+.loader_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    .loader {
+        border: 1rem solid $span-gold;
+        border: none;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        position: relative;
+
+      
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: .25rem solid $span-gold;
+            border-radius: 50%;
+            opacity: 0;
+            animation: loader 2s linear infinite;
+        }
+        &::before {
+            animation-delay: .5s;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+    }
+    p {
+        position: absolute;
+        color: $span-gold;
+        bottom: 0vh;
+        left: 50%;
+        transform: translateX(-50%) translateY(20vh);
+        text-align: center;
+        text-transform: capitalize;
+        width: 20rem;
+        // border: 2px solid red;
+        font-size: 1.5rem;
+    }
+}
