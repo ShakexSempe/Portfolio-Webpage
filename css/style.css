@@ -604,7 +604,7 @@ hamburger
   list-style: none;
   display: flex;
   align-items: center;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 #header .header #navbar .nav-list ul li:hover {
   opacity: 1;
@@ -662,14 +662,17 @@ hamburger
   }
   #header .header #navbar .nav-list ul {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
     height: auto;
     width: fit-content;
+    width: 50vw;
     background-color: transparent;
   }
   #header .header #navbar .nav-list ul li {
     position: relative;
     display: flex;
-    margin-right: 0.5rem;
   }
   #header .header #navbar .nav-list ul li::before {
     position: absolute;
@@ -688,8 +691,8 @@ hamburger
     opacity: 1;
   }
   #header .header #navbar .nav-list ul li a {
-    font-size: 0.95rem;
-    padding: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.25rem;
     font-weight: 400;
     margin: 0 auto;
     display: block;
