@@ -2239,17 +2239,16 @@ hamburger
 #work .work-items .work-item .view-repo-btn {
   display: block;
   margin: 0 auto;
-  padding: 0.7rem 0.5rem;
+  padding: 0.55rem 0;
   width: 15rem;
   border: none;
   outline: none;
-  background: #f4f4f4;
-  color: #dc143c;
+  background: #fff;
+  color: #b60f30;
   font-weight: 500;
   text-transform: capitalize;
   text-align: center;
   text-decoration: none;
-  text-decoration: underline;
   border-radius: 0.5rem;
   transition: 0.2s;
   letter-spacing: 0.05rem;
@@ -2268,10 +2267,11 @@ hamburger
   z-index: -1;
 }
 #work .work-items .work-item .view-repo-btn::before {
-  background: linear-gradient(0deg, #ddd, #f4f4f4);
+  background: linear-gradient(0deg, #eee, #ffff);
+  border: 0.05rem solid #b60f30;
 }
 #work .work-items .work-item .view-repo-btn::after {
-  background: linear-gradient(0deg, #f4f4f4, #ddd);
+  background: linear-gradient(0deg, #fff, #eee);
   opacity: 0;
 }
 @media (min-width: 820px) {
