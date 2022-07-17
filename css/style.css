@@ -563,9 +563,10 @@ hamburger
   }
   #header .header #navbar .nav-list .links-container .contact-links a {
     opacity: 0;
+    transform: translateY(1rem);
     color: #ead2a1;
     font-size: 1rem;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.1rem;
     margin-bottom: 0.5rem;
     transition: 0.5s;
   }
@@ -614,7 +615,7 @@ hamburger
   }
   #header .header #navbar .nav-list .links-container.active .contact-links a {
     opacity: 1;
-    letter-spacing: 0.1rem;
+    transform: translateY(0);
   }
   #header .header #navbar .nav-list .links-container.active .contact-links a:nth-child(1) {
     transition-delay: 1s;

@@ -217,9 +217,10 @@
 
                             a {
                                 opacity: 0;
+                                transform: translateY(1rem);
                                 color: $span-gold;
                                 font-size: 1rem;
-                                letter-spacing: .4rem;
+                                letter-spacing: .1rem;
                                 margin-bottom: .5rem;
                                 transition: .5s;
 
@@ -284,7 +285,7 @@
                         .contact-links {
                             a {
                                 opacity: 1;
-                                letter-spacing: .1rem;
+                                transform: translateY(0);
                                 &:nth-child(1) {
                                     transition-delay: 1s;
                                 }
