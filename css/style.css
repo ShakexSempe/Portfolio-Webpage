@@ -404,7 +404,6 @@ hamburger
 @media (min-width: 1024px) {
   #header {
     height: 15vh;
-    border: 2px solid red;
     overflow: hidden;
   }
 }
@@ -723,7 +722,6 @@ hamburger
     width: fit-content;
     width: 50vw;
     background-color: transparent;
-    border: 1px solid red;
   }
   #header .header #navbar .nav-list ul li {
     position: relative;
@@ -800,7 +798,15 @@ hamburger
     letter-spacing: 0.05rem;
   }
   #header .header #navbar .nav-list .contact-links a i {
-    margin-right: 0.5rem;
+    transform: translateX(-0.5rem);
+    transition: 0.25s;
+  }
+  #header .header #navbar .nav-list .contact-links a:hover {
+    text-decoration: underline #ead2a1;
+  }
+  #header .header #navbar .nav-list .contact-links a:hover i {
+    transform: translateX(0);
+    color: #ddd;
   }
 }
 

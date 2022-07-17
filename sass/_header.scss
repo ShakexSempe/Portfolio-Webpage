@@ -10,7 +10,7 @@
     background: transparent;
     @media (min-width: 1024px) {
         height: 15vh;
-        border: 2px solid red;
+        // border: 2px solid red;
         overflow: hidden;
     }
     // INTERSECTION CLASS
@@ -422,7 +422,7 @@
                         width: 50vw;
                         // overflow: hidden;
                         background-color: transparent;
-                        border: 1px solid red;
+                        // border: 1px solid red;
 
                         li {
                             position: relative;
@@ -525,7 +525,16 @@
                             letter-spacing: .05rem;
 
                             i {
-                                margin-right: .5rem;
+                                transform: translateX(-.5rem);
+                                transition: .25s;
+                            }
+
+                            &:hover {
+                                text-decoration: underline $span-gold;
+                                i {
+                                    transform: translateX(0);
+                                    color: #ddd;
+                                }
                             }
                         }
                     }
