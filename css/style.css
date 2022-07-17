@@ -487,20 +487,21 @@ hamburger
     z-index: 5;
   }
   #header .header #navbar .nav-list .links-container ul {
-    margin: 1.5rem 5vw;
+    margin: 0.5rem 5vw;
     background: #29323c;
-    display: flex;
+    padding: 0.5rem 0;
     height: 80vh;
+    height: max-content;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: right;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     z-index: 1;
     transition: 0.5s ease left;
     position: relative;
     border: 2px solid #ead2a15e;
     outline: none;
-    padding: 0.5rem 0;
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -521,7 +522,7 @@ hamburger
     width: 100%;
     display: block;
     font-size: 1.05rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: "Montserrat", sans-serif;
     font-family: "Kanit", sans-serif;
     text-transform: capitalize;
@@ -532,6 +533,27 @@ hamburger
     padding: 0.5rem;
     color: #fffa;
     border: 1px solid #ead2a1;
+  }
+  #header .header #navbar .nav-list .links-container .contact-links {
+    background: #29323c;
+    overflow: hidden;
+    margin: 1rem 5vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  #header .header #navbar .nav-list .links-container .contact-links a {
+    opacity: 0;
+    color: #ead2a1;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0.5rem;
+    transition: 0.5s;
+  }
+  #header .header #navbar .nav-list .links-container .contact-links a i {
+    color: #fff;
+    width: 1.5rem;
   }
   #header .header #navbar .nav-list .links-container.active {
     left: 0;
@@ -571,6 +593,19 @@ hamburger
   }
   #header .header #navbar .nav-list .links-container.active ul li:nth-child(7) {
     transition-delay: 0.9s;
+  }
+  #header .header #navbar .nav-list .links-container.active .contact-links a {
+    opacity: 1;
+    letter-spacing: 0.1rem;
+  }
+  #header .header #navbar .nav-list .links-container.active .contact-links a:nth-child(1) {
+    transition-delay: 1s;
+  }
+  #header .header #navbar .nav-list .links-container.active .contact-links a:nth-child(2) {
+    transition-delay: 1.2s;
+  }
+  #header .header #navbar .nav-list .links-container.active .contact-links a:nth-child(3) {
+    transition-delay: 1.4s;
   }
 }
 #header .header #navbar .nav-list .links-container .nav-logo {

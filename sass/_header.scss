@@ -122,20 +122,21 @@
                         z-index: 5;
 
                         ul {
-                            margin: 1.5rem 5vw;
+                            margin: .5rem 5vw;
                             background: $overlay-blue-dark;
-                            display: flex;
+                            padding: .5rem 0;
                             height: 80vh;
+                            height: max-content;
+                            display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: right;
-                            border-radius: 5px;
+                            border-radius: .5rem;
                             z-index: 1;
                             transition: 0.5s ease left;
                             position: relative;
                             border: 2px solid $border;
                             outline: none;
-                            padding: .5rem 0;
                             overflow-y: auto;
                             overflow-x: hidden;
                             // list items active transition
@@ -159,7 +160,7 @@
                                     width: 100%;
                                     display: block;
                                     font-size: 1.05rem;
-                                    font-weight: 500;
+                                    font-weight: 400;
                                     // border-radius: 5px;
                                     font-family: $font-content;
                                     font-family: $font-title;
@@ -175,6 +176,32 @@
                                     color: #fffa;
                                     border: 1px solid $span-gold;
                                     
+                                }
+                            }
+                        }
+
+                        // CONTACT LINKS
+                        .contact-links {
+                            // border: 2px solid red;
+                            background: $overlay-blue-dark;
+                            overflow: hidden;
+                            margin: 1rem 5vw;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 1rem;
+                            border-radius: .5rem;
+
+                            a {
+                                opacity: 0;
+                                color: $span-gold;
+                                font-size: 1rem;
+                                letter-spacing: .4rem;
+                                margin-bottom: .5rem;
+                                transition: .5s;
+
+                                i {
+                                    color: #fff;
+                                    width: 1.5rem;
                                 }
                             }
                         }
@@ -227,6 +254,22 @@
                                     transition-delay: .9s;
                                 }
 
+                            }
+                        }
+
+                        .contact-links {
+                            a {
+                                opacity: 1;
+                                letter-spacing: .1rem;
+                                &:nth-child(1) {
+                                    transition-delay: 1s;
+                                }
+                                &:nth-child(2) {
+                                    transition-delay: 1.2s;
+                                }
+                                &:nth-child(3) {
+                                    transition-delay: 1.4s;
+                                }
                             }
                         }
                     }
