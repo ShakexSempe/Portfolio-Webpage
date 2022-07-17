@@ -8,6 +8,11 @@
     height: 8vh;
     // overflow: hidden;
     background: transparent;
+    @media (min-width: 1024px) {
+        height: 15vh;
+        border: 2px solid red;
+        overflow: hidden;
+    }
     // INTERSECTION CLASS
     // HERO IO
     // DISPLAY LOGO DURING HERO SCROLL
@@ -26,6 +31,22 @@
     &.header-io {
         background-color: $overlay-blue-dark-trans;
         transition: background-color .5s;
+        @media (min-width: 1024px) {
+            height: 8vh;
+            transition: .5s;
+            border: none;
+
+            #navbar {
+                .nav-list {
+                    ul {
+                        transform: translateY(1rem);
+                    }
+                    .contact-links {
+                        transform: translateY(-100vh);
+                    }
+                }
+            }
+        }
         .header {
             #navbar {
                 .brand {
@@ -40,12 +61,16 @@
                             opacity: 1;
                         }
                     }
+
                 }
+
+                
             }
         }
         // DARK HEADER BACKGROUND WHEN SIDEBAR VISIBLE
         &.active-header {
             background: $overlay-blue-dark;
+            
         }
     }
     // END OF INTERSECTION CLASS
@@ -397,7 +422,7 @@
                         width: 50vw;
                         // overflow: hidden;
                         background-color: transparent;
-                        // border: 1px solid red;
+                        border: 1px solid red;
 
                         li {
                             position: relative;
@@ -487,6 +512,23 @@
                         }
                     }
                     
+                    .contact-links {
+                        width: 50vw;
+                        // border: 2px solid red;
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 1rem;
+                        padding: .5rem;
+
+                        a {
+                            color: $span-gold;
+                            letter-spacing: .05rem;
+
+                            i {
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
 
                 }
                 // end of desktop nav-list style

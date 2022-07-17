@@ -401,6 +401,13 @@ hamburger
   height: 8vh;
   background: transparent;
 }
+@media (min-width: 1024px) {
+  #header {
+    height: 15vh;
+    border: 2px solid red;
+    overflow: hidden;
+  }
+}
 #header.hero-header .header #navbar .brand {
   opacity: 1;
   transform: translateY(0);
@@ -409,6 +416,19 @@ hamburger
 #header.header-io {
   background-color: rgba(34, 41, 49, 0.9);
   transition: background-color 0.5s;
+}
+@media (min-width: 1024px) {
+  #header.header-io {
+    height: 8vh;
+    transition: 0.5s;
+    border: none;
+  }
+  #header.header-io #navbar .nav-list ul {
+    transform: translateY(1rem);
+  }
+  #header.header-io #navbar .nav-list .contact-links {
+    transform: translateY(-100vh);
+  }
 }
 #header.header-io .header #navbar .brand {
   opacity: 1;
@@ -703,6 +723,7 @@ hamburger
     width: fit-content;
     width: 50vw;
     background-color: transparent;
+    border: 1px solid red;
   }
   #header .header #navbar .nav-list ul li {
     position: relative;
@@ -766,6 +787,20 @@ hamburger
   #header .header #navbar .nav-list ul.active {
     background: none;
     box-shadow: none;
+  }
+  #header .header #navbar .nav-list .contact-links {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  #header .header #navbar .nav-list .contact-links a {
+    color: #ead2a1;
+    letter-spacing: 0.05rem;
+  }
+  #header .header #navbar .nav-list .contact-links a i {
+    margin-right: 0.5rem;
   }
 }
 
