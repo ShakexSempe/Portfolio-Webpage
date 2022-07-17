@@ -125,7 +125,6 @@
                             margin: .5rem 5vw;
                             background: $overlay-blue-dark;
                             padding: .5rem 0;
-                            height: 80vh;
                             height: max-content;
                             display: flex;
                             flex-direction: column;
@@ -147,7 +146,6 @@
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
-                                margin: 1em auto 1em .5em;
                                 margin: .5rem auto;
                                 width: 95%;
 
@@ -156,7 +154,8 @@
                                     // border: 1px solid yellow;
                                     // border-bottom: 1px dashed $span-gold;
                                     margin-right: auto;
-                                    padding: .5em 0;
+                                    padding: .5rem 0 0;
+                                    padding: 0;
                                     width: 100%;
                                     display: block;
                                     font-size: 1.05rem;

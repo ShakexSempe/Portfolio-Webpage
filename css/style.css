@@ -490,7 +490,6 @@ hamburger
     margin: 0.5rem 5vw;
     background: #29323c;
     padding: 0.5rem 0;
-    height: 80vh;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -512,13 +511,13 @@ hamburger
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 1em auto 1em 0.5em;
     margin: 0.5rem auto;
     width: 95%;
   }
   #header .header #navbar .nav-list .links-container ul li a {
     margin-right: auto;
-    padding: 0.5em 0;
+    padding: 0.5rem 0 0;
+    padding: 0;
     width: 100%;
     display: block;
     font-size: 1.05rem;
