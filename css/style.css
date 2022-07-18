@@ -934,7 +934,7 @@ hamburger
   position: absolute;
   width: max-content;
   text-transform: capitalize;
-  top: 7vh;
+  top: 6vh;
   left: 5vw;
 }
 #home .hero #hero-h1 h2 {
@@ -1017,7 +1017,7 @@ hamburger
 }
 @media (max-width: 389px) {
   #home .hero #cta-header {
-    margin: 8vh 0;
+    margin: 12vh 0;
   }
 }
 @media (min-width: 768px) {

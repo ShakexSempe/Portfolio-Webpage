@@ -112,7 +112,7 @@
             // overflow-y: hidden;
             width: max-content;
             text-transform: capitalize;
-            top: 7vh;
+            top: 6vh;
             left: 5vw;
 
             @media (min-width: 600px) {
@@ -196,7 +196,7 @@
         #cta-header {
             margin: 15vh 0 1rem;
             @media (max-width: 389px){
-                margin: 8vh 0;
+                margin: 12vh 0;
             }
             @media (min-width: 768px) {
                 font-size: 1.5em;
