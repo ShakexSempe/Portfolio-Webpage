@@ -920,7 +920,7 @@ hamburger
   object-fit: cover;
   z-index: -1;
   object-position: 15%;
-  animation: intro 4s ease-out 7s;
+  animation: intro 4s ease-out 5s;
 }
 @keyframes intro {
   0% {
