@@ -920,7 +920,7 @@ hamburger
   object-fit: cover;
   z-index: -1;
   object-position: 15%;
-  animation: intro 4s ease-out 5s;
+  animation: intro 4s ease-out 6.5s;
 }
 @keyframes intro {
   0% {
@@ -934,7 +934,7 @@ hamburger
   position: absolute;
   width: max-content;
   text-transform: capitalize;
-  top: 10vh;
+  top: 9vh;
   left: 5vw;
 }
 #home .hero #hero-h1 h2 {
@@ -981,28 +981,31 @@ hamburger
   color: #ddd;
   opacity: 0;
   animation: aka 5s ease alternate;
-  animation-delay: 11.5s;
+  animation-delay: 12s;
   animation-fill-mode: forwards;
 }
 @keyframes aka {
+  10% {
+    transform: translateX(1rem);
+    opacity: 1;
+  }
   100% {
     opacity: 0.8;
   }
 }
 #home .hero #cta-header {
+  margin: 15vh 0 1rem;
   background: #dc143c;
   position: relative;
   display: block;
   text-align: left;
   padding: 0.5em 2rem 0.5rem 1rem;
-  margin: 1rem 0;
-  margin: 5vh 0 1rem;
   width: auto;
   width: max-content;
   border-radius: 1rem;
   border: none;
   outline: none;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(-10vw);
   transform-style: preserve-3d;
   animation: show-cta 3s ease-in-out 13s;
@@ -1011,6 +1014,11 @@ hamburger
   cursor: pointer;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   z-index: 2;
+}
+@media (max-width: 389px) {
+  #home .hero #cta-header {
+    margin: 8vh 0;
+  }
 }
 @media (min-width: 768px) {
   #home .hero #cta-header {

@@ -88,7 +88,7 @@
                 object-fit: cover;
                 z-index: -1;
                 object-position: 15%;
-                animation: intro 4s ease-out 5s;
+                animation: intro 4s ease-out 6.5s;
                 @keyframes intro {
                     0% {
                         // transform: scale(1.5);
@@ -112,7 +112,7 @@
             // overflow-y: hidden;
             width: max-content;
             text-transform: capitalize;
-            top: 10vh;
+            top: 9vh;
             left: 5vw;
 
             @media (min-width: 600px) {
@@ -173,12 +173,16 @@
                         color: #ddd;
                         opacity: 0;
                         animation: aka 5s ease alternate;
-                        animation-delay: 11.5s;
+                        animation-delay: 12s;
                         animation-fill-mode: forwards;
                         // transform: scale(0.7);
                     }
 
                     @keyframes aka {
+                        10% {
+                            transform: translateX(1rem);
+                            opacity: 1;
+                        }
                         100% {
                             opacity: .8;
                         }
@@ -190,7 +194,10 @@
         // end of animated h1 
         // welcome section button & shadow
         #cta-header {
-
+            margin: 15vh 0 1rem;
+            @media (max-width: 389px){
+                margin: 8vh 0;
+            }
             @media (min-width: 768px) {
                 font-size: 1.5em;
                 width: 20rem;
@@ -200,18 +207,13 @@
             position: relative;
             display: block;
             text-align: left;
-            
             padding: .5em 2rem .5rem 1rem;
-            margin: 1rem 0;
-            margin: 5vh 0 1rem;
             width: auto;
             width:max-content;
             border-radius: 1rem;
-            // border-top-right-radius: 5rem;
-            // border-bottom-right-radius: 1rem;
             border: none;
             outline: none;
-            opacity: 0;
+            opacity: 1;
             transform: translateX(-10vw);
             transform-style: preserve-3d;
             animation: show-cta 3s ease-in-out 13s;
