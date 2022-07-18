@@ -359,7 +359,7 @@ hamburger
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 0.25rem solid transparent;
+  border: 0.5rem solid transparent;
   animation: rotate 3s infinite;
   mix-blend-mode: overlay;
 }
@@ -919,7 +919,7 @@ hamburger
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  animation: intro 6s ease-out 3s;
+  animation: intro 7s ease-out 3s;
 }
 @keyframes intro {
   0% {
