@@ -213,7 +213,7 @@
             border-radius: 1rem;
             border: none;
             outline: none;
-            opacity: 1;
+            opacity: 0;
             transform: translateX(-10vw);
             transform-style: preserve-3d;
             animation: show-cta 3s ease-in-out 13s;
@@ -351,6 +351,8 @@
             left: 0;
             padding: 0 5vw;
             width: 100%;
+            opacity: 0;
+            animation: slogan 5s linear 14s forwards;
 
             p {
                 color: #ffff;
@@ -358,11 +360,13 @@
                 text-transform: capitalize;
                 text-align: center;
                 text-align: left;
+                text-align: right;
                 a {
                     color: $span-gold;
                     // text-decoration: underline;
                 }
             }
+
             // DESKTOP SLOGAN
             @media (min-width: 1024px) {
                 bottom: 10vh;
@@ -371,6 +375,13 @@
                 p {
                     text-align: center;
                     text-align: left;
+                }
+            }
+
+            // REVEAL SLOGAN ANIAMTION
+            @keyframes slogan {
+                100% {
+                    opacity: 1;
                 }
             }
         }

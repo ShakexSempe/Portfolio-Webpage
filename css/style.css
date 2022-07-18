@@ -1005,7 +1005,7 @@ hamburger
   border-radius: 1rem;
   border: none;
   outline: none;
-  opacity: 1;
+  opacity: 0;
   transform: translateX(-10vw);
   transform-style: preserve-3d;
   animation: show-cta 3s ease-in-out 13s;
@@ -1122,6 +1122,8 @@ hamburger
   left: 0;
   padding: 0 5vw;
   width: 100%;
+  opacity: 0;
+  animation: slogan 5s linear 14s forwards;
 }
 #home .hero .slogan p {
   color: #ffff;
@@ -1129,6 +1131,7 @@ hamburger
   text-transform: capitalize;
   text-align: center;
   text-align: left;
+  text-align: right;
 }
 #home .hero .slogan p a {
   color: #ead2a1;
@@ -1142,6 +1145,11 @@ hamburger
   #home .hero .slogan p {
     text-align: center;
     text-align: left;
+  }
+}
+@keyframes slogan {
+  100% {
+    opacity: 1;
   }
 }
 
