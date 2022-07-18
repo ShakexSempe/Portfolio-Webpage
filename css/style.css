@@ -919,14 +919,12 @@ hamburger
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  animation: intro 7s ease-out 3s;
+  object-position: 15%;
+  animation: intro 4s ease-out 7s;
 }
 @keyframes intro {
   0% {
-    transform: scale(2.5);
-  }
-  100% {
-    transform: scale(1);
+    object-position: 40%;
   }
 }
 #home .hero #hero-h1 {
@@ -954,6 +952,12 @@ hamburger
   text-align: left;
   margin: 0.5rem 0 0;
   line-height: 1.3;
+  opacity: 0;
+  animation: hero-span 5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: calc(9s + .5s * var(--s));
+  transition: 1s;
+  transform-style: preserve-3d;
   /* HERO H1 INTRO ANIMATION */
 }
 @media (min-width: 768px) {
@@ -975,6 +979,10 @@ hamburger
   font-size: 1.25rem;
   position: relative;
   color: #ddd;
+  opacity: 0;
+  animation: aka 5s ease alternate;
+  animation-delay: 11.5s;
+  animation-fill-mode: forwards;
 }
 @keyframes aka {
   100% {
@@ -994,6 +1002,12 @@ hamburger
   border-radius: 1rem;
   border: none;
   outline: none;
+  opacity: 0;
+  transform: translateX(-10vw);
+  transform-style: preserve-3d;
+  animation: show-cta 3s ease-in-out 13s;
+  animation-fill-mode: forwards;
+  transition: 0.3s linear;
   cursor: pointer;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   z-index: 2;
