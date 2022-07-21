@@ -84,11 +84,23 @@
                         color: $text-invalid;
                         outline: none;
                     }
-                    &:focus {
-                        outline: 2px dashed #fffa;
-                        outline-offset: -4px;
+                    
+                    &::placeholder {
+                        font-weight: 500;
+                        color: #000;
+                        text-transform: capitalize;
+                        letter-spacing: .15rem;
+                        opacity: .5;
+                        transition: .25s;
+                        font-family: $font-content;
                     }
 
+                    &:focus, &:hover {
+                        &::placeholder {
+                            opacity: 1;
+                            letter-spacing: normal;
+                        }
+                    }
                 }
 
                 // textarea {
@@ -111,18 +123,14 @@
                 //     }
                 // }
                 // input hover state
-                &:hover {
+                &:hover, &:focus {
                     label {
                         transform: translateX(1em) translateY(-.2em);
                         color: $text-light;
                     }
                 }
                 // end of input hover state
-                ::placeholder {
-                    font-weight: 500;
-                    color: #000;
-                    text-transform: capitalize;
-                }
+                
             }
 
             button {

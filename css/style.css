@@ -2873,18 +2873,22 @@ hamburger
   color: #000;
   outline: none;
 }
-#footer .footer form .input-div input:focus, #footer .footer form .input-div textarea:focus {
-  outline: 2px dashed #fffa;
-  outline-offset: -4px;
-}
-#footer .footer form .input-div:hover label {
-  transform: translateX(1em) translateY(-0.2em);
-  color: #f4f4f4;
-}
-#footer .footer form .input-div ::placeholder {
+#footer .footer form .input-div input::placeholder, #footer .footer form .input-div textarea::placeholder {
   font-weight: 500;
   color: #000;
   text-transform: capitalize;
+  letter-spacing: 0.15rem;
+  opacity: 0.5;
+  transition: 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+#footer .footer form .input-div input:focus::placeholder, #footer .footer form .input-div input:hover::placeholder, #footer .footer form .input-div textarea:focus::placeholder, #footer .footer form .input-div textarea:hover::placeholder {
+  opacity: 1;
+  letter-spacing: normal;
+}
+#footer .footer form .input-div:hover label, #footer .footer form .input-div:focus label {
+  transform: translateX(1em) translateY(-0.2em);
+  color: #f4f4f4;
 }
 #footer .footer form button {
   position: relative;
