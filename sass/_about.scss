@@ -122,10 +122,12 @@
             border-radius: .5rem;
             border: none;
             text-transform: capitalize;
+            letter-spacing: .05rem;
             transition: .3s;
             position: relative;
             // button states
             &.open {
+                letter-spacing: normal;
                 // 'close - read-more text in button'
                 &::after {
                     position: absolute;
@@ -149,6 +151,7 @@
 
             &:hover {
                 transform: scale(.97);
+                letter-spacing: normal;
             }
         }
         // end of read more button
@@ -194,7 +197,7 @@
                             color: $span-gold;
                             padding: 0 .1em;
                             margin-right: .1em;
-                            border-radius: 2px;
+                            border-radius: .25rem;
                             box-shadow: 3px 3px 0 rgba(0, 0, 0, .100);
                         }
 

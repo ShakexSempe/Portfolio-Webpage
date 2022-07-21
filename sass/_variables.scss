@@ -70,12 +70,12 @@ $text-valid: #000;
 
 // box-shadows
 $box-light-top-sm: inset 2px 2px 3px rgba(221, 221, 221, 0.250),
-                    inset -2px -2px 3px #000a,
-                    2px 2px 3px rgba(0, 0, 0, .250);
+                    inset -2px -2px 3px rgba(0, 0, 0, .250),
+                    4px 4px 2px rgba(0, 0, 0, .150);
 
 $box-light-top-sm-hover: inset 2px 2px 3px #000a,
                     inset -2px -2px 3px rgba(221, 221, 221, 0.250),
-                    2px 3px 2px rgba(0, 0, 0, .350);
+                    0px 4px 1px rgba(0, 0, 0, .150);
 
 $box-light-top-bg: inset 4px 4px 5px rgba(221, 221, 221, 0.500),
                     inset -4px -4px 5px rgba(0, 0, 0, .200);

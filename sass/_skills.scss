@@ -129,7 +129,7 @@
             font-family: $font-title;
             letter-spacing: .15rem;
             position: relative;
-            overflow: hidden;
+            // overflow: hidden;
             isolation: isolate;
 
             // dropdown button shadows
@@ -154,11 +154,9 @@
             }
 
             &::after {
-                background: $button-crimson-hover;
                 background: $overlay-btn-hover;
-            
                 opacity: 0;
-                box-shadow: $box-dark-top-sm;
+                box-shadow: $box-light-top-sm-hover;
             }
 
             // BUTTON HOVER AND ACTIVE MEDIA QUERY
