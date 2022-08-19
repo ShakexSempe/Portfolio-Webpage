@@ -36,7 +36,6 @@
             }
             .work-title {
                 text-align: center;
-                text-transform: capitalize;
                 h2 {
                     text-transform: capitalize;
                     font-family: $font-ubuntu;
@@ -48,6 +47,14 @@
                 p {
                     color: $text-black;
                     font-size: 1rem;
+
+                    a {
+                        color: $span-crimson;
+                        transition: .25s;
+                        &:hover {
+                            color: $text-black;
+                        }
+                    }
                 }
             }
             figure {
