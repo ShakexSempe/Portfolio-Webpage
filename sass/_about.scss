@@ -178,12 +178,14 @@
 
                     // about me paragraph
                     p {
-                        padding: .5rem;
+                        // border: 2px solid red;
+                        padding-right: .25rem;
                         margin-bottom: 1rem;
                         text-overflow: ellipsis;
                         text-align: left;
                         z-index: 1;
                         font-size: .95rem;
+                        font-size: 1rem;
                         font-family: $font-content;
                         color: $overlay-blue-darker;
                         color: #000;
