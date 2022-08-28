@@ -711,7 +711,7 @@ hamburger
   letter-spacing: 0.15em;
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: block;
   text-align: left;
   font-family: "Montserrat", sans-serif;
@@ -2898,6 +2898,7 @@ hamburger
 }
 .about .col-left .about-img::before {
   content: "Boitumelo Sempe";
+  content: "";
   color: #333;
   background-image: url("../img/me-min.jpg");
   background-position: center;
@@ -2914,6 +2915,7 @@ hamburger
 .about .col-left .about-img::after {
   position: absolute;
   content: "Shakex Sempe";
+  content: "";
   color: #0000ff;
   opacity: 0;
   background-image: url("../img/shakexblue-min.jpg");

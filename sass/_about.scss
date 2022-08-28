@@ -373,6 +373,7 @@
 
         &::before {
             content: 'Boitumelo Sempe';
+            content: '';
             color: $text-dark;
             background-image: url('../img/me-min.jpg');
             background-position: center;
@@ -389,6 +390,7 @@
         &::after {
             position: absolute;
             content: 'Shakex Sempe';
+            content: '';
             color:$span-blue;
             opacity: 0;
             background-image: url('../img/shakexblue-min.jpg');
