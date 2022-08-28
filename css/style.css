@@ -2623,7 +2623,7 @@ hamburger
   flex-direction: column-reverse;
   text-align: center;
   margin: 0 auto;
-  padding: 0 5vw;
+  padding: 5vh 5vw;
   background-color: #fff;
   position: relative;
   min-height: 100vh;
