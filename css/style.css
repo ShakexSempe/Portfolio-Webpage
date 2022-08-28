@@ -2757,23 +2757,16 @@ hamburger
 .about .col-right .article-container article.about-article {
   transition: 0.3s ease;
 }
-@media (max-width: 768px) {
-  .about .col-right .article-container article.about-article {
-    transition: 0.3s ease;
-  }
-}
 .about .col-right .article-container article.about-article p {
+  color: #20262e;
   padding-right: 0.25rem;
   margin-bottom: 1rem;
   text-overflow: ellipsis;
   text-align: left;
   z-index: 1;
-  font-size: 0.95rem;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: #20262e;
-  color: #000;
   font-weight: 400;
+  z-index: 2;
 }
 .about .col-right .article-container article.about-article p#intro::first-letter {
   font-size: 2.5em;
@@ -2792,16 +2785,9 @@ hamburger
   transition: opacity 0.25s ease;
   opacity: 1;
 }
-@media (min-width: 768px) {
-  .about .col-right .article-container article.about-article p {
-    font-size: 1rem;
-  }
-}
-.about .col-right .article-container article.about-article p .fcc-link {
-  color: #dc143c;
-}
-.about .col-right .article-container article.about-article p .fcc-link:hover {
-  color: violet;
+.about .col-right .article-container article.about-article p i {
+  font-size: 2rem;
+  color: #485563;
 }
 .about .col-right .article-container article#cv {
   display: flex;
