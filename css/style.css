@@ -2790,9 +2790,17 @@ hamburger
   opacity: 0;
   transform: translateY(2rem);
 }
+.about .col-right .article-container article p.io-item i {
+  color: #ead2a1;
+}
 .about .col-right .article-container article p.active-item {
   opacity: 1;
   transform: translateY(0);
+}
+.about .col-right .article-container article p.active-item i {
+  color: #485563;
+  transition: 2s;
+  transition-delay: 0.5s;
 }
 .about .col-right .article-container article#cv {
   display: flex;

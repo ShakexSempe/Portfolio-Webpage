@@ -201,10 +201,20 @@
                     &.io-item {
                             opacity: 0;
                             transform: translateY(2rem);
+
+                        i {
+                            color: $span-gold;
+                        }
                     }
                     &.active-item {
                         opacity: 1;
                         transform: translateY(0);
+
+                        i {
+                            color: $overlay-blue-light;
+                            transition: 2s;
+                            transition-delay: .5s;
+                        }
                 }
                 }
 
