@@ -2768,6 +2768,8 @@ hamburger
 }
 .about .col-right .article-container article p a {
   background-color: #f4f4f4;
+  color: #20262e;
+  font-weight: 500;
 }
 .about .col-right .article-container article p#intro::first-letter {
   font-size: 2.5em;
