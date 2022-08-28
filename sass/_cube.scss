@@ -116,11 +116,13 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
         box-shadow: inset 0 0 0.5em #000a;
         display: grid;
         place-items: center;
+        transition: .25s;
 
         p, a {
             font-family: $font-title;
             font-size: .25em;
             text-transform: uppercase;
+            transition: .25s;
         }
 
         &:hover {
@@ -133,7 +135,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
 
     .front {
         transform: translateZ(1em);
-        background: $overlay-dark;
+        background-color: $overlay-blue-dark;
         a {
             color: $brand;
         }
