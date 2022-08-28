@@ -115,7 +115,6 @@ hamburger
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 /*progress bar*/
@@ -2626,6 +2625,8 @@ hamburger
   margin: 0 auto;
   padding: 0 5vw;
   background-color: #fff;
+  position: relative;
+  min-height: 100vh;
 }
 @media (min-width: 768px) {
   .about {
@@ -2874,6 +2875,8 @@ hamburger
   .about .col-left {
     width: 100%;
     height: 70vh;
+    position: sticky;
+    top: 15vh;
   }
 }
 .about .col-left .about-img {
