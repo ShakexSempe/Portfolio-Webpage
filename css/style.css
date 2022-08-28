@@ -1426,7 +1426,7 @@ hamburger
 .scene {
   position: relative;
   transform-style: preserve-3d;
-  animation: scene 30s infinite linear;
+  animation: scene 20s infinite linear;
 }
 @keyframes scene {
   to {
@@ -1444,7 +1444,7 @@ hamburger
   left: -0.5em;
   bottom: 1em;
   background-image: radial-gradient(circle at top, #ead2a1, 50%, #000);
-  animation: scene 30s infinite linear reverse;
+  animation: scene 20s infinite linear reverse;
 }
 @keyframes ball-bounce {
   0%, 100% {
