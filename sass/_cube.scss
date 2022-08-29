@@ -32,7 +32,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
     // SCENE
     @keyframes scene {
         to {
-            transform: rotateY(360deg);
+            transform: rotateY(-360deg);
         }
     }
 }
