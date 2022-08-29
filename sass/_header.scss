@@ -100,17 +100,15 @@
                 
                 h1 {
                     font-size: 1rem;
-
+                    font-family: $font-title;
+                    font-weight: 400;
                     @media (min-width: 768px) {
-                        font-size: 1.5em;
+                        font-size: 1.5rem;
                     }
-
-                    text-transform: uppercase;
                     text-transform: capitalize;
                     color: #f4f4f4;
                     color: $span-gold;
                     background-color: $overlay-blue-darker;
-                    font-weight: 500;
                     border: 1px solid $span-gold;
                     padding-left: .15rem;
                     border-radius: .25rem;
@@ -454,11 +452,12 @@
                             // end of list item underline
                             
                             a {
-                                font-size: .9rem;
+                                font-size: 1rem;
                                 padding: .25rem;
                                 font-weight: 400;
                                 margin: 0 auto;
                                 display: block;
+                                letter-spacing: normal;
                                 float: left;
                                 color: $text-light;
 

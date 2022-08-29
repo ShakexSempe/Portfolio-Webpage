@@ -507,12 +507,12 @@ hamburger
 }
 #header .header #navbar .brand h1 {
   font-size: 1rem;
-  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
   text-transform: capitalize;
   color: #f4f4f4;
   color: #ead2a1;
   background-color: #20262e;
-  font-weight: 500;
   border: 1px solid #ead2a1;
   padding-left: 0.15rem;
   border-radius: 0.25rem;
@@ -520,7 +520,7 @@ hamburger
 }
 @media (min-width: 768px) {
   #header .header #navbar .brand h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 #header .header #navbar .brand h1 span {
@@ -787,11 +787,12 @@ hamburger
     opacity: 1;
   }
   #header .header #navbar .nav-list ul li a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.25rem;
     font-weight: 400;
     margin: 0 auto;
     display: block;
+    letter-spacing: normal;
     float: left;
     color: #f4f4f4;
   }
