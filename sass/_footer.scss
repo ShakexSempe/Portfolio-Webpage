@@ -208,7 +208,7 @@
                 }
             }
             .socialMedia-item {
-                border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+                // border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
                 // background-color: $overlay-blue-darker;
                 padding: .5rem 0 5vh;
                 border-radius: .5rem;
@@ -218,12 +218,13 @@
                 transition: .3s;
                 width: 100%;
                 p {
-                    font-size: 1.35rem;
+                    font-size: 1.5rem;
                     text-transform: capitalize;
                     color: $text-light;
                     font-weight: 300;
                     text-align: center;
                     font-family: $font-title;
+                    color: $brand;
                     // width: 100%;
                     transition: 1s ease;
                 }
@@ -232,7 +233,7 @@
                     background: $overlay-blue-dark;
                     display: block;
                     text-align: center;
-                    padding: .5rem;
+                    padding: 1rem .5rem;
                     width: 90%;
                     margin: 0 auto;
                     color: #fff;
@@ -240,14 +241,19 @@
                     opacity: 1;
                     border-radius: .5rem;
                     position: relative;
-                    transition: .2s ease;
+                    transition: .25s ease;
+                    letter-spacing: 1rem;
                     isolation: isolate;
                     // translate out of view leaving only icon
                     // transform: translateX(150%);
                     transition: .25s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     // tablet links
                     @media (min-width: 768px) {
                         width: 80%;
+                        padding: 1rem;
                     }
                     // end of tablet links
                     // desktop links
@@ -255,10 +261,15 @@
                         width: 80%;
                     }
                     i {
-                        color: #fffa;
+                        color: #fff;
+                        opacity: .7;
                         // margin-right: 1.5em;
-                        padding: .5em;
+                        padding-right: .5rem;
                         transition: .5s;
+                        font-size: 1rem;
+                        @media (min-width: 768px) {
+                            font-size: 1.5rem;
+                        }
                     }
                     // LINK PSEUDO SHADOW AND BG
                     &:before, &::after  {
@@ -285,6 +296,7 @@
 
                     // LINK HOVER AND ACTIVE STATES
                     @media (max-width: 768px) {
+                        letter-spacing: normal;
                         &:active {
                             transform: scale(.97);
                             &:before {opacity: 0;}
@@ -292,6 +304,7 @@
                         }
                     }
                     @media (min-width: 768px) {
+                        letter-spacing: normal;
                         &:hover {
                             transform: scale(.97);
                             &:before {opacity: 0;}

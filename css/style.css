@@ -2446,7 +2446,8 @@ hamburger
 #work .work-items .work-item .work-title h2 {
   text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -3130,7 +3131,6 @@ hamburger
   }
 }
 #footer .footer .socialMedia-links .socialMedia-item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   padding: 0.5rem 0 5vh;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -3140,19 +3140,20 @@ hamburger
   width: 100%;
 }
 #footer .footer .socialMedia-links .socialMedia-item p {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   color: #f4f4f4;
   font-weight: 300;
   text-align: center;
   font-family: "Kanit", sans-serif;
+  color: #ead2a1;
   transition: 1s ease;
 }
 #footer .footer .socialMedia-links .socialMedia-item a {
   background: #29323c;
   display: block;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   width: 90%;
   margin: 0 auto;
   color: #fff;
@@ -3160,13 +3161,18 @@ hamburger
   opacity: 1;
   border-radius: 0.5rem;
   position: relative;
-  transition: 0.2s ease;
+  transition: 0.25s ease;
+  letter-spacing: 1rem;
   isolation: isolate;
   transition: 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   #footer .footer .socialMedia-links .socialMedia-item a {
     width: 80%;
+    padding: 1rem;
   }
 }
 @media (min-width: 1024px) {
@@ -3175,9 +3181,16 @@ hamburger
   }
 }
 #footer .footer .socialMedia-links .socialMedia-item a i {
-  color: #fffa;
-  padding: 0.5em;
+  color: #fff;
+  opacity: 0.7;
+  padding-right: 0.5rem;
   transition: 0.5s;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  #footer .footer .socialMedia-links .socialMedia-item a i {
+    font-size: 1.5rem;
+  }
 }
 #footer .footer .socialMedia-links .socialMedia-item a:before, #footer .footer .socialMedia-links .socialMedia-item a::after {
   position: absolute;
@@ -3198,6 +3211,9 @@ hamburger
   box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.25), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 768px) {
+  #footer .footer .socialMedia-links .socialMedia-item a {
+    letter-spacing: normal;
+  }
   #footer .footer .socialMedia-links .socialMedia-item a:active {
     transform: scale(0.97);
   }
@@ -3209,6 +3225,9 @@ hamburger
   }
 }
 @media (min-width: 768px) {
+  #footer .footer .socialMedia-links .socialMedia-item a {
+    letter-spacing: normal;
+  }
   #footer .footer .socialMedia-links .socialMedia-item a:hover {
     transform: scale(0.97);
   }
