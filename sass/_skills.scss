@@ -1,6 +1,9 @@
 
 // skills
 #skills {
+    border:1px solid red;
+    overflow: hidden;
+
     // skills container
     .skills {
         flex-direction: column;
