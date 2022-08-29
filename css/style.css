@@ -3594,6 +3594,7 @@ section .section-title {
   letter-spacing: 0.1em;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
+  font-family: "Kanit", sans-serif;
   -webkit-box-reflect: below -0.5rem linear-gradient(transparent, #0004);
 }
 @media (min-width: 768px) {
