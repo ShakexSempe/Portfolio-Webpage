@@ -2801,6 +2801,10 @@ hamburger
   font-size: 2rem;
   color: #485563;
 }
+.about .col-right .article-container article p i.fa-js {
+  transform: scale(1.5);
+  cursor: pointer;
+}
 .about .col-right .article-container article p.io-item {
   opacity: 0;
   transform: translateY(2rem);
