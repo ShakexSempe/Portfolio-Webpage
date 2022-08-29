@@ -937,6 +937,11 @@ hamburger
   top: 6vh;
   left: 5vw;
 }
+@media (min-width: 600px) {
+  #home .hero #hero-h1 {
+    top: 10vh;
+  }
+}
 #home .hero #hero-h1 h2 {
   font-size: 2.5rem;
   line-height: 1.4;
@@ -994,7 +999,7 @@ hamburger
   }
 }
 #home .hero #cta-header {
-  margin: 15vh 0 1rem;
+  margin: 10vh 0 1rem;
   background: #dc143c;
   position: relative;
   display: block;
@@ -2990,6 +2995,7 @@ hamburger
   transform: scale(1);
 }
 #footer .footer form {
+  z-index: 2;
   background-color: #29323c;
   width: 100%;
   height: auto;
@@ -3541,15 +3547,29 @@ hamburger
 }
 
 .bs21 {
+  z-index: 1;
   width: 100%;
   text-align: center;
+  border: 2px solid #ead2a1;
+  border-radius: 0.5rem;
+  padding: 5vh 0;
+  margin: 0 auto;
+  width: 90%;
 }
 .bs21[data-scroll] {
   transition: 1.5s;
   transform: translateY(-50%);
+  border-color: #485563;
 }
 .bs21[data-scroll=in] {
   transform: translateY(0);
+  border-color: #ead2a1;
+}
+@media (min-width: 768px) {
+  .bs21 {
+    padding: 10vh 0;
+    width: 100%;
+  }
 }
 .bs21 p,
 .bs21 a {
@@ -3559,6 +3579,12 @@ hamburger
   font-weight: 400;
   text-transform: capitalize;
 }
+@media (min-width: 768px) {
+  .bs21 p,
+.bs21 a {
+    font-size: 1.25rem;
+  }
+}
 .bs21 a {
   color: #ead2a1;
 }
@@ -3566,9 +3592,9 @@ hamburger
   opacity: 0.9;
 }
 .bs21 .date {
-  margin: 0.5em 0;
   color: #f4f4f4;
   display: block;
+  font-family: "Kanit", sans-serif;
 }
 
 *, ::before, ::after {

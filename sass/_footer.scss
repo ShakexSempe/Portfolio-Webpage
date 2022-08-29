@@ -28,6 +28,7 @@
         // section title
         // form
         form {
+            z-index: 2;
             @media (min-width: 1024px) {
                 width: 50%;
                 border-radius: 5px;
@@ -683,16 +684,29 @@
 }
  // bs21
 .bs21 {
+    z-index: 1;
     //  DATA-SCROLL
     &[data-scroll] {
         transition: 1.5s;
         transform: translateY(-50%);
+        border-color: $overlay-blue-light;
     }
     &[data-scroll="in"] {
         transform: translateY(0);
+        border-color: $brand;
     }
     width: 100%;
     text-align: center;
+    border: 2px solid $brand;
+    border-radius: .5rem;
+    padding: 5vh 0;
+    margin: 0 auto;
+    width: 90%;
+
+    @media (min-width: 768px) {
+        padding: 10vh 0;
+        width: 100%;
+    }
     p,
     a {
         font-family: $font-title;
@@ -700,6 +714,9 @@
         font-size: 1rem;
         font-weight: 400;
         text-transform: capitalize;
+        @media (min-width: 768px) {
+            font-size: 1.25rem;
+        }
     }
     a {
         color: $span-gold;
@@ -708,9 +725,10 @@
         }
     }
     .date {
-        margin: .5em 0;
+        // margin: .5em 0;
         color: $text-light;
         display: block;
+        font-family: $font-title;
     }
 }
 // end of bs21

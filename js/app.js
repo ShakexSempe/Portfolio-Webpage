@@ -175,11 +175,10 @@ dropBtn.addEventListener("click", () => {
 // end of skills dropdown
 
 // READ MORE DROPDOWN
-readBtn.addEventListener("click", ()=> {
-  article.classList.toggle('active');
-  readBtn.classList.toggle('open');
-  // let body = document.querySelector('.about-body');
-});
+// readBtn.addEventListener("click", ()=> {
+//   article.classList.toggle('active');
+//   readBtn.classList.toggle('open');
+// });
 
 // ********** END OF FUNCTIONS ************
 
