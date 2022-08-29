@@ -1,5 +1,7 @@
 // VARIABLES
 $box-color: #0ff7;
+$box-color: linear-gradient(0deg, hsl(214, 18%, 15%) 30% , hsla(212, 19%, 25%, 95%) 70%);
+$box-color: $overlay-blue-dark;
 $brand: #ead2a1;
 $rotate-speed: 20s;
 $bounce-speed: 1.5s;
@@ -110,7 +112,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: $box-color;
+        background: $box-color;
         // background: $overlay;
         transform-style: preserve-3d;
         box-shadow: inset 0 0 0.5em #000a;
@@ -123,10 +125,11 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
             font-size: .25em;
             text-transform: uppercase;
             transition: .25s;
+            color: $brand;
         }
 
         &:hover {
-            background: #000;
+            background: $overlay-blue-darker;
             a {
             color: $span-crimson;
             }
@@ -135,34 +138,34 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
 
     .front {
         transform: translateZ(1em);
-        background-color: $overlay-blue-dark;
-        a {
-            color: $brand;
-        }
+        // background-color: $overlay-blue-dark;
+        // a {
+        //     color: $brand;
+        // }
     }
 
     .right {
         transform: rotateY(90deg) translateZ(1em);
-        background-color: $brand;
-        a {
-            color: $overlay-blue-dark;
-        }
+        // background-color: $brand;
+        // a {
+        //     color: $overlay-blue-dark;
+        // }
     }
     
     .back {
         transform: rotateY(180deg) translateZ(1em);
-        background-color: $overlay-blue-light;
-        a {
-            color: #fff;
-        }
+        // background-color: $overlay-blue-light;
+        // a {
+        //     color: #fff;
+        // }
     }
 
     .left {
         transform: rotateY(270deg) translateZ(1em);
-        background-color: $brand;
-        a {
-            color: $overlay-blue-dark;
-        }
+        // background-color: $brand;
+        // a {
+        //     color: $overlay-blue-dark;
+        // }
     }
 
     .top {
@@ -170,7 +173,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
         width: 2em;
         height: 2em;
         // background-color: $box-color;
-        background: #0009;
+        // background: #0009;
         transform: translateY(-50%) rotateX(90deg);
         box-shadow: inset 0 0 0.5em #000a;
     }

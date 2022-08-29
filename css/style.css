@@ -1495,7 +1495,7 @@ hamburger
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #0ff7;
+  background: #29323c;
   transform-style: preserve-3d;
   box-shadow: inset 0 0 0.5em #000a;
   display: grid;
@@ -1513,12 +1513,13 @@ hamburger
   font-size: 0.25em;
   text-transform: uppercase;
   transition: 0.25s;
+  color: #ead2a1;
 }
 .cube .left:hover,
 .cube .right:hover,
 .cube .front:hover,
 .cube .back:hover {
-  background: #000;
+  background: #20262e;
 }
 .cube .left:hover a,
 .cube .right:hover a,
@@ -1528,37 +1529,20 @@ hamburger
 }
 .cube .front {
   transform: translateZ(1em);
-  background-color: #29323c;
-}
-.cube .front a {
-  color: #ead2a1;
 }
 .cube .right {
   transform: rotateY(90deg) translateZ(1em);
-  background-color: #ead2a1;
-}
-.cube .right a {
-  color: #29323c;
 }
 .cube .back {
   transform: rotateY(180deg) translateZ(1em);
-  background-color: #485563;
-}
-.cube .back a {
-  color: #fff;
 }
 .cube .left {
   transform: rotateY(270deg) translateZ(1em);
-  background-color: #ead2a1;
-}
-.cube .left a {
-  color: #29323c;
 }
 .cube .top {
   position: absolute;
   width: 2em;
   height: 2em;
-  background: #0009;
   transform: translateY(-50%) rotateX(90deg);
   box-shadow: inset 0 0 0.5em #000a;
 }
@@ -1567,7 +1551,7 @@ hamburger
   width: 2em;
   height: 2em;
   bottom: 0;
-  background-color: #0ff7;
+  background-color: #29323c;
   background-color: #0007;
   transform: translateY(50%) rotateX(90deg);
   box-shadow: 0 0 0.5em #000;
