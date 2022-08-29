@@ -187,9 +187,8 @@
         // social media links
         .socialMedia-links {
             @media (min-width: 1024px) {
-                width: 50%;
+                width: 70%;
                 border-radius: 5px;
-
             }
             grid-template-columns: 1fr;
             background-color: $overlay-blue-dark;
@@ -205,30 +204,27 @@
                     width: 100%;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
                 }
             }
             .socialMedia-item {
-                border: 2px solid hsla(0, 0%, 0%, 0.5);
-                background-color: $overlay-blue-darker;
-                padding: .5rem 0;
+                border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+                // background-color: $overlay-blue-darker;
+                padding: .5rem 0 5vh;
                 border-radius: .5rem;
                 overflow: hidden;
-                margin: .5em .1em 1em .1em;
+                margin: 1rem auto;
                 position: relative;
                 transition: .3s;
-
-                .link-icon {
+                width: 100%;
+                p {
                     font-size: 1.35rem;
                     text-transform: capitalize;
                     color: $text-light;
                     font-weight: 300;
-                    position:absolute;
-                    left: 50%;
-                    top: 50%;
                     text-align: center;
                     font-family: $font-title;
-                    width: 100%;
-                    transform: translate(-50%, -50%);
+                    // width: 100%;
                     transition: 1s ease;
                 }
 
@@ -236,8 +232,8 @@
                     background: $overlay-blue-dark;
                     display: block;
                     text-align: center;
-                    padding: .3em .5em .3em;
-                    width: 80%;
+                    padding: .5rem;
+                    width: 90%;
                     margin: 0 auto;
                     color: #fff;
                     text-transform: capitalize;
@@ -245,21 +241,27 @@
                     border-radius: .5rem;
                     position: relative;
                     transition: .2s ease;
+                    isolation: isolate;
                     // translate out of view leaving only icon
-                    transform: translateX(150%);
-                    transition: 1s ease;
+                    // transform: translateX(150%);
+                    transition: .25s ease;
                     // tablet links
                     @media (min-width: 768px) {
-                        width: 85%;
+                        width: 80%;
                     }
                     // end of tablet links
                     // desktop links
                     @media (min-width: 1024px) {
-                        width: 85%;
+                        width: 80%;
                     }
-                    // end of desktop links
-                    // link box shadow
-                    &::after {
+                    i {
+                        color: #fffa;
+                        // margin-right: 1.5em;
+                        padding: .5em;
+                        transition: .5s;
+                    }
+                    // LINK PSEUDO SHADOW AND BG
+                    &:before, &::after  {
                         position: absolute;
                         content: '';
                         top: 0;
@@ -267,79 +269,108 @@
                         width: 100%;
                         height: 100%;
                         border-radius:.5rem;
-                        box-shadow: $box-light-top-sm;
+                        transition: .25s;
+                        z-index: -1;
+                    }
+                    &::before {
+                    box-shadow: $box-light-top-sm;
+                    }
+                    &::after {
+                        opacity: 0;
+                        box-shadow: $box-light-top-sm-hover;
                     }
                     // end of link box shadow
                     
-                    i {
-                        color: #fffa;
-                        // margin-right: 1.5em;
-                        padding: .5em;
-                        transition: .5s;
-                    }
+                    
 
-                    // active state
-                    &:active {
-                        transform: scale(.97);
-                    }
-                    // end of active state
-                }
-
-                // link item hover state
-                &:hover {
-                    transform: scale(.98);
-                    background-color: $overlay-blue-darker;
-                    border-color: hsla(100%, 100%, 100%, 0.250);
-
-                    a {
-                        background: $overlay-blue-light;
-                        transform: translateX(0);
-                        opacity: 1;
-
-                        i {
-                            color: #fff;
+                    // LINK HOVER AND ACTIVE STATES
+                    @media (max-width: 768px) {
+                        &:active {
+                            transform: scale(.97);
+                            &:before {opacity: 0;}
+                            &::after {opacity: 1;}
                         }
                     }
-
-                    .link-icon {
-                        opacity: 0;
+                    @media (min-width: 768px) {
+                        &:hover {
+                            transform: scale(.97);
+                            &:before {opacity: 0;}
+                            &::after {opacity: 1;}
+                        }
                     }
                 }
                 // end of link item hover state
                 // link colors
                 &.codepen {
                     a {
-                    background-color: #000;
-                    color: #f4f4f4;
+                        color: #f4f4f4;
+                    &::before {
+                        background-image: linear-gradient(0deg, #000, #111);
+                    }
+                    &::after {
+                        background-image: linear-gradient(0deg, #111, #000);
+                    }
+
                     }
                 }
                 &.linkedin {
                     a {
-                        background: #0077b5;
+                        background-color: hsl(201, 100%, 35%);
+                        &::before {
+                            background: linear-gradient( hsl(201, 100%, 35%), hsl(201, 100%, 20%));
+                        }
+                        &::after {
+                            background: linear-gradient( hsl(201, 100%, 20%), hsl(201, 100%, 35%));
+                        }
                     }
                 }
                 &.twitter {
                     a {
                         background: hsl(203, 89%, 53%);
+                        &::before {
+                            background: linear-gradient( hsl(203, 89%, 53%), hsl(203, 89%, 33%));
+                        }
+                        &::after {
+                            background: linear-gradient( hsl(203, 89%, 33%), hsl(203, 89%, 53%));
+                        }
                     }
                 }
                 &.github {
                     a {
                         background-color: #333;
                         color: #f4f4f4;
+
+                        &::before {
+                            background: linear-gradient(#555, #333);
+                        }
+                        &::after {
+                            background: linear-gradient(#333, #555);
+                        }
                     }
                 }
                 &.fcc {
                     a {
-                        background: #0a0a23;
+                        background-color: #0a0a23;
+                        &::before {
+                            background: linear-gradient(hsl(240, 56%, 20%), #0a0a23);
+                        }
+                        &::after {
+                            background: linear-gradient(#0a0a23,hsl(240, 56%, 20%) );
+                        }
                     }
                 }
                 &.fem {
                     a {
-                        background: #ddd;
+                        background: linear-gradient(hsl(0, 0%, 96%), hsl(0, 0%, 80%));
                         color: #111;
                         i {
                             color: #000;
+                        }
+                        &::before {
+                            background: linear-gradient(hsl(0, 0%, 96%), hsl(0, 0%, 80%));
+                        }
+                        &::after {
+                            background: linear-gradient(hsl(0, 0%, 80%), hsl(0, 0%, 96%));
                         }
                     }
                     
