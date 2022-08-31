@@ -1607,7 +1607,7 @@ hamburger
   position: relative;
   z-index: 30;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #skills .skills-top {
     width: 90%;
     margin: 5vh 0 2em;
@@ -1618,7 +1618,7 @@ hamburger
 #skills .skills-top .skills-info p {
   color: #f4f4f4;
   color: #29323c;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
   background: transparent;
   overflow: hidden;
@@ -1634,12 +1634,17 @@ hamburger
   color: inherit;
 }
 #skills .skills-top .skills-drop {
-  text-align: center;
+  text-align: left;
   color: #ead2a1;
+}
+@media (min-width: 820px) {
+  #skills .skills-top .skills-drop {
+    text-align: center;
+  }
 }
 #skills .skills-top .skills-drop .skills-drop-p {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 #skills .dropdown {
   position: relative;
@@ -2415,7 +2420,6 @@ hamburger
   }
 }
 #work .work-items .work-item {
-  border: 1px solid #29323c;
   padding: 5vh 0;
   width: 100%;
   border-radius: 5px;
@@ -2435,18 +2439,18 @@ hamburger
 }
 #work .work-items .work-item .work-title h2 {
   text-transform: capitalize;
-  font-family: "Ubuntu", sans-serif;
   font-family: "Kanit", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
+  color: #29323c;
   margin-bottom: 0.5rem;
 }
 #work .work-items .work-item .work-title p {
-  color: #000;
+  color: #485563;
   font-size: 1rem;
 }
 #work .work-items .work-item .work-title p a {
-  color: #dc143c;
+  color: #485563;
   transition: 0.25s;
 }
 #work .work-items .work-item .work-title p a:hover {
@@ -3622,7 +3626,7 @@ section {
 section .section-title {
   font-size: 2.25rem;
   font-weight: 400;
-  color: #29323c;
+  color: #20262e;
   max-width: 100vw;
   margin: 5vh 0 10vh;
   text-transform: uppercase;

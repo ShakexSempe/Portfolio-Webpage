@@ -17,7 +17,7 @@
 
         }
         .work-item {
-            border: 1px solid $overlay-blue-dark;
+            // border: 1px solid $overlay-blue-dark;
             padding: 5vh 0;
             width: 100%;
             border-radius: 5px;
@@ -38,19 +38,19 @@
                 text-align: center;
                 h2 {
                     text-transform: capitalize;
-                    font-family: $font-ubuntu;
                     font-family: $font-title;
-                    font-weight: 400;
+                    font-weight: 500;
                     font-size: 1.5rem;
+                    color:$overlay-blue-dark;
                     margin-bottom: .5rem;
                 }
                 
                 p {
-                    color: $text-black;
+                    color: $overlay-blue-light;
                     font-size: 1rem;
 
                     a {
-                        color: $span-crimson;
+                        color: $overlay-blue-light;
                         transition: .25s;
                         &:hover {
                             color: $text-black;

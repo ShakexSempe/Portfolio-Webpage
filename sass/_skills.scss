@@ -33,7 +33,7 @@
 
     // skills top section
     .skills-top {
-        @media (min-width: 1024px){
+        @media (min-width: 768px){
             width: 90%;
             margin: 5vh 0 2em;
             padding: 5vh 5vw;
@@ -51,7 +51,7 @@
         p {
             color: $text-light;
             color: $overlay-blue-dark;
-            font-size: .9rem;
+            font-size: 1rem;
             // font-size: 1rem;
             line-height: 1.6;
             @media (min-width: 768px){
@@ -69,11 +69,14 @@
         }
     }
         .skills-drop {
-            text-align: center;
+            text-align: left;
             color: $span-gold;
+            @media (min-width: 820px){
+                text-align: center;
+            }
             .skills-drop-p {
                 font-weight: 600;
-                font-size: .9rem;
+                font-size: 1rem;
             }
         }
         // skills top 'down arrow'
