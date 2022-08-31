@@ -417,7 +417,7 @@ hamburger
         display: grid;
         place-items: center;
         isolation: isolate;
-        color: #f4f4f4;
+        color: $overlay-blue-light;
         text-transform: capitalize;
         
         .sector {
