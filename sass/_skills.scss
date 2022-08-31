@@ -51,7 +51,7 @@
         p {
             color: $text-light;
             color: $overlay-blue-dark;
-            font-size: .95rem;
+            font-size: .925rem;
             // font-size: 1rem;
             line-height: 1.6;
             @media (min-width: 768px){
@@ -61,7 +61,7 @@
             overflow: hidden;
 
             span {
-                font-size: 1rem;
+                font-size: .95rem;
                 font-weight: 600;
                 color: inherit;
             }
@@ -75,8 +75,8 @@
                 text-align: center;
             }
             .skills-drop-p {
-                font-weight: 600;
-                font-size: 1rem;
+                font-weight: 500;
+                font-size: .95rem;
             }
         }
         // skills top 'down arrow'
