@@ -500,10 +500,10 @@ hamburger
   }
 }
 #header .header #navbar .brand {
-  transition: 0.5s ease;
+  transition: 1s ease;
   opacity: 0;
   opacity: 1;
-  transform: translateY(-10vh);
+  transform: translateY(-11vh);
 }
 #header .header #navbar .brand h1 {
   font-size: 1rem;

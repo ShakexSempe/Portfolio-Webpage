@@ -93,10 +93,10 @@
             }
             // HEADER LOGO
             .brand {
-                transition: .5s ease;
+                transition: 1s ease;
                 opacity: 0;
                 opacity: 1;
-                transform: translateY(-10vh);
+                transform: translateY(-11vh);
                 
                 h1 {
                     font-size: 1rem;
