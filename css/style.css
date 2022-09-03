@@ -2426,8 +2426,7 @@ hamburger
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f0f2f4;
-  background: linear-gradient(180deg, #f0f2f4 0%, #f0f2f4 100%);
+  background: #f6f7f9;
 }
 #work .work-items .work-item[data-scroll] {
   transform: scale(1) translateY(10vh);
