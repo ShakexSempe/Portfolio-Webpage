@@ -118,7 +118,7 @@
                     background: $overlay-blue-darker;
                     border-radius: 50%;
                     outline: 2px solid $span-gold;
-                    outline: 2px solid #fff;
+                    outline: 2px solid #fff4;
                     position: relative;
                     display: grid;
                     place-items: center;
@@ -261,8 +261,7 @@
                 // item shadows hover state
                 &:hover {
                     .icon {
-                        outline: 2px dashed $span-gold;
-                        outline-offset: -.5em;
+                        outline: 2px solid #fff1;
                         i {
                             color: $span-gold;
                             transform: scale(1);

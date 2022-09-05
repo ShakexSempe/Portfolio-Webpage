@@ -2030,7 +2030,7 @@ hamburger
   background: #20262e;
   border-radius: 50%;
   outline: 2px solid #ead2a1;
-  outline: 2px solid #fff;
+  outline: 2px solid #fff4;
   position: relative;
   display: grid;
   place-items: center;
@@ -2163,8 +2163,7 @@ hamburger
   cursor: alias;
 }
 #contact .contact .contact-items .contact-item:hover .icon {
-  outline: 2px dashed #ead2a1;
-  outline-offset: -0.5em;
+  outline: 2px solid #fff1;
 }
 #contact .contact .contact-items .contact-item:hover .icon i {
   color: #ead2a1;
