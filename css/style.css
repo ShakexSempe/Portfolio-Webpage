@@ -516,6 +516,7 @@ hamburger
   border: 1px solid #ead2a1;
   padding-left: 0.2rem;
   border-radius: 0.25rem;
+  overflow: hidden;
   transition: 0.2s;
 }
 @media (min-width: 768px) {
@@ -525,7 +526,7 @@ hamburger
 }
 #header .header #navbar .brand h1 span {
   margin-left: 0.1rem;
-  padding: 0.05rem 0.3rem 0.05rem 0.3rem;
+  padding: 0 0.25rem 0 0.05rem;
   background: #ead2a1;
   background: linear-gradient(0deg, #deb86e, #ead2a1);
   border: none;
