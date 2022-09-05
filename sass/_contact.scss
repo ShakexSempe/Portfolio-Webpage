@@ -125,9 +125,8 @@
                     transition: .5s ease;
 
                     i {
-                        font-size: 1.5em;
+                        font-size: 1.5rem;
                         color: $text-light;
-                        transform: scale(.8);
                         transition: .5s ease;
                     }
                     @media (min-width: 768px) {
@@ -263,8 +262,8 @@
                     .icon {
                         outline: 2px solid #fff1;
                         i {
-                            color: $span-gold;
-                            transform: scale(1);
+                            opacity: .7;
+                            transform: scale(.8);
                         }
                     }
                     

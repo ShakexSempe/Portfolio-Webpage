@@ -2034,9 +2034,8 @@ hamburger
   transition: 0.5s ease;
 }
 #contact .contact .contact-items .contact-item .icon i {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #f4f4f4;
-  transform: scale(0.8);
   transition: 0.5s ease;
 }
 @media (min-width: 768px) {
@@ -2163,8 +2162,8 @@ hamburger
   outline: 2px solid #fff1;
 }
 #contact .contact .contact-items .contact-item:hover .icon i {
-  color: #ead2a1;
-  transform: scale(1);
+  opacity: 0.7;
+  transform: scale(0.8);
 }
 #contact .contact .contact-items .contact-item:hover .contact-info a {
   opacity: 1;
