@@ -2624,7 +2624,9 @@ hamburger
 }
 
 .about {
+  display: flex;
   flex-direction: column-reverse;
+  gap: 5vh;
   text-align: center;
   margin: 0 auto;
   padding: 5vh 5vw;

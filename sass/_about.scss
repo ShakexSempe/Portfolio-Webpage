@@ -1,8 +1,10 @@
 // about 
 .about {
     // FLEX CONTAINER
-    flex-direction: column-reverse;
     // border: 2px solid red;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5vh;
     text-align: center;
     margin: 0 auto ;
     padding: 5vh 5vw;
@@ -16,7 +18,7 @@
         align-items: center;
         padding: 5vh 5vw;
     }
-    // COL RIGHT = ATITLE & ARTICLE
+    // COL RIGHT = TITLE & ARTICLE
     .col-right {
         // section title
         .section-title {
