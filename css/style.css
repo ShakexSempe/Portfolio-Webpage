@@ -2783,6 +2783,10 @@ hamburger
   color: #20262e;
   font-weight: 500;
   display: inline-block;
+  border-radius: 0.25rem;
+}
+.about .col-right .article-container article p a:hover {
+  color: #dc143c;
 }
 .about .col-right .article-container article p#intro::first-letter {
   font-size: 2.5em;
@@ -2800,10 +2804,7 @@ hamburger
 .about .col-right .article-container article p i {
   font-size: 2rem;
   color: #485563;
-}
-.about .col-right .article-container article p i.fa-js {
-  transform: scale(1.5);
-  cursor: pointer;
+  margin-right: 0.05rem;
 }
 .about .col-right .article-container article p.io-item {
   opacity: 0;

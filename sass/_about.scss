@@ -188,6 +188,11 @@
                         color: $overlay-blue-darker;
                         font-weight: 500;
                         display: inline-block;
+                        border-radius: .25rem;
+
+                        &:hover {
+                            color: $span-crimson;
+                        }
                     }
 
                     
@@ -210,10 +215,7 @@
                         // position: absolute;
                         font-size: 2rem;
                         color: $overlay-blue-light;
-                        &.fa-js {
-                            transform: scale(1.5);
-                            cursor: pointer;
-                        }
+                        margin-right: .05rem;
                     }
                     // DATA SCROLL
                     &.io-item {
