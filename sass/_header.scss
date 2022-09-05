@@ -22,7 +22,6 @@
                 .brand {
                     opacity: 1;
                             transform: translateY(0);
-                            transition: .5s;
                 }
             }
         }
@@ -52,7 +51,7 @@
                 .brand {
                     opacity: 1;
                     transform: translateY(0);
-                    transition: .5s;
+                    transition: 1s;
                 }
 
                 .nav-list {
@@ -97,7 +96,7 @@
                 opacity: 0;
                 opacity: 1;
                 transform: translateY(-11vh);
-                
+                transition: 1s;
                 h1 {
                     font-size: 1rem;
                     font-family: $font-title;
@@ -113,7 +112,7 @@
                     padding-left: .2rem;
                     border-radius: .25rem;
                     overflow: hidden;
-                    transition: .2s;
+                    transition: .5s;
                     // text-shadow: 0 0 5px $text-shadow-red;
 
                     span {

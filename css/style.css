@@ -451,7 +451,6 @@ hamburger
 #header.hero-header .header #navbar .brand {
   opacity: 1;
   transform: translateY(0);
-  transition: 0.5s;
 }
 #header.header-io {
   background-color: rgba(34, 41, 49, 0.9);
@@ -473,7 +472,7 @@ hamburger
 #header.header-io .header #navbar .brand {
   opacity: 1;
   transform: translateY(0);
-  transition: 0.5s;
+  transition: 1s;
 }
 #header.header-io .header #navbar .nav-list ul li {
   opacity: 1;
@@ -504,6 +503,7 @@ hamburger
   opacity: 0;
   opacity: 1;
   transform: translateY(-11vh);
+  transition: 1s;
 }
 #header .header #navbar .brand h1 {
   font-size: 1rem;
@@ -517,7 +517,7 @@ hamburger
   padding-left: 0.2rem;
   border-radius: 0.25rem;
   overflow: hidden;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   #header .header #navbar .brand h1 {
