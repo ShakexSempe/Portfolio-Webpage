@@ -529,11 +529,8 @@ hamburger
   padding: 0 0.2rem 0 0.2rem;
   background: #ead2a1;
   background: linear-gradient(0deg, #deb86e, #ead2a1);
-  border: none;
-  outline: none;
   color: #29323c;
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-radius: 0;
   transition: 0.2s;
 }
 @media (max-width: 1024px) {

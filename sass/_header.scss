@@ -121,11 +121,10 @@
                         padding: 0 .2rem 0 .2rem;
                         background: $span-gold;
                         background: $button-gold;
-                        border: none;
-                        outline: none;
                         color: $overlay-blue-dark;
-                        border-top-right-radius: .25rem;
-                        border-bottom-right-radius: .25rem;
+                        border-radius: 0;
+                        // border-top-right-radius: .25rem;
+                        // border-bottom-right-radius: .25rem;
                         transition: .2s;
                     }
 
