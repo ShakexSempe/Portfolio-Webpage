@@ -46,11 +46,9 @@ const heroObserver = new IntersectionObserver(
       entries.forEach(entry => {
           if(!entry.isIntersecting) {
               header.classList.add("hero-header");
-              bottomNav.classList.add("active-bottom-nav");
               console.log("hero NOT IO");
           } else {
               header.classList.remove("hero-header");
-              bottomNav.classList.remove("active-bottom-nav");
               console.log("hero IS io");
           }
       });
@@ -70,6 +68,8 @@ const mainObserver = new IntersectionObserver(
               hamburger.classList.add("no-pulse");
               topLink.classList.remove('show-link');
               progressBarStyle.classList.remove('active-bar');
+              bottomNav.classList.remove("active-bottom-nav");
+            
               console.log("main NOT IO");
           } else {
               header.classList.add("header-io");
@@ -77,6 +77,7 @@ const mainObserver = new IntersectionObserver(
               console.log("main IS IO");
               progressBarStyle.classList.add('active-bar');
               topLink.classList.add('show-link');
+              bottomNav.classList.add("active-bottom-nav");
             
           }
       });
