@@ -362,6 +362,12 @@ hamburger
   font-size: 0.6rem;
   text-transform: capitalize;
   color: #fff5;
+  display: grid;
+  place-items: center;
+}
+.bottom-nav .link-item a i {
+  display: block;
+  margin-bottom: 0.2rem;
 }
 .bottom-nav.active-bottom-nav {
   transform: translateY(0vh);
