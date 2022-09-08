@@ -359,9 +359,9 @@ hamburger
   color: #ead2a1;
 }
 .bottom-nav .link-item a {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: capitalize;
-  color: #fff5;
+  color: #fff7;
   display: grid;
   place-items: center;
 }
