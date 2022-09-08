@@ -226,6 +226,9 @@ hamburger
 
 // back to top button
 .top-link {
+    @media (max-width: 768px){
+        display: none;
+    }
     position: fixed;
     bottom: 5vh;
     right: 5vw;
@@ -374,6 +377,55 @@ hamburger
             &::before {opacity: 0};
             &::after {opacity: 1};
         }
+    }
+}
+
+// BOTTOM NAV
+.bottom-nav {
+    @media (min-width: 768px){
+        display: none;
+    }
+    position: fixed;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: $overlay-blue-darkest;
+    z-index: 40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 5vw;
+    transform: translateY(15vh);
+    transition: 1s;
+
+    .link-item {
+        // border: 1px solid yellow;
+        background: $overlay-blue-dark;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        border-radius: .25rem;
+        padding: .05rem;
+        // opacity: .5;
+        transition: .25s;
+        
+        i {
+            font-size: 1rem;
+            font-weight: 700;
+            color: $span-gold;
+        }
+
+        a {
+            font-size: .8rem;
+            text-transform: capitalize;
+            color: #fff;
+        }
+    }
+
+    &.active-bottom-nav {
+        transform: translateY(0vh);
     }
 }
 

@@ -9,6 +9,7 @@ const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.header .nav-list ul li');
 const topLink = document.querySelector('.top-link');
 const progressBarStyle = document.querySelector('.progress-bar');
+const bottomNav = document.querySelector('.bottom-nav');
 
 // HAMBURGER MENU
 const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
@@ -16,7 +17,7 @@ const mobile_menu = document.querySelector('.header #navbar .nav-list .links-con
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
 const header = document.querySelector('header');
 const navLogo = document.querySelector('.brand');
-console.log(navLogo);
+console.log(bottomNav);
 // ABOUT SECTION
 const readBtn = document.getElementById('readBtn');
 let article = document.querySelector('.about-article');
@@ -45,9 +46,11 @@ const heroObserver = new IntersectionObserver(
       entries.forEach(entry => {
           if(!entry.isIntersecting) {
               header.classList.add("hero-header");
+              bottomNav.classList.add("active-bottom-nav");
               console.log("hero NOT IO");
           } else {
               header.classList.remove("hero-header");
+              bottomNav.classList.remove("active-bottom-nav");
               console.log("hero IS io");
           }
       });
@@ -67,7 +70,7 @@ const mainObserver = new IntersectionObserver(
               hamburger.classList.add("no-pulse");
               topLink.classList.remove('show-link');
               progressBarStyle.classList.remove('active-bar');
-              console.log("main NOT IO")
+              console.log("main NOT IO");
           } else {
               header.classList.add("header-io");
               hamburger.classList.remove("no-pulse");
