@@ -349,8 +349,9 @@ hamburger
   display: grid;
   place-items: center;
   border-radius: 0.25rem;
-  padding: 0.05rem;
+  padding: 0.15rem;
   transition: 0.25s;
+  position: relative;
 }
 .bottom-nav .link-item i {
   font-size: 1rem;
@@ -358,9 +359,9 @@ hamburger
   color: #ead2a1;
 }
 .bottom-nav .link-item a {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   text-transform: capitalize;
-  color: #fff;
+  color: #fff5;
 }
 .bottom-nav.active-bottom-nav {
   transform: translateY(0vh);
@@ -3601,7 +3602,7 @@ hamburger
   z-index: 1;
   width: 100%;
   text-align: center;
-  border: 2px solid #ead2a1;
+  border: 2px solid #29323c;
   border-radius: 0.5rem;
   padding: 5vh 0;
   margin: 0 auto;
@@ -3610,11 +3611,9 @@ hamburger
 .bs21[data-scroll] {
   transition: 1.5s;
   transform: translateY(-50%);
-  border-color: #485563;
 }
 .bs21[data-scroll=in] {
   transform: translateY(0);
-  border-color: #ead2a1;
 }
 @media (min-width: 768px) {
   .bs21 {

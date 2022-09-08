@@ -407,9 +407,10 @@ hamburger
         display: grid;
         place-items: center;
         border-radius: .25rem;
-        padding: .05rem;
+        padding: .15rem;
         // opacity: .5;
         transition: .25s;
+        position: relative;
         
         i {
             font-size: 1rem;
@@ -418,9 +419,9 @@ hamburger
         }
 
         a {
-            font-size: .8rem;
+            font-size: .6rem;
             text-transform: capitalize;
-            color: #fff;
+            color: #fff5;
         }
     }
 
