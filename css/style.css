@@ -374,6 +374,24 @@ hamburger
   transform: translateY(0vh);
 }
 
+.skip-link {
+  background: #485563;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.5rem;
+  color: #f4f4f4;
+  margin: 0 auto;
+  text-transform: capitalize;
+  transition: 0.5s;
+  transform: translateY(-10vh);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 [data-scroll] {
   transition: 1s;
   transform: scale(0.5);
