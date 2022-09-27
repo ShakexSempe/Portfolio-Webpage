@@ -190,14 +190,34 @@ dropBtn.addEventListener("click", () => {
 date.innerHTML = new Date().getFullYear();
 
 
-
-// const fig = document.querySelector('.fig-js');
-// const content = document.querySelector('.title-js');
-
-// fig.addEventListener("click", () => {
-//   if(content.classList.contains("active-title")){
-//     content.classList.remove("active-title");
-//   } else {
-//     content.classList.add("active-title");
-//   }
+// const sections = document.querySelectorAll('.link-section');
+// console.log(sections);
+// let navLi = document.querySelectorAll('.links li');
+//   console.log(navLi);
+// const sectionOptions = {
+//   rootMargin: '0px 0px 0px 0px',
+// }
+// sections.forEach(section => {
+//   var current = '';
+  
+//   const sectionObserver = new IntersectionObserver(
+//     function(entries, sectionObserver){
+//       entries.forEach(entry => {
+//         if(entry.isIntersecting){
+//           // console.log('section is IO')
+//           current = section.getAttribute("id");
+//           console.log(current);
+//           navLi.forEach(li => {
+//             // console.log(li);
+//             if(li.classList.contains(current)){
+//               li.classList.add('active');
+//             } else {
+//               li.classList.remove('active');
+//             }
+//           })
+//         } 
+//       })
+//     }, sectionOptions
+//   );
+//     sectionObserver.observe(section);
 // })
