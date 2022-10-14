@@ -327,7 +327,7 @@ hamburger
   bottom: 0;
   height: 8vh;
   width: 100%;
-  background: linear-gradient(0deg, #20262e, #29323c);
+  background: linear-gradient(0deg, #15191e, #20262e);
   z-index: 40;
   display: flex;
   justify-content: space-between;
@@ -3632,16 +3632,15 @@ hamburger
 .bs21 {
   z-index: 1;
   width: 100%;
-  text-align: center;
-  border: 2px solid #29323c;
   border-radius: 0.5rem;
   padding: 5vh 0;
   margin: 0 auto;
   width: 90%;
+  text-align: center;
 }
 .bs21[data-scroll] {
   transition: 1.5s;
-  transform: translateY(-50%);
+  transform: translateY(50%);
 }
 .bs21[data-scroll=in] {
   transform: translateY(0);

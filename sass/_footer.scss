@@ -689,18 +689,18 @@
     //  DATA-SCROLL
     &[data-scroll] {
         transition: 1.5s;
-        transform: translateY(-50%);
+        transform: translateY(50%);
     }
     &[data-scroll="in"] {
         transform: translateY(0);
     }
     width: 100%;
-    text-align: center;
-    border: 2px solid $overlay-blue-dark;
+    // border: 2px solid $overlay-blue-dark;
     border-radius: .5rem;
     padding: 5vh 0;
     margin: 0 auto;
     width: 90%;
+    text-align: center;
 
     @media (min-width: 768px) {
         padding: 10vh 0;
