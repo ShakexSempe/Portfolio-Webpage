@@ -15,7 +15,7 @@ hamburger
     display: inline-block;
     border-radius: 50%;
     position: relative;
-    background: #29323c;
+    // background: #29323c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@ hamburger
     // hamburger box shadow
     &.hamburger::after {
         opacity: .8;
-        box-shadow: inset 1px 1px 2px hsla(0, 0%, 87%, 0.450),
+        box-shadow: inset 1px 1px 2px hsla(0, 0%, 87%, 0.300),
                     inset -2px -2px 2px rgba(0, 0, 0, 0.450);
     }
     // end of hamburger box shadow

@@ -15,7 +15,6 @@ hamburger
   display: inline-block;
   border-radius: 50%;
   position: relative;
-  background: #29323c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +34,7 @@ hamburger
 }
 #header .hamburger.hamburger::after {
   opacity: 0.8;
-  box-shadow: inset 1px 1px 2px rgba(222, 222, 222, 0.45), inset -2px -2px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 1px 1px 2px rgba(222, 222, 222, 0.3), inset -2px -2px 2px rgba(0, 0, 0, 0.45);
 }
 #header .hamburger.hamburger:before {
   border: 1px solid #ead2a1;
@@ -2087,8 +2086,8 @@ hamburger
 #contact .contact .contact-items .contact-item h2 {
   color: #fff;
   padding: 0.5rem 0.5rem 0;
-  margin: 0.5rem auto;
-  font-size: 1.5rem;
+  margin: 0.5rem auto 0;
+  font-size: 1.25rem;
   width: 70%;
   font-weight: 600;
   position: relative;
@@ -2499,11 +2498,11 @@ hamburger
 #work .work-items .work-item {
   padding: 5vh 0;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f6f7f9;
+  background: #fafafa;
 }
 #work .work-items .work-item[data-scroll] {
   transform: scale(1) translateY(10vh);
