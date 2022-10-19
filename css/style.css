@@ -528,7 +528,7 @@ hamburger
   transform: translateY(0);
 }
 #header.header-io {
-  background-color: rgba(34, 41, 49, 0.9);
+  background-color: #29323c;
   transition: background-color 0.5s;
 }
 @media (min-width: 1024px) {
@@ -537,11 +537,9 @@ hamburger
     transition: 0.5s;
     border: none;
   }
-  #header.header-io #navbar .nav-list ul {
-    transform: translateY(1rem);
-  }
   #header.header-io #navbar .nav-list .contact-links {
     transform: translateY(-100vh);
+    display: none;
   }
 }
 #header.header-io .header #navbar .brand {
@@ -826,6 +824,9 @@ hamburger
   letter-spacing: initial;
 }
 @media (min-width: 1025px) {
+  #header .header #navbar .nav-list {
+    height: 100%;
+  }
   #header .header #navbar .nav-list .nav-logo {
     display: none;
   }
@@ -839,12 +840,13 @@ hamburger
     gap: 0.5rem;
     height: auto;
     width: fit-content;
-    width: 50vw;
+    width: 100%;
     background-color: transparent;
   }
   #header .header #navbar .nav-list ul li {
     position: relative;
     display: flex;
+    align-items: center;
   }
   #header .header #navbar .nav-list ul li::before {
     position: absolute;
@@ -907,18 +909,19 @@ hamburger
     box-shadow: none;
   }
   #header .header #navbar .nav-list .contact-links {
-    width: 50vw;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 1rem;
     padding: 0.5rem;
   }
   #header .header #navbar .nav-list .contact-links a {
     color: #ead2a1;
     letter-spacing: 0.05rem;
+    font-size: 0.9rem;
   }
   #header .header #navbar .nav-list .contact-links a i {
-    transform: translateX(-0.5rem);
     transition: 0.25s;
   }
   #header .header #navbar .nav-list .contact-links a:hover {

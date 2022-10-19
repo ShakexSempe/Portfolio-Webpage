@@ -28,7 +28,7 @@
     }
     // MAIN IO
     &.header-io {
-        background-color: $overlay-blue-dark-trans;
+        background-color: $overlay-blue-dark;
         transition: background-color .5s;
         @media (min-width: 1024px) {
             height: 8vh;
@@ -38,10 +38,11 @@
             #navbar {
                 .nav-list {
                     ul {
-                        transform: translateY(1rem);
+                        // transform: translateY(1rem);
                     }
                     .contact-links {
                         transform: translateY(-100vh);
+                        display: none;
                     }
                 }
             }
@@ -407,6 +408,8 @@
                 // end of mobile screens style
                 // DESKTOP NAVLIST
                 @media (min-width: 1025px){
+                    // border: 2px solid yellow;
+                    height: 100%;
                     // hide nav avi on desktop
                         .nav-logo { display: none;}
                     // end of hide nav avi on desktop
@@ -422,7 +425,7 @@
                         gap: .5rem;
                         height: auto;
                         width: fit-content;
-                        width: 50vw;
+                        width: 100%;
                         // overflow: hidden;
                         background-color: transparent;
                         // border: 1px solid red;
@@ -432,6 +435,7 @@
                             display: flex;
                             // margin-right: .5rem;
                             // border: 2px solid yellow;
+                            align-items: center;
                             // list item underline
                             &::before {
                                 position: absolute;
@@ -517,19 +521,21 @@
                     }
                     
                     .contact-links {
-                        width: 50vw;
+                        width: 100%;
                         // border: 2px solid red;
                         display: flex;
                         justify-content: flex-end;
+                        align-items: center;
                         gap: 1rem;
                         padding: .5rem;
 
                         a {
                             color: $span-gold;
                             letter-spacing: .05rem;
+                            font-size: .9rem;
 
                             i {
-                                transform: translateX(-.5rem);
+                                // transform: translateX(-.5rem);
                                 transition: .25s;
                             }
 
