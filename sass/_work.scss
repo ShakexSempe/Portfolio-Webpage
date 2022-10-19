@@ -42,10 +42,13 @@
                     text-transform: capitalize;
                     font-family: $font-title;
                     font-weight: 500;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     color:$overlay-blue-dark;
                     margin-bottom: .5rem;
                     line-height: 1.3;
+                    br {
+                        display: none;
+                    }
                     @media (min-width: 768px) {
                         br {
                             display: none;
