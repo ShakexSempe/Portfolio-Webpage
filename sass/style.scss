@@ -127,11 +127,11 @@ section {
 
         [data-scroll="in"] {
             transition: 2s;
-                transform: translateX(0);
+                transform: scale(1);
         }
         
         figure {
-            transform: translateX(80%);
+            transform: scale(1.5);
             margin: 0 auto;
             img {
                 object-fit: cover;

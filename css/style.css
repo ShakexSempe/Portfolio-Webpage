@@ -3781,10 +3781,10 @@ section .section-title {
 }
 .section-pad.pad-logo [data-scroll=in] {
   transition: 2s;
-  transform: translateX(0);
+  transform: scale(1);
 }
 .section-pad.pad-logo figure {
-  transform: translateX(80%);
+  transform: scale(1.5);
   margin: 0 auto;
 }
 .section-pad.pad-logo figure img {
