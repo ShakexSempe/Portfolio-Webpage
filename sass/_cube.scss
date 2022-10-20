@@ -126,6 +126,7 @@ $conic-bg: repeating-conic-gradient(from 45deg, #111 0deg 90deg,
             text-transform: uppercase;
             transition: .25s;
             color: $brand;
+            pointer-events: none;
         }
 
         &:hover {

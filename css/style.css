@@ -1592,6 +1592,7 @@ hamburger
   text-transform: uppercase;
   transition: 0.25s;
   color: #ead2a1;
+  pointer-events: none;
 }
 .cube .left:hover,
 .cube .right:hover,
