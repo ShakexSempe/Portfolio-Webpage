@@ -1021,14 +1021,14 @@ hamburger
     top: 12vh;
   }
 }
-#home .hero #hero-h1 h2 {
+#home .hero #hero-h1 h1 {
   font-size: 2.5rem;
   line-height: 1.4;
   display: block;
   width: fit-content;
   color: #eee;
 }
-#home .hero #hero-h1 h2 span {
+#home .hero #hero-h1 h1 span {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   display: inline-block;
@@ -1045,7 +1045,7 @@ hamburger
   /* HERO H1 INTRO ANIMATION */
 }
 @media (min-width: 768px) {
-  #home .hero #hero-h1 h2 span {
+  #home .hero #hero-h1 h1 span {
     font-size: 3rem;
   }
 }
