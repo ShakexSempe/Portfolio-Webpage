@@ -3066,7 +3066,6 @@ hamburger
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5vh 2px;
 }
 @media (min-width: 1024px) {
   #footer .footer {
@@ -3091,7 +3090,7 @@ hamburger
   height: auto;
   display: flex;
   flex-direction: column;
-  margin: 5vh auto;
+  margin: 5vh auto 0;
   padding: 5vh 1em;
   border-radius: 0;
   overflow: hidden;
