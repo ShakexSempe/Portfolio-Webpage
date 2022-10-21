@@ -26,8 +26,8 @@
                 background-position: bottom;
                 background-size: 70%;
                 @media (max-width: 450px){
-                    background-size: contain;
                     background-size: 90%;
+                    background-size: contain;
                 background-position: 50% bottom;
                 }
                 // mix-blend-mode: overlay;
