@@ -527,7 +527,7 @@ hamburger
   transform: translateY(0);
 }
 #header.header-io {
-  background-color: #29323c;
+  background-color: #20262e;
   transition: background-color 0.25s;
 }
 @media (min-width: 1024px) {
@@ -629,7 +629,6 @@ hamburger
     z-index: 1;
     transition: 0.5s ease left;
     position: relative;
-    border: 2px solid #ead2a15e;
     outline: none;
     overflow-y: auto;
     overflow-x: hidden;
@@ -936,7 +935,9 @@ hamburger
   padding: 0;
   min-height: 100vh;
   background: linear-gradient(0deg, red 20%, #29323c 40%);
-  background: linear-gradient(#15191e 20%, #29323c 60%);
+  background: linear-gradient(#15191e 70%, #29323c 30%);
+  background: #15191e;
+  background: linear-gradient(#15191e 30%, #000 60%);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -959,11 +960,9 @@ hamburger
 @media (max-width: 1024px) and (max-width: 450px) {
   #home::after {
     background-size: 90%;
-    background-size: contain;
     background-size: cover;
+    background-size: contain;
     background-position: 15% bottom;
-    mix-blend-mode: overlay;
-    opacity: 1;
     z-index: -1;
   }
 }

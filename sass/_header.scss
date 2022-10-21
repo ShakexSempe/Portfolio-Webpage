@@ -28,7 +28,7 @@
     }
     // MAIN IO
     &.header-io {
-        background-color: $overlay-blue-dark;
+        background-color: $overlay-blue-darker;
         transition: background-color .25s;
         @media (min-width: 1024px) {
             height: 8vh;
@@ -158,7 +158,7 @@
                             z-index: 1;
                             transition: 0.5s ease left;
                             position: relative;
-                            border: 2px solid $border;
+                            // border: 2px solid $border;
                             outline: none;
                             overflow-y: auto;
                             overflow-x: hidden;
