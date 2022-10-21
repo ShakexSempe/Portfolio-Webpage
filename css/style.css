@@ -960,8 +960,8 @@ hamburger
 }
 @media (max-width: 1024px) and (max-width: 450px) {
   #home::after {
-    background-size: 100%;
     background-size: contain;
+    background-size: 90%;
     background-position: 50% bottom;
   }
 }
@@ -1092,8 +1092,7 @@ hamburger
   }
 }
 #home .hero #cta-header {
-  margin: 7vh 0 1rem;
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   background: #dc143c;
   position: relative;
   display: block;
@@ -1219,7 +1218,7 @@ hamburger
 }
 #home .hero .slogan p a {
   color: #ead2a1;
-  color: #fff7;
+  color: #fff9;
 }
 @media (min-width: 1024px) {
   #home .hero .slogan {

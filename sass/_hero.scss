@@ -26,8 +26,8 @@
                 background-position: bottom;
                 background-size: 70%;
                 @media (max-width: 450px){
-                    background-size: 100%;
                     background-size: contain;
+                    background-size: 90%;
                 background-position: 50% bottom;
                 }
                 // mix-blend-mode: overlay;
@@ -199,8 +199,7 @@
         // end of animated h1 
         // welcome section button & shadow
         #cta-header {
-            margin: 7vh 0 1rem;
-            margin: 2rem 0 0;
+            margin: 1rem 0 0;
             @media (max-width: 389px){
                 // margin: 12vh 0;
             }
@@ -368,7 +367,7 @@
                 text-align: left;
                 a {
                     color: $span-gold;
-                    color: #fff7;
+                    color: #fff9;
                     // text-decoration: underline;
                 }
             }
