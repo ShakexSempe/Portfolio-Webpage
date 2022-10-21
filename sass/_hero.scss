@@ -21,10 +21,10 @@
                 height: 100%;
                 z-index: -1;
                 background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
-                background-position: center left;
                 background-repeat: no-repeat;
-                background-position: 15% bottom;
-                background-size: contain;
+                // background-position: center left;
+                background-position: 50% bottom;
+                background-size: 150%;
                 // mix-blend-mode: overlay;
                 // opacity: .9;
                 // background: radial-gradient(transparent, #000);
@@ -349,21 +349,21 @@
         .slogan {
             // border: 1px solid #fff;
             position: absolute;
-            bottom: 30vh;
-            left: 0;
-            padding: 0 5vw;
+            top: 7vh;
+            left: 5vw;
+            // padding: 0 5vw;
             width: 100%;
             // opacity: 0;
             // animation: slogan 5s linear 14s forwards;
 
             p {
-                color: #ffff;
                 font-size: 1rem;
                 text-transform: capitalize;
                 text-align: center;
                 text-align: left;
                 a {
                     color: $span-gold;
+                    color: #fff7;
                     // text-decoration: underline;
                 }
             }
