@@ -29,10 +29,10 @@
     // MAIN IO
     &.header-io {
         background-color: $overlay-blue-dark;
-        transition: background-color .5s;
+        transition: background-color .25s;
         @media (min-width: 1024px) {
             height: 8vh;
-            transition: .5s;
+            transition: .25s;
             border: none;
 
             #navbar {

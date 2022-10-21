@@ -23,8 +23,12 @@
                 background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
                 background-repeat: no-repeat;
                 // background-position: center left;
+                background-position: bottom;
+                background-size: 70%;
+                @media (max-width: 450px){
+                    background-size: 150%;
                 background-position: 50% bottom;
-                background-size: 150%;
+                }
                 // mix-blend-mode: overlay;
                 // opacity: .9;
                 // background: radial-gradient(transparent, #000);
@@ -116,11 +120,11 @@
             position: absolute;
             // border: 1px solid #fff;
             // overflow-y: hidden;
-            width: max-content;
+            // width: max-content;
             text-transform: capitalize;
             top: 6vh;
             left: 5vw;
-
+            
             @media (min-width: 600px) {
                 top: 12vh;
             }
@@ -370,9 +374,9 @@
 
             // DESKTOP SLOGAN
             @media (min-width: 1024px) {
-                bottom: 10vh;
-                left: 50%;
-                transform: translateX(-50%);
+                top: 15vh;
+                // left: 50%;
+                // transform: translateX(-50%);
                 p {
                     text-align: center;
                     text-align: left;
