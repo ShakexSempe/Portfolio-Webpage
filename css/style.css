@@ -962,7 +962,8 @@ hamburger
   #home::after {
     background-size: 90%;
     background-size: contain;
-    background-position: 50% bottom;
+    background-size: contain;
+    background-position: 15% bottom;
   }
 }
 @media (min-width: 1024px) {
