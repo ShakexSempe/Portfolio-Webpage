@@ -937,8 +937,6 @@ hamburger
   min-height: 100vh;
   background: linear-gradient(0deg, red 20%, #29323c 40%);
   background: linear-gradient(#15191e 20%, #29323c 60%);
-  background: #15191e;
-  background: #000;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -962,8 +960,11 @@ hamburger
   #home::after {
     background-size: 90%;
     background-size: contain;
-    background-size: contain;
+    background-size: cover;
     background-position: 15% bottom;
+    mix-blend-mode: overlay;
+    opacity: 1;
+    z-index: -1;
   }
 }
 @media (min-width: 1024px) {
@@ -1037,7 +1038,7 @@ hamburger
   border-radius: 5px;
   position: absolute;
   text-transform: capitalize;
-  top: 6vh;
+  top: 7vh;
   left: 5vw;
 }
 @media (min-width: 600px) {
@@ -1047,7 +1048,6 @@ hamburger
 }
 #home .hero #hero-h1 h1 {
   font-size: 2.5rem;
-  line-height: 1.4;
   display: block;
   width: fit-content;
   color: #eee;
@@ -1058,8 +1058,7 @@ hamburger
   display: inline-block;
   color: #f4f4f4;
   text-align: left;
-  margin: 0.5rem 0 0;
-  line-height: 1.3;
+  line-height: 1.5;
   /* HERO H1 INTRO ANIMATION */
 }
 @media (min-width: 768px) {
@@ -1206,9 +1205,6 @@ hamburger
   }
 }
 #home .hero .slogan {
-  position: absolute;
-  top: 7vh;
-  left: 5vw;
   width: 100%;
 }
 #home .hero .slogan p {
@@ -1228,6 +1224,7 @@ hamburger
   #home .hero .slogan p {
     text-align: center;
     text-align: left;
+    font-size: 1.15rem;
   }
 }
 @keyframes slogan {
