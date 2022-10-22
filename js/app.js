@@ -16,7 +16,7 @@ const header = document.querySelector('header');
 const navLogo = document.querySelector('.brand');
 console.log(bottomNav);
 // DATE
-const date = document.querySelector('.date');
+const date = document.querySelectorAll('.date');
 console.log(date);
 // INTERSECTION OBSERVER
 const brand = document.querySelector('.brand');
@@ -180,4 +180,6 @@ dropBtn.addEventListener("click", () => {
 // ********** END OF FUNCTIONS ************
 
 /*  FOOTER DATE*/
-date.innerHTML = new Date().getFullYear();
+date.forEach(date => {
+  date.innerHTML = new Date().getFullYear();
+})

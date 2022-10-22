@@ -1052,7 +1052,7 @@ hamburger
   display: inline-block;
   color: #f4f4f4;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.25;
   /* HERO H1 INTRO ANIMATION */
 }
 @media (min-width: 768px) {
@@ -1104,7 +1104,7 @@ hamburger
 }
 @media (max-width: 400px) {
   #home .hero #cta-header {
-    margin: 10vh 0 0;
+    margin: 12vh 0 0;
   }
 }
 @media (min-width: 768px) {
@@ -3057,6 +3057,7 @@ hamburger
 #footer {
   background-image: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
   background-color: #333;
+  padding: 0 0 5vh 0;
 }
 #footer .footer {
   min-height: 100vh;
@@ -3206,8 +3207,7 @@ hamburger
   grid-template-columns: 1fr;
   background-color: #29323c;
   width: 100%;
-  margin: 2em 5vw;
-  padding: 5vh 1em;
+  padding: 5vh 0;
 }
 @media (min-width: 1024px) {
   #footer .footer .socialMedia-links {
@@ -3645,10 +3645,11 @@ hamburger
 }
 .bs21[data-scroll] {
   transition: 1.5s;
-  transform: translateY(50%);
+  transform: scale(1);
+  letter-spacing: 0.05rem;
 }
 .bs21[data-scroll=in] {
-  transform: translateY(0);
+  letter-spacing: normal;
 }
 @media (min-width: 768px) {
   .bs21 {

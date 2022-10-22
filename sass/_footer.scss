@@ -2,6 +2,7 @@
 #footer {
     background-image: $overlay-dark;
     background-color: $background-dark;
+    padding: 0 0 5vh 0;
     .footer {
         min-height: 100vh;
         width: 100%;
@@ -196,8 +197,8 @@
             // border: 1px solid $span-gold;
             // border-radius: 0;
             width: 100%;
-            margin: 2em 5vw;
-            padding: 5vh 1em;
+            // margin: 2em 5vw;
+            padding: 5vh 0;
             .links-grid{
                 // display: none;
                 // border: 1px solid yellow;
@@ -689,10 +690,12 @@
     //  DATA-SCROLL
     &[data-scroll] {
         transition: 1.5s;
-        transform: translateY(50%);
+        transform: scale(1);
+        letter-spacing: .05rem;
     }
     &[data-scroll="in"] {
-        transform: translateY(0);
+        letter-spacing: normal;
+        // transform: translateY(0);
     }
     width: 100%;
     // border: 2px solid $overlay-blue-dark;
