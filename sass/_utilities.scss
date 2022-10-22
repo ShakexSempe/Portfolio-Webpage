@@ -22,7 +22,7 @@ hamburger
     z-index: 51;
     cursor: pointer;
     // transform: scale(0.8);
-    transition: .3s ease;
+    transition: .25s ease;
 
     // hamburger pulse
     &.hamburger:after,
@@ -34,7 +34,7 @@ hamburger
         border-radius: 50%;
         border: none;
         outline: none;
-        transition: .5s ease;
+        transition: .25s ease;
     }
     // hamburger box shadow
     &.hamburger::after {
@@ -82,8 +82,8 @@ hamburger
         
     }
     &:active {
-        transform: scale(.6);
-        transition: .3s;  
+        transform: scale(.8);
+        transition: .25s;  
         // NO PULSE ON ACTIVE STATE
         &::before {
             animation: none;

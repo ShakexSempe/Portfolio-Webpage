@@ -21,7 +21,7 @@ hamburger
   justify-content: center;
   z-index: 51;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 #header .hamburger.hamburger:after, #header .hamburger.hamburger:before {
   position: absolute;
@@ -31,7 +31,7 @@ hamburger
   border-radius: 50%;
   border: none;
   outline: none;
-  transition: 0.5s ease;
+  transition: 0.25s ease;
 }
 #header .hamburger.hamburger::after {
   opacity: 0.8;
@@ -59,8 +59,8 @@ hamburger
   opacity: 0.6;
 }
 #header .hamburger:active {
-  transform: scale(0.6);
-  transition: 0.3s;
+  transform: scale(0.8);
+  transition: 0.25s;
 }
 #header .hamburger:active::before {
   animation: none;
