@@ -1102,9 +1102,9 @@ hamburger
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   z-index: 2;
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   #home .hero #cta-header {
-    margin: 17vh 0 0;
+    margin: 20vh 0 0;
   }
 }
 @media (min-width: 768px) {

@@ -17,17 +17,13 @@ const navLogo = document.querySelector('.brand');
 console.log(bottomNav);
 // DATE
 const date = document.querySelectorAll('.date');
-console.log(date);
 // INTERSECTION OBSERVER
 const brand = document.querySelector('.brand');
-const main = document.getElementById('main');
-const mainOptions = {
-    rootMargin: "0px 0px -70% 0px"
-};
+
 
 // ********** END OF VARIABLES ************
 
-// ********** MAIN SECTION INTERSECTION OBSERVER ************
+// ********** HERO SECTION INTERSECTION OBSERVER ************
 const hero = document.getElementById('home');
 const heroOptions = {
   rootMargin: '-30% 0px 0px 0px',
@@ -50,6 +46,10 @@ const heroObserver = new IntersectionObserver(
 heroObserver.observe(hero);
 
 // ********** MAIN SECTION INTERSECTION OBSERVER ************
+const main = document.getElementById('main');
+const mainOptions = {
+    rootMargin: "0px 0px -70% 0px"
+};
 const mainObserver = new IntersectionObserver(
   function(
       entries, mainObserver
