@@ -960,9 +960,11 @@ hamburger
 @media (max-width: 1024px) and (max-width: 450px) {
   #home::after {
     background-size: 90%;
-    background-size: cover;
     background-size: contain;
+    background-size: cover;
     background-position: 15% bottom;
+    mix-blend-mode: overlay;
+    opacity: 0.9;
     z-index: -1;
   }
 }
@@ -1106,6 +1108,11 @@ hamburger
   cursor: pointer;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   z-index: 2;
+}
+@media (max-width: 400px) {
+  #home .hero #cta-header {
+    margin: 10vh 0 0;
+  }
 }
 @media (min-width: 768px) {
   #home .hero #cta-header {
