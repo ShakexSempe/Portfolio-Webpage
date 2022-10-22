@@ -3,12 +3,10 @@
     padding: 0;
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(0deg, red 20%, $overlay-blue-dark 40%);
-    background: linear-gradient( $overlay-blue-darkest 70%, $overlay-blue-dark 30%);
     background: $overlay-blue-darkest;
     background: linear-gradient( $overlay-blue-darkest 30%, #000 60%);
     // background: linear-gradient( 90deg, #000 50%, #0000ff 80%);
-    background: linear-gradient( 90deg, #0009 50%, transparent 80%);
+    background: linear-gradient( 90deg, #0009 50%, #0004 80%);
     // background: #000;
     position: relative;
     z-index: 1;
@@ -35,7 +33,7 @@
                     background-size: cover;
                 background-position: 15% bottom;
                 mix-blend-mode: overlay;
-                opacity: 1;
+                // opacity: .7;
                 z-index: -1;
                 }
                 // mix-blend-mode: overlay;
@@ -214,6 +212,7 @@
                 font-size: 1.5em;
                 width: 20rem;
                 text-align: center;
+                margin: 10vh 0 0;
             }
             background: $span-crimson;
             

@@ -936,11 +936,9 @@ hamburger
   padding: 0;
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(0deg, red 20%, #29323c 40%);
-  background: linear-gradient(#15191e 70%, #29323c 30%);
   background: #15191e;
   background: linear-gradient(#15191e 30%, #000 60%);
-  background: linear-gradient(90deg, #0009 50%, transparent 80%);
+  background: linear-gradient(90deg, #0009 50%, #0004 80%);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -965,7 +963,6 @@ hamburger
     background-size: cover;
     background-position: 15% bottom;
     mix-blend-mode: overlay;
-    opacity: 1;
     z-index: -1;
   }
 }
@@ -1120,6 +1117,7 @@ hamburger
     font-size: 1.5em;
     width: 20rem;
     text-align: center;
+    margin: 10vh 0 0;
   }
 }
 @keyframes show-cta {
@@ -2501,13 +2499,13 @@ hamburger
   }
 }
 #work .work-items .work-item {
+  border: 1px solid #0002;
   padding: 5vh 0;
   width: 100%;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fafafa;
 }
 #work .work-items .work-item[data-scroll] {
   transform: scale(1) translateY(10vh);
