@@ -39,6 +39,7 @@
                 .nav-list {
                     ul {
                         // transform: translateY(1rem);
+                        // height: inherit;
                     }
                     .contact-links {
                         transform: translateY(-100vh);
@@ -341,9 +342,9 @@
                     li {
                         list-style: none;
                         display: flex;
-                        // border: 1px solid red;
                         align-items: center;
-                        opacity: .8;
+                        // border: 1px solid red;
+                        // opacity: .8;
                         &:hover {
                             opacity: 1;
                         }
@@ -352,7 +353,7 @@
                             font-weight: 400;
                             letter-spacing: .15em;
                             text-decoration: none;
-                            color: $text-white;
+                            color: $text-light;
                             text-transform: capitalize;
                             // padding: 1em;
                             display: block;
@@ -530,20 +531,24 @@
                         padding: .5rem;
 
                         a {
-                            color: $span-gold;
+                            color: $text-light;
                             letter-spacing: .05rem;
                             font-size: .9rem;
+                            opacity: .7;
+                            transition: .25s;
 
                             i {
+                                padding-right: .25rem;
                                 // transform: translateX(-.5rem);
                                 transition: .25s;
                             }
 
                             &:hover {
-                                text-decoration: underline $span-gold;
+                                opacity: 1;
+                                // text-decoration: underline $span-gold;
                                 i {
                                     transform: translateX(0);
-                                    color: #ddd;
+                                    color: $span-gold;
                                 }
                             }
                         }

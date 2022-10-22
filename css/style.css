@@ -768,7 +768,6 @@ hamburger
   list-style: none;
   display: flex;
   align-items: center;
-  opacity: 0.8;
 }
 #header .header #navbar .nav-list ul li:hover {
   opacity: 1;
@@ -777,7 +776,7 @@ hamburger
   font-weight: 400;
   letter-spacing: 0.15em;
   text-decoration: none;
-  color: #fff;
+  color: #f4f4f4;
   text-transform: capitalize;
   display: block;
   text-align: left;
@@ -911,19 +910,22 @@ hamburger
     padding: 0.5rem;
   }
   #header .header #navbar .nav-list .contact-links a {
-    color: #ead2a1;
+    color: #f4f4f4;
     letter-spacing: 0.05rem;
     font-size: 0.9rem;
+    opacity: 0.7;
+    transition: 0.25s;
   }
   #header .header #navbar .nav-list .contact-links a i {
+    padding-right: 0.25rem;
     transition: 0.25s;
   }
   #header .header #navbar .nav-list .contact-links a:hover {
-    text-decoration: underline #ead2a1;
+    opacity: 1;
   }
   #header .header #navbar .nav-list .contact-links a:hover i {
     transform: translateX(0);
-    color: #ddd;
+    color: #ead2a1;
   }
 }
 
