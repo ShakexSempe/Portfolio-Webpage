@@ -1104,7 +1104,7 @@ hamburger
 }
 @media (max-width: 400px) {
   #home .hero #cta-header {
-    margin: 12vh 0 0;
+    margin: 15vh 0 0;
   }
 }
 @media (min-width: 768px) {
