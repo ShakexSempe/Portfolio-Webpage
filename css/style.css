@@ -1162,7 +1162,7 @@ hamburger
   font-size: 2.5rem;
   font-weight: 500;
   animation: animate 3s ease-in-out infinite;
-  animation-delay: calc(8s + .2s * var(--i));
+  animation-delay: calc(4s + .2s * var(--i));
   /* cta keyframes*/
   /* end of cta keyframes*/
 }
@@ -1171,7 +1171,7 @@ hamburger
     transform: translateY(0px);
   }
   20% {
-    transform: translateY(-10px) scale(1.1);
+    transform: translateY(-5px) scale(1.1);
   }
   40%, 100% {
     transform: translateY(0);
