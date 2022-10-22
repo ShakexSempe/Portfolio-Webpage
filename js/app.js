@@ -15,10 +15,6 @@ const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a')
 const header = document.querySelector('header');
 const navLogo = document.querySelector('.brand');
 console.log(bottomNav);
-// ABOUT SECTION
-const readBtn = document.getElementById('readBtn');
-let article = document.querySelector('.about-article');
-  article.classList.remove('active');
 // DATE
 const date = document.querySelector('.date');
 console.log(date);

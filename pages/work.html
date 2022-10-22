@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META CHARSET -->
+    <meta charset="UTF-8" />
+    <!-- META VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META THEME COLOR -->
+    <meta name="theme-color" content="#20262e" />
+    <!-- META OG IMAGE -->
+    <meta name="image" property="og:image" content="https://shakexsempe.netlify.app/img/shakex-sempe-logo.png">
+
+    <!-- TITLE -->
+    <title>Shakex Sempe - Front End Developer - Personal Portfolio Page</title>
+    <!--  -->
+    <!-- META DESCRIPTION -->
+    <meta name="description"
+        content="Boitumelo Shakex Sempe is a South Africa based front-end Web developer. 
+                    This Personal Portfolio Page contains links to github repositories, information about web development skills, contact info , social media links and web development learning platform links">
+    <!-- META KEYWORDS -->
+    <meta name="keywords"
+        content="HTML, HTML5, CSS, CSS3, JAVASCRIPT, JS, WEB DEVELOPMENT, SASS, FRONT-END DEVELOPMENT, south africa, react, vanilla javascript, Responsive web design, remote, freelance">
+    <!-- META AUTHOR -->
+    <meta name="author" content="Boitumelo Shakex Sempe">
+    <!-- FAVICON -->
+    <!-- <link rel="shortcut icon" href="icons/favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" defer referrerpolicy="no-referrer"></script>
+    <script src="../js/app.js" defer></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <a class="skip-link" href="#main">skip to main content</a>
+        <div class="header">
+            <nav id="navbar">
+                <div class="brand">
+                    <a href="#home" title="Shakex Sempe" class="scroll-link">
+                        <h1>shakex<span>Sempe</span></h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="links-container">
+                        <ul class="links">
+                            <!-- SKILLS LINK -->
+                            <li>
+                                <i class="fas fa-lightbulb"></i>
+                                <a href="#skills" title="web development skills" data-after="skills"
+                                    class="scroll-link scroll-li">skills</a>
+                            </li>
+                            <!-- WORK[PROJECTS] LINK -->
+                            <li>
+                                <i class="fa-solid fa-earth-africa"></i>
+                                <a href="#work" title="github repositories" data-after="Projects"
+                                    class="scroll-link scroll-li">projects</a>
+                            </li>
+                            <!-- ABOUT LINK -->
+                            <li>
+                                <i class="fas fa-user-circle"></i>
+                                <a href="#about" title="about Boitumelo Sempe" data-after="About"
+                                    class="scroll-link scroll-li">about</a>
+                            </li>
+                            <!-- PROJECTS[PORTFOLIO] LINK -->
+                            <li>
+                                <i class="fab fa-github"></i>
+                                <a href="#projects" title="github repositories" data-after="portfolio"
+                                    class="scroll-link scroll-li">portfolio</a>
+                            </li>
+                            <!-- CONTACT LINK -->
+                            <li>
+                                <i class="fas fa-address-book"></i>
+                                <a href="#contact" title="contact-info" data-after="Contact"
+                                    class="scroll-link scroll-li">contact</a>
+                            </li>
+                            <!-- SOCIALS -->
+                            <!-- <li>
+                <i class="fas fa-user-friends"></i>
+                <a href="#footer" title="social-links" data-after="Socials" class="scroll-link scroll-li">socials</a>
+              </li> -->
+                            <!-- FORM -->
+                            <li>
+                                <i class="fas fa-at"></i>
+                                <a href="forms/form.html" title="contact-form" data-after="form"
+                                    class="scroll-li">form</a>
+                            </li>
+
+                        </ul>
+                        <div class="contact-links">
+                            <a title="Email Address" href="mailto:bshakex@gmail.com"><i
+                                    class="fa-solid fa-envelope"></i>bshakex@gmail.com</a>
+                            <a title="Whatsapp number" href="tel:+27716876941"><i
+                                    class="fa-brands fa-whatsapp"></i>+27716876941 (Whatsapp)</a>
+                            <a title="Phone number" href="tel:0726005104"><i
+                                    class="fa-solid fa-phone"></i>0726005104</a>
+                            <a title="Phone number" href="https://goo.gl/maps/iSkbB2vbPQ3n3mhK9" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i>Mahikeng, South Africa</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+     <!-- PROGRESS BAR-->
+     <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <!-- END OF PROGRESS BAR-->
+    <!-- END OF HERO-->
+
+    <!--HERO-->
+    <section id="home" class="section welcome-section">
+        <div class="hero container">
+            <div id="hero-h1">
+                <div class="slogan">
+                    <p><a href="#main">Front-end web developer</a></p>
+                </div>
+                <!-- <h1>my name is boitumelo sempe <span>aka</span></h1> -->
+                <h1>
+                    <span style="--s:1">My</span>
+                    <span style="--s:2">Name</span>
+                    <span style="--s:3">Is</span>
+                </h1>
+                <h1>
+                    <span style="--s:4">Boitumelo</span>
+                    <span style="--s:5">Sempe</span>
+                </h1>
+
+                <p id="aka"><span>a.k.a</span></p>
+                <a href="#main" type="button" title="Shakex Sempe: Web Developer" id="cta-header" class="scroll-link">
+                    <span style="--i:1;">S</span>
+                    <span style="--i:2;">h</span>
+                    <span style="--i:3;">a</span>
+                    <span style="--i:4;">k</span>
+                    <span style="--i:5;">e</span>
+                    <span style="--i:6;">x</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END OF HERO-->
+    <!--  END OF MENU -->
+    <main id="main">
+
+        <!-- WORK / PORTFOLIO -->
+        <section id="work" class="link-section">
+            <div class="work">
+                <div class="work-header">
+                    <h1 data-text="projects" class="section-title">pro<span>j</span>ects</h1>
+                </div>
+                <div class="work-items">
+                    <!-- ORICH -->
+                    <div data-scroll class="work-item">
+                        <div class="work-title">
+                            <h2>Orich Trading & projects&trade;</h2>
+                            <p><a href="https://orichtrading.co.za" target="_blank">www.orichtrading.co.za</a></p>
+                        </div>
+                        <figure>
+                            <a href="https://shakexsempe.github.io/orich-trading/" target="_blank"
+                                title="Github Repository">
+                                <img src="../img/orich-min.jpg" alt="Orich Trading & Projects">
+                            </a>
+                        </figure>
+                        <a class="view-site-btn" href="https://orich-trading-projects.netlify.app/" target="_blank">view
+                            website</a>
+                        <a class="view-repo-btn" href="https://github.com/ShakexSempe/orich-trading"
+                            target="_blank">view repository</a>
+                    </div>
+                    <!-- HLAVUTELO -->
+                    <div data-scroll class="work-item">
+                        <div class="work-title">
+                            <h2>hlavutelo <br> Trading & projects&trade;</h2>
+                            <p><a href="https://hlavutelotrading.co.za/" target="_blank">www.hlavutelotrading.co.za</a>
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="https://hlavutelotrading.co.za/" target="_blank" title="Github Repository">
+                                <img src="../img/hlavutelo-logo.png" alt="Hlavutelo Trading & Projects">
+                            </a>
+                        </figure>
+                        <a class="view-site-btn" title="Visit Website" href="https://hlavutelotrading.co.za/"
+                            target="_blank">view website</a>
+                        <a class="view-repo-btn" title="iew Repository" href="https://github.com/ShakexSempe/hlavutelo"
+                            target="_blank">view repository</a>
+                    </div>
+                    <!-- MUNCH UP -->
+                    <div data-scroll class="work-item">
+                        <div class="work-title">
+                            <h2>Munch Up&trade;</h2>
+                            <p>Landing Page</p>
+                        </div>
+                        <figure>
+                            <a href="https://shakexsempe.github.io/munch-up/" target="_blank" title="Github Repository">
+                                <img src="../img/munch-logo-min.jpg" alt="Munch Up-logo">
+                            </a>
+                        </figure>
+                        <a class="view-site-btn" href="https://munch-up.netlify.app/" target="_blank">view website</a>
+                        <a class="view-repo-btn" href="https://github.com/ShakexSempe/munch-up" target="_blank">view
+                            repository</a>
+                    </div>
+                    <!-- kSAUCE -->
+                    <!-- <div data-scroll class="work-item ksauce">
+          <div class="work-title">
+            <h2>K'Sauce&trade;</h2>
+            <p>5 page Responsive Website</p>
+          </div>
+          <figure>
+            <a href="https://shakexsempe.github.io/kutlwano-hot-sauce/" target="_blank" title="Github Repository">
+              <img src="img/ksauce.jpg" alt="k'Sauce">
+            </a>
+          </figure>
+          <a class="view-site-btn" href="https://ksauce.netlify.app/" target="_blank">view website</a>
+          <a class="view-repo-btn" href="https://github.com/ShakexSempe/kutlwano-hot-sauce" target="_blank">view repository</a>
+        </div> -->
+                    <!-- MAGOVENI -->
+                    <!-- <div data-scroll class="work-item">
+          <div class="work-title">
+            <h2 class="work-title">Magoveni Construction&trade;</h2>
+            <p>One Page website</p>
+          </div>
+          <figure>
+            <a href="https://shakexsempe.github.io/ngoveni-construction/" target="_blank" title="Github Repository">
+              <img src="img/mkansi-min.png" alt="Orich trading & projects">
+            </a>
+          </figure>
+          <a class="view-site-btn" href="https://ngoveni-construction.netlify.app/" target="_blank">view website</a>
+          <a class="view-repo-btn" href="https://github.com/ShakexSempe/ngoveni-construction" target="_blank">view repository</a>       
+        </div> -->
+                    <!-- THATO -->
+                    <!-- <div data-scroll class="work-item">
+          <div class="work-title">
+            <h2 class="work-title">Thato Technical Drawings&copy;</h2>
+            <p>One page landing page</p>
+          </div>
+          <figure>
+            <a href="https://shakexsempe.github.io/thato-tech-drawings/" target="_blank" title="Github Repository">
+              <img src="img/thato2-logo-min.png" alt="Orich trading & projects">
+            </a>
+          </figure>
+          <a class="view-site-btn" href="https://thato-technical-drawings.netlify.app/" target="_blank">view website</a>
+          <a class="view-repo-btn" href="https://github.com/ShakexSempe/thato-tech-drawings" target="_blank">view repository</a>
+        </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- CUBE -->
+        <div id="cube" class="cube-container">
+            <div class="scene io-item">
+                <div class="floor"></div>
+                <div class="cube io-item">
+                    <div class="front">
+                        <a href="#work">Immersive</a>
+                    </div>
+                    <div class="right">
+                        <a href="#work">Engaging</a>
+                    </div>
+                    <div class="back">
+                        <a href="#work">Responsive</a>
+                    </div>
+                    <div class="left">
+                        <a href="#work">Accessible</a>
+                    </div>
+
+                    <div class="top">
+                        <div class="ballShadow"></div>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="ball io-item"></div>
+            </div>
+        </div>
+        <!-- CONTACT SECTION-->
+        <section class="link-section" id="contact">
+            <div class="contact container">
+                <div class="contact-header">
+                    <h1 title="contact information" data-text="contactinfo" class="section-title">
+                        Contact<span>Info</span></h1>
+                </div>
+                <div class="contact-items">
+                    <!-- EMAIL ITEM -->
+                    <article title="Email Info" data-scroll class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h2>Email</h2>
+                        <div class="contact-info">
+                            <p>bshakex@gmail.com</p>
+                            <a href="mailto:bshakex@gmail.com" title="Send Email to Shakex Sempe"><i
+                                    class="fas fa-at"></i>
+                                ..email me</a>
+                        </div>
+                    </article>
+                    <!-- PHONE NUMBER -->
+                    <article title="Phone Number" data-scroll class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h2>Phone</h2>
+                        <div id="phone" class="contact-info">
+                            <p>+27 72 600 5104</p>
+                            <a href="tel:+27726005104" title="Contact Shakex"><i class="fas fa-phone-alt"></i> ..call
+                                me</a>
+                        </div>
+                    </article>
+                    <!-- WHATSAPP NUMBER -->
+                    <article title="WhatsApp Number" data-scroll class="contact-item">
+                        <div class="icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h2>WhatsApp</h2>
+                        <div id="whatsapp" class="contact-info">
+                            <p>+27716876941</p>
+                            <a href="tel:+27716876941" title="Contact Shakex"><i
+                                    class="fa-solid fa-mobile-screen-button"></i> ..whatsapp me</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- end of padding section -->
+        </section>
+        <!-- END OF PROJECTS-->
+
+        <!--END OF ABOUT SECTION-->
+        <!--  MENU -->
+
+
+        <!--END OF CONTACT SECTION-->
+
+        <!-- FOOTER -->
+        <section class="link-section" id="footer">
+            <div class="footer container">
+
+                <!-- SOCIAL MEDIA LINKS -->
+                <div class="socialMedia-links">
+                    <h1 data-scroll title="social media links" class="footer-section-title">my links</h1>
+                    <div class="links-grid">
+                        <!-- CODE-PEN-->
+                        <div class="socialMedia-item codepen">
+                            <p class="link-icon">codePen</p>
+                            <a href="https://codepen.io/bSempe" title="freeCodecamp" data-icon="codepen"
+                                target="_blank">
+                                <i class="fab fa-codepen"></i>@bsempe
+                            </a>
+                        </div>
+                        <!-- FREE CODE CAMP -->
+                        <div class="socialMedia-item fcc">
+                            <p class="link-icon">freeCodeCamp</p>
+                            <a href="https://www.freecodecamp.org/boitumelo-sempe" title="freeCodecamp" data-icon="FCC"
+                                target="_blank">
+                                <i class="fab fa-free-code-camp"></i>boitumelo sempe
+                            </a>
+                        </div>
+                        <!-- FRONT-END-MENTOR -->
+                        <div class="socialMedia-item fem">
+                            <p class="link-icon">front-end-mentor</p>
+                            <a href="https://www.frontendmentor.io/profile/ShakexSempe" title="font-end-mentor"
+                                data-icon="FCC" target="_blank">
+                                <i class="fas fa-anchor"></i>@ShakexSempe
+                            </a>
+                        </div>
+                        <!-- GIT-HUB -->
+                        <div class="socialMedia-item github">
+                            <p class="link-icon">github</p>
+                            <a href="https://github.com/ShakexSempe" title="github" data-icon="github" target="_blank">
+                                <i class="fab fa-github"></i>ShakexSempe
+                            </a>
+                        </div>
+                        <!-- LINKEDIN -->
+                        <div class="socialMedia-item linkedin">
+                            <!-- <i class="fas fa-link link-icon"></i> -->
+                            <p class="link-icon">linkedin</p>
+                            <a href="https://www.linkedin.com/in/boitumelo-sempe-525b2baa/" title="linkedin"
+                                data-icon="linkedin" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>boitumelo Sempe
+                            </a>
+                        </div>
+                        <!-- TWTTER -->
+                        <div class="socialMedia-item twitter">
+                            <p class="link-icon">twitter</p>
+                            <a href="https://twitter.com/Shake_x11" title="twitter" data-icon="twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>@shake_x11
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of social media links -->
+                <!-- contact form -->
+                <form class="contact-form" target="_blank" action="https://formsubmit.co/shakexsempe@syntex.co.za"
+                    method="POST">
+                    <h1 data-scroll class="footer-section-title contact">Get In Touch</h1>
+
+                    <div class="input-div">
+                        <label for="name">name :</label>
+                        <input type="text" name="Name" id="username" placeholder="name & surname.." required
+                            minlength="2">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="email">email :</label>
+                        <input type="email" name="Email" id="email" placeholder="your email address.." required>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="message">message :</label>
+                        <textarea rows="3" cols="50" minlength="2" name="Message" placeholder="leave a message..."
+                            id="message" required></textarea>
+                    </div>
+
+                    <button type="submit" title="submit contact form">send email</button>
+                    <!-- form options -->
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse" value="Shakex has received your form">
+                    <input type="hidden" name="_next" value="http://syntex.co.za/thanks.html">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+
+                </form>
+                <!-- end of contact form -->
+                <!-- padding section -->
+                <div id="footer-logo" class="section-pad pad-logo">
+                    <figure data-scroll>
+                        <a title="shakex sempe: web developer" href="#footer">
+                            <img src="../img/shakex-logo-min.png" loading="lazy" alt="Shakex Sempe logo">
+                        </a>
+                    </figure>
+                </div>
+                <div data-scroll class="bs21">
+                    <p>copyright&copy; Shakex Sempe</p>
+                    <a title="Shakex Sempe" href="https://shakexsempe.github.io/box-shadow/" target="_blank">box
+                        shadow</a>
+                    <span class="date"></span>
+                </div>
+            </div>
+            <!--back to top button-->
+
+            <a href="#home" title="home" class="scroll-link top-link">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+            <!--end of back to top button-->
+        </section>
+        <!-- END OF FOOTER-->
+    </main>
+    <!-- BOTTOM NAVIGATION -->
+    <div class="bottom-nav" id="bottom-nav">
+        <figure class="link-item item-1">
+            <a href="#about"><i class="fas fa-user"></i>about</a>
+        </figure>
+        <figure class="link-item item-2">
+            <a href="../index.html"><i class="fas fa-house"></i>home</a>
+        </figure>
+        <figure class="link-item item-3">
+            <a href="#work"><i class="fa-regular fa-code"></i>work</a>
+        </figure>
+    </div>
+    <!-- PRELOADER SCRIPT -->
+    <!-- <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 8000);
+    </script> -->
+    <!-- SCROLL SCRIPT -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <script>
+        ScrollOut({
+            onShown(el) {
+                el.classList.add("animated");
+            }
+        });
+    </script>
+</body>
+
+</html>
