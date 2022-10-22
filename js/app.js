@@ -4,7 +4,7 @@ const linksContainer = document.querySelector('.links-container');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.header .nav-list ul li');
-const topLink = document.querySelector('.top-link');
+// const topLink = document.querySelector('.top-link');
 const progressBarStyle = document.querySelector('.progress-bar');
 const bottomNav = document.querySelector('.bottom-nav');
 
@@ -59,7 +59,7 @@ const mainObserver = new IntersectionObserver(
               // header.style.backgroundColor = "red";
               header.classList.remove("header-io");
               hamburger.classList.add("no-pulse");
-              topLink.classList.remove('show-link');
+              // topLink.classList.remove('show-link');
               progressBarStyle.classList.remove('active-bar');
               bottomNav.classList.remove("active-bottom-nav");
             
@@ -69,7 +69,7 @@ const mainObserver = new IntersectionObserver(
               hamburger.classList.remove("no-pulse");
               console.log("main IS IO");
               progressBarStyle.classList.add('active-bar');
-              topLink.classList.add('show-link');
+              // topLink.classList.add('show-link');
               bottomNav.classList.add("active-bottom-nav");
             
           }
