@@ -204,18 +204,17 @@
         // end of animated h1 
         // welcome section button & shadow
         #cta-header {
-            margin: 1rem 0 0;
             @media (max-width: 420px){
-                margin: 25vh 0 0;
             }
-            @media (min-width: 768px) {
+            margin: 25vh 0 0;
+            @media (min-width: 820px) {
                 font-size: 1.5em;
                 width: 20rem;
                 text-align: center;
                 margin: 10vh 0 0;
             }
             background: $span-crimson;
-            
+            margin: 20vh 0 0;
             position: relative;
             display: block;
             text-align: left;
