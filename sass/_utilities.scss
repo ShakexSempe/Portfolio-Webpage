@@ -412,12 +412,13 @@ hamburger
         // opacity: .5;
         transition: .25s;
         position: relative;
-        
+
         i {
             font-size: 1rem;
             font-size: 100%;
             font-weight: 700;
             color: #fff7;
+            transition: .25s;
         }
 
         a {
@@ -426,9 +427,30 @@ hamburger
             text-transform: capitalize;
             display: grid;
             place-items: center;
+            transition: .25s;
+
             i {
                 display: block;
                 margin-bottom: .2rem;
+            }
+        }
+
+        // LINK ITEM HOVER STATE 
+        
+
+        @media (max-width: 768px) {
+            &:active {
+                i {
+                    color: $span-gold;
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            transform: scale(1.05);
+            &:hover {
+                i {
+                    color: $span-gold;
+                }
             }
         }
     }
@@ -436,6 +458,7 @@ hamburger
     &.active-bottom-nav {
         transform: translateY(0vh);
     }
+    
 }
 
 // SKIP LINK

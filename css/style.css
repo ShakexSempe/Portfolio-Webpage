@@ -348,6 +348,7 @@ hamburger
   font-size: 100%;
   font-weight: 700;
   color: #fff7;
+  transition: 0.25s;
 }
 .bottom-nav .link-item a {
   color: #f4f4f4;
@@ -355,10 +356,24 @@ hamburger
   text-transform: capitalize;
   display: grid;
   place-items: center;
+  transition: 0.25s;
 }
 .bottom-nav .link-item a i {
   display: block;
   margin-bottom: 0.2rem;
+}
+@media (max-width: 768px) {
+  .bottom-nav .link-item:active i {
+    color: #ead2a1;
+  }
+}
+@media (min-width: 768px) {
+  .bottom-nav .link-item {
+    transform: scale(1.05);
+  }
+  .bottom-nav .link-item:hover i {
+    color: #ead2a1;
+  }
 }
 .bottom-nav.active-bottom-nav {
   transform: translateY(0vh);
