@@ -417,13 +417,13 @@ hamburger
             font-size: 1rem;
             font-size: 100%;
             font-weight: 700;
-            color: $span-gold;
+            color: #fff7;
         }
 
         a {
+            color: $text-light;
             font-size: .85rem;
             text-transform: capitalize;
-            color: #fff7;
             display: grid;
             place-items: center;
             i {
