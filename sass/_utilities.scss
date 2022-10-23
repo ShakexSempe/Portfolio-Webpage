@@ -384,6 +384,7 @@ hamburger
 .bottom-nav {
     @media (min-width: 768px){
         // display: none;
+        height: 7vh;
     }
     position: fixed;
     bottom: 0;
