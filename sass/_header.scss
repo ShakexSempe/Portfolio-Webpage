@@ -138,6 +138,7 @@
                 }
             }
             .nav-list {
+                
                 // MOBILE NAV CONTAINER
                 .links-container {
                     @media (max-width: 1024px) {
@@ -183,20 +184,28 @@
 
                                 a {
                                     // border: 1px solid yellow;
-                                    // border-bottom: 1px dashed $span-gold;
                                     margin-right: auto;
-                                    padding: .5rem 0 0;
                                     padding: 0;
-                                    width: 100%;
+                                    width: 70%;
                                     display: block;
-                                    // font-size: 1.05rem;
-                                    font-weight: 500;
-                                    // letter-spacing: .05rem;
-                                    // border-radius: 5px;
+                                    font-weight: 400;
                                     font-family: $font-content;
-                                    // font-family: $font-title;
+                                    font-family: $font-title;
                                     text-transform: capitalize;
-                                    // background-color: $overlay-blue-darker;
+
+                                    // LINK HOVER EFFECT
+                                    &::after {
+                                        content: attr(data-after);
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%) scale(0);
+                                        color: #f0f8ff1a;
+                                        font-size: 2.5rem;
+                                        letter-spacing: 1rem;
+                                        z-index: -1;
+                                        transition: 0.3s ease letter-spacing;
+                                    }
                                 }
 
                                 i {
@@ -216,7 +225,8 @@
                         .contact-links {
                             // border: 2px solid red;
                             background: $overlay-blue-dark;
-                            overflow: hidden;
+                            overflow-x: hidden;
+                            overflow-y: auto;
                             margin: 1rem 5vw;
                             display: flex;
                             flex-direction: column;
@@ -229,6 +239,7 @@
                                 color: $text-light;
                                 font-size: 1rem;
                                 // letter-spacing: .1rem;
+                                border: 1px solid transparent;
                                 margin-bottom: .5rem;
                                 transition: .5s;
 
@@ -295,6 +306,7 @@
 
                             .contact-links {
                                 a {
+                                    
                                     opacity: 1;
                                     transform: translateY(0);
 
@@ -351,6 +363,7 @@
                 ul {
                     // border: 2px solid red;
                     transition: .5s;
+
                     li {
                         // border-bottom: 1px solid #fff7;
                         list-style: none;
@@ -366,22 +379,12 @@
                             text-align: left;
                             font-family: $font-content;
                             transition: .2s ease-in-out;
-                            // link text on hover
-                            &::after {
-                                content: attr(data-after);
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%) scale(0);
-                                color: #f0f8ff1a;
-                                font-size: 3em;
-                                letter-spacing: 50px;
-                                z-index: -1;
-                                transition: 0.3s ease letter-spacing;
-                            }
+                            // border: 1px solid red;
+                            // width: 40%;
                             // end of link text on hover
 
                         }
+
                         i {
                             margin-right: .5em;
                             padding: 0;
@@ -392,16 +395,20 @@
                             background: $overlay-blue-darker;
                             // box-shadow: $box-light-top-sm;
                         }
+
                         // li hover state
                         &:hover {
                             transition: .3s;
+
                             a {
                                 color: $link-gold;
+
                                 i {
                                     color: $link-gold;
                                 }
                             }
                         }
+
                         // end of li hover state
                         &:hover {
                             a {
