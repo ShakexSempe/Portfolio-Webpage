@@ -107,11 +107,11 @@
                         font-size: 1.5rem;
                     }
                     text-transform: capitalize;
-                    color: $span-gold;
                     color: $text-light;
+                    color: $span-gold;
                     background-color: $overlay-blue-darker;
-                    border: 1px solid $span-gold;
                     border: 1px solid $text-light;
+                    border: 1px solid $span-gold;
                     padding-left: .2rem;
                     border-radius: .25rem;
                     overflow: hidden;
@@ -120,16 +120,16 @@
 
                     span {
                         margin-left: .2rem;
-                        // padding: .05rem .3rem .05rem .05rem;
                         padding: 0 .2rem 0 .2rem;
-                        // background: $span-gold;
-                        // background: $button-gold;
-                        background: $text-light;
+                        background: $button-gold;
                         color: $overlay-blue-dark;
-                        font-weight: 600;
+                        border-radius: 0;
+                        // padding: .05rem .3rem .05rem .05rem;
+                        // background: $span-gold;
+                        // background: $text-light;
+                        // font-weight: 600;
                         // font-size: inherit;
                         // color: inherit;
-                        border-radius: 0;
                         // border-top-right-radius: .25rem;
                         // border-bottom-right-radius: .25rem;
                         transition: .2s;
@@ -171,13 +171,14 @@
 
                             // list items active transition
                             li {
+                                // border: 2px solid $border;
                                 transform: translateX(10%);
                                 opacity: 0;
                                 transition: .3s;
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
-                                margin: .5rem auto;
+                                margin: 0 auto .25rem;
                                 width: 95%;
 
                                 a {
@@ -203,7 +204,8 @@
                                     text-align: center;
                                     // margin-right: 1em;
                                     padding: .5rem;
-                                    color: #fffa;
+                                    color: $text-light;
+                                    // opacity: .8;
                                     // border: 1px solid $span-gold;
 
                                 }
@@ -231,7 +233,7 @@
                                 transition: .5s;
 
                                 i {
-                                    color: #fff;
+                                    color:$span-gold;
                                     width: 1.5rem;
                                 }
                             }
@@ -350,15 +352,11 @@
                     // border: 2px solid red;
                     transition: .5s;
                     li {
+                        // border-bottom: 1px solid #fff7;
                         list-style: none;
                         display: flex;
                         align-items: center;
-                        // border-bottom: 1px solid #fff7;
                         padding: .25rem;
-                        // opacity: .8;
-                        &:hover {
-                            opacity: 1;
-                        }
 
                         a {
                             text-decoration: none;
@@ -388,9 +386,10 @@
                             margin-right: .5em;
                             padding: 0;
                             text-align: left;
-                            color: $text-white-trans;
+                            // color: $text-white-trans;
                             border-radius: 5px;
-                            border: 1px solid $text-light;
+                            // border: 1px solid $text-light;
+                            background: $overlay-blue-darker;
                             // box-shadow: $box-light-top-sm;
                         }
                         // li hover state
