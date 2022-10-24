@@ -131,11 +131,16 @@
             text-transform: capitalize;
             top: 5vh;
             left: 5vw;
-            
-            @media (min-width: 600px) {
+            @include md {
+                top: 5vh;
+            }
+            @include xlg {
                 top: 15vh;
             }
-
+            
+            // @media (min-width: 600px) {
+            //     top: 15vh;
+            // }
             h1 {
                 font-size: 2.5rem;
                 display: block;
@@ -204,14 +209,20 @@
         // end of animated h1 
         // welcome section button & shadow
         #cta-header {
-            @media (max-width: 420px){
+            @media (max-width: 576px){
+                margin: 25vh 0 0;
             }
-            margin: 25vh 0 0;
-            @media (min-width: 820px) {
+            @include sm {
+                margin: 20vh 0 0;
+            }
+            @include md {
                 font-size: 1.5em;
                 width: 20rem;
                 text-align: center;
-                margin: 10vh 0 0;
+                margin: 25vh 0 0;
+            }
+            @include xlg {
+                margin: 20vh 0 0;
             }
             background: $span-crimson;
             margin: 20vh 0 0;

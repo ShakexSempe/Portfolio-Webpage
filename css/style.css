@@ -606,7 +606,7 @@ hamburger
 }
 @media (min-width: 768px) {
   #header .header #navbar .brand h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 #header .header #navbar .brand h1 span {
@@ -1043,7 +1043,12 @@ hamburger
   top: 5vh;
   left: 5vw;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
+  #home .hero #hero-h1 {
+    top: 5vh;
+  }
+}
+@media (min-width: 1024px) {
   #home .hero #hero-h1 {
     top: 15vh;
   }
@@ -1094,7 +1099,6 @@ hamburger
   }
 }
 #home .hero #cta-header {
-  margin: 25vh 0 0;
   background: #dc143c;
   margin: 20vh 0 0;
   position: relative;
@@ -1111,12 +1115,27 @@ hamburger
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   z-index: 2;
 }
-@media (min-width: 820px) {
+@media (max-width: 576px) {
+  #home .hero #cta-header {
+    margin: 25vh 0 0;
+  }
+}
+@media (min-width: 576px) {
+  #home .hero #cta-header {
+    margin: 20vh 0 0;
+  }
+}
+@media (min-width: 768px) {
   #home .hero #cta-header {
     font-size: 1.5em;
     width: 20rem;
     text-align: center;
-    margin: 10vh 0 0;
+    margin: 25vh 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  #home .hero #cta-header {
+    margin: 20vh 0 0;
   }
 }
 @keyframes show-cta {
