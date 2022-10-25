@@ -1992,7 +1992,7 @@ hamburger
   z-index: -2;
   opacity: 0.4;
 }
-#skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
+#skills .dropdown .dropdown-content .skills-bottom .skills-item h3 {
   font-size: 1.5rem;
   font-weight: 400;
   color: #ead2a1;
@@ -2001,6 +2001,11 @@ hamburger
   font-family: "Kanit", sans-serif;
   text-decoration: underline #ead2a1;
   text-underline-offset: 0.1em;
+}
+@media (min-width: 768px) {
+  #skills .dropdown .dropdown-content .skills-bottom .skills-item h3 {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 768px) {
   #skills .dropdown .dropdown-content .skills-bottom .skills-item {
@@ -2024,9 +2029,6 @@ hamburger
   #skills .dropdown .dropdown-content .skills-bottom .skills-item:hover {
     transition: 0.3s;
     transform: scale(1.05);
-  }
-  #skills .dropdown .dropdown-content .skills-bottom .skills-item h2 {
-    font-size: 1.5em;
   }
   #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li {
     font-size: 1em;

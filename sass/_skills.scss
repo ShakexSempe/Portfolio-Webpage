@@ -375,7 +375,7 @@
                     }
                     // end of item icon
                     // skills item title (h2)
-                    h2 {
+                    h3 {
                         font-size: 1.5rem;
                         font-weight: 400;
                         color: $span-gold;
@@ -384,6 +384,9 @@
                         font-family: $font-title;
                         text-decoration: underline $span-gold;
                         text-underline-offset: .1em;
+                        @include md {
+                            font-size: 1.5rem;
+                        }
                     }
                     // end of skills item title (h2)
                     // skills items on tablets
@@ -407,10 +410,6 @@
                         &:hover {
                             transition: .3s;
                             transform: scale(1.05);
-                        }
-
-                        h2 {
-                            font-size: 1.5em;
                         }
                         ul {
                             li {
