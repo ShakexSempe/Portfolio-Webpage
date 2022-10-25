@@ -119,18 +119,14 @@
             }
         }
         // ANIMATED INTRO
-        #hero-h1 {
-            // margin: 1em auto;
+        #hero-slogan {
+            // border: 1px solid #fff;
             background: transparent;
             padding: 5vh 5vw; 
-            // border-radius: 5px;
             position: relative;
-            // border: 1px solid #fff;
-            width: 100%;
-            // overflow-y: hidden;
-            text-transform: capitalize;
             top: 7vh;
-            // left: 5vw;
+            width: 100%;
+            text-transform: capitalize;
             @include md {
                 width: max-content;
                 top: 5vh;
@@ -142,11 +138,71 @@
             // @media (min-width: 600px) {
             //     top: 15vh;
             // }
+            // SLOGAN 
+        .hero-title {
+            // border: 1px solid #fff;
+            // position: absolute;
+            // top: 10vh;
+            // left: 5vw;
+            // padding: 0 5vw;
+            margin-bottom: .25rem;
+            width: 100%;
+            // opacity: 0;
+            // animation: slogan 5s linear 14s forwards;
+
+            h1 {
+                text-transform: capitalize;
+                text-align: center;
+                text-align: left;
+                font-family: $font-title;
+                font-weight: 500;
+                font-size: 2.25rem;
+                color: $text-light;
+                line-height: 1.25;
+                a {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $span-gold;
+                    display: block;
+                    color: #fff9;
+                    margin-bottom: .25rem;
+                    // text-decoration: underline;
+                }
+                @include lg {
+                    font-size: 3rem;
+                    a {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+            p {
+                display: block;
+            }
+
+            // DESKTOP SLOGAN
+            @media (min-width: 1024px) {
+                top: 15vh;
+                // left: 50%;
+                // transform: translateX(-50%);
+                p {
+                    text-align: center;
+                    text-align: left;
+                    font-size: 1.15rem;
+                }
+            }
+
+            // REVEAL SLOGAN ANIAMTION
+            @keyframes slogan {
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
             h1 {
                 font-size: 2.15rem;
                 display: block;
                 // width: fit-content;
-                color: $text-white-e;
+                color: $text-light;
                 // font-family: 'Philosopher', sans-serif;
                 @include lg {
                     font-size: 3rem;
@@ -369,48 +425,7 @@
             // end of button hover, focus and active states
         }
 
-        // SLOGAN 
-        .slogan {
-            // border: 1px solid #fff;
-            // position: absolute;
-            // top: 10vh;
-            // left: 5vw;
-            // padding: 0 5vw;
-            width: 100%;
-            // opacity: 0;
-            // animation: slogan 5s linear 14s forwards;
-
-            p {
-                font-size: 1rem;
-                text-transform: capitalize;
-                text-align: center;
-                text-align: left;
-                a {
-                    color: $span-gold;
-                    color: #fff9;
-                    // text-decoration: underline;
-                }
-            }
-
-            // DESKTOP SLOGAN
-            @media (min-width: 1024px) {
-                top: 15vh;
-                // left: 50%;
-                // transform: translateX(-50%);
-                p {
-                    text-align: center;
-                    text-align: left;
-                    font-size: 1.15rem;
-                }
-            }
-
-            // REVEAL SLOGAN ANIAMTION
-            @keyframes slogan {
-                100% {
-                    opacity: 1;
-                }
-            }
-        }
+        
     }
 }
 // END OF HERO

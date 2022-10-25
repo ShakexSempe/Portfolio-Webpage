@@ -1033,36 +1033,84 @@ hamburger
     object-position: 40%;
   }
 }
-#home .hero #hero-h1 {
+#home .hero #hero-slogan {
   background: transparent;
   padding: 5vh 5vw;
   position: relative;
+  top: 7vh;
   width: 100%;
   text-transform: capitalize;
-  top: 7vh;
 }
 @media (min-width: 768px) {
-  #home .hero #hero-h1 {
+  #home .hero #hero-slogan {
     width: max-content;
     top: 5vh;
   }
 }
 @media (min-width: 1024px) {
-  #home .hero #hero-h1 {
+  #home .hero #hero-slogan {
     top: 15vh;
   }
 }
-#home .hero #hero-h1 h1 {
-  font-size: 2.15rem;
+#home .hero #hero-slogan .hero-title {
+  margin-bottom: 0.25rem;
+  width: 100%;
+}
+#home .hero #hero-slogan .hero-title h1 {
+  text-transform: capitalize;
+  text-align: center;
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  color: #f4f4f4;
+  line-height: 1.25;
+}
+#home .hero #hero-slogan .hero-title h1 a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ead2a1;
   display: block;
-  color: #eee;
+  color: #fff9;
+  margin-bottom: 0.25rem;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-h1 h1 {
+  #home .hero #hero-slogan .hero-title h1 {
+    font-size: 3rem;
+  }
+  #home .hero #hero-slogan .hero-title h1 a {
+    font-size: 1.25rem;
+  }
+}
+#home .hero #hero-slogan .hero-title p {
+  display: block;
+}
+@media (min-width: 1024px) {
+  #home .hero #hero-slogan .hero-title {
+    top: 15vh;
+  }
+  #home .hero #hero-slogan .hero-title p {
+    text-align: center;
+    text-align: left;
+    font-size: 1.15rem;
+  }
+}
+@keyframes slogan {
+  100% {
+    opacity: 1;
+  }
+}
+#home .hero #hero-slogan h1 {
+  font-size: 2.15rem;
+  display: block;
+  color: #f4f4f4;
+}
+@media (min-width: 820px) {
+  #home .hero #hero-slogan h1 {
     font-size: 3rem;
   }
 }
-#home .hero #hero-h1 h1 span {
+#home .hero #hero-slogan h1 span {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   display: inline-block;
@@ -1072,7 +1120,7 @@ hamburger
   /* HERO H1 INTRO ANIMATION */
 }
 @media (min-width: 768px) {
-  #home .hero #hero-h1 h1 span {
+  #home .hero #hero-slogan h1 span {
     font-size: 3rem;
   }
 }
@@ -1085,14 +1133,14 @@ hamburger
     opacity: 1;
   }
 }
-#home .hero #hero-h1 #aka {
+#home .hero #hero-slogan #aka {
   display: inline-block;
   font-size: 1.25rem;
   position: relative;
   color: #ddd;
   margin-top: 0.5rem;
 }
-#home .hero #hero-h1 #aka span {
+#home .hero #hero-slogan #aka span {
   color: inherit;
 }
 @keyframes aka {
@@ -1230,34 +1278,6 @@ hamburger
   }
   #home .hero #cta-header:hover::after {
     border-top-right-radius: 5rem;
-    opacity: 1;
-  }
-}
-#home .hero .slogan {
-  width: 100%;
-}
-#home .hero .slogan p {
-  font-size: 1rem;
-  text-transform: capitalize;
-  text-align: center;
-  text-align: left;
-}
-#home .hero .slogan p a {
-  color: #ead2a1;
-  color: #fff9;
-}
-@media (min-width: 1024px) {
-  #home .hero .slogan {
-    top: 15vh;
-  }
-  #home .hero .slogan p {
-    text-align: center;
-    text-align: left;
-    font-size: 1.15rem;
-  }
-}
-@keyframes slogan {
-  100% {
     opacity: 1;
   }
 }
