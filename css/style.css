@@ -996,7 +996,6 @@ hamburger
   }
 }
 #home .hero {
-  overflow: hidden;
   position: relative;
 }
 #home .hero .hero-bg {
@@ -1036,15 +1035,15 @@ hamburger
 }
 #home .hero #hero-h1 {
   background: transparent;
-  padding: 5vh 0;
-  border-radius: 5px;
-  position: absolute;
+  padding: 5vh 5vw;
+  position: relative;
+  width: 100%;
   text-transform: capitalize;
-  top: 5vh;
-  left: 5vw;
+  top: 7vh;
 }
 @media (min-width: 768px) {
   #home .hero #hero-h1 {
+    width: max-content;
     top: 5vh;
   }
 }
