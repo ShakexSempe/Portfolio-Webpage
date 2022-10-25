@@ -1054,10 +1054,14 @@ hamburger
   }
 }
 #home .hero #hero-h1 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   display: block;
-  width: fit-content;
   color: #eee;
+}
+@media (min-width: 820px) {
+  #home .hero #hero-h1 h1 {
+    font-size: 3rem;
+  }
 }
 #home .hero #hero-h1 h1 span {
   font-family: "Kanit", sans-serif;
@@ -1082,12 +1086,15 @@ hamburger
     opacity: 1;
   }
 }
-#home .hero #hero-h1 #aka span {
+#home .hero #hero-h1 #aka {
   display: inline-block;
   font-size: 1.25rem;
   position: relative;
   color: #ddd;
   margin-top: 0.5rem;
+}
+#home .hero #hero-h1 #aka span {
+  color: inherit;
 }
 @keyframes aka {
   10% {
