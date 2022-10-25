@@ -1067,7 +1067,7 @@ hamburger
   line-height: 1.25;
 }
 #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: #ead2a1;
   display: block;
