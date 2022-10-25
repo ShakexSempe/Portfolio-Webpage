@@ -1062,11 +1062,11 @@ hamburger
   text-align: left;
   font-family: "Kanit", sans-serif;
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   color: #f4f4f4;
   line-height: 1.25;
 }
-#home .hero #hero-slogan .hero-title h1 a, #home .hero #hero-slogan .slogan h1 a, #home .hero #hero-h1 .hero-title h1 a, #home .hero #hero-h1 .slogan h1 a {
+#home .hero #hero-slogan .hero-title a, #home .hero #hero-slogan .slogan a, #home .hero #hero-h1 .hero-title a, #home .hero #hero-h1 .slogan a {
   font-size: 1rem;
   font-weight: 400;
   color: #ead2a1;
@@ -1075,10 +1075,10 @@ hamburger
   margin-bottom: 0.25rem;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-slogan .hero-title h1, #home .hero #hero-slogan .slogan h1, #home .hero #hero-h1 .hero-title h1, #home .hero #hero-h1 .slogan h1 {
+  #home .hero #hero-slogan .hero-title, #home .hero #hero-slogan .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
     font-size: 3rem;
   }
-  #home .hero #hero-slogan .hero-title h1 a, #home .hero #hero-slogan .slogan h1 a, #home .hero #hero-h1 .hero-title h1 a, #home .hero #hero-h1 .slogan h1 a {
+  #home .hero #hero-slogan .hero-title a, #home .hero #hero-slogan .slogan a, #home .hero #hero-h1 .hero-title a, #home .hero #hero-h1 .slogan a {
     font-size: 1.25rem;
   }
 }

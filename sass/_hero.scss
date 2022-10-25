@@ -156,23 +156,23 @@
                 text-align: left;
                 font-family: $font-title;
                 font-weight: 500;
-                font-size: 2.25rem;
+                font-size: 2.5rem;
                 color: $text-light;
                 line-height: 1.25;
+            }
+            a {
+                font-size: 1rem;
+                font-weight: 400;
+                color: $span-gold;
+                display: block;
+                color: #fff9;
+                margin-bottom: .25rem;
+                // text-decoration: underline;
+            }
+            @include lg {
+                font-size: 3rem;
                 a {
-                    font-size: 1rem;
-                    font-weight: 400;
-                    color: $span-gold;
-                    display: block;
-                    color: #fff9;
-                    margin-bottom: .25rem;
-                    // text-decoration: underline;
-                }
-                @include lg {
-                    font-size: 3rem;
-                    a {
-                        font-size: 1.25rem;
-                    }
+                    font-size: 1.25rem;
                 }
             }
             p {
