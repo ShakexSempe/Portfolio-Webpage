@@ -2135,7 +2135,7 @@ hamburger
 #contact .contact .contact-items .contact-item:hover {
   transform: preserve-3d;
 }
-#contact .contact .contact-items .contact-item h2 {
+#contact .contact .contact-items .contact-item h3 {
   color: #fff;
   padding: 0.5rem 0.5rem 0;
   margin: 0.5rem auto 0;
@@ -2145,8 +2145,8 @@ hamburger
   position: relative;
 }
 @media (min-width: 768px) {
-  #contact .contact .contact-items .contact-item h2 {
-    font-size: 1.7em;
+  #contact .contact .contact-items .contact-item h3 {
+    font-size: 1.25rem;
     margin: 0.5em auto;
   }
 }
@@ -2158,7 +2158,6 @@ hamburger
   border: none;
   background: #20262e;
   border-radius: 50%;
-  outline: 2px solid #ead2a1;
   outline: 2px solid #fff4;
   position: relative;
   display: grid;
