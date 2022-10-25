@@ -1066,13 +1066,16 @@ hamburger
   color: #f4f4f4;
   line-height: 1.25;
 }
-#home .hero #hero-slogan .hero-title a, #home .hero #hero-slogan .slogan a, #home .hero #hero-h1 .hero-title a, #home .hero #hero-h1 .slogan a {
+#home .hero #hero-slogan .hero-title p, #home .hero #hero-slogan .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
   font-size: 1rem;
   font-weight: 400;
   color: #ead2a1;
   display: block;
   color: #fff9;
-  margin-bottom: 0.25rem;
+}
+#home .hero #hero-slogan .hero-title p a, #home .hero #hero-slogan .slogan p a, #home .hero #hero-h1 .hero-title p a, #home .hero #hero-h1 .slogan p a {
+  color: inherit;
+  font-size: inherit;
 }
 @media (min-width: 820px) {
   #home .hero #hero-slogan .hero-title, #home .hero #hero-slogan .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
