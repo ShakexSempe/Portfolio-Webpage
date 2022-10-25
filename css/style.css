@@ -1033,7 +1033,7 @@ hamburger
     object-position: 40%;
   }
 }
-#home .hero #hero-slogan, #home .hero #hero-h1 {
+#home .hero #hero-content, #home .hero #hero-h1 {
   background: transparent;
   padding: 5vh 5vw;
   position: relative;
@@ -1042,21 +1042,21 @@ hamburger
   text-transform: capitalize;
 }
 @media (min-width: 768px) {
-  #home .hero #hero-slogan, #home .hero #hero-h1 {
+  #home .hero #hero-content, #home .hero #hero-h1 {
     width: max-content;
     top: 5vh;
   }
 }
 @media (min-width: 1024px) {
-  #home .hero #hero-slogan, #home .hero #hero-h1 {
+  #home .hero #hero-content, #home .hero #hero-h1 {
     top: 15vh;
   }
 }
-#home .hero #hero-slogan .hero-title, #home .hero #hero-slogan .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
+#home .hero #hero-content .hero-title, #home .hero #hero-content .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
   margin-bottom: 0.25rem;
   width: 100%;
 }
-#home .hero #hero-slogan .hero-title h1, #home .hero #hero-slogan .slogan h1, #home .hero #hero-h1 .hero-title h1, #home .hero #hero-h1 .slogan h1 {
+#home .hero #hero-content .hero-title h1, #home .hero #hero-content .slogan h1, #home .hero #hero-h1 .hero-title h1, #home .hero #hero-h1 .slogan h1 {
   text-transform: capitalize;
   text-align: center;
   text-align: left;
@@ -1066,33 +1066,33 @@ hamburger
   color: #f4f4f4;
   line-height: 1.25;
 }
-#home .hero #hero-slogan .hero-title p, #home .hero #hero-slogan .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
+#home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
   font-size: 1rem;
   font-weight: 400;
   color: #ead2a1;
   display: block;
   color: #fff9;
 }
-#home .hero #hero-slogan .hero-title p a, #home .hero #hero-slogan .slogan p a, #home .hero #hero-h1 .hero-title p a, #home .hero #hero-h1 .slogan p a {
+#home .hero #hero-content .hero-title p a, #home .hero #hero-content .slogan p a, #home .hero #hero-h1 .hero-title p a, #home .hero #hero-h1 .slogan p a {
   color: inherit;
   font-size: inherit;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-slogan .hero-title, #home .hero #hero-slogan .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
+  #home .hero #hero-content .hero-title, #home .hero #hero-content .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
     font-size: 3rem;
   }
-  #home .hero #hero-slogan .hero-title a, #home .hero #hero-slogan .slogan a, #home .hero #hero-h1 .hero-title a, #home .hero #hero-h1 .slogan a {
+  #home .hero #hero-content .hero-title a, #home .hero #hero-content .slogan a, #home .hero #hero-h1 .hero-title a, #home .hero #hero-h1 .slogan a {
     font-size: 1.25rem;
   }
 }
-#home .hero #hero-slogan .hero-title p, #home .hero #hero-slogan .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
+#home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
   display: block;
 }
 @media (min-width: 1024px) {
-  #home .hero #hero-slogan .hero-title, #home .hero #hero-slogan .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
+  #home .hero #hero-content .hero-title, #home .hero #hero-content .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
     top: 15vh;
   }
-  #home .hero #hero-slogan .hero-title p, #home .hero #hero-slogan .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
+  #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
     text-align: center;
     text-align: left;
     font-size: 1.15rem;
@@ -1103,17 +1103,17 @@ hamburger
     opacity: 1;
   }
 }
-#home .hero #hero-slogan h1, #home .hero #hero-h1 h1 {
+#home .hero #hero-content h1, #home .hero #hero-h1 h1 {
   font-size: 2.15rem;
   display: block;
   color: #f4f4f4;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-slogan h1, #home .hero #hero-h1 h1 {
+  #home .hero #hero-content h1, #home .hero #hero-h1 h1 {
     font-size: 3rem;
   }
 }
-#home .hero #hero-slogan h1 span, #home .hero #hero-h1 h1 span {
+#home .hero #hero-content h1 span, #home .hero #hero-h1 h1 span {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   display: inline-block;
@@ -1123,7 +1123,7 @@ hamburger
   /* HERO H1 INTRO ANIMATION */
 }
 @media (min-width: 768px) {
-  #home .hero #hero-slogan h1 span, #home .hero #hero-h1 h1 span {
+  #home .hero #hero-content h1 span, #home .hero #hero-h1 h1 span {
     font-size: 3rem;
   }
 }
@@ -1136,14 +1136,14 @@ hamburger
     opacity: 1;
   }
 }
-#home .hero #hero-slogan #aka, #home .hero #hero-h1 #aka {
+#home .hero #hero-content #aka, #home .hero #hero-h1 #aka {
   display: inline-block;
   font-size: 1.25rem;
   position: relative;
   color: #ddd;
   margin-top: 0.5rem;
 }
-#home .hero #hero-slogan #aka span, #home .hero #hero-h1 #aka span {
+#home .hero #hero-content #aka span, #home .hero #hero-h1 #aka span {
   color: inherit;
 }
 @keyframes aka {
