@@ -527,6 +527,18 @@ hamburger
   width: 100vw;
   height: 8vh;
   background: transparent;
+  isolation: isolate;
+}
+#header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #29323c;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.25s;
 }
 @media (min-width: 1024px) {
   #header {
@@ -539,8 +551,11 @@ hamburger
   transform: translateY(0);
 }
 #header.header-io {
-  background-color: #20262e;
   transition: background-color 0.25s;
+  transition: all 0.25s;
+}
+#header.header-io::after {
+  opacity: 1;
 }
 @media (min-width: 1024px) {
   #header.header-io {
@@ -1069,8 +1084,6 @@ hamburger
 #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
   font-size: 0.85rem;
   font-weight: 400;
-  color: #ead2a1;
-  display: block;
   color: #fff9;
 }
 #home .hero #hero-content .hero-title p a, #home .hero #hero-content .slogan p a, #home .hero #hero-h1 .hero-title p a, #home .hero #hero-h1 .slogan p a {
