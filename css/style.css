@@ -1081,6 +1081,11 @@ hamburger
   color: #f4f4f4;
   line-height: 1.25;
 }
+@media (min-width: 820px) {
+  #home .hero #hero-content .hero-title h1, #home .hero #hero-content .slogan h1, #home .hero #hero-h1 .hero-title h1, #home .hero #hero-h1 .slogan h1 {
+    font-size: 3.5rem;
+  }
+}
 #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
   font-size: 0.85rem;
   font-weight: 400;
@@ -1091,15 +1096,9 @@ hamburger
   font-size: inherit;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-content .hero-title, #home .hero #hero-content .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
-    font-size: 3rem;
+  #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
+    font-size: 1.35rem;
   }
-  #home .hero #hero-content .hero-title a, #home .hero #hero-content .slogan a, #home .hero #hero-h1 .hero-title a, #home .hero #hero-h1 .slogan a {
-    font-size: 1.25rem;
-  }
-}
-#home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
-  display: block;
 }
 @media (min-width: 1024px) {
   #home .hero #hero-content .hero-title, #home .hero #hero-content .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
@@ -1108,7 +1107,6 @@ hamburger
   #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
     text-align: center;
     text-align: left;
-    font-size: 1.15rem;
   }
 }
 @keyframes slogan {
@@ -1205,7 +1203,7 @@ hamburger
 }
 @media (min-width: 1024px) {
   #home .hero #cta-header {
-    margin: 20vh 0 0;
+    margin: 15vh 0 0;
   }
 }
 @keyframes show-cta {
