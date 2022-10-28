@@ -34,6 +34,17 @@ body {
 
     a {
         text-decoration: none;
+        transition: .25s;
+        @media (max-width: 820px){
+            &:active {
+                color: $span-gold;
+            }
+        }
+        @media (min-width: 820px){
+            &:hover {
+                color: $span-gold;
+            }
+        }
     }
 
     p {
