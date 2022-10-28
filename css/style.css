@@ -2911,7 +2911,7 @@ hamburger
 .about .col-right .article-container article p {
   color: #20262e;
   padding-right: 0.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-overflow: ellipsis;
   text-align: left;
   z-index: 1;
@@ -2928,6 +2928,7 @@ hamburger
 .about .col-right .article-container article p .item-title {
   font-weight: 600;
   color: #29323c;
+  display: block;
 }
 .about .col-right .article-container article p a {
   background-color: #f7f7f7;
@@ -2965,6 +2966,7 @@ hamburger
   font-size: 1.5rem;
   color: #485563;
   margin-right: 0.05rem;
+  display: block;
 }
 @media (min-width: 768px) {
   .about .col-right .article-container article p i {

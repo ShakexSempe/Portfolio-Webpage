@@ -168,7 +168,7 @@
                     // border: 2px solid red;
                     color: $overlay-blue-darker;
                     padding-right: .25rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                     text-overflow: ellipsis;
                     text-align: left;
                     z-index: 1;
@@ -187,6 +187,7 @@
                         // display: block;
                         font-weight: 600;
                         color: $overlay-blue-dark;
+                        display: block;
                     }
 
                     a {
@@ -230,6 +231,7 @@
                         font-size: 1.5rem;
                         color: $overlay-blue-light;
                         margin-right: .05rem;
+                        display: block;
                         @include md {
                             font-size: 2rem;
                         }
