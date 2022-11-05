@@ -176,14 +176,14 @@ section {
             }
             &:hover {
                 img {
-                    transform: scale(1.05);
+                    transform: scale(1.5);
                 }
             }
         }
         [data-scroll] {
             transform: scale(1);
                 img {
-                    transform: scale(4);
+                    transform: scale(1.05);
                     opacity: 0;
                 }
             

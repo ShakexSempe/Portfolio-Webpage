@@ -3904,13 +3904,13 @@ section .section-title {
   object-fit: contain;
 }
 .section-pad.pad-intro figure:hover img {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
 .section-pad.pad-intro [data-scroll] {
   transform: scale(1);
 }
 .section-pad.pad-intro [data-scroll] img {
-  transform: scale(4);
+  transform: scale(1.05);
   opacity: 0;
 }
 .section-pad.pad-intro [data-scroll=in] {
