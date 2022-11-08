@@ -143,9 +143,9 @@
                         background: $button-gold;
                         background: linear-gradient( #f4f4f4, #fff);
                         background: inherit;
-                        color: $overlay-blue-dark;
-                        color: inherit;
-                        opacity: .7;
+                        color: $text-light;
+                        color: $light-span;
+                        // opacity: .7;
                         border-radius: 0;
                         // padding: .05rem .3rem .05rem .05rem;
                         // background: $span-gold;
@@ -266,8 +266,8 @@
                                 transition: .5s;
 
                                 i {
-                                    color: #fff7;
                                     color:$span-gold;
+                                    color: $light-span;
                                     margin-right: .2rem;
                                     width: 1.5rem;
                                     border-right: 1px solid #fff4;

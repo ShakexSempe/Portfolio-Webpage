@@ -46,11 +46,12 @@ hamburger
     // pulse 
     &.hamburger:before {
         border: 1px solid $span-gold;
+        border: 1px solid $light-span;
         opacity: 0;
         animation: ham-pulse 2.5s ease infinite;
         @keyframes ham-pulse {
             50% {
-                opacity: .7;
+                opacity: .5;
             }
 
             100% {
@@ -176,12 +177,17 @@ hamburger
 .progress-bar {
     height: 3px;
     background: $span-gold;
+    background: $overlay-blue-dark;
+    background: linear-gradient(90deg, $overlay-blue-dark, $overlay-blue-light, $overlay-blue-dark);
     opacity: .1;
     width: 0%;
     transition: .5s;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 
     &.active-bar {  
-        opacity: .8;
+        opacity: .5;
+        // opacity: 1;
     }
 }
 /* end of progress bar*/
@@ -418,7 +424,7 @@ hamburger
             font-size: 1rem;
             font-size: 100%;
             font-weight: 700;
-            color: #fff7;
+            color: $light-span;
             transition: .25s;
         }
 
@@ -442,7 +448,7 @@ hamburger
         @media (max-width: 768px) {
             &:active {
                 i {
-                    color: $span-gold;
+                    color: $text-light;
                 }
             }
         }
@@ -451,6 +457,7 @@ hamburger
             &:hover {
                 i {
                     color: $span-gold;
+                    color: $text-light;
                 }
             }
         }
