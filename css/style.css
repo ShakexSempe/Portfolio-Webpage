@@ -721,7 +721,7 @@ hamburger
     transform: translateY(1rem);
     color: #f4f4f4;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     transition: 0.5s;
   }
   #header .header #navbar .nav-list .links-container .contact-links a i {
