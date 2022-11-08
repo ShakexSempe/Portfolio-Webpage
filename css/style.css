@@ -99,10 +99,12 @@ hamburger
 }
 #header .hamburger.active .bar::before {
   background-color: #ead2a1;
+  background-color: #fff9;
   transform: translateY(0) skewY(40deg);
 }
 #header .hamburger.active .bar::after {
   background-color: #ead2a1;
+  background-color: #fff9;
   transform: translateY(0) skewY(-40deg) skewX(0);
 }
 
@@ -721,7 +723,7 @@ hamburger
     transform: translateY(1rem);
     color: #f4f4f4;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     transition: 0.5s;
   }
   #header .header #navbar .nav-list .links-container .contact-links a i {
