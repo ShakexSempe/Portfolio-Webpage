@@ -262,12 +262,15 @@
                                 color: $text-light;
                                 font-size: 1rem;
                                 // letter-spacing: .1rem;
-                                margin-bottom: .5rem;
+                                margin-bottom: 1rem;
                                 transition: .5s;
 
                                 i {
+                                    color: #fff7;
                                     color:$span-gold;
+                                    margin-right: .2rem;
                                     width: 1.5rem;
+                                    border-right: 1px solid #fff4;
                                 }
                             }
                         }
