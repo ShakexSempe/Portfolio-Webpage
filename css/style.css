@@ -2392,9 +2392,9 @@ hamburger
   }
 }
 #projects .projects .all-projects .project-item .project-tile h1 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   width: 100%;
-  color: #ead2a1;
+  color: #fff9;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 1em;
@@ -3770,7 +3770,7 @@ hamburger
   }
 }
 .bs21 a {
-  color: #ead2a1;
+  color: #fff9;
 }
 .bs21 a:hover {
   opacity: 0.9;
