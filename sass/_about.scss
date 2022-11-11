@@ -184,7 +184,6 @@
                         }
                     }
                     .item-title{
-                        // display: block;
                         font-weight: 600;
                         color: $overlay-blue-dark;
                         display: block;
@@ -209,23 +208,22 @@
                             }
                         }
                     }
-
-                    
-
-                    &#intro::first-letter {
-                        font-size: 2.5em;
-                        float: left;
-                        background: $overlay-blue-dark;
-                        color: $span-gold;
-                        padding: 0 .1em;
-                        margin-right: .1em;
-                        border-radius: .25rem;
-                        box-shadow: 3px 3px 0 rgba(0, 0, 0, .100);
-                    }
-
+                    // CAPITAL B FIRST LETTER
                     &#intro {
                         font-weight: 500;
+
+                        &#intro::first-letter {
+                            font-size: 2.5em;
+                            float: left;
+                            background: $overlay-blue-darker;
+                            color: $span-light;
+                            padding: 0 .1em;
+                            margin-right: .1em;
+                            border-radius: .25rem;
+                            box-shadow: 3px 3px 0 rgba(0, 0, 0, .100);
+                        }
                     }
+                    
                     i {
                         // position: absolute;
                         font-size: 1.5rem;
@@ -238,8 +236,8 @@
                     }
                     // DATA SCROLL
                     &.io-item {
-                            opacity: 0;
-                            transform: translateY(2rem);
+                        opacity: 0;
+                        transform: translateY(2rem);
 
                         i {
                             color: $span-gold;

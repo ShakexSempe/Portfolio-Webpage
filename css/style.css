@@ -2962,18 +2962,18 @@ hamburger
     color: #ead2a1;
   }
 }
-.about .col-right .article-container article p#intro::first-letter {
+.about .col-right .article-container article p#intro {
+  font-weight: 500;
+}
+.about .col-right .article-container article p#intro#intro::first-letter {
   font-size: 2.5em;
   float: left;
-  background: #29323c;
-  color: #ead2a1;
+  background: #20262e;
+  color: #fff9;
   padding: 0 0.1em;
   margin-right: 0.1em;
   border-radius: 0.25rem;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-.about .col-right .article-container article p#intro {
-  font-weight: 500;
 }
 .about .col-right .article-container article p i {
   font-size: 1.5rem;
