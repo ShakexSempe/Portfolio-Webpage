@@ -137,14 +137,12 @@ hamburger
                 transform-style: preserve-3d;
                 height: .3em;
                 &::before {
-                    background-color: $span-gold;
-                    background-color: $light-span;
+                    background-color: $brand;
                     transform: translateY(0) skewY(40deg) ;
                 }
 
                 &::after {
-                    background-color: $span-gold;
-                    background-color: $light-span;
+                    background-color: $brand;
                     transform: translateY(0) skewY(-40deg) skewX(0);
 
                 }

@@ -98,12 +98,10 @@ hamburger
   height: 0.3em;
 }
 #header .hamburger.active .bar::before {
-  background-color: #ead2a1;
   background-color: #fff9;
   transform: translateY(0) skewY(40deg);
 }
 #header .hamburger.active .bar::after {
-  background-color: #ead2a1;
   background-color: #fff9;
   transform: translateY(0) skewY(-40deg) skewX(0);
 }
