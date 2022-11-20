@@ -1747,7 +1747,7 @@ hamburger
     display: none;
   }
 }
-#skills .skills-top {
+#skills .skills-intro {
   text-align: left;
   margin: 0 auto 1rem;
   padding: 1rem 0.5rem 0.5rem 1rem;
@@ -1756,54 +1756,64 @@ hamburger
   z-index: 30;
 }
 @media (min-width: 768px) {
-  #skills .skills-top {
+  #skills .skills-intro {
     width: 90%;
     margin: 5vh 0 2em;
     padding: 5vh 5vw;
     text-align: center;
   }
 }
-#skills .skills-top .skills-info p {
+#skills .skills-intro .skills-article p {
   color: #f4f4f4;
   color: #29323c;
   font-size: 0.925rem;
+  font-weight: 500;
   line-height: 1.6;
   background: transparent;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  #skills .skills-top .skills-info p {
+  #skills .skills-intro .skills-article p {
     font-size: 1rem;
   }
 }
-#skills .skills-top .skills-info p span {
+#skills .skills-intro .skills-article p span {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   color: inherit;
 }
-#skills .skills-top .skills-drop {
+#skills .skills-intro .skills-drop {
   text-align: left;
   color: #ead2a1;
 }
 @media (min-width: 820px) {
-  #skills .skills-top .skills-drop {
+  #skills .skills-intro .skills-drop {
     text-align: center;
   }
 }
-#skills .skills-top .skills-drop .skills-drop-p {
-  font-weight: 600;
+#skills .skills-intro .skills-drop .skills-drop-p {
+  font-weight: 500;
   font-size: 0.95rem;
+}
+#skills .skills-intro.io-item {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: 1.5s;
+}
+#skills .skills-intro.active-item {
+  opacity: 1;
+  transform: translateY(0);
 }
 #skills .dropdown {
   position: relative;
   margin: 0 auto;
   z-index: 4;
 }
-#skills .dropdown[data-scroll] {
-  transform: scale(1) translateY(5vh);
-  opacity: 1;
+#skills .dropdown.io-item {
+  opacity: 0;
 }
-#skills .dropdown[data-scroll=in] {
+#skills .dropdown.active-item {
+  opacity: 1;
   transition: 1.5s;
   transform: scale(1) translateY(0);
 }
@@ -1858,9 +1868,6 @@ hamburger
 }
 #skills .dropdown .dropbtn.active::after {
   opacity: 1;
-}
-#skills .dropdown .dropbtn[data-scroll] {
-  transition: 1.5s;
 }
 #skills .dropdown .dropdown-content {
   display: none;
@@ -2077,7 +2084,7 @@ hamburger
   }
 }
 #skills .git-img:hover img {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 #contact {
@@ -2567,7 +2574,6 @@ hamburger
   }
 }
 .work .work-items .work-item {
-  border: 1px solid #0002;
   padding: 5vh 0;
   width: 100%;
   border-radius: 0.5rem;
@@ -3913,7 +3919,8 @@ section .section-title {
   object-fit: contain;
 }
 .section-pad.pad-intro figure:hover img {
-  transform: scale(1.5);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .section-pad.pad-intro [data-scroll] {
   transform: scale(1);

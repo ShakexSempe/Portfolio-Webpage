@@ -32,13 +32,14 @@
     // end of skills container
 
     // skills top section
-    .skills-top {
-        @media (min-width: 768px){
+    .skills-intro {
+        @media (min-width: 768px) {
             width: 90%;
             margin: 5vh 0 2em;
             padding: 5vh 5vw;
             text-align: center;
         }
+
         // width: 90%;
         // border: 2px solid red;
         text-align: left;
@@ -47,73 +48,71 @@
         padding: 1rem;
         position: relative;
         z-index: 30;
-        .skills-info {
-        p {
-            color: $text-light;
-            color: $overlay-blue-dark;
-            font-size: .925rem;
-            // font-size: 1rem;
-            line-height: 1.6;
-            @media (min-width: 768px){
-                font-size: 1rem;
-            }
-            background: transparent;
-            overflow: hidden;
 
-            span {
-                font-size: .95rem;
-                font-weight: 600;
-                color: inherit;
+        .skills-article {
+            p {
+                color: $text-light;
+                color: $overlay-blue-dark;
+                font-size: .925rem;
+                font-weight: 500;
+                // font-size: 1rem;
+                line-height: 1.6;
+
+                @media (min-width: 768px) {
+                    font-size: 1rem;
+                }
+
+                background: transparent;
+                overflow: hidden;
+
+                span {
+                    font-size: .95rem;
+                    font-weight: 700;
+                    color: inherit;
+                }
+
             }
-            
         }
-    }
+
         .skills-drop {
             text-align: left;
             color: $span-gold;
-            @media (min-width: 820px){
+
+            @media (min-width: 820px) {
                 text-align: center;
             }
+
             .skills-drop-p {
-                font-weight: 600;
+                font-weight: 500;
                 font-size: .95rem;
             }
         }
-        // skills top 'down arrow'
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     width: 45px;
-        //     height: 45px;
-        //     border: none;
-        //     top: 100%;
-        //     left: 50%;
-        //     margin-left: -24px;
-        //     margin-top: -24px;
-        //     transform: rotate(45deg);
-        //     background-image: linear-gradient(135deg, transparent 48%, #3d4955 0%);
-        //     transition: .2s;
-        //     box-shadow: inset -5px -5px 5px #000a,
-        //                 inset 5px 5px 5px #3d495500;
-        // }
-        // end of skills top 'down arrow'
-        
-        
+        // IO CLASS
+        &.io-item {
+            opacity: 0;
+            transform: translateY(1rem);
+            transition: 1.5s;
+        }
+        &.active-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
     // end of skills top section
-    // dropdown section
+    // DROPDOWN SECTION
     .dropdown {
         position: relative;
         margin: 0 auto;
         z-index: 4;
 
         // SKILLS-TOP DATA-SCROLL
-        &[data-scroll] {
-            transform: scale(1) translateY(5vh);
-            opacity: 1;
+        &.io-item {
+            // transform: scale(1) translateY(5vh);
+            opacity: 0;
         }
 
-        &[data-scroll="in"] {
+        &.active-item {
+            opacity: 1;
             transition: 1.5s;
             transform: scale(1) translateY(0);
         }
@@ -178,10 +177,7 @@
             // end of box shadow states
             // end of dropdown button shadows
 
-            // DATA-SCROLL
-            &[data-scroll] {
-                transition: 1.5s;
-            }
+            
         }
 
         // end of dropdown button
@@ -457,7 +453,7 @@
         // figure hover state
         &:hover {
             img {
-                transform: scale(1.2);
+                transform: scale(1);
             }
         }
         // end of figure hover state
