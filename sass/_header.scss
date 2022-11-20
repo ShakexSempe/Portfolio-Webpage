@@ -31,7 +31,7 @@
     &.hero-header {
         .header {
             #navbar {
-                .brand {
+                .logo {
                     opacity: 1;
                             transform: translateY(0);
                 }
@@ -66,7 +66,7 @@
         }
         .header {
             #navbar {
-                .brand {
+                .logo {
                     opacity: 1;
                     transform: translateY(0);
                     transition: 1s;
@@ -109,9 +109,8 @@
                 padding: 0 5vw;
             }
             // HEADER LOGO
-            .brand {
+            .logo {
                 transition: 1s ease;
-                opacity: 0;
                 opacity: 1;
                 transform: translateY(-11vh);
                 transition: 1s;
@@ -123,11 +122,8 @@
                     font-family: $font-title;
                     font-weight: 400;
                     text-transform: capitalize;
-                    color: $span-gold;
                     color: $text-light;
                     background-color: $overlay-blue-darkest;
-                    // border: 1px solid $span-gold;
-                    border: 1px solid $text-light;
                     border: 1px solid #fff2;
                     padding-left: .2rem;
                     border-radius: .25rem;
@@ -136,16 +132,11 @@
                     // text-shadow: 0 0 5px $text-shadow-red;
 
                     span {
-                        // margin-left: .2rem;
-                        // padding: 0 .2rem 0 .2rem;
-                        // padding: 0 .2rem 0 0;
                         padding-right: .2rem;
                         background: $button-gold;
                         background: linear-gradient( #f4f4f4, #fff);
                         background: inherit;
-                        color: $text-light;
-                        color: $light-span;
-                        // opacity: .7;
+                        color: $brand;
                         border-radius: 0;
                         // padding: .05rem .3rem .05rem .05rem;
                         // background: $span-gold;

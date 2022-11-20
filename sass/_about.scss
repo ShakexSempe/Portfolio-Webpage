@@ -55,7 +55,7 @@
                 font-size: .6em;
                 font-weight: 600;
                 text-transform: capitalize;
-                color: $text-white-e;
+                color: $brand;
                 background-color: #dc143c;
                 border-radius: 10px;
                 transition: .5s ease;
@@ -405,7 +405,6 @@
         &::before {
             content: 'Boitumelo Sempe';
             content: '';
-            color: $text-dark;
             background-image: url('../img/me-min.jpg');
             background-position: center;
             animation: fade-out 5s infinite;

@@ -13,12 +13,11 @@ const hamburger = document.querySelector('.header #navbar .nav-list .hamburger')
 const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
 const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
 const header = document.querySelector('header');
-const navLogo = document.querySelector('.brand');
-console.log(bottomNav);
+const navLogo = document.querySelector('.logo');
+console.log(navLogo);
 // DATE
 const date = document.querySelectorAll('.date');
 // INTERSECTION OBSERVER
-const brand = document.querySelector('.brand');
 
 
 // ********** END OF VARIABLES ************
