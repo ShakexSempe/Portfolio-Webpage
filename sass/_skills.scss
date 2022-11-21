@@ -107,8 +107,9 @@
 
         // SKILLS-TOP DATA-SCROLL
         &.io-item {
-            // transform: scale(1) translateY(5vh);
+            transform: scale(1) translateY(5vh);
             opacity: 0;
+            transition: 1s;
         }
 
         &.active-item {
@@ -120,24 +121,35 @@
         .dropbtn {
             color: $text-light;
             padding: .5rem 1rem;
+            margin-inline: auto;
             width: 20rem;
             font-size: 1.35rem;
             font-weight: 400;
             cursor: pointer;
             border: none;
-            outline: none;
             border-radius: .5rem;
             background: #000a;
             text-align: center;
             text-transform: capitalize;
-            transition: .2s;
+            transition: .25s;
             font-family: $font-title;
-            letter-spacing: .15rem;
+            letter-spacing: .025rem;
             position: relative;
             // overflow: hidden;
             isolation: isolate;
-
-            // dropdown button shadows
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            i {
+                // border: 1px solid red;
+                font-weight: 600;
+                margin-left: .5rem;
+                font-size: 1rem;
+                color: $brand;
+                transition: .5s;
+            }
+            // DROPDOWN BTN SHADOWS
             &::before,
             &::after {
                 position: absolute;
@@ -170,6 +182,9 @@
                     transform: scale(.98);
                     letter-spacing: normal;
                     color: $span-gold;
+                    i {
+                        color: $text-light;
+                    }
                     &::before {opacity: 0}
                     &::after {opacity: 1}
                 }

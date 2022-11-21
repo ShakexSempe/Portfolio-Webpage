@@ -176,8 +176,8 @@ hamburger
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 3px;
-    background: $span-gold;
     background: $overlay-blue-dark;
+    background: $span-gold; 
     background: linear-gradient(90deg, $overlay-blue-dark, $overlay-blue-light, $overlay-blue-dark);
     opacity: .1;
     width: 0%;
