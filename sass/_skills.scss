@@ -345,26 +345,26 @@
                             border-radius: 50%;
                             z-index: -1;
                             box-shadow: 
-                                        inset 2px 2px 3px #ddda,
-                                        inset -2px -2px 5px #000a,
+                                        inset 2px 2px 3px rgba(255, 255, 255, .2),
+                                        inset -2px -2px 5px rgba(0, 0, 0, 0.25),
                                         3px 3px 4px #000;
                             animation: skill-icon 10s linear infinite;
 
                             @keyframes skill-icon {
                                 25% {
                                     box-shadow: 
-                                            inset -2px 3px 3px #ddda,
-                                            inset 2px -2px 5px #000a,
+                                            inset -2px 3px 3px rgba(255, 255, 255, .2),
+                                            inset 2px -2px 5px rgba(0, 0, 0, 0.25),
                                             -3px 3px 4px #000;
                                 }
                                 50% {
-                                    box-shadow: inset 0px -1px 3px #ddda,
-                                                inset 0px 2px 5px #000a,
+                                    box-shadow: inset 0px -1px 3px rgba(255, 255, 255, .2),
+                                                inset 0px 2px 5px rgba(0, 0, 0, 0.25),
                                                 0 2px 4px #000 ;
                                 }
                                 75% {
-                                    box-shadow: inset 2px 0px 3px#ddda,
-                                                inset -2px 0px 5px #000a,
+                                    box-shadow: inset 2px 0px 3px rgba(255, 255, 255, .2),
+                                                inset -2px 0px 5px rgba(0, 0, 0, 0.25),
                                                 -2px 2px 4px #000;
                                 }
                             }
@@ -387,7 +387,7 @@
                     // end of item icon
                     // skills item title (h2)
                     h3 {
-                        font-size: 1.5rem;
+                        font-size: 1.25rem;
                         font-weight: 400;
                         color: $span-gold;
                         margin-bottom: .5rem;
