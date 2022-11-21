@@ -89,10 +89,10 @@
                     background: $overlay-dark;
                     transition: 1.3s ease;
                     // project Title (h1)
-                    h1 {
+                    h2 {
                         font-size: 1.15rem;
                         width: 100%;
-                        color: $span-light;
+                        color: $text-light;
                         @media (min-width: 768px){
                             font-size: 1.5rem;
                         }
@@ -108,13 +108,13 @@
                     }
                     // end of project Title (h1)
                     // project details (h2 and p)
-                    h2 {
+                    h3 {
                         font-size: 1rem;
                         line-height: 1.5;
                         font-weight: 500;
                         margin: .5rem 0;
                         text-transform: capitalize;
-                        color: #f4f4f4;
+                        color: $brand;
                         transition: .3s;
                         @media (min-width:768px){
                             font-size: 1.25rem;
@@ -126,7 +126,7 @@
                         @media (min-width:768px){
                             font-size: 1rem;
                         }
-                        font-weight: 300;
+                        font-weight: 400;
                         color: #ffff;
                         margin: .5rem 0;
                     }
@@ -142,7 +142,7 @@
                         outline: none;
                         border-radius: .5rem;
                         transition: all .3s ease;
-                        border: 1px solid $span-gold;
+                        // border: 1px solid $span-gold;
                         // end of project tile box shadow
                         // links icon
                         i {

@@ -11,7 +11,7 @@
         text-align: center;
         background: $overlay;
         background: $background-light;
-        
+        min-height: auto;
         // skills section-title
         &-header {
             width: 100%;
