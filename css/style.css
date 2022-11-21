@@ -442,7 +442,7 @@ hamburger
   display: grid;
   place-items: center;
   isolation: isolate;
-  color: #485563;
+  color: #ffffffbf;
   text-transform: capitalize;
 }
 .loader_bg .spinner .sector {
