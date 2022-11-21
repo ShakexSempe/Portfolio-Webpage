@@ -3349,9 +3349,9 @@ hamburger
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
   text-transform: capitalize;
-  color: #ffffffbf;
   color: #f4f4f4;
-  font-weight: 300;
+  color: #ffffffbf;
+  font-weight: 400;
   text-align: center;
   font-family: "Kanit", sans-serif;
   transition: 1s ease;
