@@ -347,7 +347,7 @@
                             box-shadow: 
                                         inset 2px 2px 3px rgba(255, 255, 255, .2),
                                         inset -2px -2px 5px rgba(0, 0, 0, 0.25),
-                                        3px 3px 4px #000;
+                                        3px 3px 4px #000a;
                             animation: skill-icon 10s linear infinite;
 
                             @keyframes skill-icon {
@@ -355,17 +355,17 @@
                                     box-shadow: 
                                             inset -2px 3px 3px rgba(255, 255, 255, .2),
                                             inset 2px -2px 5px rgba(0, 0, 0, 0.25),
-                                            -3px 3px 4px #000;
+                                            -3px 3px 4px #000a;
                                 }
                                 50% {
                                     box-shadow: inset 0px -1px 3px rgba(255, 255, 255, .2),
                                                 inset 0px 2px 5px rgba(0, 0, 0, 0.25),
-                                                0 2px 4px #000 ;
+                                                0 2px 4px #000a ;
                                 }
                                 75% {
                                     box-shadow: inset 2px 0px 3px rgba(255, 255, 255, .2),
                                                 inset -2px 0px 5px rgba(0, 0, 0, 0.25),
-                                                -2px 2px 4px #000;
+                                                -2px 2px 4px #000a;
                                 }
                             }
                         }
