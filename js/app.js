@@ -1,6 +1,6 @@
 // ********** VARIABLES ************
 // NAV LINKS
-const linksContainer = document.querySelector('.links-container');
+const linksContainer = document.querySelector('[links-container]');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.header .nav-list ul li');
@@ -9,14 +9,18 @@ const progressBarStyle = document.querySelector('.progress-bar');
 const bottomNav = document.querySelector('.bottom-nav');
 
 // HAMBURGER MENU
-const hamburger = document.querySelector('.header #navbar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header #navbar .nav-list .links-container');
-const menu_item = document.querySelectorAll('.header #navbar .nav-list ul li a');
+const hamburger = document.querySelector('.header #nav .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header #nav .nav-list .links-container');
+const menu_item = document.querySelectorAll('.header #nav .nav-list ul li a');
 const header = document.querySelector('header');
 const navLogo = document.querySelector('.logo');
 console.log(navLogo);
 // DATE
 const date = document.querySelectorAll('.date');
+/*  FOOTER DATE*/
+date.forEach(date => {
+  date.innerHTML = new Date().getFullYear();
+})
 // INTERSECTION OBSERVER
 
 
@@ -33,10 +37,10 @@ const heroObserver = new IntersectionObserver(
   ) {
       entries.forEach(entry => {
           if(!entry.isIntersecting) {
-              header.classList.add("hero-header");
+              header.classList.remove("hero-header");
               console.log("hero NOT IO");
           } else {
-              header.classList.remove("hero-header");
+              header.classList.add("hero-header");
               console.log("hero IS io");
           }
       });
@@ -151,7 +155,7 @@ toggle between hiding and showing the dropdown content */
 dropdown = () => {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-const dropBtn = document.querySelector('.dropbtn');
+const dropBtn = document.querySelector('[data-dropBtn]');
 dropBtn.addEventListener("click", () => {
   dropBtn.classList.toggle("active");
 })
@@ -178,7 +182,3 @@ dropBtn.addEventListener("click", () => {
 
 // ********** END OF FUNCTIONS ************
 
-/*  FOOTER DATE*/
-date.forEach(date => {
-  date.innerHTML = new Date().getFullYear();
-})

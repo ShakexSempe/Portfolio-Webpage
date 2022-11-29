@@ -1,5 +1,5 @@
 // header
-#header {
+.header {
     position: fixed;
     z-index: 50;
     left: 0;
@@ -7,8 +7,8 @@
     width: 100%;
     height: 8vh;
     // overflow: hidden;
-    background: transparent;
     isolation: isolate;
+    // PSEUDO BACKGROUND COLOR
     &::after {
         content: '';
         position: absolute;
@@ -20,6 +20,7 @@
         opacity: 0;
         transition: .25s;
     }
+    // DESKTOP HEADER HEIGHT
     @media (min-width: 1024px) {
         height: 15vh;
         // border: 2px solid red;
@@ -27,13 +28,13 @@
     }
     // INTERSECTION CLASS
     // HERO IO
-    // DISPLAY LOGO DURING HERO SCROLL
+    // TRANSPARENT BACKGROUND AND NO LOGO IN DISPLAY
     &.hero-header {
-        .header {
-            #navbar {
+        .navbar {
+            background: transparent;
+            #nav {
                 .logo {
-                    opacity: 1;
-                            transform: translateY(0);
+                    transform: translateY(-10vh);
                 }
             }
         }
@@ -51,7 +52,7 @@
             transition: .25s;
             border: none;
 
-            #navbar {
+            #nav {
                 .nav-list {
                     ul {
                         // transform: translateY(1rem);
@@ -65,7 +66,7 @@
             }
         }
         .header {
-            #navbar {
+            #nav {
                 .logo {
                     opacity: 1;
                     transform: translateY(0);
@@ -87,16 +88,20 @@
         // DARK HEADER BACKGROUND WHEN SIDEBAR VISIBLE
         &.active-header {
             background: $overlay-blue-dark;
-            
+            #nav {
+                .logo {
+                    transform: translateY(0);
+                }
+            }
         }
     }
     // END OF INTERSECTION CLASS
 
-    .header {
+    .navbar {
         height: 100%;
         transition: 1s ease background-color;
         
-        #navbar {
+        #nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -112,7 +117,7 @@
             .logo {
                 transition: 1s ease;
                 opacity: 1;
-                transform: translateY(-11vh);
+                // transform: translateY(-11vh);
                 transition: 1s;
                 p {
                     @media (min-width: 768px) {

@@ -49,20 +49,20 @@
 
 <body>
   <!-- LOADER -->
-  <div class="loader_bg">
+  <!-- <div class="loader_bg">
     <div class="spinner">
       loading
       <div class="sector sector-1"></div>
       <div class="sector sector-2"></div>
       <div class="sector sector-3"></div>
     </div>
-  </div>
+  </div> -->
   <!-- HEADER -->
-  <header id="header">
+  <header id="header" data-header class="header">
     <!-- SKIP TO MAIN LINK -->
     <a class="skip-link" href="#main">skip to main content</a>
-    <div class="header">
-      <nav id="navbar">
+    <div class="navbar">
+      <nav id="nav">
         <div class="logo">
           <a href="#home" title="Shakex Sempe" class="scroll-link">
             <p>shakex<span>Sempe</span></p>
@@ -72,7 +72,7 @@
           <div class="hamburger">
             <div class="bar"></div>
           </div>
-          <div class="links-container">
+          <div class="links-container" data-linksContainer>
             <ul class="links">
               <!-- SKILLS LINK -->
               <li>
@@ -137,7 +137,7 @@
   <!-- END OF HERO-->
 
   <!--HERO-->
-  <section id="home" class="section welcome-section">
+  <section id="home" data-hero class="section welcome-section">
     <div class="hero">
       <div id="hero-content">
         <div class="hero-title">
@@ -161,7 +161,7 @@
   </section>
   <!-- END OF HERO-->
   <!--  END OF MENU -->
-  <main id="main">
+  <main id="main" data-main>
   <!-- SKILLS SECTION-->
   <section class="link-section" id="skills">
     <div class="skills container">
@@ -185,7 +185,7 @@
       </div>
       <!--Dropdown-->
       <div class="dropdown io-item">
-        <button onclick="dropdown()" title="View Full Skill-set" class="dropbtn">My Skills<i class="fa-solid fa-layer-group"></i></button>
+        <button onclick="dropdown()" data-dropBtn title="View Full Skill-set" class="dropbtn">My Skills<i class="fa-solid fa-layer-group"></i></button>
         <div id="myDropdown" class="dropdown-content">
 
           <div class="skills-bottom">
