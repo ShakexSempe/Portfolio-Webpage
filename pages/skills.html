@@ -136,10 +136,13 @@
     <!--HERO-->
     
     <!-- END OF HERO-->
-    <section id="home" data-hero class="section welcome-section">
-        <div class="hero">
-            
-
+    <section id="home" data-hero class="skills-hero">
+        <div class="skills-menu" data-skillsMenu>
+            <a href="#" class="menu-item">HTML</a>
+            <a href="#" class="menu-item">CSS</a>
+            <a href="#" class="menu-item">JavaScript</a>
+            <a href="#" class="menu-item">Contact</a>
+            <div class="menu-background"></div>
         </div>
     </section>
     <!--  END OF MENU -->
@@ -234,6 +237,16 @@
   }, 3000);
 </script> -->
 
+<script>
+    const menu = document.querySelector('[data-skillsMenu]');
+    Array.from(document.getElementsByClassName("menu-item")).
+    forEach((item, index) => {
+        item.onmouseover = () => {
+            menu.dataset.activeIndex = index;
+        }
+    })
+
+</script>
 </body>
 
 </html>

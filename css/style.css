@@ -960,7 +960,7 @@ hamburger
   }
 }
 
-#home {
+.welcome-section {
   padding: 0;
   min-height: 100vh;
   width: 100%;
@@ -972,7 +972,7 @@ hamburger
   overflow: hidden;
 }
 @media (max-width: 1024px) {
-  #home::after {
+  .welcome-section::after {
     position: absolute;
     content: "";
     top: 0;
@@ -985,7 +985,7 @@ hamburger
   }
 }
 @media (max-width: 1024px) and (max-width: 1024px) {
-  #home::after {
+  .welcome-section::after {
     background-size: 90%;
     background-size: contain;
     background-size: cover;
@@ -995,13 +995,13 @@ hamburger
   }
 }
 @media (min-width: 1024px) {
-  #home {
+  .welcome-section {
     background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
     background-position: center left;
     background-position: 10% 50%;
     background-attachment: fixed;
   }
-  #home::after {
+  .welcome-section::after {
     position: absolute;
     content: "";
     top: 0;
@@ -1020,10 +1020,10 @@ hamburger
     }
   }
 }
-#home .hero {
+.welcome-section .hero {
   position: relative;
 }
-#home .hero .hero-bg {
+.welcome-section .hero .hero-bg {
   position: absolute;
   position: relative;
   width: 100vw;
@@ -1032,11 +1032,11 @@ hamburger
   isolation: isolate;
 }
 @media (min-width: 1024px) {
-  #home .hero .hero-bg {
+  .welcome-section .hero .hero-bg {
     display: none;
   }
 }
-#home .hero .hero-bg::after {
+.welcome-section .hero .hero-bg::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1046,7 +1046,7 @@ hamburger
   background: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
-#home .hero .hero-bg img {
+.welcome-section .hero .hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1058,7 +1058,7 @@ hamburger
     object-position: 40%;
   }
 }
-#home .hero #hero-content, #home .hero #hero-h1 {
+.welcome-section .hero #hero-content, .welcome-section .hero #hero-h1 {
   background: transparent;
   padding: 5vh 5vw;
   position: relative;
@@ -1067,21 +1067,21 @@ hamburger
   text-transform: capitalize;
 }
 @media (min-width: 768px) {
-  #home .hero #hero-content, #home .hero #hero-h1 {
+  .welcome-section .hero #hero-content, .welcome-section .hero #hero-h1 {
     width: max-content;
     top: 5vh;
   }
 }
 @media (min-width: 1024px) {
-  #home .hero #hero-content, #home .hero #hero-h1 {
+  .welcome-section .hero #hero-content, .welcome-section .hero #hero-h1 {
     top: 15vh;
   }
 }
-#home .hero #hero-content .hero-title, #home .hero #hero-content .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
+.welcome-section .hero #hero-content .hero-title, .welcome-section .hero #hero-content .slogan, .welcome-section .hero #hero-h1 .hero-title, .welcome-section .hero #hero-h1 .slogan {
   margin-bottom: 0.25rem;
   width: 100%;
 }
-#home .hero #hero-content .hero-title h1, #home .hero #hero-content .slogan h1, #home .hero #hero-h1 .hero-title h1, #home .hero #hero-h1 .slogan h1 {
+.welcome-section .hero #hero-content .hero-title h1, .welcome-section .hero #hero-content .slogan h1, .welcome-section .hero #hero-h1 .hero-title h1, .welcome-section .hero #hero-h1 .slogan h1 {
   text-transform: capitalize;
   text-align: center;
   text-align: left;
@@ -1092,29 +1092,29 @@ hamburger
   line-height: 1.25;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-content .hero-title h1, #home .hero #hero-content .slogan h1, #home .hero #hero-h1 .hero-title h1, #home .hero #hero-h1 .slogan h1 {
+  .welcome-section .hero #hero-content .hero-title h1, .welcome-section .hero #hero-content .slogan h1, .welcome-section .hero #hero-h1 .hero-title h1, .welcome-section .hero #hero-h1 .slogan h1 {
     font-size: 3.5rem;
   }
 }
-#home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
+.welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
   font-size: 0.85rem;
   font-weight: 400;
   color: #fff9;
 }
-#home .hero #hero-content .hero-title p a, #home .hero #hero-content .slogan p a, #home .hero #hero-h1 .hero-title p a, #home .hero #hero-h1 .slogan p a {
+.welcome-section .hero #hero-content .hero-title p a, .welcome-section .hero #hero-content .slogan p a, .welcome-section .hero #hero-h1 .hero-title p a, .welcome-section .hero #hero-h1 .slogan p a {
   color: inherit;
   font-size: inherit;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
+  .welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
     font-size: 1.35rem;
   }
 }
 @media (min-width: 1024px) {
-  #home .hero #hero-content .hero-title, #home .hero #hero-content .slogan, #home .hero #hero-h1 .hero-title, #home .hero #hero-h1 .slogan {
+  .welcome-section .hero #hero-content .hero-title, .welcome-section .hero #hero-content .slogan, .welcome-section .hero #hero-h1 .hero-title, .welcome-section .hero #hero-h1 .slogan {
     top: 15vh;
   }
-  #home .hero #hero-content .hero-title p, #home .hero #hero-content .slogan p, #home .hero #hero-h1 .hero-title p, #home .hero #hero-h1 .slogan p {
+  .welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
     text-align: center;
     text-align: left;
   }
@@ -1124,17 +1124,17 @@ hamburger
     opacity: 1;
   }
 }
-#home .hero #hero-content h1, #home .hero #hero-h1 h1 {
+.welcome-section .hero #hero-content h1, .welcome-section .hero #hero-h1 h1 {
   font-size: 2.15rem;
   display: block;
   color: #f4f4f4;
 }
 @media (min-width: 820px) {
-  #home .hero #hero-content h1, #home .hero #hero-h1 h1 {
+  .welcome-section .hero #hero-content h1, .welcome-section .hero #hero-h1 h1 {
     font-size: 3rem;
   }
 }
-#home .hero #hero-content h1 span, #home .hero #hero-h1 h1 span {
+.welcome-section .hero #hero-content h1 span, .welcome-section .hero #hero-h1 h1 span {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   display: inline-block;
@@ -1144,7 +1144,7 @@ hamburger
   /* HERO H1 INTRO ANIMATION */
 }
 @media (min-width: 768px) {
-  #home .hero #hero-content h1 span, #home .hero #hero-h1 h1 span {
+  .welcome-section .hero #hero-content h1 span, .welcome-section .hero #hero-h1 h1 span {
     font-size: 3rem;
   }
 }
@@ -1157,14 +1157,14 @@ hamburger
     opacity: 1;
   }
 }
-#home .hero #hero-content #aka, #home .hero #hero-h1 #aka {
+.welcome-section .hero #hero-content #aka, .welcome-section .hero #hero-h1 #aka {
   display: inline-block;
   font-size: 1.25rem;
   position: relative;
   color: #ddd;
   margin-top: 0.5rem;
 }
-#home .hero #hero-content #aka span, #home .hero #hero-h1 #aka span {
+.welcome-section .hero #hero-content #aka span, .welcome-section .hero #hero-h1 #aka span {
   color: inherit;
 }
 @keyframes aka {
@@ -1176,7 +1176,7 @@ hamburger
     opacity: 0.8;
   }
 }
-#home .hero #cta-header {
+.welcome-section .hero #cta-header {
   background: #dc143c;
   margin: 20vh 0 0;
   position: relative;
@@ -1194,17 +1194,17 @@ hamburger
   z-index: 2;
 }
 @media (max-width: 576px) {
-  #home .hero #cta-header {
+  .welcome-section .hero #cta-header {
     margin: 25vh 0 0;
   }
 }
 @media (min-width: 576px) {
-  #home .hero #cta-header {
+  .welcome-section .hero #cta-header {
     margin: 20vh 0 0;
   }
 }
 @media (min-width: 768px) {
-  #home .hero #cta-header {
+  .welcome-section .hero #cta-header {
     font-size: 1.5em;
     width: 20rem;
     text-align: center;
@@ -1212,7 +1212,7 @@ hamburger
   }
 }
 @media (min-width: 1024px) {
-  #home .hero #cta-header {
+  .welcome-section .hero #cta-header {
     margin: 15vh 0 0;
   }
 }
@@ -1226,7 +1226,7 @@ hamburger
     transform: translateX(0);
   }
 }
-#home .hero #cta-header::before, #home .hero #cta-header::after {
+.welcome-section .hero #cta-header::before, .welcome-section .hero #cta-header::after {
   position: absolute;
   content: "";
   top: 0;
@@ -1238,11 +1238,11 @@ hamburger
   border: none;
   outline: none;
 }
-#home .hero #cta-header::before {
+.welcome-section .hero #cta-header::before {
   box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
 }
-#home .hero #cta-header::after {
+.welcome-section .hero #cta-header::after {
   opacity: 1;
   z-index: -1;
   animation: 3s cta-btn infinite;
@@ -1253,7 +1253,7 @@ hamburger
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
   box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.25), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
-#home .hero #cta-header span {
+.welcome-section .hero #cta-header span {
   position: relative;
   display: inline-block;
   text-transform: none;
@@ -1279,31 +1279,82 @@ hamburger
   }
 }
 @media (max-width: 820px) {
-  #home .hero #cta-header:active {
+  .welcome-section .hero #cta-header:active {
     transition: 0.2s;
     transform: scale(0.95);
   }
-  #home .hero #cta-header:active::before {
+  .welcome-section .hero #cta-header:active::before {
     opacity: 0;
   }
-  #home .hero #cta-header:active::after {
+  .welcome-section .hero #cta-header:active::after {
     opacity: 1;
   }
 }
 @media (min-width: 820px) {
-  #home .hero #cta-header:hover {
+  .welcome-section .hero #cta-header:hover {
     transition: 0.2s;
     transform: scale(0.95);
     border-top-right-radius: 5rem;
   }
-  #home .hero #cta-header:hover::before {
+  .welcome-section .hero #cta-header:hover::before {
     border-top-right-radius: 5rem;
     opacity: 0;
   }
-  #home .hero #cta-header:hover::after {
+  .welcome-section .hero #cta-header:hover::after {
     border-top-right-radius: 5rem;
     opacity: 1;
   }
+}
+
+.skills-hero {
+  background: #29323c;
+  display: flex;
+  align-items: center;
+}
+.skills-hero .skills-menu {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  z-index: 2;
+}
+.skills-hero .skills-menu .menu-item {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  color: #f4f4f4;
+  display: block;
+  padding: clamp(.25rem, .5vw, 1rem) 0rem;
+}
+.skills-hero .skills-menu .menu-background {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 9%, transparent 9%);
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  transition: opacity 800ms ease, background-size 800ms ease;
+  transition: all 800ms ease;
+}
+.skills-hero .skills-menu:hover .menu-item {
+  opacity: 0.3;
+}
+.skills-hero .skills-menu:hover .menu-item:hover {
+  opacity: 1;
+}
+.skills-hero .skills-menu:hover .menu-background {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
+}
+.skills-hero .skills-menu[data-active-index="0"] .menu-background {
+  background-position: 0% -25%;
+}
+.skills-hero .skills-menu[data-active-index="1"] .menu-background {
+  background-position: 0% -50%;
+}
+.skills-hero .skills-menu[data-active-index="2"] .menu-background {
+  background-position: 0% -75%;
+}
+.skills-hero .skills-menu[data-active-index="3"] .menu-background {
+  background-position: 0% -100%;
 }
 
 #menu {
@@ -3841,6 +3892,7 @@ body span {
 section {
   padding: 5vh 0;
   width: 100%;
+  min-height: 100vh;
 }
 section .section-title {
   font-size: 2.25rem;

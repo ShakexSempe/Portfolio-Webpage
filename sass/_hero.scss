@@ -1,5 +1,5 @@
 // HERO
-#home {
+.welcome-section {
     padding: 0;
     min-height: 100vh;
     width: 100%;
@@ -423,7 +423,83 @@
     }
 }
 // END OF HERO
+// SKILLS PAGE HERO
+.skills-hero {
+    background: $overlay-blue-dark;
+    // padding: 10vh 5vw 5vh;
+    // padding: 0;
+    display: flex;
+    align-items: center;
 
+    .skills-menu {
+        margin-left: clamp(4rem, 20vw, 48rem);
+        z-index: 2;
+        // border: 2px solid blue;
+        .menu-item {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            color: #f4f4f4;
+            display: block;
+            padding: clamp(.25rem, .5vw, 1rem) 0rem;
+        }
+        
+
+        // MENU BACKGROUND
+        .menu-background {
+            height: 100vh;
+            width: 100vw;
+            // border: 2px solid red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: radial-gradient(
+                rgba(255, 255, 255, .1) 9%,
+                transparent 9%
+            );
+            background-position: 0% 0%;
+            background-size: 12vmin 12vmin;
+            transition: opacity 800ms ease, 
+            background-size 800ms ease;
+            transition: all 800ms ease;
+        
+        }
+        // REDUCE OPACITY OF MENU ITEMS WHEN MENU IS HOVERED THEN
+        // ADD OPACITY TO ACTIVE LINK
+        &:hover {
+            .menu-item {
+                opacity: .3;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .menu-background {
+                background-size: 11vmin 11vmin;
+                opacity: .5;
+            }
+        }
+
+        &[data-active-index="0"] {
+            .menu-background {
+                background-position: 0% -25%;
+            }
+        }
+        &[data-active-index="1"] {
+            .menu-background {
+                background-position: 0% -50%;
+            }
+        }
+        &[data-active-index="2"] {
+            .menu-background {
+                background-position: 0% -75%;
+            }
+        }
+        &[data-active-index="3"] {
+            .menu-background {
+                background-position: 0% -100%;
+            }
+        }
+    }
+}
 // MENU 
 #menu {
     // border: 2px solid yellow;
