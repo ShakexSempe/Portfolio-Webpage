@@ -2529,7 +2529,7 @@ hamburger
 }
 #projects .projects .all-projects .project-item .project-tile a i {
   transition: 0.2s;
-  color: #ead2a1;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.8rem;
   padding: 0.5rem 0;
 }
