@@ -152,13 +152,7 @@ progressBar = () => {
 //  SKILLS DROPDOWN
 /*  When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-dropdown = () => {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-const dropBtn = document.querySelector('[data-dropBtn]');
-dropBtn.addEventListener("click", () => {
-  dropBtn.classList.toggle("active");
-})
+
 //  Close the dropdown menu if the user clicks outside of it
 // window.onclick = function (event) {
 //   if (!event.target.matches('.dropbtn')) {
@@ -173,7 +167,14 @@ dropBtn.addEventListener("click", () => {
 //   }
 // }
 // end of skills dropdown
-
+// SKILLS DROPDOWN BUTTON
+dropdown = () => {
+  document.getElementById("myDropdown").classList.toggle("show");
+  const dropBtn = document.querySelector('[data-dropBtn]');
+  dropBtn.addEventListener("click", () => {
+    dropBtn.classList.toggle("active");
+  })
+}
 // READ MORE DROPDOWN
 // readBtn.addEventListener("click", ()=> {
 //   article.classList.toggle('active');
