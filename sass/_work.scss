@@ -85,7 +85,7 @@
                 margin: 1rem auto;
                 border: 1px solid #0004;
                 padding: .5rem;
-                border-radius: .25rem;
+                border-radius: .5rem;
 
 
                 img {
@@ -94,7 +94,13 @@
                     border-radius: .5rem;
                     object-fit: 100%;
                     object-fit: cover;
-                    transition: .3s;
+                    transition: .25s;
+                    // border: 1px solid #000;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.025);
+                    }
                 }
             }
 
@@ -231,13 +237,7 @@
                 text-align: center;
                 
             }
-            &:hover {
-                figure {
-                    img {
-                        transform: scale(1.05);
-                    }
-                }
-            }
+            
         }
     }
 }
