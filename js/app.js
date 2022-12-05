@@ -4,27 +4,23 @@ const linksContainer = document.querySelector('[links-container]');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.header .nav-list ul li');
-// const topLink = document.querySelector('.top-link');
 const progressBarStyle = document.querySelector('.progress-bar');
 const bottomNav = document.querySelector('.bottom-nav');
-
 // HAMBURGER MENU
 const hamburger = document.querySelector('.header #nav .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header #nav .nav-list .links-container');
 const menu_item = document.querySelectorAll('.header #nav .nav-list ul li a');
 const header = document.querySelector('header');
 const navLogo = document.querySelector('.logo');
-console.log(navLogo);
-// DATE
-const date = document.querySelectorAll('.date');
+// console.log(navLogo);
 /*  FOOTER DATE*/
+const date = document.querySelectorAll('.date');
 date.forEach(date => {
   date.innerHTML = new Date().getFullYear();
 })
-// INTERSECTION OBSERVER
-
-
 // ********** END OF VARIABLES ************
+
+// INTERSECTION OBSERVERS
 
 // ********** HERO SECTION INTERSECTION OBSERVER ************
 const hero = document.getElementById('home');
@@ -106,6 +102,7 @@ item.forEach(item => {
 });
 
 
+// ********** EVENT LISTENERS ************
 
 // HAMBURGER SELECT
 hamburger.addEventListener('click', () => {
@@ -168,12 +165,12 @@ toggle between hiding and showing the dropdown content */
 // }
 // end of skills dropdown
 // SKILLS DROPDOWN BUTTON
+const dropBtn = document.querySelector('[data-dropBtn]');
+dropBtn.addEventListener("click", () => {
+  dropBtn.classList.toggle("active");
+});
 dropdown = () => {
   document.getElementById("myDropdown").classList.toggle("show");
-  const dropBtn = document.querySelector('[data-dropBtn]');
-  dropBtn.addEventListener("click", () => {
-    dropBtn.classList.toggle("active");
-  })
 }
 // READ MORE DROPDOWN
 // readBtn.addEventListener("click", ()=> {
