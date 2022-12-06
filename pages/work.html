@@ -53,10 +53,11 @@
 
 <body>
     <!-- HEADER -->
-    <header id="header">
+    <header id="header" data-header class="header">
+        <!-- SKIP TO MAIN LINK -->
         <a class="skip-link" href="#main">skip to main content</a>
-        <div class="header">
-            <nav id="navbar">
+        <div class="navbar">
+            <nav id="nav">
                 <div class="logo">
                     <a href="#home" title="Shakex Sempe" class="scroll-link">
                         <p>shakex<span>Sempe</span></p>
@@ -66,13 +67,31 @@
                     <div class="hamburger">
                         <div class="bar"></div>
                     </div>
-                    <div class="links-container">
+                    <div class="links-container" data-linksContainer>
                         <ul class="links">
                             <!-- SKILLS LINK -->
                             <li>
-                                <i class="fas fa-house"></i>
-                                <a href="../index.html" title="web development skills" data-after="home"
-                                    class="scroll-link scroll-li">home</a>
+                                <i class="fas fa-lightbulb"></i>
+                                <a href="#skills" title="web development skills" data-after="skills"
+                                    class="scroll-link scroll-li">skills</a>
+                            </li>
+                            <!-- WORK[PROJECTS] LINK -->
+                            <li>
+                                <i class="fa-solid fa-earth-africa"></i>
+                                <a href="#work" title="github repositories" data-after="Projects"
+                                    class="scroll-link scroll-li">projects</a>
+                            </li>
+                            <!-- ABOUT LINK -->
+                            <li>
+                                <i class="fas fa-user-circle"></i>
+                                <a href="#about" title="about Boitumelo Sempe" data-after="About"
+                                    class="scroll-link scroll-li">about</a>
+                            </li>
+                            <!-- PROJECTS[PORTFOLIO] LINK -->
+                            <li>
+                                <i class="fab fa-github"></i>
+                                <a href="#projects" title="github repositories" data-after="portfolio"
+                                    class="scroll-link scroll-li">portfolio</a>
                             </li>
                             <!-- CONTACT LINK -->
                             <li>
@@ -80,10 +99,15 @@
                                 <a href="#contact" title="contact-info" data-after="Contact"
                                     class="scroll-link scroll-li">contact</a>
                             </li>
+                            <!-- SOCIALS -->
+                            <!-- <li>
+                <i class="fas fa-user-friends"></i>
+                <a href="#footer" title="social-links" data-after="Socials" class="scroll-link scroll-li">socials</a>
+              </li> -->
                             <!-- FORM -->
                             <li>
                                 <i class="fas fa-at"></i>
-                                <a href="../forms/form.html" title="contact-form" data-after="form"
+                                <a href="forms/form.html" title="contact-form" data-after="form"
                                     class="scroll-li">form</a>
                             </li>
 
@@ -91,23 +115,28 @@
                         <div class="contact-links">
                             <a title="Email Address" href="mailto:bshakex@gmail.com"><i
                                     class="fa-solid fa-envelope"></i>bshakex@gmail.com</a>
-                            <a title="Whatsapp number" href="tel:+27716876941"><i
-                                    class="fa-brands fa-whatsapp"></i>+27716876941 (Whatsapp)</a>
+                            <a title="Whatsapp number" href="https://wa.me/+27716876941" target="_blank"><i
+                                    class="fa-brands fa-whatsapp"></i>0716876941 (Whatsapp)</a>
                             <a title="Phone number" href="tel:0726005104"><i
                                     class="fa-solid fa-phone"></i>0726005104</a>
-                            <a title="Phone number" href="https://goo.gl/maps/iSkbB2vbPQ3n3mhK9" target="_blank"><i
+                            <a title="Location" href="https://goo.gl/maps/iSkbB2vbPQ3n3mhK9" target="_blank"><i
                                     class="fa-solid fa-location-dot"></i>Mahikeng, South Africa</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
+        <!-- PROGRESS BAR-->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <!-- END OF PROGRESS BAR-->
     </header>
-     <!-- PROGRESS BAR-->
-     <div class="progress-container">
+    <!-- PROGRESS BAR-->
+    <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
-      </div> 
-      <!-- END OF PROGRESS BAR-->
+    </div>
+    <!-- END OF PROGRESS BAR-->
     <!-- END OF HERO-->
 
     <!--HERO-->
@@ -166,9 +195,9 @@
                                 <img src="../img/orich-min.jpg" alt="Orich Trading & Projects">
                             </a>
                         </figure>
-                        <a class="view-site-btn" href="https://orich-trading-projects.netlify.app/" target="_blank">view
+                        <a class="work-btn view-site-btn" href="https://orich-trading-projects.netlify.app/" target="_blank">view
                             website</a>
-                        <a class="view-repo-btn" href="https://github.com/ShakexSempe/orich-trading"
+                        <a class="work-btn view-repo-btn" href="https://github.com/ShakexSempe/orich-trading"
                             target="_blank">view repository</a>
                     </div>
                     <!-- HLAVUTELO -->
@@ -183,9 +212,9 @@
                                 <img src="../img/hlavutelo-logo.png" alt="Hlavutelo Trading & Projects">
                             </a>
                         </figure>
-                        <a class="view-site-btn" title="Visit Website" href="https://hlavutelotrading.co.za/"
+                        <a class="work-btn view-site-btn" title="Visit Website" href="https://hlavutelotrading.co.za/"
                             target="_blank">view website</a>
-                        <a class="view-repo-btn" title="iew Repository" href="https://github.com/ShakexSempe/hlavutelo"
+                        <a class="work-btn view-repo-btn" title="iew Repository" href="https://github.com/ShakexSempe/hlavutelo"
                             target="_blank">view repository</a>
                     </div>
                     <!-- MUNCH UP -->
@@ -199,11 +228,11 @@
                                 <img src="../img/munch-logo-min.jpg" alt="Munch Up-logo">
                             </a>
                         </figure>
-                        <a class="view-site-btn" href="https://munch-up.netlify.app/" target="_blank">view website</a>
-                        <a class="view-repo-btn" href="https://github.com/ShakexSempe/munch-up" target="_blank">view
+                        <a class="work-btn view-site-btn" href="https://munch-up.netlify.app/" target="_blank">view website</a>
+                        <a class="work-btn view-repo-btn" href="https://github.com/ShakexSempe/munch-up" target="_blank">view
                             repository</a>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -252,8 +281,8 @@
                                 <img src="../img/ksauce.jpg" alt="k'Sauce">
                             </a>
                         </figure>
-                        <a class="view-site-btn" href="https://ksauce.netlify.app/" target="_blank">view website</a>
-                        <a class="view-repo-btn" href="https://github.com/ShakexSempe/kutlwano-hot-sauce"
+                        <a class="work-btn view-site-btn" href="https://ksauce.netlify.app/" target="_blank">view website</a>
+                        <a class="work-btn view-repo-btn" href="https://github.com/ShakexSempe/kutlwano-hot-sauce"
                             target="_blank">view repository</a>
                     </div>
                     <!-- MAGOVENI -->
@@ -268,9 +297,9 @@
                                 <img src="../img/mkansi-min.png" alt="Orich trading & projects">
                             </a>
                         </figure>
-                        <a class="view-site-btn" href="https://ngoveni-construction.netlify.app/" target="_blank">view
+                        <a class="work-btn view-site-btn" href="https://ngoveni-construction.netlify.app/" target="_blank">view
                             website</a>
-                        <a class="view-repo-btn" href="https://github.com/ShakexSempe/ngoveni-construction"
+                        <a class="work-btn view-repo-btn" href="https://github.com/ShakexSempe/ngoveni-construction"
                             target="_blank">view repository</a>
                     </div>
                     <!-- THATO -->
@@ -285,9 +314,9 @@
                                 <img src="../img/thato2-logo-min.png" alt="Orich trading & projects">
                             </a>
                         </figure>
-                        <a class="view-site-btn" href="https://thato-technical-drawings.netlify.app/"
+                        <a class="work-btn view-site-btn" href="https://thato-technical-drawings.netlify.app/"
                             target="_blank">view website</a>
-                        <a class="view-repo-btn" href="https://github.com/ShakexSempe/thato-tech-drawings"
+                        <a class="work-btn view-repo-btn" href="https://github.com/ShakexSempe/thato-tech-drawings"
                             target="_blank">view repository</a>
                     </div>
                 </div>
