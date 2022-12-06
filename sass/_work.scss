@@ -7,23 +7,26 @@
     }
 
     .work-items {
-        margin-top: 15vh;
+        margin-top: 10vh;
         display: grid;
         grid-template-columns: 1fr;
         gap: 10vh;
-        @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-
+        @include md {
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
         }
+        @include xlg {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            }
         .work-item {
             // border: 1px solid #0002;
-            padding: 5vh 0;
+            padding: 1rem 0;
             width: 100%;
             border-radius: .5rem;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            // justify-content: space-between;
             // background: hsl(211, 16%, 97%);
             // background: #fafafa;
             // background: linear-gradient(180deg, hsl(211, 16%, 95%) 0%, hsl(211, 16%, 95%) 100%);
@@ -71,36 +74,43 @@
                 }
             }
             figure {
-                width: 15rem;
-                margin: 1rem auto;
+                width: 100%;
+                width: 20rem;
                 height: auto;
+                margin: .5rem auto 1rem;
                 border-radius: .5rem;
                 overflow: hidden;
-                border: 1px solid #0004;
-                padding: .5rem;
+                // border: 1px solid #0004;
+                padding: 10vh 10vw;
+                padding: 1rem;
                 border-radius: .5rem;
+                background: $overlay-blue-darker;
+                transition: .25s;
+                @include sm {
+                    padding: 1rem;
+                    width: 20rem;
+                    height: 55vh;
+                    border: 1px solid #000;
+                }
 
                 
                 img {
                     width: 100%;
-                    height: auto;
+                    height: 100%;
                     border-radius: .5rem;
-                    object-fit: 100%;
                     object-fit: cover;
+                    // object-position: center;
                     transition: .25s;
-                    // border: 1px solid #000;
-                }
-                @media (min-width: 768px) {
-                    width: 15rem;
-                    width: 15rem;
-                    height: 20rem;
-                    img {
+                    border: 1px solid #fff4;
+                    @include md {
                         height: 100%;
                         width: 100%;
-                        object-fit: cover;
+                        object-position: center;
+                        object-fit: contain;
                     }
                 }
                 &:hover {
+                    background: $overlay-blue-dark;
                     img {
                         transform: scale(1.025);
                     }
@@ -122,6 +132,9 @@
                 letter-spacing: .05rem;
                 position: relative;
                 isolation: isolate;
+                @include md {
+                    width: 15rem;
+                }
                 // BUTTON PSEUDO SHADOWS AND BG
                 &::before, &::after {
                     position: absolute;

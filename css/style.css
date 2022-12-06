@@ -2640,24 +2640,29 @@ hamburger
   }
 }
 .work .work-items {
-  margin-top: 15vh;
+  margin-top: 10vh;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10vh;
 }
 @media (min-width: 768px) {
   .work .work-items {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .work .work-items {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
 }
 .work .work-items .work-item {
-  padding: 5vh 0;
+  padding: 1rem 0;
   width: 100%;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .work .work-items .work-item.io-item {
   transform: scale(1) translateY(10vh);
@@ -2698,34 +2703,44 @@ hamburger
   color: #000;
 }
 .work .work-items .work-item figure {
-  width: 15rem;
-  margin: 1rem auto;
+  width: 100%;
+  width: 20rem;
   height: auto;
+  margin: 0.5rem auto 1rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  border: 1px solid #0004;
-  padding: 0.5rem;
+  padding: 10vh 10vw;
+  padding: 1rem;
   border-radius: 0.5rem;
+  background: #20262e;
+  transition: 0.25s;
+}
+@media (min-width: 576px) {
+  .work .work-items .work-item figure {
+    padding: 1rem;
+    width: 20rem;
+    height: 55vh;
+    border: 1px solid #000;
+  }
 }
 .work .work-items .work-item figure img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 0.5rem;
-  object-fit: 100%;
   object-fit: cover;
   transition: 0.25s;
+  border: 1px solid #fff4;
 }
 @media (min-width: 768px) {
-  .work .work-items .work-item figure {
-    width: 15rem;
-    width: 15rem;
-    height: 20rem;
-  }
   .work .work-items .work-item figure img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-position: center;
+    object-fit: contain;
   }
+}
+.work .work-items .work-item figure:hover {
+  background: #29323c;
 }
 .work .work-items .work-item figure:hover img {
   transform: scale(1.025);
@@ -2745,6 +2760,11 @@ hamburger
   letter-spacing: 0.05rem;
   position: relative;
   isolation: isolate;
+}
+@media (min-width: 768px) {
+  .work .work-items .work-item .work-btn {
+    width: 15rem;
+  }
 }
 .work .work-items .work-item .work-btn::before, .work .work-items .work-item .work-btn::after {
   position: absolute;
@@ -3937,7 +3957,7 @@ section .section-title {
 }
 .section-pad.pad-logo {
   overflow: hidden;
-  height: 100vh;
+  height: 60vh;
   background-color: #29323c;
 }
 .section-pad.pad-logo [data-scroll=in] {
@@ -3945,7 +3965,7 @@ section .section-title {
   transform: scale(1);
 }
 .section-pad.pad-logo figure {
-  transform: scale(1.5);
+  transform: scale(1);
   margin: 0 auto;
 }
 .section-pad.pad-logo figure img {
