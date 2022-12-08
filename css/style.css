@@ -328,7 +328,7 @@ hamburger
   bottom: 0;
   height: 8vh;
   width: 100%;
-  background: linear-gradient(0deg, #15191e, #20262e);
+  background: linear-gradient(0deg, #000, #15191e);
   z-index: 40;
   display: flex;
   justify-content: space-between;
@@ -541,6 +541,7 @@ hamburger
   width: 100%;
   height: 100%;
   background: #20262e;
+  background: #000;
   z-index: -1;
   opacity: 0;
   transition: 0.25s;
@@ -647,6 +648,7 @@ hamburger
     width: 100vw;
     height: 100vh;
     background-color: #1b2127;
+    background-color: #000;
     transition: 0.5s ease;
     z-index: 5;
   }
@@ -2712,7 +2714,7 @@ hamburger
   padding: 10vh 10vw;
   padding: 1rem;
   border-radius: 0.5rem;
-  background: #20262e;
+  background: #15191e;
   transition: 0.25s;
 }
 @media (min-width: 576px) {
@@ -3040,7 +3042,7 @@ hamburger
 .about .col-right .article-container article p#intro#intro::first-letter {
   font-size: 2.5em;
   float: left;
-  background: #20262e;
+  background: #15191e;
   color: #fff9;
   color: #f4f4f4;
   padding: 0 0.1em;
@@ -3226,7 +3228,6 @@ hamburger
 
 #footer {
   background-image: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
-  background-color: #333;
   padding: 0 0 5vh 0;
 }
 #footer .footer {
