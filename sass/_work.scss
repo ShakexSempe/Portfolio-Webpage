@@ -76,10 +76,11 @@
             figure {
                 width: 100%;
                 width: 20rem;
-                height: auto;
+                height: 40vh;
                 margin: .5rem auto 1rem;
                 border-radius: .5rem;
-                overflow: hidden;
+                overflow-x: hidden;
+                overflow-y: auto;
                 // border: 1px solid #0004;
                 padding: 10vh 10vw;
                 padding: 1rem;
@@ -96,12 +97,12 @@
                 
                 img {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     border-radius: .5rem;
                     object-fit: cover;
                     // object-position: center;
                     transition: .25s;
-                    border: 1px solid #fff4;
+                    // border: 1px solid #fff4;
                     @include md {
                         height: 100%;
                         width: 100%;

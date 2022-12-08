@@ -2705,10 +2705,11 @@ hamburger
 .work .work-items .work-item figure {
   width: 100%;
   width: 20rem;
-  height: auto;
+  height: 40vh;
   margin: 0.5rem auto 1rem;
   border-radius: 0.5rem;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding: 10vh 10vw;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -2725,11 +2726,10 @@ hamburger
 }
 .work .work-items .work-item figure img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 0.5rem;
   object-fit: cover;
   transition: 0.25s;
-  border: 1px solid #fff4;
 }
 @media (min-width: 768px) {
   .work .work-items .work-item figure img {
