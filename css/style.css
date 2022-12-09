@@ -2721,8 +2721,8 @@ hamburger
   color: #000;
 }
 .work .work-items .work-item figure {
-  width: 100%;
   width: 20rem;
+  width: 100%;
   height: 50vh;
   margin: 0.5rem auto 1rem;
   border-radius: 0.5rem;
@@ -2732,36 +2732,35 @@ hamburger
   padding: 1rem;
   border-radius: 0.5rem;
   background: #15191e;
-  transition: 0.25s;
-}
-@media (min-width: 576px) {
-  .work .work-items .work-item figure {
-    padding: 1rem;
-    width: 20rem;
-    height: 55vh;
-    border: 1px solid #000;
-  }
+  transition: 0.5s;
 }
 .work .work-items .work-item figure img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
   object-fit: cover;
-  transition: 0.25s;
+  transition: 0.5s;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+  .work .work-items .work-item figure {
+    padding: 1rem;
+    width: 20rem;
+    height: 55vh;
+    overflow: hidden;
+  }
   .work .work-items .work-item figure img {
     height: 100%;
     width: 100%;
-    object-position: center;
     object-fit: contain;
+    transition: 0.5s ease;
   }
 }
 .work .work-items .work-item figure:hover {
   background: #29323c;
 }
 .work .work-items .work-item figure:hover img {
-  transform: scale(1.025);
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .work .work-items .work-item .work-btn {
   border: none;
