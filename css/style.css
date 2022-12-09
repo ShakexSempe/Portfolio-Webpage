@@ -1995,7 +1995,7 @@ hamburger
   justify-content: space-between;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem 0.5rem 0.5rem 2rem;
+  padding: 1.5rem 0.5rem 1rem 2rem;
   background: transparent;
   background-size: cover;
   position: relative;
@@ -2082,7 +2082,7 @@ hamburger
 }
 #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon i {
   color: #ead2a1;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 @media (min-width: 576px) {
   #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {

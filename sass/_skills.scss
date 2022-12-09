@@ -267,7 +267,7 @@
                     justify-content: space-between;
                     justify-content: center;
                     flex-direction: column;
-                    padding: 1rem .5rem .5rem 2rem;
+                    padding: 1.5rem .5rem 1rem 2rem;
                     background: transparent;
                     background-size: cover;
                     // margin: 10vh 5vw;
@@ -373,7 +373,7 @@
                         // end of icon img
                         i {
                             color:$span-gold;
-                            font-size: 2.5rem;
+                            font-size: 2rem;
                         }
                         @include sm {
                             height: 4rem;
