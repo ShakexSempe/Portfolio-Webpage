@@ -182,7 +182,7 @@
                 &.active {
                     transform: scale(.98);
                     letter-spacing: normal;
-                    color: $span-gold;
+                    color: $brand;
                     i {
                         color: $text-light;
                     }
@@ -222,11 +222,12 @@
             // align-items: center;
             background: $overlay-blue-darkest;
             position: relative;
+            
             // padding-bottom: 10vh;
             // border: 2px solid yellow;
             padding: 5vh 5vw;
             @include lg {
-                // padding: 10vh 5vw;
+                padding: 10vh 5vw;
             }
             // skills items container
             .skills-bottom {
@@ -247,6 +248,10 @@
                 //     grid-template-columns: 1fr 1fr;
                 //     gap: 1rem;
                 // }
+                @include sm {
+                    gap: 1.5rem;
+                    grid-template-columns: 1fr 1fr;
+                }
                 @include md {
                     gap: 1.5rem;
                     grid-template-columns: 1fr 1fr 1fr;
@@ -258,9 +263,11 @@
                     width: 100%;
                     display: flex;
                     align-items: center;
+                    align-items: flex-start;
                     justify-content: space-between;
+                    justify-content: center;
                     flex-direction: column;
-                    padding: 1rem .5rem .5rem 1.5rem;
+                    padding: 1rem .5rem .5rem 2rem;
                     background: transparent;
                     background-size: cover;
                     // margin: 10vh 5vw;
@@ -305,7 +312,8 @@
                             }
 
                             &::marker {
-                                color: $span-gold;
+                                color: $brand;
+                                color: #fff4;
                             }
                         }
 
@@ -320,6 +328,7 @@
                         border-radius: 10px;
                         width: 100%;
                         background: $overlay;
+                        background: $skill-item-overlay;
                         opacity: 0.8;
                         z-index: -1;
                     }
@@ -351,11 +360,12 @@
                         outline: none;
                         border-radius: 50%;
                         padding: 10px;
-                        margin-bottom: 1rem;
+                        margin-bottom: .5rem;
                         // margin-top: 15px;
                         // margin-bottom: 20px;
                         position: relative;
                         isolation: isolate;
+                        
                         // icon img
                         img {
                             width: 80%;
@@ -363,9 +373,15 @@
                         // end of icon img
                         i {
                             color:$span-gold;
-                            font-size: 2rem;
+                            font-size: 2.5rem;
                         }
-                        
+                        @include sm {
+                            height: 4rem;
+                            width: 4rem;
+                            i {
+                                font-size: 2.25rem;
+                            }
+                        }
                         // icon box shadow and background
                         &::before {
                             content: '';
@@ -377,27 +393,27 @@
                             border-radius: 50%;
                             z-index: -1;
                             box-shadow: 
-                                        inset 2px 2px 3px rgba(255, 255, 255, .2),
-                                        inset -2px -2px 5px rgba(0, 0, 0, 0.25),
-                                        3px 3px 4px #000a;
+                                        inset 2px 2px 3px rgba(255, 255, 255, .125),
+                                        inset -2px -2px 5px rgba(0, 0, 0, 0.125),
+                                        3px 3px 4px rgba(0, 0, 0, .125);
                             animation: skill-icon 10s linear infinite;
 
                             @keyframes skill-icon {
                                 25% {
                                     box-shadow: 
-                                            inset -2px 3px 3px rgba(255, 255, 255, .2),
-                                            inset 2px -2px 5px rgba(0, 0, 0, 0.25),
-                                            -3px 3px 4px #000a;
+                                            inset -2px 3px 3px rgba(255, 255, 255, .15),
+                                            inset 2px -2px 5px rgba(0, 0, 0, 0.15),
+                                            -3px 3px 4px rgba(0, 0, 0, .125);
                                 }
                                 50% {
-                                    box-shadow: inset 0px -1px 3px rgba(255, 255, 255, .2),
-                                                inset 0px 2px 5px rgba(0, 0, 0, 0.25),
-                                                0 2px 4px #000a ;
+                                    box-shadow: inset 0px -1px 3px rgba(255, 255, 255, .15),
+                                                inset 0px 2px 5px rgba(0, 0, 0, 0.15),
+                                                0 2px 4px rgba(0, 0, 0, .125) ;
                                 }
                                 75% {
-                                    box-shadow: inset 2px 0px 3px rgba(255, 255, 255, .2),
-                                                inset -2px 0px 5px rgba(0, 0, 0, 0.25),
-                                                -2px 2px 4px #000a;
+                                    box-shadow: inset 2px 0px 3px rgba(255, 255, 255, .15),
+                                                inset -2px 0px 5px rgba(0, 0, 0, 0.15),
+                                                -2px 2px 4px rgba(0, 0, 0, .125);
                                 }
                             }
                         }
@@ -425,10 +441,10 @@
                         margin-bottom: .5rem;
                         text-transform: capitalize;
                         font-family: $font-title;
-                        text-decoration: underline $span-gold;
-                        text-underline-offset: .1em;
+                        // text-decoration: underline $span-gold;
+                        // text-underline-offset: .1em;
                         @include lg {
-                            font-size: 1.5rem;
+                            font-size: 1.25rem;
                         }
                     }
                     // end of skills item title (h2)
@@ -444,8 +460,8 @@
                         // flex-basis: 25%;
                         width: 100%;
                         margin: 0;
-                        height: 300px;
-                        height: 55vh;
+                        // height: 300px;
+                        // height: 55vh;
                         // justify-content: space-evenly;
                         pointer-events: visible;
                         cursor: pointer;
@@ -453,12 +469,6 @@
                         &:hover {
                             transition: .2s;
                             transform: scale(1.0255);
-                        }
-                        ul {
-                            li {
-                                font-size: 1em;
-                                
-                            }
                         }
                     }
                     // end of skills items on desktop

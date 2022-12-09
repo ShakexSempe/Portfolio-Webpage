@@ -47,6 +47,7 @@ $background-dark: #333;
 $background-light: #fff;
 
 $overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
+$skill-item-overlay: linear-gradient(90deg, #29323c 0%, #485563 100%);
 $overlay: linear-gradient(0deg, #29323c 0%, #485563 100%);
 $overlay-dark: linear-gradient(0deg, #20262e 0%, #29323c 100%);
 $overlay-dark: linear-gradient(0deg, hsl(214, 18%, 15%) 30% , hsl(212, 19%, 25%) 70%);
@@ -64,6 +65,7 @@ $ul-background: #1f1e1e;
 $overlay-footer: linear-gradient(0deg, #20262e, #29323c);
 $overlay-footer: linear-gradient(0deg, #15191e, #20262e);
 $overlay-footer: linear-gradient(0deg, #000, #15191e);
+$skill-item-overlay: linear-gradient(90deg, $overlay-blue-darker 0%, $overlay-blue-dark 100%);
 
 // button colors
 $button-background-grey: #8584844b;
