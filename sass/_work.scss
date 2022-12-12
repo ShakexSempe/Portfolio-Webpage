@@ -86,6 +86,8 @@
                 border-radius: .5rem;
                 background: $overlay-blue-darkest;
                 transition: .5s;
+                // overflow: auto;
+                // display: flex;
                 img {
                     width: 100%;
                     height: auto;
@@ -111,13 +113,45 @@
                     }
                 }
 
-                
-                
                 &:hover {
                     background: $overlay-blue-dark;
                     img {
                         transform: scale(1.05);
                         transition: .5s;
+                    }
+                }
+
+                // SCROLL SNAP GALLERY
+                &.scroll-snap {
+                    // border: 2px solid blue;
+                    display: flex;
+                    gap: 10vw;
+                    overflow-x: auto;
+                    overflow-y: auto;
+                    flex: none;
+                    width: 20rem;
+                    width: 100%;
+                    height: auto;
+                    // height: 128px;
+                    flex-flow: row nowrap;
+                    scroll-snap-type: x mandatory;
+                    @include md {
+                        height: 55vh;
+                    }
+
+                    img {
+                        // border: 2px solid yellow;
+                        scroll-snap-align: center;
+                        flex: none;
+                        width: 100%;
+                    }
+                    &:hover {
+                        img {
+                            transform: scale(1.025);
+                            @include md {
+                                transform: scale(1.125);
+                            }
+                        }
                     }
                 }
             }

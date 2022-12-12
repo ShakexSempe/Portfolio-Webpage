@@ -2762,6 +2762,36 @@ hamburger
   transform: scale(1.05);
   transition: 0.5s;
 }
+.work .work-items .work-item figure.scroll-snap {
+  display: flex;
+  gap: 10vw;
+  overflow-x: auto;
+  overflow-y: auto;
+  flex: none;
+  width: 20rem;
+  width: 100%;
+  height: auto;
+  flex-flow: row nowrap;
+  scroll-snap-type: x mandatory;
+}
+@media (min-width: 768px) {
+  .work .work-items .work-item figure.scroll-snap {
+    height: 55vh;
+  }
+}
+.work .work-items .work-item figure.scroll-snap img {
+  scroll-snap-align: center;
+  flex: none;
+  width: 100%;
+}
+.work .work-items .work-item figure.scroll-snap:hover img {
+  transform: scale(1.025);
+}
+@media (min-width: 768px) {
+  .work .work-items .work-item figure.scroll-snap:hover img {
+    transform: scale(1.125);
+  }
+}
 .work .work-items .work-item .work-btn {
   border: none;
   outline: none;
