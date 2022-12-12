@@ -3273,7 +3273,7 @@ hamburger
 }
 
 #footer {
-  background-image: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  background: #15191e;
   padding: 0 0 5vh 0;
 }
 #footer .footer {
