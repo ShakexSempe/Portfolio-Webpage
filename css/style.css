@@ -2767,8 +2767,8 @@ hamburger
   overflow-x: auto;
   overflow-y: auto;
   flex: none;
-  width: 20rem;
   width: 100%;
+  width: 15rem;
   height: auto;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
