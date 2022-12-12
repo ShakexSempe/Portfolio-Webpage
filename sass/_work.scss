@@ -124,8 +124,9 @@
                 // SCROLL SNAP GALLERY
                 &.scroll-snap {
                     // border: 2px solid blue;
+                    position: relative;
                     display: flex;
-                    gap: 10vw;
+                    gap: 5vw;
                     overflow-x: auto;
                     overflow-y: auto;
                     flex: none;

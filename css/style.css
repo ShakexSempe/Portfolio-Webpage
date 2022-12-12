@@ -2762,8 +2762,9 @@ hamburger
   transition: 0.5s;
 }
 .work .work-items .work-item figure.scroll-snap {
+  position: relative;
   display: flex;
-  gap: 10vw;
+  gap: 5vw;
   overflow-x: auto;
   overflow-y: auto;
   flex: none;
