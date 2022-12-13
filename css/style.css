@@ -2681,6 +2681,13 @@ hamburger
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .work .work-items .work-item {
+    align-items: center;
+  }
 }
 .work .work-items .work-item.io-item {
   transform: scale(1) translateY(10vh);
@@ -2691,6 +2698,7 @@ hamburger
 }
 .work .work-items .work-item .work-title {
   text-align: center;
+  text-align: left;
   margin-bottom: 2.5vh;
 }
 .work .work-items .work-item .work-title h3 {
@@ -2723,7 +2731,6 @@ hamburger
   width: 20rem;
   width: 100%;
   height: 50vh;
-  margin: 0.5rem auto 1rem;
   border-radius: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto;
@@ -2762,6 +2769,7 @@ hamburger
   transition: 0.5s;
 }
 .work .work-items .work-item figure.scroll-snap {
+  background: #f4f4f4;
   position: relative;
   display: flex;
   gap: 5vw;
@@ -2771,6 +2779,7 @@ hamburger
   width: 100%;
   width: 15rem;
   height: auto;
+  isolation: isolate;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
 }
@@ -2798,9 +2807,10 @@ hamburger
   border-radius: 0.5rem;
   padding: 0.7rem 0.5rem;
   text-transform: capitalize;
-  margin: 0 auto 0.8rem;
+  margin: 1rem 0 0;
   display: block;
   text-align: center;
+  text-align: left;
   text-decoration: none;
   width: 15rem;
   transition: 0.2s;
@@ -2811,6 +2821,7 @@ hamburger
 @media (min-width: 768px) {
   .work .work-items .work-item .work-btn {
     width: 15rem;
+    text-align: center;
   }
 }
 .work .work-items .work-item .work-btn::before, .work .work-items .work-item .work-btn::after {
