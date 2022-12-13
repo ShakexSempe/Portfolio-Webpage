@@ -204,7 +204,7 @@ hamburger
 }
 .top-link::before {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .top-link::after {
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
@@ -291,7 +291,7 @@ hamburger
   z-index: -1;
 }
 .btn::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.3));
 }
 .btn::after {
@@ -1240,7 +1240,7 @@ hamburger
   outline: none;
 }
 .welcome-section .hero #cta-header::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
 }
 .welcome-section .hero #cta-header::after {
@@ -1490,7 +1490,7 @@ hamburger
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::before {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::after {
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
@@ -1919,7 +1919,7 @@ hamburger
 }
 #skills .dropdown .dropbtn::before {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #skills .dropdown .dropbtn::after {
   background: linear-gradient(0deg, #485563, #20262e);
@@ -1971,7 +1971,7 @@ hamburger
   /*items wrapped onto multiple lines*/
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5vh;
+  gap: 10vh;
 }
 @media (min-width: 576px) {
   #skills .dropdown .dropdown-content .skills-bottom {
@@ -1994,14 +1994,14 @@ hamburger
   justify-content: space-between;
   justify-content: center;
   flex-direction: column;
-  padding: 1.5rem 0.5rem 1rem 2rem;
+  padding: 2rem 0.5rem 2rem 2rem;
   background: transparent;
   background-size: cover;
   position: relative;
   z-index: 1;
   text-overflow: ellipsis;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0.25rem;
   height: auto;
   isolation: isolate;
 }
@@ -2045,10 +2045,9 @@ hamburger
   left: 0;
   top: 0;
   height: 100%;
-  border-radius: 10px;
   width: 100%;
-  background: linear-gradient(0deg, #29323c 0%, #485563 100%);
   background: linear-gradient(90deg, #20262e 0%, #29323c 100%);
+  border-radius: 0.5rem;
   opacity: 0.8;
   z-index: -1;
 }
@@ -2058,9 +2057,9 @@ hamburger
   top: 0;
   left: 0;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   height: 100%;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
 #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {
@@ -2070,7 +2069,7 @@ hamburger
   width: 5rem;
   border: none;
   outline: none;
-  border-radius: 50%;
+  border-radius: 0.25rem;
   padding: 10px;
   margin-bottom: 0.5rem;
   position: relative;
@@ -2092,14 +2091,16 @@ hamburger
     font-size: 2.25rem;
   }
 }
-#skills .dropdown .dropdown-content .skills-bottom .skills-item .icon::before {
-  content: "";
+#skills .dropdown .dropdown-content .skills-bottom .skills-item .icon::before, #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon::after {
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+#skills .dropdown .dropdown-content .skills-bottom .skills-item .icon::before {
   z-index: -1;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.125), inset -2px -2px 5px rgba(0, 0, 0, 0.125), 3px 3px 4px rgba(0, 0, 0, 0.125);
   animation: skill-icon 10s linear infinite;
@@ -2116,16 +2117,9 @@ hamburger
   }
 }
 #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #29323c;
-  border-radius: 50%;
+  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
   z-index: -2;
-  opacity: 0.4;
+  opacity: 1;
 }
 #skills .dropdown .dropdown-content .skills-bottom .skills-item h3 {
   font-size: 1.25rem;
@@ -2365,7 +2359,7 @@ hamburger
 }
 #contact .contact .contact-items .contact-item .contact-info a::before {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #contact .contact .contact-items .contact-item .contact-info a::after {
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
@@ -2561,7 +2555,7 @@ hamburger
   font-size: 0.9rem;
   transition: 0.3s;
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
   margin-left: 0.5rem;
@@ -2867,7 +2861,7 @@ hamburger
 }
 .work .work-items .work-item .view-site-btn::before {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .work .work-items .work-item .view-site-btn::after {
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
@@ -2974,7 +2968,7 @@ hamburger
   position: absolute;
   opacity: 0;
   z-index: 20;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .about .col-right .about-title h2 {
   display: inline-block;
@@ -3014,7 +3008,7 @@ hamburger
 }
 .about .col-right button {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   color: #fff;
   margin: 1rem auto;
   padding: 0.7rem;
@@ -3414,7 +3408,7 @@ hamburger
 }
 #footer .footer form button::before {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #footer .footer form button::after {
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
@@ -3526,7 +3520,7 @@ hamburger
   z-index: -1;
 }
 #footer .footer .socialMedia-links .socialMedia-item a::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.2), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #footer .footer .socialMedia-links .socialMedia-item a::after {
   opacity: 0;
