@@ -257,26 +257,6 @@
                     opacity: 0;
                 }
                 
-                // HOVER AND ACTIVE MEDIA QUERY
-                // DESKTOP HOVER STATE
-                @media (min-width: 820px){
-                    width: 15rem;
-                    &:hover {
-                        transform: scale(.95);
-                        letter-spacing: normal;
-                        &::before {opacity: 0;}
-                        &::after {opacity: 1;}
-                    }
-                }
-                // MOBILE ACTIVE CLASS
-                @media (max-width: 820px){
-                    &:active {
-                        transform: scale(.95);
-                        letter-spacing: normal;
-                        &::before {opacity: 0;}
-                        &::after {opacity: 1;}
-                    }
-                }
             }
             // GITHUB REPO
             .view-repo-btn {
