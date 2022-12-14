@@ -64,8 +64,18 @@
                 p {
                     color: $overlay-blue-light;
                     font-size: 1rem;
-
+                    // border: 1px solid red;
+                    
                     a {
+                        position: relative;
+                        &::after {
+                            content: '\f08e';
+                            position: absolute;
+                            right: -1.5rem;
+                        bottom: 0;
+                            font-weight: 600;
+                            font-family: "Font Awesome 6 Free";
+                        }
                         color: $overlay-blue-light;
                         transition: .25s;
                         &:hover {
@@ -147,17 +157,17 @@
                     &::-webkit-scrollbar {
                         width: 1rem;
                         height: .5rem;
-                        border-radius: $brand-br;
+                        border-radius: $border-radius-sm;
                         // border: 1px solid $brand;
                     }
 
                     &::-webkit-scrollbar-thumb {
                         background-color: $brand;
-                        border-radius: $brand-br;
+                        border-radius: $border-radius-sm;
                     }
 
                     &::-webkit-scrollbar-track {
-                        border-radius: $brand-br;
+                        border-radius: $border-radius-sm;
                         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
                     }
 
@@ -200,6 +210,7 @@
                 position: relative;
                 isolation: isolate;
                 transition: .25s;
+                display: none;
 
                 i {
                     font-weight: 600;

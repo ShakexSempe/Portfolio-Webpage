@@ -2724,8 +2724,17 @@ hamburger
   font-size: 1rem;
 }
 .work .work-items .work-item .work-title p a {
+  position: relative;
   color: #485563;
   transition: 0.25s;
+}
+.work .work-items .work-item .work-title p a::after {
+  content: "";
+  position: absolute;
+  right: -1.5rem;
+  bottom: 0;
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
 }
 .work .work-items .work-item .work-title p a:hover {
   color: #000;
@@ -2793,14 +2802,14 @@ hamburger
 .work .work-items .work-item figure.scroll-snap::-webkit-scrollbar {
   width: 1rem;
   height: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 .work .work-items .work-item figure.scroll-snap::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 .work .work-items .work-item figure.scroll-snap::-webkit-scrollbar-track {
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 .work .work-items .work-item figure.scroll-snap img {
@@ -2834,6 +2843,7 @@ hamburger
   position: relative;
   isolation: isolate;
   transition: 0.25s;
+  display: none;
 }
 .work .work-items .work-item .work-btn i {
   font-weight: 600;
