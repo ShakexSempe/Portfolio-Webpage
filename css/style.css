@@ -1786,6 +1786,7 @@ hamburger
   background: linear-gradient(0deg, #29323c 0%, #485563 100%);
   background: #fff;
   min-height: auto;
+  padding: 2.5vh 5vw 0;
 }
 #skills .skills-header {
   width: 100%;
@@ -1803,10 +1804,7 @@ hamburger
 }
 #skills .skills-intro {
   text-align: left;
-  margin: 0 auto;
-  padding: 1rem 0.5rem 0.5rem 1rem;
-  padding: 2.5vh 2.5vw 0 5vw;
-  padding: 2.5vh 5vw 0;
+  margin: 2.5vh auto 0;
   position: relative;
   z-index: 30;
 }
@@ -1879,8 +1877,8 @@ hamburger
   padding: 0.5rem 1rem;
   margin: 0 5vw;
   margin: 2.5vh auto;
-  width: max-content;
   width: 15rem;
+  width: 100%;
   font-size: 1.35rem;
   font-weight: 400;
   cursor: pointer;
