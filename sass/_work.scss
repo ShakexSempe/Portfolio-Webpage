@@ -28,8 +28,23 @@
             flex-direction: column;
             align-items: flex-start;
             position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 20vw;
+                top: 50%;
+                width: 5rem;
+                height: 5rem;
+                background: rgba(0,0, 0, .05);
+                z-index: -1;
+                transform: translateY(-50%) rotate(45deg);
+            }
             @include md {
                 align-items: center;
+                &::after {
+                    display: none;
+                }
             }
             // ITEM BACKGROUND COLORS
 

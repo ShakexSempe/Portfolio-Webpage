@@ -2685,9 +2685,23 @@ hamburger
   align-items: flex-start;
   position: relative;
 }
+.work .work-items .work-item::after {
+  content: "";
+  position: absolute;
+  right: 20vw;
+  top: 50%;
+  width: 5rem;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  transform: translateY(-50%) rotate(45deg);
+}
 @media (min-width: 768px) {
   .work .work-items .work-item {
     align-items: center;
+  }
+  .work .work-items .work-item::after {
+    display: none;
   }
 }
 .work .work-items .work-item.io-item {
