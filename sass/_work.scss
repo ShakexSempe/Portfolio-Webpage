@@ -97,7 +97,7 @@
                 padding: 10vh 10vw;
                 padding: 1rem;
                 border-radius: $brand-br;
-                background: $overlay-blue-darkest;
+                background: $overlay-blue-dark;
                 transition: .5s;
                 // overflow: auto;
                 // display: flex;
@@ -108,7 +108,7 @@
                     object-fit: cover;
                     // object-position: center;
                     transition: .5s;
-                    // border: 1px solid #fff4;
+                    border: 1px solid #fff4;
                 }
                 @include sm {
                     // border: 1px solid #000;
