@@ -2770,7 +2770,7 @@ hamburger
   border-radius: 0.5rem;
   object-fit: cover;
   transition: 0.5s;
-  border: 1px solid #fff4;
+  border: 1px solid #fff6;
 }
 @media (min-width: 576px) {
   .work .work-items .work-item figure {
