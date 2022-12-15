@@ -1804,7 +1804,7 @@ hamburger
 #skills .skills-intro {
   text-align: left;
   margin: 0 auto 0;
-  padding: 2.5vh 5vw 0;
+  padding: 2.5vh 2.5vw 0 5vw;
   position: relative;
   z-index: 30;
 }
