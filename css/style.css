@@ -2719,6 +2719,11 @@ hamburger
   text-align: left;
   margin-bottom: 2.5vh;
 }
+@media (min-width: 768px) {
+  .work .work-items .work-item .work-title {
+    text-align: center;
+  }
+}
 .work .work-items .work-item .work-title h3 {
   text-transform: capitalize;
   font-family: "Kanit", sans-serif;
@@ -2749,10 +2754,15 @@ hamburger
   right: -1.5rem;
   bottom: 0;
   font-weight: 600;
+  transition: 0.25s;
   font-family: "Font Awesome 6 Free";
 }
 .work .work-items .work-item .work-title p a:hover {
   color: #000;
+}
+.work .work-items .work-item .work-title p a:hover::after {
+  color: #dc143c;
+  transform: scale(1.15);
 }
 .work .work-items .work-item figure {
   width: 20rem;
@@ -2838,6 +2848,9 @@ hamburger
 .work .work-items .work-item .scroll-snap:hover img {
   transform: scale(1.025);
   border-color: transparent;
+}
+.work .work-items .work-item .scroll-snap:hover::-webkit-scrollbar-thumb {
+  background-color: #dc143c;
 }
 .work .work-items .work-item .work-btn {
   display: flex;
