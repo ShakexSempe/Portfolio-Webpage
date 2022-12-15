@@ -20,25 +20,27 @@
             gap: 1rem;
             }
         .work-item {
-            // border: 1px solid #0002;
-            padding: 1rem 0;
+            // border: 1px solid #ff0000;
+            padding: 0;
             width: 100%;
+            width: 80%;
             border-radius: $brand-br;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             position: relative;
-
-            &::after {
-                content: '';
-                position: absolute;
-                right: 20vw;
-                top: 50%;
-                width: 5rem;
-                height: 5rem;
-                background: rgba(0,0, 0, .05);
-                z-index: -1;
-                transform: translateY(-50%) rotate(45deg);
+            @media (max-width: 450px){
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 5vw;
+                    top: 50%;
+                    width: 5rem;
+                    height: 5rem;
+                    background: rgba(0,0, 0, .2);
+                    z-index: -1;
+                    transform: translateY(-50%) rotate(45deg);
+                }
             }
             @include md {
                 align-items: center;
@@ -83,16 +85,18 @@
                     
                     a {
                         position: relative;
+                        color: $overlay-blue-light;
+                        transition: .25s;
+
                         &::after {
                             content: '\f08e';
                             position: absolute;
                             right: -1.5rem;
-                        bottom: 0;
+                            bottom: 0;
                             font-weight: 600;
                             font-family: "Font Awesome 6 Free";
                         }
-                        color: $overlay-blue-light;
-                        transition: .25s;
+
                         &:hover {
                             color: $text-black;
                         }
@@ -146,62 +150,66 @@
                     }
                 }
 
-                // SCROLL SNAP GALLERY
-                &.scroll-snap {
-                    // border: 2px solid blue;
-                    // background: #f4f4f4;
-                    position: relative;
-                    display: flex;
-                    gap: 5vw;
-                    overflow-x: auto;
-                    overflow-y: hidden;
+            }
+            // SCROLL SNAP GALLERY
+            .scroll-snap {
+                // border: 2px solid blue;
+                // background: #f4f4f4;
+                position: relative;
+                display: flex;
+                gap: 5vw;
+                overflow-x: auto;
+                overflow-y: hidden;
+                flex: none;
+                width: 100%;
+                width: 15rem;
+                border-radius: $brand-br;
+                height: auto;
+                height: 60vh;
+                isolation: isolate;
+                // height: 128px;
+                flex-flow: row nowrap;
+                scroll-snap-type: x mandatory;
+                img {
+                    // border: 2px solid yellow;
+                    scroll-snap-align: center;
                     flex: none;
                     width: 100%;
-                    width: 15rem;
-                    border-radius: $brand-br;
                     height: auto;
-                    isolation: isolate;
-                    // height: 128px;
-                    flex-flow: row nowrap;
-                    scroll-snap-type: x mandatory;
-
-                    @include md {
-                        height: 55vh;
-                    }
-
-                    &::-webkit-scrollbar {
-                        width: 1rem;
-                        height: .5rem;
-                        border-radius: $border-radius-sm;
-                        // border: 1px solid $brand;
-                    }
-
-                    &::-webkit-scrollbar-thumb {
-                        background-color: $brand;
-                        border-radius: $border-radius-sm;
-                    }
-
-                    &::-webkit-scrollbar-track {
-                        border-radius: $border-radius-sm;
-                        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-                    }
-
-                    img {
-                        // border: 2px solid yellow;
-                        scroll-snap-align: center;
-                        flex: none;
-                        width: 100%;
-                    }
-
-                    &:hover {
-                        img {
-                            transform: scale(1.025);
-                            border-color: transparent;
-                        }
-                    }
-
-
                 }
+                
+
+                @include md {
+                    height: 55vh;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 1rem;
+                    height: .5rem;
+                    border-radius: $border-radius-sm;
+                    // border: 1px solid $brand;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $brand;
+                    border-radius: $border-radius-sm;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: $border-radius-sm;
+                    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                }
+
+                
+
+                &:hover {
+                    img {
+                        transform: scale(1.025);
+                        border-color: transparent;
+                    }
+                }
+
+
             }
             // WORK ITEMS CTA BUTTONS
             .work-btn {
