@@ -2839,7 +2839,7 @@ hamburger
 }
 @media (min-width: 768px) {
   .work .work-items .work-item .scroll-snap {
-    height: 55vh;
+    height: 60vh;
   }
 }
 .work .work-items .work-item .scroll-snap::-webkit-scrollbar {
