@@ -442,7 +442,7 @@ hamburger
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  background: #15191e;
   z-index: -1;
   animation: zoom-out 2s ease 4s forwards;
 }
