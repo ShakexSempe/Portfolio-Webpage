@@ -22,18 +22,19 @@
         .work-item {
             // border: 1px solid #ff0000;
             padding: 0;
+            width: 95%;
             width: 100%;
-            width: 80%;
             border-radius: $brand-br;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             position: relative;
+            // PSEUDO ARROW
             @media (max-width: 450px){
                 &::after {
                     content: '';
                     position: absolute;
-                    right: 5vw;
+                    right: 20vw;
                     top: 50%;
                     width: 5rem;
                     height: 5rem;

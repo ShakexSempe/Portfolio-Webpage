@@ -2688,8 +2688,8 @@ hamburger
 }
 .work .work-items .work-item {
   padding: 0;
+  width: 95%;
   width: 100%;
-  width: 80%;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -2700,7 +2700,7 @@ hamburger
   .work .work-items .work-item::after {
     content: "";
     position: absolute;
-    right: 5vw;
+    right: 20vw;
     top: 50%;
     width: 5rem;
     height: 5rem;
