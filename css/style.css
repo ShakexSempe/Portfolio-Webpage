@@ -2039,6 +2039,11 @@ hamburger
   line-height: 1.7;
   text-transform: capitalize;
 }
+@media (min-width: 820px) {
+  #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li {
+    font-size: 0.85rem;
+  }
+}
 #skills .dropdown .dropdown-content .skills-bottom .skills-item ul li a {
   color: #f4f4f4;
 }
@@ -2072,15 +2077,20 @@ hamburger
 #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {
   display: grid;
   place-items: center;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border: none;
   outline: none;
-  border-radius: 0.25rem;
-  padding: 10px;
-  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
   position: relative;
   isolation: isolate;
+}
+@media (min-width: 576px) {
+  #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {
+    padding: 10px;
+  }
 }
 #skills .dropdown .dropdown-content .skills-bottom .skills-item .icon img {
   width: 80%;

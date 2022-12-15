@@ -316,7 +316,9 @@
                             // margin: .5em;
                             // padding: .2em .4em;
                             text-transform: capitalize;
-                            
+                            @include lg {
+                                font-size: .85rem;
+                            }
                             a {
                                 color: #f4f4f4;
                             }
@@ -363,17 +365,20 @@
                     .icon {
                         display: grid;
                         place-items: center;
-                        height: 5rem;
-                        width: 5rem;
+                        height: 4rem;
+                        width: 4rem;
                         border: none;
                         outline: none;
-                        border-radius: $border-radius-sm;
-                        padding: 10px;
-                        margin-bottom: .5rem;
+                        border-radius: 50%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
                         // margin-top: 15px;
                         // margin-bottom: 20px;
                         position: relative;
                         isolation: isolate;
+                        @include sm {
+                            padding: 10px;
+                        }
                         
                         // icon img
                         img {
