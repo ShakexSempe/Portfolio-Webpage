@@ -429,11 +429,27 @@ hamburger
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #20262e;
   z-index: 100;
   display: grid;
   place-items: center;
   overflow: hidden;
+  isolation: isolate;
+}
+.loader_bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  z-index: -1;
+  animation: zoom-out 2s ease 4s forwards;
+}
+@keyframes zoom-out {
+  100% {
+    opacity: 0;
+  }
 }
 .loader_bg .spinner {
   height: 5rem;
@@ -444,6 +460,12 @@ hamburger
   isolation: isolate;
   color: rgba(255, 255, 255, 0.7);
   text-transform: capitalize;
+  animation: spinner-out 1s ease 4s forwards;
+}
+@keyframes spinner-out {
+  100% {
+    transform: scale(0);
+  }
 }
 .loader_bg .spinner .sector {
   position: absolute;

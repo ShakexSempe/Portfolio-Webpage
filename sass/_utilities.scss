@@ -514,11 +514,31 @@ hamburger
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: $overlay-blue-darker;
+    // background-color: $overlay-blue-darker;
+    // background: #0008;
     z-index: 100;
     display: grid;
     place-items: center;
     overflow: hidden;
+    isolation: isolate;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $overlay-dark;
+        z-index: -1;
+        animation: zoom-out 2s ease 4s forwards;
+        @keyframes zoom-out {
+            100% {
+                // transform: scale(0);
+                opacity: 0;
+                // border-radius: 50%;
+            }
+        }
+    }
 
     .spinner {
         // border: .25rem solid red;
@@ -530,7 +550,12 @@ hamburger
         isolation: isolate;
         color: $brand;
         text-transform: capitalize;
-        
+        animation: spinner-out 1s ease 4s forwards;
+        @keyframes spinner-out {
+            100% {
+                transform: scale(0);
+            }
+        }
         .sector {
             position: absolute;
             width: 100%;
