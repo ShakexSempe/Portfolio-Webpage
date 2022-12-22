@@ -2739,13 +2739,6 @@ hamburger
     display: none;
   }
 }
-.work .work-items .work-item.io-item {
-  transform: scale(1) translateY(10vh);
-}
-.work .work-items .work-item.active-item {
-  transition: 1.5s;
-  transform: scale(1) translateY(0vh);
-}
 .work .work-items .work-item .work-title {
   text-align: center;
   text-align: left;
@@ -2973,6 +2966,27 @@ hamburger
 .work .work-items .work-item .view-repo-btn::after {
   background: linear-gradient(0deg, #fff, #eee);
   opacity: 0;
+}
+.work .work-items .work-item.io-item .work-title h3 {
+  opacity: 0;
+  transition: 1.5s;
+  transform: translateX(1rem);
+}
+.work .work-items .work-item.io-item .work-title p {
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: 1.5s 0.5s;
+}
+.work .work-items .work-item.active-item {
+  transition: 1.5s;
+}
+.work .work-items .work-item.active-item .work-title h3 {
+  opacity: 1;
+  transform: translateX(0);
+}
+.work .work-items .work-item.active-item .work-title p {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about {
@@ -4037,7 +4051,7 @@ section .section-title {
 }
 section .section-title.io-item {
   opacity: 0;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.5rem;
   transition: 1s;
 }
 section .section-title.active-item {

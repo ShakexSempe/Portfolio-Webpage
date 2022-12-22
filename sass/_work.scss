@@ -51,14 +51,7 @@
             }
             // ITEM BACKGROUND COLORS
 
-            // DATA-SCROLL
-            &.io-item {
-                transform: scale(1) translateY(10vh);
-            }
-            &.active-item {
-                transition: 1.5s;
-                transform: scale(1) translateY(0vh);
-            }
+            
             .work-title {
                 text-align: center;
                 text-align: left;
@@ -317,6 +310,43 @@
                 }
             }
             
+
+            // DATA-SCROLL
+            &.io-item {
+                // transform: scale(1) translateY(10vh);
+                .work-title {
+                    h3 {
+                        opacity: 0;
+                        transition: 1.5s;
+                        // letter-spacing: .05rem;
+                        transform: translateX(1rem);
+                    }
+                    p {
+                        opacity: 0;
+                        transform: translateY(-1rem);
+                        transition: 1.5s .5s;
+                    }
+                }
+
+                figure {
+                    // opacity: .2;
+                }
+            }
+            &.active-item {
+                transition: 1.5s;
+                // transform: scale(1) translateY(0vh);
+                .work-title {
+                    h3 {
+                        opacity: 1;
+                        // letter-spacing: normal;
+                        transform: translateX(0);
+                    }
+                    p {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
         }
     }
 }
