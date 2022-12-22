@@ -4022,17 +4022,27 @@ section .section-title {
   color: #20262e;
   max-width: 100vw;
   margin: 5vh 0 10vh;
+  overflow: hidden;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-family: "Kanit", sans-serif;
-  -webkit-box-reflect: below -0.5rem linear-gradient(transparent, #0004);
+  -webkit-box-reflect: below -1rem linear-gradient(transparent, #0003);
 }
 @media (min-width: 768px) {
   section .section-title {
     font-size: 2.5rem;
   }
+}
+section .section-title.io-item {
+  opacity: 0;
+  letter-spacing: 0.25rem;
+  transition: 1s;
+}
+section .section-title.active-item {
+  opacity: 1;
+  letter-spacing: 0.125rem;
 }
 
 .section-pad {
