@@ -91,15 +91,17 @@
                             right: -1.5rem;
                             bottom: 0;
                             font-weight: 600;
+                            font-size: 1rem;
+                            color: $span-crimson;
                             transition: .25s;
                             font-family: "Font Awesome 6 Free";
                         }
-
+                        
                         &:hover {
                             color: $text-black;
                             &::after {
-                                color: $span-crimson;
-                                transform: scale(1.15);
+                                color: $text-black;
+                                transform: translateX(.25rem);
                             }
                         }
                     }
