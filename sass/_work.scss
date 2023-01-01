@@ -40,13 +40,25 @@
                     height: 5rem;
                     background: rgba(0,0, 0, .2);
                     z-index: -1;
+                    animation: arrow 5s infinite;
                     transform: translateY(-50%) rotate(45deg);
+                    @keyframes arrow {
+                        50% {
+                            transform: translateX(-1rem) translateY(-50%) rotate(45deg);
+                        }
+                    }
                 }
             }
             @include md {
                 align-items: center;
                 &::after {
                     display: none;
+                }
+            }
+            &:hover {
+                &::after {
+                    opacity: 0;
+                    transition: 1s;
                 }
             }
             // ITEM BACKGROUND COLORS
