@@ -416,9 +416,10 @@ hamburger
         place-content: center;
         border-radius: .25rem;
         // padding: .15rem;
-        // opacity: .5;
+        opacity: 0;
         transition: .25s;
         position: relative;
+        transform: translateY(1rem);
 
         i {
             font-size: 1rem;
@@ -465,6 +466,20 @@ hamburger
 
     &.active-bottom-nav {
         transform: translateY(0vh);
+        .link-item {
+            transform: translateY(0);
+            opacity: 1;
+            transition: .5s;
+            &:nth-child(1){
+                transition-delay: .25s;
+            }
+            &:nth-child(2){
+                transition-delay: .5s;
+            }
+            &:nth-child(3){
+                transition-delay: .75s;
+            }
+        }
     }
     
 }
