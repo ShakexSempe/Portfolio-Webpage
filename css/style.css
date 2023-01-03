@@ -4086,12 +4086,12 @@ section .section-title {
 }
 section .section-title.io-item {
   opacity: 0;
-  letter-spacing: 0.5rem;
+  transform: scale(0.8) translateY(5vh);
   transition: 1s;
 }
 section .section-title.active-item {
   opacity: 1;
-  letter-spacing: 0.125rem;
+  transform: scale(1) translateY(0);
 }
 
 .section-pad {
