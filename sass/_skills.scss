@@ -121,32 +121,32 @@
         }
         // dropdown button
         .dropbtn {
-            color: $text-light;
             padding: .5rem 1rem;
-            // margin-inline: auto;
-            // margin-bottom: 5vh;
-            margin: 0 5vw;
-            margin: 2.5vh auto ;
-            width: 15rem;
-            width: 90%;
-            font-size: 1.35rem;
-            font-weight: 400;
-            cursor: pointer;
-            border: none;
-            border-radius: $brand-br;
-            background: #000a;
-            text-align: center;
-            text-transform: capitalize;
-            transition: .25s;
-            font-family: $font-title;
-            letter-spacing: .025rem;
-            position: relative;
-            // overflow: hidden;
-            isolation: isolate;
             display: flex;
             align-items: center;
             justify-content: space-between;
             justify-content: center;
+            margin: 0 5vw;
+            margin: 2.5vh auto ;
+            width: 15rem;
+            width: 90%;
+            background: #000a;
+            color: $text-light;
+            font-size: 1.35rem;
+            font-weight: 400;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: .025rem;
+            border: none;
+            border-radius: $brand-br;
+            cursor: pointer;
+            transition: .25s;
+            font-family: $font-title;
+            position: relative;
+            position: sticky;
+            top: 15vh;
+            // overflow: hidden;
+            isolation: isolate;
             @include md {
                 margin: 2.5vh auto;
                 width: 20rem;

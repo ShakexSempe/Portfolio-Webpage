@@ -1918,29 +1918,31 @@ hamburger
   transform: scale(1) translateY(0);
 }
 #skills .dropdown .dropbtn {
-  color: #f4f4f4;
   padding: 0.5rem 1rem;
-  margin: 0 5vw;
-  margin: 2.5vh auto;
-  width: 15rem;
-  width: 90%;
-  font-size: 1.35rem;
-  font-weight: 400;
-  cursor: pointer;
-  border: none;
-  border-radius: 0.5rem;
-  background: #000a;
-  text-align: center;
-  text-transform: capitalize;
-  transition: 0.25s;
-  font-family: "Kanit", sans-serif;
-  letter-spacing: 0.025rem;
-  position: relative;
-  isolation: isolate;
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: center;
+  margin: 0 5vw;
+  margin: 2.5vh auto;
+  width: 15rem;
+  width: 90%;
+  background: #000a;
+  color: #f4f4f4;
+  font-size: 1.35rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.025rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.25s;
+  font-family: "Kanit", sans-serif;
+  position: relative;
+  position: sticky;
+  top: 15vh;
+  isolation: isolate;
 }
 @media (min-width: 768px) {
   #skills .dropdown .dropbtn {
