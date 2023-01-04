@@ -19,7 +19,7 @@
         background: $overlay-blue-darkest;
         z-index: -1;
         opacity: 0;
-        transition: .5s;
+        transition: .25s;
     }
     // DESKTOP HEADER HEIGHT
     @media (min-width: 1024px) {
@@ -32,11 +32,11 @@
     // TRANSPARENT BACKGROUND AND NO LOGO IN DISPLAY
     &.hero-header {
         &::after {
-            transform: translateY(-9vh);
-            opacity: 1;
+            // transform: translateY(-9vh);
+            opacity: 0;
             // PSUEDO BG HEIGHT ON DESKTOP
             @include md {
-                transform: translateY(-15vh);
+                // transform: translateY(-15vh);
             }
         }
         .navbar {
@@ -55,7 +55,7 @@
         transition: all .25s;
         &::after {
             opacity: 1;
-            transform: translateY(0);
+            // transform: translateY(0);
         }
         @media (min-width: 1024px) {
             height: 8vh;
@@ -491,8 +491,9 @@
                                 left: 50%;
                                 transform: translateX(-50%);
                                 width: 0%;
-                                opacity: 0;
+                                // opacity: 0;
                                 height: 2px;
+                                background-color: $link-gold;
                                 background-color: $link-gold;
                                 transition: .3s ease;
                             }
@@ -568,8 +569,8 @@
                     }
                     
                     .contact-links {
-                        width: 100%;
                         // border: 2px solid red;
+                        width: 100%;
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
