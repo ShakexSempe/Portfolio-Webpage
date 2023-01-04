@@ -2,7 +2,7 @@
 // skills
 #skills {
     // border:1px solid red;
-    overflow: hidden;
+    // overflow: hidden;
 
     // skills container
     .skills {
@@ -149,8 +149,6 @@
                 transition: .25s;
                 font-family: $font-title;
                 position: relative;
-                position: sticky;
-                top: 15vh;
                 // overflow: hidden;
                 isolation: isolate;
 
@@ -266,24 +264,10 @@
 
                 // skills items container
                 .skills-bottom {
-                    // margin: 5vh 5vw;
-                    // display: flex;
-                    // align-items: center;
-                    // justify-content: center;
-                    // flex-wrap: wrap;
-                    /*items wrapped onto multiple lines*/
-                    // margin-top: 5vh;
-                    // padding-top: 5vh;
+                    position: relative;
                     display: grid;
-                    // place-items: center;
-                    // border: 2px solid pink;
                     grid-template-columns: 1fr;
                     gap: 10vh;
-
-                    // @include sm {
-                    //     grid-template-columns: 1fr 1fr;
-                    //     gap: 1rem;
-                    // }
                     @include sm {
                         gap: 1.5rem;
                         grid-template-columns: 1fr 1fr;
@@ -293,8 +277,29 @@
                         gap: 1.5rem;
                         grid-template-columns: 1fr 1fr 1fr;
                     }
-
-                    // skills-items
+                    // BACK TO TOP BUTTON
+                    .top-btn {
+                        // border: 2px solid red;
+                        position: sticky;
+                        top: 10vh;
+                        width: 100%;
+                        margin: 0;
+                        z-index: 5;
+                        text-align: right;
+                        margin: 0;
+                        padding: 0 .25rem;
+                        a {
+                            color: $brand;
+                            // border: 2px solid $brand;
+                            // border-radius: 50%;
+                            // font-size: 1rem;
+                            padding: .25rem;
+                        }
+                        @include md {
+                            display: none;
+                        }
+                    }
+                    // SKILLS ITEMS
                     .skills-item {
                         flex-basis: 100%;
                         width: 100%;

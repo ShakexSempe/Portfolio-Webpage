@@ -1814,9 +1814,6 @@ hamburger
   background-size: 100%, 1em 1em;
 }
 
-#skills {
-  overflow: hidden;
-}
 #skills .skills {
   flex-direction: column;
   justify-content: flex-start;
@@ -1923,8 +1920,6 @@ hamburger
   transition: 0.25s;
   font-family: "Kanit", sans-serif;
   position: relative;
-  position: sticky;
-  top: 15vh;
   isolation: isolate;
 }
 @media (min-width: 768px) {
@@ -2010,7 +2005,7 @@ hamburger
   }
 }
 #skills .skills .dropdown .dropdown-content .skills-bottom {
-  /*items wrapped onto multiple lines*/
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10vh;
@@ -2025,6 +2020,25 @@ hamburger
   #skills .skills .dropdown .dropdown-content .skills-bottom {
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+#skills .skills .dropdown .dropdown-content .skills-bottom .top-btn {
+  position: sticky;
+  top: 10vh;
+  width: 100%;
+  margin: 0;
+  z-index: 5;
+  text-align: right;
+  margin: 0;
+  padding: 0 0.25rem;
+}
+#skills .skills .dropdown .dropdown-content .skills-bottom .top-btn a {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.25rem;
+}
+@media (min-width: 768px) {
+  #skills .skills .dropdown .dropdown-content .skills-bottom .top-btn {
+    display: none;
   }
 }
 #skills .skills .dropdown .dropdown-content .skills-bottom .skills-item {
