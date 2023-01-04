@@ -110,6 +110,7 @@
             margin: 0 auto;
             z-index: 4;
             width: 100%;
+            // border: 2px solid red;
 
             // SKILLS-TOP DATA-SCROLL
             &.io-item {
@@ -131,10 +132,10 @@
                 align-items: center;
                 justify-content: space-between;
                 justify-content: center;
-                margin: 0 5vw;
-                margin: 2.5vh auto;
+                margin: 2.5vh 5vw;
+                // margin: 2.5vh auto;
                 width: 15rem;
-                width: 90%;
+                width: 50%;
                 background: #000a;
                 color: $text-light;
                 font-size: 1.35rem;
@@ -201,7 +202,9 @@
                     transform: scale(.98);
                     letter-spacing: normal;
                     color: $brand;
-
+                    @media (max-width: 768px) {
+                        width: 90%;
+                    }
                     i {
                         color: $text-light;
                     }
@@ -546,6 +549,7 @@
 
         // SECTION IO TRANSITIONS 
         .io-container {
+            width: 100%;
             // border: 1px solid red;
             &.io-item {
                 .skills-intro, .dropdown {

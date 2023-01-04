@@ -1907,10 +1907,9 @@ hamburger
   align-items: center;
   justify-content: space-between;
   justify-content: center;
-  margin: 0 5vw;
-  margin: 2.5vh auto;
+  margin: 2.5vh 5vw;
   width: 15rem;
-  width: 90%;
+  width: 50%;
   background: #000a;
   color: #f4f4f4;
   font-size: 1.35rem;
@@ -1968,6 +1967,11 @@ hamburger
   transform: scale(0.98);
   letter-spacing: normal;
   color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 768px) {
+  #skills .skills .dropdown .dropbtn.active {
+    width: 90%;
+  }
 }
 #skills .skills .dropdown .dropbtn.active i {
   color: #f4f4f4;
@@ -2199,6 +2203,9 @@ hamburger
     transition: 0.2s;
     transform: scale(1.0255);
   }
+}
+#skills .skills .io-container {
+  width: 100%;
 }
 #skills .skills .io-container.io-item .skills-intro, #skills .skills .io-container.io-item .dropdown {
   opacity: 0;
