@@ -319,6 +319,19 @@
                         overflow: hidden;
                         border-radius: $border-radius-sm;
                         height: auto;
+                        transform-style: preserve-3d;
+
+                        // IO CLASS
+                        &.io-item {
+                            transform: scale(.5);
+                            opacity: 0;
+                            transition: .5s;
+                        }
+                        &.active-item {
+                            transform: scale(1);
+                            opacity: 1;
+                            transition: 1.5s;
+                        }
 
                         // line-height: 1.3;
                         @include sm {
@@ -328,11 +341,6 @@
                         @include lg {
                             padding: 1rem .5rem 1rem 2rem;
                         }
-
-                        &[data-scroll="in"] {
-                            transition: 1.5s;
-                        }
-
                         isolation: isolate;
 
                         ul {
