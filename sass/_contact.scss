@@ -7,7 +7,7 @@
         width: 100%;
         margin: 0 auto;
         // padding-bottom: 30px;
-        padding: 5vh 0;
+        padding: 5vh 5vw;
         position: relative;
         transform-style: preserve-3d;
         // border: 2px solid red;
@@ -34,79 +34,63 @@
             }
             // contact-item
             .contact-item {
-                // tablet to desktop
-            @media (min-width: 1024px){
-                width: 30%;
-                
-            }
-            // DATA-SCROLL
-            &[data-scroll] {
-                transition: 1.5s;
-                transform: scale(1);
-            }
+                border: 2px solid red;
             // tablet to desktop
                 width: 85%;
+                width: 100%;
                 /* height: auto; */
                 text-align: center;
                 // border-radius: 10px;
-                padding: .5em;
+                // padding: .5em;
                 margin: 5vh auto;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                // flex-direction: column;
+                justify-content: flex-start;
                 align-items: center;
                 position: relative;
+                gap: 5vw;
                 transform: preserve-3d;
-                border: none;
-                outline: none;
+                // border: none;
+                // outline: none;
                 // transform: scale(.9);
+                color: green;
                 transition: .8s ease;
-                
-                // item box shadows
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: $overlay-btn;
-                    box-shadow: $box-light-top-md;
-                    border-radius: 10px;
-                    z-index: -2;
-                    opacity: 1;
-                    transition: .5s ease;
+                @include sm {
+                    gap: 1rem;
                 }
-                &:hover {
-                    // transform: scale(.98);
-                    transform: preserve-3d;
+                .title {
+                    border: 2px solid blue;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: left;
+                    justify-content: center;
+                    background: $overlay-blue-darker;
+                    padding: 1rem;
 
-                    // box shadows hover state
-                    // &::before {
-                    //     opacity: 0;
-                    // }
-
-                    // &::after {
-                    //     opacity: 1;
-                    // }
-
-                    // end of box shadows hover state
-                }
-                // end of item box shadows
-                // item headings (h1)
-                h3 {
-                    color: #fff;
-                    padding: .5rem .5rem 0;
-                    margin: .5rem auto 0;
-                    font-size: 1.25rem;
-                    width: 70%;
-                    font-weight: 600;
-                    position: relative;
-                    @media (min-width: 768px){
-                        font-size: 1.25rem;
-                        margin: .5em auto;
+                    i {
+                        font-size: 2rem;
+                        color: $overlay-blue-darker;
+                        color: #fff;
+                        padding: .5rem;
+                        border-radius: 50%;
                     }
-                    
+
+                    h3 {
+                        color: $overlay-blue-darker;
+                        color: #fff;
+                        // padding: .5rem .5rem 0;
+                        // margin: .5rem auto 0;
+                        font-size: 1.25rem;
+                        // width: 70%;
+                        font-weight: 600;
+                        position: relative;
+
+                        @media (min-width: 768px) {
+                            font-size: 1.25rem;
+                            // margin: .5em auto;
+                        }
+
+                    }
                 }
                 // end of item headings (h1)
                 
@@ -145,19 +129,15 @@
                 // of end of item icon
                 // CONTACT DETAILS
                 .contact-info {
-                    width: 15rem;
+                    // width: 15rem;
+                    border: 2px solid green;
                     p {
                         font-size: .9rem;
-                        font-weight: 400;
-                        letter-spacing: .05rem;
-                        padding: .5rem;
-                        border: none;
-                        outline: none;
-                        border-radius: .5rem;
+                        font-weight: 500;
                         // background: $background-light;
                         margin: .5em auto;
-                        color: $text-black;
                         color: #fff;
+                        color: $overlay-blue-darker;
                         transition: .5s ease;
                         position: relative;
                         z-index: -1;
@@ -183,13 +163,14 @@
                         display: block;
                         width: 100%;
                         font-size: .95rem;
-                        letter-spacing: .1rem;
+                        letter-spacing: .05rem;
                         padding: .7rem;
                         border-radius: .5rem;
-                        margin: .5rem auto;
-                        color: $brand;
+                        // margin: .5rem auto;
+                        color: $text-light;
+                        text-transform: capitalize;
                         cursor: pointer;
-                        transition: .3s ease;
+                        transition: .25s ease;
                         position: relative;
                         isolation: isolate;
                         // BUTTON PSEUDO BG
@@ -202,7 +183,7 @@
                             height: 100%;
                             border-radius: .5rem;
                             background: $span-crimson;
-                            transition: .2s;
+                            transition: .25s;
                             z-index: -1;
                         }
                         &::before {
@@ -238,8 +219,9 @@
                         i {
                             font-size: 1rem;
                             position: relative;
-                            transform: translateY(100%);
-                            opacity: 0;
+                            // transform: translateY(100%);
+                            opacity: 1;
+                            margin-left: .5rem;
                             transition: 1s ease;
                             transition-delay: .15s;
                         }
