@@ -418,6 +418,26 @@
                         }
                     }
                 }
+                &.io-item {
+                    .bg-i {
+                        transform: translateX(5vw);
+                        opacity: 0;
+                    }
+                }
+                &.active-item {
+                    .bg-i {
+                        transform: translateX(0);
+                        opacity: .1;
+                        transition: 1s;
+                    }
+                    &:hover {
+                        .bg-i {
+                        opacity: .8;
+                        transform: scale(.7);
+                        transition: .5s;
+                    }
+                }
+                }
             }
         }
         // end of social media links
