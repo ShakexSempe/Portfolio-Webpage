@@ -294,8 +294,9 @@
                             // border-radius: 50%;
                             // font-size: 1rem;
                             padding: .25rem;
+                            font-size: 1rem;
                         }
-                        @include md {
+                        @include sm {
                             display: none;
                         }
                     }

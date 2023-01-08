@@ -2035,8 +2035,9 @@ hamburger
 #skills .skills .dropdown .dropdown-content .skills-bottom .top-btn a {
   color: rgba(255, 255, 255, 0.7);
   padding: 0.25rem;
+  font-size: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #skills .skills .dropdown .dropdown-content .skills-bottom .top-btn {
     display: none;
   }
