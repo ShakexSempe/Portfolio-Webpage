@@ -222,7 +222,7 @@
                 .bg-i {
                     position: absolute;
                     right: 1rem;
-                    top: 0;
+                    top: 1rem;
                     font-size: 4rem;
                     color: $brand;
                     opacity: .1;
@@ -232,8 +232,8 @@
                     font-size: 1.25rem;
                     margin-bottom: .25rem;
                     text-transform: capitalize;
-                    color: $brand;
                     color: $text-light;
+                    color: $brand;
                     font-weight: 400;
                     // text-align: center;
                     font-family: $font-title;
@@ -272,7 +272,7 @@
                     
                     i {
                         color: #fff;
-                        opacity: .7;
+                        opacity: .3;
                         // margin-right: 1.5em;
                         padding-right: .5rem;
                         transition: .5s;
@@ -402,13 +402,12 @@
                 // ITEM HOVER STATE
                 &:hover {
                     p {
-                        opacity: .5;
-                        transition: .25s;
+                        color: $text-light;
+                        transition: .5s;
                         transition-delay: .05s;
                     }
                     .bg-i {
                         opacity: .8;
-                        transform: scale(.7);
                         transition: .5s;
                     }
                     a {
@@ -427,13 +426,15 @@
                 &.active-item {
                     .bg-i {
                         transform: translateX(0);
-                        opacity: .1;
+                        transition-timing-function: ease;
+                        opacity: .2;
                         transition: 1s;
                     }
                     &:hover {
                         .bg-i {
                         opacity: .8;
-                        transform: scale(.7);
+                        transform: scale(.85);
+                        transition-timing-function: ease-in;
                         transition: .5s;
                     }
                 }
