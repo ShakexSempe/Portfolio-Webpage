@@ -199,35 +199,43 @@
             // border-radius: 0;
             width: 100%;
             // margin: 2em 5vw;
-            padding: 5vh 0;
+            padding: 5vh 5vw;
             .links-grid{
-                // display: none;
                 // border: 1px solid yellow;
+                display: grid;
+                gap: 5vh;
+                // display: none;
                 @media (min-width: 1024px) {
                     width: 100%;
-                    display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 1rem;
                 }
             }
             .socialMedia-item {
                 // border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
-                // background-color: $overlay-blue-darker;
-                padding: .5rem 0 5vh;
-                border-radius: .5rem;
                 overflow: hidden;
-                margin: 1rem auto;
+                // margin: 1rem auto;
                 position: relative;
                 transition: .3s;
                 width: 100%;
+                // border: 1px solid red;
+                .bg-i {
+                    position: absolute;
+                    right: 1rem;
+                    top: 0;
+                    font-size: 5rem;
+                    color: #fff;
+                    opacity: .1;
+                    transition: .25s;
+                }
                 p {
                     font-size: 1.25rem;
                     margin-bottom: .25rem;
                     text-transform: capitalize;
-                    color: $text-light;
                     color: $brand;
+                    color: $text-light;
                     font-weight: 400;
-                    text-align: center;
+                    // text-align: center;
                     font-family: $font-title;
                     // width: 100%;
                     transition: 1s ease;
@@ -238,8 +246,8 @@
                     display: block;
                     text-align: center;
                     padding: 1rem .5rem;
-                    width: 90%;
-                    margin: 0 auto;
+                    width: 13rem;
+                    // margin: 0 auto;
                     color: #fff;
                     text-transform: capitalize;
                     opacity: 1;
@@ -253,24 +261,22 @@
                     transition: .25s ease;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    // justify-content: center;
                     // tablet links
                     @media (min-width: 768px) {
-                        width: 80%;
+                        width: 14rem;
                         padding: 1rem;
                     }
                     // end of tablet links
                     // desktop links
-                    @media (min-width: 1024px) {
-                        width: 80%;
-                    }
+                    
                     i {
                         color: #fff;
                         opacity: .7;
                         // margin-right: 1.5em;
                         padding-right: .5rem;
                         transition: .5s;
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                         @media (min-width: 768px) {
                             font-size: 1.5rem;
                         }
@@ -393,6 +399,25 @@
                     
                 }
                 // end of link colors
+                // ITEM HOVER STATE
+                &:hover {
+                    p {
+                        opacity: .5;
+                        transition: .25s;
+                        transition-delay: .05s;
+                    }
+                    .bg-i {
+                        opacity: .8;
+                        transform: scale(.7);
+                        transition: .5s;
+                    }
+                    a {
+                        i {
+                            opacity: 1;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
             }
         }
         // end of social media links

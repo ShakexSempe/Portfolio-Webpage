@@ -3560,7 +3560,7 @@ hamburger
   grid-template-columns: 1fr;
   background-color: #29323c;
   width: 100%;
-  padding: 5vh 0;
+  padding: 5vh 5vw;
 }
 @media (min-width: 1024px) {
   #footer .footer .socialMedia-links {
@@ -3568,31 +3568,39 @@ hamburger
     border-radius: 5px;
   }
 }
+#footer .footer .socialMedia-links .links-grid {
+  display: grid;
+  gap: 5vh;
+}
 @media (min-width: 1024px) {
   #footer .footer .socialMedia-links .links-grid {
     width: 100%;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 }
 #footer .footer .socialMedia-links .socialMedia-item {
-  padding: 0.5rem 0 5vh;
-  border-radius: 0.5rem;
   overflow: hidden;
-  margin: 1rem auto;
   position: relative;
   transition: 0.3s;
   width: 100%;
+}
+#footer .footer .socialMedia-links .socialMedia-item .bg-i {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  font-size: 5rem;
+  color: #fff;
+  opacity: 0.1;
+  transition: 0.25s;
 }
 #footer .footer .socialMedia-links .socialMedia-item p {
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
   text-transform: capitalize;
-  color: #f4f4f4;
   color: rgba(255, 255, 255, 0.7);
+  color: #f4f4f4;
   font-weight: 400;
-  text-align: center;
   font-family: "Kanit", sans-serif;
   transition: 1s ease;
 }
@@ -3601,8 +3609,7 @@ hamburger
   display: block;
   text-align: center;
   padding: 1rem 0.5rem;
-  width: 90%;
-  margin: 0 auto;
+  width: 13rem;
   color: #fff;
   text-transform: capitalize;
   opacity: 1;
@@ -3614,17 +3621,11 @@ hamburger
   transition: 0.25s ease;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media (min-width: 768px) {
   #footer .footer .socialMedia-links .socialMedia-item a {
-    width: 80%;
+    width: 14rem;
     padding: 1rem;
-  }
-}
-@media (min-width: 1024px) {
-  #footer .footer .socialMedia-links .socialMedia-item a {
-    width: 80%;
   }
 }
 #footer .footer .socialMedia-links .socialMedia-item a i {
@@ -3632,7 +3633,7 @@ hamburger
   opacity: 0.7;
   padding-right: 0.5rem;
   transition: 0.5s;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 @media (min-width: 768px) {
   #footer .footer .socialMedia-links .socialMedia-item a i {
@@ -3743,6 +3744,20 @@ hamburger
 }
 #footer .footer .socialMedia-links .socialMedia-item.fem a::after {
   background: linear-gradient(#cccccc, whitesmoke);
+}
+#footer .footer .socialMedia-links .socialMedia-item:hover p {
+  opacity: 0.5;
+  transition: 0.25s;
+  transition-delay: 0.05s;
+}
+#footer .footer .socialMedia-links .socialMedia-item:hover .bg-i {
+  opacity: 0.8;
+  transform: scale(0.7);
+  transition: 0.5s;
+}
+#footer .footer .socialMedia-links .socialMedia-item:hover a i {
+  opacity: 1;
+  transform: scale(1.1);
 }
 #footer .footer .brand {
   width: 80%;
