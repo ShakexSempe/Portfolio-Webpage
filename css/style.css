@@ -2302,9 +2302,7 @@ hamburger
   }
 }
 #contact .contact .contact-items .contact-item {
-  width: 85%;
   width: 100%;
-  /* height: auto; */
   text-align: center;
   border-radius: 0.5rem;
   margin: 5vh auto;
@@ -2339,21 +2337,35 @@ hamburger
     align-items: center;
   }
 }
-#contact .contact .contact-items .contact-item .title i {
-  font-size: 2rem;
-  color: #20262e;
-  color: #fff;
-  padding: 0.5rem;
+#contact .contact .contact-items .contact-item .title .icon {
+  margin: 0.5rem auto 1rem;
+  padding: 0.3em 0.7em;
+  height: 4em;
+  width: 4em;
+  border: none;
+  background: #29323c;
   border-radius: 50%;
+  outline: 2px solid #fff2;
+  position: relative;
+  display: grid;
+  place-items: center;
+  transition: 0.5s ease;
 }
-@media (min-width: 576px) {
-  #contact .contact .contact-items .contact-item .title i {
-    font-size: 1.5rem;
+#contact .contact .contact-items .contact-item .title .icon i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s ease;
+}
+@media (min-width: 768px) {
+  #contact .contact .contact-items .contact-item .title .icon {
+    height: 4rem;
+    width: 4rem;
+    margin: 0;
+    padding: 0;
   }
 }
 #contact .contact .contact-items .contact-item .title h3 {
-  color: #20262e;
-  color: #fff;
+  color: #f4f4f4;
   font-size: 0.8rem;
   font-weight: 600;
   position: relative;
@@ -2364,42 +2376,13 @@ hamburger
     margin: 0.5em auto 0;
   }
 }
-#contact .contact .contact-items .contact-item .icon {
-  margin: 5px auto 10px auto;
-  margin: 0.5rem auto;
-  padding: 0.3em 0.7em;
-  height: 4em;
-  width: 4em;
-  border: none;
-  background: #20262e;
-  border-radius: 50%;
-  outline: 2px solid #fff2;
-  position: relative;
-  display: grid;
-  place-items: center;
-  transition: 0.5s ease;
-}
-#contact .contact .contact-items .contact-item .icon i {
-  font-size: 1.5rem;
-  color: #f4f4f4;
-  transition: 0.5s ease;
-}
-@media (min-width: 768px) {
-  #contact .contact .contact-items .contact-item .icon {
-    height: 4rem;
-    width: 4rem;
-    margin: 0;
-    padding: 0;
-  }
-}
 #contact .contact .contact-items .contact-item .contact-info {
   flex-basis: 70%;
 }
 #contact .contact .contact-items .contact-item .contact-info p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: #fff;
   color: #20262e;
   transition: 0.5s ease;
   position: relative;
@@ -2425,7 +2408,7 @@ hamburger
   width: 10rem;
   font-size: 0.95rem;
   letter-spacing: 0.05rem;
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   color: #f4f4f4;
   text-transform: capitalize;

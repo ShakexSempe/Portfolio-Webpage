@@ -37,25 +37,17 @@
             // contact-item
             .contact-item {
                 // border: 2px solid $overlay-blue-darker;
-            // tablet to desktop
-                width: 85%;
                 width: 100%;
-                /* height: auto; */
                 text-align: center;
                 border-radius: .5rem;
-                // padding: .5em;
                 margin: 5vh auto;
                 display: flex;
-                // flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
                 position: relative;
                 gap: 1rem;
                 transform: preserve-3d;
                 overflow: hidden;
-                // border: none;
-                // outline: none;
-                // transform: scale(.9);
                 color: $overlay-blue-darker;
                 transition: .8s ease;
                 @include sm {
@@ -76,24 +68,38 @@
                         align-items: center;
                     }
 
+                    // ITEM ICON
+                .icon {
+                    margin: .5rem auto 1rem;
+                    padding: .3em .7em;
+                    height: 4em;
+                    width: 4em;
+                    border: none;
+                    background: $overlay-blue-dark;
+                    border-radius: 50%;
+                    outline: 2px solid #fff2;
+                    position: relative;
+                    display: grid;
+                    place-items: center;
+                    transition: .5s ease;
+
                     i {
-                        font-size: 2rem;
-                        color: $overlay-blue-darker;
-                        color: #fff;
-                        padding: .5rem;
-                        border-radius: 50%;
-                        @include sm {
-                            font-size: 1.5rem;
-                        }
+                        font-size: 1.5rem;
+                        color: $brand;
+                        transition: .5s ease;
                     }
+                    @media (min-width: 768px) {
+                        height: 4rem;
+                        width: 4rem;
+                        // margin: .3em auto;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
 
                     h3 {
-                        color: $overlay-blue-darker;
-                        color: #fff;
-                        // padding: .5rem .5rem 0;
-                        // margin: .5rem auto 0;
+                        color: $text-light;
                         font-size: .8rem;
-                        // width: 70%;
                         font-weight: 600;
                         position: relative;
 
@@ -106,35 +112,7 @@
                 }
                 // end of item headings (h1)
                 
-                // ITEM ICON
-                .icon {
-                    margin: 5px auto 10px auto;
-                    margin: .5rem auto;
-                    padding: .3em .7em;
-                    height: 4em;
-                    width: 4em;
-                    border: none;
-                    background: $overlay-blue-darker;
-                    border-radius: 50%;
-                    outline: 2px solid #fff2;
-                    position: relative;
-                    display: grid;
-                    place-items: center;
-                    transition: .5s ease;
-
-                    i {
-                        font-size: 1.5rem;
-                        color: $text-light;
-                        transition: .5s ease;
-                    }
-                    @media (min-width: 768px) {
-                        height: 4rem;
-                        width: 4rem;
-                        // margin: .3em auto;
-                        margin: 0;
-                        padding: 0;
-                    }
-                }
+                
                 // of end of item icon
                 // CONTACT DETAILS
                 .contact-info {
@@ -143,12 +121,11 @@
                     // border: 2px solid green;
                     
                     p {
-                        font-size: .9rem;
+                        font-size: 1rem;
                         font-weight: 500;
                         // background: $background-light;
                         // margin: .5em auto;
                         margin-bottom: .5rem;
-                        color: #fff;
                         color: $overlay-blue-darker;
                         transition: .5s ease;
                         position: relative;
@@ -177,7 +154,8 @@
                         width: 10rem;
                         font-size: .95rem;
                         letter-spacing: .05rem;
-                        padding: .7rem;
+                        // padding: .7rem;
+                        padding: .5rem;
                         border-radius: .5rem;
                         // margin: .5rem auto;
                         color: $text-light;
