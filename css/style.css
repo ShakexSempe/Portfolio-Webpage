@@ -3589,8 +3589,8 @@ hamburger
   position: absolute;
   right: 1rem;
   top: 0;
-  font-size: 5rem;
-  color: #fff;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.7);
   opacity: 0.1;
   transition: 0.25s;
 }
