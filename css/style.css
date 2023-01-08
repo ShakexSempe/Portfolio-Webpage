@@ -2328,7 +2328,7 @@ hamburger
   justify-content: space-evenly;
   background: #20262e;
   padding: 0.5rem;
-  flex-basis: 30%;
+  flex-basis: 35%;
   border-radius: 0.5rem;
 }
 @media (min-width: 768px) {
