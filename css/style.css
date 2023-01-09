@@ -2347,7 +2347,7 @@ hamburger
   border: none;
   background: #29323c;
   border-radius: 50%;
-  outline: 2px solid #fff4;
+  outline: 2px solid #fff2;
   position: relative;
   display: grid;
   place-items: center;
@@ -2368,9 +2368,11 @@ hamburger
 }
 #contact .contact .contact-items .contact-item .title h3 {
   color: #f4f4f4;
-  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
   font-weight: 600;
   position: relative;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   #contact .contact .contact-items .contact-item .title h3 {
@@ -2380,6 +2382,11 @@ hamburger
 }
 #contact .contact .contact-items .contact-item .contact-info {
   flex-basis: 70%;
+}
+#contact .contact .contact-items .contact-item .contact-info h4 {
+  text-transform: capitalize;
+  text-align: left;
+  margin-bottom: 0.25rem;
 }
 #contact .contact .contact-items .contact-item .contact-info p {
   font-size: 1rem;
@@ -3611,7 +3618,7 @@ hamburger
   background: #29323c;
   display: block;
   text-align: center;
-  padding: 1rem 0.5rem;
+  padding: 0.7rem;
   width: 13rem;
   color: #fff;
   text-transform: capitalize;

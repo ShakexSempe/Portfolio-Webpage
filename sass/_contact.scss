@@ -63,6 +63,7 @@
                     padding: .5rem;
                     flex-basis: 35%;
                     border-radius: .5rem;
+
                     @include md {
                         flex-basis: 40%;
                         align-items: center;
@@ -70,39 +71,42 @@
                     }
 
                     // ITEM ICON
-                .icon {
-                    margin: .5rem auto 1rem;
-                    padding: .3em .7em;
-                    height: 4em;
-                    width: 4em;
-                    border: none;
-                    background: $overlay-blue-dark;
-                    border-radius: 50%;
-                    outline: 2px solid #fff4;
-                    position: relative;
-                    display: grid;
-                    place-items: center;
-                    transition: .5s ease;
-
-                    i {
-                        font-size: 1.5rem;
-                        color: $text-light;
+                    .icon {
+                        margin: .5rem auto 1rem;
+                        padding: .3em .7em;
+                        height: 4em;
+                        width: 4em;
+                        border: none;
+                        background: $overlay-blue-dark;
+                        border-radius: 50%;
+                        outline: 2px solid #fff2;
+                        position: relative;
+                        display: grid;
+                        place-items: center;
                         transition: .5s ease;
+
+                        i {
+                            font-size: 1.5rem;
+                            color: $text-light;
+                            transition: .5s ease;
+                        }
+
+                        @media (min-width: 768px) {
+                            height: 4rem;
+                            width: 4rem;
+                            // margin: .3em auto;
+                            margin: 0;
+                            padding: 0;
+                        }
                     }
-                    @media (min-width: 768px) {
-                        height: 4rem;
-                        width: 4rem;
-                        // margin: .3em auto;
-                        margin: 0;
-                        padding: 0;
-                    }
-                }
 
                     h3 {
                         color: $text-light;
-                        font-size: .8rem;
+                        color: $brand;
+                        font-size: .85rem;
                         font-weight: 600;
                         position: relative;
+                        text-transform: uppercase;
 
                         @media (min-width: 768px) {
                             font-size: 1rem;
@@ -111,16 +115,16 @@
 
                     }
                 }
-                // end of item headings (h1)
-                
-                
-                // of end of item icon
                 // CONTACT DETAILS
                 .contact-info {
                     // width: 100%;
                     flex-basis: 70%;
                     // border: 2px solid green;
-                    
+                    h4 {
+                        text-transform: capitalize;
+                        text-align: left;
+                        margin-bottom: .25rem;
+                    }
                     p {
                         font-size: 1rem;
                         font-weight: 500;
