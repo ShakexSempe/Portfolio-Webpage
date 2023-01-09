@@ -79,13 +79,37 @@
                         border: none;
                         background: $overlay-blue-dark;
                         border-radius: 50%;
-                        outline: 2px solid #fff2;
-                        outline: 2px solid #fff2;
+                        // outline: 2px solid #fff2;
                         position: relative;
                         display: grid;
                         place-items: center;
                         transition: .5s ease;
-
+                        position: relative;
+                        // PSEUDO OUTLINE
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            outline: 2px solid #fff4;
+                            border-radius: 50%;
+                            animation: icon-pulse 2s infinite linear;
+                            
+                            @keyframes icon-pulse {
+                                0% {
+                                    outline-color: transparent;
+                                }
+                                50% {
+                                    outline-color: #fff4;
+                                }
+                                100% {
+                                    transform: scale(1.1);
+                                    outline-color: transparent;
+                                }
+                            }
+                        }
                         i {
                             font-size: 1.5rem;
                             color: $text-light;
@@ -228,8 +252,7 @@
                     // end of form link
 
                 }
-                // end of contact-info (h2 and a)
-                // cursors
+                // CURSORS
                 &:nth-child(1){
                     cursor: help;
                 }
@@ -239,11 +262,15 @@
                 &:nth-child(3){
                     cursor: alias;
                 }
-                // item shadows hover state
+                // ITEM HOVER STATE
                 &:hover {
+                    // TURN OFF ICON PULSE ON HOVER
                     .icon {
-                        outline: 2px solid #fff4;
-                        // background: $overlay-blue-darker;
+                        &::after {
+                            opacity: 0;
+                            transition: 1s;
+                        }
+                        // TRANSITION IN ICON ON HOVER
                         i {
                             opacity: 1;
                             transform: scale(1);
@@ -263,11 +290,10 @@
                         }
                     }
                 }
-                // end of item shadows hover state
+                // END OF ITEM HOVER STATE
             }
-            // end of contact-item
+            // END OF CONTACT ITEM
         }
-        // contact items container
 
     }
 }
