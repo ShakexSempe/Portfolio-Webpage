@@ -2314,7 +2314,7 @@ hamburger
   gap: 1rem;
   transform: preserve-3d;
   overflow: hidden;
-  color: #20262e;
+  color: #15191e;
   transition: 0.8s ease;
 }
 @media (min-width: 576px) {
@@ -2327,7 +2327,7 @@ hamburger
   flex-direction: column-reverse;
   align-items: left;
   justify-content: space-evenly;
-  background: #20262e;
+  background: #15191e;
   padding: 0.5rem;
   flex-basis: 35%;
   border-radius: 0.5rem;
@@ -2347,6 +2347,7 @@ hamburger
   border: none;
   background: #29323c;
   border-radius: 50%;
+  outline: 2px solid #fff2;
   outline: 2px solid #fff2;
   position: relative;
   display: grid;
@@ -2492,7 +2493,8 @@ hamburger
   cursor: alias;
 }
 #contact .contact .contact-items .contact-item:hover .icon {
-  outline: 2px solid #fff1;
+  outline: 2px solid #fff4;
+  background: #20262e;
 }
 #contact .contact .contact-items .contact-item:hover .icon i {
   opacity: 1;

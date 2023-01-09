@@ -48,7 +48,7 @@
                 gap: 1rem;
                 transform: preserve-3d;
                 overflow: hidden;
-                color: $overlay-blue-darker;
+                color: $overlay-blue-darkest;
                 transition: .8s ease;
                 @include sm {
                     gap: 1rem;
@@ -59,7 +59,7 @@
                     flex-direction: column-reverse;
                     align-items: left;
                     justify-content: space-evenly;
-                    background: $overlay-blue-darker;
+                    background: $overlay-blue-darkest;
                     padding: .5rem;
                     flex-basis: 35%;
                     border-radius: .5rem;
@@ -79,6 +79,7 @@
                         border: none;
                         background: $overlay-blue-dark;
                         border-radius: 50%;
+                        outline: 2px solid #fff2;
                         outline: 2px solid #fff2;
                         position: relative;
                         display: grid;
@@ -241,7 +242,8 @@
                 // item shadows hover state
                 &:hover {
                     .icon {
-                        outline: 2px solid #fff1;
+                        outline: 2px solid #fff4;
+                        background: $overlay-blue-darker;
                         i {
                             opacity: 1;
                             transform: scale(1);
