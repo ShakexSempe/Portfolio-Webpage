@@ -2370,9 +2370,7 @@ hamburger
 #contact .contact .contact-items .contact-item .title .icon i {
   font-size: 1.5rem;
   color: #f4f4f4;
-  transform: scale(0.8);
   transition: 0.5s ease;
-  opacity: 0.8;
 }
 @media (min-width: 768px) {
   #contact .contact .contact-items .contact-item .title .icon {
@@ -2510,8 +2508,8 @@ hamburger
   transition: 1s;
 }
 #contact .contact .contact-items .contact-item:hover .icon i {
-  opacity: 1;
-  transform: scale(1);
+  opacity: 0.8;
+  transform: scale(0.8);
 }
 #contact .contact .contact-items .contact-item:hover .contact-info a {
   opacity: 1;

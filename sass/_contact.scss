@@ -113,9 +113,7 @@
                         i {
                             font-size: 1.5rem;
                             color: $text-light;
-                            transform: scale(.8);
                             transition: .5s ease;
-                            opacity: .8;
                         }
 
                         @media (min-width: 768px) {
@@ -272,8 +270,8 @@
                         }
                         // TRANSITION IN ICON ON HOVER
                         i {
-                            opacity: 1;
-                            transform: scale(1);
+                            opacity: .8;
+                            transform: scale(.8);
                         }
                     }
                     
