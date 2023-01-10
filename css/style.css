@@ -2519,6 +2519,41 @@ hamburger
   transform: translateY(0);
   transition: 0.25s;
 }
+#contact .contact .contact-items .contact-item.io-item .title {
+  transform: translateY(5vh);
+  opacity: 0;
+  transition: 1s;
+}
+#contact .contact .contact-items .contact-item.io-item .contact-info h4 {
+  opacity: 0;
+  transform: translateX(1rem);
+  transition: 1s;
+}
+#contact .contact .contact-items .contact-item.io-item .contact-info p, #contact .contact .contact-items .contact-item.io-item .contact-info a {
+  opacity: 0;
+  transform: translateX(1rem);
+  transition: 1s;
+}
+#contact .contact .contact-items .contact-item.active-item .title {
+  transform: translateY(0);
+  opacity: 1;
+}
+#contact .contact .contact-items .contact-item.active-item .title .icon {
+  transform: scale(1);
+}
+#contact .contact .contact-items .contact-item.active-item .contact-info h4 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.25s;
+}
+#contact .contact .contact-items .contact-item.active-item .contact-info p, #contact .contact .contact-items .contact-item.active-item .contact-info a {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+#contact .contact .contact-items .contact-item.active-item .contact-info a {
+  transition-delay: 0.75s;
+}
 
 #projects .projects {
   flex-direction: column;
@@ -3056,6 +3091,15 @@ hamburger
   transform: translateX(0);
 }
 .work .work-items .work-item.active-item .work-title p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.work .work-items .io-item {
+  opacity: 0;
+  transform: translateY(5vh);
+  transition: 1.5s;
+}
+.work .work-items .active-item {
   opacity: 1;
   transform: translateY(0);
 }

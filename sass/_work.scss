@@ -362,5 +362,15 @@
                 }
             }
         }
+
+        .io-item {
+            opacity: 0;
+            transform: translateY(5vh);
+            transition: 1.5s;
+        }
+        .active-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

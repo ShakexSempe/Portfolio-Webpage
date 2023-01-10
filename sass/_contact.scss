@@ -289,6 +289,55 @@
                     }
                 }
                 // END OF ITEM HOVER STATE
+
+                // IO CLASS 
+                &.io-item {
+                    .title {
+                        transform: translateY(5vh);
+                        opacity: 0;
+                        transition: 1s;
+                        .icon {
+                            // transform: scale(.5);
+                            // transition: 1s;
+                        }
+                    }
+                    .contact-info {
+                        h4 {
+                            opacity: 0;
+                            transform: translateX(1rem);
+                            transition: 1s;
+                        }
+                        p,a {
+                            opacity: 0;
+                            transform: translateX(1rem);
+                            transition: 1s;
+                        }
+                    }
+                }
+                &.active-item {
+                    .title {
+                        transform: translateY(0);
+                        opacity: 1;
+                        .icon {
+                            transform: scale(1);
+                        }
+                    }
+                    .contact-info {
+                        h4 {
+                            opacity: 1;
+                            transform: translateX(0);
+                            transition-delay: .25s;
+                        }
+                        p,a {
+                            opacity: 1;
+                            transform: translateX(0);
+                            transition-delay: .5s;
+                        }
+                        a {
+                            transition-delay: .75s;
+                        }
+                    }
+                }
             }
             // END OF CONTACT ITEM
         }
