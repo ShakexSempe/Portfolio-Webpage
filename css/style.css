@@ -3471,7 +3471,7 @@ hamburger
   display: flex;
   flex-direction: column;
   margin: 5vh auto 0;
-  padding: 5vh 1em;
+  padding: 10vh 5vw;
   border-radius: 0;
   overflow: hidden;
 }
@@ -3588,7 +3588,7 @@ hamburger
   grid-template-columns: 1fr;
   background-color: #29323c;
   width: 100%;
-  padding: 5vh 5vw;
+  padding: 10vh 5vw;
 }
 @media (min-width: 1024px) {
   #footer .footer .socialMedia-links {
@@ -3608,7 +3608,6 @@ hamburger
   }
 }
 #footer .footer .socialMedia-links .socialMedia-item {
-  overflow: hidden;
   position: relative;
   transition: 0.3s;
   width: 100%;
