@@ -2100,17 +2100,7 @@ hamburger
   border-radius: 0.5rem;
   opacity: 0.8;
   z-index: -1;
-}
-#skills .skills .dropdown .dropdown-content .skills-bottom .skills-item:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 0.5rem;
-  height: 100%;
   box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
-  z-index: 2;
 }
 #skills .skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {
   display: grid;

@@ -356,7 +356,7 @@
 
                         }
 
-                        // skills item overlay
+                        // SKILLS ITEM PSEUDO BG & BOX SHADOW
                         &::after {
                             content: "";
                             position: absolute;
@@ -368,28 +368,8 @@
                             border-radius: $border-radius-md;
                             opacity: 0.8;
                             z-index: -1;
-                        }
-
-                        // end of skills item overlay
-                        // SKILLS ITEM BOX SHADOW
-                        &:before {
-                            position: absolute;
-                            content: '';
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            border-radius: $border-radius-md;
-                            height: 100%;
                             box-shadow: $box-light-top-sm;
-                            // box-shadow: inset 3px 3px 3px #ddda,
-                            //     inset -3px -3px 3px #000;
-                            z-index: 2;
                         }
-
-                        // end of skills-item box shadow
-
-                        // item icon
-
                         .icon {
                             display: grid;
                             place-items: center;
