@@ -2557,7 +2557,7 @@ hamburger
   transition-delay: 0.5s;
 }
 #contact .contact .contact-items .contact-item.active-item .contact-info a {
-  transition-delay: 0.75s;
+  transition-delay: 0.5s;
 }
 
 #projects .projects {
