@@ -293,9 +293,9 @@
                 // IO CLASS 
                 &.io-item {
                     .title {
-                        transform: translateY(5vh);
-                        opacity: 0;
-                        transition: 1s;
+                        transform: translateY(15vh);
+                        opacity: 1;
+                        transition: 1.5s;
                         .icon {
                             // transform: scale(.5);
                             // transition: 1s;
@@ -307,16 +307,20 @@
                             transform: translateX(1rem);
                             transition: 1s;
                         }
-                        p,a {
+                        p {
                             opacity: 0;
                             transform: translateX(1rem);
+                            transition: 1s;
+                        }
+                        a {
+                            transform: translateY(10vh);
                             transition: 1s;
                         }
                     }
                 }
                 &.active-item {
                     .title {
-                        transform: translateY(0);
+                        transform: translateY(0vh);
                         opacity: 1;
                         .icon {
                             transform: scale(1);

@@ -2520,22 +2520,26 @@ hamburger
   transition: 0.25s;
 }
 #contact .contact .contact-items .contact-item.io-item .title {
-  transform: translateY(5vh);
-  opacity: 0;
-  transition: 1s;
+  transform: translateY(15vh);
+  opacity: 1;
+  transition: 1.5s;
 }
 #contact .contact .contact-items .contact-item.io-item .contact-info h4 {
   opacity: 0;
   transform: translateX(1rem);
   transition: 1s;
 }
-#contact .contact .contact-items .contact-item.io-item .contact-info p, #contact .contact .contact-items .contact-item.io-item .contact-info a {
+#contact .contact .contact-items .contact-item.io-item .contact-info p {
   opacity: 0;
   transform: translateX(1rem);
   transition: 1s;
 }
+#contact .contact .contact-items .contact-item.io-item .contact-info a {
+  transform: translateY(10vh);
+  transition: 1s;
+}
 #contact .contact .contact-items .contact-item.active-item .title {
-  transform: translateY(0);
+  transform: translateY(0vh);
   opacity: 1;
 }
 #contact .contact .contact-items .contact-item.active-item .title .icon {
