@@ -277,29 +277,7 @@
                         gap: 1.5rem;
                         grid-template-columns: 1fr 1fr 1fr;
                     }
-                    // BACK TO TOP BUTTON
-                    .top-btn {
-                        // border: 2px solid red;
-                        position: sticky;
-                        top: 10vh;
-                        width: 100%;
-                        margin: 0;
-                        z-index: 5;
-                        text-align: right;
-                        margin: 0;
-                        padding: 0 .25rem;
-                        a {
-                            color: $brand;
-                            // border: 2px solid $brand;
-                            // border-radius: 50%;
-                            // font-size: 1rem;
-                            padding: .25rem;
-                            font-size: 1rem;
-                        }
-                        @include sm {
-                            display: none;
-                        }
-                    }
+                    
                     // SKILLS ITEMS
                     .skills-item {
                         flex-basis: 100%;
@@ -553,7 +531,36 @@
 
                     // end of skills-items
                 }
-
+                // BACK TO TOP BUTTON
+                .top-btn {
+                    // border: 2px solid red;
+                    position: sticky;
+                    top: 10vh;
+                    width: 100%;
+                    margin: 0;
+                    z-index: 5;
+                    text-align: right;
+                    margin: 0;
+                    padding: 0 .25rem;
+                    a {
+                        color: $span-crimson;
+                        background: #fff;
+                        outline: 4px solid $overlay-blue-darker;
+                        outline-offset: -1px;
+                        border-radius: 50%;
+                        // font-size: 1rem;
+                        // padding: .25rem;
+                        font-size: 1.5rem;
+                        // box-shadow: $box-light-top-sm;
+                        // border-radius: 50%;
+                        &:hover {
+                            background: transparent;
+                        }
+                    }
+                    // @include sm {
+                    //     display: none;
+                    // }
+                }
                 // end of skills items container
 
             }

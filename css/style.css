@@ -2022,26 +2022,6 @@ hamburger
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-#skills .skills .dropdown .dropdown-content .skills-bottom .top-btn {
-  position: sticky;
-  top: 10vh;
-  width: 100%;
-  margin: 0;
-  z-index: 5;
-  text-align: right;
-  margin: 0;
-  padding: 0 0.25rem;
-}
-#skills .skills .dropdown .dropdown-content .skills-bottom .top-btn a {
-  color: rgba(255, 255, 255, 0.7);
-  padding: 0.25rem;
-  font-size: 1rem;
-}
-@media (min-width: 576px) {
-  #skills .skills .dropdown .dropdown-content .skills-bottom .top-btn {
-    display: none;
-  }
-}
 #skills .skills .dropdown .dropdown-content .skills-bottom .skills-item {
   flex-basis: 100%;
   width: 100%;
@@ -2226,6 +2206,27 @@ hamburger
     transition: 0.2s;
     transform: scale(1.0255);
   }
+}
+#skills .skills .dropdown .dropdown-content .top-btn {
+  position: sticky;
+  top: 10vh;
+  width: 100%;
+  margin: 0;
+  z-index: 5;
+  text-align: right;
+  margin: 0;
+  padding: 0 0.25rem;
+}
+#skills .skills .dropdown .dropdown-content .top-btn a {
+  color: #dc143c;
+  background: #fff;
+  outline: 4px solid #20262e;
+  outline-offset: -1px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+#skills .skills .dropdown .dropdown-content .top-btn a:hover {
+  background: transparent;
 }
 #skills .skills .io-container {
   width: 100%;
