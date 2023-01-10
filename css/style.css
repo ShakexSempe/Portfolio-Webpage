@@ -2537,6 +2537,7 @@ hamburger
 #contact .contact .contact-items .contact-item.io-item .contact-info a {
   transform: translateY(10vh);
   transition: 1s;
+  transition-timing-function: ease-in-out;
 }
 #contact .contact .contact-items .contact-item.active-item .title {
   transform: translateY(0vh);

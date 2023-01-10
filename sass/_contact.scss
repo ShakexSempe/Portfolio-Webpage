@@ -315,6 +315,7 @@
                         a {
                             transform: translateY(10vh);
                             transition: 1s;
+                            transition-timing-function: ease-in-out;
                         }
                     }
                 }
