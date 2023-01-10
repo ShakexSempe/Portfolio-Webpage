@@ -4219,7 +4219,7 @@ section .section-title.active-item {
 @media (max-width: 768px) {
   .section-pad.pad-logo {
     padding: 0 5vw;
-    height: 90vh;
+    height: 65vh;
     display: grid;
     place-items: center;
   }
