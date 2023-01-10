@@ -3484,7 +3484,7 @@ hamburger
 #footer .footer form .input-div {
   position: relative;
   padding: 1em 0 0.5em;
-  margin-bottom: 5vh;
+  margin-bottom: 1rem;
 }
 #footer .footer form .input-div label {
   position: absolute;
@@ -3522,14 +3522,12 @@ hamburger
   font-weight: 500;
   color: #000;
   text-transform: capitalize;
-  letter-spacing: 0.15rem;
-  opacity: 0.5;
+  opacity: 0;
   transition: 0.25s;
   font-family: "Montserrat", sans-serif;
 }
 #footer .footer form .input-div input:focus::placeholder, #footer .footer form .input-div input:hover::placeholder, #footer .footer form .input-div textarea:focus::placeholder, #footer .footer form .input-div textarea:hover::placeholder {
-  opacity: 1;
-  letter-spacing: normal;
+  opacity: 0.6;
 }
 #footer .footer form .input-div:hover label, #footer .footer form .input-div:focus label {
   transform: translateX(1em) translateY(-0.2em);

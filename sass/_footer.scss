@@ -50,7 +50,7 @@
                 position: relative;
                 // border: 1px solid yellow;
                 padding: 1em 0 .5em;
-                margin-bottom: 5vh;
+                margin-bottom: 1rem;
 
                 
                 label {
@@ -92,16 +92,16 @@
                         font-weight: 500;
                         color: #000;
                         text-transform: capitalize;
-                        letter-spacing: .15rem;
-                        opacity: .5;
+                        // letter-spacing: .15rem;
+                        opacity: 0;
                         transition: .25s;
                         font-family: $font-content;
                     }
 
                     &:focus, &:hover {
                         &::placeholder {
-                            opacity: 1;
-                            letter-spacing: normal;
+                            opacity: .6;
+                            // letter-spacing: normal;
                         }
                     }
                 }
