@@ -2488,7 +2488,7 @@ hamburger
 #contact .contact .contact-items .contact-item .contact-info a i {
   font-size: 1rem;
   position: relative;
-  transform: scale(0.7) translateX(0.5rem);
+  transform: scale(0.7) translateX(-0.5rem);
   opacity: 0.3;
   margin-left: 0.5rem;
   transition: 1s ease;
