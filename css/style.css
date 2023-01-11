@@ -2044,13 +2044,11 @@ hamburger
   isolation: isolate;
 }
 #skills .skills .dropdown .dropdown-content .skills-bottom .skills-item.io-item {
-  transform: scale(0.5);
-  opacity: 0;
+  transform: scale(0);
   transition: 0.5s;
 }
 #skills .skills .dropdown .dropdown-content .skills-bottom .skills-item.active-item {
   transform: scale(1);
-  opacity: 1;
   transition: 1.5s;
 }
 @media (min-width: 576px) {
