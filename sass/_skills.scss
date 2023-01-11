@@ -303,12 +303,12 @@
                         // IO CLASS
                         &.io-item {
                             transform: scale(0);
-                            // opacity: 0;
+                            opacity: 0;
                             transition: .5s;
                         }
                         &.active-item {
                             transform: scale(1);
-                            // opacity: 1;
+                            opacity: 1;
                             transition: 1.5s;
                         }
 
