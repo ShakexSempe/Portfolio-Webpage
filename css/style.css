@@ -4114,7 +4114,7 @@ hamburger
 .bs21 a, .bs21 span {
   font-family: "Kanit", sans-serif;
   color: #f4f4f4;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
   text-transform: capitalize;
 }
