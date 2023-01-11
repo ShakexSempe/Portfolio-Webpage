@@ -80,7 +80,7 @@ mainObserver.observe(main);
 // ********** ITEM INTERSECTION OBSERVER ************
 const item = document.querySelectorAll('.io-item');
 const itemOptions = {
-  rootMargin: '0% 0px -20% 0px',
+  rootMargin: '0% 0px -25% 0px',
 }
 
 item.forEach(item => {
