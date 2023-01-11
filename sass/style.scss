@@ -142,7 +142,7 @@ section {
 
     &.pad-logo {
         overflow: hidden;
-        height: 60vh;
+        height: 80vh;
         background-color: $overlay-blue-dark;
 
         [data-scroll="in"] {
@@ -153,6 +153,7 @@ section {
         figure {
             transform: scale(1);
             margin: 0 auto;
+            // border: 2px solid red;
             img {
                 object-fit: cover;
             }
