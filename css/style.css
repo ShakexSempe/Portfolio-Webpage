@@ -4093,9 +4093,8 @@ hamburger
   z-index: 1;
   width: 100%;
   border-radius: 0.5rem;
-  padding: 5vh 0;
+  padding: 5vh 5vw;
   margin: 0 auto;
-  width: 90%;
   text-align: center;
 }
 .bs21[data-scroll] {
@@ -4109,11 +4108,10 @@ hamburger
 @media (min-width: 768px) {
   .bs21 {
     padding: 10vh 0;
-    width: 100%;
   }
 }
 .bs21 p,
-.bs21 a {
+.bs21 a, .bs21 span {
   font-family: "Kanit", sans-serif;
   color: #f4f4f4;
   font-size: 1rem;
@@ -4122,7 +4120,7 @@ hamburger
 }
 @media (min-width: 768px) {
   .bs21 p,
-.bs21 a {
+.bs21 a, .bs21 span {
     font-size: 1.25rem;
   }
 }
