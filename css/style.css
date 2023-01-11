@@ -2520,7 +2520,7 @@ hamburger
   transition: 0.25s;
 }
 #contact .contact .contact-items .contact-item.io-item .title {
-  transform: translateY(15vh);
+  transform: translateY(100%);
   opacity: 1;
   transition: 1.5s;
 }
