@@ -89,7 +89,7 @@
                     background: $overlay-dark;
                     transition: 1.3s ease;
                     // project Title (h1)
-                    h2 {
+                    h3 {
                         font-size: 1.15rem;
                         width: 100%;
                         color: $text-light;
@@ -108,7 +108,7 @@
                     }
                     // end of project Title (h1)
                     // project details (h2 and p)
-                    h3 {
+                    h4 {
                         font-size: 1rem;
                         line-height: 1.5;
                         font-weight: 500;
@@ -132,7 +132,8 @@
                     }
                     // end of project details (h2 and p)
                     // project link icon
-                    a {
+                    
+                    .project-info {
                         color: $text-white;
                         background: $overlay-blue-darker;
                         margin: .5em 0 .5em;
@@ -142,50 +143,66 @@
                         outline: none;
                         border-radius: .5rem;
                         transition: all .3s ease;
-                        // border: 1px solid $span-gold;
-                        // end of project tile box shadow
-                        // links icon
-                        i {
-                            transition: .2s;
-                            color: $brand;
-                            font-size: .8rem;
-                            padding: .5rem 0;
-                            // // margin-right: .5em;
-                            // margin: 1em 0 .5em 0;
-                            // icon label (pseudo)
-                            &::after {
-                                content: 'view page';
-                                // font-style: italic;
-                                font-family: $font-title;
-                                letter-spacing: .15rem;
-                                text-transform: capitalize;
-                                color: $text-light;
-                                font-weight: 200;
-                                font-size: .9rem;
-                                transition: .3s;
-                                background: $button-crimson;
-                                box-shadow: $box-light-top-sm;
+                        // border: 2px solid red;
+                        // PROJECT LINK
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            width: 10rem;
+                            padding: .5rem;
+                            margin: 1rem 0;
+                            border-radius: .5rem;
+                            text-transform: capitalize;
+                            color: $text-light;
+                            position: relative;
+                            isolation: isolate;
+                            &::before, &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                transition: .25s;
                                 border-radius: .5rem;
-                                padding: .25rem .5rem;
-                                margin-left: .5rem;
-                                opacity: 1;
-                                transition: .3s ease;
+                                z-index: -1;
                             }
-
-                            // end of icon label (pseudo)
-                        }
-                        // end of links icon
-                        // link hover state
-                        &:hover {
-                            h2 {
-                                color: $span-gold;
+                            &::before {
+                                background: $button-crimson;
+                            }
+                            &::after {
+                                background: $button-crimson-hover;
+                                opacity: 0;
                             }
                             i {
-                                color: $text-light;
-                                transform: translateX(.5em);
+                                color: $brand;
+                                font-size: .8rem;
+                                transition: .25s;
+                                opacity: .5;
+                                transform: translateX(.25rem) scale(.8);
+                            }
+                            @media (min-width: 768px){
+                                &:hover {
+                                    transform: scale(.98);
+                                    &::before {opacity: 0;}
+                                    &::after {opacity: 1;}
+                                    i {
+                                        color: $text-light;
+                                    }
+                                }
+                            }
+                            @media (max-width: 768px){
+                                &:hover {
+                                    transform: scale(.98);
+                                    &::before {opacity: 0;}
+                                    &::after {opacity: 1;}
+                                    i {
+                                        color: $text-light;
+                                    }
+                                }
                             }
                         }
-                        // link hover state
 
                     }
                     // end of project link icon 
@@ -280,12 +297,11 @@
                         }
 
                         .project-tile {
-                            a {
-                                i {
-                                    // move icon right on item tile hover
-                                    &::after {
+                            .project-info {
+                                a {
+                                    i {
                                         opacity: 1;
-                                        margin-left: .5em;
+                                        transform: translate(0) scale(1);
                                     }
                                 }
                             }
