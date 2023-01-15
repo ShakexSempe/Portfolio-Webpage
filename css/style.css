@@ -4142,7 +4142,7 @@ hamburger
 }
 @media (min-width: 768px) {
   .bs21 {
-    padding: 10vh 0;
+    padding: 5vh 0 5vh;
   }
 }
 .bs21 p,
@@ -4248,7 +4248,7 @@ section .section-title.active-item {
   height: 90vh;
   width: 100%;
   background-color: #fff;
-  padding: 10vh 20vw;
+  padding: 10vh 20vw 5vh;
   display: grid;
   place-items: center;
   position: relative;
@@ -4256,7 +4256,7 @@ section .section-title.active-item {
 .section-pad figure {
   width: 100%;
   height: 100%;
-  margin: 5vh auto;
+  margin: 5vh auto 0;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -4266,7 +4266,7 @@ section .section-title.active-item {
   border-radius: 5px;
   transition: 0.5s ease;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .section-pad {
     height: auto;
     padding: 0 5vw 5vh;
@@ -4284,19 +4284,28 @@ section .section-title.active-item {
 }
 .section-pad.pad-logo {
   overflow: hidden;
-  height: 80vh;
+  height: 60vh;
   background-color: #29323c;
 }
-.section-pad.pad-logo [data-scroll=in] {
-  transition: 2s;
-  transform: scale(1);
-}
 .section-pad.pad-logo figure {
-  transform: scale(1);
   margin: 0 auto;
 }
 .section-pad.pad-logo figure img {
   object-fit: cover;
+}
+.section-pad.pad-logo figure.io-item img {
+  transform: translateY(-35vh);
+  opacity: 1;
+  transition: 2s ease;
+}
+@media (min-width: 768px) {
+  .section-pad.pad-logo figure.io-item img {
+    transform: translateY(-55vh);
+  }
+}
+.section-pad.pad-logo figure.active-item img {
+  transform: translateY(0);
+  opacity: 1;
 }
 @media (max-width: 768px) {
   .section-pad.pad-logo {
