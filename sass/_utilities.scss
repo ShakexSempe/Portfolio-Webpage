@@ -416,6 +416,7 @@ hamburger
         place-content: center;
         border-radius: .25rem;
         // padding: .15rem;
+        
         opacity: 0;
         transition: .25s;
         position: relative;
@@ -423,7 +424,6 @@ hamburger
 
         i {
             font-size: 1rem;
-            font-size: 100%;
             font-weight: 700;
             color: $light-span;
             transition: .25s;
@@ -431,7 +431,7 @@ hamburger
 
         a {
             color: $text-light;
-            font-size: .85rem;
+            font-size: .75rem;
             text-transform: capitalize;
             display: grid;
             place-items: center;
@@ -439,7 +439,7 @@ hamburger
 
             i {
                 display: block;
-                margin-bottom: .2rem;
+                margin-bottom: .25rem;
             }
         }
 

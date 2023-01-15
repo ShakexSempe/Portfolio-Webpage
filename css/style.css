@@ -357,14 +357,13 @@ hamburger
 }
 .bottom-nav .link-item i {
   font-size: 1rem;
-  font-size: 100%;
   font-weight: 700;
   color: #fff9;
   transition: 0.25s;
 }
 .bottom-nav .link-item a {
   color: #f4f4f4;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-transform: capitalize;
   display: grid;
   place-items: center;
@@ -372,7 +371,7 @@ hamburger
 }
 .bottom-nav .link-item a i {
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
 }
 @media (max-width: 768px) {
   .bottom-nav .link-item:active i {
