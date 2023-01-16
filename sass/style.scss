@@ -156,11 +156,11 @@ section {
             // IO CLASS
         &.io-item {
             img {
-                transform: translateY(-35vh);
-                @include md {
-                    transform: translateY(-55vh);
-                }
-                opacity: 1;
+                transform: translateY(-25%);
+                // @include md {
+                //     transform: translateY(-55vh);
+                // }
+                opacity: 0;
                 transition: 2s ease;
             }
         }

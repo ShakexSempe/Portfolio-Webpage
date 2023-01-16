@@ -4294,14 +4294,9 @@ section .section-title.active-item {
   object-fit: cover;
 }
 .section-pad.pad-logo figure.io-item img {
-  transform: translateY(-35vh);
-  opacity: 1;
+  transform: translateY(-25%);
+  opacity: 0;
   transition: 2s ease;
-}
-@media (min-width: 768px) {
-  .section-pad.pad-logo figure.io-item img {
-    transform: translateY(-55vh);
-  }
 }
 .section-pad.pad-logo figure.active-item img {
   transform: translateY(0);
