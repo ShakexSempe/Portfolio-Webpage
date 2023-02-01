@@ -30,89 +30,140 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" defer />
     
 </head>
-
 <body>
-    <!--Header-->
-    <header id="header">
-        <div class="header container">
-            <nav id="navbar">
-                <div class="brand">
-                    <a href="index.html">
-                        <h1><span>S</span>hakex <span>S</span>empe</h1>
+    <!-- HEADER -->
+    <header id="header" data-header class="header">
+        <!-- SKIP TO MAIN LINK -->
+        <a class="skip-link" href="#main">skip to main content</a>
+        <div class="navbar">
+            <nav id="nav">
+                <div class="logo">
+                    <a href="index.html" title="Homepage" class="scroll-link">
+                        <p>shakex<span>Sempe</span></p>
                     </a>
                 </div>
-
-        </div>
-        </nav>
+            </nav>
         </div>
     </header>
-    <!--End of Header-->
-
-    <!--Footer-->
-    <footer id="footer">
-        <div class="footer container">
-            <article id="thanks">
-                <h3>Thanks for completing my form.</h3>
-                <a href="index.html"><i class="fas fa-house-user"></i></a>
-            </article>
-
-            <!-- social media links -->
-            <section class="socialMedia-links">
-                <!-- social media link -->
-                <div class="socialMedia-item twitter">
-                    <p class="link-icon">twitter</p>
-                    <a href="https://twitter.com/Shake_x11" data-icon="twitter" target="_blank">
-                        <i class="fab fa-twitter"></i>@shake_x11
-                    </a>
+    <!--HERO-->
+    <section id="home" data-hero class="section welcome-section">
+        <div class="hero">
+            <div id="hero-content">
+                <div class="hero-title">
+                    <p>Your email has been received</p>
+                    <h1>
+                        Thank you!
+                    </h1>
+                    <p>I will be in touch shortly..</p>
                 </div>
-                <!-- end of social media link -->
-                <!-- social media link -->
-                <div class="socialMedia-item linkedin">
-                    <!-- <i class="fas fa-link link-icon"></i> -->
-                    <p class="link-icon">linkedin</p>
-                    <a href="https://www.linkedin.com/in/boitumelo-sempe-525b2baa/" data-icon="linkedin"
-                        target="_blank">
-                        <i class="fab fa-linkedin-in"></i>boitumelo Sempe
-                    </a>
-                </div>
-                <!-- end of social media link -->
-                <!-- social media link -->
-                <div class="socialMedia-item github">
-                    <p class="link-icon">github</p>
-                    <a href="https://github.com/ShakexSempe" data-icon="github" target="_blank">
-                        <i class="fab fa-github"></i>ShakexSempe
-                    </a>
-                </div>
-                <!-- end of social media link -->
-                <!-- social media link -->
-                <div class="socialMedia-item fcc">
-                    <p class="link-icon">freeCodecamp</p>
-                    <a href="https://www.freecodecamp.org/boitumelo-sempe" data-icon="FCC" target="_blank">
-                        <i class="fab fa-free-code-camp"></i>boitumelo sempe
-                    </a>
-                </div>
-                <!-- end of social media link -->
-            </section>
-            <!-- end of social media links -->
-
-
-            <div class="bs21">
-                <p>copyright&copy; Boitumelo Sempe.</p>
-                <a title="Shakex Sempe" href="#about">shakex sempe</a>
-                <span class="date" id="thanks-date"></span>
+                <a href="#main" type="button" title="Shakex Sempe: Web Developer" id="cta-header" class="scroll-link">
+                    <span style="--i:1;">S</span>
+                    <span style="--i:2;">h</span>
+                    <span style="--i:3;">a</span>
+                    <span style="--i:4;">k</span>
+                    <span style="--i:5;">e</span>
+                    <span style="--i:6;">x</span>
+                </a>
             </div>
-        </div>
 
-    </footer>
-    <!--End of Footer-->
+        </div>
+    </section>
+    <!-- END OF HERO-->
+    <!--  END OF MENU -->
+    <main id="main" data-main>
+
+        <!-- FOOTER -->
+        <section class="link-section" id="footer">
+            <div class="footer container">
+
+                <!-- SOCIAL MEDIA LINKS -->
+                <div class="socialMedia-links">
+                    <h2 data-scroll title="social media links" class="footer-section-title">my links</h2>
+                    <div class="links-grid">
+                        <!-- LINKEDIN -->
+                        <div class="socialMedia-item io-item linkedin">
+                            <!-- <i class="fas fa-link link-icon"></i> -->
+                            <p class="link-icon">linkedin</p>
+                            <i class="fab fa-linkedin-in bg-i"></i>
+                            <a href="https://www.linkedin.com/in/boitumelo-sempe-525b2baa/" title="linkedin"
+                                data-icon="linkedin" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>boitumelo Sempe
+                            </a>
+                        </div>
+                        <!-- GIT-HUB -->
+                        <div class="socialMedia-item io-item github">
+                            <i class="fab fa-github bg-i"></i>
+                            <p class="link-icon">github</p>
+                            <a href="https://github.com/ShakexSempe" title="github" data-icon="github" target="_blank">
+                                <i class="fab fa-github"></i>ShakexSempe
+                            </a>
+                        </div>
+                        <!-- CODE-PEN-->
+                        <div class="socialMedia-item io-item codepen">
+                            <i class="fab fa-codepen bg-i"></i>
+                            <p class="link-icon">codePen</p>
+                            <a href="https://codepen.io/bSempe" title="freeCodecamp" data-icon="codepen"
+                                target="_blank">
+                                <i class="fab fa-codepen"></i>@bsempe
+                            </a>
+                        </div>
+                        <!-- FREE CODE CAMP -->
+                        <div class="socialMedia-item io-item fcc">
+                            <i class="fab fa-free-code-camp bg-i"></i>
+                            <p class="link-icon">freeCodeCamp</p>
+                            <a href="https://www.freecodecamp.org/boitumelo-sempe" title="freeCodecamp" data-icon="FCC"
+                                target="_blank">
+                                <i class="fab fa-free-code-camp"></i>boitumelo sempe
+                            </a>
+                        </div>
+                        <!-- FRONT-END-MENTOR -->
+                        <div class="socialMedia-item io-item fem">
+                            <i class="fas fa-anchor bg-i"></i>
+                            <p class="link-icon">front-end-mentor</p>
+                            <a href="https://www.frontendmentor.io/profile/ShakexSempe" title="font-end-mentor"
+                                data-icon="FCC" target="_blank">
+                                <i class="fas fa-anchor"></i>@ShakexSempe
+                            </a>
+                        </div>
+                        <!-- TWITTER -->
+                        <div class="socialMedia-item io-item twitter">
+                            <i class="fab fa-twitter bg-i"></i>
+                            <p class="link-icon">twitter</p>
+                            <a href="https://twitter.com/Shake_x11" title="twitter" data-icon="twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>@shake_x11
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of contact form -->
+                <!-- padding section -->
+                <div id="footer-logo" class="section-pad pad-logo">
+                    <figure>
+                        <a title="shakex sempe: web developer" href="#footer">
+                            <img src="img/shakex-sempe-logo.png" loading="lazy" alt="Shakex Sempe logo">
+                        </a>
+                    </figure>
+                </div>
+                <div data-scroll class="bs21">
+                    <p>copyright&copy; Boitumelo Sempe</p>
+                    <p>Mahikeng, South Africa</p>
+                    <a title="Shakex Sempe" href="https://shakexsempe.github.io/box-shadow/" target="_blank">box
+                        shadow</a>
+                    <span class="date"></span>
+                </div>
+            </div>
+        </section>
+        <!-- END OF FOOTER-->
+    </main>
 
     <!-- date -->
     <script>
-        const date = document.getElementById("thanks-date");
+        const date = document.querySelector(".date");
         date.innerHTML = new Date().getFullYear();
     </script>
     <!-- end of date -->
-    
+
 </body>
 
 </html>
