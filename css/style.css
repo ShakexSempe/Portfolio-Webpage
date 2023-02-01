@@ -2978,7 +2978,7 @@ hamburger
 }
 @media (min-width: 768px) {
   .work .work-items .work-item .scroll-snap {
-    height: 60vh;
+    height: auto;
   }
 }
 .work .work-items .work-item .scroll-snap::-webkit-scrollbar {
