@@ -577,7 +577,6 @@ hamburger
   top: 0;
   width: 100%;
   height: 100%;
-  background: #000;
   background: #15191e;
   z-index: -1;
   opacity: 0;
@@ -4413,55 +4412,15 @@ section .section-title.active-item {
   }
 }
 
-#thanks {
-  padding: 0.5em 1em;
-  font-size: 1.5em;
-  background-color: #485563;
-  border-radius: 5px;
-  text-align: center;
-  margin: 10vh auto 0;
-  box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
+#thanks .home-link {
+  color: #f4f4f4;
+  margin: 5vh 0;
+  display: block;
 }
-#thanks h3 {
+#thanks .home-link i {
   color: #bfbfbf;
-  margin: 0.5em auto;
-  font-size: 1em;
-}
-#thanks a i {
-  border: none;
-  outline: none;
-  margin: 1em auto;
-  padding: 0.5em 3em;
-  text-align: center;
-  color: #bfbfbf;
-  position: relative;
-}
-#thanks a i::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  transition: 0.3s;
-  box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
-}
-#thanks a i:hover {
-  transition: 0.2s;
-  transform: scale(0.98);
-}
-#thanks a i:active {
-  transition: 0.2s;
-  transform: scale(0.9);
-}
-@media (max-width: 768px) {
-  #thanks {
-    width: 80%;
-  }
-  #thanks h3 {
-    font-size: 0.8em;
-  }
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

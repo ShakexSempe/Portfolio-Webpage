@@ -326,67 +326,16 @@ section {
 // THANK YOU PAGE
 
 #thanks {
-    padding: .5em 1em;
-    font-size: 1.5em;
-    background-color: $overlay-blue-light;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10vh auto 0;
-    box-shadow: inset 3px 3px 5px #ddda,
-        inset -3px -3px 5px #000a;
+    .home-link {
+            color: $text-light;
+            margin: 5vh 0;
+            display: block;
 
-    h3 {
-        color: $brand;
-        margin: .5em auto;
-        font-size: 1em;
-        
-    }
-    a {
-        i {
-            border: none;
-            outline: none;
-            margin: 1em auto;
-            padding: .5em 3em;
-            text-align: center;
-            color: $brand;
-            position: relative;
-
-            // icon box shadow
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 20px;
-                transition: .3s;
-                box-shadow: inset 3px 3px 5px #ddda,
-                    inset -3px -3px 5px #000a;
+            i {
+                color: $brand;
+                font-size: 1rem;
+                margin-right: .5rem;
             }
-
-            // end of icon box shadow 
-            // icon hover and active states
-            &:hover {
-                transition: .2s;
-                transform: scale(.98);
-            }
-
-            &:active {
-                transition: .2s;
-                transform: scale(.9);
-            }
-
-            // end of icon hover and active states
-
-        }
-    }
-    @media (max-width: 768px) {
-        width: 80%;
-        
-        h3 {
-            font-size: .8em;
-        }
     }
 }
 
