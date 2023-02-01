@@ -2009,13 +2009,13 @@ hamburger
   grid-template-columns: 1fr;
   gap: 10vh;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #skills .skills .dropdown .dropdown-content .skills-bottom {
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #skills .skills .dropdown .dropdown-content .skills-bottom {
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;

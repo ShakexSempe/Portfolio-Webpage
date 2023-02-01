@@ -268,12 +268,12 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     gap: 10vh;
-                    @include sm {
+                    @include md {
                         gap: 1.5rem;
                         grid-template-columns: 1fr 1fr;
                     }
 
-                    @include md {
+                    @include xlg {
                         gap: 1.5rem;
                         grid-template-columns: 1fr 1fr 1fr;
                     }
