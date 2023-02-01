@@ -2829,7 +2829,7 @@ hamburger
   grid-template-columns: 1fr;
   gap: 10vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .work .work-items {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
@@ -2962,11 +2962,11 @@ hamburger
   overflow-x: auto;
   overflow-y: hidden;
   flex: none;
-  width: 100%;
   width: 15rem;
+  width: 60%;
   border-radius: 0.5rem;
   height: auto;
-  height: 60vh;
+  height: 65vh;
   isolation: isolate;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
@@ -3572,7 +3572,6 @@ hamburger
   background: #20262e;
   outline: 2px solid #ead2a1;
   color: #ead2a1;
-  overflow: hidden;
 }
 #footer .footer form .input-div input:invalid, #footer .footer form .input-div textarea:invalid {
   background-color: #ead2a1;

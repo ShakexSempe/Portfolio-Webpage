@@ -11,7 +11,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 10vh;
-        @include md {
+        @include lg {
         grid-template-columns: 1fr 1fr;
         gap: .5rem;
         }
@@ -110,7 +110,7 @@
                 // overflow-x: hidden;
                 // overflow-y: auto;
                 overflow: hidden;
-                // border: 1px solid #0004;
+                // border: 2px solid red;
                 padding: 10vh 10vw;
                 padding: 1rem;
                 border-radius: $brand-br;
@@ -159,11 +159,11 @@
                 overflow-x: auto;
                 overflow-y: hidden;
                 flex: none;
-                width: 100%;
                 width: 15rem;
+                width: 60%;
                 border-radius: $brand-br;
                 height: auto;
-                height: 60vh;
+                height: 65vh;
                 isolation: isolate;
                 // height: 128px;
                 flex-flow: row nowrap;
