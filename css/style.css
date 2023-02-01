@@ -2962,10 +2962,10 @@ hamburger
   overflow-y: hidden;
   flex: none;
   width: 15rem;
-  width: 60%;
+  width: 85%;
   border-radius: 0.5rem;
   height: auto;
-  height: 65vh;
+  height: 60vh;
   isolation: isolate;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
