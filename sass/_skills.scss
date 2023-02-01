@@ -35,9 +35,9 @@
 
         // skills top section
         .skills-intro {
-            @media (min-width: 768px) {
+            @include md {
                 width: 100%;
-                padding: 5vh 5vw 0;
+                padding: 0vh 5vw 0;
                 text-align: center;
             }
 
@@ -56,13 +56,14 @@
                 p {
                     color: $text-light;
                     color: $overlay-blue-dark;
-                    font-size: .925rem;
+                    // font-size: .925rem;
+                    font-size: 1.25vw;
+                    font-size: clamp(1rem, 1.25vw, 1.15rem);
                     font-weight: 500;
-                    // font-size: 1rem;
                     line-height: 1.6;
 
                     @media (min-width: 768px) {
-                        font-size: 1rem;
+                        // font-size: 1rem;
                     }
 
                     background: transparent;
@@ -70,6 +71,7 @@
 
                     span {
                         font-size: .95rem;
+                        font-size: inherit;
                         font-weight: 700;
                         color: inherit;
                     }
@@ -80,14 +82,17 @@
             .skills-drop {
                 text-align: left;
                 color: $span-gold;
-
-                @media (min-width: 820px) {
+                font-size: 1.25vw;
+                font-size: clamp(1rem, 1.25vw, 1.15rem);
+                @include md {
                     text-align: center;
                 }
 
+
                 .skills-drop-p {
                     font-weight: 500;
-                    font-size: .95rem;
+                    font-size: in;
+                    // font-size: .95rem;
                 }
             }
 

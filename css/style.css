@@ -1845,41 +1845,40 @@ hamburger
 @media (min-width: 768px) {
   #skills .skills .skills-intro {
     width: 100%;
-    padding: 5vh 5vw 0;
+    padding: 0vh 5vw 0;
     text-align: center;
   }
 }
 #skills .skills .skills-intro .skills-article p {
   color: #f4f4f4;
   color: #29323c;
-  font-size: 0.925rem;
+  font-size: 1.25vw;
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
   font-weight: 500;
   line-height: 1.6;
   background: transparent;
   overflow: hidden;
 }
-@media (min-width: 768px) {
-  #skills .skills .skills-intro .skills-article p {
-    font-size: 1rem;
-  }
-}
 #skills .skills .skills-intro .skills-article p span {
   font-size: 0.95rem;
+  font-size: inherit;
   font-weight: 700;
   color: inherit;
 }
 #skills .skills .skills-intro .skills-drop {
   text-align: left;
   color: #ead2a1;
+  font-size: 1.25vw;
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
 }
-@media (min-width: 820px) {
+@media (min-width: 768px) {
   #skills .skills .skills-intro .skills-drop {
     text-align: center;
   }
 }
 #skills .skills .skills-intro .skills-drop .skills-drop-p {
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: in;
 }
 #skills .skills .dropdown {
   position: relative;
