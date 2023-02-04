@@ -139,11 +139,14 @@
                 justify-content: center;
                 margin: 2.5vh 5vw;
                 // margin: 2.5vh auto;
+                width: 25vw;
+                width: 20rem;
                 width: 15rem;
-                width: 50%;
+                width: clamp(10rem, 25vw, 20rem);
                 background: #000a;
                 color: $text-light;
-                font-size: 1.35rem;
+                font-size: 1.2rem;
+                font-size: clamp(1.1rem, 2.5vw, 1.25rem);
                 font-weight: 400;
                 text-align: center;
                 text-transform: capitalize;
@@ -159,16 +162,16 @@
 
                 @include md {
                     margin: 2.5vh auto;
-                    width: 20rem;
-                    padding: .5rem 1rem;
+                    // width: 20rem;
+                    padding: .5rem 2rem;
                 }
 
                 i {
                     // border: 1px solid red;
-                    font-weight: 600;
-                    margin-left: .5rem;
+                    font-weight: 800;
+                    margin-left: 1rem;
                     font-size: 1rem;
-                    color: $brand;
+                    // color: $brand;
                     transition: .5s;
                 }
 
@@ -224,7 +227,10 @@
                 @include md {
                     &:hover {
                         &::before {
-                            opacity: .8;
+                            opacity: 0;
+                        }
+                        &::after {
+                            opacity: 1;
                         }
 
                         color: $brand;

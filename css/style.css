@@ -1902,11 +1902,14 @@ hamburger
   justify-content: space-between;
   justify-content: center;
   margin: 2.5vh 5vw;
+  width: 25vw;
+  width: 20rem;
   width: 15rem;
-  width: 50%;
+  width: clamp(10rem, 25vw, 20rem);
   background: #000a;
   color: #f4f4f4;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
@@ -1922,15 +1925,13 @@ hamburger
 @media (min-width: 768px) {
   #skills .skills .dropdown .dropbtn {
     margin: 2.5vh auto;
-    width: 20rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
   }
 }
 #skills .skills .dropdown .dropbtn i {
-  font-weight: 600;
-  margin-left: 0.5rem;
+  font-weight: 800;
+  margin-left: 1rem;
   font-size: 1rem;
-  color: #bfbfbf;
   transition: 0.5s;
 }
 #skills .skills .dropdown .dropbtn::before, #skills .skills .dropdown .dropbtn::after {
@@ -1979,7 +1980,10 @@ hamburger
     color: #bfbfbf;
   }
   #skills .skills .dropdown .dropbtn:hover::before {
-    opacity: 0.8;
+    opacity: 0;
+  }
+  #skills .skills .dropdown .dropbtn:hover::after {
+    opacity: 1;
   }
   #skills .skills .dropdown .dropbtn:hover i {
     color: #f4f4f4;
