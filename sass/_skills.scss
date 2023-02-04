@@ -13,24 +13,6 @@
         min-height: auto;
         padding: 5vh 0;
 
-        // skills section-title
-        &-header {
-            width: 100%;
-            height: auto;
-            background: #fff;
-            z-index: 30;
-        }
-
-        // end of skills section-title
-        @media (max-width: 768px) {
-            // background: $overlay;
-            background-size: 200%;
-
-            &::after {
-                display: none;
-            }
-        }
-
         // end of skills container
 
         // skills top section
@@ -82,8 +64,8 @@
             .skills-drop {
                 text-align: left;
                 color: $span-gold;
-                font-size: 1.25vw;
-                font-size: clamp(1rem, 1.25vw, 1.15rem);
+                font-size: 1rem;
+                font-size: clamp(.95rem, 1.25vw, 1.15rem);
                 @include md {
                     text-align: center;
                 }
@@ -136,7 +118,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                justify-content: center;
+                // justify-content: center;
                 margin: 2.5vh 5vw;
                 // margin: 2.5vh auto;
                 width: 25vw;
@@ -163,6 +145,7 @@
                 @include md {
                     margin: 2.5vh auto;
                     // width: 20rem;
+                    justify-content: center;
                     padding: .5rem 2rem;
                 }
 
@@ -213,6 +196,7 @@
                     }
                     i {
                         color: $text-light;
+                        transform: rotate(-180deg);
                     }
 
                     &::before {

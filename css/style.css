@@ -1820,20 +1820,6 @@ hamburger
   min-height: auto;
   padding: 5vh 0;
 }
-#skills .skills-header {
-  width: 100%;
-  height: auto;
-  background: #fff;
-  z-index: 30;
-}
-@media (max-width: 768px) {
-  #skills .skills {
-    background-size: 200%;
-  }
-  #skills .skills::after {
-    display: none;
-  }
-}
 #skills .skills .skills-intro {
   text-align: left;
   margin: 0 auto 0;
@@ -1867,8 +1853,8 @@ hamburger
 #skills .skills .skills-intro .skills-drop {
   text-align: left;
   color: #ead2a1;
-  font-size: 1.25vw;
-  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  font-size: 1rem;
+  font-size: clamp(.95rem, 1.25vw, 1.15rem);
 }
 @media (min-width: 768px) {
   #skills .skills .skills-intro .skills-drop {
@@ -1900,7 +1886,6 @@ hamburger
   display: flex;
   align-items: center;
   justify-content: space-between;
-  justify-content: center;
   margin: 2.5vh 5vw;
   width: 25vw;
   width: 20rem;
@@ -1925,6 +1910,7 @@ hamburger
 @media (min-width: 768px) {
   #skills .skills .dropdown .dropbtn {
     margin: 2.5vh auto;
+    justify-content: center;
     padding: 0.5rem 2rem;
   }
 }
@@ -1968,6 +1954,7 @@ hamburger
 }
 #skills .skills .dropdown .dropbtn.active i {
   color: #f4f4f4;
+  transform: rotate(-180deg);
 }
 #skills .skills .dropdown .dropbtn.active::before {
   opacity: 0;
