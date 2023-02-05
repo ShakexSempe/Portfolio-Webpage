@@ -2858,9 +2858,9 @@ hamburger
 .work .work-container .item .item-header .item-title {
   text-transform: capitalize;
   margin: 1rem 0;
-  font-size: 1.25rem;
-  font-weight: 500;
   font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 @media (min-width: 768px) {
   .work .work-container .item .item-header .item-title {
@@ -2899,6 +2899,8 @@ hamburger
 .work .work-container .item .item-header .item-description {
   margin-bottom: 1rem;
   font-weight: 500;
+  font-size: 1rem;
+  font-size: clamp(1rem, 1vw, 2rem);
 }
 @media (min-width: 768px) {
   .work .work-container .item .item-header .item-description {
@@ -2913,7 +2915,7 @@ hamburger
 }
 .work .work-container .item .item-header .item-cta a {
   border: 1px solid #000;
-  padding: 0.5rem;
+  padding: 0.85rem;
   text-transform: capitalize;
   font-size: 0.95rem;
   border-radius: 0.25rem;
