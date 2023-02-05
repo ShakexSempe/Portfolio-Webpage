@@ -9,10 +9,13 @@
     .work-container {
         // border: 2px solid red;
         margin-top: 10vh;
+        @include lg {
+            margin-top: 15vh;
+        }
         .item-flex-container {
             @include md {
                 display: flex;
-                gap: 1rem;
+                gap: 1;
             }
             
         }
@@ -22,11 +25,17 @@
             // height: auto;
             overflow: hidden;
             padding: 0 0 1rem 0;
+            &:first-child {
+                margin-bottom: 15vh;
+            }
             @include sm {
                 padding: 1rem;
             }
-            @include md {
+            @include sm {
                 padding: 0rem;
+                &:first-child {
+                    // margin-bottom: 10vh;
+                }
             }
             
             .item-header {
@@ -35,12 +44,18 @@
                 @include md {
                     display: grid;
                     width: 50%;
+                    padding: .5rem;
+                }
+                @include xlg {
+                    padding: 5vh 5vw;
+                    
                 }
                 .item-title {
                     text-transform: capitalize;
                     margin: 1rem 0;
                     font-size: 1.25rem;
-                    font-weight: 600;
+                    font-weight: 500;
+                    font-family: $font-title;
                     // font-size: clamp(1.5rem, 1.5vw, 1.8rem);
                     @include md {
                         margin: 0;
@@ -102,10 +117,13 @@
                         text-align: center;
                         letter-spacing: .025rem;
                         transition: .25s;
+                        @include sm {
+                            // padding: 1rem;
+                        }
                         @include md {
                             justify-content: space-between;
                             gap: 1rem;
-                            padding: 1rem .5rem;
+                            // padding: 1rem .5rem;
                         }
                         &.cta-primary {
                             background: $button-crimson;
@@ -140,6 +158,7 @@
                 }
                 .item-image {
                     // height: 50vh;
+                    overflow: hidden;
                     width: 100%;
                     // border: 2px solid green;
                     margin: 0 auto;

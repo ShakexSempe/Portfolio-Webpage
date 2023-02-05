@@ -2816,22 +2816,30 @@ hamburger
 .work .work-container {
   margin-top: 10vh;
 }
+@media (min-width: 820px) {
+  .work .work-container {
+    margin-top: 15vh;
+  }
+}
 @media (min-width: 768px) {
   .work .work-container .item-flex-container {
     display: flex;
-    gap: 1rem;
+    gap: 1;
   }
 }
 .work .work-container .item {
   overflow: hidden;
   padding: 0 0 1rem 0;
 }
+.work .work-container .item:first-child {
+  margin-bottom: 15vh;
+}
 @media (min-width: 576px) {
   .work .work-container .item {
     padding: 1rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .work .work-container .item {
     padding: 0rem;
   }
@@ -2840,13 +2848,20 @@ hamburger
   .work .work-container .item .item-header {
     display: grid;
     width: 50%;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .work .work-container .item .item-header {
+    padding: 5vh 5vw;
   }
 }
 .work .work-container .item .item-header .item-title {
   text-transform: capitalize;
   margin: 1rem 0;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
 }
 @media (min-width: 768px) {
   .work .work-container .item .item-header .item-title {
@@ -2912,7 +2927,6 @@ hamburger
   .work .work-container .item .item-header .item-cta a {
     justify-content: space-between;
     gap: 1rem;
-    padding: 1rem 0.5rem;
   }
 }
 .work .work-container .item .item-header .item-cta a.cta-primary {
@@ -2944,6 +2958,7 @@ hamburger
   }
 }
 .work .work-container .item .item-content .item-image {
+  overflow: hidden;
   width: 100%;
   margin: 0 auto;
 }
