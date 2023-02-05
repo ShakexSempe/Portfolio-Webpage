@@ -110,16 +110,16 @@
         height: 100%;
         transition: 1s ease background-color;
         #nav {
+            // border: 2px solid red;
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
             height: 100%;
-            // border: 2px solid red;
-            padding: .5rem 5vw;
+            padding: 0 5vw;
             z-index: 5;
-            @media (max-width: 1024px) {
-                padding: 0 5vw;
+            @include xsm {
+                padding: 0 1rem;
             }
             // HEADER LOGO
             .logo {
