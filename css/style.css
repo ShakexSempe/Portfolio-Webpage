@@ -2861,11 +2861,11 @@ hamburger
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
 @media (min-width: 768px) {
   .work .work-container .item .item-header .item-title {
     margin: 0;
-    font-size: 1.5rem;
   }
 }
 .work .work-container .item .item-header .item-meta-data {
@@ -2918,6 +2918,7 @@ hamburger
   padding: 0.85rem;
   text-transform: capitalize;
   font-size: 0.95rem;
+  font-size: clamp(.95rem, 1vw, 1.15rem);
   border-radius: 0.25rem;
   width: 100%;
   text-align: center;
