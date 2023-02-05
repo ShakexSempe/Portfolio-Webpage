@@ -24,10 +24,11 @@
             }
 
             // width: 90%;
-            // border: 2px solid red;
+            border: 2px solid red;
             text-align: left;
             margin: 0 auto 0;
             padding: 2.5vh 2.5vw 0 5vw;
+            padding: 1rem;
 
             // padding: 1rem .5rem .5rem 1rem;
             // padding: 2.5vh 2.5vw 0 5vw;
@@ -73,21 +74,10 @@
 
                 .skills-drop-p {
                     font-weight: 500;
-                    font-size: in;
+                    font-size: inherit;
                     // font-size: .95rem;
                 }
             }
-
-            // IO CLASS
-            // &.io-item {
-            //     opacity: 0;
-            //     transform: translateY(1rem);
-            //     transition: 1.5s;
-            // }
-            // &.active-item {
-            //     opacity: 1;
-            //     transform: translateY(0);
-            // }
         }
 
         // end of skills top section
@@ -180,7 +170,7 @@
                 }
 
                 &::after {
-                    background: $overlay-btn-hover;
+                    background: $button-crimson-hover;
                     opacity: 0;
                     box-shadow: $box-light-top-sm-hover;
                 }
@@ -190,9 +180,8 @@
                 &.active {
                     transform: scale(.98);
                     letter-spacing: normal;
-                    color: $brand;
                     @media (max-width: 768px) {
-                        width: 90%;
+                        // width: 90%;
                     }
                     i {
                         color: $text-light;
