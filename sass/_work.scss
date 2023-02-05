@@ -8,6 +8,7 @@
 
     .work-container {
         // border: 2px solid red;
+        margin-top: 10vh;
         .item-flex-container {
             @include md {
                 display: flex;
@@ -146,10 +147,17 @@
                         width: 100%;
                         height: 100%;
                         border-radius: .25rem;
+                        transition: .5s;
                         // border: 2px solid pink;
                     }
                     @include md {
                         // width: 25rem;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                        }
                     }
                 }
             }
