@@ -21,7 +21,7 @@
             text-align: left;
             margin: 0 auto 0;
             padding: 2.5vh 2.5vw 0 5vw;
-            padding: 1rem;
+            // padding: 1rem;
             position: relative;
             z-index: 30;
             @include sm {
@@ -38,7 +38,7 @@
                     color: $overlay-blue-dark;
                     // font-size: .925rem;
                     font-size: 1.25vw;
-                    font-size: clamp(1rem, 1.25vw, 1.15rem);
+                    font-size: clamp(.95rem, 1.5vw, 1.15rem);
                     font-weight: 500;
                     line-height: 1.6;
 
@@ -63,7 +63,7 @@
                 text-align: left;
                 color: $span-gold;
                 font-size: 1rem;
-                font-size: clamp(.95rem, 1.25vw, 1.15rem);
+                font-size: clamp(.95rem, 2vw, 1.15rem);
                 @include md {
                     text-align: center;
                 }

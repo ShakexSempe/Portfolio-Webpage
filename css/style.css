@@ -1824,7 +1824,6 @@ hamburger
   text-align: left;
   margin: 0 auto 0;
   padding: 2.5vh 2.5vw 0 5vw;
-  padding: 1rem;
   position: relative;
   z-index: 30;
 }
@@ -1844,7 +1843,7 @@ hamburger
   color: #f4f4f4;
   color: #29323c;
   font-size: 1.25vw;
-  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  font-size: clamp(.95rem, 1.5vw, 1.15rem);
   font-weight: 500;
   line-height: 1.6;
   background: transparent;
@@ -1860,7 +1859,7 @@ hamburger
   text-align: left;
   color: #ead2a1;
   font-size: 1rem;
-  font-size: clamp(.95rem, 1.25vw, 1.15rem);
+  font-size: clamp(.95rem, 2vw, 1.15rem);
 }
 @media (min-width: 768px) {
   #skills .skills .skills-intro .skills-drop {
