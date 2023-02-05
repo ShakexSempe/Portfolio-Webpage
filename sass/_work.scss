@@ -93,7 +93,7 @@
                     gap: 1rem;
                     a {
                         border: 1px solid #000;
-                        padding: 1rem .5rem;
+                        padding: .5rem;
                         text-transform: capitalize;
                         font-size: .95rem;
                         border-radius: .25rem;
@@ -101,12 +101,17 @@
                         text-align: center;
                         letter-spacing: .025rem;
                         transition: .25s;
+                        @include md {
+                            justify-content: space-between;
+                            gap: 1rem;
+                            padding: 1rem .5rem;
+                        }
                         &.cta-primary {
                             background: $button-crimson;
                             border: none;
                             color: $text-light;
                             i {
-                                transform: translateX(-.25rem);
+                                transform: translateX(-.5rem);
                                 transition: .25s;
                             }
                             
@@ -114,19 +119,15 @@
                         &.cta-secondary {
                             // padding: .25rem;
                             font-size: .85rem;
+                            color: $text-black;
                         }
                         &:hover {
                             transform: scale(.98);
                             letter-spacing: normal;
                             i {
-                                transform: translateX(-.15rem);
+                                transform: translateX(-.25rem);
                             }
                         }
-                    }
-                    @include md {
-                        // flex-direction: column;
-                        justify-content: space-between;
-                        gap: 1rem;
                     }
                 }
             }
