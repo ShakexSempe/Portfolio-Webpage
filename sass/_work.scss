@@ -13,8 +13,9 @@
             margin-top: 15vh;
         }
         .item-flex-container {
-            @include md {
+            @include lg {
                 display: flex;
+                align-items: center;
                 gap: 1;
             }
             
@@ -29,22 +30,25 @@
                 margin-bottom: 15vh;
             }
             @include sm {
-                padding: 1rem;
+                padding: .5rem;
             }
-            @include sm {
-                padding: 0rem;
-                &:first-child {
-                    // margin-bottom: 10vh;
-                }
+            @include md {
+                padding: 1rem;
             }
             
             .item-header {
                 // display: grid;
                 // border: 2px solid red;
+                @include sm {
+                    padding: .25rem;
+                }
                 @include md {
                     display: grid;
+                }
+                @include lg {
+                    // border: 2px solid pink;
                     width: 50%;
-                    padding: .5rem;
+                    padding: 1rem;
                 }
                 @include xlg {
                     padding: 5vh 5vw;
@@ -56,9 +60,9 @@
                     font-family: $font-title;
                     font-weight: 500;
                     font-size: 1.5rem;
-                    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                    font-size: clamp(1.25rem, 2.25vw, 2.25rem);
                     @include md {
-                        margin: 0;
+                        // margin: 0;
                         // font-size: 1.5rem;
                     }
                 }
@@ -66,6 +70,7 @@
                     // border: 2px solid yellow;
                     display: flex;
                     align-items: start;
+                    flex-wrap: wrap;
                     // justify-content: space-evenly;
                     gap: 1rem;
                     list-style: none;
@@ -94,12 +99,21 @@
                 }
                 .item-description {
                     // border: 1px solid pink;
-                    margin-bottom: 1rem;
-                    font-weight: 500;
-                    font-size: 1rem;
-                    font-size: clamp(1rem, 1vw, 2rem);
+                    margin: 1rem 0;
+                    p {
+                        font-weight: 500;
+                        font-size: 1rem;
+                        font-size: clamp(1rem, 1vw, 2rem);
+                        &::first-letter {
+                            text-transform: capitalize;
+                        }
+                        &::after {
+                            content: '.';
+                        }
+
+                    }
                     @include md {
-                        margin-bottom: 0;
+                        // margin-bottom: 0;
                     }
                 }
                 .item-cta {
@@ -122,7 +136,7 @@
                         @include sm {
                             // padding: 1rem;
                         }
-                        @include md {
+                        @include lg {
                             justify-content: space-between;
                             gap: 1rem;
                             // padding: 1rem .5rem;
@@ -155,7 +169,9 @@
             .item-content {
                 // border: 2px solid yellow;
                 width: 100%;
-                @include md {
+                
+                @include lg {
+                    // border: 2px solid yellow;
                     width: 50%;
                 }
                 .item-image {
@@ -170,9 +186,6 @@
                         border-radius: .25rem;
                         transition: .5s;
                         // border: 2px solid pink;
-                    }
-                    @include md {
-                        // width: 25rem;
                     }
 
                     &:hover {

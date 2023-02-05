@@ -2816,9 +2816,10 @@ hamburger
     margin-top: 15vh;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .work .work-container .item-flex-container {
     display: flex;
+    align-items: center;
     gap: 1;
   }
 }
@@ -2831,19 +2832,28 @@ hamburger
 }
 @media (min-width: 576px) {
   .work .work-container .item {
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .work .work-container .item {
     padding: 1rem;
   }
 }
 @media (min-width: 576px) {
-  .work .work-container .item {
-    padding: 0rem;
+  .work .work-container .item .item-header {
+    padding: 0.25rem;
   }
 }
 @media (min-width: 768px) {
   .work .work-container .item .item-header {
     display: grid;
+  }
+}
+@media (min-width: 820px) {
+  .work .work-container .item .item-header {
     width: 50%;
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }
 @media (min-width: 1024px) {
@@ -2857,16 +2867,12 @@ hamburger
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-}
-@media (min-width: 768px) {
-  .work .work-container .item .item-header .item-title {
-    margin: 0;
-  }
+  font-size: clamp(1.25rem, 2.25vw, 2.25rem);
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
   align-items: start;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
   margin: 0 0 1rem 0;
@@ -2893,15 +2899,18 @@ hamburger
   }
 }
 .work .work-container .item .item-header .item-description {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+}
+.work .work-container .item .item-header .item-description p {
   font-weight: 500;
   font-size: 1rem;
   font-size: clamp(1rem, 1vw, 2rem);
 }
-@media (min-width: 768px) {
-  .work .work-container .item .item-header .item-description {
-    margin-bottom: 0;
-  }
+.work .work-container .item .item-header .item-description p::first-letter {
+  text-transform: capitalize;
+}
+.work .work-container .item .item-header .item-description p::after {
+  content: ".";
 }
 .work .work-container .item .item-header .item-cta {
   display: flex;
@@ -2921,7 +2930,7 @@ hamburger
   letter-spacing: 0.025rem;
   transition: 0.25s;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .work .work-container .item .item-header .item-cta a {
     justify-content: space-between;
     gap: 1rem;
@@ -2950,7 +2959,7 @@ hamburger
 .work .work-container .item .item-content {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .work .work-container .item .item-content {
     width: 50%;
   }
