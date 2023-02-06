@@ -60,7 +60,7 @@
                     font-family: $font-title;
                     font-weight: 500;
                     font-size: 1.5rem;
-                    font-size: clamp(1.24rem, 2.25vw, 2.5rem);
+                    font-size: clamp(1.25rem, 2.25vw, 2.5rem);
                     @include md {
                         // margin: 0;
                         // font-size: 1.5rem;

@@ -2867,7 +2867,7 @@ hamburger
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
-  font-size: clamp(1.24rem, 2.25vw, 2.5rem);
+  font-size: clamp(1.25rem, 2.25vw, 2.5rem);
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
