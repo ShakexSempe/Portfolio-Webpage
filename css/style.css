@@ -2867,7 +2867,7 @@ hamburger
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
-  font-size: clamp(1.25rem, 2.25vw, 2.5rem);
+  font-size: clamp(1.4rem, 2.25vw, 2.5rem);
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
@@ -2908,9 +2908,6 @@ hamburger
 }
 .work .work-container .item .item-header .item-description p::first-letter {
   text-transform: capitalize;
-}
-.work .work-container .item .item-header .item-description p::after {
-  content: ".";
 }
 .work .work-container .item .item-header .item-cta {
   display: flex;
