@@ -2879,8 +2879,8 @@ hamburger
 }
 .work .work-container .item .item-header .item-description p {
   font-weight: 500;
-  font-size: 1rem;
-  font-size: clamp(1rem, .5vw, 2rem);
+  font-size: 1vw;
+  font-size: clamp(.95rem, 1.5vw, 1.05rem);
 }
 .work .work-container .item .item-header .item-description p::first-letter {
   text-transform: capitalize;

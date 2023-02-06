@@ -102,8 +102,8 @@
                     margin: 1rem 0;
                     p {
                         font-weight: 500;
-                        font-size: 1rem;
-                        font-size: clamp(1rem, .5vw, 2rem);
+                        font-size: 1vw;
+                        font-size: clamp(.95rem, 1.5vw, 1.05rem);
                         &::first-letter {
                             text-transform: capitalize;
                         }
