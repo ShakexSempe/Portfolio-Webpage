@@ -145,32 +145,6 @@ hamburger
 }
 
 /*end of bootstrap scrollbar*/
-.section-title span {
-  position: relative;
-  color: #29323c;
-  animation: section-span 3s ease-in-out infinite;
-  height: 5px;
-  /* section title animations */
-  /* end of section title animations */
-}
-@keyframes section-span {
-  0%, 100% {
-    top: 0px;
-    opacity: 1;
-    color: #dc143c;
-  }
-  45% {
-    top: -20px;
-    opacity: 0;
-    color: #29323c;
-  }
-  46% {
-    top: 20px;
-    opacity: 0;
-    color: #485563;
-  }
-}
-
 /* end of section title span animation */
 .top-link {
   position: fixed;
@@ -2937,21 +2911,33 @@ hamburger
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
   border: none;
   color: #f4f4f4;
+  font-weight: 500;
 }
 .work .work-container .item .item-header .item-cta a.cta-primary i {
-  transform: translateX(-0.5rem);
+  transform: translateX(0.5rem);
   transition: 0.25s;
 }
 .work .work-container .item .item-header .item-cta a.cta-secondary {
   font-size: 0.85rem;
   color: #000;
 }
-.work .work-container .item .item-header .item-cta a:hover {
-  transform: scale(0.98);
-  letter-spacing: normal;
+@media (min-width: 768px) {
+  .work .work-container .item .item-header .item-cta a:hover {
+    transform: scale(0.98);
+    letter-spacing: normal;
+  }
+  .work .work-container .item .item-header .item-cta a:hover i {
+    transform: translateX(0.4rem);
+  }
 }
-.work .work-container .item .item-header .item-cta a:hover i {
-  transform: translateX(-0.25rem);
+@media (max-width: 768px) {
+  .work .work-container .item .item-header .item-cta a:active {
+    transform: scale(0.98);
+    letter-spacing: normal;
+  }
+  .work .work-container .item .item-header .item-cta a:active i {
+    transform: translateX(0.4rem);
+  }
 }
 .work .work-container .item .item-content {
   width: 100%;
@@ -4354,13 +4340,11 @@ section .section-title {
   font-size: 2.25rem;
   font-weight: 400;
   color: #20262e;
-  max-width: 100vw;
   margin: 5vh 0 10vh;
   overflow: hidden;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
   font-family: "Kanit", sans-serif;
   -webkit-box-reflect: below -1rem linear-gradient(transparent, #0003);
 }
@@ -4369,14 +4353,49 @@ section .section-title {
     font-size: 2.5rem;
   }
 }
+section .section-title span {
+  position: relative;
+  animation: section-span 3s ease-in-out infinite;
+  height: 5px;
+  /* section title animations */
+  /* end of section title animations */
+}
+@keyframes section-span {
+  0% {
+    top: 0px;
+    opacity: 1;
+    color: #dc143c;
+  }
+  45% {
+    top: -20px;
+    opacity: 0;
+    color: #29323c;
+  }
+  46% {
+    top: 20px;
+    opacity: 0;
+    color: #485563;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+    color: #dc143c;
+  }
+}
 section .section-title.io-item {
   opacity: 0;
   transform: scale(0.8) translateY(5vh);
   transition: 1s;
 }
+section .section-title.io-item span {
+  animation: none;
+}
 section .section-title.active-item {
   opacity: 1;
   transform: scale(1) translateY(0);
+}
+section .section-title.active-item span {
+  animation: section-span 3s ease-in-out infinite 1s;
 }
 
 .section-pad {

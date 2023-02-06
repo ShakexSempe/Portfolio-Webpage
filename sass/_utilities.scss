@@ -198,36 +198,7 @@ hamburger
 }
 /*end of bootstrap scrollbar*/
 
-.section-title span {
-    position: relative;
-    color: $overlay-blue-dark;
-    animation: section-span 3s ease-in-out infinite;
-    height: 5px;
 
-    /* section title animations */
-    @keyframes section-span {
-
-        0%,
-        100% {
-            top: 0px;
-            opacity: 1;
-            color: #dc143c;
-        }
-
-        45% {
-            top: -20px;
-            opacity: 0;
-            color: $overlay-blue-dark;
-        }
-
-        46% {
-            top: 20px;
-            opacity: 0;
-            color: $overlay-blue-light;
-        }
-    }
-    /* end of section title animations */
-}
 /* end of section title span animation */
 
 // back to top button

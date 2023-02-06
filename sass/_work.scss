@@ -142,8 +142,9 @@
                             background: $button-crimson;
                             border: none;
                             color: $text-light;
+                            font-weight: 500;
                             i {
-                                transform: translateX(-.5rem);
+                                transform: translateX(.5rem);
                                 transition: .25s;
                             }
                             
@@ -153,11 +154,25 @@
                             font-size: .85rem;
                             color: $text-black;
                         }
-                        &:hover {
-                            transform: scale(.98);
-                            letter-spacing: normal;
-                            i {
-                                transform: translateX(-.25rem);
+                        // BUTTON HOVER AND ACTIVE CLASSES
+                        @media (min-width: 768px) {
+                            &:hover {
+                                transform: scale(.98);
+                                letter-spacing: normal;
+
+                                i {
+                                    transform: translateX(.4rem);
+                                }
+                            }
+                        }
+                        @media (max-width: 768px) {
+                            &:active {
+                                transform: scale(.98);
+                                letter-spacing: normal;
+
+                                i {
+                                    transform: translateX(.4rem);
+                                }
                             }
                         }
                     }
