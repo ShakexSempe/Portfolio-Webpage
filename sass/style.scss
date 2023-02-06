@@ -120,12 +120,13 @@ section {
             transition: .5s ease;
         }
     }
-    // small screens
+    // SMALL SCREENS
     @media (max-width: 768px) {
         height: auto;
         padding: 0 5vw 5vh;
         // background: yellow;
         place-items: start;
+
         figure {
             height: auto;
             // border: 2px solid yellow;
@@ -148,28 +149,31 @@ section {
         
         figure {
             margin: 0 auto;
+
             // overflow: hidden;
             // border: 2px solid red;
             img {
                 object-fit: cover;
             }
+
             // IO CLASS
-        &.io-item {
-            img {
-                transform: translateY(-25%);
-                // @include md {
-                //     transform: translateY(-55vh);
-                // }
-                opacity: 0;
-                transition: 2s ease;
+            &.io-item {
+                img {
+                    transform: translateY(-25%);
+                    // @include md {
+                    //     transform: translateY(-55vh);
+                    // }
+                    opacity: 0;
+                    transition: 2s ease;
+                }
             }
-        }
-        &.active-item {
-            img {
-                transform: translateY(0);
-                opacity: 1;
+
+            &.active-item {
+                img {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
-        }
         }
         // logo pad on small screens
         @media (max-width: 768px) {
@@ -187,138 +191,6 @@ section {
         }
         // end of logo pad on small screens
         
-    }
-    &.pad-intro {
-        figure {
-            border-radius: 5px;
-            overflow: hidden;
-            height: auto;
-            // border: 2px solid $overlay-blue-light;
-            img {
-                object-fit: contain;
-            }
-            &:hover {
-                img {
-                    transform: scale(1.1);
-                    transition: .5s;
-                }
-            }
-        }
-        [data-scroll] {
-            transform: scale(1);
-                img {
-                    transform: scale(1.05);
-                    opacity: 0;
-                }
-            
-        }
-        [data-scroll="in"] {
-            transform: scale(1);
-            transition: 1.5s ease;
-            img {
-                transform: scale(1);
-                transition: 1.5s;
-                opacity: 1;
-            }
-        }
-    }
-    &.pad-me {
-        background: $background-light;
-        figure {
-            width: 50%;
-            position: relative;
-            cursor: pointer;
-            isolation: isolate;
-            outline: 2px solid $overlay-blue-dark;
-            outline: none;
-            // DATA-SCROLL
-            &[data-scroll] {
-                transform: scale(1);
-            }
-            img {
-                object-fit: cover;
-                border-radius: 5px;
-                z-index: 1;
-                transition: .5s ease-in-out;
-                animation: fade-show 5s infinite;
-                @keyframes fade-show {
-                    50% {
-                        opacity: 0;
-                    }
-                }
-            }
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url(../img/shakexblue-min.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top;
-                z-index: -1;
-                transition: .5s ease-in;
-            }
-            // hover state 
-            &:hover {
-                img {
-                    opacity: 0;
-                }
-            }
-        }
-        
-        @media (max-width: 500px) {
-            figure {
-                width: 100%;
-            }
-        }
-
-        &[data-scroll] {
-            transition: 1.5s;
-        }
-    }
-    &.pad-me-blue {
-        figure {
-            width: 50%;
-            // border: 1px solid red;
-            img {
-                object-fit: cover;
-                object-position: top;
-                border-radius: 5px;
-            }
-        }
-        @media (max-width: 500px) {
-            figure {
-                width: 100%;
-            }
-        }
-    }
-}
-.paralax {
-    height: 100vh;
-    width: 100%;
-    background-color: $overlay-blue-dark;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    &.paralax-logo {
-        background-image: url(../img/shakex-logo-min.png);
-        background-position: center;
-        background-size: 100%;
-        // padding: 10vh 10vw;
-        height: 75vh;
-        @media(min-width: 768px){
-            background-size: 60%;
-            height: 85vh;
-        }
-    }
-
-    @media (max-width: 500px) {
-        background-size: contain;
-        background-position: center;
     }
 }
 
