@@ -34,19 +34,11 @@
             }
             .skills-article {
                 p {
-                    color: $text-light;
-                    color: $overlay-blue-dark;
-                    // font-size: .925rem;
+                    color: $text-dark;
                     font-size: 1.25vw;
                     font-size: clamp(.95rem, 1.5vw, 1.15rem);
                     font-weight: 500;
                     line-height: 1.6;
-
-                    @media (min-width: 768px) {
-                        // font-size: 1rem;
-                    }
-
-                    background: transparent;
                     overflow: hidden;
 
                     span {

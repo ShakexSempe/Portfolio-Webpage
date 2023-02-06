@@ -120,7 +120,6 @@
                     align-items: center;
                     gap: 1rem;
                     a {
-                        border: 1px solid #000;
                         padding: .85rem;
                         text-transform: capitalize;
                         font-size: .95rem;
@@ -138,21 +137,26 @@
                             gap: 1rem;
                             // padding: 1rem .5rem;
                         }
+                        i {
+                            transform: translateX(.5rem);
+                            transition: .25s;
+                        }
                         &.cta-primary {
                             background: $button-crimson;
                             border: none;
                             color: $text-light;
                             font-weight: 500;
-                            i {
-                                transform: translateX(.5rem);
-                                transition: .25s;
-                            }
+                            
                             
                         }
                         &.cta-secondary {
-                            // padding: .25rem;
-                            font-size: .85rem;
-                            color: $text-black;
+                            border: 1px solid $overlay-blue-darkest;
+                            padding: .7rem;
+                            // font-size: .8rem;
+                            color: $text-dark;
+                            i {
+                                font-weight: 600;
+                            }
                         }
                         // BUTTON HOVER AND ACTIVE CLASSES
                         @media (min-width: 768px) {
