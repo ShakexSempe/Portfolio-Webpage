@@ -3410,7 +3410,7 @@ hamburger
   overflow: hidden;
 }
 .about .col-right .article-container article p {
-  color: #20262e;
+  color: #000;
   padding-right: 0.25rem;
   margin-bottom: 1.5rem;
   text-overflow: ellipsis;
@@ -3433,7 +3433,7 @@ hamburger
 }
 .about .col-right .article-container article p .item-title {
   font-weight: 600;
-  color: #29323c;
+  color: #20262e;
   display: block;
 }
 .about .col-right .article-container article p a {
