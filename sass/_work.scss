@@ -97,6 +97,9 @@
                         background: $overlay-blue-darker;
                         color: $text-light;
                         transition: .25s;
+                        &::first-letter {
+                            text-transform: capitalize;
+                        }
                         &:hover {
                             color: $brand;
                         }
@@ -116,10 +119,6 @@
                         &::first-letter {
                             text-transform: capitalize;
                         }
-
-                    }
-                    @include md {
-                        // margin-bottom: 0;
                     }
                 }
                 .item-cta {
