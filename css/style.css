@@ -2917,12 +2917,16 @@ hamburger
   color: #f4f4f4;
   font-weight: 500;
 }
+.work .work-container .item .item-header .item-cta a.cta-primary i {
+  font-size: 1.25rem;
+}
 .work .work-container .item .item-header .item-cta a.cta-secondary {
   border: 1px solid #15191e;
   padding: 0.7rem;
   color: #000;
 }
 .work .work-container .item .item-header .item-cta a.cta-secondary i {
+  font-size: 0.85rem;
   font-weight: 600;
 }
 @media (min-width: 768px) {

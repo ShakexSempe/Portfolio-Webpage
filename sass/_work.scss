@@ -146,7 +146,9 @@
                             border: none;
                             color: $text-light;
                             font-weight: 500;
-                            
+                            i {
+                                font-size: 1.25rem;
+                            }
                             
                         }
                         &.cta-secondary {
@@ -155,6 +157,7 @@
                             // font-size: .8rem;
                             color: $text-dark;
                             i {
+                                font-size: .85rem;
                                 font-weight: 600;
                             }
                         }
