@@ -2860,6 +2860,16 @@ hamburger
     margin: 0;
   }
 }
+.work .work-container .item .item-header .item-meta-data p {
+  background: #20262e;
+  color: #f4f4f4;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+}
+.work .work-container .item .item-header .item-meta-data p::first-letter {
+  text-transform: capitalize;
+}
 .work .work-container .item .item-header .item-meta-data li {
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;

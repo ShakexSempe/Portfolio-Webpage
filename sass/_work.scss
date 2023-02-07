@@ -79,7 +79,16 @@
                     @include md {
                         margin: 0;
                     }
-
+                    p {
+                        background: $overlay-blue-darker;
+                        color: $text-light;
+                        padding: .25rem .5rem;
+                        border-radius: .25rem;
+                        font-size: .85rem;
+                        &::first-letter {
+                            text-transform: capitalize;
+                        }
+                    }
                     li {
                         // border: 1px solid #000;
                         border-radius: .25rem;
