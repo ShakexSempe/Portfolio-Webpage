@@ -2651,6 +2651,7 @@ hamburger
   padding: 0.5rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
+  font-weight: 500;
   text-transform: capitalize;
   color: #f4f4f4;
   position: relative;
