@@ -137,13 +137,13 @@ hamburger
                 transform-style: preserve-3d;
                 height: .3em;
                 &::before {
-                    background-color: $brand;
+                    // background-color: $brand;
                     transform: translateY(0) skewY(40deg) ;
                 }
 
                 &::after {
-                    background-color: $brand;
-                    transform: translateY(0) skewY(-40deg) skewX(0);
+                    // background-color: $brand;
+                    transform: translateY(0) skewY(-40deg);
 
                 }
             }
