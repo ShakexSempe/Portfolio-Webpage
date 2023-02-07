@@ -1818,7 +1818,6 @@ hamburger
   }
 }
 #skills .skills .skills-intro .skills-article p {
-  color: #000;
   font-size: 1.25vw;
   font-size: clamp(.95rem, 1.5vw, 1.15rem);
   font-weight: 500;
@@ -2840,10 +2839,10 @@ hamburger
 .work .work-container .item .item-header .item-title {
   text-transform: capitalize;
   margin: 1rem 0;
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-size: clamp(1.4rem, 2.25vw, 2.5rem);
+  font-weight: 700;
+  font-size: 2vw;
+  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
@@ -3410,7 +3409,6 @@ hamburger
   overflow: hidden;
 }
 .about .col-right .article-container article p {
-  color: #000;
   padding-right: 0.25rem;
   margin-bottom: 1.5rem;
   text-overflow: ellipsis;
@@ -4329,6 +4327,7 @@ body a {
 }
 body p {
   color: #000;
+  color: #15191e;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -4344,7 +4343,7 @@ section {
 section .section-title {
   font-size: 2.25rem;
   font-weight: 400;
-  color: #15191e;
+  color: #20262e;
   margin: 5vh 0 10vh;
   overflow: hidden;
   text-transform: uppercase;

@@ -48,7 +48,8 @@ body {
     }
 
     p {
-        color: $text-black;
+        color: #000;
+        color: $overlay-blue-darkest;
         line-height: 1.5;
         font-weight: 400;
     }
@@ -71,7 +72,7 @@ section {
         
     }
     font-weight: 400;
-    color: $overlay-blue-darkest;
+    color: $overlay-blue-darker;
     margin: 5vh 0 10vh;
     // border: 2px solid red;
     overflow: hidden;
