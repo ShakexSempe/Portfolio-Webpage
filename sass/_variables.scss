@@ -65,7 +65,9 @@ $skill-item-overlay: linear-gradient(90deg, $overlay-blue-darker 0%, $overlay-bl
 // button colors
 $button-background-grey: #8584844b;
 $button-crimson: linear-gradient(0deg, #3f0d0d, #dc134c);
+$button-crimson: linear-gradient(0deg, hsl(348, 83%, 25%), hsl(343, 84%, 47%));
 $button-crimson-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
+$button-crimson-hover: linear-gradient(0deg, #dc134c , hsl(348, 83%, 25%));
 $button-gold: linear-gradient(0deg, hsl(40, 63%, 65%), #ead2a1);
 // form  
 $background-invalid: #f7cdd5c7;
@@ -81,7 +83,7 @@ $box-light-top-sm: inset 2px 2px 3px rgba(225, 225, 225, 0.150),
 
 $box-light-top-sm-hover: inset 2px 2px 3px rgba(0, 0, 0, .250),
                     inset -2px -2px 3px rgba(225, 225, 225, 0.2),
-                    0px 2px 2px rgba(0, 0, 0, .150);
+                    0px 4px 2px rgba(0, 0, 0, .250);
 
 $box-light-top-bg: inset 4px 4px 5px rgba(221, 221, 221, 0.500),
                     inset -4px -4px 5px rgba(0, 0, 0, .200);
