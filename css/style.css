@@ -714,7 +714,7 @@ hamburger
     width: 2.5rem;
     text-align: center;
     padding: 0.5rem;
-    color: #f4f4f4;
+    color: #bfbfbf;
   }
   .header .navbar #nav .nav-list .links-container .contact-links {
     background: #29323c;
@@ -735,11 +735,10 @@ hamburger
     transition: 0.5s;
   }
   .header .navbar #nav .nav-list .links-container .contact-links a i {
-    color: #ead2a1;
-    color: #fff9;
-    margin-right: 0.2rem;
+    margin-right: 0.25rem;
+    padding-right: 0.25rem;
     width: 1.5rem;
-    border-right: 1px solid #fff4;
+    border-right: 1px solid #bfbfbf;
   }
   .header .navbar #nav .nav-list .links-container.active {
     left: 0;
@@ -794,6 +793,10 @@ hamburger
   }
   .header .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(4) {
     transition-delay: 1.2s;
+  }
+  .header .navbar #nav .nav-list .links-container.active .contact-links a:hover i {
+    transition: 0.25s;
+    color: #bfbfbf;
   }
 }
 .header .navbar #nav .nav-list .links-container .nav-logo {

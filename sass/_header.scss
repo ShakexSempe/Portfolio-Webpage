@@ -242,7 +242,7 @@
                                     text-align: center;
                                     // margin-right: 1em;
                                     padding: .5rem;
-                                    color: $text-light;
+                                    color: $brand;
                                     // opacity: .8;
                                     // border: 1px solid $span-gold;
 
@@ -272,11 +272,10 @@
                                 transition: .5s;
 
                                 i {
-                                    color:$span-gold;
-                                    color: $light-span;
-                                    margin-right: .2rem;
+                                    margin-right: .25rem;
+                                    padding-right: .25rem;
                                     width: 1.5rem;
-                                    border-right: 1px solid #fff4;
+                                    border-right: 1px solid $brand;
                                 }
                             }
                         }
@@ -337,7 +336,6 @@
 
                             .contact-links {
                                 a {
-                                    
                                     opacity: 1;
                                     transform: translateY(0);
 
@@ -355,6 +353,13 @@
 
                                     &:nth-child(4) {
                                         transition-delay: 1.2s;
+                                    }
+
+                                    &:hover {
+                                        i {
+                                            transition: .25s;
+                                            color: $brand;
+                                        }
                                     }
                                 }
                             }
