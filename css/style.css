@@ -1104,27 +1104,19 @@ hamburger
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-size: 2.5rem;
+  font-size: clamp(2.5rem, 6vw, 3rem);
   color: #f4f4f4;
   line-height: 1.25;
 }
-@media (min-width: 820px) {
-  .welcome-section .hero #hero-content .hero-title h1, .welcome-section .hero #hero-content .slogan h1, .welcome-section .hero #hero-h1 .hero-title h1, .welcome-section .hero #hero-h1 .slogan h1 {
-    font-size: 3.5rem;
-  }
-}
 .welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
   font-size: 0.85rem;
+  font-size: clamp(.85rem, 2vw, 1.15rem);
   font-weight: 400;
   color: #bfbfbf;
 }
 .welcome-section .hero #hero-content .hero-title p a, .welcome-section .hero #hero-content .slogan p a, .welcome-section .hero #hero-h1 .hero-title p a, .welcome-section .hero #hero-h1 .slogan p a {
   color: inherit;
   font-size: inherit;
-}
-@media (min-width: 820px) {
-  .welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
-    font-size: 1.35rem;
-  }
 }
 @media (min-width: 1024px) {
   .welcome-section .hero #hero-content .hero-title, .welcome-section .hero #hero-content .slogan, .welcome-section .hero #hero-h1 .hero-title, .welcome-section .hero #hero-h1 .slogan {
