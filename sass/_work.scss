@@ -129,7 +129,7 @@
                     align-items: center;
                     gap: 1rem;
                     a {
-                        padding: .85rem;
+                        padding: .8rem;
                         text-transform: capitalize;
                         font-size: .95rem;
                         font-size: clamp(.95rem, 1vw, 1.15rem);
@@ -138,6 +138,8 @@
                         text-align: center;
                         letter-spacing: .025rem;
                         transition: .25s;
+                        // display: flex;
+                        // align-items: center;
                         @include sm {
                             // padding: 1rem;
                         }
@@ -155,16 +157,13 @@
                             border: none;
                             color: $text-light;
                             font-weight: 500;
-                            i {
-                                font-size: 1.25rem;
-                            }
                             
                         }
                         &.cta-secondary {
-                            border: 1px solid $overlay-blue-darkest;
-                            padding: .7rem;
+                            border: 1px solid $overlay-blue-light;
                             // font-size: .8rem;
-                            color: $text-dark;
+                            padding: .7rem;
+                            color: $overlay-blue-darker;
                             i {
                                 font-size: .85rem;
                                 font-weight: 600;

@@ -2904,7 +2904,7 @@ hamburger
   gap: 1rem;
 }
 .work .work-container .item .item-header .item-cta a {
-  padding: 0.85rem;
+  padding: 0.8rem;
   text-transform: capitalize;
   font-size: 0.95rem;
   font-size: clamp(.95rem, 1vw, 1.15rem);
@@ -2930,13 +2930,10 @@ hamburger
   color: #f4f4f4;
   font-weight: 500;
 }
-.work .work-container .item .item-header .item-cta a.cta-primary i {
-  font-size: 1.25rem;
-}
 .work .work-container .item .item-header .item-cta a.cta-secondary {
-  border: 1px solid #15191e;
+  border: 1px solid #485563;
   padding: 0.7rem;
-  color: #000;
+  color: #20262e;
 }
 .work .work-container .item .item-header .item-cta a.cta-secondary i {
   font-size: 0.85rem;
