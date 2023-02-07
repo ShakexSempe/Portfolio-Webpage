@@ -2866,12 +2866,10 @@ hamburger
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.8rem;
+  text-transform: capitalize;
   background: #20262e;
   color: #f4f4f4;
   transition: 0.25s;
-}
-.work .work-container .item .item-header .item-meta-data li::first-letter {
-  text-transform: capitalize;
 }
 .work .work-container .item .item-header .item-meta-data li:hover {
   color: #bfbfbf;
