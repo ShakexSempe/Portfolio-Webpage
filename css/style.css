@@ -2395,6 +2395,7 @@ hamburger
   display: block;
   width: 10rem;
   font-size: 0.95rem;
+  font-weight: 500;
   letter-spacing: 0.05rem;
   padding: 0.7rem;
   border-radius: 0.5rem;
