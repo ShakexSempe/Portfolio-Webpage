@@ -371,10 +371,10 @@ hamburger
   transition-delay: 0.25s;
 }
 .bottom-nav.active-bottom-nav .link-item:nth-child(2) {
-  transition-delay: 0.5s;
+  transition-delay: 0.35s;
 }
 .bottom-nav.active-bottom-nav .link-item:nth-child(3) {
-  transition-delay: 0.75s;
+  transition-delay: 0.45s;
 }
 
 .skip-link {
