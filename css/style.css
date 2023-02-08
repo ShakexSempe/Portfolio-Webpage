@@ -3535,55 +3535,6 @@ hamburger
   transition: 2s;
   transition-delay: 0.5s;
 }
-.about .col-right .article-container article#cv {
-  display: flex;
-  justify-content: space-around;
-  background: linear-gradient(0deg, #20262e, #485563);
-  color: #ead2a1;
-  margin: 0 auto;
-  padding: 1rem;
-  box-shadow: inset 3px 0px 3px rgba(255, 255, 255, 0.3), inset -3px -3px 3px rgba(0, 0, 0, 0.3);
-  text-transform: capitalize;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-@media (min-width: 1024px) {
-  .about .col-right .article-container article#cv {
-    justify-content: space-evenly;
-  }
-}
-.about .col-right .article-container article#cv a {
-  font-size: 0.85rem;
-  transition: 0.3s ease;
-  color: #ead2a1;
-  text-shadow: 1px 1px 1px #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.about .col-right .article-container article#cv a i {
-  background-image: linear-gradient(60deg, #ead2a1 30%, rgba(209, 207, 207, 0.829) 60%, #fff 60%);
-  background-size: 300%;
-  background-position: right;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.5em;
-  margin: 0.2em auto;
-  text-shadow: none;
-  animation: icon-shine 3s linear infinite alternate;
-}
-@keyframes icon-shine {
-  100% {
-    background-position: left;
-  }
-}
-.about .col-right .article-container article#cv a:hover {
-  transition: 0.3s ease;
-  transform: scale(1.1);
-  opacity: 0.8;
-}
 .about .col-right .article-container[data-scroll] {
   transform: scale(1);
   transition: 1.5s;
