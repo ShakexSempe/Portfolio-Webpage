@@ -205,6 +205,17 @@
                         width: max-content;
                         border-radius: .25rem;
                         transition: .2s;
+
+                        &.cv {
+                            // background-color: $overlay-blue-light;
+                            // color: $text-light;
+                            // padding: .25rem .5rem ;
+                            // display: block;
+                            text-decoration: underline;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
                         @media (max-width: 820px){
                             &:active {
                                 color: $span-crimson;

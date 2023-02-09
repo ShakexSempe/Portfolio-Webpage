@@ -3485,6 +3485,12 @@ hamburger
   border-radius: 0.25rem;
   transition: 0.2s;
 }
+.about .col-right .article-container article p a.cv {
+  text-decoration: underline;
+}
+.about .col-right .article-container article p a.cv:hover {
+  text-decoration: none;
+}
 @media (max-width: 820px) {
   .about .col-right .article-container article p a:active {
     color: #dc143c;
