@@ -3007,6 +3007,15 @@ hamburger
 .work .work-container .item .item-content .item-image:hover img {
   transform: scale(1.1);
 }
+.work .work-container .item.io-item {
+  opacity: 0;
+  transform: translateY(5vh);
+  transition: 1.25s;
+}
+.work .work-container .item.active-item {
+  opacity: 1;
+  transform: translateY(0);
+}
 .work .work-items {
   display: grid;
   display: none;
