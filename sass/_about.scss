@@ -175,8 +175,8 @@
                     margin-bottom: 1.5rem;
                     text-overflow: ellipsis;
                     text-align: left;
-                    z-index: 1;
                     font-size: 1rem;
+                    font-size: clamp(1rem, 1.5vw, 1.125rem);
                     line-height: 1.5;
                     font-weight: 400;
                     z-index: 2;
@@ -217,12 +217,14 @@
                         }
                         @media (max-width: 820px){
                             &:active {
-                                color: $span-crimson;
+                                color: $brand;
+                                background: $overlay-blue-darkest;
                             }
                         }
                         @media (min-width: 820px){
                             &:hover {
-                                color: $span-crimson;
+                                color: $brand;
+                                background: $overlay-blue-darkest;
                             }
                         }
                     }
@@ -231,10 +233,10 @@
                         font-weight: 500;
 
                         &.intro::first-letter {
-                            font-size: 2.5em;
+                            font-size: 2rem;
+                            font-size: clamp(2rem, 5vw, 2.25rem);
                             float: left;
                             background: $overlay-blue-darkest;
-                            color: $span-light;
                             color: $text-light;
                             padding: 0 .1em;
                             margin-right: .1em;
