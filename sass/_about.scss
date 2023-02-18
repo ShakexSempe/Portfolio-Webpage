@@ -227,10 +227,10 @@
                         }
                     }
                     // CAPITAL B FIRST LETTER
-                    &#intro {
+                    &.intro {
                         font-weight: 500;
 
-                        &#intro::first-letter {
+                        &.intro::first-letter {
                             font-size: 2.5em;
                             float: left;
                             background: $overlay-blue-darkest;
@@ -253,39 +253,36 @@
                             font-size: 2rem;
                         }
                     }
-                    // DATA SCROLL
-                    &.io-item {
-                        opacity: 0;
-                        transform: translateY(2rem);
 
-                        i {
-                            color: $span-gold;
-                        }
+
+                }
+                .about-intro {
+                    // border: 2px solid red;
+                    &.io-item {
+                        opacity: .2;
+                        transform: translateY(5vh);
+                        transition: 1s;
                     }
                     &.active-item {
                         opacity: 1;
                         transform: translateY(0);
-
-                        i {
-                            color: $overlay-blue-light;
-                            transition: 2s;
-                            transition-delay: .5s;
-                        }
+                    }
                 }
+                .about-body {
+                    // border: 2px solid blue;
+                    &.io-item {
+                        opacity: .2;
+                        transform: translateY(5vh);
+                        transition: 1s;
+                        
+                    }
+                    &.active-item {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
                 }
-
-                
-
-                // end of links
-
-            }
-            // DATA-SCROLL 
-            &[data-scroll] {
-                transform: scale(1);
-                transition: 1.5s;
             }
         }
-        // article
         // cv download button on h2 hover 
         &:hover {
             #cv-download {
