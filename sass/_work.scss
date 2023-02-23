@@ -247,18 +247,46 @@
                 }
             }
 
-            // IO CLASS
-            &.io-item {
-                opacity: 0;
-                transform: translateY(5vh);
-                transition: 1.25s;
-                
+            // SMALL SCREEN IO
+            @media (max-width: $screen-lg-min){
+                // IO CLASS
+                &.io-item {
+                    opacity: 0;
+                    transform: translateY(5vh);
+                    transition: 1.25s;
+                    
+                }
+                // ACTIVE ITEM
+                &.active-item {
+                    opacity: 1;
+                    transform: translateY(0);
+                    
+                }
             }
-            // ACTIVE ITEM
-            &.active-item {
-                opacity: 1;
-                transform: translateY(0);
-                
+            // DESKTOP IO
+            @include lg {
+                &.io-item {
+                    .item-header {
+                        opacity: .2;
+                        transform: translateX(5vw);
+                        transition: 1s;
+                    }
+                    .item-content {
+                        opacity: .2;
+                        transform: translateX(-5vw);
+                        transition: 1s;
+                    }
+                }
+                &.active-item {
+                    .item-header {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                    .item-content {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
             }
         }
     }
@@ -603,7 +631,7 @@
                 }
             }
         }
-
+        
         .io-item {
             opacity: 0;
             transform: translateY(5vh);

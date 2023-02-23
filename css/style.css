@@ -2979,14 +2979,36 @@ hamburger
 .work .work-container .item .item-content .item-image:hover img {
   transform: scale(1.1);
 }
-.work .work-container .item.io-item {
-  opacity: 0;
-  transform: translateY(5vh);
-  transition: 1.25s;
+@media (max-width: 820px) {
+  .work .work-container .item.io-item {
+    opacity: 0;
+    transform: translateY(5vh);
+    transition: 1.25s;
+  }
+  .work .work-container .item.active-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.work .work-container .item.active-item {
-  opacity: 1;
-  transform: translateY(0);
+@media (min-width: 820px) {
+  .work .work-container .item.io-item .item-header {
+    opacity: 0.2;
+    transform: translateX(5vw);
+    transition: 1s;
+  }
+  .work .work-container .item.io-item .item-content {
+    opacity: 0.2;
+    transform: translateX(-5vw);
+    transition: 1s;
+  }
+  .work .work-container .item.active-item .item-header {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .work .work-container .item.active-item .item-content {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .work .work-items {
   display: grid;
