@@ -1099,6 +1099,17 @@ hamburger
   width: 100%;
 }
 .welcome-section .hero #hero-content .hero-title h1, .welcome-section .hero #hero-content .slogan h1, .welcome-section .hero #hero-h1 .hero-title h1, .welcome-section .hero #hero-h1 .slogan h1 {
+  line-height: 1.25;
+  font-size: 0.85rem;
+  font-size: clamp(.95rem, 2vw, 1.125rem);
+  font-weight: 400;
+  color: #bfbfbf;
+}
+.welcome-section .hero #hero-content .hero-title h1 a, .welcome-section .hero #hero-content .slogan h1 a, .welcome-section .hero #hero-h1 .hero-title h1 a, .welcome-section .hero #hero-h1 .slogan h1 a {
+  color: inherit;
+  font-size: inherit;
+}
+.welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
   text-transform: capitalize;
   text-align: center;
   text-align: left;
@@ -1107,17 +1118,6 @@ hamburger
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 6vw, 3rem);
   color: #f4f4f4;
-  line-height: 1.25;
-}
-.welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
-  font-size: 0.85rem;
-  font-size: clamp(.85rem, 2vw, 1.15rem);
-  font-weight: 400;
-  color: #bfbfbf;
-}
-.welcome-section .hero #hero-content .hero-title p a, .welcome-section .hero #hero-content .slogan p a, .welcome-section .hero #hero-h1 .hero-title p a, .welcome-section .hero #hero-h1 .slogan p a {
-  color: inherit;
-  font-size: inherit;
 }
 @media (min-width: 1024px) {
   .welcome-section .hero #hero-content .hero-title, .welcome-section .hero #hero-content .slogan, .welcome-section .hero #hero-h1 .hero-title, .welcome-section .hero #hero-h1 .slogan {
@@ -1170,11 +1170,9 @@ hamburger
   display: inline-block;
   font-size: 1.25rem;
   position: relative;
-  color: #ddd;
+  color: #bfbfbf;
   margin-top: 0.5rem;
-}
-.welcome-section .hero #hero-content #aka span, .welcome-section .hero #hero-h1 #aka span {
-  color: inherit;
+  font-family: "Montserrat", sans-serif;
 }
 @keyframes aka {
   10% {
@@ -1811,8 +1809,8 @@ hamburger
   }
 }
 #skills .skills .skills-intro .skills-article p {
-  font-size: 1.25vw;
-  font-size: clamp(.95rem, 1.5vw, 1.15rem);
+  font-size: 0.95rem;
+  font-size: clamp(.95rem, 2vw, 1.125rem);
   font-weight: 500;
   line-height: 1.6;
   overflow: hidden;
@@ -1827,7 +1825,7 @@ hamburger
   text-align: left;
   color: #ead2a1;
   font-size: 1rem;
-  font-size: clamp(.95rem, 2vw, 1.15rem);
+  font-size: clamp(.95rem, 2vw, 1.125rem);
 }
 @media (min-width: 768px) {
   #skills .skills .skills-intro .skills-drop {

@@ -33,8 +33,9 @@
             }
             .skills-article {
                 p {
-                    font-size: 1.25vw;
-                    font-size: clamp(.95rem, 1.5vw, 1.15rem);
+                    font-size: .95rem;
+                    // font-size: clamp(.95rem, 1.5vw, 1.15rem);
+                    font-size: $font-clamp-sm;
                     font-weight: 500;
                     line-height: 1.6;
                     overflow: hidden;
@@ -53,7 +54,8 @@
                 text-align: left;
                 color: $span-gold;
                 font-size: 1rem;
-                font-size: clamp(.95rem, 2vw, 1.15rem);
+                // font-size: clamp(.95rem, 2vw, 1.15rem);
+                font-size: $font-clamp-sm;
                 @include md {
                     text-align: center;
                 }

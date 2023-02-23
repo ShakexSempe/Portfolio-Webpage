@@ -3,6 +3,12 @@ $font-gruppo: 'Gruppo', cursive;
 $font-ubuntu: 'Ubuntu',sans-serif;
 $font-title:  'Kanit', sans-serif;
 $font-content: 'Montserrat', sans-serif;
+
+// TEXT SIZES
+$font-clamp-xsm: clamp(.85rem, 1.5vw, 1.15rem);
+$font-clamp-sm: clamp(.95rem, 2vw, 1.125rem);
+$font-clamp-md: clamp(.95rem, 1.5vw, 1.15rem);
+$font-clamp-lg: clamp(.95rem, 1.5vw, 1.15rem);
 // TEXT COLORS
 $text-black: #000;
 $text-dark: #000;

@@ -147,6 +147,19 @@
             // animation: slogan 5s linear 14s forwards;
 
             h1 {
+                line-height: 1.25;
+                font-size: .85rem;
+                // font-size: clamp(.85rem, 2vw, 1.15rem);
+                font-size: $font-clamp-sm;
+                font-weight: 400;
+                color: $brand;
+                a {
+                    color: inherit;
+                    font-size: inherit;
+                }
+            }
+            p {
+                // margin-bottom: .25rem;
                 text-transform: capitalize;
                 text-align: center;
                 text-align: left;
@@ -155,25 +168,6 @@
                 font-size: 2.5rem;
                 font-size: clamp(2.5rem, 6vw, 3rem);
                 color: $text-light;
-                line-height: 1.25;
-                @include lg {
-                    // font-size: 3.5rem;
-                }
-            }
-            p {
-                font-size: .85rem;
-                font-size: clamp(.85rem, 2vw, 1.15rem);
-                font-weight: 400;
-                color: $brand;
-                // margin-bottom: .25rem;
-                // text-decoration: underline;
-                a {
-                    color: inherit;
-                    font-size: inherit;
-                }
-                @include lg {
-                    // font-size: 1.35rem;
-                }
             }
 
             // DESKTOP SLOGAN
@@ -187,7 +181,7 @@
                 }
             }
 
-            // REVEAL SLOGAN ANIAMTION
+            // REVEAL SLOGAN ANIMaTION
             @keyframes slogan {
                 100% {
                     opacity: 1;
@@ -238,16 +232,9 @@
                     display: inline-block;
                     font-size: 1.25rem;
                     position: relative;
-                    color: #ddd;
+                    color: $brand;
                     margin-top: .5rem;
-                    span {
-                        color: inherit;
-                        // opacity: 0;
-                        // animation: aka 5s ease alternate;
-                        // animation-delay: 12s;
-                        // animation-fill-mode: forwards;
-                        // transform: scale(0.7);
-                    }
+                    font-family: $font-content;
 
                     @keyframes aka {
                         10% {
