@@ -119,134 +119,104 @@
             }
         }
         // ANIMATED INTRO
-        #hero-content, #hero-h1 {
+        #hero-content {
             // border: 1px solid #fff;
             background: transparent;
-            padding: 5vh 5vw; 
+            padding: 5vh 5vw;
             position: relative;
             top: 5vh;
             width: 100%;
             text-transform: capitalize;
+
             @include md {
                 width: max-content;
                 top: 5vh;
             }
+
             @include xlg {
                 top: 15vh;
             }
-            
-            // @media (min-width: 600px) {
-            //     top: 15vh;
-            // }
+
             // SLOGAN 
-        .hero-title, .slogan {
-            // border: 1px solid #fff;
-            margin-bottom: .25rem;
-            width: 100%;
-            // opacity: 0;
-            // animation: slogan 5s linear 14s forwards;
+            .hero-title {
+                // border: 1px solid #fff;
+                margin-bottom: .25rem;
+                width: 100%;
+                // opacity: 0;
+                // animation: slogan 5s linear 14s forwards;
 
-            h1 {
-                line-height: 1.25;
-                font-size: .85rem;
-                // font-size: clamp(.85rem, 2vw, 1.15rem);
-                font-size: $font-clamp-sm;
-                font-weight: 400;
-                color: $brand;
-                a {
-                    color: inherit;
-                    font-size: inherit;
+                .hero-title-header {
+                    line-height: 1.25;
+                    font-size: .85rem;
+                    // font-size: clamp(.85rem, 2vw, 1.15rem);
+                    font-size: $font-clamp-xsm;
+                    font-weight: 400;
+                    color: $brand;
+
+                    a {
+                        color: inherit;
+                        font-size: inherit;
+                    }
                 }
-            }
-            p {
-                // margin-bottom: .25rem;
-                text-transform: capitalize;
-                text-align: center;
-                text-align: left;
-                font-family: $font-title;
-                font-weight: 500;
-                font-size: 2.5rem;
-                font-size: clamp(2.5rem, 6vw, 3rem);
-                color: $text-light;
-            }
 
-            // DESKTOP SLOGAN
-            @media (min-width: 1024px) {
-                top: 15vh;
-                // left: 50%;
-                // transform: translateX(-50%);
-                p {
+                .hero-description {
+                    // margin-bottom: .25rem;
+                    text-transform: capitalize;
                     text-align: center;
                     text-align: left;
-                }
-            }
-
-            // REVEAL SLOGAN ANIMaTION
-            @keyframes slogan {
-                100% {
-                    opacity: 1;
-                }
-            }
-        }
-            h1 {
-                font-size: 2.15rem;
-                display: block;
-                // width: fit-content;
-                color: $text-light;
-                // font-family: 'Philosopher', sans-serif;
-                @include lg {
-                    font-size: 3rem;
-                }
-                span {
                     font-family: $font-title;
                     font-weight: 500;
-                    display: inline-block;
+                    font-size: 2.5rem;
+                    font-size: clamp(2.5rem, 6vw, 3rem);
+                    font-size: $font-clamp-lg;
                     color: $text-light;
-                    text-align: left;
-                    // font-size: 2rem;
-                    // margin: .5rem 0 0;
-                    line-height: 1.25;
-                    // opacity: 0;
-                    // animation: hero-span 5s ease-in-out;
-                    // animation-fill-mode: forwards;
-                    // animation-delay: calc(9s + .5s * var(--s));
-                    // transition: 1s;
-                    // transform-style: preserve-3d;
-                    @media (min-width: 768px) {
-                        font-size: 3rem;
-                    }
-                    /* HERO H1 INTRO ANIMATION */
-                    @keyframes hero-span {
-                        10% {
-                            opacity: 1;
-                            transform: translateX(10px);
+                    animation: name 4s ease forwards 2.5s;
+
+                    @keyframes name {
+                        0% {
+                            opacity: 0;
                         }
+
                         100% {
                             opacity: 1;
                         }
+                    }
+                }
+
+                // DESKTOP SLOGAN
+                @media (min-width: 1024px) {
+                    top: 15vh;
+
+                    // left: 50%;
+                    // transform: translateX(-50%);
+                    p {
+                        text-align: center;
+                        text-align: left;
                     }
                 }
             }
-                // "AKA" SPAN
-                #aka {
-                    display: inline-block;
-                    font-size: 1.25rem;
-                    position: relative;
-                    color: $brand;
-                    margin-top: .5rem;
-                    font-family: $font-content;
 
-                    @keyframes aka {
-                        10% {
-                            transform: translateX(1rem);
-                            opacity: 1;
-                        }
-                        100% {
-                            opacity: .8;
-                        }
+            // "AKA" SPAN
+            .hero-meta-description {
+                display: inline-block;
+                font-size: 1.25rem;
+                font-size: $font-clamp-md;
+                position: relative;
+                color: $brand;
+                margin-top: .5rem;
+                font-family: $font-content;
+
+                @keyframes aka {
+                    10% {
+                        transform: translateX(1rem);
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: .8;
                     }
                 }
-            
+            }
         }
 
         // end of animated h1 

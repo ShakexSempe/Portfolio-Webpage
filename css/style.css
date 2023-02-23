@@ -1075,7 +1075,7 @@ hamburger
     object-position: 40%;
   }
 }
-.welcome-section .hero #hero-content, .welcome-section .hero #hero-h1 {
+.welcome-section .hero #hero-content {
   background: transparent;
   padding: 5vh 5vw;
   position: relative;
@@ -1084,32 +1084,32 @@ hamburger
   text-transform: capitalize;
 }
 @media (min-width: 768px) {
-  .welcome-section .hero #hero-content, .welcome-section .hero #hero-h1 {
+  .welcome-section .hero #hero-content {
     width: max-content;
     top: 5vh;
   }
 }
 @media (min-width: 1024px) {
-  .welcome-section .hero #hero-content, .welcome-section .hero #hero-h1 {
+  .welcome-section .hero #hero-content {
     top: 15vh;
   }
 }
-.welcome-section .hero #hero-content .hero-title, .welcome-section .hero #hero-content .slogan, .welcome-section .hero #hero-h1 .hero-title, .welcome-section .hero #hero-h1 .slogan {
+.welcome-section .hero #hero-content .hero-title {
   margin-bottom: 0.25rem;
   width: 100%;
 }
-.welcome-section .hero #hero-content .hero-title h1, .welcome-section .hero #hero-content .slogan h1, .welcome-section .hero #hero-h1 .hero-title h1, .welcome-section .hero #hero-h1 .slogan h1 {
+.welcome-section .hero #hero-content .hero-title .hero-title-header {
   line-height: 1.25;
   font-size: 0.85rem;
-  font-size: clamp(.95rem, 2vw, 1.125rem);
+  font-size: clamp(.85rem, 1.5vw, 1.15rem);
   font-weight: 400;
   color: #bfbfbf;
 }
-.welcome-section .hero #hero-content .hero-title h1 a, .welcome-section .hero #hero-content .slogan h1 a, .welcome-section .hero #hero-h1 .hero-title h1 a, .welcome-section .hero #hero-h1 .slogan h1 a {
+.welcome-section .hero #hero-content .hero-title .hero-title-header a {
   color: inherit;
   font-size: inherit;
 }
-.welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
+.welcome-section .hero #hero-content .hero-title .hero-description {
   text-transform: capitalize;
   text-align: center;
   text-align: left;
@@ -1117,58 +1117,31 @@ hamburger
   font-weight: 500;
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 6vw, 3rem);
+  font-size: clamp(2.5rem, 6vw, 3rem);
   color: #f4f4f4;
+  animation: name 4s ease forwards 2.5s;
+}
+@keyframes name {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (min-width: 1024px) {
-  .welcome-section .hero #hero-content .hero-title, .welcome-section .hero #hero-content .slogan, .welcome-section .hero #hero-h1 .hero-title, .welcome-section .hero #hero-h1 .slogan {
+  .welcome-section .hero #hero-content .hero-title {
     top: 15vh;
   }
-  .welcome-section .hero #hero-content .hero-title p, .welcome-section .hero #hero-content .slogan p, .welcome-section .hero #hero-h1 .hero-title p, .welcome-section .hero #hero-h1 .slogan p {
+  .welcome-section .hero #hero-content .hero-title p {
     text-align: center;
     text-align: left;
   }
 }
-@keyframes slogan {
-  100% {
-    opacity: 1;
-  }
-}
-.welcome-section .hero #hero-content h1, .welcome-section .hero #hero-h1 h1 {
-  font-size: 2.15rem;
-  display: block;
-  color: #f4f4f4;
-}
-@media (min-width: 820px) {
-  .welcome-section .hero #hero-content h1, .welcome-section .hero #hero-h1 h1 {
-    font-size: 3rem;
-  }
-}
-.welcome-section .hero #hero-content h1 span, .welcome-section .hero #hero-h1 h1 span {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  display: inline-block;
-  color: #f4f4f4;
-  text-align: left;
-  line-height: 1.25;
-  /* HERO H1 INTRO ANIMATION */
-}
-@media (min-width: 768px) {
-  .welcome-section .hero #hero-content h1 span, .welcome-section .hero #hero-h1 h1 span {
-    font-size: 3rem;
-  }
-}
-@keyframes hero-span {
-  10% {
-    opacity: 1;
-    transform: translateX(10px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.welcome-section .hero #hero-content #aka, .welcome-section .hero #hero-h1 #aka {
+.welcome-section .hero #hero-content .hero-meta-description {
   display: inline-block;
   font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2.25vw, 1.5rem);
   position: relative;
   color: #bfbfbf;
   margin-top: 0.5rem;
