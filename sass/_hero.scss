@@ -146,17 +146,17 @@
                 // animation: slogan 5s linear 14s forwards;
 
                 .hero-title-header {
+                    // font-size: clamp(.85rem, 2vw, 1.15rem);
                     line-height: 1.25;
                     font-size: .85rem;
-                    // font-size: clamp(.85rem, 2vw, 1.15rem);
                     font-size: $font-clamp-xsm;
                     font-weight: 400;
                     color: $brand;
+                    animation: header 4s ease forwards 4s;
                     a {
                         color: inherit;
                         font-size: inherit;
                     }
-                    animation: header 6s ease forwards 4s;
 
                     @keyframes header {
                         0%, 20% {
@@ -173,16 +173,17 @@
                     text-transform: capitalize;
                     text-align: center;
                     text-align: left;
+                    line-height: 1.4;
                     font-family: $font-title;
                     font-weight: 500;
                     font-size: 2.5rem;
                     font-size: clamp(2.5rem, 6vw, 3rem);
                     font-size: $font-clamp-lg;
                     color: $text-light;
-                    animation: name 4s ease forwards 4s;
+                    animation: name 8s ease forwards 4s;
 
                     @keyframes name {
-                        0% {
+                        0%, 30% {
                             opacity: 0;
                         }
                         100% {
@@ -216,7 +217,7 @@
                 animation: meta 8s ease forwards 4s;
 
                 @keyframes meta {
-                    0%, 20% {
+                    0%, 50% {
                         transform: translateX(1rem);
                         opacity: 0;
                     }
@@ -270,7 +271,7 @@
 
             // show cta
             @keyframes show-cta {
-                0%, 40% {
+                0%, 60% {
                     opacity: 0;
                     transform:  translateX(1rem);
                 }
