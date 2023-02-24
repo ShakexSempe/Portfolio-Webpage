@@ -1188,7 +1188,7 @@ hamburger
 }
 @media (max-width: 576px) {
   .welcome-section .hero #cta-header {
-    margin: 25vh 0 0;
+    margin: 20vh 0 0;
   }
 }
 @media (min-width: 576px) {
@@ -1212,7 +1212,7 @@ hamburger
 @keyframes show-cta {
   0%, 40% {
     opacity: 0;
-    transform: translateX(2rem);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
