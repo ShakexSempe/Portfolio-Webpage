@@ -2823,8 +2823,7 @@ hamburger
 .work .work-container .item .item-header .item-title {
   text-transform: capitalize;
   margin: 1rem 0;
-  font-weight: 700;
-  font-size: 2vw;
+  font-weight: 600;
   font-size: 1.2rem;
   font-size: clamp(1.2rem, 2vw, 2rem);
 }
@@ -2834,6 +2833,7 @@ hamburger
   flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
+  text-transform: capitalize;
   margin: 0 0 1rem 0;
 }
 @media (min-width: 768px) {

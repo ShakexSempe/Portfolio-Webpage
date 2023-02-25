@@ -57,8 +57,7 @@
                 .item-title {
                     text-transform: capitalize;
                     margin: 1rem 0;
-                    font-weight: 700;
-                    font-size: 2vw;
+                    font-weight: 600;
                     font-size: 1.2rem;
                     font-size: clamp(1.2rem, 2vw, 2rem);
                     @include md {
@@ -75,6 +74,7 @@
                     gap: 1rem;
                     list-style: none;
                     // padding: 1rem 0;
+                    text-transform: capitalize;
                     margin:  0 0 1rem 0;
                     @include md {
                         margin: 0;
