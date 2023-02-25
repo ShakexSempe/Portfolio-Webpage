@@ -1164,7 +1164,7 @@ hamburger
 }
 @keyframes meta {
   0%, 40% {
-    transform: translateY(1rem);
+    transform: translateY(-1rem);
     opacity: 0;
   }
   100% {
@@ -2232,29 +2232,34 @@ hamburger
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 0 5vw;
-    padding: 0 0;
+    padding: 0;
     margin: 0 auto;
+    gap: 0.5rem;
   }
 }
 #contact .contact .contact-items .contact-item {
   width: 100%;
-  text-align: center;
-  border-radius: 0.5rem;
-  margin: 5vh auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
   gap: 1rem;
+  color: #15191e;
+  text-align: center;
+  margin: 5vh auto;
+  position: relative;
+  border-radius: 0.5rem;
   transform: preserve-3d;
   overflow: hidden;
-  color: #15191e;
   transition: 0.8s ease;
 }
 @media (min-width: 576px) {
   #contact .contact .contact-items .contact-item {
-    gap: 1rem;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #contact .contact .contact-items .contact-item {
+    gap: 0.25rem;
   }
 }
 #contact .contact .contact-items .contact-item .title {
@@ -2345,6 +2350,7 @@ hamburger
   text-transform: capitalize;
   text-align: left;
   margin-bottom: 0.25rem;
+  font-size: clamp(.95rem, 2vw, 1.125rem);
 }
 #contact .contact .contact-items .contact-item .contact-info p {
   font-size: 1rem;
@@ -2374,6 +2380,7 @@ hamburger
   display: block;
   width: 10rem;
   font-size: 0.95rem;
+  font-size: clamp(.85rem, 1.25vw, 1.15rem);
   font-weight: 500;
   letter-spacing: 0.05rem;
   padding: 0.7rem;

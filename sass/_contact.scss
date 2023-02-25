@@ -23,35 +23,38 @@
         // contact items container
         .contact-items {
             width: 100%;
-            @media (min-width: 1024px){
+            @include xlg {
                 // border: 2px solid red;
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 flex-wrap: nowrap;
-                padding: 0 5vw;
-                padding: 0 0;
+                padding: 0;
                 margin: 0 auto;
+                gap: .5rem;
             }
             // contact-item
             .contact-item {
                 // border: 2px solid $overlay-blue-darker;
                 width: 100%;
-                text-align: center;
-                border-radius: .5rem;
-                margin: 5vh auto;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                position: relative;
                 gap: 1rem;
+                color: $overlay-blue-darkest;
+                text-align: center;
+                margin: 5vh auto;
+                position: relative;
+                border-radius: .5rem;
                 transform: preserve-3d;
                 overflow: hidden;
-                color: $overlay-blue-darkest;
                 transition: .8s ease;
                 @include sm {
-                    gap: 1rem;
+                    gap: .5rem;
+                }
+                @include md {
+                    gap: .25rem;
                 }
                 .title {
                     // border: 2px solid blue;
@@ -149,7 +152,7 @@
                         text-transform: capitalize;
                         text-align: left;
                         margin-bottom: .25rem;
-                        
+                        font-size: $font-clamp-sm;
                     }
                     p {
                         font-size: 1rem;
@@ -184,6 +187,7 @@
                         display: block;
                         width: 10rem;
                         font-size: .95rem;
+                        font-size: $font-clamp-xsm;
                         font-weight: 500;
                         letter-spacing: .05rem;
                         padding: .7rem;
