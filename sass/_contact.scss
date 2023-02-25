@@ -51,11 +51,14 @@
                 overflow: hidden;
                 transition: .8s ease;
                 @include sm {
-                    gap: .5rem;
-                }
-                @include md {
                     gap: .25rem;
                 }
+                // @include xlg {
+                //     gap: .5rem;
+                // }
+                // @include lg {
+                //     gap: 1rem;
+                // }
                 .title {
                     // border: 2px solid blue;
                     display: flex;
@@ -152,7 +155,7 @@
                         text-transform: capitalize;
                         text-align: left;
                         margin-bottom: .25rem;
-                        font-size: $font-clamp-sm;
+                        font-size: $font-clamp-h4;
                     }
                     p {
                         font-size: 1rem;

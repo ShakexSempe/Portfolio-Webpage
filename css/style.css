@@ -2254,11 +2254,6 @@ hamburger
 }
 @media (min-width: 576px) {
   #contact .contact .contact-items .contact-item {
-    gap: 0.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #contact .contact .contact-items .contact-item {
     gap: 0.25rem;
   }
 }
@@ -2350,7 +2345,7 @@ hamburger
   text-transform: capitalize;
   text-align: left;
   margin-bottom: 0.25rem;
-  font-size: clamp(.95rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.225rem);
 }
 #contact .contact .contact-items .contact-item .contact-info p {
   font-size: 1rem;
