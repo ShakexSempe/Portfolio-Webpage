@@ -261,7 +261,7 @@
                 .about-intro {
                     // border: 2px solid red;
                     &.io-item {
-                        opacity: .2;
+                        opacity: 0;
                         transform: translateY(5vh);
                         transition: 1s;
                     }
@@ -273,7 +273,7 @@
                 .about-body {
                     // border: 2px solid blue;
                     &.io-item {
-                        opacity: .2;
+                        opacity: 0;
                         transform: translateY(5vh);
                         transition: 1s;
                         

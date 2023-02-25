@@ -3561,7 +3561,7 @@ hamburger
   }
 }
 .about .col-right .article-container article .about-intro.io-item {
-  opacity: 0.2;
+  opacity: 0;
   transform: translateY(5vh);
   transition: 1s;
 }
@@ -3570,7 +3570,7 @@ hamburger
   transform: translateY(0);
 }
 .about .col-right .article-container article .about-body.io-item {
-  opacity: 0.2;
+  opacity: 0;
   transform: translateY(5vh);
   transition: 1s;
 }
