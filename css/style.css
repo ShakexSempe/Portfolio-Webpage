@@ -1138,9 +1138,11 @@ hamburger
 @keyframes name {
   0%, 20% {
     opacity: 0;
+    transform: translateY(5vh);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 @media (min-width: 1024px) {
@@ -1164,7 +1166,7 @@ hamburger
 }
 @keyframes meta {
   0%, 40% {
-    transform: translateY(-1rem);
+    transform: translateY(5vh);
     opacity: 0;
   }
   100% {
@@ -1217,11 +1219,11 @@ hamburger
 @keyframes show-cta {
   0%, 45% {
     opacity: 0;
-    transform: translateX(1rem);
+    transform: translateY(5vh);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .welcome-section .hero #cta-header::before, .welcome-section .hero #cta-header::after {

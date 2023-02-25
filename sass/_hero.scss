@@ -188,11 +188,11 @@
                     @keyframes name {
                         0%, 20% {
                             opacity: 0;
-                            // transform: translateY(1rem);
+                            transform: translateY(5vh);
                         }
                         100% {
                             opacity: 1;
-                            // transform: translateY(0);
+                            transform: translateY(0);
                         }
                     }
                 }
@@ -223,7 +223,7 @@
 
                 @keyframes meta {
                     0%, 40% {
-                        transform: translateY(-1rem);
+                        transform: translateY(5vh);
                         opacity: 0;
                     }
 
@@ -279,11 +279,11 @@
             @keyframes show-cta {
                 0%, 45% {
                     opacity: 0;
-                    transform:  translateX(1rem);
+                    transform:  translateY(5vh);
                 }
                 100% {
                     opacity: 1;
-                    transform: translateX(0);
+                    transform: translateY(0);
                 }
             }
 
