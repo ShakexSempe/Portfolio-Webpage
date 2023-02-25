@@ -15,8 +15,10 @@
         .item-flex-container {
             @include lg {
                 display: flex;
+                flex-direction: row-reverse;
                 align-items: center;
-                gap: 1;
+                justify-content: space-between;
+                gap: 1rem;
             }
             
         }
@@ -33,7 +35,7 @@
                 padding: .5rem;
             }
             @include md {
-                padding: 1rem;
+                padding: 0;
             }
             
             .item-header {
@@ -52,6 +54,7 @@
                 }
                 @include xlg {
                     padding: 5vh 5vw;
+                    padding: 5vh 5vw 5vh 0;
                     
                 }
                 .item-title {
@@ -267,12 +270,12 @@
             @include lg {
                 &.io-item {
                     .item-header {
-                        opacity: .2;
+                        opacity: 0;
                         transform: translateX(5vw);
                         transition: 1s;
                     }
                     .item-content {
-                        opacity: .2;
+                        opacity: 0;
                         transform: translateX(-5vw);
                         transition: 1s;
                     }

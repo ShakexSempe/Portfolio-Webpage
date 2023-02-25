@@ -2778,8 +2778,10 @@ hamburger
 @media (min-width: 820px) {
   .work .work-container .item-flex-container {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    gap: 1;
+    justify-content: space-between;
+    gap: 1rem;
   }
 }
 .work .work-container .item {
@@ -2796,7 +2798,7 @@ hamburger
 }
 @media (min-width: 768px) {
   .work .work-container .item {
-    padding: 1rem;
+    padding: 0;
   }
 }
 @media (min-width: 576px) {
@@ -2818,6 +2820,7 @@ hamburger
 @media (min-width: 1024px) {
   .work .work-container .item .item-header {
     padding: 5vh 5vw;
+    padding: 5vh 5vw 5vh 0;
   }
 }
 .work .work-container .item .item-header .item-title {
@@ -3009,12 +3012,12 @@ hamburger
 }
 @media (min-width: 820px) {
   .work .work-container .item.io-item .item-header {
-    opacity: 0.2;
+    opacity: 0;
     transform: translateX(5vw);
     transition: 1s;
   }
   .work .work-container .item.io-item .item-content {
-    opacity: 0.2;
+    opacity: 0;
     transform: translateX(-5vw);
     transition: 1s;
   }
