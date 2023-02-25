@@ -57,6 +57,7 @@
                 height: 100%;
                 z-index: -1;
                 background: radial-gradient(transparent, #000);
+                background-attachment: fixed;
         }
 
         @keyframes desktopIntro {
