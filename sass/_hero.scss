@@ -189,7 +189,7 @@
                     animation: name 8s ease forwards 4s;
 
                     @keyframes name {
-                        0%, 20% {
+                        0%, 15% {
                             opacity: 0;
                             transform: translateY(1rem);
                         }
@@ -225,14 +225,14 @@
                 color: $brand;
                 margin-top: .5rem;
                 font-family: $font-content;
-                animation: meta 6s ease forwards 4s;
+                animation: meta 8s ease forwards 4s;
 
                 @keyframes meta {
-                    0%, 40% {
+                    0%, 20% {
                         transform: translateY(1rem);
                         opacity: 0;
                     }
-                    60% {
+                    50% {
                         transform: translateX(0rem);
                     }
                     100% {
@@ -285,10 +285,12 @@
 
             // show cta
             @keyframes show-cta {
-                0%, 45% {
+                0%, 30% {
                     opacity: 0;
                     transform:  translateX(1rem);
-                
+                }
+                50% {
+                    transform: translateX(0);
                 }
                 100% {
                     opacity: 1;
