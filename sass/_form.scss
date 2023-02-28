@@ -1,0 +1,159 @@
+// form
+form {
+    z-index: 2;
+    @media (min-width: 1024px) {
+        width: 50%;
+        border-radius: 5px;
+    }
+    background-color: $overlay-blue-dark;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh auto 0;
+    padding: 10vh 5vw;
+    border-radius: 0;
+    // border: 1px solid $span-gold;
+    overflow: hidden;
+
+    .input-div {
+        position: relative;
+        // border: 1px solid yellow;
+        padding: 1em 0 .5em;
+        margin-bottom: 1rem;
+
+        
+        label {
+            position: absolute;
+            top: 0%;
+            transform: translateY(-.5em);
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: .05rem;
+            font-family: $font-title;
+            text-transform: capitalize;
+            transition: .3s;
+        }
+
+        input, textarea {
+            padding: 1em;
+            width: 100%;
+            margin: .5em 0;
+            border-radius: 5px;
+            transition: .5s;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            letter-spacing: .15em;
+            background: $overlay-blue-darker;
+            outline: 2px solid $span-gold;
+            color: $span-gold;
+            // overflow: hidden;
+
+            &:invalid {
+                // background-color: $background-invalid;
+                background-color: $span-gold;
+                background-color:#ddd;
+                color: $text-invalid;
+                outline: none;
+            }
+            
+            &::placeholder {
+                font-weight: 500;
+                color: #000;
+                text-transform: capitalize;
+                // letter-spacing: .15rem;
+                opacity: 0;
+                transition: .25s;
+                font-family: $font-content;
+            }
+
+            &:focus, &:hover {
+                &::placeholder {
+                    opacity: .6;
+                    // letter-spacing: normal;
+                }
+            }
+        }
+
+        // textarea {
+        //     padding: .5em;
+        //     margin: .5em 0;
+        //     width: 100%;
+        //     border-radius: 5px;
+        //     border: none;
+        //     outline: none;
+        //     overflow: hidden;
+
+        //     &:focus {
+        //         outline: 3px dashed #fffa;
+        //         border: none;
+        //     }
+        //     &:invalid {
+        //         // background-color: $background-invalid;
+        //         background-color: $span-gold;
+        //         color: $text-invalid;
+        //     }
+        // }
+        // input hover state
+        &:hover, &:focus {
+            label {
+                transform: translateX(1em) translateY(-.2em);
+                color: $text-light;
+            }
+        }
+        // end of input hover state
+        
+    }
+
+    button {
+        width: 50%;
+        position: relative;
+        padding:  1rem;
+        color: #eee;
+        background-color: $span-crimson-dark;
+        font-family: $font-content;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: .05rem;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        border-radius: $border-radius-md;
+        // opacity: .9;
+        transition: .3s ease;
+        cursor: pointer;
+        isolation: isolate;
+        // form button box shadow
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: $border-radius-md;
+            border: none;
+            outline: none;
+            z-index: -1;
+            transition: .3s ease;
+        }
+        &::before {
+            background: $button-crimson;
+            box-shadow: $box-light-top-sm;
+        }
+        &::after {
+            background: $button-crimson-hover;
+            box-shadow: $box-dark-top-sm;
+            opacity: 0;
+        }
+        // end of form button box shadow
+        &:hover {
+            transform: scale(.98);
+            letter-spacing: 0;
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
+        }
+        
+    }
+}
