@@ -1,5 +1,29 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Montserrat:wght@100;200;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+.btn-bg::before, .btn-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  z-index: -1;
+  transition: 0.3s ease;
+}
+.btn-bg::before {
+  background: linear-gradient(0deg, #750b20, #dd134c);
+  background: yellow;
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.btn-bg::after {
+  background: linear-gradient(0deg, #dc134c, #750b20);
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(221, 221, 221, 0.3), 3px 3px 3px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
 /*
 section containers
 progress bar
@@ -3696,7 +3720,7 @@ hamburger
 }
 @media (min-width: 1024px) {
   #footer .footer {
-    padding: 5vh 5vw;
+    padding: 10vh 5vw;
   }
 }
 #footer .footer .footer-section-title {
@@ -3710,124 +3734,6 @@ hamburger
   transition: 1.5s;
   transform: scale(1);
 }
-#footer .footer form {
-  z-index: 2;
-  background-color: #29323c;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 5vh auto 0;
-  padding: 10vh 5vw;
-  border-radius: 0;
-  overflow: hidden;
-}
-@media (min-width: 1024px) {
-  #footer .footer form {
-    width: 50%;
-    border-radius: 5px;
-  }
-}
-#footer .footer form .input-div {
-  position: relative;
-  padding: 1em 0 0.5em;
-  margin-bottom: 1rem;
-}
-#footer .footer form .input-div label {
-  position: absolute;
-  top: 0%;
-  transform: translateY(-0.5em);
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 0.05rem;
-  font-family: "Kanit", sans-serif;
-  text-transform: capitalize;
-  transition: 0.3s;
-}
-#footer .footer form .input-div input, #footer .footer form .input-div textarea {
-  padding: 1em;
-  width: 100%;
-  margin: 0.5em 0;
-  border-radius: 5px;
-  transition: 0.5s;
-  border: none;
-  outline: none;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  background: #20262e;
-  outline: 2px solid #ead2a1;
-  color: #ead2a1;
-}
-#footer .footer form .input-div input:invalid, #footer .footer form .input-div textarea:invalid {
-  background-color: #ead2a1;
-  background-color: #ddd;
-  color: #000;
-  outline: none;
-}
-#footer .footer form .input-div input::placeholder, #footer .footer form .input-div textarea::placeholder {
-  font-weight: 500;
-  color: #000;
-  text-transform: capitalize;
-  opacity: 0;
-  transition: 0.25s;
-  font-family: "Montserrat", sans-serif;
-}
-#footer .footer form .input-div input:focus::placeholder, #footer .footer form .input-div input:hover::placeholder, #footer .footer form .input-div textarea:focus::placeholder, #footer .footer form .input-div textarea:hover::placeholder {
-  opacity: 0.6;
-}
-#footer .footer form .input-div:hover label, #footer .footer form .input-div:focus label {
-  transform: translateX(1em) translateY(-0.2em);
-  color: #f4f4f4;
-}
-#footer .footer form button {
-  position: relative;
-  padding: 1rem;
-  color: #eee;
-  background-color: #dc143c8c;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
-  border-radius: 1rem;
-  transition: 0.3s ease;
-  cursor: pointer;
-  isolation: isolate;
-}
-#footer .footer form button::before, #footer .footer form button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  z-index: -1;
-  transition: 0.3s ease;
-}
-#footer .footer form button::before {
-  background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
-}
-#footer .footer form button::after {
-  background: linear-gradient(0deg, #dc134c, #750b20);
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(221, 221, 221, 0.3), 3px 3px 3px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-}
-#footer .footer form button:hover {
-  transform: scale(0.98);
-  letter-spacing: 0;
-}
-#footer .footer form button:hover::before {
-  opacity: 0;
-}
-#footer .footer form button:hover::after {
-  opacity: 1;
-}
 #footer .footer .socialMedia-links {
   grid-template-columns: 1fr;
   background-color: #29323c;
@@ -3836,15 +3742,15 @@ hamburger
 }
 @media (min-width: 1024px) {
   #footer .footer .socialMedia-links {
-    width: 70%;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0.25rem;
   }
 }
 #footer .footer .socialMedia-links .links-grid {
   display: grid;
   gap: 5vh;
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #footer .footer .socialMedia-links .links-grid {
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -3864,6 +3770,21 @@ hamburger
   color: #bfbfbf;
   opacity: 0.1;
   transition: 0.25s;
+}
+@media (min-width: 768px) {
+  #footer .footer .socialMedia-links .socialMedia-item .bg-i {
+    right: 45vw;
+  }
+}
+@media (min-width: 820px) {
+  #footer .footer .socialMedia-links .socialMedia-item .bg-i {
+    right: 4vw;
+  }
+}
+@media (min-width: 1024px) {
+  #footer .footer .socialMedia-links .socialMedia-item .bg-i {
+    right: 10vw;
+  }
 }
 #footer .footer .socialMedia-links .socialMedia-item p {
   font-size: 1.25rem;
@@ -4333,6 +4254,126 @@ hamburger
   color: #f4f4f4;
   display: block;
   font-family: "Kanit", sans-serif;
+}
+
+form {
+  z-index: 2;
+  background-color: #29323c;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh auto 0;
+  padding: 10vh 5vw;
+  border-radius: 0;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  form {
+    width: 50%;
+    border-radius: 5px;
+  }
+}
+form .input-div {
+  position: relative;
+  padding: 1em 0 0.5em;
+  margin-bottom: 1rem;
+}
+form .input-div label {
+  position: absolute;
+  top: 0%;
+  transform: translateY(-0.5em);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+form .input-div input, form .input-div textarea {
+  padding: 1em;
+  width: 100%;
+  margin: 0.5em 0;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  background: #20262e;
+  outline: 2px solid #ead2a1;
+  color: #ead2a1;
+}
+form .input-div input:invalid, form .input-div textarea:invalid {
+  background-color: #ead2a1;
+  background-color: #ddd;
+  color: #000;
+  outline: none;
+}
+form .input-div input::placeholder, form .input-div textarea::placeholder {
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+  opacity: 0;
+  transition: 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+form .input-div input:focus::placeholder, form .input-div input:hover::placeholder, form .input-div textarea:focus::placeholder, form .input-div textarea:hover::placeholder {
+  opacity: 0.6;
+}
+form .input-div:hover label, form .input-div:focus label {
+  transform: translateX(1em) translateY(-0.2em);
+  color: #f4f4f4;
+}
+form button {
+  width: 50%;
+  position: relative;
+  padding: 1rem;
+  color: #eee;
+  background-color: #dc143c8c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  isolation: isolate;
+}
+form button::before, form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  z-index: -1;
+  transition: 0.3s ease;
+}
+form button::before {
+  background: linear-gradient(0deg, #750b20, #dd134c);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+form button::after {
+  background: linear-gradient(0deg, #dc134c, #750b20);
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(221, 221, 221, 0.3), 3px 3px 3px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+form button:hover {
+  transform: scale(0.98);
+  letter-spacing: 0;
+}
+form button:hover::before {
+  opacity: 0;
+}
+form button:hover::after {
+  opacity: 1;
 }
 
 *, ::before, ::after {
