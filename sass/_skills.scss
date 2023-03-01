@@ -50,6 +50,37 @@
                 }
             }
 
+            .skills-icons {
+                // border: 2px solid #0003;
+                background: $overlay-blue-darkest;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: .5rem;
+                margin: .25rem auto 1rem;
+                border-radius: $border-radius-sm;
+                @include sm {
+                    justify-content: center;
+                    gap: 5vw;
+                }
+
+                svg {
+                    height: 5rem;
+                    // border: 1px solid red;
+                    fill: $brand;
+                    @include md {
+                        height: 10rem;
+                    }
+
+                    &:hover {
+                        transform: scale(.95);
+                        transition: .25s;
+                        fill: #fff;
+                        border-radius: $border-radius-sm;
+                    }
+                }
+            }
+
             .skills-drop {
                 text-align: left;
                 color: $span-gold;

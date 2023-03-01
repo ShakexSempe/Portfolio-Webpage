@@ -1850,6 +1850,36 @@ hamburger
   font-weight: 700;
   color: inherit;
 }
+#skills .skills .skills-intro .skills-icons {
+  background: #15191e;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  margin: 0.25rem auto 1rem;
+  border-radius: 0.25rem;
+}
+@media (min-width: 576px) {
+  #skills .skills .skills-intro .skills-icons {
+    justify-content: center;
+    gap: 5vw;
+  }
+}
+#skills .skills .skills-intro .skills-icons svg {
+  height: 5rem;
+  fill: #bfbfbf;
+}
+@media (min-width: 768px) {
+  #skills .skills .skills-intro .skills-icons svg {
+    height: 10rem;
+  }
+}
+#skills .skills .skills-intro .skills-icons svg:hover {
+  transform: scale(0.95);
+  transition: 0.25s;
+  fill: #fff;
+  border-radius: 0.25rem;
+}
 #skills .skills .skills-intro .skills-drop {
   text-align: left;
   color: #ead2a1;
