@@ -68,15 +68,16 @@
                     height: 5rem;
                     // border: 1px solid red;
                     fill: $brand;
+                    transition: .25s;
+                        border-radius: $border-radius-sm;
                     @include md {
                         height: 10rem;
                     }
 
                     &:hover {
-                        transform: scale(.95);
+                        transform: scale(1.025);
                         transition: .25s;
                         fill: #fff;
-                        border-radius: $border-radius-sm;
                     }
                 }
             }

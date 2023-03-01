@@ -1868,6 +1868,8 @@ hamburger
 #skills .skills .skills-intro .skills-icons svg {
   height: 5rem;
   fill: #bfbfbf;
+  transition: 0.25s;
+  border-radius: 0.25rem;
 }
 @media (min-width: 768px) {
   #skills .skills .skills-intro .skills-icons svg {
@@ -1875,10 +1877,9 @@ hamburger
   }
 }
 #skills .skills .skills-intro .skills-icons svg:hover {
-  transform: scale(0.95);
+  transform: scale(1.025);
   transition: 0.25s;
   fill: #fff;
-  border-radius: 0.25rem;
 }
 #skills .skills .skills-intro .skills-drop {
   text-align: left;
