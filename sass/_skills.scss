@@ -51,8 +51,8 @@
             }
 
             .skills-icons {
-                border: 1px solid $overlay-blue-dark;
-                // background: $overlay-blue-darkest;
+                // border: 1px solid $overlay-blue-dark;
+                background: linear-gradient(0deg, #f4f4f4, #fafafa, #f4f4f4);
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
