@@ -51,12 +51,13 @@
             }
 
             .skills-icons {
-                // border: 2px solid #0003;
-                background: $overlay-blue-darkest;
+                border: 1px solid $overlay-blue-dark;
+                // background: $overlay-blue-darkest;
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
-                padding: .5rem;
+                justify-content: space-between;
+                padding: .5rem 0;
                 margin: .25rem auto 1rem;
                 border-radius: $border-radius-sm;
                 @include sm {
@@ -66,10 +67,12 @@
 
                 svg {
                     height: 5rem;
+                    width: 100%;
                     // border: 1px solid red;
-                    fill: $brand;
+                    fill: $overlay-blue-darker;
+                    // stroke: green;
                     transition: .25s;
-                        border-radius: $border-radius-sm;
+                        // border-radius: $border-radius-sm;
                     @include md {
                         height: 10rem;
                     }
@@ -77,7 +80,7 @@
                     &:hover {
                         transform: scale(1.025);
                         transition: .25s;
-                        fill: #fff;
+                        fill: $overlay-blue-light;
                     }
                 }
             }

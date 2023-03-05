@@ -1851,11 +1851,12 @@ hamburger
   color: inherit;
 }
 #skills .skills .skills-intro .skills-icons {
-  background: #15191e;
+  border: 1px solid #29323c;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0.5rem;
+  justify-content: space-between;
+  padding: 0.5rem 0;
   margin: 0.25rem auto 1rem;
   border-radius: 0.25rem;
 }
@@ -1867,9 +1868,9 @@ hamburger
 }
 #skills .skills .skills-intro .skills-icons svg {
   height: 5rem;
-  fill: #bfbfbf;
+  width: 100%;
+  fill: #20262e;
   transition: 0.25s;
-  border-radius: 0.25rem;
 }
 @media (min-width: 768px) {
   #skills .skills .skills-intro .skills-icons svg {
@@ -1879,7 +1880,7 @@ hamburger
 #skills .skills .skills-intro .skills-icons svg:hover {
   transform: scale(1.025);
   transition: 0.25s;
-  fill: #fff;
+  fill: #485563;
 }
 #skills .skills .skills-intro .skills-drop {
   text-align: left;
