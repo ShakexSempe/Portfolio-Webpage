@@ -1851,7 +1851,7 @@ hamburger
   color: inherit;
 }
 #skills .skills .skills-intro .skills-icons {
-  background-image: linear-gradient(0deg, #f4f4f4, #fff, #f4f4f4);
+  background-image: linear-gradient(0deg, #f4f4f4, #fafafa, #f4f4f4);
   display: flex;
   align-items: center;
   justify-content: space-between;
