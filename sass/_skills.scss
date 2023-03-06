@@ -52,35 +52,41 @@
 
             .skills-icons {
                 // border: 1px solid $overlay-blue-dark;
-                background: linear-gradient(0deg, #f4f4f4, #fafafa, #f4f4f4);
+                background: linear-gradient(0deg, #f4f4f4, #fff, #f4f4f4);
                 display: flex;
                 align-items: center;
-                justify-content: space-evenly;
                 justify-content: space-between;
+                // justify-content: space-evenly;
                 padding: .5rem 0;
                 margin: .25rem auto 1rem;
                 border-radius: $border-radius-sm;
                 @include sm {
+                    // justify-content: space-around;
+                }
+                @include lg {
                     justify-content: center;
-                    gap: 5vw;
+                    gap: 10vw;
+                    margin: 5vh auto;
                 }
 
                 svg {
-                    height: 5rem;
-                    width: 100%;
+                    // width: 100%;
                     // border: 1px solid red;
+                    height: 5rem;
+                    height: clamp(5rem, 10vw, 8rem);
+                    width: auto;
                     fill: $overlay-blue-darker;
                     // stroke: green;
                     transition: .25s;
                         // border-radius: $border-radius-sm;
                     @include md {
-                        height: 10rem;
+                        // height: 8rem;
                     }
 
                     &:hover {
                         transform: scale(1.025);
                         transition: .25s;
-                        fill: $overlay-blue-light;
+                        fill: $overlay-blue-darkest;
                     }
                 }
             }

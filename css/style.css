@@ -1851,36 +1851,32 @@ hamburger
   color: inherit;
 }
 #skills .skills .skills-intro .skills-icons {
-  background: linear-gradient(0deg, #f4f4f4, #fafafa, #f4f4f4);
+  background: linear-gradient(0deg, #f4f4f4, #fff, #f4f4f4);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   justify-content: space-between;
   padding: 0.5rem 0;
   margin: 0.25rem auto 1rem;
   border-radius: 0.25rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 820px) {
   #skills .skills .skills-intro .skills-icons {
     justify-content: center;
-    gap: 5vw;
+    gap: 10vw;
+    margin: 5vh auto;
   }
 }
 #skills .skills .skills-intro .skills-icons svg {
   height: 5rem;
-  width: 100%;
+  height: clamp(5rem, 10vw, 8rem);
+  width: auto;
   fill: #20262e;
   transition: 0.25s;
-}
-@media (min-width: 768px) {
-  #skills .skills .skills-intro .skills-icons svg {
-    height: 10rem;
-  }
 }
 #skills .skills .skills-intro .skills-icons svg:hover {
   transform: scale(1.025);
   transition: 0.25s;
-  fill: #485563;
+  fill: #15191e;
 }
 #skills .skills .skills-intro .skills-drop {
   text-align: left;
