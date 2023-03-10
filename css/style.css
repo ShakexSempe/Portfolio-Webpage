@@ -1874,11 +1874,6 @@ hamburger
   fill: #20262e;
   transition: 0.25s;
 }
-#skills .skills .skills-intro .skills-icons svg:hover {
-  transform: scale(1.025);
-  transition: 0.25s;
-  fill: #15191e;
-}
 #skills .skills .skills-intro .skills-icons.io-item svg {
   transform: scale(0.8);
   transition: 1s;
@@ -3585,7 +3580,7 @@ hamburger
   display: block;
 }
 .about .col-right .article-container article p a {
-  background-color: #f7f7f7;
+  background-color: whitesmoke;
   color: #20262e;
   font-weight: 500;
   display: inline-block;
