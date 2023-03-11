@@ -4508,8 +4508,8 @@ section .section-title span {
   }
 }
 section .section-title.io-item {
-  opacity: 0;
-  transform: scale(0.8) translateY(5vh);
+  opacity: 1;
+  transform: scale(0.7) translateY(5vh);
   transition: 1s;
 }
 section .section-title.io-item span {

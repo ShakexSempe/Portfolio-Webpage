@@ -117,8 +117,8 @@ section {
         /* end of section title animations */
     }
     &.io-item {
-        opacity: 0;
-        transform: scale(.8) translateY(5vh);
+        opacity: 1;
+        transform: scale(.7) translateY(5vh);
         transition: 1s;
         span {
             animation: none;
