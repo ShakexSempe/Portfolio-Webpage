@@ -138,8 +138,8 @@
 
             // SKILLS-TOP DATA-SCROLL
             &.io-item {
-                transform: scale(1) translateY(5vh);
-                opacity: 0;
+                transform: scale(.7) translateY(5vh);
+                opacity: 1;
                 transition: 1s;
             }
 
@@ -585,8 +585,8 @@
             // border: 1px solid red;
             &.io-item {
                 .skills-intro, .dropdown {
-                    opacity: 0;
-                    transform: translateY(5vh);
+                    opacity: 1;
+                    transform: scale(.9);
                     transition: 1s;
                 }
             }
