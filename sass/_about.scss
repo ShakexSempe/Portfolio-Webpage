@@ -208,7 +208,7 @@
                         transition: .2s;
 
                         &.cv {
-                            background-color: $overlay-blue-dark;
+                            background-color: $overlay-blue-darker;
                             color: $text-light;
                             padding: 0 .25rem;
                             &:hover {
@@ -236,7 +236,7 @@
                             font-size: 2rem;
                             font-size: clamp(2rem, 5vw, 2.25rem);
                             float: left;
-                            background: $overlay-blue-darkest;
+                            background: $overlay-blue-darker;
                             color: $text-light;
                             padding: 0 .1em;
                             margin-right: .1em;
@@ -261,13 +261,28 @@
                 .about-intro {
                     // border: 2px solid red;
                     &.io-item {
-                        opacity: 0;
+                        opacity: 1;
                         transform: translateY(5vh);
                         transition: 1s;
+
+                        .intro {
+                            &.intro::first-letter {
+                                background-color: $overlay-blue-dark;
+                                
+                            }
+                        }
                     }
                     &.active-item {
                         opacity: 1;
                         transform: translateY(0);
+                        .intro {
+                            transition: 5s;
+                            &.intro::first-letter {
+                                background-color: $overlay-blue-darker;
+                                box-shadow: 1px 3px 0 rgba(0, 0, 0, .100);
+                                transition: 2s;
+                            }
+                        }
                     }
                 }
                 .about-body {
