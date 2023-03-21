@@ -34,6 +34,9 @@
                 outline: none;
                 border-radius: .5rem;
                 overflow: hidden;
+                box-shadow: .25rem .5rem .6rem rgba(72, 85, 99, .2);
+                transition: box-shadow .5s ease;
+                
                 // project items on desktop : row
                 @media (min-width: 768px) {
                     height: 350px;
@@ -65,7 +68,6 @@
                     flex-direction: column;
                     // background-color: $overlay-blue-dark;
                     background: $overlay-dark;
-                    transition: 1.3s ease;
                     // project Title (h1)
                     h3 {
                         font-size: 1.15rem;
@@ -260,6 +262,8 @@
                 // project item img hover state
                 &:hover {
                     &.project-item {
+                        box-shadow: .2rem .25rem .5rem rgba(72, 85, 99, .35);
+
                         &::after {
                             opacity: 1;
                         }

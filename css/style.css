@@ -2609,6 +2609,8 @@ hamburger
   outline: none;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0.25rem 0.5rem 0.6rem rgba(72, 85, 99, 0.2);
+  transition: box-shadow 0.5s ease;
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -2633,7 +2635,6 @@ hamburger
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
-  transition: 1.3s ease;
 }
 @media (min-width: 768px) {
   #projects .projects .all-projects .project-item .project-tile {
@@ -2819,6 +2820,9 @@ hamburger
   margin-right: 0.1em;
   font-style: italic;
   letter-spacing: 0.05em;
+}
+#projects .projects .all-projects .project-item:hover.project-item {
+  box-shadow: 0.2rem 0.25rem 0.5rem rgba(72, 85, 99, 0.35);
 }
 #projects .projects .all-projects .project-item:hover.project-item::after {
   opacity: 1;
