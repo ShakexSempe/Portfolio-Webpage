@@ -587,8 +587,8 @@
             // border: 1px solid red;
             &.io-item {
                 .skills-intro, .dropdown {
-                    opacity: 1;
-                    transform: scale(.9);
+                    opacity: .7;
+                    transform: translateY(1rem);
                     transition: 1s;
                 }
             }

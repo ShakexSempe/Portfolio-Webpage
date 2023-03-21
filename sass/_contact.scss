@@ -1,6 +1,5 @@
 // contact
 #contact {
-
     .contact {
         flex-direction: column;
         justify-content: start;
@@ -10,6 +9,7 @@
         padding: 5vh 5vw 5vh;
         position: relative;
         transform-style: preserve-3d;
+        background: #fafafa;
         // border: 2px solid red;
         @include lg {
             padding: 5vh 5vw 5vh;
@@ -18,24 +18,25 @@
         .contact-header {
             width: 100%;
             height: auto;
-            background: $background-light;
+            background: #fafafa;
             z-index: 10;
         }
         // end of section-title
         // contact items container
         .contact-items {
+
             width: 100%;
             display: flex;
             flex-direction: column;
             gap: 5vh;
-            border: 2px solid blue;
+            // border: 2px solid blue;
+            // padding: 1rem;
             @include xlg {
                 // border: 2px solid red;
                 width: 100%;
                 flex-direction: row;
                 justify-content: space-between;
                 flex-wrap: nowrap;
-                padding: 0;
                 margin: 5vh auto;
                 gap: .5rem;
             }
