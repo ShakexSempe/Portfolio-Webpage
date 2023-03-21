@@ -3,33 +3,31 @@
 #skills {
     // border:1px solid red;
     // overflow: hidden;
+    .skills-header {
+        // border: 2px solid red;
+        padding: 5vh 5vw 0;
+    }
 
     // skills container
     .skills {
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
+        // text-align: center;
         background: $background-light;
         min-height: auto;
+        // border: 2px solid blue;
 
-        // end of skills container
 
         // SKILLS T=INTRO
         .skills-intro {
             // border: 2px solid red;
-            text-align: left;
-            margin: 0 auto 0;
-            padding: 2.5vh 2.5vw 0 5vw;
+            padding: 0 2.5vw 0 5vw;
             // padding: 1rem;
             position: relative;
             z-index: 30;
             @include sm {
-                padding: 5vh 5vw;
+                padding: 0vh 5vw;
             }
             @include md {
                 width: 100%;
-                padding: 0vh 5vw 0;
-                text-align: center;
             }
             .skills-article {
                 p {
@@ -54,6 +52,7 @@
                 // border: 1px solid $overlay-blue-dark;
                 background-image: linear-gradient(0deg, #f4f4f4, #fafafa, #f4f4f4);
                 display: flex;
+                // display: none;
                 align-items: center;
                 justify-content: space-between;
                 padding: .5rem 0;
@@ -64,6 +63,9 @@
                     justify-content: center;
                     gap: 10vw;
                     margin: 5vh auto;
+                    position: absolute;
+                    top: 0;
+                    right: 5vw;
                 }
 
                 svg {
@@ -115,7 +117,7 @@
                 // font-size: clamp(.95rem, 2vw, 1.15rem);
                 font-size: $font-clamp-sm;
                 @include md {
-                    text-align: center;
+                    // text-align: center;
                 }
 
 
@@ -131,7 +133,7 @@
         // DROPDOWN SECTION
         .dropdown {
             position: relative;
-            margin: 0 auto;
+            // margin: 5vh auto 0;
             z-index: 4;
             width: 100%;
             // border: 2px solid red;
@@ -167,7 +169,7 @@
                 font-size: 1.2rem;
                 font-size: clamp(1.1rem, 2.5vw, 1.25rem);
                 font-weight: 400;
-                text-align: center;
+                // text-align: center;
                 text-transform: capitalize;
                 letter-spacing: .025rem;
                 border: none;
@@ -180,7 +182,7 @@
                 isolation: isolate;
 
                 @include md {
-                    margin: 2.5vh auto;
+                    // margin: 2.5vh auto;
                     // width: 20rem;
                     justify-content: center;
                     padding: .5rem 2rem;

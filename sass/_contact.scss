@@ -1,37 +1,42 @@
 // contact
 #contact {
-    padding-bottom: 0;
+
     .contact {
         flex-direction: column;
         justify-content: start;
         width: 100%;
         margin: 0 auto;
         // padding-bottom: 30px;
-        padding: 0vh 5vw 5vh;
+        padding: 5vh 5vw 5vh;
         position: relative;
         transform-style: preserve-3d;
         // border: 2px solid red;
+        @include lg {
+            padding: 5vh 5vw 5vh;
+        }
         // section-title
         .contact-header {
             width: 100%;
             height: auto;
             background: $background-light;
-            margin-bottom: 5vh;
             z-index: 10;
         }
         // end of section-title
         // contact items container
         .contact-items {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            border: 2px solid blue;
             @include xlg {
                 // border: 2px solid red;
                 width: 100%;
-                display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 flex-wrap: nowrap;
                 padding: 0;
-                margin: 0 auto;
+                margin: 5vh auto;
                 gap: .5rem;
             }
             // contact-item
@@ -44,7 +49,7 @@
                 gap: 1rem;
                 color: $overlay-blue-darkest;
                 text-align: center;
-                margin: 5vh auto;
+                // margin: 5vh auto;
                 position: relative;
                 border-radius: .5rem;
                 transform: preserve-3d;

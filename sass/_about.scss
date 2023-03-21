@@ -24,11 +24,11 @@
     .col-right {
         // section title
         .section-title {
-            text-align: center;
-            font-size: 2.35em;
+            // border: 2px solid red;
+            text-align: left;
             &::after {
                 width: 80%;
-                margin: 0 auto;
+                // margin: 0 auto;
             }
         }
         // end of section title
@@ -48,6 +48,7 @@
         }
         // end of desktop
         .about-title {
+            border: 4px solid yellow;
             display: flex;
             flex-direction: column;
             padding: 1em 1.3em;

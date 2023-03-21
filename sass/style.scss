@@ -79,9 +79,9 @@ section {
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    text-align: center;
+    // text-align: center;
     font-family: $font-title;
-    -webkit-box-reflect: below -1rem linear-gradient(transparent, #0003);
+    -webkit-box-reflect: below -.9rem linear-gradient(transparent, #0003);
     span {
         position: relative;
         // color: $overlay-blue-dark;
@@ -118,7 +118,7 @@ section {
     }
     &.io-item {
         opacity: 1;
-        transform: scale(.8) ;
+        // transform: scale(.8) ;
         transition: 1s;
         span {
             animation: none;
@@ -126,7 +126,7 @@ section {
     }
     &.active-item {
         opacity: 1;
-        transform: scale(1);
+        // transform: scale(1);
         span {
             animation: section-span 3s ease-in-out infinite .25s;
         }
