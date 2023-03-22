@@ -1,19 +1,17 @@
 // footer
 #footer {
     // background-image: $overlay-dark;
+    // border: 4px solid green;
     // background-image: $overlay-dark;
     background: $overlay-blue-darkest;
+    // background: pink;
     padding: 0 0 5vh 0;
     .footer {
         min-height: 100vh;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // padding: 5vh 2px;
+        color: #eee;
         @media (min-width: 1024px) {
-            padding: 10vh 5vw;
-            
+            padding: 10vh 5vw 5vh;
         }
         // section title
         .footer-section-title {
@@ -27,10 +25,9 @@
                     transform: scale(1);
                 }
         }
-        // section title
-        
-        // end of form
-        // social media links
+        .footer-top {
+            // border: 2px solid red;
+            // social media links
         .socialMedia-links {
             @include xlg {
                 width: 100%;
@@ -293,6 +290,76 @@
                 }
             }
         }
+        }
+        .footer-bottom {
+            // border: 2px solid skyblue;
+            padding: 5vh 5vw;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            @include xlg {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                align-items: flex-start;
+                padding: 5vh 0 0;
+                gap: 1rem;
+            }
+            img {
+                width: 10rem;
+                border-radius: $border-radius-sm;
+                @include lg {
+                    width: 15rem;
+                }
+            }
+            
+            .footer-item {
+                flex-grow: 1;
+                // background: $overlay-blue-darker;
+                // border: 2px solid red;
+                // padding: 1rem 0;
+                h3 {
+                    text-transform: capitalize;
+                    margin-bottom: 1rem;
+                }
+                .date {
+                    color: #eee;
+                }
+
+                p {
+                    color: #fff;
+                    text-transform: capitalize;
+                    line-height: 1.4;
+                }
+                .footer-list {
+                    list-style: none;
+                    li {
+                        margin-bottom: .25rem;
+                        i {
+                            width: 1.5rem;
+                            color: $brand;
+                            transition: .25s;
+                        }
+                        a {
+                            color: #fff;
+                            cursor: pointer;
+                        }
+
+                        &:hover {
+                            i {
+                                color: #fff;
+                                transform: translateX(.25rem);
+                            }
+                        }
+                    }
+                    &.browse-list {
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+        }
+        
         // end of social media links
 
         // footer thank you message
@@ -414,221 +481,7 @@
         }
         // end of footer thank you message
         
-
-        // social icons
-        .social-icon {
-            @media (min-width: 1000px){
-                display: flex;
-                margin: 30px auto;
-                padding: 1em 1em;
-                width: 50%;
-                font-size: 1.5em;
-            }
-            display: flex;
-            justify-content: space-between;
-            width: 90%;
-            margin: 5px auto;
-            padding: .5em .5em 1em;
-            border-radius: 5px;
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-            transform-style: preserve-3d;
-            // icons container and shadows
-            &:before,
-            &::after {
-                position: absolute;
-                padding: .3em;
-                font-family: 'Font Awesome 5 Free';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                font-weight: 600;
-                border-radius: 10px;
-                transition: .5s;
-            }
-            &::before {
-                content: "\f0c0";
-                font-size: 1.5em;
-                text-align: center;
-                color: $brand;
-                opacity: 1;
-                background-image: linear-gradient(0deg, #252e36c4, #6e051a9c);
-                box-shadow: inset 3px 3px 5px #ddda,
-                inset -3px 0px 5px #000;
-                pointer-events: none;
-                z-index: 1;
-            }
-            &:after {
-                content: "\f007";
-                font-size: 1.5em;
-                text-align: center;
-                color: rgba(221, 221, 221, 0.307);
-                opacity: 0;
-                z-index: -3;
-                background-image: linear-gradient(0deg, transparent, #29323cc2);
-                box-shadow: inset 3px 3px 5px #000a,
-                            inset -3px 0px 5px #ddda;
-                transition: .5s ease;
-            }
-            // social item container hover state
-            &:hover {
-                &::before {opacity: 0};
-                &::after {opacity: 1};
-            }
-            // end of social item container hover state
-            // end of icons container and shadows
-            .social-item {
-                height: 50px;
-                width: 50px;
-                margin: 1em .5em 0;
-                transition: 1s ease;
-                // links and links label
-                a {
-                    position: relative;
-                    z-index: 1;
-                    // link label
-                    &::before {
-                        content: attr(data-icon);
-                        position: absolute;
-                        bottom: -140%;
-                        left: -.5em;
-                        font-size: .5em;
-                        color: $brand;
-                        width: 100%;
-                        height: 100%;
-                        opacity: 0;
-                        transition: 1s;
-                        z-index: -1;
-                        transform: translateY(100%);
-                        @media (min-width: 768px){
-                            font-size: .6em;
-                            bottom: -100%;
-                            left: -30%;
-                        }
-                    }
-                    // end of link label
-                }
-                // end of links and links label
-                // icon 
-                i {
-                    font-size: 1.6em;
-                    margin: 0 10px;
-                    font-weight: 800;
-                    padding: 10px;
-                    border-radius: 50%;
-                    background: linear-gradient(0deg, rgb(119, 118, 119), rgb(239, 239, 245));
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transition: 0.3s ease;
-                    position: relative;
-                    transform: scale(.9);
-                    opacity: .3;
-                    transition: .3git s;
-                    @media (min-width: 768px){
-                        transform: scale(.7);
-                        margin-bottom: 50px;
-                        padding: 10px;
-                        box-shadow: 1px 1px 5px rgba(221, 221, 221, 0.527);
-                        
-                        &:hover {
-                            transition: all .3s ease-in-out;
-                            box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.827);
-                        }
-                    }
-                    // icon shadow
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        transition: .3s;
-                        border-radius: 100%;
-                        box-shadow: 2px 2px 1px rgba(221, 221, 221, 0.595);
-                        opacity: .4;
-                    }
-                    // end of icon shadow
-                    &:hover {
-                        transform: scale(1.05);
-                    }
-                }
-                // end of icon 
-                // icon shadow on hover
-                &:hover {
-                    i {
-                        &::after {opacity: 1;}
-                    }
-                } 
-                // end of icon shadow on hover 
-                // freecodecamp camp label
-                
-                // end of freecodecamp camp label
-            }
-            // icon label pop up
-            &:hover {
-                i {opacity: 1;}
-                a {
-                    &::before {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                }
-            }
-            // end of icon label pop up
-        } 
         // end of social icons 
-    }
-}
- // bs21
-.bs21 {
-    z-index: 1;
-    //  DATA-SCROLL
-    &[data-scroll] {
-        transition: 1.5s;
-        transform: scale(1);
-        letter-spacing: .05rem;
-    }
-    &[data-scroll="in"] {
-        letter-spacing: normal;
-        // transform: translateY(0);
-    }
-    width: 100%;
-    // border: 2px solid $overlay-blue-dark;
-    border-radius: .5rem;
-    padding: 5vh 5vw;
-    margin: 0 auto;
-    text-align: center;
-    
-    @media (min-width: 768px) {
-        padding: 5vh 0 5vh;
-    }
-    p,
-    a, span {
-        font-family: $font-title;
-        color: $text-light;
-        font-size: .95rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        @media (min-width: 768px) {
-            font-size: 1.25rem;
-        }
-    }
-    a {
-        color: $span-light;
-        &:hover {
-            opacity: .9;
-        }
-    }
-    .date {
-        // margin: .5em 0;
-        color: $text-light;
-        // display: inline-block;
-        display: block;
-        font-family: $font-title;
     }
 }
 // end of bs21
