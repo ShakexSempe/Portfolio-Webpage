@@ -154,7 +154,7 @@
                     font-size: $font-clamp-xsm;
                     font-weight: 400;
                     color: $brand;
-                    animation: header 4s ease forwards 4s;
+                    // animation: header 4s ease forwards 4s;
                     a {
                         color: inherit;
                         font-size: inherit;
@@ -187,7 +187,7 @@
                     font-size: clamp(2.5rem, 6vw, 3rem);
                     font-size: $font-clamp-lg;
                     color: $text-light;
-                    animation: name 8s ease forwards 4s;
+                    // animation: name 8s ease forwards 4s;
 
                     @keyframes name {
                         0%, 15% {
@@ -226,7 +226,7 @@
                 color: $brand;
                 margin-top: .5rem;
                 font-family: $font-content;
-                animation: meta 8s ease forwards 4s;
+                // animation: meta 8s ease forwards 4s;
 
                 @keyframes meta {
                     0%, 20% {
@@ -277,7 +277,7 @@
             // transform: translateX(-10vw);
             // transform-style: preserve-3d;
             // animation: show-cta 3s ease-in-out 13s;
-            animation: show-cta 8s ease-in-out 4s;
+            // animation: show-cta 8s ease-in-out 4s;
             animation-fill-mode: forwards;
             transition: .3s linear;
             cursor: pointer;
@@ -349,6 +349,7 @@
                 font-weight: 500;
                 animation: animate 3s ease-in-out infinite;
                 animation-delay: calc(4s + .2s * var(--i));
+                animation-delay: calc(2s + .2s * var(--i));
 
                 /* cta keyframes*/
                 @keyframes animate {
