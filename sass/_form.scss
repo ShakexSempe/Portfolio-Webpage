@@ -106,7 +106,7 @@ form {
     }
 
     button {
-        width: 50%;
+        width: 11rem;
         position: relative;
         padding:  1rem;
         color: #eee;
@@ -114,15 +114,22 @@ form {
         font-family: $font-content;
         font-weight: 500;
         font-size: 1rem;
-        letter-spacing: .05rem;
+        letter-spacing: .025rem;
         text-transform: capitalize;
         border: none;
         outline: none;
+        display: flex;
+        justify-content: space-between;
         border-radius: $border-radius-md;
         // opacity: .9;
-        transition: .3s ease;
+        transition: .25s ease;
         cursor: pointer;
         isolation: isolate;
+
+        i {
+            // margin-left: .5rem;
+            transition: .25s ease;
+        }
         // form button box shadow
         &::before, &::after {
             content: '';
@@ -135,7 +142,7 @@ form {
             border: none;
             outline: none;
             z-index: -1;
-            transition: .3s ease;
+            transition: .25s ease;
         }
         &::before {
             background: $button-crimson;
@@ -150,6 +157,9 @@ form {
         &:hover {
             transform: scale(.98);
             letter-spacing: 0;
+            i {
+                transform: translateX(-.25rem);
+            }
             &::before {opacity: 0;}
             &::after {opacity: 1;}
         }

@@ -16,7 +16,7 @@
 .btn-bg::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
   background: yellow;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn-bg::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -200,7 +200,7 @@ hamburger
 }
 .top-link::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .top-link::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -287,7 +287,7 @@ hamburger
   z-index: -1;
 }
 .btn::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.3));
 }
 .btn::after {
@@ -1275,7 +1275,7 @@ hamburger
   outline: none;
 }
 .welcome-section .hero #cta-header::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #750b20, #dd134c);
 }
 .welcome-section .hero #cta-header::after {
@@ -1525,7 +1525,7 @@ hamburger
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -1966,7 +1966,7 @@ hamburger
 }
 #skills .skills .dropdown .dropbtn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #skills .skills .dropdown .dropbtn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -2113,7 +2113,7 @@ hamburger
   border-radius: 0.5rem;
   opacity: 0.8;
   z-index: -1;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #skills .skills .dropdown .dropdown-content .skills-bottom .skills-item .icon {
   display: grid;
@@ -2472,7 +2472,7 @@ hamburger
 }
 #contact .contact .contact-items .contact-item .contact-info a::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #contact .contact .contact-items .contact-item .contact-info a::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3013,7 +3013,7 @@ hamburger
 }
 .work .work-container .item .item-header .item-cta a.cta-primary::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .work .work-container .item .item-header .item-cta a.cta-primary::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3368,7 +3368,7 @@ hamburger
 }
 .work .work-items .work-item .view-site-btn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .work .work-items .work-item .view-site-btn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3477,7 +3477,7 @@ hamburger
   position: absolute;
   opacity: 0;
   z-index: 20;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .about .col-right .about-title h2 {
   display: inline-block;
@@ -3517,7 +3517,7 @@ hamburger
 }
 .about .col-right button {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
   color: #fff;
   margin: 1rem auto;
   padding: 0.7rem;
@@ -3895,7 +3895,7 @@ hamburger
   z-index: -1;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a::after {
   opacity: 0;
@@ -4247,7 +4247,7 @@ form .input-div:hover label, form .input-div:focus label {
   color: #f4f4f4;
 }
 form button {
-  width: 50%;
+  width: 11rem;
   position: relative;
   padding: 1rem;
   color: #eee;
@@ -4255,14 +4255,19 @@ form button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
   text-transform: capitalize;
   border: none;
   outline: none;
+  display: flex;
+  justify-content: space-between;
   border-radius: 0.5rem;
-  transition: 0.3s ease;
+  transition: 0.25s ease;
   cursor: pointer;
   isolation: isolate;
+}
+form button i {
+  transition: 0.25s ease;
 }
 form button::before, form button::after {
   content: "";
@@ -4275,11 +4280,11 @@ form button::before, form button::after {
   border: none;
   outline: none;
   z-index: -1;
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 form button::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.15), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 form button::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -4289,6 +4294,9 @@ form button::after {
 form button:hover {
   transform: scale(0.98);
   letter-spacing: 0;
+}
+form button:hover i {
+  transform: translateX(-0.25rem);
 }
 form button:hover::before {
   opacity: 0;
