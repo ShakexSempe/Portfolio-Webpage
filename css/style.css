@@ -3759,7 +3759,7 @@ hamburger
 
 #footer {
   background: #15191e;
-  padding: 0 0 7vh 0;
+  padding: 0 0 5vh 0;
 }
 #footer .footer {
   min-height: 100vh;
@@ -4057,7 +4057,7 @@ hamburger
   list-style: none;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li i {
   width: 1.5rem;
