@@ -6,10 +6,10 @@
         width: 100%;
         margin: 0 auto;
         // padding-bottom: 30px;
-        padding: 5vh 5vw 5vh;
+        padding: 0vh 5vw 5vh;
         position: relative;
         transform-style: preserve-3d;
-        background: #fafafa;
+        background: #f4f4f4;
         // border: 2px solid red;
         @include lg {
             padding: 5vh 5vw 5vh;
@@ -18,7 +18,7 @@
         .contact-header {
             width: 100%;
             height: auto;
-            background: #fafafa;
+            background: #f4f4f4;
             z-index: 10;
         }
         // end of section-title
@@ -42,7 +42,8 @@
             }
             // contact-item
             .contact-item {
-                border: 2px solid $overlay-blue-darker;
+                // border: 2px solid $overlay-blue-darker;
+                background: #fff;
                 width: 100%;
                 display: flex;
                 justify-content: flex-start;
@@ -56,6 +57,7 @@
                 transform: preserve-3d;
                 overflow: hidden;
                 transition: .8s ease;
+                isolation: isolate;
                 @include sm {
                     gap: 1rem;
                     border-color: transparent;
@@ -177,6 +179,7 @@
                         // margin: .5em auto;
                         margin-bottom: .5rem;
                         color: $overlay-blue-darker;
+                        color: #000;
                         transition: .5s ease;
                         position: relative;
                         text-align: left;

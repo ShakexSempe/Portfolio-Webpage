@@ -2277,10 +2277,10 @@ hamburger
   justify-content: start;
   width: 100%;
   margin: 0 auto;
-  padding: 5vh 5vw 5vh;
+  padding: 0vh 5vw 5vh;
   position: relative;
   transform-style: preserve-3d;
-  background: #fafafa;
+  background: #f4f4f4;
 }
 @media (min-width: 820px) {
   #contact .contact {
@@ -2290,7 +2290,7 @@ hamburger
 #contact .contact .contact-header {
   width: 100%;
   height: auto;
-  background: #fafafa;
+  background: #f4f4f4;
   z-index: 10;
 }
 #contact .contact .contact-items {
@@ -2310,7 +2310,7 @@ hamburger
   }
 }
 #contact .contact .contact-items .contact-item {
-  border: 2px solid #20262e;
+  background: #fff;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -2323,6 +2323,7 @@ hamburger
   transform: preserve-3d;
   overflow: hidden;
   transition: 0.8s ease;
+  isolation: isolate;
 }
 @media (min-width: 576px) {
   #contact .contact .contact-items .contact-item {
@@ -2409,6 +2410,7 @@ hamburger
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: #20262e;
+  color: #000;
   transition: 0.5s ease;
   position: relative;
   text-align: left;
