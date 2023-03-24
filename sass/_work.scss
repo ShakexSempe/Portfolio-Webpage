@@ -3,6 +3,7 @@
     // background: #ddd;
     padding: 5vh 5vw;
     background: #fafafa;
+    background: $background-light;
     @media (min-width: 768px) {
     padding: 5vh 5vw 10vh;
     }
@@ -47,7 +48,7 @@
             .item-header {
                 // display: grid;
                 // border: 2px solid red;
-                padding: 1rem .5rem;
+                padding: 1rem 0rem;
                 @include sm {
                     padding: 1rem;
                 }
