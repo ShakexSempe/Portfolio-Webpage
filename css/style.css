@@ -2402,7 +2402,7 @@ hamburger
   text-transform: capitalize;
   text-align: left;
   margin-bottom: 0.25rem;
-  font-size: clamp(1.2rem, 1.5vw, 1.225rem);
+  font-size: clamp(1.1rem, 1.5vw, 1.225rem);
 }
 #contact .contact .contact-items .contact-item .contact-info p {
   font-size: 1rem;
