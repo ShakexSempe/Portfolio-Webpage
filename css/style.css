@@ -2929,7 +2929,8 @@ hamburger
   color: #f4f4f4;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  text-transform: lowercase;
 }
 .work .work-container .item .item-header .item-meta-data p::first-letter {
   text-transform: capitalize;
