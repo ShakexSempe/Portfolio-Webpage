@@ -1832,7 +1832,7 @@ hamburger
 }
 #skills .skills .skills-intro .skills-article p {
   font-size: 0.95rem;
-  font-size: clamp(.95rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 500;
   line-height: 1.6;
   overflow: hidden;
@@ -1893,7 +1893,7 @@ hamburger
   text-align: left;
   color: #ead2a1;
   font-size: 1rem;
-  font-size: clamp(.95rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 #skills .skills .skills-intro .skills-drop .skills-drop-p {
   font-weight: 500;
