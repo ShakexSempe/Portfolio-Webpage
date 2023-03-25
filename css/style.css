@@ -683,7 +683,7 @@ hamburger
     z-index: 5;
   }
   .header .navbar #nav .nav-list .links-container ul {
-    margin: 0.5rem 5vw;
+    margin: 1rem 5vw 1rem;
     background: #29323c;
     padding: 0.5rem 0;
     height: max-content;
