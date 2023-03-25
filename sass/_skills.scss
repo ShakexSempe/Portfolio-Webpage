@@ -599,10 +599,11 @@
         .skills-items {
             // border: 1px solid red;
             display: grid;
-            gap: 5vh;
+            gap: 10vh;
 
             @include md {
                 grid-template-columns: 1fr 1fr;
+                gap: 2rem;
             }
             @include xlg {
                 grid-template-columns: 1fr 1fr 1fr;
