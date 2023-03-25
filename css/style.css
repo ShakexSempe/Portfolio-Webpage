@@ -574,28 +574,27 @@ hamburger
   width: 100%;
   height: 100%;
   background: #15191e;
+  box-shadow: 0rem 0.5rem 1rem yellow;
   z-index: -1;
-  opacity: 0;
-  transition: 0.25s;
+  transition: background 0.15s, box-shadow 1s;
 }
 @media (min-width: 1024px) {
   .header {
     height: 15vh;
-    overflow: hidden;
   }
 }
 .header.hero-header::after {
-  opacity: 0;
+  background: transparent;
+  box-shadow: 0rem 1rem 1rem green;
+  box-shadow: 0rem 1rem 1rem transparent;
 }
 .header.hero-header .navbar #nav .logo {
   transform: translateY(-10vh);
 }
-.header.header-io {
-  transition: background-color 0.25s;
-  transition: all 0.25s;
-}
 .header.header-io::after {
   opacity: 1;
+  background: #15191e;
+  box-shadow: 0rem 0.15rem 1rem rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 1024px) {
   .header.header-io {
@@ -616,7 +615,7 @@ hamburger
 .header.header-io .header #nav .nav-list ul li {
   opacity: 1;
 }
-.header.header-io.active-header {
+.header.header-io.active-header::after {
   background: #29323c;
 }
 .header.header-io.active-header #nav .logo {
