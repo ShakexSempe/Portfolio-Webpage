@@ -2,8 +2,8 @@
     min-height: 100vh;
     // background: #ddd;
     padding: 5vh 5vw;
-    background: #fafafa;
     background: $background-light;
+    background: #fafafa;
     @media (min-width: 768px) {
     padding: 5vh 5vw 10vh;
     }
@@ -15,7 +15,7 @@
             margin-top: 15vh;
         }
         .item-flex-container {
-            background: $background-light;
+            // background: $background-light;
             @include lg {
                 display: flex;
                 flex-direction: row-reverse;
