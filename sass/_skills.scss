@@ -1,6 +1,6 @@
 
 // skills
-#skills {
+.skills-section {
     // border:1px solid red;
     // overflow: hidden;
     .skills-header {
@@ -302,255 +302,7 @@
                     padding: 10vh 5vw;
                 }
 
-                // skills items container
-                .skills-bottom {
-                    position: relative;
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 10vh;
-                    @include md {
-                        gap: 1.5rem;
-                        grid-template-columns: 1fr 1fr;
-                    }
-
-                    @include xlg {
-                        gap: 1.5rem;
-                        grid-template-columns: 1fr 1fr 1fr;
-                    }
-                    
-                    // SKILLS ITEMS
-                    .skills-item {
-                        flex-basis: 100%;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        align-items: flex-start;
-                        justify-content: space-between;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 2rem .5rem 2rem 2rem;
-                        background: transparent;
-                        background-size: cover;
-                        // margin: 10vh 5vw;
-                        position: relative;
-                        z-index: 1;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        border-radius: $border-radius-sm;
-                        height: auto;
-                        transform-style: preserve-3d;
-
-                        // IO CLASS
-                        &.io-item {
-                            transform: translateY(5vh);
-                            opacity: 0;
-                            transition: .5s;
-                        }
-                        &.active-item {
-                            transform: translateY(0);
-                            opacity: 1;
-                            transition: 1.5s;
-                        }
-
-                        // line-height: 1.3;
-                        @include sm {
-                            padding: 1rem .5rem .5rem 1.5rem;
-                        }
-
-                        @include lg {
-                            padding: 1rem .5rem 1rem 2rem;
-                        }
-                        isolation: isolate;
-
-                        ul {
-                            // border: 2px solid red;
-                            margin: 0;
-                            padding: 0;
-                            z-index: 5;
-                            height: 50%;
-                            width: 100%;
-
-                            li {
-                                color: #fff;
-                                font-size: 1rem;
-                                text-align: left;
-                                // margin-bottom: 1rem;
-                                line-height: 1.7;
-                                // margin: .5em;
-                                // padding: .2em .4em;
-                                text-transform: capitalize;
-
-                                @include lg {
-                                    font-size: .85rem;
-                                }
-
-                                a {
-                                    color: #f4f4f4;
-                                }
-
-                                &::marker {
-                                    color: $brand;
-                                    color: #fff4;
-                                }
-                            }
-
-                        }
-
-                        // SKILLS ITEM PSEUDO BG & BOX SHADOW
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                            height: 100%;
-                            width: 100%;
-                            background: $skill-item-overlay;
-                            border-radius: $border-radius-md;
-                            opacity: 0.8;
-                            z-index: -1;
-                            box-shadow: $box-light-top-sm;
-                        }
-                        .icon {
-                            display: grid;
-                            place-items: center;
-                            height: 4rem;
-                            width: 4rem;
-                            border: none;
-                            outline: none;
-                            border-radius: 50%;
-                            padding: 1rem;
-                            margin-bottom: 1rem;
-                            // margin-top: 15px;
-                            // margin-bottom: 20px;
-                            position: relative;
-                            isolation: isolate;
-
-                            @include sm {
-                                padding: 10px;
-                            }
-
-                            // icon img
-                            img {
-                                width: 80%;
-                            }
-
-                            // end of icon img
-                            i {
-                                color: $span-gold;
-                                font-size: 2rem;
-                            }
-
-                            @include sm {
-                                height: 4rem;
-                                width: 4rem;
-
-                                i {
-                                    font-size: 2.25rem;
-                                }
-                            }
-
-                            // ICON BOX SHADOW & BG
-                            &::before,
-                            &::after {
-                                position: absolute;
-                                content: '';
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 50%;
-                            }
-
-                            &::before {
-                                z-index: -1;
-                                box-shadow:
-                                    inset 2px 2px 3px rgba(255, 255, 255, .125),
-                                    inset -2px -2px 5px rgba(0, 0, 0, 0.125),
-                                    3px 3px 4px rgba(0, 0, 0, .125);
-                                animation: skill-icon 10s linear infinite;
-
-                                @keyframes skill-icon {
-                                    25% {
-                                        box-shadow:
-                                            inset -2px 3px 3px rgba(255, 255, 255, .15),
-                                            inset 2px -2px 5px rgba(0, 0, 0, 0.15),
-                                            -3px 3px 4px rgba(0, 0, 0, .125);
-                                    }
-
-                                    50% {
-                                        box-shadow: inset 0px -1px 3px rgba(255, 255, 255, .15),
-                                            inset 0px 2px 5px rgba(0, 0, 0, 0.15),
-                                            0 2px 4px rgba(0, 0, 0, .125);
-                                    }
-
-                                    75% {
-                                        box-shadow: inset 2px 0px 3px rgba(255, 255, 255, .15),
-                                            inset -2px 0px 5px rgba(0, 0, 0, 0.15),
-                                            -2px 2px 4px rgba(0, 0, 0, .125);
-                                    }
-                                }
-                            }
-
-                            &::after {
-                                // background-color: $overlay-blue-darker;
-                                background: $overlay-dark;
-                                z-index: -2;
-                                opacity: 1;
-                            }
-
-                            // end of icon box shadow
-
-                        }
-
-                        // end of item icon
-                        // skills item title (h2)
-                        h3 {
-                            font-size: 1.25rem;
-                            font-weight: 400;
-                            color: $span-gold;
-                            margin-bottom: .5rem;
-                            text-transform: capitalize;
-                            font-family: $font-title;
-
-                            // text-decoration: underline $span-gold;
-                            // text-underline-offset: .1em;
-                            @include lg {
-                                font-size: 1.25rem;
-                            }
-                        }
-
-                        // end of skills item title (h2)
-                        // skills items on tablets
-                        @media (min-width:768px) {
-                            // flex-basis: 45%;
-                            // margin: 2.5%;
-                            height: auto;
-                        }
-
-                        // end of skills items on tablets
-                        // skills items on desktop
-                        @media (min-width: 1024px) {
-                            // flex-basis: 25%;
-                            width: 100%;
-                            margin: 0;
-                            // height: 300px;
-                            // height: 55vh;
-                            // justify-content: space-evenly;
-                            pointer-events: visible;
-                            cursor: pointer;
-                            transition: .2s;
-
-                            &:hover {
-                                transition: .2s;
-                                transform: scale(1.0255);
-                            }
-                        }
-
-                        // end of skills items on desktop
-                    }
-
-                    // end of skills-items
-                }
+                
                 // BACK TO TOP BUTTON
                 .top-btn {
                     // border: 2px solid red;
@@ -584,10 +336,266 @@
                 // end of skills items container
 
             }
-
-            // end of dropdown content ( ie. skills items)
         }
+        .skills-page-container {
+            // border: 2px solid red;
+            padding: 5vh 5vw;
+            margin: 5vh 0;
+            background: $overlay-blue-darker;
+        }
+        // skills items container
+        .skills-bottom {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10vh;
 
+            @include md {
+                gap: 1.5rem;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include xlg {
+                gap: 1.5rem;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            // SKILLS ITEMS
+            .skills-item {
+                flex-basis: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                align-items: flex-start;
+                justify-content: space-between;
+                justify-content: center;
+                flex-direction: column;
+                padding: 2rem .5rem 2rem 2rem;
+                background: transparent;
+                background-size: cover;
+                // margin: 10vh 5vw;
+                position: relative;
+                z-index: 1;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                border-radius: $border-radius-sm;
+                height: auto;
+                transform-style: preserve-3d;
+
+                // IO CLASS
+                &.io-item {
+                    transform: translateY(5vh);
+                    opacity: 0;
+                    transition: .5s;
+                }
+
+                &.active-item {
+                    transform: translateY(0);
+                    opacity: 1;
+                    transition: 1.5s;
+                }
+
+                // line-height: 1.3;
+                @include sm {
+                    padding: 1rem .5rem .5rem 1.5rem;
+                }
+
+                @include lg {
+                    padding: 1rem .5rem 1rem 2rem;
+                }
+
+                isolation: isolate;
+
+                ul {
+                    // border: 2px solid red;
+                    margin: 0;
+                    padding: 0;
+                    z-index: 5;
+                    height: 50%;
+                    width: 100%;
+
+                    li {
+                        color: #fff;
+                        font-size: 1rem;
+                        text-align: left;
+                        // margin-bottom: 1rem;
+                        line-height: 1.7;
+                        // margin: .5em;
+                        // padding: .2em .4em;
+                        text-transform: capitalize;
+
+                        @include lg {
+                            font-size: .85rem;
+                        }
+
+                        a {
+                            color: #f4f4f4;
+                        }
+
+                        &::marker {
+                            color: $brand;
+                            color: #fff4;
+                        }
+                    }
+
+                }
+
+                // SKILLS ITEM PSEUDO BG & BOX SHADOW
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: $skill-item-overlay;
+                    border-radius: $border-radius-md;
+                    opacity: 0.8;
+                    z-index: -1;
+                    box-shadow: $box-light-top-sm;
+                }
+
+                .icon {
+                    display: grid;
+                    place-items: center;
+                    height: 4rem;
+                    width: 4rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 50%;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                    // margin-top: 15px;
+                    // margin-bottom: 20px;
+                    position: relative;
+                    isolation: isolate;
+
+                    @include sm {
+                        padding: 10px;
+                    }
+
+                    // icon img
+                    img {
+                        width: 80%;
+                    }
+
+                    // end of icon img
+                    i {
+                        color: $span-gold;
+                        font-size: 2rem;
+                    }
+
+                    @include sm {
+                        height: 4rem;
+                        width: 4rem;
+
+                        i {
+                            font-size: 2.25rem;
+                        }
+                    }
+
+                    // ICON BOX SHADOW & BG
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+
+                    &::before {
+                        z-index: -1;
+                        box-shadow:
+                            inset 2px 2px 3px rgba(255, 255, 255, .125),
+                            inset -2px -2px 5px rgba(0, 0, 0, 0.125),
+                            3px 3px 4px rgba(0, 0, 0, .125);
+                        animation: skill-icon 10s linear infinite;
+
+                        @keyframes skill-icon {
+                            25% {
+                                box-shadow:
+                                    inset -2px 3px 3px rgba(255, 255, 255, .15),
+                                    inset 2px -2px 5px rgba(0, 0, 0, 0.15),
+                                    -3px 3px 4px rgba(0, 0, 0, .125);
+                            }
+
+                            50% {
+                                box-shadow: inset 0px -1px 3px rgba(255, 255, 255, .15),
+                                    inset 0px 2px 5px rgba(0, 0, 0, 0.15),
+                                    0 2px 4px rgba(0, 0, 0, .125);
+                            }
+
+                            75% {
+                                box-shadow: inset 2px 0px 3px rgba(255, 255, 255, .15),
+                                    inset -2px 0px 5px rgba(0, 0, 0, 0.15),
+                                    -2px 2px 4px rgba(0, 0, 0, .125);
+                            }
+                        }
+                    }
+
+                    &::after {
+                        // background-color: $overlay-blue-darker;
+                        background: $overlay-dark;
+                        z-index: -2;
+                        opacity: 1;
+                    }
+
+                    // end of icon box shadow
+
+                }
+
+                // end of item icon
+                // skills item title (h2)
+                h3 {
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    color: $span-gold;
+                    margin-bottom: .5rem;
+                    text-transform: capitalize;
+                    font-family: $font-title;
+
+                    // text-decoration: underline $span-gold;
+                    // text-underline-offset: .1em;
+                    @include lg {
+                        font-size: 1.25rem;
+                    }
+                }
+
+                // end of skills item title (h2)
+                // skills items on tablets
+                @media (min-width:768px) {
+                    // flex-basis: 45%;
+                    // margin: 2.5%;
+                    height: auto;
+                }
+
+                // end of skills items on tablets
+                // skills items on desktop
+                @media (min-width: 1024px) {
+                    // flex-basis: 25%;
+                    width: 100%;
+                    margin: 0;
+                    // height: 300px;
+                    // height: 55vh;
+                    // justify-content: space-evenly;
+                    pointer-events: visible;
+                    cursor: pointer;
+                    transition: .2s;
+
+                    &:hover {
+                        transition: .2s;
+                        transform: scale(1.0255);
+                    }
+                }
+
+                // end of skills items on desktop
+            }
+
+            // end of skills-items
+        }
         // SECTION IO TRANSITIONS 
         .io-container {
             width: 100%;
