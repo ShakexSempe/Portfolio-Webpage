@@ -594,7 +594,7 @@ hamburger
 .header.header-io::after {
   opacity: 1;
   background: #15191e;
-  box-shadow: 0rem 0.15rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.015rem 0.015rem 0.5rem rgba(41, 50, 60, 0.2), 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
 }
 @media (min-width: 1024px) {
   .header.header-io {
@@ -2347,6 +2347,7 @@ hamburger
   display: flex;
   flex-direction: column;
   gap: 5vh;
+  border: 2px solid blue;
 }
 @media (min-width: 1024px) {
   #contact .contact .contact-items {

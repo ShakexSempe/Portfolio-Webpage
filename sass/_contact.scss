@@ -24,12 +24,11 @@
         // end of section-title
         // contact items container
         .contact-items {
-
             width: 100%;
             display: flex;
             flex-direction: column;
             gap: 5vh;
-            // border: 2px solid blue;
+            border: 2px solid blue;
             // padding: 1rem;
             @include xlg {
                 // border: 2px solid red;
