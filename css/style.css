@@ -2347,7 +2347,6 @@ hamburger
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  border: 2px solid blue;
 }
 @media (min-width: 1024px) {
   #contact .contact .contact-items {
@@ -2356,7 +2355,7 @@ hamburger
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 5vh auto;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }
 #contact .contact .contact-items .contact-item {
@@ -2372,8 +2371,9 @@ hamburger
   border-radius: 0.5rem;
   transform: preserve-3d;
   overflow: hidden;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
   isolation: isolate;
+  box-shadow: 0rem 0.5rem 1rem rgba(41, 50, 60, 0.15);
 }
 @media (min-width: 576px) {
   #contact .contact .contact-items .contact-item {
@@ -2558,6 +2558,9 @@ hamburger
 }
 #contact .contact .contact-items .contact-item:nth-child(3) {
   cursor: alias;
+}
+#contact .contact .contact-items .contact-item:hover {
+  box-shadow: 0rem 0.25rem 0.5rem rgba(41, 50, 60, 0.2);
 }
 #contact .contact .contact-items .contact-item:hover .icon::after {
   opacity: 0;

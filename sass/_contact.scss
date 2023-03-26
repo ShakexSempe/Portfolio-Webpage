@@ -28,7 +28,7 @@
             display: flex;
             flex-direction: column;
             gap: 5vh;
-            border: 2px solid blue;
+            // border: 2px solid blue;
             // padding: 1rem;
             @include xlg {
                 // border: 2px solid red;
@@ -37,7 +37,7 @@
                 justify-content: space-between;
                 flex-wrap: nowrap;
                 margin: 5vh auto;
-                gap: .5rem;
+                gap: 1rem;
             }
             // contact-item
             .contact-item {
@@ -51,12 +51,14 @@
                 color: $overlay-blue-darkest;
                 text-align: center;
                 // margin: 5vh auto;
+                
                 position: relative;
                 border-radius: .5rem;
                 transform: preserve-3d;
                 overflow: hidden;
-                transition: .8s ease;
+                transition: .5s ease;
                 isolation: isolate;
+                box-shadow: 0rem .5rem 1rem rgba(41, 50, 60, .15);
                 @include sm {
                     gap: 1rem;
                     border-color: transparent;
@@ -285,6 +287,7 @@
                 // ITEM HOVER STATE
                 &:hover {
                     // TURN OFF ICON PULSE ON HOVER
+                    box-shadow: 0rem .25rem .5rem rgba(41, 50, 60, .2);
                     .icon {
                         &::after {
                             opacity: 0;
