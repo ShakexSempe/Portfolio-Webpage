@@ -2259,6 +2259,7 @@ hamburger
   font-size: 2.5rem;
   color: #ddd;
   filter: drop-shadow(0.125rem 0.5rem 0.25rem #0006);
+  transition: 0.25s;
 }
 .skills-section .skills .skills-items .skills-item .icon img, .skills-section .skills .skills-items .skills-item .icon svg {
   width: 2.5rem;
