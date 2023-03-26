@@ -2061,14 +2061,7 @@ hamburger
   }
 }
 .skills-section .skills .skills-page-container .skills-bottom .skills-item {
-  flex-basis: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  align-items: flex-start;
-  justify-content: space-between;
-  justify-content: center;
-  flex-direction: column;
   padding: 2rem 0.5rem 2rem 2rem;
   background: transparent;
   background-size: cover;
@@ -2251,19 +2244,24 @@ hamburger
   }
 }
 .skills-section .skills .skills-items .skills-item {
-  background: #29323c;
+  background: #20262e;
   border-radius: 0.25rem;
   color: #fff;
   padding: 0 0.25rem 1rem 1rem;
+  box-shadow: 0.15rem 0.5rem 1rem rgba(255, 255, 255, 0.15);
+  transition: transform 0.5s, box-shadow 0.25s;
+}
+.skills-section .skills .skills-items .skills-item .icon {
+  transform: translateY(-1rem);
+  transition: 0.5s;
 }
 .skills-section .skills .skills-items .skills-item .icon i {
   font-size: 2.5rem;
-  margin: -1rem 0 1rem;
+  color: #ddd;
 }
 .skills-section .skills .skills-items .skills-item .icon img, .skills-section .skills .skills-items .skills-item .icon svg {
   width: 2.5rem;
-  margin: -1rem 0 1rem;
-  fill: #fff;
+  fill: #ddd;
 }
 .skills-section .skills .skills-items .skills-item h3 {
   margin-bottom: 1rem;
@@ -2279,6 +2277,18 @@ hamburger
 }
 .skills-section .skills .skills-items .skills-item ul li::marker {
   color: #485563;
+}
+@media (min-width: 820px) {
+  .skills-section .skills .skills-items .skills-item ul li {
+    font-size: 0.95rem;
+  }
+}
+.skills-section .skills .skills-items .skills-item:hover {
+  transform: scale(0.99);
+  box-shadow: 0rem 0.25rem 0.5rem rgba(255, 255, 255, 0.2);
+}
+.skills-section .skills .skills-items .skills-item:hover .icon {
+  transform: translateY(-0.5rem);
 }
 .skills-section .skills .io-container {
   width: 100%;

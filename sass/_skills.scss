@@ -360,14 +360,14 @@
     
                 // SKILLS ITEMS
                 .skills-item {
-                    flex-basis: 100%;
+                    // flex-basis: 100%;
                     width: 100%;
-                    display: flex;
-                    align-items: center;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    justify-content: center;
-                    flex-direction: column;
+                    // display: flex;
+                    // align-items: center;
+                    // align-items: flex-start;
+                    // justify-content: space-between;
+                    // justify-content: center;
+                    // flex-direction: column;
                     padding: 2rem .5rem 2rem 2rem;
                     background: transparent;
                     background-size: cover;
@@ -611,21 +611,26 @@
 
             .skills-item {
                 // border: 2px solid yellow;
-                background: $overlay-blue-dark;
+                background: $overlay-blue-darker;
                 border-radius: $border-radius-sm;
                 color: #fff;
                 padding: 0 .25rem 1rem 1rem;
+                box-shadow: .15rem .5rem 1rem hsla(0, 0%, 100%, .15);
+                transition: transform .5s, box-shadow .25s;
                 .icon {
+                    transform: translateY(-1rem);
+                    transition: .5s;
                     i {
                         font-size: 2.5rem;
+                        color: #ddd;
                         // margin-top: -1rem;
-                        margin: -1rem 0 1rem;
+                        // margin: -1rem 0 1rem;
                     }
                     img, svg {
                         // border: 2px solid red;
                         width: 2.5rem;
-                        margin: -1rem 0 1rem;
-                        fill: #fff;
+                        // margin: -1rem 0 1rem;
+                        fill: #ddd;
                     }
                 }
 
@@ -644,9 +649,19 @@
                         &::marker {
                             color: $overlay-blue-light;
                         }
+                        @include lg {
+                            font-size: .95rem;
+                        }
                     }
                 }
 
+                &:hover {
+                    transform: scale(.99);
+                    box-shadow: 0rem .25rem .5rem hsla(0, 0%, 100%, .2);
+                    .icon {
+                        transform: translateY(-.5rem);
+                    }
+                }
             }
         }
         // skills items container
