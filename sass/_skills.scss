@@ -614,7 +614,7 @@
                 background: $overlay-blue-dark;
                 border-radius: $border-radius-sm;
                 color: #fff;
-                padding: 0 .5rem 1rem;
+                padding: 0 .25rem 1rem 1rem;
                 .icon {
                     i {
                         font-size: 2.5rem;
@@ -634,11 +634,14 @@
                 }
 
                 ul {
+                    // border: 2px solid red;
+                    padding: .5rem 0rem 1rem 1rem;
                     li {
                         margin-bottom: .5rem;
+                        line-height: 1.5;
                         text-transform: capitalize;
                         &::marker {
-                            color: $overlay-blue-dark;
+                            color: $overlay-blue-light;
                         }
                     }
                 }
