@@ -16,7 +16,7 @@
 .btn-bg::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
   background: yellow;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .btn-bg::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -200,7 +200,7 @@ hamburger
 }
 .top-link::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .top-link::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -287,7 +287,7 @@ hamburger
   z-index: -1;
 }
 .btn::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.3));
 }
 .btn::after {
@@ -1270,7 +1270,7 @@ hamburger
   outline: none;
 }
 .welcome-section .hero #cta-header::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #750b20, #dd134c);
 }
 .welcome-section .hero #cta-header::after {
@@ -1521,7 +1521,7 @@ hamburger
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -1965,7 +1965,7 @@ hamburger
 }
 .skills-section .skills .dropdown .dropbtn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .skills-section .skills .dropdown .dropbtn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -2131,7 +2131,7 @@ hamburger
   border-radius: 0.5rem;
   opacity: 0.8;
   z-index: -1;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .skills-section .skills .skills-page-container .skills-bottom .skills-item .icon {
   display: grid;
@@ -2294,21 +2294,6 @@ hamburger
 }
 .skills-section .skills .skills-items .skills-item:hover .icon i {
   filter: drop-shadow(0rem 0.25rem 0.15rem #0008);
-}
-.skills-section .skills .io-container {
-  width: 100%;
-}
-.skills-section .skills .io-container.io-item .skills-intro, .skills-section .skills .io-container.io-item .dropdown {
-  opacity: 0.6;
-  transform: translateY(1rem);
-  transition: 1s;
-}
-.skills-section .skills .io-container.active-item .skills-intro, .skills-section .skills .io-container.active-item .dropdown {
-  opacity: 1;
-  transform: translateY(0);
-}
-.skills-section .skills .io-container.active-item .dropdown {
-  transition-delay: 0.25s;
 }
 .skills-section .git-img {
   margin: 20vh auto 0;
@@ -2525,7 +2510,7 @@ hamburger
 }
 #contact .contact .contact-items .contact-item .contact-info a::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 #contact .contact .contact-items .contact-item .contact-info a::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -2601,7 +2586,6 @@ hamburger
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  background-color: #fff;
   position: relative;
 }
 #projects .projects .all-projects {
@@ -2625,7 +2609,7 @@ hamburger
   outline: none;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0.25rem 0.5rem 0.6rem rgba(72, 85, 99, 0.2);
+  box-shadow: 0rem 0.5rem 0.5rem rgba(72, 85, 99, 0.15);
   transition: box-shadow 0.5s ease;
   overflow: hidden;
 }
@@ -2856,9 +2840,9 @@ hamburger
 
 .work {
   min-height: 100vh;
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 10vh;
   background: #fff;
-  background: #fafafa;
+  background: #f4f4f4;
 }
 @media (min-width: 768px) {
   .work {
@@ -2885,9 +2869,9 @@ hamburger
 }
 .work .work-container .item {
   overflow: hidden;
-  padding: 0 0 1rem 0;
-  padding: 0;
   border-radius: 0.25rem;
+  background: #fff;
+  box-shadow: 0rem 0.5rem 1rem #0001;
 }
 .work .work-container .item:first-child {
   margin-bottom: 15vh;
@@ -2905,6 +2889,7 @@ hamburger
 }
 .work .work-container .item .item-header {
   padding: 1rem 0rem;
+  padding: 1rem 1rem 2rem;
 }
 @media (min-width: 576px) {
   .work .work-container .item .item-header {
@@ -2927,8 +2912,8 @@ hamburger
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-weight: 700;
-  font-size: 1.2rem;
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 2vw, 2rem);
 }
 @media (min-width: 768px) {
   .work .work-container .item .item-header .item-title {
@@ -2938,11 +2923,16 @@ hamburger
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
   align-items: start;
-  flex-wrap: wrap;
   gap: 1rem;
-  list-style: none;
-  text-transform: capitalize;
+  flex-wrap: wrap;
   margin: 1.5rem 0 0;
+  text-transform: capitalize;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .work .work-container .item .item-header .item-meta-data {
+    gap: 1rem;
+  }
 }
 .work .work-container .item .item-header .item-meta-data p {
   background: #20262e;
@@ -2951,11 +2941,13 @@ hamburger
   border-radius: 0.25rem;
   font-size: 0.8rem;
   text-transform: lowercase;
+  box-shadow: 0.125rem 0.25rem 0.25rem #0002;
 }
 .work .work-container .item .item-header .item-meta-data p::first-letter {
   text-transform: capitalize;
 }
 .work .work-container .item .item-header .item-meta-data li {
+  border: 1px solid #000;
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.8rem;
@@ -2966,11 +2958,6 @@ hamburger
 }
 .work .work-container .item .item-header .item-meta-data li:hover {
   color: #bfbfbf;
-}
-@media (min-width: 768px) {
-  .work .work-container .item .item-header .item-meta-data {
-    gap: 1rem;
-  }
 }
 .work .work-container .item .item-header .item-description {
   margin: 1rem 0;
@@ -3031,7 +3018,7 @@ hamburger
 }
 .work .work-container .item .item-header .item-cta a.cta-primary::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .work .work-container .item .item-header .item-cta a.cta-primary::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3386,7 +3373,7 @@ hamburger
 }
 .work .work-items .work-item .view-site-btn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .work .work-items .work-item .view-site-btn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3495,7 +3482,7 @@ hamburger
   position: absolute;
   opacity: 0;
   z-index: 20;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .about .col-right .about-title h2 {
   display: inline-block;
@@ -3535,7 +3522,7 @@ hamburger
 }
 .about .col-right button {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   color: #fff;
   margin: 1rem auto;
   padding: 0.7rem;
@@ -3913,7 +3900,7 @@ hamburger
   z-index: -1;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a::after {
   opacity: 0;
@@ -4302,7 +4289,7 @@ form button::before, form button::after {
 }
 form button::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 form button::after {
   background: linear-gradient(0deg, #dc134c, #750b20);

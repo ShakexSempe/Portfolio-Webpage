@@ -7,7 +7,8 @@
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-        background-color: $background-light;
+        // background-color: $background-light;
+        // background-color: #fafafa;
         position: relative;
         
         // project items
@@ -34,7 +35,7 @@
                 outline: none;
                 border-radius: .5rem;
                 overflow: hidden;
-                box-shadow: .25rem .5rem .6rem rgba(72, 85, 99, .2);
+                box-shadow: 0rem .5rem .5rem rgba(72, 85, 99, .15);
                 transition: box-shadow .5s ease;
                 
                 // project items on desktop : row

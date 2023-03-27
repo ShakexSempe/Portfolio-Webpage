@@ -1,9 +1,9 @@
 .work {
     min-height: 100vh;
     // background: #ddd;
-    padding: 5vh 5vw;
+    padding: 5vh 5vw 10vh;
     background: $background-light;
-    background: #fafafa;
+    background: #f4f4f4;
     @media (min-width: 768px) {
     padding: 5vh 5vw 10vh;
     }
@@ -32,9 +32,9 @@
             // border: 2px solid blue;
             // height: auto;
             overflow: hidden;
-            padding: 0 0 1rem 0;
-            padding: 0;
             border-radius: .25rem;
+            background: #fff;
+            box-shadow: $box-shadow-item-md;
             &:first-child {
                 margin-bottom: 15vh;
             }
@@ -51,6 +51,7 @@
                 // display: grid;
                 // border: 2px solid red;
                 padding: 1rem 0rem;
+                padding: 1rem 1rem 2rem;
                 @include sm {
                     padding: 1rem;
                 }
@@ -71,8 +72,8 @@
                     text-transform: capitalize;
                     margin-bottom: 1rem;
                     font-weight: 700;
-                    font-size: 1.2rem;
-                    font-size: clamp(1.2rem, 2vw, 2rem);
+                    font-size: 1.15rem;
+                    font-size: clamp(1.15rem, 2vw, 2rem);
                     @include md {
                     margin-bottom: .5rem;
                         // font-size: 1.5rem;
@@ -82,15 +83,13 @@
                     // border: 2px solid yellow;
                     display: flex;
                     align-items: start;
-                    flex-wrap: wrap;
-                    // justify-content: space-evenly;
                     gap: 1rem;
-                    list-style: none;
-                    // padding: 1rem 0;
-                    text-transform: capitalize;
+                    flex-wrap: wrap;
                     margin: 1.5rem 0 0;
+                    text-transform: capitalize;
+                    list-style: none;
                     @include md {
-                        // margin: 0;
+                        gap: 1rem;
                     }
                     p {
                         background: $overlay-blue-darker;
@@ -99,12 +98,14 @@
                         border-radius: .25rem;
                         font-size: .8rem;
                         text-transform: lowercase;
+                        box-shadow: $box-shadow-item-sm;
                         &::first-letter {
                             text-transform: capitalize;
                         }
                     }
+
                     li {
-                        // border: 1px solid #000;
+                        border: 1px solid #000;
                         border-radius: .25rem;
                         padding: .25rem .5rem;
                         font-size: .8rem;
@@ -116,10 +117,6 @@
                         &:hover {
                             color: $brand;
                         }
-                    }
-
-                    @include md {
-                        gap: 1rem;
                     }
                 }
                 .item-description {
