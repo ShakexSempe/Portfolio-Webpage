@@ -246,13 +246,16 @@
                         height: 50%;
                         object-fit: cover;
                         transition: .5s;
-                        border-radius: .25rem;
                         // border: 2px solid pink;
+                        @include lg {
+                            border-radius: .25rem;
+                        }
                     }
 
                     &:hover {
                         img {
                             transform: scale(1.1);
+                            transition: 2s;
                         }
                     }
                 }
