@@ -2246,12 +2246,14 @@ hamburger
 .skills-section .skills .skills-items .skills-item .icon i {
   font-size: 2.5rem;
   color: #ddd;
-  filter: drop-shadow(0.125rem 0.5rem 0.25rem #0006);
   transition: 0.25s;
 }
 .skills-section .skills .skills-items .skills-item .icon img, .skills-section .skills .skills-items .skills-item .icon svg {
   width: 2.5rem;
-  fill: #ddd;
+  transition: 0.25s;
+}
+.skills-section .skills .skills-items .skills-item .icon i, .skills-section .skills .skills-items .skills-item .icon img, .skills-section .skills .skills-items .skills-item .icon svg {
+  filter: drop-shadow(0.125rem 0.5rem 0.25rem #0006);
 }
 .skills-section .skills .skills-items .skills-item h3 {
   margin-bottom: 1rem;
@@ -2280,7 +2282,7 @@ hamburger
 .skills-section .skills .skills-items .skills-item:hover .icon {
   transform: translateY(-0.5rem);
 }
-.skills-section .skills .skills-items .skills-item:hover .icon i {
+.skills-section .skills .skills-items .skills-item:hover .icon i, .skills-section .skills .skills-items .skills-item:hover .icon svg, .skills-section .skills .skills-items .skills-item:hover .icon img {
   filter: drop-shadow(0rem 0.25rem 0.15rem #0008);
 }
 .skills-section .git-img {

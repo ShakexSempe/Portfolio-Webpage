@@ -613,7 +613,6 @@
                     i {
                         font-size: 2.5rem;
                         color: #ddd;
-                        filter: drop-shadow(.125rem .5rem .25rem #0006);
                         transition: .25s;
                         // margin-top: -1rem;
                         // margin: -1rem 0 1rem;
@@ -621,8 +620,12 @@
                     img, svg {
                         // border: 2px solid red;
                         width: 2.5rem;
-                        // margin: -1rem 0 1rem;
-                        fill: #ddd;
+                        transition: .25s;
+                    }
+
+                    // ITEM ICON DROP SHADOWS
+                    i, img, svg {
+                        filter: drop-shadow(.125rem .5rem .25rem #0006);
                     }
                 }
 
@@ -652,7 +655,7 @@
                     box-shadow: .025rem .5rem .5rem hsla(0, 0%, 0%, .25);
                     .icon {
                         transform: translateY(-.5rem);
-                        i {
+                        i, svg, img {
                             filter: drop-shadow(0rem .25rem .15rem #0008);
                         }
                     }
