@@ -1831,7 +1831,7 @@ hamburger
 }
 .skills-section .skills .skills-intro .skills-article p {
   font-size: 0.95rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(.95rem, 2vw, 1.125rem);
   font-weight: 500;
   line-height: 1.6;
   overflow: hidden;
@@ -1892,7 +1892,7 @@ hamburger
   text-align: left;
   color: #ead2a1;
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(.95rem, 2vw, 1.125rem);
 }
 .skills-section .skills .skills-intro .skills-drop .skills-drop-p {
   font-weight: 500;
@@ -2917,8 +2917,8 @@ hamburger
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-weight: 700;
-  font-size: 1.15rem;
-  font-size: clamp(1.15rem, 2vw, 2rem);
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 2vw, 2rem);
 }
 @media (min-width: 768px) {
   .work .work-container .item .item-header .item-title {
