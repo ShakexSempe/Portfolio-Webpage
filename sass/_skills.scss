@@ -664,27 +664,27 @@
         }
         // skills items container
         // SECTION IO TRANSITIONS 
-        // .io-container {
-        //     width: 100%;
-        //     // border: 1px solid red;
-        //     &.io-item {
-        //         .skills-intro, .dropdown {
-        //             opacity: .6;
-        //             transform: translateY(1rem);
-        //             transition: 1s;
-        //         }
-        //     }
-        //     &.active-item {
-        //         .skills-intro, .dropdown {
-        //             opacity: 1;
-        //             transform: translateY(0);
-        //         }
+        .io-container {
+            width: 100%;
+            // border: 1px solid red;
+            &.io-item {
+                .skills-intro, .dropdown {
+                    opacity: 0;
+                    transform: translateY(1rem);
+                    transition: 1s;
+                }
+            }
+            &.active-item {
+                .skills-intro, .dropdown {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
 
-        //         .dropdown {
-        //             transition-delay: .25s;
-        //         }
-        //     }
-        // }
+                .dropdown {
+                    transition-delay: .25s;
+                }
+            }
+        }
     }
     // git img 
     .git-img {

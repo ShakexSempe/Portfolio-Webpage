@@ -2285,6 +2285,21 @@ hamburger
 .skills-section .skills .skills-items .skills-item:hover .icon i, .skills-section .skills .skills-items .skills-item:hover .icon svg, .skills-section .skills .skills-items .skills-item:hover .icon img {
   filter: drop-shadow(0rem 0.25rem 0.15rem #0008);
 }
+.skills-section .skills .io-container {
+  width: 100%;
+}
+.skills-section .skills .io-container.io-item .skills-intro, .skills-section .skills .io-container.io-item .dropdown {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: 1s;
+}
+.skills-section .skills .io-container.active-item .skills-intro, .skills-section .skills .io-container.active-item .dropdown {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skills-section .skills .io-container.active-item .dropdown {
+  transition-delay: 0.25s;
+}
 .skills-section .git-img {
   margin: 20vh auto 0;
   width: 90%;
@@ -3683,7 +3698,7 @@ hamburger
     width: 100%;
     height: 70vh;
     position: sticky;
-    top: 10vh;
+    top: 15vh;
   }
 }
 .about .col-left .about-img {
@@ -3695,7 +3710,6 @@ hamburger
   transition: 0.5s ease;
   transform: preserve-3d;
   cursor: pointer;
-  overflow: hidden;
 }
 .about .col-left .about-img img {
   display: none;
@@ -3711,7 +3725,7 @@ hamburger
   font-weight: 500;
   font-style: italic;
   padding: 0.3em;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   transition: 1s ease;
   background-repeat: no-repeat;
   background-size: cover;
