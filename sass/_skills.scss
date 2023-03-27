@@ -160,25 +160,19 @@
 
             // dropdown button
             .dropbtn {
-                padding: .5rem 1rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                // justify-content: center;
+                padding: .5rem 1rem;
                 margin: 2.5vh 5vw;
-                // margin: 2.5vh auto;
-                width: 25vw;
-                width: 20rem;
-                width: 15rem;
-                width: clamp(10rem, 25vw, 20rem);
-                background: #000a;
+                width: 11rem;
+                width: clamp(10rem, 20vw, 12rem);
+                background: $span-crimson;
                 color: $text-light;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-size: clamp(1.1rem, 2.5vw, 1.25rem);
                 font-weight: 400;
-                // text-align: center;
                 text-transform: capitalize;
-                letter-spacing: .025rem;
                 border: none;
                 border-radius: $brand-br;
                 cursor: pointer;
@@ -189,10 +183,7 @@
                 isolation: isolate;
 
                 @include md {
-                    // margin: 2.5vh auto;
-                    // width: 20rem;
-                    justify-content: center;
-                    padding: .5rem 2rem;
+                    // padding: .5rem 2rem;
                 }
 
                 i {
@@ -235,7 +226,7 @@
 
                 &.active {
                     transform: scale(.98);
-                    letter-spacing: normal;
+                    color: $brand;
                     @media (max-width: 768px) {
                         // width: 90%;
                     }
@@ -262,7 +253,6 @@
                             opacity: 1;
                         }
 
-                        color: $brand;
 
                         i {
                             color: $text-light;
