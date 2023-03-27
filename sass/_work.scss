@@ -72,8 +72,8 @@
                     text-transform: capitalize;
                     // margin-bottom: .5rem;
                     font-weight: 700;
-                    font-size: 1.05rem;
-                    font-size: clamp(1.05rem, 2vw, 2rem);
+                    font-size: 1rem;
+                    font-size: clamp(1rem, 2vw, 2rem);
                     @include md {
                     // margin-bottom: .5rem;
                         // font-size: 1.5rem;
