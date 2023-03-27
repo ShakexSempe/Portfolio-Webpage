@@ -2916,8 +2916,8 @@ hamburger
 .work .work-container .item .item-header .item-title {
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 1.125rem;
-  font-size: clamp(1.125rem, 2vw, 2rem);
+  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 2vw, 2rem);
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
@@ -2963,7 +2963,7 @@ hamburger
 }
 .work .work-container .item .item-header .item-description p {
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 1rem;
   font-size: clamp(.95rem, 1.5vw, 1.05rem);
 }
 .work .work-container .item .item-header .item-description p::first-letter {
