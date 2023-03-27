@@ -2915,15 +2915,9 @@ hamburger
 }
 .work .work-container .item .item-header .item-title {
   text-transform: capitalize;
-  margin-bottom: 1rem;
   font-weight: 700;
   font-size: 1.125rem;
   font-size: clamp(1.125rem, 2vw, 2rem);
-}
-@media (min-width: 768px) {
-  .work .work-container .item .item-header .item-title {
-    margin-bottom: 0.5rem;
-  }
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
