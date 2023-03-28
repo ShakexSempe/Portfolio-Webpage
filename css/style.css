@@ -3593,7 +3593,7 @@ hamburger
   display: block;
 }
 .about .col-right .article-container article p a {
-  background-color: whitesmoke;
+  background-color: #f4f4f4;
   color: #20262e;
   font-weight: 500;
   display: inline-block;
