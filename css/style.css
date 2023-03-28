@@ -39,7 +39,7 @@ hamburger
   display: inline-block;
   border-radius: 50%;
   position: relative;
-  background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
+  background: #29323c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,13 +148,15 @@ hamburger
 .progress-bar {
   height: 3px;
   background: #29323c;
-  background: #ead2a1;
   background: linear-gradient(90deg, #29323c, #485563, #29323c);
   opacity: 0.1;
   width: 0%;
   transition: 0.5s;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+.progress-bar.index-bar {
+  background: transparent;
 }
 .progress-bar.active-bar {
   opacity: 0.5;

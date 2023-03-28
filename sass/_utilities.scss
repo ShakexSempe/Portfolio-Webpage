@@ -15,7 +15,7 @@ hamburger
     display: inline-block;
     border-radius: 50%;
     position: relative;
-    background: $overlay-dark;
+    background: $overlay-blue-dark;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,21 +170,24 @@ hamburger
 .progress-container {
     width: 100%;
     height: 3px;
-    background: transparent;;
+    background: transparent;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 3px;
     background: $overlay-blue-dark;
-    background: $span-gold; 
     background: linear-gradient(90deg, $overlay-blue-dark, $overlay-blue-light, $overlay-blue-dark);
+    // background: red; 
     opacity: .1;
     width: 0%;
     transition: .5s;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
 
+    &.index-bar {
+        background: transparent;
+    }
     &.active-bar {  
         opacity: .5;
         // opacity: 1;
