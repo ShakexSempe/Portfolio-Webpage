@@ -83,7 +83,7 @@
                     fill: $overlay-blue-darker;
                     // stroke: green;
                     transition: .25s;
-                    filter: drop-shadow(.25rem .25rem .25rem hsla(212, 19%, 20%, .2));
+                    filter: drop-shadow(.25rem .25rem .25rem hsla(212, 19%, 20%, .25));
                         // border-radius: $border-radius-sm;
                     @include md {
                         // height: 8rem;

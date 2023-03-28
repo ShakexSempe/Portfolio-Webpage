@@ -1872,7 +1872,7 @@ hamburger
   width: auto;
   fill: #20262e;
   transition: 0.25s;
-  filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(41, 50, 61, 0.2));
+  filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(41, 50, 61, 0.25));
 }
 .skills-section .skills .skills-intro .skills-icons.io-item svg {
   transform: scale(0.8);
