@@ -2380,7 +2380,7 @@ hamburger
   overflow: hidden;
   transition: 0.5s ease;
   isolation: isolate;
-  box-shadow: 0rem 0.5rem 1rem rgba(41, 50, 60, 0.15);
+  box-shadow: 0rem 0.5rem 1rem rgba(41, 50, 60, 0.2);
 }
 @media (min-width: 576px) {
   #contact .contact .contact-items .contact-item {

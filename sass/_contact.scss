@@ -58,7 +58,7 @@
                 overflow: hidden;
                 transition: .5s ease;
                 isolation: isolate;
-                box-shadow: 0rem .5rem 1rem rgba(41, 50, 60, .15);
+                box-shadow: 0rem .5rem 1rem rgba(41, 50, 60, .2);
                 @include sm {
                     gap: 1rem;
                     border-color: transparent;
