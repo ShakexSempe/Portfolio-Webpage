@@ -1,22 +1,22 @@
 // HERO
-.welcome-section {
+.banner {
+    // border: 4px solid yellow;
     padding: 0;
-    // min-height: 100vh;
     width: 100%;
     height: 95vh;
-    background: $overlay-blue-darkest;
-    background: linear-gradient( $overlay-blue-darkest 30%, #000 60%);
-    // background: linear-gradient( 90deg, #000 50%, #0000ff 80%);
     background: linear-gradient( 90deg, #0009 50%, #0004 80%);
-    // background: #000;
+    background: $overlay-blue-darker;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    // border: 4px solid yellow;
-    // MOBILE HERO IMG
-    @media (max-width: 1024px){
-        
-        &::after {
+
+    // INDEX BANNER
+    &.index-banner {
+
+        // MOBILE HERO IMG
+        @media (max-width: 1024px) {
+
+            &::after {
                 position: absolute;
                 content: '';
                 top: 0;
@@ -26,31 +26,32 @@
                 z-index: -1;
                 background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
                 background-repeat: no-repeat;
-                // background-position: center left;
-                // background-position: bottom;
-                // background-size: 70%;
-                @media (max-width: 1024px){
+
+                @media (max-width: 1024px) {
                     background-size: 90%;
                     background-size: contain;
                     background-size: cover;
-                background-position: 15% bottom;
-                mix-blend-mode: overlay;
-                // opacity: .7;
-                z-index: -1;
+                    background-position: 15% bottom;
+                    mix-blend-mode: overlay;
+                    // opacity: .7;
+                    z-index: -1;
                 }
+
                 // mix-blend-mode: overlay;
                 // opacity: .9;
                 // background: radial-gradient(transparent, #000);
+            }
         }
-    }
-    // DESKTOP HERO IMAGE
-    @media (min-width: 1024px){
-        background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
-        background-position: center left;
-        background-position: 10% 50%;
-        background-attachment: fixed;
-        // animation: desktopIntro 8s linear 4s ;
-        &::after {
+
+        // DESKTOP HERO IMAGE
+        @media (min-width: 1024px) {
+            background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
+            background-position: center left;
+            background-position: 10% 50%;
+            background-attachment: fixed;
+
+            // animation: desktopIntro 8s linear 4s ;
+            &::after {
                 position: absolute;
                 content: '';
                 top: 0;
@@ -60,18 +61,80 @@
                 z-index: -1;
                 background: radial-gradient(transparent, #000);
                 background-attachment: fixed;
-        }
-
-        @keyframes desktopIntro {
-            0% {
-                background-position: 50% 50%;
             }
 
-            100% {
-                background-position: 10% 50%;
+            @keyframes desktopIntro {
+                0% {
+                    background-position: 50% 50%;
+                }
+
+                100% {
+                    background-position: 10% 50%;
+                }
             }
         }
     }
+
+    // ABOUT PAGE BANNER
+    &.about-banner {
+
+        // MOBILE HERO IMG
+        @media (max-width: 1024px) {
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-image: url('../img/shakexblue-min.jpg');
+                background-repeat: no-repeat;
+                mix-blend-mode: overlay;
+                z-index: -1;
+                background-size: contain;
+                background-position: right;
+                opacity: .6;
+                @include xsm {
+                    background-size: 100%;
+                    background-size: cover;
+                    background-position: right;
+                    background-position: 0% bottom;
+                }
+                @include sm {
+
+                }
+
+                // mix-blend-mode: overlay;
+                // opacity: .9;
+                // background: radial-gradient(transparent, #000);
+            }
+        }
+
+        // DESKTOP HERO IMAGE
+        @media (min-width: 1024px) {
+            // background: radial-gradient($overlay-blue-dark, #000);
+            background-attachment: fixed;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-image: url('../img/shakexblue-min.jpg');
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                mix-blend-mode: overlay;
+
+            }
+        }
+    }
+
     
     .hero {
         // overflow: hidden;
@@ -121,7 +184,7 @@
             }
         }
         // ANIMATED INTRO
-        #hero-content {
+        .hero-content {
             // border: 1px solid #fff;
             background: transparent;
             padding: 5vh 5vw;
