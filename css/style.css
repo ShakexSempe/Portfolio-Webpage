@@ -2964,6 +2964,9 @@ hamburger
 .work .work-container .item .item-header .item-meta-data p::first-letter {
   text-transform: capitalize;
 }
+.work .work-container .item .item-header .item-meta-data p:hover {
+  background: #485563;
+}
 .work .work-container .item .item-header .item-meta-data li {
   border: 1px solid #000;
   border-radius: 0.25rem;
