@@ -35,6 +35,8 @@
             border-radius: .25rem;
             background: #fff;
             box-shadow: $box-shadow-item-md;
+            position: relative;
+            // padding-bottom: 5vh;
             &:first-child {
                 margin-bottom: 15vh;
             }
@@ -42,15 +44,13 @@
                 padding: .5rem;
             }
             @include md {
-                padding: 0;
+                padding-bottom: 1rem;
                 background: #ffff;
 
             }
             
             .item-header {
-                // display: grid;
                 // border: 2px solid red;
-                padding: 1rem 0rem;
                 padding: 1rem .5rem 2rem;
                 @include sm {
                     padding: 1rem;
@@ -82,26 +82,39 @@
                 .item-meta-data {
                     // border: 2px solid yellow;
                     display: flex;
-                    align-items: start;
+                    align-items: center;
+                    justify-content: space-evenly;
                     gap: 1rem;
                     flex-wrap: wrap;
+                    
                     margin: 1.5rem 0 0;
-                    text-transform: capitalize;
+                    padding: .5rem 1rem;
                     list-style: none;
+                    
+                    position: absolute;
+                    bottom: 0;
+                    background: $overlay-blue-darker;
+                    width: 100%;
+                    left: 0;
                     @include md {
                         gap: 1rem;
+                        background: transparent;
+                    }
+                    @include lg {
+                        bottom: -1rem;
                     }
                     p {
                         background: $overlay-blue-darker;
                         color: $text-light;
                         padding: .25rem .5rem;
                         border-radius: .25rem;
-                        font-size: .8rem;
+                        font-size: .75rem;
                         text-transform: lowercase;
                         box-shadow: $box-shadow-item-sm;
                         &::first-letter {
                             text-transform: capitalize;
                         }
+                        text-transform: uppercase;
                     }
 
                     li {
@@ -109,7 +122,7 @@
                         border-radius: .25rem;
                         padding: .25rem .5rem;
                         font-size: .8rem;
-                        text-transform: capitalize;
+                        text-transform: uppercase;
                         background: $overlay-blue-darker;
                         color: $text-light;
                         transition: .25s;
@@ -137,6 +150,7 @@
                     justify-content: space-between;
                     align-items: center;
                     gap: 1rem;
+                    margin-bottom: 5vh;
                     a {
                         padding: .8rem;
                         text-transform: capitalize;
