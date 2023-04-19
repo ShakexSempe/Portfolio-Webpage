@@ -167,7 +167,7 @@
         // ARTICLE CONTAINER
         .article-container {
             // border: 2px solid red;
-            overflow: hidden;
+            // overflow: hidden;
             article {
                 // ABOUT P
                 p {
@@ -177,7 +177,6 @@
                     text-overflow: ellipsis;
                     text-align: left;
                     font-size: 1rem;
-                    font-size: clamp(1rem, 1.5vw, 1.125rem);
                     line-height: 1.5;
                     font-weight: 500;
                     z-index: 2;
@@ -260,31 +259,7 @@
 
                 }
                 .about-intro {
-                    // border: 2px solid red;
-                    &.io-item {
-                        opacity: 1;
-                        transform: translateY(5vh);
-                        transition: 1s;
-
-                        .intro {
-                            &.intro::first-letter {
-                                background-color: $overlay-blue-dark;
-                                
-                            }
-                        }
-                    }
-                    &.active-item {
-                        opacity: 1;
-                        transform: translateY(0);
-                        .intro {
-                            transition: 5s;
-                            &.intro::first-letter {
-                                background-color: $overlay-blue-darker;
-                                box-shadow: 1px 3px 0 rgba(0, 0, 0, .100);
-                                transition: 2s;
-                            }
-                        }
-                    }
+                    
                 }
                 .about-body {
                     // border: 2px solid blue;
@@ -298,6 +273,15 @@
                         opacity: 1;
                         transform: translateY(0);
                     }
+                }
+            }
+
+            .buttons-container {
+                // border: 2px solid blue;
+                padding: 0rem 0 1rem;
+
+                a {
+                    // border: 2px solid red;
                 }
             }
         }

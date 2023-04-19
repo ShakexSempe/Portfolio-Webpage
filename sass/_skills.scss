@@ -136,17 +136,7 @@
             }
         }
 
-        // BUTTONS CONTAINER
-        .buttons-container {
-            // border: 2px solid red;
-            display: flex;
-            justify-content: space-between;
-            margin: 2.5vh 5vw;
-            @include md {
-                justify-content: start;
-                gap: 5vw;
-            }
-        }
+        
         // DROPDOWN BUTTON
         .skills-cta {
             display: flex;
