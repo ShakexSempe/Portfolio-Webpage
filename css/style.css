@@ -1945,6 +1945,92 @@ hamburger
   font-weight: 500;
   font-size: inherit;
 }
+.skills-section .skills .buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5vh 5vw;
+}
+@media (min-width: 768px) {
+  .skills-section .skills .buttons-container {
+    justify-content: start;
+    gap: 5vw;
+  }
+}
+.skills-section .skills .skills-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  width: clamp(10rem, 20vw, 12rem);
+  background: #29323c;
+  color: #f4f4f4;
+  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: "Kanit", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.25s;
+  position: relative;
+  isolation: isolate;
+}
+.skills-section .skills .skills-cta i {
+  font-weight: 800;
+  margin-left: 1rem;
+  font-size: 1rem;
+  transition: 0.25s;
+}
+.skills-section .skills .skills-cta.dropbtn {
+  background: #dc143c;
+}
+.skills-section .skills .skills-cta.dropbtn::before, .skills-section .skills .skills-cta.dropbtn::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+.skills-section .skills .skills-cta.dropbtn::before {
+  background: linear-gradient(0deg, #750b20, #dd134c);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+.skills-section .skills .skills-cta.dropbtn::after {
+  background: linear-gradient(0deg, #dc134c, #750b20);
+  opacity: 0;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.25), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0.025rem 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.skills-section .skills .skills-cta.dropbtn.active {
+  transform: scale(0.98);
+  color: #bfbfbf;
+}
+.skills-section .skills .skills-cta.dropbtn.active i {
+  color: #f4f4f4;
+  transform: rotate(-180deg);
+}
+.skills-section .skills .skills-cta.dropbtn.active::before {
+  opacity: 0;
+}
+.skills-section .skills .skills-cta.dropbtn.active::after {
+  opacity: 1;
+}
+.skills-section .skills .skills-cta.page-cta {
+  background: #f4f4f4;
+  color: #29323c;
+}
+.skills-section .skills .skills-cta.page-cta:hover {
+  transform: scale(0.98);
+  color: #dc143c;
+  transition: 0.25s;
+}
 .skills-section .skills .dropdown {
   position: relative;
   z-index: 4;
@@ -1959,81 +2045,6 @@ hamburger
   opacity: 1;
   transition: 1.5s;
   transform: scale(1) translateY(0);
-}
-.skills-section .skills .dropdown .dropbtn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  margin: 2.5vh 5vw;
-  width: 11rem;
-  width: clamp(10rem, 20vw, 12rem);
-  background: #dc143c;
-  color: #f4f4f4;
-  font-size: 1.1rem;
-  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
-  font-weight: 400;
-  text-transform: capitalize;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: 0.25s;
-  font-family: "Kanit", sans-serif;
-  position: relative;
-  isolation: isolate;
-}
-.skills-section .skills .dropdown .dropbtn i {
-  font-weight: 800;
-  margin-left: 1rem;
-  font-size: 1rem;
-  transition: 0.5s;
-}
-.skills-section .skills .dropdown .dropbtn::before, .skills-section .skills .dropdown .dropbtn::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  transition: 0.2s;
-}
-.skills-section .skills .dropdown .dropbtn::before {
-  background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
-}
-.skills-section .skills .dropdown .dropbtn::after {
-  background: linear-gradient(0deg, #dc134c, #750b20);
-  opacity: 0;
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.25), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0.025rem 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
-}
-.skills-section .skills .dropdown .dropbtn.active {
-  transform: scale(0.98);
-  color: #bfbfbf;
-}
-.skills-section .skills .dropdown .dropbtn.active i {
-  color: #f4f4f4;
-  transform: rotate(-180deg);
-}
-.skills-section .skills .dropdown .dropbtn.active::before {
-  opacity: 0;
-}
-.skills-section .skills .dropdown .dropbtn.active::after {
-  opacity: 1;
-}
-@media (min-width: 768px) {
-  .skills-section .skills .dropdown .dropbtn:hover::before {
-    opacity: 0;
-  }
-  .skills-section .skills .dropdown .dropbtn:hover::after {
-    opacity: 1;
-  }
-  .skills-section .skills .dropdown .dropbtn:hover i {
-    color: #f4f4f4;
-  }
 }
 .skills-section .skills .dropdown .dropdown-content {
   display: none;
