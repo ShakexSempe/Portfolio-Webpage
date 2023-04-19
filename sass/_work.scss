@@ -44,7 +44,6 @@
                 padding: .5rem;
             }
             @include md {
-                padding-bottom: 1rem;
                 background: #ffff;
 
             }
@@ -96,11 +95,15 @@
                     background: $overlay-blue-darker;
                     width: 100%;
                     left: 0;
-                    @include md {
+                    @include lg {
                         gap: 1rem;
                         background: transparent;
+                        // bottom: -1rem;
                     }
                     @include lg {
+                        justify-content: start;
+                    }
+                    @include xlg {
                         bottom: -1rem;
                     }
                     p {
@@ -151,8 +154,11 @@
                     align-items: center;
                     gap: 1rem;
                     margin-bottom: 5vh;
+                    @include md {
+                        justify-content: start;
+                    }
                     a {
-                        padding: .8rem;
+                        padding: .65rem 1rem;
                         text-transform: capitalize;
                         font-size: .95rem;
                         font-size: clamp(.95rem, 1vw, 1.15rem);
@@ -161,18 +167,20 @@
                         text-align: center;
                         letter-spacing: .025rem;
                         transition: .25s;
-                        // display: flex;
-                        // align-items: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
                         @include sm {
                             // padding: 1rem;
                         }
-                        @include lg {
-                            justify-content: space-between;
-                            gap: 1rem;
+                        @include md {
+                            // justify-content: space-between;
+                            // gap: 1rem;
                             // padding: 1rem .5rem;
+                            width: 10rem;
                         }
                         i {
-                            transform: translateX(.5rem);
+                            // transform: translateX(.5rem);
                             transition: .25s;
                         }
                         &.cta-primary {
@@ -207,10 +215,11 @@
                         &.cta-secondary {
                             border: 1px solid $overlay-blue-light;
                             // font-size: .8rem;
-                            padding: .7rem;
+                            // padding: .7rem;
+                            // text-decoration: underline;
                             color: $overlay-blue-darker;
                             i {
-                                font-size: .85rem;
+                                // font-size: .85rem;
                                 font-weight: 600;
                             }
                         }
@@ -220,7 +229,7 @@
                                 transform: scale(.98);
                                 letter-spacing: normal;
                                 i {
-                                    transform: translateX(.4rem);
+                                    transform: translateX(-.25rem);
                                 }
                                 &::before {opacity: 0;}
                                 &::after {opacity: 1;}
@@ -231,7 +240,7 @@
                                 transform: scale(.98);
                                 letter-spacing: normal;
                                 i {
-                                    transform: translateX(.4rem);
+                                    transform: translateX(-25rem);
                                 }
                                 &::before {opacity: 0;}
                                 &::after {opacity: 1;}
