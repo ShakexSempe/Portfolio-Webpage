@@ -3081,7 +3081,7 @@ hamburger
     letter-spacing: normal;
   }
   .work .work-container .item .item-header .item-cta a:active i {
-    transform: translateX(-25rem);
+    transform: translateX(-0.25rem);
   }
   .work .work-container .item .item-header .item-cta a:active::before {
     opacity: 0;
