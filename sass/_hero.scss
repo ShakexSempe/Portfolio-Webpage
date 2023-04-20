@@ -31,9 +31,9 @@
                     background-size: 90%;
                     background-size: contain;
                     background-size: cover;
-                    background-position: 15% bottom;
-                    mix-blend-mode: overlay;
-                    // opacity: .7;
+                    background-position: 10% bottom;
+                    // mix-blend-mode: overlay;
+                    opacity: .5;
                     z-index: -1;
                 }
 
@@ -431,7 +431,7 @@
             // border: 2px solid yellow;
             padding: 5vh 5vw;
             position: relative;
-            top: 5vh;
+            top: 10vh;
             color: #fff;
             text-transform: capitalize;
             @include lg {
@@ -443,6 +443,7 @@
 
             .content-title {
                 // border: 2px solid pink;
+                margin-bottom: 25vh;
                 h1 {
                     font-size: 1rem;
                     font-size: clamp(1rem, 2vw, 1.2rem);
@@ -452,7 +453,6 @@
                 h2 {
                     font-size: 2rem;
                     font-size: clamp(2rem, 5vw, 2.8rem);
-                    margin-bottom: 5vh;
                 }
             }
 
