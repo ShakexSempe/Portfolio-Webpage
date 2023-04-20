@@ -4327,6 +4327,26 @@ form button {
 }
 form button i {
   transition: 0.25s ease;
+  position: relative;
+  color: transparent;
+}
+form button i::before, form button i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 100%;
+  height: 100%;
+  font-family: "Font Awesome 6 Free";
+  color: #fff;
+  transition: 0.25s;
+}
+form button i::before {
+  content: "";
+}
+form button i::after {
+  content: "";
+  opacity: 0;
 }
 form button::before, form button::after {
   content: "";
@@ -4356,6 +4376,12 @@ form button:hover {
 }
 form button:hover i {
   transform: translateX(-0.25rem);
+}
+form button:hover i::before {
+  opacity: 0;
+}
+form button:hover i::after {
+  opacity: 1;
 }
 form button:hover::before {
   opacity: 0;
