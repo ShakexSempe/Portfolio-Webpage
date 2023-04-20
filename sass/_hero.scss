@@ -139,7 +139,7 @@
     .hero {
         // overflow: hidden;
         position: relative;
-        
+        color: #fff;
         // ANIMATED INTRO
         .hero-content {
             // border: 1px solid #fff;
@@ -267,7 +267,7 @@
 
         // end of animated h1 
         // welcome section button & shadow
-        #cta-header {
+        .hero-cta {
             @media (max-width: 576px){
                 margin: 20vh 0 0;
             }
@@ -425,6 +425,60 @@
                 }
             }
             // end of button hover, focus and active states
+        }
+
+        .hero-index-content {
+            // border: 2px solid yellow;
+            padding: 5vh 5vw;
+            position: relative;
+            top: 5vh;
+            color: #fff;
+            text-transform: capitalize;
+            span {
+                color: skyblue;
+            }
+
+            .content-title {
+                // border: 2px solid pink;
+                h1 {
+                    font-size: 1rem;
+                    font-weight: 200;
+                    margin-bottom: .25rem;
+                }
+                h2 {
+                    font-size: 2rem;
+                    margin-bottom: 5vh;
+                }
+            }
+
+
+
+            .content-value {
+                // border: 2px solid green;
+                p {
+                    color: #fff;
+                    font-weight: 400;
+                }
+    
+                .cta {
+                    width: 11rem;
+                    margin-top: 5vh;
+    
+                    .btn {
+                        color: #fff;
+                        padding: 1rem;
+                        i {
+                            color: #fff;
+                        }
+                        &::before {
+                            background: $button-crimson;
+                        }
+                        &::after {
+                            background: $button-crimson-hover;
+                        }
+                    }
+                }
+            }
         }
 
         

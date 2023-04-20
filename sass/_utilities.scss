@@ -330,10 +330,7 @@ hamburger
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-    i {
-
-    }
+    align-items: center;
 
     &::before, &::after {
         content: '';
