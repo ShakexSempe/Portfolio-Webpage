@@ -452,7 +452,7 @@
                 }
                 h2 {
                     font-size: 2rem;
-                    font-size: clamp(2rem, 5vw, 2.8rem);
+                    font-size: clamp(2.2rem, 5vw, 2.8rem);
                 }
             }
 
@@ -462,14 +462,14 @@
                 // border: 2px solid green;
                 p {
                     color: #fff;
-                    font-weight: 400;
+                    font-weight: 500;
                     font-size: 1rem;
                     font-size: clamp(1rem, 2vw, 1.12rem);
                 }
     
                 .cta {
                     width: 11rem;
-                    margin-top: 5vh;
+                    margin-top: 1rem;
     
                     .btn {
                         color: #fff;

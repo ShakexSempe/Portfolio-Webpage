@@ -1413,17 +1413,17 @@ hamburger
 }
 .banner .hero .hero-index-content .content-title h2 {
   font-size: 2rem;
-  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-size: clamp(2.2rem, 5vw, 2.8rem);
 }
 .banner .hero .hero-index-content .content-value p {
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.12rem);
 }
 .banner .hero .hero-index-content .content-value .cta {
   width: 11rem;
-  margin-top: 5vh;
+  margin-top: 1rem;
 }
 .banner .hero .hero-index-content .content-value .cta .btn {
   color: #fff;
