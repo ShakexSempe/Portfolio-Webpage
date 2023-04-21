@@ -2451,7 +2451,7 @@ hamburger
   position: relative;
   isolation: isolate;
   height: 80vh;
-  background: #20262e;
+  background: #29323c;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title {
