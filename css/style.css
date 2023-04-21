@@ -2429,21 +2429,18 @@ hamburger
 
 .skill-section {
   padding-bottom: 10vh;
-  background: #15191e;
+  background: #29323c;
   color: #fff;
 }
 .skill-section.light-section {
   background: #f4f4f4;
   color: #15191e;
 }
+.skill-section.light-section .skill-section-title p {
+  font-weight: 500;
+}
 .skill-section.light-section .skill-section-content .skill-article {
   background: #fff;
-}
-.skill-section p {
-  color: inherit;
-}
-.skill-section p::first-letter {
-  text-transform: capitalize;
 }
 .skill-section .skill-section-title {
   margin-bottom: 10vh;
@@ -2482,6 +2479,10 @@ hamburger
 }
 .skill-section .skill-section-title p {
   width: 70%;
+  color: inherit;
+}
+.skill-section .skill-section-title p::first-letter {
+  text-transform: capitalize;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title p {
@@ -2553,8 +2554,9 @@ hamburger
 }
 .skill-section .skill-section-content .skill-article {
   padding: 0.5rem 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 0.25rem;
-  background: #29323c;
+  background: #15191e;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 26, 0.1);
   transition: 0.25s;
 }
@@ -2577,13 +2579,19 @@ hamburger
   margin-top: 1rem;
 }
 .skill-section .skill-section-content .skill-article ul li {
+  padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   font-size: 0.95rem;
+  list-style: none;
+  border-bottom: 1px solid #485563;
 }
 .skill-section .skill-section-content .skill-article ul li::marker {
   color: #29323c;
   transition: 0.25s;
+}
+.skill-section .skill-section-content .skill-article ul li:last-of-type {
+  border: none;
 }
 .skill-section .skill-section-content .skill-article:hover {
   transform: scale(0.99);
