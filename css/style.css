@@ -2429,7 +2429,7 @@ hamburger
 
 .skill-section {
   padding-bottom: 10vh;
-  background: #29323c;
+  background: #15191e;
   color: #fff;
 }
 .skill-section.light-section {
@@ -2578,7 +2578,7 @@ hamburger
   padding: 0.5rem 0.5rem 1rem;
   padding: 1rem;
   border-radius: 0.25rem;
-  background: #15191e;
+  background: #29323c;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 26, 0.1);
   transition: 0.25s;
 }
@@ -2606,7 +2606,7 @@ hamburger
   text-transform: capitalize;
   font-size: 0.95rem;
   list-style: none;
-  border-bottom: 1px solid #485563;
+  border-bottom: 1px solid #15191e;
 }
 .skill-section .skill-section-content .skill-article ul li::marker {
   color: #29323c;
@@ -2623,7 +2623,11 @@ hamburger
   transform: translateY(2vh);
   filter: drop-shadow(0rem 0.25rem 0.15rem rgba(0, 0, 51, 0.25));
 }
-.skill-section .skill-section-content .skill-article:hover .skill-title ul li::marker {
+.skill-section .skill-section-content .skill-article:hover ul li {
+  border-color: #485563;
+  transition: 0.5s;
+}
+.skill-section .skill-section-content .skill-article:hover ul li::marker {
   color: transparent;
 }
 
