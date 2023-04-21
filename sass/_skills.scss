@@ -723,7 +723,7 @@
     color: #fff;
     &.light-section {
         background: #f4f4f4;
-        color: $overlay-blue-darker;
+        color: $overlay-blue-darkest;
         .skill-section-content {
             .skill-article {
                 background: #fff;
@@ -845,36 +845,60 @@
             border-radius: .25rem;
             background: $overlay-blue-dark;
             box-shadow: 0 .5rem 1rem hsla(240, 100%, 5%, .1);
+            transition: .25s;
             // border: 2px solid red;
-        }
 
-        .skill-title {
-            // border: 2px solid red;
-            position: relative;
-            top: -5vh;
-        }
-        i {
-            font-size: 4rem;
-            margin-bottom: .5rem;
-            position: relative;
-            filter: drop-shadow(0rem .5rem .25rem hsla(240, 100%, 5%, .15));
-            // top: -5vh;
-        }
-        h4 {
-            text-transform: capitalize;
-            // margin-bottom: .5rem;
-            font-weight: bold;
-            font-size: 1.15rem;
-        }
-        
-        ul {
-            // margin-top: 1rem;
-            li {
-                margin-bottom: .5rem;
-                text-transform: capitalize;
-                font-size: .95rem;
-                &::marker {
-                    color: $overlay-blue-dark;
+
+            .skill-title {
+                // border: 2px solid red;
+                position: relative;
+                // top: -5vh;
+                i {
+                    font-size: 3.5rem;
+                    position: relative;
+                    filter: drop-shadow(0rem .5rem .25rem hsla(240, 100%, 5%, .15));
+                    top: -5vh;
+                    transition: .5s;
+                }
+    
+                h4 {
+                    text-transform: capitalize;
+                    // margin-bottom: .5rem;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                }
+            }
+
+            ul {
+                margin-top: 1rem;
+                li {
+                    margin-bottom: .5rem;
+                    text-transform: capitalize;
+                    font-size: .95rem;
+
+                    &::marker {
+                        color: $overlay-blue-dark;
+                        transition: .25s;
+                    }
+                }
+            }
+
+            &:hover {
+                transform: scale(.99);
+                box-shadow: 0 .25rem .5rem hsla(240, 100%, 10%, .15);
+                .skill-title {
+                    i {
+                        transform: translateY(2vh);
+                        filter: drop-shadow(0rem .25rem .15rem hsla(240, 100%, 10%, .25));
+                    }
+
+                    ul {
+                        li {
+                            &::marker {
+                                color: transparent;
+                            }
+                        }
+                    }
                 }
             }
         }
