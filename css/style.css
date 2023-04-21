@@ -1422,7 +1422,7 @@ hamburger
   font-size: clamp(1rem, 2vw, 1.12rem);
 }
 .banner .hero .hero-index-content .content-value .cta {
-  width: 11rem;
+  width: 12rem;
   margin-top: 1rem;
 }
 .banner .hero .hero-index-content .content-value .cta .btn {
