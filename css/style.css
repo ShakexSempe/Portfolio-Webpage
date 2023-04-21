@@ -2518,19 +2518,41 @@ hamburger
   }
 }
 .skill-section .skill-section-title.section-title-3 {
-  background: #fafafa;
+  background: #fff8;
+  height: 75vh;
 }
 .skill-section .skill-section-title.section-title-3::after {
-  background-image: url("../img/markus-winkler-UP_RojtnvTU-unsplash.jpg");
+  background-image: url("../img/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg");
   background-position: 70% bottom;
   background-position: 20% 30%;
   background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
-  mix-blend-mode: darken;
+  mix-blend-mode: overlay;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-3::after {
+    background-position: bottom right;
+    background-position: right;
+    background-size: contain;
+  }
+}
+.skill-section .skill-section-title.section-title-4 {
+  background: #fafafa;
+  background: #fff7;
+  height: 70vh;
+}
+.skill-section .skill-section-title.section-title-4::after {
+  background-image: url("../img/markus-winkler-UP_RojtnvTU-unsplash.jpg");
+  background-position: 70% bottom;
+  background-position: 30% 30%;
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
+}
+@media (min-width: 768px) {
+  .skill-section .skill-section-title.section-title-4::after {
     background-position: bottom right;
     background-position: right;
     background-size: contain;

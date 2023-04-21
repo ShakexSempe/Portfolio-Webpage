@@ -814,16 +814,38 @@
             }
         }
         &.section-title-3 {
-            background: #fafafa;
+            background: #fff8;
+            height: 75vh;
             &::after {
-                background-image: url('../img/markus-winkler-UP_RojtnvTU-unsplash.jpg');
-                // background-image: url('../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg');
+                // background-image: url('../img/markus-winkler-UP_RojtnvTU-unsplash.jpg');
+                background-image: url('../img/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
                 background-position: 70% bottom;
                 background-position: 20% 30%;
                 background-size: contain;
                 background-size: cover;
                 background-repeat: no-repeat;
-                mix-blend-mode: darken;
+                mix-blend-mode: overlay;
+                // opacity: .7;
+                @include md {
+                    background-position: bottom right;
+                    background-position: right;
+                    background-size: contain;
+                }
+            }
+        }
+        &.section-title-4 {
+            background: #fafafa;
+            background: #fff7;
+            height: 70vh;
+            &::after {
+                background-image: url('../img/markus-winkler-UP_RojtnvTU-unsplash.jpg');
+                // background-image: url('https://images.unsplash.com/photo-1510674485131-dc88d96369b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGtleWJvYXJkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
+                background-position: 70% bottom;
+                background-position: 30% 30%;
+                background-size: contain;
+                background-size: cover;
+                background-repeat: no-repeat;
+                mix-blend-mode: overlay;
                 // opacity: .7;
                 @include md {
                     background-position: bottom right;
