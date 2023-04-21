@@ -718,7 +718,7 @@
     // border: 3px solid yellow;    
     padding: 5vh 5vw;
     min-height: 100vh;
-    background: $overlay-blue-darker;
+    background: $overlay-blue-dark;
     color: #fff;
     p {
         color: inherit;
@@ -729,10 +729,10 @@
 
     .skill-section-title {
         // border: 1px solid red;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
         h3 {
             text-transform: capitalize;
-            // line-height: 1.5;
+            line-height: 1.5;
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -742,22 +742,28 @@
         // border: 1px solid blue;
         background: $overlay-blue-darkest;
         border-radius: .25rem;
-        padding: 1rem .5rem;
+        padding: .5rem .5rem 1rem;
+
+        .skill-title {
+            // border: 2px solid red;
+            position: relative;
+            top: -5vh;
+        }
         i {
             font-size: 4rem;
-            margin-bottom: .25rem;
+            margin-bottom: .5rem;
             position: relative;
             // top: -5vh;
         }
         h4 {
             text-transform: capitalize;
-            margin-bottom: .5rem;
+            // margin-bottom: .5rem;
             font-weight: bold;
             font-size: 1.15rem;
         }
         
         ul {
-            margin-top: 1rem;
+            // margin-top: 1rem;
             li {
                 margin-bottom: .5rem;
                 text-transform: capitalize;
