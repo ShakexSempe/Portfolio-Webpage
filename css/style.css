@@ -2549,6 +2549,7 @@ hamburger
 .skill-section .skill-section-content ul li {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
+  font-size: 0.95rem;
 }
 .skill-section .skill-section-content ul li::marker {
   color: #29323c;
