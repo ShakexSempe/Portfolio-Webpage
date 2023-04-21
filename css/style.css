@@ -2432,6 +2432,13 @@ hamburger
   background: #15191e;
   color: #fff;
 }
+.skill-section.light-section {
+  background: #f4f4f4;
+  color: #20262e;
+}
+.skill-section.light-section .skill-section-content .skill-article {
+  background: #fff;
+}
 .skill-section p {
   color: inherit;
 }
@@ -2509,6 +2516,25 @@ hamburger
     background-position: top;
   }
 }
+.skill-section .skill-section-title.section-title-3 {
+  background: #fafafa;
+}
+.skill-section .skill-section-title.section-title-3::after {
+  background-image: url("../img/markus-winkler-UP_RojtnvTU-unsplash.jpg");
+  background-position: 70% bottom;
+  background-position: 20% 30%;
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: darken;
+}
+@media (min-width: 768px) {
+  .skill-section .skill-section-title.section-title-3::after {
+    background-position: bottom right;
+    background-position: right;
+    background-size: contain;
+  }
+}
 .skill-section .skill-section-content {
   margin: 5vh 5vw;
   display: grid;
@@ -2529,7 +2555,7 @@ hamburger
   padding: 0.5rem 0.5rem 1rem;
   border-radius: 0.25rem;
   background: #29323c;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 26, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 26, 0.1);
 }
 .skill-section .skill-section-content .skill-title {
   position: relative;
@@ -2539,7 +2565,7 @@ hamburger
   font-size: 4rem;
   margin-bottom: 0.5rem;
   position: relative;
-  filter: drop-shadow(0rem 0.5rem 0.25rem rgba(0, 0, 26, 0.25));
+  filter: drop-shadow(0rem 0.5rem 0.25rem rgba(0, 0, 26, 0.15));
 }
 .skill-section .skill-section-content h4 {
   text-transform: capitalize;
