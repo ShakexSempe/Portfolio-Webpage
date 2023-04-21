@@ -2529,7 +2529,7 @@ hamburger
   padding: 0.5rem 0.5rem 1rem;
   border-radius: 0.25rem;
   background: #29323c;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 26, 0.5);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 26, 0.2);
 }
 .skill-section .skill-section-content .skill-title {
   position: relative;
@@ -2539,7 +2539,7 @@ hamburger
   font-size: 4rem;
   margin-bottom: 0.5rem;
   position: relative;
-  filter: drop-shadow(0rem 0.5rem 0.25rem rgba(0, 0, 26, 0.5));
+  filter: drop-shadow(0rem 0.5rem 0.25rem rgba(0, 0, 26, 0.25));
 }
 .skill-section .skill-section-content h4 {
   text-transform: capitalize;

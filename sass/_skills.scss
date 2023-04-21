@@ -816,7 +816,7 @@
             padding: .5rem .5rem 1rem;
             border-radius: .25rem;
             background: $overlay-blue-dark;
-            box-shadow: 0 .5rem 1rem hsla(240, 100%, 5%, .5);
+            box-shadow: 0 .5rem 1rem hsla(240, 100%, 5%, .2);
             // border: 2px solid red;
         }
 
@@ -829,7 +829,7 @@
             font-size: 4rem;
             margin-bottom: .5rem;
             position: relative;
-            filter: drop-shadow(0rem .5rem .25rem hsla(240, 100%, 5%, .5));
+            filter: drop-shadow(0rem .5rem .25rem hsla(240, 100%, 5%, .25));
             // top: -5vh;
         }
         h4 {
