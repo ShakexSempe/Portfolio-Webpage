@@ -2539,6 +2539,7 @@ hamburger
   font-size: 4rem;
   margin-bottom: 0.5rem;
   position: relative;
+  filter: drop-shadow(0rem 0.5rem 0.25rem rgba(0, 0, 26, 0.5));
 }
 .skill-section .skill-section-content h4 {
   text-transform: capitalize;
