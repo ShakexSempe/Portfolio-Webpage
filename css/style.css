@@ -1956,16 +1956,8 @@ hamburger
 }
 @media (min-width: 768px) {
   .skills-section .skills .skills-intro .skills-icons {
-    position: absolute;
-    flex-direction: column;
-    gap: 5vh;
-    top: -15vh;
-    right: 5vw;
-  }
-}
-@media (min-width: 1024px) {
-  .skills-section .skills .skills-intro .skills-icons {
-    right: 20vw;
+    justify-content: flex-start;
+    gap: 5vw;
   }
 }
 .skills-section .skills .skills-intro .skills-icons svg {
@@ -2427,6 +2419,56 @@ hamburger
 }
 .skills-section .git-img:hover img {
   transform: scale(1);
+}
+
+@media (min-width: 768px) {
+  .skill-section-container {
+    margin-top: 10vh;
+  }
+}
+
+.skill-section {
+  padding: 5vh 5vw;
+  min-height: 100vh;
+  background: #20262e;
+  color: #fff;
+}
+.skill-section p {
+  color: inherit;
+}
+.skill-section p::first-letter {
+  text-transform: capitalize;
+}
+.skill-section .skill-section-title {
+  margin-bottom: 5vh;
+}
+.skill-section .skill-section-title h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.skill-section .skill-section-content {
+  background: #15191e;
+  border-radius: 0.25rem;
+  padding: 1rem 0.5rem;
+}
+.skill-section .skill-section-content i {
+  font-size: 4rem;
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+.skill-section .skill-section-content h4 {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.skill-section .skill-section-content ul {
+  margin-top: 1rem;
+}
+.skill-section .skill-section-content ul li {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
 }
 
 #contact .contact {
