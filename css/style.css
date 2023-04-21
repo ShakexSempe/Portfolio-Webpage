@@ -2443,7 +2443,7 @@ hamburger
   padding: 5vh 5vw;
   position: relative;
   isolation: isolate;
-  height: 75vh;
+  height: 80vh;
   background: #20262e;
 }
 @media (min-width: 768px) {
