@@ -2018,7 +2018,16 @@ hamburger
   font-weight: 800;
   margin-left: 1rem;
   font-size: 1rem;
+}
+.skills-section .skills .skills-cta.page-cta {
+  background: #f4f4f4;
+  color: #29323c;
+  border: 1px solid;
   transition: 0.25s;
+}
+.skills-section .skills .skills-cta.page-cta:hover {
+  transform: scale(0.98);
+  color: #dc143c;
 }
 .skills-section .skills .skills-cta.dropbtn {
   background: #dc143c;
@@ -2058,15 +2067,6 @@ hamburger
 }
 .skills-section .skills .skills-cta.dropbtn.active::after {
   opacity: 1;
-}
-.skills-section .skills .skills-cta.page-cta {
-  background: #f4f4f4;
-  color: #29323c;
-}
-.skills-section .skills .skills-cta.page-cta:hover {
-  transform: scale(0.98);
-  color: #dc143c;
-  transition: 0.25s;
 }
 .skills-section .skills .dropdown {
   position: relative;

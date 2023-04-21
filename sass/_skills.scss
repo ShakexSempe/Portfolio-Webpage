@@ -162,14 +162,23 @@
             isolation: isolate;
 
             i {
-                // border: 1px solid red;
                 font-weight: 800;
                 margin-left: 1rem;
                 font-size: 1rem;
-                transition: .25s;
             }
             
-
+            &.page-cta {
+                background: #f4f4f4;
+                color: $overlay-blue-dark;
+                border: 1px solid;
+                transition: .25s;
+                
+                &:hover {
+                    transform: scale(.98);
+                    color: $span-crimson;
+                    
+                }
+            }
             &.dropbtn {
                 background: $span-crimson;
                 // DROPDOWN BTN SHADOWS
@@ -218,15 +227,7 @@
                     }
                 }
             }
-            &.page-cta {
-                background: #f4f4f4;
-                color: $overlay-blue-dark;
-                &:hover {
-                    transform: scale(.98);
-                    color: $span-crimson;
-                    transition: .25s;
-                }
-            }
+            
 
         }
         // end of skills top section
