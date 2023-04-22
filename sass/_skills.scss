@@ -722,20 +722,7 @@
     // min-height: 100vh;
     background: $overlay-blue-darkest;
     color: #fff;
-    &.light-section {
-        background: #f4f4f4;
-        color: $overlay-blue-darkest;
-        .skill-section-title {
-            p {
-                font-weight: 500;
-            }
-        }
-        .skill-section-content {
-            .skill-article {
-                background: #fff;
-            }
-        }
-    }
+   
     
 
     .skill-section-title {
@@ -976,6 +963,26 @@
                             color: transparent;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    &.light-section {
+        background: #f4f4f4;
+        color: $overlay-blue-darkest;
+        .skill-section-title {
+            p {
+                font-weight: 500;
+            }
+        }
+        .skill-section-content {
+            .skill-article {
+                background: #fff;
+            }
+            ul {
+                li {
+                    border-bottom: 1px solid #ddd;
                 }
             }
         }

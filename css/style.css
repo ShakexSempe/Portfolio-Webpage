@@ -2432,16 +2432,6 @@ hamburger
   background: #15191e;
   color: #fff;
 }
-.skill-section.light-section {
-  background: #f4f4f4;
-  color: #15191e;
-}
-.skill-section.light-section .skill-section-title p {
-  font-weight: 500;
-}
-.skill-section.light-section .skill-section-content .skill-article {
-  background: #fff;
-}
 .skill-section .skill-section-title {
   margin-bottom: 10vh;
   padding: 5vh 5vw;
@@ -2659,6 +2649,19 @@ hamburger
 }
 .skill-section .skill-section-content .skill-article:hover ul li::marker {
   color: transparent;
+}
+.skill-section.light-section {
+  background: #f4f4f4;
+  color: #15191e;
+}
+.skill-section.light-section .skill-section-title p {
+  font-weight: 500;
+}
+.skill-section.light-section .skill-section-content .skill-article {
+  background: #fff;
+}
+.skill-section.light-section .skill-section-content ul li {
+  border-bottom: 1px solid #ddd;
 }
 
 #contact .contact {
