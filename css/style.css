@@ -2509,7 +2509,7 @@ hamburger
   background-size: cover;
   background-repeat: no-repeat;
   mix-blend-mode: overlay;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-1 img {
