@@ -746,22 +746,24 @@
         isolation: isolate;
         height: 80vh;
         background: $overlay-blue-dark;
+        background: linear-gradient(140deg, yellow 20%, red);
+        background: linear-gradient(140deg, $overlay-blue-darkest 20%, transparent);
         @include md {
-            padding: 10vh 5vw;
-            height: 90vh;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            @include md {
+            padding: 20vh 5vw 10vh;
+            height: 85vh;
+            background: linear-gradient(140deg, $overlay-blue-darker 20%, $overlay-blue-dark);
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                // border: 3px solid red;
                 background-attachment: fixed;
-                // height: 100vh;
             }
+
         }
 
         h3 {
@@ -785,72 +787,109 @@
             }
         }
 
+        img {
+            // border: 2px solid red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            @include md {
+                display: none;
+            }
+        }
+
         &.section-title-1 {
-            &::after {
-                background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
-                background-position: 20% ;
+            img {
+                // border: 3px solid yellow;
+                background-position: 20%;
                 background-size: contain;
                 background-size: cover;
                 background-repeat: no-repeat;
                 mix-blend-mode: overlay;
+                opacity: .2;
                 @include md {
                     background-position: 10% 10%;
                     // background-size: 80%;
+                    display: none;
+                    
+                }
+            }
+            @include md {
+                &::after {
+                    background-image: url('../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg');
+                    background-size: contain;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    mix-blend-mode: overlay;
+                    background-position: 10% 10%;
+                    opacity: .5;
                 }
             }
         }
         &.section-title-2 {
-            &::after {
-                background-image: url('../img/anaya-katlego-ZWQduAnJ8cg-unsplash.jpg');
-                background-position: 20% 30%;
-                background-position: 70%;
+            img {
+                // border: 3px solid yellow;
+                background-position: 20%;
                 background-size: contain;
                 background-size: cover;
                 background-repeat: no-repeat;
                 mix-blend-mode: overlay;
+                // opacity: .2;
                 @include md {
-                    background-position: top ;
+                    background-position: 10% 10%;
+                }
+            }
+            @include md {
+                &::after {
+                    background-image: url('../img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg');
+                    background-position: center;
+                    background-size: contain;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    mix-blend-mode: overlay;
+                    
                 }
             }
         }
         &.section-title-3 {
-            background: #fff8;
-            height: 75vh;
-            &::after {
-                // background-image: url('../img/markus-winkler-UP_RojtnvTU-unsplash.jpg');
-                background-image: url('../img/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
-                background-position: 70% bottom;
-                background-position: 20% 30%;
+            background: #f4f4f4;
+            img {
+                background-position: 20%;
                 background-size: contain;
                 background-size: cover;
                 background-repeat: no-repeat;
                 mix-blend-mode: overlay;
-                // opacity: .7;
-                @include md {
-                    background-position: bottom right;
-                    background-position: right;
+                mix-blend-mode: darken;
+                opacity: .4;
+            }
+            @include md {
+                &::after {
+                    background-image: url('../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg');
                     background-size: contain;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    mix-blend-mode: overlay;
+                    background-position: right;
                 }
             }
         }
         &.section-title-4 {
-            background: #fafafa;
             background: #fff7;
-            height: 70vh;
-            &::after {
-                background-image: url('../img/markus-winkler-UP_RojtnvTU-unsplash.jpg');
-                // background-image: url('https://images.unsplash.com/photo-1510674485131-dc88d96369b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGtleWJvYXJkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
-                background-position: 70% bottom;
-                background-position: 30% 30%;
-                background-size: contain;
-                background-size: cover;
-                background-repeat: no-repeat;
+            img {
+                object-position: 20%;
                 mix-blend-mode: overlay;
-                // opacity: .7;
-                @include md {
+            }
+            @include md {
+                &::after {
+                    background-image: url('../img/giorgio-trovato-8krX0HkXw8c-unsplash.jpg');
                     background-position: bottom right;
-                    background-position: right;
-                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                    // opacity: .7;
                 }
             }
         }
