@@ -868,22 +868,20 @@
         }
         &.section-title-4 {
             background: #f4f4f4;
+            background: linear-gradient(140deg, #fff 20%, transparent);
             // border: 2px solid red;
             img {
                 // border: 2px solid blue;
-                object-position: 5% 95%;
                 object-position: center;
+                object-position: 60% 95%;
                 mix-blend-mode: overlay;
                 mix-blend-mode: darken;
-                opacity: .8;
+                opacity: .5;
             }
             @include md {
                 background: #f4f4f4;
                 &::after {
-                    background-image: url('../img/ron-mcclenny-O7oOcJwfOQ4-unsplash.jpg');
-                    // background-image: url('../img/giorgio-trovato-8krX0HkXw8c-unsplash.jpg');
-                    // background-image: url('https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1005&q=80');
-                    // background-image: url('https://images.unsplash.com/photo-1547105484-2871e57056f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                    background-image: url('../img/liana-mikah-sK1nYjXcXCY-unsplash.jpg');
                     background-position: bottom right;
                     background-position: center;
                     background-repeat: no-repeat;

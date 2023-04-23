@@ -2565,20 +2565,21 @@ hamburger
 }
 .skill-section .skill-section-title.section-title-4 {
   background: #f4f4f4;
+  background: linear-gradient(140deg, #fff 20%, transparent);
 }
 .skill-section .skill-section-title.section-title-4 img {
-  object-position: 5% 95%;
   object-position: center;
+  object-position: 60% 95%;
   mix-blend-mode: overlay;
   mix-blend-mode: darken;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-4 {
     background: #f4f4f4;
   }
   .skill-section .skill-section-title.section-title-4::after {
-    background-image: url("../img/ron-mcclenny-O7oOcJwfOQ4-unsplash.jpg");
+    background-image: url("../img/liana-mikah-sK1nYjXcXCY-unsplash.jpg");
     background-position: bottom right;
     background-position: center;
     background-repeat: no-repeat;
