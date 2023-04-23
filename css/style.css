@@ -2421,6 +2421,9 @@ hamburger
   transform: scale(1);
 }
 
+.skill-section-container {
+  margin-top: 5vh;
+}
 @media (min-width: 768px) {
   .skill-section-container {
     margin-top: 10vh;
@@ -2429,7 +2432,6 @@ hamburger
 
 .skill-section {
   padding-bottom: 10vh;
-  margin-top: 5vh;
   background: #15191e;
   color: #fff;
 }
