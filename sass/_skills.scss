@@ -738,6 +738,7 @@
         @include md {
             padding: 20vh 5vw 10vh;
             height: 85vh;
+            height: 100vh;
             background: linear-gradient(140deg, $overlay-blue-darker 20%, $overlay-blue-dark);
             &::after {
                 content: '';
@@ -829,8 +830,9 @@
                 }
             }
             @include md {
+                height: 100vh;
                 &::after {
-                    background-image: url('../img/massimiliano-morosinotto-STKcS9ojYHU-unsplash-min.jpg');
+                    background-image: url('../img/wesson-wang-y0_vFxOHayg-unsplash.jpg');
                     background-position: center;
                     background-size: contain;
                     background-size: cover;
@@ -857,25 +859,38 @@
                     background-size: contain;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    mix-blend-mode: darken;
                     mix-blend-mode: overlay;
                     background-position: right;
+                    // opacity: .1;
                 }
             }
         }
         &.section-title-4 {
-            background: #fff7;
+            background: #fafafa;
+            // border: 2px solid red;
             img {
-                object-position: 20%;
+                // border: 2px solid blue;
+                object-position: 5% 95%;
+                object-position: center;
                 mix-blend-mode: overlay;
+                mix-blend-mode: darken;
             }
             @include md {
+                background: #f4f4f4;
                 &::after {
-                    background-image: url('../img/giorgio-trovato-8krX0HkXw8c-unsplash.jpg');
+                    background-image: url('../img/ron-mcclenny-O7oOcJwfOQ4-unsplash.jpg');
+                    // background-image: url('../img/giorgio-trovato-8krX0HkXw8c-unsplash.jpg');
+                    // background-image: url('https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1005&q=80');
+                    // background-image: url('https://images.unsplash.com/photo-1547105484-2871e57056f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
                     background-position: bottom right;
+                    background-position: center;
                     background-repeat: no-repeat;
-                    background-position: left;
+                    background-position: right;
                     background-size: cover;
-                    // opacity: .7;
+                    background-size: 55%;
+                    mix-blend-mode: darken;
+                    // opacity: .6;
                 }
             }
         }
