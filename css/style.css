@@ -2564,13 +2564,14 @@ hamburger
   }
 }
 .skill-section .skill-section-title.section-title-4 {
-  background: #fafafa;
+  background: #f4f4f4;
 }
 .skill-section .skill-section-title.section-title-4 img {
   object-position: 5% 95%;
   object-position: center;
   mix-blend-mode: overlay;
   mix-blend-mode: darken;
+  opacity: 0.8;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-4 {
