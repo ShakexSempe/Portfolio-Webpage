@@ -2522,10 +2522,9 @@ hamburger
   }
 }
 .skill-section .skill-section-title.section-title-2 img {
-  background-position: right top;
-  background-size: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
+  object-position: 50% 5%;
+  object-position: center bottom;
+  object-fit: cover;
   mix-blend-mode: overlay;
 }
 @media (min-width: 768px) {

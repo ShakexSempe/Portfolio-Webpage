@@ -819,10 +819,9 @@
         &.section-title-2 {
             img {
                 // border: 3px solid yellow;
-                background-position: right top;
-                background-size: cover;
-                background-size: contain;
-                background-repeat: no-repeat;
+                object-position: 50% 5%;
+                object-position: center bottom;
+                object-fit: cover;
                 mix-blend-mode: overlay;
                 // opacity: .2;
                 @include md {
