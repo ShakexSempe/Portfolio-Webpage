@@ -2517,10 +2517,12 @@ hamburger
   }
 }
 .skill-section .skill-section-title.section-title-2 img {
-  object-position: 50% 5%;
+  object-position: center top;
   object-position: center bottom;
+  object-position: 50% 5%;
   object-fit: cover;
   mix-blend-mode: overlay;
+  opacity: 0.9;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-2 img {

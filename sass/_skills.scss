@@ -820,11 +820,12 @@
         &.section-title-2 {
             img {
                 // border: 3px solid yellow;
-                object-position: 50% 5%;
+                object-position: center top;
                 object-position: center bottom;
+                object-position: 50% 5%;
                 object-fit: cover;
                 mix-blend-mode: overlay;
-                // opacity: .2;
+                opacity: .9;
                 @include md {
                     background-position: 10% 10%;
                 }
