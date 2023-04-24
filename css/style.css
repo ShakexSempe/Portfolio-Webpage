@@ -2919,7 +2919,7 @@ hamburger
 }
 
 #projects {
-  padding: 5vh 5vw 10vh;
+  padding: 10vh 5vw 10vh;
 }
 #projects .projects {
   flex-direction: column;
@@ -3179,13 +3179,13 @@ hamburger
 
 .work {
   min-height: 100vh;
-  padding: 5vh 5vw 10vh;
+  padding: 10vh 5vw 10vh;
   background: #fff;
   background: #f4f4f4;
 }
 @media (min-width: 768px) {
   .work {
-    padding: 5vh 5vw 10vh;
+    padding: 10vh 5vw 10vh;
   }
 }
 .work .work-container {
@@ -3791,7 +3791,7 @@ hamburger
   gap: 5vh;
   text-align: center;
   margin: 0 auto;
-  padding: 5vh 5vw;
+  padding: 10vh 5vw;
   background-color: #fff;
   position: relative;
   min-height: 100vh;
@@ -3812,6 +3812,7 @@ hamburger
 }
 .about .col-right .section-title {
   text-align: left;
+  margin-top: 5vh;
 }
 .about .col-right .section-title::after {
   width: 80%;
@@ -4732,7 +4733,7 @@ section {
 section .section-title {
   font-size: 2.25rem;
   font-weight: 500;
-  color: #20262e;
+  color: #29323c;
   margin-bottom: 10vh;
   overflow: hidden;
   text-transform: uppercase;
