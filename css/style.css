@@ -400,7 +400,7 @@ hamburger
   transition: 0.25s;
 }
 .bottom-nav .link-item a i {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff9;
   transition: 0.25s;
@@ -4045,6 +4045,7 @@ hamburger
   }
 }
 .about .col-left .about-img {
+  border: 2px solid blue;
   height: 100%;
   width: 100%;
   position: relative;
@@ -4052,12 +4053,29 @@ hamburger
   border: none;
   transition: 0.5s ease;
   transform: preserve-3d;
-  cursor: pointer;
 }
 .about .col-left .about-img img {
+  width: 100%;
+  border-radius: 0.25rem;
+  object-fit: contain;
+}
+@media (min-width: 576px) {
+  .about .col-left .about-img img {
+    width: 50vh;
+  }
+}
+.about .col-left .about-img:hover::before {
+  opacity: 0;
+  transform: scale(1.1);
+  transform-origin: left;
+}
+.about .col-left .about-img:hover::after {
+  opacity: 1;
+}
+.about .col-left .about-img.animated-img img {
   display: none;
 }
-.about .col-left .about-img::before, .about .col-left .about-img::after {
+.about .col-left .about-img.animated-img::before, .about .col-left .about-img.animated-img::after {
   font-size: 1em;
   position: absolute;
   top: 0;
@@ -4074,11 +4092,11 @@ hamburger
   background-size: cover;
 }
 @media (min-width: 576px) {
-  .about .col-left .about-img::before, .about .col-left .about-img::after {
+  .about .col-left .about-img.animated-img::before, .about .col-left .about-img.animated-img::after {
     background-size: contain;
   }
 }
-.about .col-left .about-img::before {
+.about .col-left .about-img.animated-img::before {
   content: "Boitumelo Sempe";
   content: "";
   background-image: url("../img/me-min.jpg");
@@ -4093,7 +4111,7 @@ hamburger
     opacity: 0;
   }
 }
-.about .col-left .about-img::after {
+.about .col-left .about-img.animated-img::after {
   position: absolute;
   content: "Shakex Sempe";
   content: "";
@@ -4108,14 +4126,6 @@ hamburger
   50% {
     opacity: 1;
   }
-}
-.about .col-left .about-img:hover::before {
-  opacity: 0;
-  transform: scale(1.1);
-  transform-origin: left;
-}
-.about .col-left .about-img:hover::after {
-  opacity: 1;
 }
 
 #footer {

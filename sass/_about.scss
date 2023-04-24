@@ -316,7 +316,7 @@
         }
         // about images
         .about-img {
-            // border: 2px solid blue;
+            border: 2px solid blue;
             height: 100%;
             width: 100%;
             position: relative;
@@ -324,9 +324,34 @@
             border: none;
             transition: .5s ease;
             transform: preserve-3d;
-            cursor: pointer;
             // overflow: hidden;
+            
+            img {
+            // border: 2px solid red;
+                // display: none;
+                width: 100%;
+                // height: 40vh;
+                border-radius: .25rem;
+                object-fit: contain;
+                @include sm {
+                    width: 50vh;
+                }
+            }
+        // image hover states
+        &:hover {
+            &::before {
+                opacity: 0;
+                transform: scale(1.1);
+                transform-origin: left;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+        // end of image hover states
 
+        &.animated-img {
+            // border: 2px solid red;
             img {
                 display: none;
             }
@@ -346,55 +371,48 @@
                 transition: 1s ease;
                 background-repeat: no-repeat;
                 background-size: cover;
+
                 @include sm {
                     background-size: contain;
                 }
             }
 
-        &::before {
-            content: 'Boitumelo Sempe';
-            content: '';
-            background-image: url('../img/me-min.jpg');
-            background-position: center;
-            animation: fade-out 5s infinite;
-            @keyframes fade-out {
-                0% {
-                    transform-origin: right;
-                }
-                50% {
-                    opacity: 0;
-                }
-            }
-        }
-        &::after {
-            position: absolute;
-            content: 'Shakex Sempe';
-            content: '';
-            color:$span-blue;
-            opacity: 0;
-            background-image: url('../img/shakexblue-min.jpg');
-            background-position: top;
-            transition: 1s ease;
-            animation: fade-in 5s infinite;
-
-            @keyframes fade-in {
-                50% {
-                    opacity: 1;
-                }
-            }
-        }
-        // image hover states
-        &:hover {
             &::before {
-                opacity: 0;
-                transform: scale(1.1);
-                transform-origin: left;
+                content: 'Boitumelo Sempe';
+                content: '';
+                background-image: url('../img/me-min.jpg');
+                background-position: center;
+                animation: fade-out 5s infinite;
+
+                @keyframes fade-out {
+                    0% {
+                        transform-origin: right;
+                    }
+
+                    50% {
+                        opacity: 0;
+                    }
+                }
             }
+
             &::after {
-                opacity: 1;
+                position: absolute;
+                content: 'Shakex Sempe';
+                content: '';
+                color: $span-blue;
+                opacity: 0;
+                background-image: url('../img/shakexblue-min.jpg');
+                background-position: top;
+                transition: 1s ease;
+                animation: fade-in 5s infinite;
+
+                @keyframes fade-in {
+                    50% {
+                        opacity: 1;
+                    }
+                }
             }
         }
-        // end of image hover states
     }
         // end of about images
     }
