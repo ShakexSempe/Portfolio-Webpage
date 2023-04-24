@@ -970,18 +970,23 @@ hamburger
   .header .navbar #nav .nav-list ul li a {
     font-size: 0.85rem;
     padding: 0.25rem;
-    font-weight: 400;
     margin: 0 auto;
     display: block;
     letter-spacing: normal;
     float: left;
     color: #f4f4f4;
+    transition: 0.25s;
   }
   .header .navbar #nav .nav-list ul li a::after {
     display: none;
   }
   .header .navbar #nav .nav-list ul li a.active {
     color: #a6b2bf;
+    transform: scale(1.15);
+  }
+  .header .navbar #nav .nav-list ul li a.active::before {
+    width: 50%;
+    opacity: 1;
   }
   .header .navbar #nav .nav-list ul li i {
     display: none;
@@ -992,16 +997,6 @@ hamburger
   }
   .header .navbar #nav .nav-list ul li:hover i {
     transition: 0.3s;
-    color: #ead2a1;
-  }
-  .header .navbar #nav .nav-list ul li:focus::before {
-    width: 30%;
-    opacity: 1;
-  }
-  .header .navbar #nav .nav-list ul li:focus a {
-    color: #ead2a1;
-  }
-  .header .navbar #nav .nav-list ul li:focus i {
     color: #ead2a1;
   }
   .header .navbar #nav .nav-list ul li.active a {
@@ -1015,31 +1010,7 @@ hamburger
     box-shadow: none;
   }
   .header .navbar #nav .nav-list .contact-links {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.5rem;
     display: none;
-  }
-  .header .navbar #nav .nav-list .contact-links a {
-    color: #f4f4f4;
-    letter-spacing: 0.05rem;
-    font-size: 0.8rem;
-    opacity: 0.7;
-    transition: 0.25s;
-  }
-  .header .navbar #nav .nav-list .contact-links a i {
-    padding-right: 0.25rem;
-    transition: 0.25s;
-  }
-  .header .navbar #nav .nav-list .contact-links a:hover {
-    opacity: 1;
-  }
-  .header .navbar #nav .nav-list .contact-links a:hover i {
-    transform: translateX(0);
-    color: #ead2a1;
   }
 }
 

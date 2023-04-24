@@ -522,12 +522,12 @@
                             a {
                                 font-size: .85rem;
                                 padding: .25rem;
-                                font-weight: 400;
                                 margin: 0 auto;
                                 display: block;
                                 letter-spacing: normal;
                                 float: left;
                                 color: $text-light;
+                                transition: .25s;
 
                                 &::after {
                                     display: none;
@@ -535,6 +535,11 @@
 
                                 &.active {
                                     color: $brand;
+                                    transform: scale(1.15);
+                                    &::before {
+                                        width: 50%;
+                                        opacity: 1;
+                                    }
                                 }
                             }
                             i {
@@ -557,18 +562,7 @@
                                 }
                             }
                             // links and icon hover state
-                            &:focus {
-                                &::before {
-                                    width: 30%;
-                                    opacity: 1;
-                                }
-                                a {
-                                    color: $span-gold;
-                                }
-                                i {
-                                    color: $span-gold;
-                                }
-                            }
+                            
                             &.active {
                                 a {
                                 color: $span-gold;
@@ -581,45 +575,14 @@
                         &.active {
                             background: none;
                             box-shadow: none;
-                            
                         }
                     }
                     
                     .contact-links {
-                        // border: 2px solid red;
-                        width: 100%;
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        gap: 1rem;
-                        padding: .5rem;
                         display: none;
-                        a {
-                            color: $text-light;
-                            letter-spacing: .05rem;
-                            font-size: .8rem;
-                            opacity: .7;
-                            transition: .25s;
-
-                            i {
-                                padding-right: .25rem;
-                                // transform: translateX(-.5rem);
-                                transition: .25s;
-                            }
-
-                            &:hover {
-                                opacity: 1;
-                                // text-decoration: underline $span-gold;
-                                i {
-                                    transform: translateX(0);
-                                    color: $span-gold;
-                                }
-                            }
-                        }
                     }
 
                 }
-                // end of desktop nav-list style
             }
         }
     }
