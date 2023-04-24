@@ -769,6 +769,11 @@ hamburger
   .header .navbar #nav .nav-list .links-container ul li a.active {
     color: #a6b2bf;
   }
+  .header .navbar #nav .nav-list .links-container ul li a.active::after {
+    color: rgba(240, 248, 255, 0.05);
+    transform: translate(-50%, -50%) scale(1.4);
+    letter-spacing: initial;
+  }
   .header .navbar #nav .nav-list .links-container ul li i {
     width: 2.5rem;
     text-align: center;
@@ -911,10 +916,10 @@ hamburger
   transition: 0.3s;
 }
 .header .navbar #nav .nav-list ul li:hover a {
-  color: #ead2a1;
+  color: #a6b2bf;
 }
 .header .navbar #nav .nav-list ul li:hover a i {
-  color: #ead2a1;
+  color: #a6b2bf;
 }
 .header .navbar #nav .nav-list ul li:hover a::after {
   transform: translate(-50%, -50%) scale(1);
