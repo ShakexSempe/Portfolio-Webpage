@@ -1,22 +1,22 @@
-
 // skills
 .skills-section {
-    // border:1px solid red;
-    // overflow: hidden;
+    // border: 3px solid red;
+    padding: 10vh 0;
+    &.skills-section-page {
+        padding: 10vh 0 0;
+    }
     .skills-header {
         // border: 2px solid red;
-        padding: 5vh 5vw 0;
+        padding: 0 5vw;
     }
 
     // skills container
-    .skills {
-        // text-align: center;
-        background: $background-light;
-        min-height: auto;
+    .skills-content {
         // border: 2px solid blue;
+        background: $background-light;
 
 
-        // SKILLS T=INTRO
+        // SKILLS INTRO
         .skills-intro {
             // border: 2px solid red;
             padding: 0 2.5vw 0 5vw;
@@ -118,6 +118,7 @@
             }
 
             .skills-drop {
+                // border: 2px solid red;
                 text-align: left;
                 color: $span-gold;
                 font-size: 1rem;
@@ -672,38 +673,7 @@
             }
         }
     }
-    // git img 
-    .git-img {
-        
-        &[data-scroll="in"] {
-            transition: 2s ease;
-            transform: translateY(0);
-        }
-        margin: 20vh auto 0;
-        width: 90%;
-        overflow: hidden;
-        height: auto;
-        transform: translateY(100%);
-        
-        img {
-            width: 100%;
-            border-radius: 5px;
-            transition: .5s ease;
-        }
-        @media (min-width: 768px) {
-            width: 60%;
-            height: auto;
-            // margin: 20vh auto 5vh;
-        }
-
-        // figure hover state
-        &:hover {
-            img {
-                transform: scale(1);
-            }
-        }
-        // end of figure hover state
-    }
+    
 }
 
 .skill-section-container {
@@ -868,8 +838,8 @@
             }
         }
         &.section-title-4 {
-            background: #f4f4f4;
-            background: linear-gradient(140deg, #fff 20%, transparent);
+            background: #fff000;
+            background: linear-gradient(140deg, #fff 20%, #fafafa);
             // border: 2px solid red;
             img {
                 // border: 2px solid blue;

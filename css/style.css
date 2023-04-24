@@ -1906,42 +1906,47 @@ hamburger
   background-size: 100%, 1em 1em;
 }
 
+.skills-section {
+  padding: 10vh 0;
+}
+.skills-section.skills-section-page {
+  padding: 10vh 0 0;
+}
 .skills-section .skills-header {
-  padding: 5vh 5vw 0;
+  padding: 0 5vw;
 }
-.skills-section .skills {
+.skills-section .skills-content {
   background: #fff;
-  min-height: auto;
 }
-.skills-section .skills .skills-intro {
+.skills-section .skills-content .skills-intro {
   padding: 0 2.5vw 0 5vw;
   position: relative;
   z-index: 30;
 }
 @media (min-width: 576px) {
-  .skills-section .skills .skills-intro {
+  .skills-section .skills-content .skills-intro {
     padding: 0vh 5vw;
   }
 }
 @media (min-width: 768px) {
-  .skills-section .skills .skills-intro .skills-article {
+  .skills-section .skills-content .skills-intro .skills-article {
     width: 70%;
   }
 }
-.skills-section .skills .skills-intro .skills-article p {
+.skills-section .skills-content .skills-intro .skills-article p {
   font-size: 0.95rem;
   font-size: clamp(.95rem, 2vw, 1.125rem);
   font-weight: 500;
   line-height: 1.6;
   overflow: hidden;
 }
-.skills-section .skills .skills-intro .skills-article p span {
+.skills-section .skills-content .skills-intro .skills-article p span {
   font-size: 0.95rem;
   font-size: inherit;
   font-weight: 700;
   color: inherit;
 }
-.skills-section .skills .skills-intro .skills-icons {
+.skills-section .skills-content .skills-intro .skills-icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1951,45 +1956,45 @@ hamburger
   border-radius: 0.25rem;
 }
 @media (min-width: 768px) {
-  .skills-section .skills .skills-intro .skills-icons {
+  .skills-section .skills-content .skills-intro .skills-icons {
     justify-content: flex-start;
     gap: 5vw;
   }
 }
-.skills-section .skills .skills-intro .skills-icons svg {
+.skills-section .skills-content .skills-intro .skills-icons svg {
   height: 5rem;
   width: auto;
   fill: #20262e;
   transition: 0.25s;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(41, 50, 61, 0.25));
 }
-.skills-section .skills .skills-intro .skills-icons.io-item svg {
+.skills-section .skills-content .skills-intro .skills-icons.io-item svg {
   transform: scale(0.8);
   transition: 1s;
 }
-.skills-section .skills .skills-intro .skills-icons.active-item svg {
+.skills-section .skills-content .skills-intro .skills-icons.active-item svg {
   transform: scale(1);
 }
-.skills-section .skills .skills-intro .skills-icons.active-item svg:nth-child(1) {
+.skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(1) {
   transition-delay: 0.25s;
 }
-.skills-section .skills .skills-intro .skills-icons.active-item svg:nth-child(2) {
+.skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(2) {
   transition-delay: 0.35s;
 }
-.skills-section .skills .skills-intro .skills-icons.active-item svg:nth-child(3) {
+.skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(3) {
   transition-delay: 0.45s;
 }
-.skills-section .skills .skills-intro .skills-drop {
+.skills-section .skills-content .skills-intro .skills-drop {
   text-align: left;
   color: #ead2a1;
   font-size: 1rem;
   font-size: clamp(.95rem, 2vw, 1.125rem);
 }
-.skills-section .skills .skills-intro .skills-drop .skills-drop-p {
+.skills-section .skills-content .skills-intro .skills-drop .skills-drop-p {
   font-weight: 500;
   font-size: inherit;
 }
-.skills-section .skills .skills-cta {
+.skills-section .skills-content .skills-cta {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2010,18 +2015,18 @@ hamburger
   position: relative;
   isolation: isolate;
 }
-.skills-section .skills .skills-cta i {
+.skills-section .skills-content .skills-cta i {
   font-weight: 800;
   margin-left: 1rem;
   font-size: 1rem;
   transition: 0.25s;
 }
-.skills-section .skills .skills-cta.page-cta {
+.skills-section .skills-content .skills-cta.page-cta {
   border: none;
   transition: 0.25s;
   position: relative;
 }
-.skills-section .skills .skills-cta.page-cta::before, .skills-section .skills .skills-cta.page-cta::after {
+.skills-section .skills-content .skills-cta.page-cta::before, .skills-section .skills-content .skills-cta.page-cta::after {
   position: absolute;
   content: "";
   z-index: -1;
@@ -2034,47 +2039,47 @@ hamburger
   outline: none;
   transition: 0.2s;
 }
-.skills-section .skills .skills-cta.page-cta::before {
+.skills-section .skills-content .skills-cta.page-cta::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
   box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
-.skills-section .skills .skills-cta.page-cta::after {
+.skills-section .skills-content .skills-cta.page-cta::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
   opacity: 0;
   box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0.025rem 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
 }
-.skills-section .skills .skills-cta.page-cta:hover {
+.skills-section .skills-content .skills-cta.page-cta:hover {
   transform: scale(0.98);
 }
-.skills-section .skills .skills-cta.dropbtn {
+.skills-section .skills-content .skills-cta.dropbtn {
   background: transparent;
   color: #29323c;
   border: 1px solid;
   transition: 0.5s;
 }
-.skills-section .skills .skills-cta.dropbtn.active {
+.skills-section .skills-content .skills-cta.dropbtn.active {
   transform: scale(0.98);
   border-color: transparent;
 }
-.skills-section .skills .skills-cta.dropbtn.active i {
+.skills-section .skills-content .skills-cta.dropbtn.active i {
   transform: rotate(-180deg);
 }
-.skills-section .skills .dropdown {
+.skills-section .skills-content .dropdown {
   position: relative;
   z-index: 4;
   width: 100%;
 }
-.skills-section .skills .dropdown.io-item {
+.skills-section .skills-content .dropdown.io-item {
   transform: scale(0.7) translateY(5vh);
   opacity: 1;
   transition: 1s;
 }
-.skills-section .skills .dropdown.active-item {
+.skills-section .skills-content .dropdown.active-item {
   opacity: 1;
   transition: 1.5s;
   transform: scale(1) translateY(0);
 }
-.skills-section .skills .dropdown .dropdown-content {
+.skills-section .skills-content .dropdown .dropdown-content {
   display: none;
   width: 100%;
   z-index: 1;
@@ -2082,15 +2087,15 @@ hamburger
   position: relative;
   padding: 10vh 5vw;
 }
-.skills-section .skills .dropdown .dropdown-content.show {
+.skills-section .skills-content .dropdown .dropdown-content.show {
   display: block;
 }
 @media (min-width: 820px) {
-  .skills-section .skills .dropdown .dropdown-content {
+  .skills-section .skills-content .dropdown .dropdown-content {
     padding: 10vh 5vw;
   }
 }
-.skills-section .skills .dropdown .dropdown-content .top-btn {
+.skills-section .skills-content .dropdown .dropdown-content .top-btn {
   position: sticky;
   top: 10vh;
   width: 100%;
@@ -2100,7 +2105,7 @@ hamburger
   margin: 0;
   padding: 0 0.25rem;
 }
-.skills-section .skills .dropdown .dropdown-content .top-btn a {
+.skills-section .skills-content .dropdown .dropdown-content .top-btn a {
   color: #dc143c;
   background: #fff;
   outline: 4px solid #20262e;
@@ -2108,33 +2113,33 @@ hamburger
   border-radius: 50%;
   font-size: 1.5rem;
 }
-.skills-section .skills .dropdown .dropdown-content .top-btn a:hover {
+.skills-section .skills-content .dropdown .dropdown-content .top-btn a:hover {
   background: transparent;
 }
-.skills-section .skills .skills-page-container {
+.skills-section .skills-content .skills-page-container {
   padding: 5vh 5vw;
   margin: 5vh 0;
   background: #20262e;
 }
-.skills-section .skills .skills-page-container .skills-bottom {
+.skills-section .skills-content .skills-page-container .skills-bottom {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10vh;
 }
 @media (min-width: 768px) {
-  .skills-section .skills .skills-page-container .skills-bottom {
+  .skills-section .skills-content .skills-page-container .skills-bottom {
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1024px) {
-  .skills-section .skills .skills-page-container .skills-bottom {
+  .skills-section .skills-content .skills-page-container .skills-bottom {
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item {
   width: 100%;
   padding: 2rem 0.5rem 2rem 2rem;
   background: transparent;
@@ -2148,34 +2153,34 @@ hamburger
   transform-style: preserve-3d;
   isolation: isolate;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item.io-item {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item.io-item {
   transform: translateY(5vh);
   opacity: 0;
   transition: 0.5s;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item.active-item {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item.active-item {
   transform: translateY(0);
   opacity: 1;
   transition: 1.5s;
 }
 @media (min-width: 576px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item {
     padding: 1rem 0.5rem 0.5rem 1.5rem;
   }
 }
 @media (min-width: 820px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item {
     padding: 1rem 0.5rem 1rem 2rem;
   }
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item ul {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item ul {
   margin: 0;
   padding: 0;
   z-index: 5;
   height: 50%;
   width: 100%;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item ul li {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item ul li {
   color: #fff;
   font-size: 1rem;
   text-align: left;
@@ -2183,18 +2188,18 @@ hamburger
   text-transform: capitalize;
 }
 @media (min-width: 820px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item ul li {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item ul li {
     font-size: 0.85rem;
   }
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item ul li a {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item ul li a {
   color: #f4f4f4;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item ul li::marker {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item ul li::marker {
   color: #bfbfbf;
   color: #fff4;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item::after {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -2207,7 +2212,7 @@ hamburger
   z-index: -1;
   box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item .icon {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon {
   display: grid;
   place-items: center;
   height: 4rem;
@@ -2221,27 +2226,27 @@ hamburger
   isolation: isolate;
 }
 @media (min-width: 576px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item .icon {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon {
     padding: 10px;
   }
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item .icon img {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon img {
   width: 80%;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item .icon i {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon i {
   color: #ead2a1;
   font-size: 2rem;
 }
 @media (min-width: 576px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item .icon {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon {
     height: 4rem;
     width: 4rem;
   }
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item .icon i {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon i {
     font-size: 2.25rem;
   }
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item .icon::before, .skills-section .skills .skills-page-container .skills-bottom .skills-item .icon::after {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon::before, .skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon::after {
   position: absolute;
   content: "";
   top: 0;
@@ -2250,7 +2255,7 @@ hamburger
   height: 100%;
   border-radius: 50%;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item .icon::before {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon::before {
   z-index: -1;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.125), inset -2px -2px 5px rgba(0, 0, 0, 0.125), 3px 3px 4px rgba(0, 0, 0, 0.125);
   animation: skill-icon 10s linear infinite;
@@ -2266,12 +2271,12 @@ hamburger
     box-shadow: inset 2px 0px 3px rgba(255, 255, 255, 0.15), inset -2px 0px 5px rgba(0, 0, 0, 0.15), -2px 2px 4px rgba(0, 0, 0, 0.125);
   }
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item .icon::after {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon::after {
   background: linear-gradient(0deg, #1f252d 30%, #343f4c 70%);
   z-index: -2;
   opacity: 1;
 }
-.skills-section .skills .skills-page-container .skills-bottom .skills-item h3 {
+.skills-section .skills-content .skills-page-container .skills-bottom .skills-item h3 {
   font-size: 1.25rem;
   font-weight: 400;
   color: #ead2a1;
@@ -2280,44 +2285,44 @@ hamburger
   font-family: "Kanit", sans-serif;
 }
 @media (min-width: 820px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item h3 {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item h3 {
     font-size: 1.25rem;
   }
 }
 @media (min-width: 768px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item {
     height: auto;
   }
 }
 @media (min-width: 1024px) {
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item {
     width: 100%;
     margin: 0;
     pointer-events: visible;
     cursor: pointer;
     transition: 0.2s;
   }
-  .skills-section .skills .skills-page-container .skills-bottom .skills-item:hover {
+  .skills-section .skills-content .skills-page-container .skills-bottom .skills-item:hover {
     transition: 0.2s;
     transform: scale(1.0255);
   }
 }
-.skills-section .skills .skills-items {
+.skills-section .skills-content .skills-items {
   display: grid;
   gap: 10vh;
 }
 @media (min-width: 768px) {
-  .skills-section .skills .skills-items {
+  .skills-section .skills-content .skills-items {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 }
 @media (min-width: 1024px) {
-  .skills-section .skills .skills-items {
+  .skills-section .skills-content .skills-items {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.skills-section .skills .skills-items .skills-item {
+.skills-section .skills-content .skills-items .skills-item {
   background: #20262e;
   border-radius: 0.25rem;
   color: #fff;
@@ -2325,91 +2330,66 @@ hamburger
   box-shadow: 0.025rem 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
   transition: transform 0.5s, box-shadow 0.25s;
 }
-.skills-section .skills .skills-items .skills-item .icon {
+.skills-section .skills-content .skills-items .skills-item .icon {
   transform: translateY(-1rem);
   transition: 0.5s;
 }
-.skills-section .skills .skills-items .skills-item .icon i {
+.skills-section .skills-content .skills-items .skills-item .icon i {
   font-size: 2.5rem;
   color: #ddd;
   transition: 0.25s;
 }
-.skills-section .skills .skills-items .skills-item .icon img, .skills-section .skills .skills-items .skills-item .icon svg {
+.skills-section .skills-content .skills-items .skills-item .icon img, .skills-section .skills-content .skills-items .skills-item .icon svg {
   width: 2.5rem;
   transition: 0.25s;
 }
-.skills-section .skills .skills-items .skills-item .icon i, .skills-section .skills .skills-items .skills-item .icon img, .skills-section .skills .skills-items .skills-item .icon svg {
+.skills-section .skills-content .skills-items .skills-item .icon i, .skills-section .skills-content .skills-items .skills-item .icon img, .skills-section .skills-content .skills-items .skills-item .icon svg {
   filter: drop-shadow(0.125rem 0.5rem 0.25rem #0006);
 }
-.skills-section .skills .skills-items .skills-item h3 {
+.skills-section .skills-content .skills-items .skills-item h3 {
   margin-bottom: 1rem;
 }
-.skills-section .skills .skills-items .skills-item ul {
+.skills-section .skills-content .skills-items .skills-item ul {
   padding: 0.5rem 0rem 1rem 1rem;
 }
-.skills-section .skills .skills-items .skills-item ul li {
+.skills-section .skills-content .skills-items .skills-item ul li {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
   line-height: 1.5;
   text-transform: capitalize;
 }
-.skills-section .skills .skills-items .skills-item ul li::marker {
+.skills-section .skills-content .skills-items .skills-item ul li::marker {
   color: #485563;
 }
 @media (min-width: 820px) {
-  .skills-section .skills .skills-items .skills-item ul li {
+  .skills-section .skills-content .skills-items .skills-item ul li {
     font-size: 0.95rem;
   }
 }
-.skills-section .skills .skills-items .skills-item:hover {
+.skills-section .skills-content .skills-items .skills-item:hover {
   transform: scale(0.99);
   box-shadow: 0.025rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
 }
-.skills-section .skills .skills-items .skills-item:hover .icon {
+.skills-section .skills-content .skills-items .skills-item:hover .icon {
   transform: translateY(-0.5rem);
 }
-.skills-section .skills .skills-items .skills-item:hover .icon i, .skills-section .skills .skills-items .skills-item:hover .icon svg, .skills-section .skills .skills-items .skills-item:hover .icon img {
+.skills-section .skills-content .skills-items .skills-item:hover .icon i, .skills-section .skills-content .skills-items .skills-item:hover .icon svg, .skills-section .skills-content .skills-items .skills-item:hover .icon img {
   filter: drop-shadow(0rem 0.25rem 0.15rem #0008);
 }
-.skills-section .skills .io-container {
+.skills-section .skills-content .io-container {
   width: 100%;
 }
-.skills-section .skills .io-container.io-item .skills-intro, .skills-section .skills .io-container.io-item .dropdown {
+.skills-section .skills-content .io-container.io-item .skills-intro, .skills-section .skills-content .io-container.io-item .dropdown {
   opacity: 0;
   transform: translateY(1rem);
   transition: 1s;
 }
-.skills-section .skills .io-container.active-item .skills-intro, .skills-section .skills .io-container.active-item .dropdown {
+.skills-section .skills-content .io-container.active-item .skills-intro, .skills-section .skills-content .io-container.active-item .dropdown {
   opacity: 1;
   transform: translateY(0);
 }
-.skills-section .skills .io-container.active-item .dropdown {
+.skills-section .skills-content .io-container.active-item .dropdown {
   transition-delay: 0.25s;
-}
-.skills-section .git-img {
-  margin: 20vh auto 0;
-  width: 90%;
-  overflow: hidden;
-  height: auto;
-  transform: translateY(100%);
-}
-.skills-section .git-img[data-scroll=in] {
-  transition: 2s ease;
-  transform: translateY(0);
-}
-.skills-section .git-img img {
-  width: 100%;
-  border-radius: 5px;
-  transition: 0.5s ease;
-}
-@media (min-width: 768px) {
-  .skills-section .git-img {
-    width: 60%;
-    height: auto;
-  }
-}
-.skills-section .git-img:hover img {
-  transform: scale(1);
 }
 
 .skill-section-container {
@@ -2567,8 +2547,8 @@ hamburger
   }
 }
 .skill-section .skill-section-title.section-title-4 {
-  background: #f4f4f4;
-  background: linear-gradient(140deg, #fff 20%, transparent);
+  background: #fff000;
+  background: linear-gradient(140deg, #fff 20%, #fafafa);
 }
 .skill-section .skill-section-title.section-title-4 img {
   object-position: center;
@@ -2678,35 +2658,34 @@ hamburger
   border-bottom: 1px solid #ddd;
 }
 
-#contact .contact {
+.contact {
   flex-direction: column;
   justify-content: start;
   width: 100%;
-  margin: 0 auto;
-  padding: 0vh 5vw 5vh;
   position: relative;
   transform-style: preserve-3d;
   background: #f4f4f4;
+  padding: 10vh 5vw;
 }
 @media (min-width: 820px) {
-  #contact .contact {
-    padding: 5vh 5vw 5vh;
+  .contact {
+    padding: 10vh 5vw 5vh;
   }
 }
-#contact .contact .contact-header {
+.contact .contact-header {
   width: 100%;
   height: auto;
   background: #f4f4f4;
   z-index: 10;
 }
-#contact .contact .contact-items {
+.contact .contact-items {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5vh;
 }
 @media (min-width: 1024px) {
-  #contact .contact .contact-items {
+  .contact .contact-items {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -2715,7 +2694,7 @@ hamburger
     gap: 1rem;
   }
 }
-#contact .contact .contact-items .contact-item {
+.contact .contact-items .contact-item {
   background: #fff;
   width: 100%;
   display: flex;
@@ -2733,12 +2712,12 @@ hamburger
   box-shadow: 0rem 0.5rem 1rem rgba(41, 50, 60, 0.2);
 }
 @media (min-width: 576px) {
-  #contact .contact .contact-items .contact-item {
+  .contact .contact-items .contact-item {
     gap: 1rem;
     border-color: transparent;
   }
 }
-#contact .contact .contact-items .contact-item .title {
+.contact .contact-items .contact-item .title {
   display: flex;
   flex-direction: column-reverse;
   align-items: left;
@@ -2751,18 +2730,18 @@ hamburger
   border-bottom-right-radius: 0;
 }
 @media (min-width: 576px) {
-  #contact .contact .contact-items .contact-item .title {
+  .contact .contact-items .contact-item .title {
     border-radius: 0.5rem;
   }
 }
 @media (min-width: 768px) {
-  #contact .contact .contact-items .contact-item .title {
+  .contact .contact-items .contact-item .title {
     flex-basis: 40%;
     align-items: center;
     padding: 1rem;
   }
 }
-#contact .contact .contact-items .contact-item .title .icon {
+.contact .contact-items .contact-item .title .icon {
   margin: 0.5rem auto 1rem;
   padding: 0.3em 0.7em;
   height: 4em;
@@ -2776,20 +2755,20 @@ hamburger
   transition: 0.5s ease;
   position: relative;
 }
-#contact .contact .contact-items .contact-item .title .icon i {
+.contact .contact-items .contact-item .title .icon i {
   font-size: 1.5rem;
   color: #f4f4f4;
   transition: 0.5s ease;
 }
 @media (min-width: 768px) {
-  #contact .contact .contact-items .contact-item .title .icon {
+  .contact .contact-items .contact-item .title .icon {
     height: 4rem;
     width: 4rem;
     margin: 0;
     padding: 0;
   }
 }
-#contact .contact .contact-items .contact-item .title h3 {
+.contact .contact-items .contact-item .title h3 {
   color: #f4f4f4;
   color: #bfbfbf;
   font-size: 0.85rem;
@@ -2798,21 +2777,21 @@ hamburger
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  #contact .contact .contact-items .contact-item .title h3 {
+  .contact .contact-items .contact-item .title h3 {
     font-size: 1rem;
     margin: 0.5em auto 0;
   }
 }
-#contact .contact .contact-items .contact-item .contact-info {
+.contact .contact-items .contact-item .contact-info {
   flex-basis: 70%;
 }
-#contact .contact .contact-items .contact-item .contact-info h4 {
+.contact .contact-items .contact-item .contact-info h4 {
   text-transform: capitalize;
   text-align: left;
   margin-bottom: 0.25rem;
   font-size: clamp(1.1rem, 1.5vw, 1.225rem);
 }
-#contact .contact .contact-items .contact-item .contact-info p {
+.contact .contact-items .contact-item .contact-info p {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -2823,7 +2802,7 @@ hamburger
   text-align: left;
   z-index: -1;
 }
-#contact .contact .contact-items .contact-item .contact-info p span {
+.contact .contact-items .contact-item .contact-info p span {
   display: block;
   margin-top: 0.2em;
   color: #000;
@@ -2831,13 +2810,13 @@ hamburger
   opacity: 0.8;
 }
 @media (min-width: 768px) {
-  #contact .contact .contact-items .contact-item .contact-info p {
+  .contact .contact-items .contact-item .contact-info p {
     width: 100%;
     margin: 0.5em auto;
     font-size: 0.9em;
   }
 }
-#contact .contact .contact-items .contact-item .contact-info a {
+.contact .contact-items .contact-item .contact-info a {
   display: block;
   width: 10rem;
   font-size: 0.95rem;
@@ -2853,7 +2832,7 @@ hamburger
   position: relative;
   isolation: isolate;
 }
-#contact .contact .contact-items .contact-item .contact-info a::before, #contact .contact .contact-items .contact-item .contact-info a::after {
+.contact .contact-items .contact-item .contact-info a::before, .contact .contact-items .contact-item .contact-info a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -2865,40 +2844,40 @@ hamburger
   transition: 0.25s;
   z-index: -1;
 }
-#contact .contact .contact-items .contact-item .contact-info a::before {
+.contact .contact-items .contact-item .contact-info a::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
   box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
-#contact .contact .contact-items .contact-item .contact-info a::after {
+.contact .contact-items .contact-item .contact-info a::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
   box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(221, 221, 221, 0.3), 3px 3px 3px rgba(0, 0, 0, 0.2);
   opacity: 0;
 }
 @media (min-width: 820px) {
-  #contact .contact .contact-items .contact-item .contact-info a:hover {
+  .contact .contact-items .contact-item .contact-info a:hover {
     letter-spacing: normal;
     transform: scale(0.98);
   }
-  #contact .contact .contact-items .contact-item .contact-info a:hover::before {
+  .contact .contact-items .contact-item .contact-info a:hover::before {
     opacity: 0;
   }
-  #contact .contact .contact-items .contact-item .contact-info a:hover::after {
+  .contact .contact-items .contact-item .contact-info a:hover::after {
     opacity: 1;
   }
 }
 @media (max-width: 820px) {
-  #contact .contact .contact-items .contact-item .contact-info a:active {
+  .contact .contact-items .contact-item .contact-info a:active {
     letter-spacing: normal;
     transform: scale(0.98);
   }
-  #contact .contact .contact-items .contact-item .contact-info a:active::before {
+  .contact .contact-items .contact-item .contact-info a:active::before {
     opacity: 0;
   }
-  #contact .contact .contact-items .contact-item .contact-info a:active::after {
+  .contact .contact-items .contact-item .contact-info a:active::after {
     opacity: 1;
   }
 }
-#contact .contact .contact-items .contact-item .contact-info a i {
+.contact .contact-items .contact-item .contact-info a i {
   font-size: 1rem;
   position: relative;
   transform: scale(0.7) translateX(-0.5rem);
@@ -2907,30 +2886,30 @@ hamburger
   transition: 1s ease;
   transition-delay: 0.15s;
 }
-#contact .contact .contact-items .contact-item:nth-child(1) {
+.contact .contact-items .contact-item:nth-child(1) {
   cursor: help;
 }
-#contact .contact .contact-items .contact-item:nth-child(2) {
+.contact .contact-items .contact-item:nth-child(2) {
   cursor: alias;
 }
-#contact .contact .contact-items .contact-item:nth-child(3) {
+.contact .contact-items .contact-item:nth-child(3) {
   cursor: alias;
 }
-#contact .contact .contact-items .contact-item:hover {
+.contact .contact-items .contact-item:hover {
   box-shadow: 0rem 0.25rem 0.5rem rgba(41, 50, 60, 0.2);
 }
-#contact .contact .contact-items .contact-item:hover .icon::after {
+.contact .contact-items .contact-item:hover .icon::after {
   opacity: 0;
   transition: 1s;
 }
-#contact .contact .contact-items .contact-item:hover .icon i {
+.contact .contact-items .contact-item:hover .icon i {
   opacity: 0.8;
   transform: scale(0.8);
 }
-#contact .contact .contact-items .contact-item:hover .contact-info a {
+.contact .contact-items .contact-item:hover .contact-info a {
   opacity: 1;
 }
-#contact .contact .contact-items .contact-item:hover .contact-info a i {
+.contact .contact-items .contact-item:hover .contact-info a i {
   opacity: 1;
   transform: translateY(0);
   transition: 0.25s;
@@ -4745,17 +4724,15 @@ body span {
 }
 
 section {
-  padding: 5vh 0;
   width: 100%;
 }
 section .section-title {
   font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #20262e;
-  margin: 5vh 0 10vh;
+  margin-bottom: 10vh;
   overflow: hidden;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
   font-family: "Kanit", sans-serif;
   -webkit-box-reflect: below -0.9rem linear-gradient(transparent, #0003);
 }
