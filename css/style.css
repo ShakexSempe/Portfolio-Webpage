@@ -4746,7 +4746,7 @@ section .section-title span {
   /* end of section title animations */
 }
 @keyframes section-span {
-  0% {
+  0%, 100% {
     top: 0px;
     opacity: 1;
     color: #dc143c;
@@ -4760,11 +4760,6 @@ section .section-title span {
     top: 20px;
     opacity: 0;
     color: hwb(211 28% 61%);
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-    color: #dc143c;
   }
 }
 section .section-title.io-item {

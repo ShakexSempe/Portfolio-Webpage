@@ -89,7 +89,7 @@ section {
             /* section title animations */
             @keyframes section-span {
 
-                0% {
+                0%, 100% {
                     top: 0px;
                     opacity: 1;
                     color: #dc143c;
@@ -107,11 +107,6 @@ section {
                     color: $overlay-blue-light;
                 }
 
-                100% {
-                    top: 0px;
-                    opacity: 1;
-                    color: #dc143c;
-                }
             }
 
             /* end of section title animations */
