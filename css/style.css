@@ -3924,20 +3924,11 @@ hamburger
   letter-spacing: normal;
 }
 .about .col-right .article-container article p {
-  padding-right: 0.25rem;
-  margin-bottom: 1.5rem;
-  text-overflow: ellipsis;
+  font-weight: 500;
   text-align: left;
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 500;
-  z-index: 2;
   transition: 1.5s;
-}
-.about .col-right .article-container article p span {
-  color: inherit;
-  text-transform: capitalize;
-  display: block;
 }
 @media (min-width: 768px) {
   .about .col-right .article-container article p .title-break {
@@ -3993,15 +3984,45 @@ hamburger
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .about .col-right .article-container article p i {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #485563;
   margin-right: 0.05rem;
   display: block;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .about .col-right .article-container article p i {
     font-size: 2rem;
   }
+}
+.about .col-right .article-container article .about-body {
+  margin-top: 5vh;
+}
+.about .col-right .article-container article .about-body p {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.about .col-right .article-container article .about-body p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  opacity: 0.5;
+  background: linear-gradient(90deg, #f4f4f4, #485563, #f4f4f4);
+}
+@media (min-width: 768px) {
+  .about .col-right .article-container article .about-body p::after {
+    background: linear-gradient(90deg, #485563, #f4f4f4);
+  }
+}
+.about .col-right .article-container article .about-body p span {
+  color: inherit;
+  text-transform: capitalize;
+  display: block;
 }
 .about .col-right .article-container article .about-body.io-item {
   opacity: 0;
