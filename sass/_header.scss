@@ -96,9 +96,9 @@
         }
         // DARK HEADER BACKGROUND WHEN SIDEBAR VISIBLE
         &.active-header {
-            &::after {
-                background: $overlay-blue-dark;
-            }
+            // &::after {
+            //     background: $overlay-blue-darkest;
+            // }
             #nav {
                 .logo {
                     transform: translateY(0);
@@ -240,7 +240,7 @@
                                     }
 
                                     &.active {
-                                        color: skyblue;
+                                        color: $brand;
                                     }
                                 }
 
@@ -505,8 +505,7 @@
                                 width: 0%;
                                 // opacity: 0;
                                 height: 2px;
-                                background-color: $link-gold;
-                                background-color: $link-gold;
+                                background-color: $brand;
                                 transition: .3s ease;
                             }
                             
@@ -533,7 +532,7 @@
                                 }
 
                                 &.active {
-                                    color: skyblue;
+                                    color: $brand;
                                 }
                             }
                             i {
@@ -548,7 +547,7 @@
                             &:hover {
                                 a {
                                     transition: .3s ease;
-                                    color: $link-gold;
+                                    color: $text-light;
                                 }
                                 i {
                                     transition: .3s;
