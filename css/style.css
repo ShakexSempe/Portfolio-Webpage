@@ -269,7 +269,7 @@ hamburger
   padding: 2.5vh 5vw;
   gap: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .buttons-container {
     justify-content: start;
     gap: 2rem;
@@ -2012,21 +2012,14 @@ hamburger
   font-weight: 800;
   margin-left: 1rem;
   font-size: 1rem;
-}
-.skills-section .skills .skills-cta.page-cta {
-  background: #f4f4f4;
-  color: #29323c;
-  border: 1px solid;
   transition: 0.25s;
 }
-.skills-section .skills .skills-cta.page-cta:hover {
-  transform: scale(0.98);
-  color: #dc143c;
+.skills-section .skills .skills-cta.page-cta {
+  border: none;
+  transition: 0.25s;
+  position: relative;
 }
-.skills-section .skills .skills-cta.dropbtn {
-  background: #dc143c;
-}
-.skills-section .skills .skills-cta.dropbtn::before, .skills-section .skills .skills-cta.dropbtn::after {
+.skills-section .skills .skills-cta.page-cta::before, .skills-section .skills .skills-cta.page-cta::after {
   position: absolute;
   content: "";
   z-index: -1;
@@ -2039,28 +2032,30 @@ hamburger
   outline: none;
   transition: 0.2s;
 }
-.skills-section .skills .skills-cta.dropbtn::before {
+.skills-section .skills .skills-cta.page-cta::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
   box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
-.skills-section .skills .skills-cta.dropbtn::after {
+.skills-section .skills .skills-cta.page-cta::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
   opacity: 0;
   box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0.025rem 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
 }
+.skills-section .skills .skills-cta.page-cta:hover {
+  transform: scale(0.98);
+}
+.skills-section .skills .skills-cta.dropbtn {
+  background: transparent;
+  color: #29323c;
+  border: 1px solid;
+  transition: 0.5s;
+}
 .skills-section .skills .skills-cta.dropbtn.active {
   transform: scale(0.98);
-  color: #bfbfbf;
+  border-color: transparent;
 }
 .skills-section .skills .skills-cta.dropbtn.active i {
-  color: #f4f4f4;
   transform: rotate(-180deg);
-}
-.skills-section .skills .skills-cta.dropbtn.active::before {
-  opacity: 0;
-}
-.skills-section .skills .skills-cta.dropbtn.active::after {
-  opacity: 1;
 }
 .skills-section .skills .dropdown {
   position: relative;
