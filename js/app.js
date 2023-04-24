@@ -19,6 +19,23 @@ date.forEach(date => {
   date.innerHTML = new Date().getFullYear();
 })
 // ********** END OF VARIABLES ************
+// ACTIVE PAGE CLASS TOGGLE
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('.scroll-li');
+navLinks.forEach(link => {
+  console.log(link);
+});
+
+console.log(navLinks);
+console.log(menu_item);
+navLinks.forEach(link => {
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+  }
+})
+
+
+
 
 // INTERSECTION OBSERVERS
 

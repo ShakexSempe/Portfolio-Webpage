@@ -703,7 +703,7 @@ hamburger
   border-radius: 0;
   transition: 0.2s;
 }
-@media (max-width: 1024px) {
+@media (max-width: 820px) {
   .header .navbar #nav .nav-list .links-container {
     position: absolute;
     top: 7vh;
@@ -916,7 +916,7 @@ hamburger
   transform: translate(-50%, -50%) scale(1);
   letter-spacing: initial;
 }
-@media (min-width: 1025px) {
+@media (min-width: 820px) {
   .header .navbar #nav .nav-list {
     height: 100%;
   }
@@ -973,6 +973,9 @@ hamburger
   }
   .header .navbar #nav .nav-list ul li a::after {
     display: none;
+  }
+  .header .navbar #nav .nav-list ul li a.active {
+    color: skyblue;
   }
   .header .navbar #nav .nav-list ul li i {
     display: none;
