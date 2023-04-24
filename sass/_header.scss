@@ -139,16 +139,18 @@
                     text-transform: capitalize;
                     color: $text-light;
                     background-color: $overlay-blue-dark;
+                    background-color: #000;
                     // background: $overlay-dark;
                     // border: 1px solid #fff2;
-                    padding-left: .2rem;
+                    padding-left: .25rem;
+                    padding-block: .15rem;
                     border-radius: $border-radius-sm;
                     overflow: hidden;
                     transition: .5s;
                     // text-shadow: 0 0 5px $text-shadow-red;
 
                     span {
-                        padding-right: .2rem;
+                        padding-right: .25rem;
                         background: $button-gold;
                         background: linear-gradient( #f4f4f4, #fff);
                         background: inherit;
@@ -240,11 +242,11 @@
 
                                     &.active {
                                         color: $brand;
-                                        &::after {
-                                        color: rgba(240, 248, 255, 0.05);
-                                            transform: translate(-50%, -50%) scale(1.4);
-                                            letter-spacing: initial;
-                                        }
+                                        // &::after {
+                                        // color: rgba(240, 248, 255, 0.05);
+                                        //     transform: translate(-50%, -50%) scale(1.4);
+                                        //     letter-spacing: initial;
+                                        // }
                                     }
                                 }
 

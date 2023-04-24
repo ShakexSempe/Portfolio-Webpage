@@ -29,9 +29,11 @@ $span-crimson: #dc143c;
 $span-gold: #ead2a1;
 $span-light: #fff9;
 $light-span: #fff9;
+
 $brand: hsla(0, 0%, 100%, 0.6);
 $brand: #bfbfbf;
-$brand: #a6b2bf;
+$brand: #95a6b7;
+
 $span-brand: #f72751;
 $span-violet: violet;
 $span-blue: #0000ff;
@@ -59,11 +61,11 @@ $overlay-dark: linear-gradient(0deg, hsl(214, 18%, 15%) 30% , hsl(212, 19%, 25%)
 // $overlay-dark: linear-gradient(0deg, red 30% , green 70% );
 $overlay-btn: linear-gradient(0deg, #20262e, #485563 );
 $overlay-btn-hover: linear-gradient(0deg , #485563, #20262e );
-$overlay-blue-dark:#29323c;
+$overlay-blue-dark:hsl(212, 19%, 20%);
 $overlay-blue-dark-trans:rgba(34, 41, 49, 0.9);
-$overlay-blue-darker:#20262e;
-$overlay-blue-darkest:#15191e;
-$overlay-blue-light: #485563;
+$overlay-blue-darker:hsl(214, 18%, 15%);
+$overlay-blue-darkest:hsl(213, 18%, 10%);
+$overlay-blue-light: hwb(211 28% 61%);
 $nav-background: #29323c;
 $nav-active-background: #1b2127;
 $ul-background: #1f1e1e;
