@@ -765,6 +765,9 @@ hamburger
     z-index: -1;
     transition: 0.3s ease letter-spacing;
   }
+  .header .navbar #nav .nav-list .links-container ul li a.active {
+    color: skyblue;
+  }
   .header .navbar #nav .nav-list .links-container ul li i {
     width: 2.5rem;
     text-align: center;
