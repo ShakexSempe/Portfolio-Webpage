@@ -22,17 +22,13 @@ date.forEach(date => {
 // ACTIVE PAGE CLASS TOGGLE
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('.scroll-li');
-navLinks.forEach(link => {
-  console.log(link);
-});
+console.log(activePage);
 
-console.log(navLinks);
-console.log(menu_item);
 navLinks.forEach(link => {
   if(link.href.includes(`${activePage}`)){
     link.classList.add('active');
   }
-})
+});
 
 
 
