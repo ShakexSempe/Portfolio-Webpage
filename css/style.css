@@ -1395,6 +1395,8 @@ hamburger
 }
 .banner .hero .hero-index-content span {
   color: skyblue;
+  color: #dc143c;
+  color: #bfbfbf;
 }
 .banner .hero .hero-index-content .content-title {
   margin-bottom: 25vh;
