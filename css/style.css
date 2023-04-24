@@ -361,7 +361,8 @@ hamburger
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  height: 8vh;
+  height: 6vh;
+  height: auto;
   width: 100%;
   background: linear-gradient(0deg, #000, #15191e);
   z-index: 40;
@@ -369,7 +370,7 @@ hamburger
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 0.25rem 5vw;
+  padding: 0.125rem 5vw;
   transform: translateY(15vh);
   transition: 1s;
 }
@@ -398,6 +399,8 @@ hamburger
   place-content: center;
   place-items: center;
   transition: 0.25s;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
 }
 .bottom-nav .link-item a i {
   font-size: 1.25rem;
@@ -406,7 +409,7 @@ hamburger
   transition: 0.25s;
 }
 @media (max-width: 768px) {
-  .bottom-nav .link-item:active {
+  .bottom-nav .link-item:active a {
     background: #485563;
   }
   .bottom-nav .link-item:active i {
@@ -417,7 +420,7 @@ hamburger
   .bottom-nav .link-item {
     transform: scale(1.05);
   }
-  .bottom-nav .link-item:hover {
+  .bottom-nav .link-item:hover a {
     background: #485563;
   }
   .bottom-nav .link-item:hover i {
