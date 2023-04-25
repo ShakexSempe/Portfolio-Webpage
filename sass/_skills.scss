@@ -803,7 +803,7 @@
                 object-position: 50% 5%;
                 object-fit: cover;
                 mix-blend-mode: overlay;
-                opacity: .7;
+                // opacity: .8;
                 @include md {
                     background-position: 10% 10%;
                 }

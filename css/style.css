@@ -2509,7 +2509,6 @@ hamburger
   object-position: 50% 5%;
   object-fit: cover;
   mix-blend-mode: overlay;
-  opacity: 0.7;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-2 img {
