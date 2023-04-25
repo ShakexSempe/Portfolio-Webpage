@@ -288,7 +288,7 @@ hamburger
   text-transform: capitalize;
   isolation: isolate;
   position: relative;
-  width: 100%;
+  width: max-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -331,6 +331,28 @@ hamburger
 }
 .btn.btn-secondary::after {
   background: #fafafa;
+  box-shadow: none;
+  border: none;
+}
+.btn.btn-dark {
+  color: #f4f4f4;
+}
+.btn.btn-dark::before {
+  background: linear-gradient(0deg, #20262e, #485563);
+}
+.btn.btn-dark::after {
+  background: linear-gradient(0deg, #485563, #20262e);
+}
+.btn.btn-light {
+  color: #29323d;
+}
+.btn.btn-light::before {
+  background: linear-gradient(0deg, #ddd, #f4f4f4);
+  box-shadow: none;
+  border: 1px solid #29323d;
+}
+.btn.btn-light::after {
+  background: linear-gradient(0deg, #f4f4f4, #ddd);
   box-shadow: none;
   border: none;
 }
@@ -2431,28 +2453,10 @@ hamburger
 .skill-section .skill-section-title ul li::marker {
   color: #b3bfcb;
 }
-.skill-section .skill-section-title .button {
-  display: flex;
-  justify-content: space-between;
-  text-transform: capitalize;
-  color: #f4f4f4;
-  width: 8rem;
-  width: clamp(10rem, 35vw, 12rem);
-  margin: 1rem 0;
-  padding: 0.8rem 1rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.skill-section .skill-section-title .button.button-dark {
-  background: linear-gradient(0deg, #ddd, #fff);
-  color: #1f252d;
+.skill-section .skill-section-title .btn {
+  margin-top: 1rem;
+  width: 10rem;
   font-weight: 600;
-}
-.skill-section .skill-section-title .button.button-light {
-  background: linear-gradient(0deg, #20262e, #485563);
-  color: #f4f4f4;
-  font-weight: 600;
-  border: 1px solid #1f252d;
 }
 .skill-section .skill-section-title img {
   position: absolute;

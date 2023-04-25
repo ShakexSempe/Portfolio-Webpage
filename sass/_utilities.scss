@@ -328,7 +328,7 @@ hamburger
     text-transform: capitalize;
     isolation: isolate;
     position: relative;
-    width: 100%;
+    width: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,6 +375,29 @@ hamburger
             border: none;
         }
     }
+    &.btn-dark {
+        color: $text-light;
+        &::before {
+            background: $overlay-btn;
+        }
+        &::after {
+            background: $overlay-btn-hover;
+        }
+    }
+    &.btn-light {
+        color: $overlay-blue-dark;
+        &::before {
+            background: $button-light;
+            box-shadow: none;
+            border: 1px solid $overlay-blue-dark;
+        }
+        &::after {
+            background: $button-light-hover;
+            box-shadow: none;
+            border: none;
+        }
+    }
+    
 
     // HOVER AND ACTIVE CLASS MEDIA QUERY
     @media (min-width: 820px) {

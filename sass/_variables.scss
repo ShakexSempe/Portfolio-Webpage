@@ -25,16 +25,14 @@ $border-radius-md: .5rem;
 $border-radius-lg: 1rem;
 $border-radius-xlg: 50%;
 // SPAN AND BRAND
+
+$brand: hsl(210, 19%, 75%);
+$brand-border: hsla(210, 19%, 75%, .5);
+
 $span-crimson: #dc143c;
 $span-gold: #ead2a1;
 $span-light: #fff9;
 $light-span: #fff9;
-
-$brand: hsla(0, 0%, 100%, 0.6);
-$brand: #bfbfbf;
-$brand: hsl(210, 19%, 75%);
-$brand-border: hsla(210, 19%, 75%, .5);
-
 $span-brand: #f72751;
 $span-violet: violet;
 $span-blue: #0000ff;
@@ -75,9 +73,11 @@ $overlay-footer: linear-gradient(0deg, #15191e, #20262e);
 $overlay-footer: linear-gradient(0deg, #000, #15191e);
 $skill-item-overlay: linear-gradient(90deg, $overlay-blue-darker 0%, $overlay-blue-dark 100%);
 
-// button colors
+// BUTTON COLORS
 $button-background-grey: #8584844b;
 $button-crimson: linear-gradient(0deg, #3f0d0d, #dc134c);
+$button-light: linear-gradient(0deg, #ddd, #f4f4f4);
+$button-light-hover: linear-gradient(0deg, #f4f4f4, #ddd);
 $button-crimson: linear-gradient(0deg, hsl(348, 83%, 25%), hsl(343, 84%, 47%));
 $button-crimson-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
 $button-crimson-hover: linear-gradient(0deg, #dc134c , hsl(348, 83%, 25%));
