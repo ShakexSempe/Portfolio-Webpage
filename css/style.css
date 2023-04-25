@@ -2449,7 +2449,7 @@ hamburger
   font-weight: 600;
 }
 .skill-section .skill-section-title .button.button-light {
-  background: red;
+  background: linear-gradient(0deg, #20262e, #485563);
   color: #f4f4f4;
   font-weight: 600;
   border: 1px solid #1f252d;
