@@ -785,13 +785,24 @@
   </figure>
 </div>
 
-<!-- PRELOADER SCRIPT -->
+  <!-- ACTIVE PAGE CLASS TOGGLE -->
+  <script>
+    const activePage = window.location.pathname;
+    const navLinks = document.querySelectorAll('.scroll-li');
+    console.log(activePage);
 
-<script>
-  setTimeout(function () {
-    $('.loader_bg').fadeToggle();
-  }, 5000);
-</script>
-</body>
+    navLinks.forEach(link => {
+      if (link.href.includes(`${activePage}`)) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  <!-- PRELOADER SCRIPT -->
+  <script>
+    setTimeout(function () {
+      $('.loader_bg').fadeToggle();
+    }, 5000);
+  </script>
+  </body>
 
 </html>
