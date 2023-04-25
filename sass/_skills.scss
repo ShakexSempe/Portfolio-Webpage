@@ -727,12 +727,29 @@
             margin-top: 1rem;
             padding: 0 1rem;
             li {
+                padding-bottom: .25rem;
                 &::marker {
                     color: $brand;
                 }
             }
         }
+        a {
+            display: flex;
+            justify-content: space-between;
+            text-transform: capitalize;
+            color: $text-light;
+            width: 8rem;
+            width: clamp(10rem, 35vw, 12rem);
+            margin: 1rem 0;
+            padding: .8rem 1rem;
+            background: $button-crimson;
+            border-radius: .25rem;
+            box-shadow: 0 .15rem .25rem hsla(348, 83%, 47%, .1) , 0 .5rem .5rem rgba(0, 0, 0, .2);
 
+            // position: absolute;
+            // bottom: 10vh;
+            // left: 5vw;
+        }
         img {
             // border: 2px solid red;
             position: absolute;
@@ -785,7 +802,7 @@
                 object-position: 50% 5%;
                 object-fit: cover;
                 mix-blend-mode: overlay;
-                opacity: .9;
+                opacity: .7;
                 @include md {
                     background-position: 10% 10%;
                 }
