@@ -2429,7 +2429,7 @@ hamburger
 .skill-section .skill-section-title ul li::marker {
   color: #b3bfcb;
 }
-.skill-section .skill-section-title a {
+.skill-section .skill-section-title .button {
   display: flex;
   justify-content: space-between;
   text-transform: capitalize;
@@ -2438,9 +2438,18 @@ hamburger
   width: clamp(10rem, 35vw, 12rem);
   margin: 1rem 0;
   padding: 0.8rem 1rem;
-  background: linear-gradient(0deg, #750b20, #dd134c);
   border-radius: 0.25rem;
   box-shadow: 0 0.15rem 0.25rem rgba(219, 20, 60, 0.1), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.skill-section .skill-section-title .button.button-dark {
+  background: linear-gradient(0deg, #ddd, #fff);
+  color: #1f252d;
+  font-weight: 600;
+}
+.skill-section .skill-section-title .button.button-light {
+  background: linear-gradient(0deg, #15191e, hwb(211 28% 61%));
+  color: #f4f4f4;
+  font-weight: 600;
 }
 .skill-section .skill-section-title img {
   position: absolute;
