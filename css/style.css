@@ -2498,15 +2498,16 @@ hamburger
   }
 }
 .skill-section .skill-section-title.section-title-3 {
+  background: linear-gradient(140deg, #fff 40%, #fafafa);
   background: #f4f4f4;
-  height: 70vh;
+  height: 80vh;
 }
 .skill-section .skill-section-title.section-title-3 img {
-  background-size: cover;
-  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: 95% 5%;
   mix-blend-mode: overlay;
   mix-blend-mode: darken;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-3::after {

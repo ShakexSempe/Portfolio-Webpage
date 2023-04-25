@@ -804,14 +804,17 @@
             }
         }
         &.section-title-3 {
+            background: linear-gradient(140deg, #fff 40%, #fafafa);
             background: #f4f4f4;
-            height: 70vh;
+
+            height: 80vh;
             img {
-                background-size: cover;
-                background-repeat: no-repeat;
+                object-fit: cover;
+                object-position: 95% 5%;
                 mix-blend-mode: overlay;
                 mix-blend-mode: darken;
-                opacity: .4;
+                
+                opacity: .3;
             }
             @include md {
                 &::after {
