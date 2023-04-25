@@ -2442,7 +2442,7 @@ hamburger
   margin: 1rem 0;
   padding: 0.8rem 1rem;
   border-radius: 0.25rem;
-  box-shadow: 0 0.15rem 0.25rem rgba(219, 20, 60, 0.1), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 .skill-section .skill-section-title .button.button-dark {
   background: linear-gradient(0deg, #ddd, #fff);
