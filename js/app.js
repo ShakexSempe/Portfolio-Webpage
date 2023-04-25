@@ -27,8 +27,6 @@ console.log(activePage);
 navLinks.forEach(link => {
   if(link.href.includes(`${activePage}`)){
     link.classList.add('active');
-  } else {
-    link.classList.remove('active')
   }
 });
 
@@ -161,23 +159,6 @@ progressBar = () => {
 }
 // end of page progress bar
 
-//  SKILLS DROPDOWN
-/*  When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-
-//  Close the dropdown menu if the user clicks outside of it
-// window.onclick = function (event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
 // end of skills dropdown
 // SKILLS DROPDOWN BUTTON
 const dropBtn = document.querySelector('[data-dropBtn]');

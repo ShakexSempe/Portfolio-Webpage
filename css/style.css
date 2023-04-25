@@ -401,12 +401,13 @@ hamburger
   place-items: center;
   transition: 0.25s;
   padding: 0.5rem 2rem;
+  transition: 0.25s;
   border-radius: 0.5rem;
 }
 .bottom-nav .link-item a i {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff9;
+  color: #b3bfcb;
   transition: 0.25s;
 }
 @media (max-width: 768px) {
@@ -422,6 +423,10 @@ hamburger
     transform: scale(1.05);
   }
   .bottom-nav .link-item:hover a {
+    border: 1px solid #b3bfcb;
+  }
+  .bottom-nav .link-item:hover a:hover {
+    border: none;
     background: hwb(211 28% 61%);
   }
   .bottom-nav .link-item:hover i {
@@ -4399,10 +4404,10 @@ hamburger
   margin-bottom: 1rem;
 }
 #footer .footer .footer-bottom .footer-item .date {
-  color: #eee;
+  color: #b3bfcb;
 }
 #footer .footer .footer-bottom .footer-item p {
-  color: #fff;
+  color: #f4f4f4;
   text-transform: capitalize;
   line-height: 1.6;
 }
@@ -4414,15 +4419,15 @@ hamburger
 }
 #footer .footer .footer-bottom .footer-item .footer-list li i {
   width: 1.5rem;
-  color: #b3bfcb;
   transition: 0.25s;
+  color: #ddd;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li a {
-  color: #fff;
+  color: #f4f4f4;
   cursor: pointer;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li:hover i {
-  color: #fff;
+  color: #b3bfcb;
   transform: translateX(0.25rem);
 }
 #footer .footer .footer-bottom .footer-item .footer-list.browse-list {

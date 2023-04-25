@@ -380,11 +380,11 @@
                     margin-bottom: 1rem;
                 }
                 .date {
-                    color: #eee;
+                    color: $brand;
                 }
 
                 p {
-                    color: #fff;
+                    color: $text-light;
                     text-transform: capitalize;
                     line-height: 1.6;
                 }
@@ -394,17 +394,17 @@
                         margin-bottom: .5rem;
                         i {
                             width: 1.5rem;
-                            color: $brand;
                             transition: .25s;
+                            color: #ddd;
                         }
                         a {
-                            color: #fff;
+                            color: $text-light;
                             cursor: pointer;
                         }
-
+                        
                         &:hover {
                             i {
-                                color: #fff;
+                                color: $brand;
                                 transform: translateX(.25rem);
                             }
                         }

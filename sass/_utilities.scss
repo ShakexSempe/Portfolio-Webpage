@@ -442,13 +442,14 @@ hamburger
             place-items: center;
             transition: .25s;
             padding: .5rem 2rem;
+            transition: .25s;
             // border: 2px solid red;
             border-radius: .5rem;
             // width: 100%;
             i {
                 font-size: 1.2rem;
                 font-weight: 700;
-                color: $light-span;
+                color: $brand;
                 transition: .25s;
             }
         }
@@ -457,7 +458,6 @@ hamburger
 
         @media (max-width: 768px) {
             &:active {
-                
                 a {
                     background: $overlay-blue-light;
                 }
@@ -472,7 +472,13 @@ hamburger
 
             &:hover {
                 a {
-                    background: $overlay-blue-light;
+                    border: 1px solid $brand;
+                    
+                    &:hover {
+                        border: none;
+                        background: $overlay-blue-light;
+                        
+                    }
 
                 }
                 i {
