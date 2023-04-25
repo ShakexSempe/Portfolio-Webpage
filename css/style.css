@@ -691,6 +691,7 @@ hamburger
   color: #f4f4f4;
   background-color: #29323d;
   background-color: #000;
+  border: 1px solid #fff4;
   padding-left: 0.25rem;
   padding-block: 0.15rem;
   border-radius: 0.25rem;
@@ -1887,9 +1888,6 @@ hamburger
 }
 
 .skills-section {
-  padding: 10vh 0;
-}
-.skills-section.skills-section-page {
   padding: 10vh 0 0;
 }
 .skills-section .skills-header {
@@ -2356,20 +2354,8 @@ hamburger
 .skills-section .skills-content .skills-items .skills-item:hover .icon i, .skills-section .skills-content .skills-items .skills-item:hover .icon svg, .skills-section .skills-content .skills-items .skills-item:hover .icon img {
   filter: drop-shadow(0rem 0.25rem 0.15rem #0008);
 }
-.skills-section .skills-content .io-container {
-  width: 100%;
-}
-.skills-section .skills-content .io-container.io-item .skills-intro, .skills-section .skills-content .io-container.io-item .dropdown {
-  opacity: 0;
-  transform: translateY(1rem);
-  transition: 1s;
-}
-.skills-section .skills-content .io-container.active-item .skills-intro, .skills-section .skills-content .io-container.active-item .dropdown {
-  opacity: 1;
-  transform: translateY(0);
-}
-.skills-section .skills-content .io-container.active-item .dropdown {
-  transition-delay: 0.25s;
+.skills-section.skills-page-section {
+  padding: 10vh 0;
 }
 
 .skill-section-container {
@@ -2382,12 +2368,11 @@ hamburger
 }
 
 .skill-section {
-  padding-bottom: 10vh;
   background: #15191e;
   color: #fff;
 }
 .skill-section .skill-section-title {
-  margin-bottom: 10vh;
+  border-bottom: 0.125rem solid #b3bfcb;
   padding: 5vh 5vw;
   position: relative;
   isolation: isolate;
@@ -2539,7 +2524,7 @@ hamburger
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title.section-title-4 {
-    background: #f4f4f4;
+    background: #fafafa;
   }
   .skill-section .skill-section-title.section-title-4::after {
     background-image: url("../img/liana-mikah-sK1nYjXcXCY-unsplash.jpg");
@@ -2636,6 +2621,12 @@ hamburger
 }
 .skill-section.light-section .skill-section-content ul li {
   border-bottom: 1px solid #ddd;
+}
+.skill-section.page-skill-section {
+  padding-bottom: 10vh;
+}
+.skill-section.page-skill-section .skill-section-title {
+  margin-bottom: 10vh;
 }
 
 .contact {
@@ -3158,7 +3149,7 @@ hamburger
   min-height: 100vh;
   padding: 10vh 5vw 10vh;
   background: #fff;
-  background: #f4f4f4;
+  background: #fafafa;
 }
 @media (min-width: 768px) {
   .work {

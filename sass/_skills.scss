@@ -1,10 +1,8 @@
 // skills
 .skills-section {
     // border: 3px solid red;
-    padding: 10vh 0;
-    &.skills-section-page {
-        padding: 10vh 0 0;
-    }
+    padding: 10vh 0 0;
+    
     .skills-header {
         // border: 2px solid red;
         padding: 0 5vw;
@@ -651,29 +649,11 @@
         }
         // skills items container
         // SECTION IO TRANSITIONS 
-        .io-container {
-            width: 100%;
-            // border: 1px solid red;
-            &.io-item {
-                .skills-intro, .dropdown {
-                    opacity: 0;
-                    transform: translateY(1rem);
-                    transition: 1s;
-                }
-            }
-            &.active-item {
-                .skills-intro, .dropdown {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-
-                .dropdown {
-                    transition-delay: .25s;
-                }
-            }
-        }
+        
     }
-    
+    &.skills-page-section {
+        padding: 10vh 0;
+    }
 }
 
 .skill-section-container {
@@ -687,7 +667,6 @@
 .skill-section {
     // border: 3px solid yellow;    
     // padding: 5vh 5vw;
-    padding-bottom: 10vh;
     // min-height: 100vh;
     background: $overlay-blue-darkest;
     color: #fff;
@@ -695,7 +674,7 @@
 
     .skill-section-title {
         // border: 1px solid red;
-        margin-bottom: 10vh;
+        border-bottom: .125rem solid $brand;
         padding: 5vh 5vw;
         position: relative;
         isolation: isolate;
@@ -850,7 +829,7 @@
                 opacity: .5;
             }
             @include md {
-                background: #f4f4f4;
+                background: #fafafa;
                 &::after {
                     background-image: url('../img/liana-mikah-sK1nYjXcXCY-unsplash.jpg');
                     background-position: bottom right;
@@ -969,6 +948,16 @@
                     border-bottom: 1px solid #ddd;
                 }
             }
+        }
+    }
+
+    &.page-skill-section {
+        // border: 5px solid purple;
+        padding-bottom: 10vh;
+
+
+        .skill-section-title {
+            margin-bottom: 10vh;
         }
     }
 }
