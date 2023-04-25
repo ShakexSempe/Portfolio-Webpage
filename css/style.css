@@ -4016,7 +4016,7 @@ hamburger
   left: 0;
   width: 100%;
   height: 0.1rem;
-  opacity: 0.5;
+  opacity: 0.4;
   background: linear-gradient(90deg, #f4f4f4, hwb(211 28% 61%), #f4f4f4);
 }
 @media (min-width: 768px) {
