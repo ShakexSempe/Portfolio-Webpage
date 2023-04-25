@@ -756,6 +756,7 @@
                 background: linear-gradient(0deg, $overlay-blue-darkest, $overlay-blue-light);
                 color: $text-light;
                 font-weight: 600;
+                border: 1px solid $overlay-blue-darker;
             }
         }
         img {

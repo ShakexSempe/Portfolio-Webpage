@@ -2453,6 +2453,7 @@ hamburger
   background: linear-gradient(0deg, #15191e, hwb(211 28% 61%));
   color: #f4f4f4;
   font-weight: 600;
+  border: 1px solid #1f252d;
 }
 .skill-section .skill-section-title img {
   position: absolute;
