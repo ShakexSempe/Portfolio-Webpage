@@ -138,9 +138,8 @@
                     font-weight: 400;
                     text-transform: capitalize;
                     color: $text-light;
-                    background-color: $overlay-blue-dark;
-                    background-color: #000;
-                    border: 1px solid #fff4;
+                    background-color: $overlay-blue-darkest;
+                    border: 1px solid $brand-border;
                     // background: $overlay-dark;
                     // border: 1px solid #fff2;
                     padding-left: .25rem;
