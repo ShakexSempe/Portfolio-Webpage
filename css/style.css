@@ -3363,7 +3363,7 @@ hamburger
   opacity: 0;
 }
 .work .work-container .item .item-header .item-cta a.cta-secondary {
-  border: 1px solid hwb(211 28% 61%);
+  border: 1px solid #29323d;
   color: #1f252d;
 }
 .work .work-container .item .item-header .item-cta a.cta-secondary i {
