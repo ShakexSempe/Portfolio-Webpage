@@ -680,8 +680,8 @@
         isolation: isolate;
         height: 90vh;
         background: $overlay-blue-dark;
-        background: linear-gradient(140deg, yellow 20%, red);
-        background: linear-gradient(140deg, $overlay-blue-darkest 20%, transparent);
+        background: linear-gradient(140deg, yellow 40%, red);
+        background: linear-gradient(140deg, $overlay-blue-darkest 40%, transparent);
         @include md {
             padding: 20vh 5vw 10vh;
             height: 85vh;
@@ -722,6 +722,17 @@
             }
         }
 
+        ul {
+            // border: 2px solid red;
+            margin-top: 1rem;
+            padding: 0 1rem;
+            li {
+                &::marker {
+                    color: $brand;
+                }
+            }
+        }
+
         img {
             // border: 2px solid red;
             position: absolute;
@@ -754,6 +765,7 @@
                 }
             }
             @include md {
+                height: 90vh;
                 &::after {
                     background-image: url('../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg');
                     background-size: contain;
@@ -795,8 +807,6 @@
             background: #f4f4f4;
             height: 70vh;
             img {
-                background-position: 20%;
-                background-size: contain;
                 background-size: cover;
                 background-repeat: no-repeat;
                 mix-blend-mode: overlay;
@@ -937,6 +947,11 @@
         .skill-section-title {
             p {
                 font-weight: 500;
+            }
+            ul {
+                li {
+                    font-weight: 600;
+                }
             }
         }
         .skill-section-content {

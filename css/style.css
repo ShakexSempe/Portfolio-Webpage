@@ -2378,8 +2378,8 @@ hamburger
   isolation: isolate;
   height: 90vh;
   background: #29323d;
-  background: linear-gradient(140deg, yellow 20%, red);
-  background: linear-gradient(140deg, #15191e 20%, transparent);
+  background: linear-gradient(140deg, yellow 40%, red);
+  background: linear-gradient(140deg, #15191e 40%, transparent);
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title {
@@ -2419,6 +2419,13 @@ hamburger
     font-size: 1.15rem;
   }
 }
+.skill-section .skill-section-title ul {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.skill-section .skill-section-title ul li::marker {
+  color: #b3bfcb;
+}
 .skill-section .skill-section-title img {
   position: absolute;
   top: 0;
@@ -2451,6 +2458,9 @@ hamburger
   }
 }
 @media (min-width: 768px) {
+  .skill-section .skill-section-title.section-title-1 {
+    height: 90vh;
+  }
   .skill-section .skill-section-title.section-title-1::after {
     background-image: url("../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg");
     background-size: contain;
@@ -2492,8 +2502,6 @@ hamburger
   height: 70vh;
 }
 .skill-section .skill-section-title.section-title-3 img {
-  background-position: 20%;
-  background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
   mix-blend-mode: overlay;
@@ -2615,6 +2623,9 @@ hamburger
 }
 .skill-section.light-section .skill-section-title p {
   font-weight: 500;
+}
+.skill-section.light-section .skill-section-title ul li {
+  font-weight: 600;
 }
 .skill-section.light-section .skill-section-content .skill-article {
   background: #fff;
