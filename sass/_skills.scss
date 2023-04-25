@@ -669,12 +669,14 @@
     // padding: 5vh 5vw;
     // min-height: 100vh;
     background: $overlay-blue-darkest;
-    color: #fff;
-    
+    color: $text-light;
+    border-bottom: .125rem solid $brand;
+    &:last-of-type {
+        border-bottom: none;
+    }
 
     .skill-section-title {
         // border: 1px solid red;
-        border-bottom: .125rem solid $brand;
         padding: 5vh 5vw;
         position: relative;
         isolation: isolate;

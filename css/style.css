@@ -2369,10 +2369,13 @@ hamburger
 
 .skill-section {
   background: #15191e;
-  color: #fff;
+  color: #f4f4f4;
+  border-bottom: 0.125rem solid #b3bfcb;
+}
+.skill-section:last-of-type {
+  border-bottom: none;
 }
 .skill-section .skill-section-title {
-  border-bottom: 0.125rem solid #b3bfcb;
   padding: 5vh 5vw;
   position: relative;
   isolation: isolate;
