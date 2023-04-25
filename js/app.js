@@ -25,7 +25,7 @@ const navLinks = document.querySelectorAll('.scroll-li');
 console.log(activePage);
 
 navLinks.forEach(link => {
-  if(link.href.includes(`${activePage}`)){
+  if(!link.href.includes('') && link.href.includes(`${activePage}`)){
     link.classList.add('active');
   }
 });
