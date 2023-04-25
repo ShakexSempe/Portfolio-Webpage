@@ -162,17 +162,16 @@ progressBar = () => {
 // end of skills dropdown
 // SKILLS DROPDOWN BUTTON
 const dropBtn = document.querySelector('[data-dropBtn]');
-dropBtn.addEventListener("click", () => {
-  dropBtn.classList.toggle("active");
-});
+// dropBtn.addEventListener("click", () => {
+//   dropBtn.classList.toggle("active");
+// });
 let closeBtn = document.getElementById('top-btn');
-closeBtn.addEventListener("click", ()=> {
-  document.getElementById("myDropdown").classList.remove("show");
-  dropBtn.classList.remove("active");
-})
+// closeBtn.addEventListener("click", ()=> {
+//   document.getElementById("myDropdown").classList.remove("show");
+//   dropBtn.classList.remove("active");
+// })
 dropdown = () => {
   document.getElementById("myDropdown").classList.toggle("show");
-
 }
 // READ MORE DROPDOWN
 // readBtn.addEventListener("click", ()=> {
