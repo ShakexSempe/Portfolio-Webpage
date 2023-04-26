@@ -3983,38 +3983,38 @@ hamburger
   padding-bottom: 0.5rem;
   margin-bottom: 5vh;
   position: relative;
+  border-bottom: 1px solid #b3bfcb;
+}
+@media (min-width: 820px) {
+  .about .col-right .article-container article .article-body .body-item {
+    margin-bottom: 10vh;
+  }
 }
 .about .col-right .article-container article .article-body .body-item i {
   font-size: 2rem;
   margin-bottom: 0.25rem;
+  color: #29323d;
 }
 .about .col-right .article-container article .article-body .body-item .body-item-title {
+  color: #29323d;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 4vw, 1.125rem);
 }
+.about .col-right .article-container article .article-body .body-item p {
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
 .about .col-right .article-container article .article-body .body-item a {
   display: block;
   color: inherit;
-  margin-bottom: 1rem;
 }
 .about .col-right .article-container article .article-body .body-item a:hover {
   color: #dc143c;
 }
-.about .col-right .article-container article .article-body .body-item p {
-  font-weight: 500;
-}
-.about .col-right .article-container article .article-body .body-item::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 0.5rem;
-  height: 0.1rem;
-  opacity: 0.4;
-  background: linear-gradient(90deg, #f4f4f4, hwb(211 28% 61%), #f4f4f4);
-  background: linear-gradient(90deg, #00001a, hwb(0 96% 4%));
+.about .col-right .article-container article .article-body .body-item a i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
 .about .col-right:hover #cv-download {
   transition: 1s ease;
