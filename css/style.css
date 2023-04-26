@@ -558,7 +558,7 @@ hamburger
   animation-timing-function: ease-in-out;
 }
 .loader_bg .spinner .sector.sector-2 {
-  border-right-color: #ead2a1;
+  border-right-color: #b3bfcb;
   animation-duration: 2s;
   animation-timing-function: ease-in;
 }
