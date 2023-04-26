@@ -959,6 +959,11 @@
     &.light-section {
         background: #f4f4f4;
         color: $overlay-blue-dark;
+        border-bottom: .125rem solid $overlay-blue-light;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
         .skill-section-title {
             p {
                 font-weight: 500;

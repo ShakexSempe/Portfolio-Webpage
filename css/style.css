@@ -2648,6 +2648,10 @@ hamburger
 .skill-section.light-section {
   background: #f4f4f4;
   color: #29323d;
+  border-bottom: 0.125rem solid hwb(211 28% 61%);
+}
+.skill-section.light-section:last-of-type {
+  border-bottom: none;
 }
 .skill-section.light-section .skill-section-title p {
   font-weight: 500;
