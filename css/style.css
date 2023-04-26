@@ -3800,8 +3800,6 @@ hamburger
   display: flex;
   flex-direction: column-reverse;
   gap: 5vh;
-  text-align: center;
-  margin: 0 auto;
   padding: 10vh 5vw;
   background-color: #fff;
   position: relative;
@@ -3931,7 +3929,7 @@ hamburger
   transform: scale(0.97);
   letter-spacing: normal;
 }
-.about .col-right .article-container article p {
+.about .col-right .article-container article .about-intro p {
   font-weight: 500;
   text-align: left;
   font-size: 1rem;
@@ -3939,16 +3937,16 @@ hamburger
   transition: 1.5s;
 }
 @media (min-width: 768px) {
-  .about .col-right .article-container article p .title-break {
+  .about .col-right .article-container article .about-intro p .title-break {
     display: none;
   }
 }
-.about .col-right .article-container article p .item-title {
+.about .col-right .article-container article .about-intro p .item-title {
   font-weight: 600;
   color: #1f252d;
   display: block;
 }
-.about .col-right .article-container article p a {
+.about .col-right .article-container article .about-intro p a {
   background-color: #f4f4f4;
   color: #1f252d;
   font-weight: 500;
@@ -3957,30 +3955,30 @@ hamburger
   border-radius: 0.25rem;
   transition: 0.2s;
 }
-.about .col-right .article-container article p a.cv {
+.about .col-right .article-container article .about-intro p a.cv {
   background-color: #1f252d;
   color: #f4f4f4;
   padding: 0 0.25rem;
 }
-.about .col-right .article-container article p a.cv:hover {
+.about .col-right .article-container article .about-intro p a.cv:hover {
   color: #b3bfcb;
 }
 @media (max-width: 820px) {
-  .about .col-right .article-container article p a:active {
+  .about .col-right .article-container article .about-intro p a:active {
     color: #b3bfcb;
     background: #15191e;
   }
 }
 @media (min-width: 820px) {
-  .about .col-right .article-container article p a:hover {
+  .about .col-right .article-container article .about-intro p a:hover {
     color: #b3bfcb;
     background: #15191e;
   }
 }
-.about .col-right .article-container article p.intro {
+.about .col-right .article-container article .about-intro p.intro {
   font-weight: 500;
 }
-.about .col-right .article-container article p.intro.intro::first-letter {
+.about .col-right .article-container article .about-intro p.intro.intro::first-letter {
   font-size: 2rem;
   font-size: clamp(2rem, 5vw, 2.25rem);
   float: left;
@@ -3991,7 +3989,7 @@ hamburger
   border-radius: 0.25rem;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-.about .col-right .article-container article p i {
+.about .col-right .article-container article .about-intro p i {
   font-size: 2rem;
   color: hwb(211 28% 61%);
   margin-right: 0.05rem;
@@ -3999,9 +3997,47 @@ hamburger
   margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
-  .about .col-right .article-container article p i {
+  .about .col-right .article-container article .about-intro p i {
     font-size: 2rem;
   }
+}
+.about .col-right .article-container article .buttons-container {
+  padding: 0;
+  margin: 1rem 0;
+}
+.about .col-right .article-container article .article-body {
+  color: #1f252d;
+  margin-top: 5vh;
+}
+.about .col-right .article-container article .article-body .body-item {
+  padding-bottom: 0.5rem;
+  margin-bottom: 5vh;
+  position: relative;
+}
+.about .col-right .article-container article .article-body .body-item i {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+.about .col-right .article-container article .article-body .body-item .body-item-title {
+  margin-bottom: 0.5rem;
+}
+.about .col-right .article-container article .article-body .body-item a {
+  color: inherit;
+}
+.about .col-right .article-container article .article-body .body-item a:hover {
+  color: #dc143c;
+}
+.about .col-right .article-container article .article-body .body-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 0.1rem;
+  opacity: 0.4;
+  background: linear-gradient(90deg, #f4f4f4, hwb(211 28% 61%), #f4f4f4);
+  background: linear-gradient(90deg, hwb(211 28% 61%), #f4f4f4);
 }
 .about .col-right .article-container article .about-body {
   margin-top: 5vh;
