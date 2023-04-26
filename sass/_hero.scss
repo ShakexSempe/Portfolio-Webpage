@@ -444,6 +444,9 @@
             .content-title {
                 // border: 2px solid pink;
                 margin-bottom: 25vh;
+                @include lg {
+                    margin-bottom: 20vh;
+                }
                 h1 {
                     font-size: 1rem;
                     font-size: clamp(1rem, 2vw, 1.2rem);
@@ -469,9 +472,13 @@
     
                 .cta {
                     width: 12rem;
+                    // border: 2px solid yellow;
                     margin-top: 1rem;
-    
+                    @include lg {
+                        width: 14rem;
+                    }
                     .btn {
+                        width: 100%;
                         color: #fff;
                         padding: 1rem;
                         font-weight: 600;

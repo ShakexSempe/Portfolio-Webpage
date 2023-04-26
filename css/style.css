@@ -1404,6 +1404,11 @@ hamburger
 .banner .hero .hero-index-content .content-title {
   margin-bottom: 25vh;
 }
+@media (min-width: 820px) {
+  .banner .hero .hero-index-content .content-title {
+    margin-bottom: 20vh;
+  }
+}
 .banner .hero .hero-index-content .content-title h1 {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.2rem);
@@ -1424,7 +1429,13 @@ hamburger
   width: 12rem;
   margin-top: 1rem;
 }
+@media (min-width: 820px) {
+  .banner .hero .hero-index-content .content-value .cta {
+    width: 14rem;
+  }
+}
 .banner .hero .hero-index-content .content-value .cta .btn {
+  width: 100%;
   color: #fff;
   padding: 1rem;
   font-weight: 600;
