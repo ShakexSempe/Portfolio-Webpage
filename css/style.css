@@ -394,7 +394,7 @@ hamburger
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 0.125rem 5vw;
+  padding: 0.5rem 5vw;
   transform: translateY(15vh);
   transition: 1s;
 }
@@ -432,6 +432,11 @@ hamburger
   font-weight: 700;
   color: #b3bfcb;
   transition: 0.25s;
+}
+@media (min-width: 820px) {
+  .bottom-nav .link-item a {
+    padding: 0.5rem 5rem;
+  }
 }
 @media (max-width: 768px) {
   .bottom-nav .link-item:active a {
@@ -2753,11 +2758,6 @@ hamburger
   border-radius: 0.5rem;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}
-@media (min-width: 576px) {
-  .contact .contact-items .contact-item .title {
-    border-radius: 0.5rem;
-  }
 }
 @media (min-width: 768px) {
   .contact .contact-items .contact-item .title {

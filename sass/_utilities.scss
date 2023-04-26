@@ -437,7 +437,7 @@ hamburger
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: .125rem 5vw;
+    padding: .5rem 5vw;
     transform: translateY(15vh);
     transition: 1s;
 
@@ -475,6 +475,10 @@ hamburger
                 font-weight: 700;
                 color: $brand;
                 transition: .25s;
+            }
+            @include lg {
+            padding: .5rem 5rem;
+
             }
         }
 
