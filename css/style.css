@@ -16,7 +16,7 @@
 .btn-bg::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
   background: yellow;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .btn-bg::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -200,7 +200,7 @@ hamburger
 }
 .top-link::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .top-link::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -306,7 +306,7 @@ hamburger
   z-index: -1;
 }
 .btn::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.3));
 }
 .btn::after {
@@ -1319,7 +1319,7 @@ hamburger
   outline: none;
 }
 .banner .hero .hero-cta::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, #750b20, #dd134c);
 }
 .banner .hero .hero-cta::after {
@@ -1634,7 +1634,7 @@ hamburger
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 #menu .menu-section .menu-content .menu-cta .page-btn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -2052,7 +2052,7 @@ hamburger
 }
 .skills-section .skills-content .skills-cta.page-cta::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .skills-section .skills-content .skills-cta.page-cta::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -2221,7 +2221,7 @@ hamburger
   border-radius: 0.5rem;
   opacity: 0.8;
   z-index: -1;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .skills-section .skills-content .skills-page-container .skills-bottom .skills-item .icon {
   display: grid;
@@ -2871,7 +2871,7 @@ hamburger
 }
 .contact .contact-items .contact-item .contact-info a::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .contact .contact-items .contact-item .contact-info a::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3400,7 +3400,7 @@ hamburger
 }
 .work .work-container .item .item-header .item-cta a.cta-primary::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .work .work-container .item .item-header .item-cta a.cta-primary::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3757,7 +3757,7 @@ hamburger
 }
 .work .work-items .work-item .view-site-btn::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .work .work-items .work-item .view-site-btn::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
@@ -3865,7 +3865,7 @@ hamburger
   position: absolute;
   opacity: 0;
   z-index: 20;
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .about .col-right .about-title h2 {
   display: inline-block;
@@ -3905,7 +3905,7 @@ hamburger
 }
 .about .col-right button {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   color: #fff;
   margin: 1rem auto;
   padding: 0.7rem;
@@ -4269,7 +4269,7 @@ hamburger
   z-index: -1;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a::after {
   opacity: 0;
@@ -4678,7 +4678,7 @@ form button::before, form button::after {
 }
 form button::before {
   background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.1), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 form button::after {
   background: linear-gradient(0deg, #dc134c, #750b20);
