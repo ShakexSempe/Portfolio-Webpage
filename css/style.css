@@ -4008,12 +4008,17 @@ hamburger
 .about .col-right .article-container article .article-body .body-item a {
   color: inherit;
 }
-.about .col-right .article-container article .article-body .body-item a:hover {
-  color: #dc143c;
-}
 .about .col-right .article-container article .article-body .body-item a i {
   font-size: 1rem;
   margin-right: 0.5rem;
+  transition: 0.25s;
+}
+.about .col-right .article-container article .article-body .body-item a:hover {
+  color: #dc143c;
+}
+.about .col-right .article-container article .article-body .body-item a:hover i {
+  transform: translateX(0.25rem);
+  opacity: 0.9;
 }
 .about .col-right:hover #cv-download {
   transition: 1s ease;

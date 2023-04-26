@@ -264,12 +264,17 @@
                         a {
                             // border: 2px solid red;
                             color: inherit;
-                            &:hover {
-                                color: $span-crimson;
-                            }
                             i {
                                 font-size: 1rem;
                                 margin-right: .5rem;
+                                transition: .25s;
+                            }
+                            &:hover {
+                                color: $span-crimson;
+                                i {
+                                    transform: translateX(.25rem);
+                                    opacity: .9;
+                                }
                             }
                         }
                     }
