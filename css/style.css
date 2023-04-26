@@ -3983,7 +3983,7 @@ hamburger
   padding-bottom: 0.5rem;
   margin-bottom: 5vh;
   position: relative;
-  border-bottom: 1px solid #b3bfcb;
+  border-bottom: 1px solid hwb(211 28% 61%);
 }
 @media (min-width: 820px) {
   .about .col-right .article-container article .article-body .body-item {
