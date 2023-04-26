@@ -199,6 +199,7 @@
                             width: max-content;
                             border-radius: .25rem;
                             transition: .2s;
+                            // border: 2px solid red;
     
                             &.cv {
                                 background-color: $overlay-blue-darker;
@@ -301,50 +302,8 @@
                         }
                     }
                 }
-
-                
-
-                .about-body {
-                    // border: 2px solid blue;
-                    margin-top: 5vh;
-
-                    p {
-                        padding-bottom: 1rem;
-                        margin-bottom: 1rem;
-                        position: relative;
-                        z-index: 2;
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            width: 100%;
-                            height: .1rem;
-                            opacity: .4;
-                            background: linear-gradient(90deg, #f4f4f4, $overlay-blue-light, #f4f4f4);
-                            @include md {
-                                background: linear-gradient(90deg, $overlay-blue-light, #f4f4f4);
-                            }
-                        }
-
-                        span {
-                            color: inherit;
-                            text-transform: capitalize;
-                            display: block;
-                        }
-                    }
-                }
             }
 
-            .buttons-container {
-                // border: 2px solid blue;
-                padding: 0rem 0 1rem;
-
-                a {
-                    // border: 2px solid red;
-                }
-            }
         }
         // cv download button on h2 hover 
         &:hover {

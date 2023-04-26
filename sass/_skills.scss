@@ -769,15 +769,9 @@
             height: 70vh;
             img {
                 // border: 3px solid yellow;
-                background-position: 20%;
-                background-size: contain;
-                background-size: cover;
-                background-repeat: no-repeat;
                 mix-blend-mode: overlay;
                 opacity: .4;
                 @include md {
-                    background-position: 10% 10%;
-                    // background-size: 80%;
                     display: none;
                     
                 }
