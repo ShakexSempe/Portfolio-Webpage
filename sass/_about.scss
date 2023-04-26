@@ -295,7 +295,7 @@
                             height: .1rem;
                             opacity: .4;
                             background: linear-gradient(90deg, #f4f4f4, $overlay-blue-light, #f4f4f4);
-                            background: linear-gradient(90deg, $overlay-blue-light, #f4f4f4);
+                            background: linear-gradient(90deg, hsl(240, 100%, 5%), hwb(0 96% 4%));
                             @include md {
                             }
                         }

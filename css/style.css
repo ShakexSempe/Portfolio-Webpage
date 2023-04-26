@@ -4039,7 +4039,7 @@ hamburger
   height: 0.1rem;
   opacity: 0.4;
   background: linear-gradient(90deg, #f4f4f4, hwb(211 28% 61%), #f4f4f4);
-  background: linear-gradient(90deg, hwb(211 28% 61%), #f4f4f4);
+  background: linear-gradient(90deg, #00001a, hwb(0 96% 4%));
 }
 .about .col-right .article-container article .about-body {
   margin-top: 5vh;
