@@ -4713,13 +4713,11 @@ form button:hover::after {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
-  width: 100%;
+  color: #1f252d;
 }
 body a {
   text-decoration: none;
@@ -4736,8 +4734,6 @@ body a {
   }
 }
 body p {
-  color: #000;
-  color: #15191e;
   line-height: 1.5;
   font-weight: 400;
 }
