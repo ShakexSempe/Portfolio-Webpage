@@ -2648,7 +2648,7 @@ hamburger
 .skill-section.light-section {
   background: #f4f4f4;
   color: #29323d;
-  border-bottom: 0.125rem solid hwb(211 28% 61%);
+  border-bottom: 0.125rem solid #29323d;
 }
 .skill-section.light-section:last-of-type {
   border-bottom: none;

@@ -959,7 +959,7 @@
     &.light-section {
         background: #f4f4f4;
         color: $overlay-blue-dark;
-        border-bottom: .125rem solid $overlay-blue-light;
+        border-bottom: .125rem solid $overlay-blue-dark;
 
         &:last-of-type {
             border-bottom: none;
