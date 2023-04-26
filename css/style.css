@@ -4006,8 +4006,6 @@ hamburger
   font-weight: 400;
 }
 .about .col-right .article-container article .article-body .body-item a {
-  display: block;
-  width: max-content;
   color: inherit;
 }
 .about .col-right .article-container article .article-body .body-item a:hover {
