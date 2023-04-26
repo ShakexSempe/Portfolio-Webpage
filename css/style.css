@@ -4032,15 +4032,6 @@ hamburger
   text-transform: capitalize;
   display: block;
 }
-.about .col-right .article-container article .about-body.io-item {
-  opacity: 0;
-  transform: translateY(5vh);
-  transition: 1s;
-}
-.about .col-right .article-container article .about-body.active-item {
-  opacity: 1;
-  transform: translateY(0);
-}
 .about .col-right .article-container .buttons-container {
   padding: 0rem 0 1rem;
 }
@@ -4077,24 +4068,23 @@ hamburger
 }
 .about .col-left .about-img img {
   width: 100%;
+  height: 100%;
   border-radius: 0.25rem;
-  object-fit: contain;
+  object-fit: cover;
 }
 @media (min-width: 576px) {
   .about .col-left .about-img img {
-    width: 50vh;
+    object-fit: contain;
   }
 }
-.about .col-left .about-img:hover::before {
-  opacity: 0;
-  transform: scale(1.1);
-  transform-origin: left;
-}
-.about .col-left .about-img:hover::after {
-  opacity: 1;
+@media (min-width: 768px) {
+  .about .col-left .about-img img {
+    object-fit: cover;
+    width: 20rem;
+  }
 }
 .about .col-left .about-img.animated-img img {
-  display: none;
+  opacity: 0;
 }
 .about .col-left .about-img.animated-img::before, .about .col-left .about-img.animated-img::after {
   font-size: 1em;
