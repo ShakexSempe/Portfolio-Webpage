@@ -186,7 +186,7 @@
 
                         ul {
                             margin: 1rem 5vw 1rem;
-                            background: $overlay-blue-dark;
+                            background: $overlay-blue-darker;
                             padding: .5rem 0;
                             height: max-content;
                             display: flex;
@@ -254,7 +254,8 @@
                                     width: 2.5rem;
                                     text-align: center;
                                     padding: .5rem;
-                                    color: $brand;
+                                    color: $text-light;
+                                    background: $overlay-blue-darkest;
 
                                 }
                             }
@@ -441,7 +442,6 @@
                             padding: 0;
                             text-align: left;
                             border-radius: 5px;
-                            background: $overlay-blue-darker;
                         }
 
 

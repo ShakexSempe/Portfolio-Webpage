@@ -747,7 +747,7 @@ hamburger
   }
   .header .navbar #nav .nav-list .links-container ul {
     margin: 1rem 5vw 1rem;
-    background: #29323d;
+    background: #1f252d;
     padding: 0.5rem 0;
     height: max-content;
     display: flex;
@@ -802,7 +802,8 @@ hamburger
     width: 2.5rem;
     text-align: center;
     padding: 0.5rem;
-    color: #b3bfcb;
+    color: #f4f4f4;
+    background: #15191e;
   }
   .header .navbar #nav .nav-list .links-container .contact-links {
     background: #29323d;
@@ -934,7 +935,6 @@ hamburger
   padding: 0;
   text-align: left;
   border-radius: 5px;
-  background: #1f252d;
 }
 .header .navbar #nav .nav-list ul li:hover a {
   color: #b3bfcb;
@@ -4020,6 +4020,8 @@ hamburger
 }
 .about .col-right .article-container article .article-body .body-item .body-item-title {
   margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-size: clamp(1rem, 4vw, 1.125rem);
 }
 .about .col-right .article-container article .article-body .body-item a {
   color: inherit;

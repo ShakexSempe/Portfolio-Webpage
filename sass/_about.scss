@@ -275,6 +275,8 @@
                         }
                         .body-item-title {
                             margin-bottom: .5rem;
+                            font-size: 1rem;
+                            font-size: clamp(1rem, 4vw, 1.125rem);
                         }
                         a {
                             color: inherit;
