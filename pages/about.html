@@ -451,14 +451,19 @@
             <a href="#contact"><i class="fas fa-envelope"></i></a>
         </figure>
     </div>
-    <!-- PRELOADER SCRIPT -->
+    
+    <!-- ACTIVE PAGE CLASS TOGGLE -->
     <script>
-        setTimeout(function () {
-            $('.loader_bg').fadeToggle();
-        }, 5000);
+        const activePage = window.location.pathname;
+        const navLinks = document.querySelectorAll('.scroll-li');
+        console.log(activePage);
+
+        navLinks.forEach(link => {
+            if (link.href.includes(`${activePage}`)) {
+                link.classList.add('active');
+            }
+        });
     </script>
-<!-- SCROLL SCRIPT -->
-<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
 </body>
 

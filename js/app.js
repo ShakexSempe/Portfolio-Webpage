@@ -19,16 +19,16 @@ date.forEach(date => {
   date.innerHTML = new Date().getFullYear();
 })
 // ********** END OF VARIABLES ************
-// ACTIVE PAGE CLASS TOGGLE
-const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll('.scroll-li');
-console.log(activePage);
+// // ACTIVE PAGE CLASS TOGGLE
+// const activePage = window.location.pathname;
+// const navLinks = document.querySelectorAll('.scroll-li');
+// console.log(activePage);
 
-navLinks.forEach(link => {
-  if(link.href.includes(`${activePage}`)){
-    link.classList.add('active');
-  }
-});
+// navLinks.forEach(link => {
+//   if(link.href.includes(`${activePage}`)){
+//     link.classList.add('active');
+//   }
+// });
 
 
 
