@@ -2693,7 +2693,7 @@ hamburger
   font-weight: 600;
 }
 .skill-section.darkest-section .skill-section-content .skill-article {
-  background: #15191e;
+  background: #1f252d;
 }
 .skill-section.darkest-section .skill-section-content ul li {
   border-bottom: 1px solid #ddd;
@@ -3992,7 +3992,6 @@ hamburger
   color: inherit;
 }
 .about .col-right .article-container article .article-body .body-item a i {
-  color: #bb1133;
   font-size: 1rem;
   margin-right: 0.5rem;
   transition: 0.25s;
