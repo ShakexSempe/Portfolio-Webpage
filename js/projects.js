@@ -74,7 +74,7 @@ displayProjects = (projectsItems) => {
                 <p>
                     ${project.desc}
                 </p>
-                <a href=${project.link} title="view project" target="_blank">
+                <a class="btn btn-primary" href=${project.link} title="view project" target="_blank">
                 view project <i class="fas fa-link"></i>
                 </a>
             </div>
