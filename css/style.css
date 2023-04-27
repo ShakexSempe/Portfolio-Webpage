@@ -2633,7 +2633,8 @@ hamburger
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  font-size: clamp(.85rem, 1.5vw, 1rem );
   list-style: none;
   border-bottom: 1px solid #15191e;
 }
