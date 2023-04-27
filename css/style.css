@@ -2681,6 +2681,25 @@ hamburger
 .skill-section.light-section .skill-section-content ul li {
   border-bottom: 1px solid #ddd;
 }
+.skill-section.darkest-section {
+  background: #000;
+  color: #f4f4f4;
+}
+.skill-section.darkest-section:last-of-type {
+  border-bottom: none;
+}
+.skill-section.darkest-section .skill-section-title p {
+  font-weight: 500;
+}
+.skill-section.darkest-section .skill-section-title ul li {
+  font-weight: 600;
+}
+.skill-section.darkest-section .skill-section-content .skill-article {
+  background: #15191e;
+}
+.skill-section.darkest-section .skill-section-content ul li {
+  border-bottom: 1px solid #ddd;
+}
 .skill-section.page-skill-section {
   padding-bottom: 10vh;
 }

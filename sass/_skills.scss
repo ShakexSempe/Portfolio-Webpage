@@ -985,6 +985,34 @@
             }
         }
     }
+    &.darkest-section {
+        background: #000;
+        color: $text-light;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+        .skill-section-title {
+            p {
+                font-weight: 500;
+            }
+            ul {
+                li {
+                    font-weight: 600;
+                }
+            }
+        }
+        .skill-section-content {
+            .skill-article {
+                background: $overlay-blue-darkest;
+            }
+            ul {
+                li {
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+        }
+    }
 
     &.page-skill-section {
         // border: 5px solid purple;
