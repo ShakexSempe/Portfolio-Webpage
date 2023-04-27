@@ -2444,7 +2444,7 @@ hamburger
   text-transform: capitalize;
   line-height: 1.5;
   font-size: 1.6rem;
-  font-size: clamp(1.6rem, 5vw, 2rem);
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
   margin-bottom: 1rem;
 }
 .skill-section .skill-section-title p {
@@ -2704,6 +2704,11 @@ hamburger
 .skill-section.page-skill-section .skill-section-title {
   margin-bottom: 10vh;
   padding: 10vh 5vw 5vh;
+}
+@media (min-width: 768px) {
+  .skill-section.page-skill-section .skill-section-title {
+    padding: 20vh 5vw 10vh;
+  }
 }
 
 .contact {

@@ -707,7 +707,7 @@
             text-transform: capitalize;
             line-height: 1.5;
             font-size: 1.6rem;
-            font-size: clamp(1.6rem, 5vw, 2rem);
+            font-size: clamp(1.6rem, 5vw, 2.5rem);
             margin-bottom: 1rem;
         }
         p {
@@ -1022,6 +1022,9 @@
         .skill-section-title {
             margin-bottom: 10vh;
             padding: 10vh 5vw 5vh;
+            @include md {
+                padding: 20vh 5vw 10vh;
+            }
         }
     }
 }
