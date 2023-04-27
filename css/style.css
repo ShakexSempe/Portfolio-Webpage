@@ -2448,7 +2448,6 @@ hamburger
   margin-bottom: 1rem;
 }
 .skill-section .skill-section-title p {
-  width: 80%;
   color: inherit;
 }
 .skill-section .skill-section-title p::first-letter {
@@ -2456,7 +2455,6 @@ hamburger
 }
 @media (min-width: 768px) {
   .skill-section .skill-section-title p {
-    width: 60%;
     font-size: 1.15rem;
   }
 }
