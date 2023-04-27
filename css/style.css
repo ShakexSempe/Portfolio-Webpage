@@ -3077,10 +3077,7 @@ hamburger
   transition: all 0.3s ease;
 }
 #projects .projects .all-projects .project-item .project-tile .project-info a {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 10rem;
+  font-size: 0.85rem;
   padding: 0.5rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -3091,39 +3088,9 @@ hamburger
   isolation: isolate;
 }
 #projects .projects .all-projects .project-item .project-tile .project-info a i {
-  color: #b3bfcb;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   transition: 0.25s;
-  opacity: 0.5;
-  transform: translateX(0.25rem) scale(0.8);
-}
-@media (min-width: 768px) {
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover {
-    transform: scale(0.98);
-  }
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover::before {
-    opacity: 0;
-  }
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover::after {
-    opacity: 1;
-  }
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover i {
-    color: #f4f4f4;
-  }
-}
-@media (max-width: 768px) {
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover {
-    transform: scale(0.98);
-  }
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover::before {
-    opacity: 0;
-  }
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover::after {
-    opacity: 1;
-  }
-  #projects .projects .all-projects .project-item .project-tile .project-info a:hover i {
-    color: #f4f4f4;
-  }
+  opacity: 0.6;
 }
 #projects .projects .all-projects .project-item .project-img {
   flex-basis: 50%;
