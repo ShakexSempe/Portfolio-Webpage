@@ -4413,15 +4413,18 @@ hamburger
 }
 #footer .footer .footer-bottom .footer-item .footer-list li i {
   width: 1.5rem;
-  transition: 0.25s;
   color: #b3bfcb;
+  transition: 0.25s;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li a {
   color: #f4f4f4;
   cursor: pointer;
 }
-#footer .footer .footer-bottom .footer-item .footer-list li:hover i {
+#footer .footer .footer-bottom .footer-item .footer-list li:hover a {
   color: #b3bfcb;
+}
+#footer .footer .footer-bottom .footer-item .footer-list li:hover i {
+  color: #f4f4f4;
   transform: translateX(0.25rem);
 }
 #footer .footer .footer-bottom .footer-item .footer-list.browse-list {

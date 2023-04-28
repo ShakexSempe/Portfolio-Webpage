@@ -394,8 +394,8 @@
                         margin-bottom: .5rem;
                         i {
                             width: 1.5rem;
-                            transition: .25s;
                             color: $brand;
+                            transition: .25s;
                         }
                         a {
                             color: $text-light;
@@ -403,8 +403,11 @@
                         }
                         
                         &:hover {
+                            a {
+                                color: $brand;;
+                            }
                             i {
-                                color: $brand;
+                                color: $text-light;
                                 transform: translateX(.25rem);
                             }
                         }
