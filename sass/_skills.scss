@@ -737,8 +737,8 @@
         }
         .btn {
             margin-top: 1rem;
-            width: 14rem;
-            width: clamp(12rem, 40vw, 14rem);
+            width: 10rem;
+            width: clamp(10rem, 40vw, 12rem);
             font-weight: 600;
 
             // position: absolute;
