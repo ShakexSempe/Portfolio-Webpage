@@ -2470,7 +2470,8 @@ hamburger
 }
 .skill-section .skill-section-title .btn {
   margin-top: 1rem;
-  width: 10rem;
+  width: 12rem;
+  width: clamp(12rem, 40vw, 12rem);
   font-weight: 600;
 }
 .skill-section .skill-section-title img {
