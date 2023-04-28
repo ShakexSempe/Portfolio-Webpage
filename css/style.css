@@ -394,7 +394,7 @@ hamburger
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 0.125rem 5vw;
+  padding: 0.25rem 5vw;
   transform: translateY(15vh);
   transition: 1s;
 }
@@ -439,10 +439,10 @@ hamburger
   }
 }
 @media (max-width: 768px) {
-  .bottom-nav .link-item:active a {
-    background: hwb(211 28% 61%);
+  .bottom-nav .link-item:hover a {
+    background: #29323d;
   }
-  .bottom-nav .link-item:active i {
+  .bottom-nav .link-item:hover i {
     color: #f4f4f4;
   }
 }
