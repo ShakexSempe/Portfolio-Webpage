@@ -74,7 +74,7 @@ section {
 
         span {
             position: relative;
-            // color: $overlay-blue-dark;
+            color: $overlay-blue-dark;
             animation: section-span 3s ease-in-out infinite;
             height: 5px;
 
@@ -84,6 +84,10 @@ section {
                 0%, 100% {
                     top: 0px;
                     opacity: 1;
+                    // color: #dc143c;
+                }
+
+                20%, 80% {
                     color: #dc143c;
                 }
 
@@ -91,14 +95,17 @@ section {
                     top: -20px;
                     opacity: 0;
                     color: $overlay-blue-dark;
+                    color: #dc143c;
+
                 }
 
                 46% {
                     top: 20px;
                     opacity: 0;
                     color: $overlay-blue-light;
-                }
+                    color: #dc143c;
 
+                }
             }
 
             /* end of section title animations */
