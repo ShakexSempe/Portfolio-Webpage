@@ -680,13 +680,14 @@
         padding: 5vh 5vw;
         position: relative;
         isolation: isolate;
-        height: 90vh;
+        height: 85vh;
         background: $overlay-blue-dark;
         background: linear-gradient(140deg, yellow 40%, red);
         background: linear-gradient(140deg, $overlay-blue-darkest 40%, transparent);
-        @include md {
+
+        @include lg {
             padding: 20vh 5vw 10vh;
-            height: 85vh;
+            height: 90vh;
             height: 100vh;
             background: linear-gradient(140deg, $overlay-blue-darker 20%, $overlay-blue-dark);
             &::after {
@@ -707,7 +708,7 @@
             text-transform: capitalize;
             line-height: 1.5;
             font-size: 1.6rem;
-            font-size: clamp(1.6rem, 5vw, 2.5rem);
+            font-size: clamp(1.6rem, 4vw, 2.25rem);
             margin-bottom: 1rem;
         }
         p {
@@ -754,7 +755,7 @@
             height: 100%;
             z-index: -1;
             object-fit: cover;
-            @include md {
+            @include lg {
                 display: none;
             }
         }
@@ -765,12 +766,8 @@
                 // border: 3px solid yellow;
                 mix-blend-mode: overlay;
                 opacity: .4;
-                @include md {
-                    display: none;
-                    
-                }
             }
-            @include md {
+            @include lg {
                 height: 95vh;
                 &::after {
                     background-image: url('../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg');
@@ -784,6 +781,9 @@
             }
         }
         &.section-title-2 {
+            @include sm {
+                height: 95vh;
+            }
             img {
                 // border: 3px solid yellow;
                 object-position: center top;
@@ -792,11 +792,11 @@
                 object-fit: cover;
                 mix-blend-mode: overlay;
                 // opacity: .8;
-                @include md {
-                    background-position: 10% 10%;
+                @include sm {
+                    object-position: 50% 45%;
                 }
             }
-            @include md {
+            @include lg {
                 height: 100vh;
                 &::after {
                     background-image: url('../img/wesson-wang-y0_vFxOHayg-unsplash.jpg');
@@ -811,26 +811,34 @@
         }
         &.section-title-3 {
             background: linear-gradient(140deg, #fff 40%, #fafafa);
-            background: #f4f4f4;
-
+            background: #fafafa;
             height: 80vh;
             img {
                 object-fit: cover;
                 object-position: 95% 5%;
                 mix-blend-mode: overlay;
                 mix-blend-mode: darken;
-                
-                opacity: .3;
+                opacity: .5;
+                @include sm {
+                    object-position: 85% 25%;
+                    opacity: .8;
+                }
             }
-            @include md {
+            @include lg {
+                // height: 90vh;
+                background: #ddd;
                 &::after {
-                    background-image: url('../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg');
+                    background-image: url('../img/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
                     background-size: contain;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    background-size: 60%;
                     mix-blend-mode: darken;
-                    mix-blend-mode: overlay;
+                    // mix-blend-mode: overlay;
+                    // mix-blend-mode: unset;
                     background-position: right;
+                    // width: 50%;
+                    // border: 2px solid red;
                     // opacity: .1;
                 }
             }
@@ -847,7 +855,7 @@
                 mix-blend-mode: darken;
                 opacity: .5;
             }
-            @include md {
+            @include lg {
                 background: #fafafa;
                 &::after {
                     background-image: url('../img/liana-mikah-sK1nYjXcXCY-unsplash.jpg');
@@ -856,7 +864,7 @@
                     background-repeat: no-repeat;
                     background-position: right;
                     background-size: cover;
-                    background-size: 55%;
+                    background-size: 60%;
                     mix-blend-mode: darken;
                     // opacity: .6;
                 }

@@ -2417,15 +2417,15 @@ hamburger
   padding: 5vh 5vw;
   position: relative;
   isolation: isolate;
-  height: 90vh;
+  height: 85vh;
   background: #29323d;
   background: linear-gradient(140deg, yellow 40%, red);
   background: linear-gradient(140deg, #15191e 40%, transparent);
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .skill-section .skill-section-title {
     padding: 20vh 5vw 10vh;
-    height: 85vh;
+    height: 90vh;
     height: 100vh;
     background: linear-gradient(140deg, #1f252d 20%, #29323d);
   }
@@ -2444,7 +2444,7 @@ hamburger
   text-transform: capitalize;
   line-height: 1.5;
   font-size: 1.6rem;
-  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
   margin-bottom: 1rem;
 }
 .skill-section .skill-section-title p {
@@ -2483,7 +2483,7 @@ hamburger
   z-index: -1;
   object-fit: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .skill-section .skill-section-title img {
     display: none;
   }
@@ -2495,12 +2495,7 @@ hamburger
   mix-blend-mode: overlay;
   opacity: 0.4;
 }
-@media (min-width: 768px) {
-  .skill-section .skill-section-title.section-title-1 img {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .skill-section .skill-section-title.section-title-1 {
     height: 95vh;
   }
@@ -2514,6 +2509,11 @@ hamburger
     opacity: 0.5;
   }
 }
+@media (min-width: 576px) {
+  .skill-section .skill-section-title.section-title-2 {
+    height: 95vh;
+  }
+}
 .skill-section .skill-section-title.section-title-2 img {
   object-position: center top;
   object-position: center bottom;
@@ -2521,12 +2521,12 @@ hamburger
   object-fit: cover;
   mix-blend-mode: overlay;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .skill-section .skill-section-title.section-title-2 img {
-    background-position: 10% 10%;
+    object-position: 50% 45%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .skill-section .skill-section-title.section-title-2 {
     height: 100vh;
   }
@@ -2541,7 +2541,7 @@ hamburger
 }
 .skill-section .skill-section-title.section-title-3 {
   background: linear-gradient(140deg, #fff 40%, #fafafa);
-  background: #f4f4f4;
+  background: #fafafa;
   height: 80vh;
 }
 .skill-section .skill-section-title.section-title-3 img {
@@ -2549,16 +2549,25 @@ hamburger
   object-position: 95% 5%;
   mix-blend-mode: overlay;
   mix-blend-mode: darken;
-  opacity: 0.3;
+  opacity: 0.5;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+  .skill-section .skill-section-title.section-title-3 img {
+    object-position: 85% 25%;
+    opacity: 0.8;
+  }
+}
+@media (min-width: 820px) {
+  .skill-section .skill-section-title.section-title-3 {
+    background: #ddd;
+  }
   .skill-section .skill-section-title.section-title-3::after {
-    background-image: url("../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg");
+    background-image: url("../img/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg");
     background-size: contain;
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 60%;
     mix-blend-mode: darken;
-    mix-blend-mode: overlay;
     background-position: right;
   }
 }
@@ -2573,7 +2582,7 @@ hamburger
   mix-blend-mode: darken;
   opacity: 0.5;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .skill-section .skill-section-title.section-title-4 {
     background: #fafafa;
   }
@@ -2584,7 +2593,7 @@ hamburger
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    background-size: 55%;
+    background-size: 60%;
     mix-blend-mode: darken;
   }
 }
