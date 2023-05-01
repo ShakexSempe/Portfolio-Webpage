@@ -2398,11 +2398,32 @@ hamburger
 
 .skill-section-container {
   margin-top: 10vh;
+  position: relative;
 }
 @media (min-width: 768px) {
   .skill-section-container {
     margin-top: 10vh;
   }
+}
+.skill-section-container .skills-btn {
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 0.65rem 1rem;
+  width: 6rem;
+  width: clamp(6rem, 15vw, 10rem);
+  margin: 5vh 5vw 10vh auto;
+  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  font-size: 0.95rem;
+  color: #29323d;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 70vh;
 }
 
 .skill-section {

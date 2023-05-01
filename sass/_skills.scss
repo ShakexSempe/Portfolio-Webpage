@@ -659,8 +659,31 @@
 .skill-section-container {
     // border: 2px solid purple;
     margin-top: 10vh;
+    position: relative;
     @include md {
         margin-top: 10vh;
+    }
+
+    .skills-btn {
+        background: #fff;
+        // border: 2px solid red;
+        border-radius: .25rem;
+        padding: .65rem 1rem;
+        width: 6rem;
+        width: clamp(6rem, 15vw, 10rem);
+        margin: 5vh 5vw 10vh auto;
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-size: .95rem;
+        color: $overlay-blue-dark;
+        font-weight: 600;
+        mix-blend-mode: difference;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 70vh;
     }
 }
 
@@ -1030,5 +1053,8 @@
             }
         }
     }
+
+
+    
 }
 // end of skills
