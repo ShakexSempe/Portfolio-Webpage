@@ -684,6 +684,11 @@
         align-items: center;
         position: sticky;
         top: 70vh;
+        letter-spacing: .05rem;
+        transition: .25s;
+        &:hover {
+            letter-spacing: normal;
+        }
     }
 }
 

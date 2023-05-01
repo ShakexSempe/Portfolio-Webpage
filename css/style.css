@@ -2424,6 +2424,11 @@ hamburger
   align-items: center;
   position: sticky;
   top: 70vh;
+  letter-spacing: 0.05rem;
+  transition: 0.25s;
+}
+.skill-section-container .skills-btn:hover {
+  letter-spacing: normal;
 }
 
 .skill-section {
