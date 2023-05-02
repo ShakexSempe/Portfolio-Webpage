@@ -87,17 +87,10 @@ section {
                     // color: #dc143c;
                 }
 
-                20%, 80% {
-                    color: $overlay-blue-dark;
-
-                }
-
                 45% {
                     top: -20px;
                     opacity: 0;
-                    color: #dc143c;
                     color: $overlay-blue-dark;
-
                 }
 
                 46% {
@@ -105,7 +98,10 @@ section {
                     opacity: 0;
                     color: #dc143c;
                     color: $overlay-blue-dark;
-
+                }
+                
+                65% {
+                    color: $overlay-blue-dark;
                 }
             }
 
