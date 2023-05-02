@@ -74,9 +74,9 @@ section {
 
         span {
             position: relative;
-            color: $overlay-blue-dark;
             animation: section-span 3s ease-in-out infinite;
             height: 5px;
+            color: #dc143c;
 
             /* section title animations */
             @keyframes section-span {
@@ -88,22 +88,23 @@ section {
                 }
 
                 20%, 80% {
-                    color: #dc143c;
+                    color: $overlay-blue-dark;
+
                 }
 
                 45% {
                     top: -20px;
                     opacity: 0;
-                    color: $overlay-blue-dark;
                     color: #dc143c;
+                    color: $overlay-blue-dark;
 
                 }
 
                 46% {
                     top: 20px;
                     opacity: 0;
-                    color: $overlay-blue-light;
                     color: #dc143c;
+                    color: $overlay-blue-dark;
 
                 }
             }

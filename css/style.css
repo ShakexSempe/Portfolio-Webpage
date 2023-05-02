@@ -4777,9 +4777,9 @@ section .section-title {
 }
 section .section-title span {
   position: relative;
-  color: #29323d;
   animation: section-span 3s ease-in-out infinite;
   height: 5px;
+  color: #dc143c;
   /* section title animations */
   /* end of section title animations */
 }
@@ -4789,19 +4789,19 @@ section .section-title span {
     opacity: 1;
   }
   20%, 80% {
-    color: #dc143c;
+    color: #29323d;
   }
   45% {
     top: -20px;
     opacity: 0;
-    color: #29323d;
     color: #dc143c;
+    color: #29323d;
   }
   46% {
     top: 20px;
     opacity: 0;
-    color: hwb(211 28% 61%);
     color: #dc143c;
+    color: #29323d;
   }
 }
 section .section-title.io-item {
