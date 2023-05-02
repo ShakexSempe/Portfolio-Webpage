@@ -2355,11 +2355,14 @@ hamburger
   color: #ddd;
   transition: 0.25s;
 }
-.skills-section .skills-content .skills-items .skills-item .icon img, .skills-section .skills-content .skills-items .skills-item .icon svg {
+.skills-section .skills-content .skills-items .skills-item .icon img,
+.skills-section .skills-content .skills-items .skills-item .icon svg {
   width: 2.5rem;
   transition: 0.25s;
 }
-.skills-section .skills-content .skills-items .skills-item .icon i, .skills-section .skills-content .skills-items .skills-item .icon img, .skills-section .skills-content .skills-items .skills-item .icon svg {
+.skills-section .skills-content .skills-items .skills-item .icon i,
+.skills-section .skills-content .skills-items .skills-item .icon img,
+.skills-section .skills-content .skills-items .skills-item .icon svg {
   filter: drop-shadow(0.125rem 0.5rem 0.25rem #0006);
 }
 .skills-section .skills-content .skills-items .skills-item h3 {
@@ -2389,7 +2392,9 @@ hamburger
 .skills-section .skills-content .skills-items .skills-item:hover .icon {
   transform: translateY(-0.5rem);
 }
-.skills-section .skills-content .skills-items .skills-item:hover .icon i, .skills-section .skills-content .skills-items .skills-item:hover .icon svg, .skills-section .skills-content .skills-items .skills-item:hover .icon img {
+.skills-section .skills-content .skills-items .skills-item:hover .icon i,
+.skills-section .skills-content .skills-items .skills-item:hover .icon svg,
+.skills-section .skills-content .skills-items .skills-item:hover .icon img {
   filter: drop-shadow(0rem 0.25rem 0.15rem #0008);
 }
 .skills-section.skills-page-section {
@@ -2408,24 +2413,21 @@ hamburger
 .skill-section-container .skills-btn {
   background: #fff;
   border-radius: 0.25rem;
-  padding: 0.65rem 1rem;
-  width: 6rem;
-  width: clamp(6rem, 15vw, 10rem);
+  padding: 0.5rem;
   margin: 5vh 5vw 10vh auto;
   text-transform: uppercase;
   font-family: "Kanit", sans-serif;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #29323d;
   font-weight: 600;
   mix-blend-mode: difference;
   z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
-  top: 70vh;
+  top: 60vh;
+  left: 90vw;
   letter-spacing: 0.05rem;
   transition: 0.25s;
+  display: none;
 }
 .skill-section-container .skills-btn:hover {
   letter-spacing: normal;
@@ -2499,6 +2501,8 @@ hamburger
   width: 10rem;
   width: clamp(10rem, 40vw, 12rem);
   font-weight: 600;
+  position: sticky;
+  top: 50vh;
 }
 .skill-section .skill-section-title img {
   position: absolute;
@@ -2670,7 +2674,7 @@ hamburger
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   font-size: 0.85rem;
-  font-size: clamp(.85rem, 1.5vw, 1rem );
+  font-size: clamp(.85rem, 1.5vw, 1rem);
   list-style: none;
   border-bottom: 1px solid #15191e;
 }
