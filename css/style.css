@@ -58,7 +58,7 @@ hamburger
   transition: 0.25s ease;
 }
 #header .hamburger.hamburger:before {
-  border: 1px solid #a4b3c1;
+  border: 1px solid #b3c0cc;
   opacity: 0;
   animation: ham-pulse 2.5s ease infinite;
 }
@@ -429,7 +429,7 @@ hamburger
 .bottom-nav .link-item a i {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #a4b3c1;
+  color: #b3c0cc;
   transition: 0.25s;
 }
 @media (min-width: 820px) {
@@ -450,7 +450,7 @@ hamburger
     transform: scale(1.05);
   }
   .bottom-nav .link-item:hover a {
-    border: 1px solid #a4b3c1;
+    border: 1px solid #b3c0cc;
   }
   .bottom-nav .link-item:hover a:hover {
     border: none;
@@ -538,7 +538,7 @@ hamburger
   display: grid;
   place-items: center;
   isolation: isolate;
-  color: #a4b3c1;
+  color: #b3c0cc;
   text-transform: capitalize;
   animation: spinner-out 1s ease 4s forwards;
 }
@@ -734,7 +734,7 @@ hamburger
   background: linear-gradient(0deg, #deb86e, #ead2a1);
   background: linear-gradient(#f4f4f4, #fff);
   background: inherit;
-  color: #a4b3c1;
+  color: #b3c0cc;
   border-radius: 0;
   transition: 0.2s;
 }
@@ -801,7 +801,7 @@ hamburger
     transition: 0.3s ease letter-spacing;
   }
   .header .navbar #nav .nav-list .links-container ul li a.active {
-    color: #a4b3c1;
+    color: #b3c0cc;
   }
   .header .navbar #nav .nav-list .links-container ul li i {
     width: 2.5rem;
@@ -832,7 +832,7 @@ hamburger
     margin-right: 0.25rem;
     padding-right: 0.25rem;
     width: 1.5rem;
-    border-right: 1px solid #a4b3c1;
+    border-right: 1px solid #b3c0cc;
   }
   .header .navbar #nav .nav-list .links-container.active {
     left: 0;
@@ -890,7 +890,7 @@ hamburger
   }
   .header .navbar #nav .nav-list .links-container.active .contact-links a:hover i {
     transition: 0.25s;
-    color: #a4b3c1;
+    color: #b3c0cc;
   }
 }
 .header .navbar #nav .nav-list .links-container .nav-logo {
@@ -942,7 +942,7 @@ hamburger
   border-radius: 5px;
 }
 .header .navbar #nav .nav-list ul li:hover a {
-  color: #a4b3c1;
+  color: #b3c0cc;
   transition: 0.25s;
 }
 .header .navbar #nav .nav-list ul li:hover a::after {
@@ -950,7 +950,7 @@ hamburger
   letter-spacing: initial;
 }
 .header .navbar #nav .nav-list ul li:hover a i {
-  color: #a4b3c1;
+  color: #b3c0cc;
 }
 @media (min-width: 820px) {
   .header .navbar #nav .nav-list {
@@ -989,7 +989,7 @@ hamburger
     transform: translateX(-50%);
     width: 0%;
     height: 2px;
-    background-color: #a4b3c1;
+    background-color: #b3c0cc;
     transition: 0.3s ease;
   }
   .header .navbar #nav .nav-list ul li:hover::before {
@@ -1010,7 +1010,7 @@ hamburger
     display: none;
   }
   .header .navbar #nav .nav-list ul li a.active {
-    color: #a4b3c1;
+    color: #b3c0cc;
     transform: scale(1.15);
   }
   .header .navbar #nav .nav-list ul li a.active::before {
@@ -1181,7 +1181,7 @@ hamburger
   font-size: 0.95rem;
   font-size: clamp(.95rem, 2vw, 1.125rem);
   font-weight: 400;
-  color: #a4b3c1;
+  color: #b3c0cc;
 }
 .banner .hero .hero-content .hero-title .hero-title-header a {
   color: inherit;
@@ -1239,7 +1239,7 @@ hamburger
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 2.25vw, 1.5rem);
   position: relative;
-  color: #a4b3c1;
+  color: #b3c0cc;
   margin-top: 0.5rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -1403,7 +1403,7 @@ hamburger
   }
 }
 .banner .hero .hero-index-content span {
-  color: #a4b3c1;
+  color: #b3c0cc;
 }
 .banner .hero .hero-index-content .content-title {
   margin-bottom: 25vh;
@@ -1797,7 +1797,7 @@ hamburger
   position: absolute;
   left: -0.5em;
   bottom: 1em;
-  background-image: radial-gradient(circle at top, #a4b3c1, 50%, #000);
+  background-image: radial-gradient(circle at top, #b3c0cc, 50%, #000);
   animation: scene 20s infinite linear reverse;
 }
 @keyframes ball-bounce {
@@ -1861,7 +1861,7 @@ hamburger
   font-size: 0.25em;
   text-transform: uppercase;
   transition: 0.25s;
-  color: #a4b3c1;
+  color: #b3c0cc;
   pointer-events: none;
 }
 .cube .left:hover,
@@ -2211,7 +2211,7 @@ hamburger
   color: #f4f4f4;
 }
 .skills-section .skills-content .skills-page-container .skills-bottom .skills-item ul li::marker {
-  color: #a4b3c1;
+  color: #b3c0cc;
   color: #fff4;
 }
 .skills-section .skills-content .skills-page-container .skills-bottom .skills-item::after {
@@ -2435,7 +2435,7 @@ hamburger
 .skill-section {
   background: #15191e;
   color: #f4f4f4;
-  border-bottom: 0.125rem solid #a4b3c1;
+  border-bottom: 0.125rem solid #b3c0cc;
 }
 .skill-section:last-of-type {
   border-bottom: none;
@@ -2493,7 +2493,7 @@ hamburger
   padding-bottom: 0.25rem;
 }
 .skill-section .skill-section-title ul li::marker {
-  color: #a4b3c1;
+  color: #b3c0cc;
 }
 .skill-section .skill-section-title .btn {
   margin-top: 1rem;
@@ -2858,7 +2858,7 @@ hamburger
 }
 .contact .contact-items .contact-item .title h3 {
   color: #f4f4f4;
-  color: #a4b3c1;
+  color: #b3c0cc;
   font-size: 0.85rem;
   font-weight: 600;
   position: relative;
@@ -3089,7 +3089,7 @@ hamburger
   font-weight: 500;
   margin: 0.5rem 0;
   text-transform: capitalize;
-  color: #a4b3c1;
+  color: #b3c0cc;
   transition: 0.3s;
 }
 @media (min-width: 768px) {
@@ -3187,7 +3187,7 @@ hamburger
 }
 #projects .projects .all-projects .project-item .tech-list ul li {
   font-size: 0.8em;
-  color: #a4b3c1;
+  color: #b3c0cc;
   list-style: none;
   padding: 0.4em 0.3em;
   margin-right: 0.1em;
@@ -3344,7 +3344,7 @@ hamburger
   transition: 0.25s;
 }
 .work .work-container .item .item-header .item-meta-data li:hover {
-  color: #a4b3c1;
+  color: #b3c0cc;
 }
 .work .work-container .item .item-header .item-description {
   margin: 1rem 0;
@@ -3683,7 +3683,7 @@ hamburger
   border-radius: 0.25rem;
 }
 .work .work-items .work-item .scroll-snap::-webkit-scrollbar-thumb {
-  background-color: #a4b3c1;
+  background-color: #b3c0cc;
   border-radius: 0.25rem;
 }
 .work .work-items .work-item .scroll-snap::-webkit-scrollbar-track {
@@ -3870,7 +3870,7 @@ hamburger
   font-size: 0.6em;
   font-weight: 600;
   text-transform: capitalize;
-  color: #a4b3c1;
+  color: #b3c0cc;
   background-color: #dc143c;
   border-radius: 10px;
   transition: 0.5s ease;
@@ -4204,7 +4204,7 @@ hamburger
   right: 1rem;
   top: 1rem;
   font-size: 4rem;
-  color: #a4b3c1;
+  color: #b3c0cc;
   opacity: 0.1;
   transition: 0.25s;
 }
@@ -4228,7 +4228,7 @@ hamburger
   margin-bottom: 0.25rem;
   text-transform: capitalize;
   color: #f4f4f4;
-  color: #a4b3c1;
+  color: #b3c0cc;
   font-weight: 400;
   font-family: "Kanit", sans-serif;
   transition: 1s ease;
@@ -4436,7 +4436,7 @@ hamburger
   margin-bottom: 1rem;
 }
 #footer .footer .footer-bottom .footer-item .date {
-  color: #a4b3c1;
+  color: #b3c0cc;
 }
 #footer .footer .footer-bottom .footer-item p {
   color: #f4f4f4;
@@ -4451,7 +4451,7 @@ hamburger
 }
 #footer .footer .footer-bottom .footer-item .footer-list li i {
   width: 1.5rem;
-  color: #a4b3c1;
+  color: #b3c0cc;
   transition: 0.25s;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li a {
@@ -4459,7 +4459,7 @@ hamburger
   cursor: pointer;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li:hover a {
-  color: #a4b3c1;
+  color: #b3c0cc;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li:hover i {
   color: #f4f4f4;
@@ -4548,7 +4548,7 @@ hamburger
 }
 #footer .footer .brand h2 {
   font-family: "Ubuntu", sans-serif;
-  color: #a4b3c1;
+  color: #b3c0cc;
   font-weight: 500;
   font-size: 1.2em;
   letter-spacing: 0.1em;
@@ -4892,7 +4892,7 @@ section .section-title.active-item span {
   display: block;
 }
 #thanks .home-link i {
-  color: #a4b3c1;
+  color: #b3c0cc;
   font-size: 1rem;
   margin-right: 0.5rem;
 }
