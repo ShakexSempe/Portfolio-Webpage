@@ -58,8 +58,7 @@ hamburger
   transition: 0.25s ease;
 }
 #header .hamburger.hamburger:before {
-  border: 1px solid #ead2a1;
-  border: 1px solid #fff9;
+  border: 1px solid #a4b3c1;
   opacity: 0;
   animation: ham-pulse 2.5s ease infinite;
 }
