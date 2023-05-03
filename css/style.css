@@ -2757,7 +2757,7 @@ hamburger
   width: 100%;
   position: relative;
   transform-style: preserve-3d;
-  background: #f4f4f4;
+  background: #fafafa;
   padding: 10vh 5vw;
 }
 @media (min-width: 820px) {
@@ -2768,14 +2768,14 @@ hamburger
 .contact .contact-header {
   width: 100%;
   height: auto;
-  background: #f4f4f4;
+  background: #fafafa;
   z-index: 10;
 }
 .contact .contact-items {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 10vh;
 }
 @media (min-width: 1024px) {
   .contact .contact-items {
