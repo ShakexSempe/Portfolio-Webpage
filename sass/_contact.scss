@@ -45,7 +45,6 @@
                 width: 100%;
                 display: flex;
                 justify-content: flex-start;
-                align-items: center;
                 gap: 1rem;
                 color: $overlay-blue-darkest;
                 text-align: center;
@@ -62,12 +61,6 @@
                     gap: 1rem;
                     border-color: transparent;
                 }
-                // @include xlg {
-                //     gap: .5rem;
-                // }
-                // @include lg {
-                //     gap: 1rem;
-                // }
                 .title {
                     // border: 2px solid yellow;
                     display: flex;
@@ -103,31 +96,6 @@
                         place-items: center;
                         transition: .5s ease;
                         position: relative;
-                        // PSEUDO OUTLINE
-                        // &::after {
-                        //     content: '';
-                        //     position: absolute;
-                        //     top: 0;
-                        //     left: 0;
-                        //     width: 100%;
-                        //     height: 100%;
-                        //     outline: 1px solid #fff8;
-                        //     border-radius: 50%;
-                        //     animation: icon-pulse 2s infinite linear;
-                            
-                        //     @keyframes icon-pulse {
-                        //         0% {
-                        //             outline-color: transparent;
-                        //         }
-                        //         50% {
-                        //             outline-color: #fff8;
-                        //         }
-                        //         100% {
-                        //             transform: scale(1.1);
-                        //             outline-color: transparent;
-                        //         }
-                        //     }
-                        // }
                         i {
                             font-size: 1.5rem;
                             color: $text-light;
@@ -164,6 +132,7 @@
                     // width: 100%;
                     flex-basis: 70%;
                     // border: 2px solid green;
+                    padding: 1rem 0;
                     h4 {
                         text-transform: capitalize;
                         text-align: left;
@@ -201,71 +170,9 @@
                     }
                     // LINK
                     a {
-                        display: block;
-                        width: 10rem;
-                        font-size: .95rem;
-                        font-size: $font-clamp-xsm;
-                        font-weight: 500;
-                        letter-spacing: .05rem;
-                        padding: .7rem;
-                        border-radius: .5rem;
-                        color: $text-light;
-                        text-transform: capitalize;
-                        cursor: pointer;
-                        transition: .25s ease;
-                        position: relative;
-                        isolation: isolate;
-                        // BUTTON PSEUDO BG
-                        &::before, &::after {
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            border-radius: .5rem;
-                            background: $span-crimson;
-                            transition: .25s;
-                            z-index: -1;
-                        }
-                        &::before {
-                            background: $button-crimson;
-                            box-shadow: $box-light-top-sm;
-                        }
-                        &::after {
-                            background: $button-crimson-hover;
-                            box-shadow: $box-dark-top-sm;
-                            opacity: 0;
-                        }
-                        // BUTTON MEDIA QUERY
-                        // DESKTOP HOVER
-                        @media (min-width: 820px){
-                            &:hover {
-                                letter-spacing: normal;
-                                transform: scale(.98);
-                                &::before {opacity: 0;}
-                                &::after {opacity: 1;}
-                            }
-                        }
-                        // MOBILE ACTIVE CLASS
-                        @media (max-width: 820px){
-                            &:active {
-                                letter-spacing: normal;
-                                transform: scale(.98);
-                                &::before {opacity: 0;}
-                                &::after {opacity: 1;}
-                            }
-                        }
-
-
                         i {
-                            font-size: 1rem;
-                            position: relative;
-                            transform: scale(.7) translateX(-.5rem);
                             opacity: .3;
-                            margin-left: .5rem;
                             transition: 1s ease;
-                            transition-delay: .15s;
                         }
                     }
                     // end of form link
@@ -285,15 +192,20 @@
                 &:hover {
                     // TURN OFF ICON PULSE ON HOVER
                     box-shadow: 0rem .25rem .5rem rgba(41, 50, 60, .2);
-                    .icon {
-                        &::after {
-                            opacity: 0;
-                            transition: 1s;
-                        }
-                        // TRANSITION IN ICON ON HOVER
-                        i {
-                            opacity: .8;
-                            transform: scale(.8);
+                    .title {
+                        .icon {
+                            background: $overlay-blue-darkest;
+                            border: 1px solid $brand-border;
+                            &::after {
+                                opacity: 0;
+                                transition: 1s;
+                            }
+                            // TRANSITION IN ICON ON HOVER
+                            i {
+                                // color: $brand;
+                                // opacity: .8;
+                                transform: scale(.95);
+                            }
                         }
                     }
                     
@@ -304,7 +216,6 @@
 
                             i {
                                 opacity: 1;
-                                transform: translateY(0);
                                 transition: .25s;
                             }
                         }

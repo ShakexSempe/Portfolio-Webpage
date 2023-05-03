@@ -2792,7 +2792,6 @@ hamburger
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   gap: 1rem;
   color: #15191e;
   text-align: center;
@@ -2872,6 +2871,7 @@ hamburger
 }
 .contact .contact-items .contact-item .contact-info {
   flex-basis: 70%;
+  padding: 1rem 0;
 }
 .contact .contact-items .contact-item .contact-info h4 {
   text-transform: capitalize;
@@ -2904,75 +2904,9 @@ hamburger
     font-size: 0.9em;
   }
 }
-.contact .contact-items .contact-item .contact-info a {
-  display: block;
-  width: 10rem;
-  font-size: 0.95rem;
-  font-size: clamp(.85rem, 1.25vw, 1.15rem);
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-  padding: 0.7rem;
-  border-radius: 0.5rem;
-  color: #f4f4f4;
-  text-transform: capitalize;
-  cursor: pointer;
-  transition: 0.25s ease;
-  position: relative;
-  isolation: isolate;
-}
-.contact .contact-items .contact-item .contact-info a::before, .contact .contact-items .contact-item .contact-info a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  background: #dc143c;
-  transition: 0.25s;
-  z-index: -1;
-}
-.contact .contact-items .contact-item .contact-info a::before {
-  background: linear-gradient(0deg, #750b20, #dd134c);
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
-}
-.contact .contact-items .contact-item .contact-info a::after {
-  background: linear-gradient(0deg, #dc134c, #750b20);
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(221, 221, 221, 0.3), 3px 3px 3px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-}
-@media (min-width: 820px) {
-  .contact .contact-items .contact-item .contact-info a:hover {
-    letter-spacing: normal;
-    transform: scale(0.98);
-  }
-  .contact .contact-items .contact-item .contact-info a:hover::before {
-    opacity: 0;
-  }
-  .contact .contact-items .contact-item .contact-info a:hover::after {
-    opacity: 1;
-  }
-}
-@media (max-width: 820px) {
-  .contact .contact-items .contact-item .contact-info a:active {
-    letter-spacing: normal;
-    transform: scale(0.98);
-  }
-  .contact .contact-items .contact-item .contact-info a:active::before {
-    opacity: 0;
-  }
-  .contact .contact-items .contact-item .contact-info a:active::after {
-    opacity: 1;
-  }
-}
 .contact .contact-items .contact-item .contact-info a i {
-  font-size: 1rem;
-  position: relative;
-  transform: scale(0.7) translateX(-0.5rem);
   opacity: 0.3;
-  margin-left: 0.5rem;
   transition: 1s ease;
-  transition-delay: 0.15s;
 }
 .contact .contact-items .contact-item:nth-child(1) {
   cursor: help;
@@ -2986,20 +2920,22 @@ hamburger
 .contact .contact-items .contact-item:hover {
   box-shadow: 0rem 0.25rem 0.5rem rgba(41, 50, 60, 0.2);
 }
-.contact .contact-items .contact-item:hover .icon::after {
+.contact .contact-items .contact-item:hover .title .icon {
+  background: #15191e;
+  border: 1px solid rgba(179, 191, 203, 0.5);
+}
+.contact .contact-items .contact-item:hover .title .icon::after {
   opacity: 0;
   transition: 1s;
 }
-.contact .contact-items .contact-item:hover .icon i {
-  opacity: 0.8;
-  transform: scale(0.8);
+.contact .contact-items .contact-item:hover .title .icon i {
+  transform: scale(0.95);
 }
 .contact .contact-items .contact-item:hover .contact-info a {
   opacity: 1;
 }
 .contact .contact-items .contact-item:hover .contact-info a i {
   opacity: 1;
-  transform: translateY(0);
   transition: 0.25s;
 }
 
