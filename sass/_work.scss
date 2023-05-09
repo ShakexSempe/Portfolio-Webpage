@@ -36,10 +36,11 @@
             background: #fff;
             box-shadow: $box-shadow-item-md;
             position: relative;
+            margin-bottom: 10vh;
             // padding-bottom: 5vh;
-            &:first-child {
-                margin-bottom: 15vh;
-            }
+            // &:first-child {
+            //     margin-bottom: 15vh;
+            // }
             @include sm {
                 padding: .5rem;
             }

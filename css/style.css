@@ -3182,9 +3182,7 @@ hamburger
   background: #fff;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
   position: relative;
-}
-.work .work-container .item:first-child {
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }
 @media (min-width: 576px) {
   .work .work-container .item {
