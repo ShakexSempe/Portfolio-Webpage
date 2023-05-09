@@ -3180,7 +3180,7 @@ hamburger
   overflow: hidden;
   border-radius: 0.25rem;
   background: #fff;
-  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   margin-bottom: 10vh;
 }
@@ -3258,7 +3258,7 @@ hamburger
   border-radius: 0.25rem;
   font-size: 0.75rem;
   text-transform: lowercase;
-  box-shadow: 0.125rem 0.25rem 0.25rem #0002;
+  box-shadow: 0.125rem 0.25rem 0.25rem rgba(0, 0, 0, 0.133);
   text-transform: uppercase;
 }
 .work .work-container .item .item-header .item-meta-data p::first-letter {
