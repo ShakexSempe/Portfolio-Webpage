@@ -2500,8 +2500,6 @@ hamburger
   width: 10rem;
   width: clamp(10rem, 40vw, 12rem);
   font-weight: 600;
-  position: sticky;
-  top: 50vh;
 }
 .skill-section .skill-section-title img {
   position: absolute;
