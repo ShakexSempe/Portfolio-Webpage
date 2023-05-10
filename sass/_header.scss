@@ -197,10 +197,10 @@
                             z-index: 1;
                             transition: 0.5s ease left;
                             position: relative;
-                            // border: 2px solid $border;
                             outline: none;
                             overflow-y: auto;
                             overflow-x: hidden;
+                            // border: 2px solid $border;
 
                             // list items active transition
                             li {
@@ -503,7 +503,7 @@
                             &::before {
                                 position: absolute;
                                 content: '';
-                                bottom: -.2rem;
+                                bottom: 0rem;
                                 left: 50%;
                                 transform: translateX(-50%);
                                 width: 0%;
@@ -537,7 +537,6 @@
 
                                 &.active {
                                     color: $brand;
-                                    transform: scale(1.15);
                                     &::before {
                                         width: 50%;
                                         opacity: 1;
