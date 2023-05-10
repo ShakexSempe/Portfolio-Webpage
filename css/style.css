@@ -1079,7 +1079,7 @@ hamburger
   .banner.index-banner {
     background-image: url("../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg");
     background-position: center left;
-    background-position: 10% 50%;
+    background-position: 10% 45%;
     background-attachment: fixed;
   }
   .banner.index-banner::after {
@@ -1398,7 +1398,7 @@ hamburger
 }
 @media (min-width: 820px) {
   .banner .hero .hero-index-content {
-    top: 15vh;
+    top: 10vh;
   }
 }
 .banner .hero .hero-index-content span {
@@ -1409,7 +1409,7 @@ hamburger
 }
 @media (min-width: 820px) {
   .banner .hero .hero-index-content .content-title {
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
   }
 }
 .banner .hero .hero-index-content .content-title h1 {

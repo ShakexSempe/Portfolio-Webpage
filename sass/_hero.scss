@@ -47,7 +47,7 @@
         @media (min-width: 768px) {
             background-image: url('../hero/ales-nesetril-Im7lZjxeLhg-unsplash-bg.jpg');
             background-position: center left;
-            background-position: 10% 50%;
+            background-position: 10% 45%;
             background-attachment: fixed;
 
             // animation: desktopIntro 8s linear 4s ;
@@ -435,7 +435,7 @@
             color: #fff;
             text-transform: capitalize;
             @include lg {
-                top: 15vh;
+                top: 10vh;
             }
             span {
                 color: $brand;
@@ -445,7 +445,7 @@
                 // border: 2px solid pink;
                 margin-bottom: 25vh;
                 @include lg {
-                    margin-bottom: 20vh;
+                    margin-bottom: 15vh;
                 }
                 h1 {
                     font-size: 1rem;
