@@ -5,7 +5,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 8vh;
+    // min-height: 8vh;
     // overflow: hidden;
     isolation: isolate;
     // PSEUDO BACKGROUND COLOR
@@ -23,7 +23,7 @@
     }
     // DESKTOP HEADER HEIGHT
     @media (min-width: 1024px) {
-        height: 15vh;
+        // min-height: 15vh;
         // border: 2px solid red;
     }
     // INTERSECTION CLASS
@@ -118,10 +118,10 @@
             justify-content: space-between;
             width: 100%;
             height: 100%;
-            padding: 0 5vw;
+            padding: 1rem 5vw;
             z-index: 5;
             @include xsm {
-                padding: 0 1rem;
+                padding: .5rem 5vw;
             }
             // HEADER LOGO
             .logo {
@@ -129,21 +129,20 @@
                 opacity: 1;
                 // transform: translateY(-11vh);
                 transition: 1s;
+                // border: 2px solid red;
                 p {
-                    @media (min-width: 768px) {
-                        font-size: 1.25rem;
-                    }
-                    font-size: 1rem;
-                    font-family: $font-title;
-                    font-weight: 400;
-                    text-transform: capitalize;
-                    color: $text-light;
                     background-color: $overlay-blue-darkest;
+                    color: $text-light;
                     border: 1px solid $brand-border;
-                    // background: $overlay-dark;
-                    // border: 1px solid #fff2;
+                    
                     padding-left: .25rem;
                     padding-block: .15rem;
+                    
+                    font-family: $font-title;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    
                     border-radius: $border-radius-sm;
                     overflow: hidden;
                     transition: .5s;
@@ -151,19 +150,10 @@
 
                     span {
                         padding-right: .25rem;
-                        background: $button-gold;
                         background: linear-gradient( #f4f4f4, #fff);
                         background: inherit;
                         color: $brand;
                         border-radius: 0;
-                        // padding: .05rem .3rem .05rem .05rem;
-                        // background: $span-gold;
-                        // background: $text-light;
-                        // font-weight: 600;
-                        // font-size: inherit;
-                        // color: inherit;
-                        // border-top-right-radius: .25rem;
-                        // border-bottom-right-radius: .25rem;
                         transition: .2s;
                     }
 
@@ -467,6 +457,7 @@
                 // DESKTOP NAVLIST
                 @media (min-width: 820px){
                     // border: 2px solid yellow;
+                    padding: 1rem 0;
                     height: 100%;
                     // HIDE LOGO AND HAMBURGER ON DESKTOP
                         .nav-logo {
