@@ -3410,6 +3410,7 @@ hamburger
 }
 @media (min-width: 820px) {
   .work .work-container .item .item-content .item-image img {
+    border: 1px solid #0002;
     border-radius: 0.25rem;
   }
 }
