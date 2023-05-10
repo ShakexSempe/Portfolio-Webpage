@@ -142,8 +142,9 @@
                 }
                 .item-description {
                     // border: 1px solid pink;
-                    margin: 1rem 0;
+                    margin: .5rem 0 1rem;
                     p {
+                        color: $overlay-blue-light;
                         font-weight: 500;
                         font-size: 1rem;
                         font-size: clamp(.95rem, 1.5vw, 1.05rem);

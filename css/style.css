@@ -3281,9 +3281,10 @@ hamburger
   color: #b3c0cc;
 }
 .work .work-container .item .item-header .item-description {
-  margin: 1rem 0;
+  margin: 0.5rem 0 1rem;
 }
 .work .work-container .item .item-header .item-description p {
+  color: hwb(211 28% 61%);
   font-weight: 500;
   font-size: 1rem;
   font-size: clamp(.95rem, 1.5vw, 1.05rem);
