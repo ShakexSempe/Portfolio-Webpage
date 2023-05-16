@@ -2478,18 +2478,33 @@ hamburger
 .skill-section .skill-section-title ul {
   margin-top: 1rem;
   padding: 0 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
 .skill-section .skill-section-title ul li {
-  padding-bottom: 0.25rem;
+  padding: 0.25rem 1rem;
+  border: 2px solid transparent;
+  border-right-color: #b3c0cc;
+  border-left-color: #b3c0cc;
+  text-transform: capitalize;
 }
 .skill-section .skill-section-title ul li::marker {
   color: #b3c0cc;
+}
+.skill-section .skill-section-title ul li:first-child {
+  border-color: transparent;
+}
+.skill-section .skill-section-title ul li:last-child {
+  border-color: transparent;
 }
 .skill-section .skill-section-title .btn {
   margin-top: 1rem;
   width: 12rem;
   width: clamp(12rem, 10vw, 12rem);
   font-weight: 600;
+  position: absolute;
+  bottom: 10vh;
 }
 .skill-section .skill-section-title img {
   position: absolute;
@@ -2655,6 +2670,7 @@ hamburger
 }
 .skill-section .skill-section-content .skill-article ul {
   margin-top: 1rem;
+  display: flex;
 }
 .skill-section .skill-section-content .skill-article ul li {
   padding-bottom: 0.25rem;
