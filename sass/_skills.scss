@@ -839,8 +839,8 @@
             width: 12rem;
             width: clamp(12rem, 10vw, 12rem);
             font-weight: 600;
-            position: absolute;
-            bottom: 10vh;
+            // position: absolute;
+            // bottom: 10vh;
 
             // position: sticky;
             // top: 50vh;
@@ -1040,7 +1040,6 @@
 
             ul {
                 margin-top: 1rem;
-                display: flex;
 
                 li {
                     padding-bottom: .25rem;

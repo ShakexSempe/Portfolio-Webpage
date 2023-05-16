@@ -2503,8 +2503,6 @@ hamburger
   width: 12rem;
   width: clamp(12rem, 10vw, 12rem);
   font-weight: 600;
-  position: absolute;
-  bottom: 10vh;
 }
 .skill-section .skill-section-title img {
   position: absolute;
@@ -2670,7 +2668,6 @@ hamburger
 }
 .skill-section .skill-section-content .skill-article ul {
   margin-top: 1rem;
-  display: flex;
 }
 .skill-section .skill-section-content .skill-article ul li {
   padding-bottom: 0.25rem;
