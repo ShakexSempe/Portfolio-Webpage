@@ -704,6 +704,13 @@
         margin-top: 10vh;
     }
 
+    &.border {
+        border: .125rem solid $brand;
+        &.border-dark {
+            border-color: $overlay-blue-dark;
+        }
+    }
+
     .skills-btn {
         background: #fff;
         // border: 2px solid red;

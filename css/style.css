@@ -2395,6 +2395,12 @@ hamburger
     margin-top: 10vh;
   }
 }
+.skill-section-container.border {
+  border: 0.125rem solid #b3c0cc;
+}
+.skill-section-container.border.border-dark {
+  border-color: #29323d;
+}
 .skill-section-container .skills-btn {
   background: #fff;
   border-radius: 0.25rem;
