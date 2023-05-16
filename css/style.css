@@ -2782,6 +2782,7 @@ hamburger
 @media (min-width: 768px) {
   .contact .contact-items {
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5vw;
   }
 }
 .contact .contact-items .contact-item {
