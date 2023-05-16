@@ -470,14 +470,13 @@ hamburger
             border-radius: .5rem;
             // width: 100%;
             i {
-                font-size: 1.2rem;
+                font-size: 1.125rem;
                 font-weight: 700;
                 color: $brand;
                 transition: .25s;
             }
             @include lg {
             padding: .5rem 5rem;
-
             }
         }
 
