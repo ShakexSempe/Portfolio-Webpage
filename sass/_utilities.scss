@@ -421,8 +421,8 @@ hamburger
 
 // BOTTOM NAV
 .bottom-nav {
-    @media (min-width: 768px){
-        // display: none;
+    @include lg {
+        display: none;
         height: 7vh;
     }
     position: fixed;
