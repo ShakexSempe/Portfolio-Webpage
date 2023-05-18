@@ -51,7 +51,10 @@ body {
         color: $span-crimson;
     }
 }
-
+main {
+    // border: 2px solid red;
+    scroll-margin-top: 5vh;
+}
 section {
     // padding: 5vh 0;
     width: 100%;

@@ -4573,6 +4573,10 @@ body span {
   color: #dc143c;
 }
 
+main {
+  scroll-margin-top: 5vh;
+}
+
 section {
   width: 100%;
 }
