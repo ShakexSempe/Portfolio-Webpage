@@ -458,7 +458,6 @@ hamburger
   transition: 0.5s;
 }
 .bottom-nav .link-item a:active::after {
-  opacity: 0.8;
   transform: scaleX(1);
 }
 .bottom-nav.active-bottom-nav {
