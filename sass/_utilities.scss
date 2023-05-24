@@ -501,7 +501,7 @@ hamburger
                 transition: .5s;
                 &::after {
                     // animation: click .125s forwards;
-                    opacity: .5;
+                    opacity: .8;
                     transform: scaleX(1);
                 }
             }
