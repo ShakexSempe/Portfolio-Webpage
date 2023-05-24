@@ -450,7 +450,6 @@ hamburger
         place-content: center;
         border-radius: .5rem;
         // padding: .15rem;
-
         opacity: 0;
         transition: .25s;
         position: relative;
@@ -466,9 +465,26 @@ hamburger
             transition: .25s;
             padding: .5rem 2rem;
             transition: .25s;
+            width: 100%;
+            cursor: default;
             // border: 2px solid red;
             border-radius: .5rem;
-            // width: 100%;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $overlay-blue-dark;
+                border-radius: .5rem;
+                z-index: -1;
+                transition: .125s;
+                transform: scaleX(.5);
+                opacity: 0;
+            }
             i {
                 font-size: 1.125rem;
                 font-weight: 700;
@@ -476,42 +492,20 @@ hamburger
                 transition: .25s;
             }
             @include lg {
-            padding: .5rem 5rem;
+                padding: .5rem 5rem;
             }
-        }
 
-        // LINK ITEM HOVER STATE 
 
-        @media (max-width: 768px) {
-            &:hover {
-                a {
-                    background: $overlay-blue-dark;
-                }
-                i {
-                    color: $text-light;
+            // HOVER AND ACTIVE
+            &:active {
+                transition: .5s;
+                &::after {
+                    // animation: click .125s forwards;
+                    opacity: .5;
+                    transform: scaleX(1);
                 }
             }
-        }
 
-        @media (min-width: 768px) {
-            transform: scale(1.05);
-
-            &:hover {
-                a {
-                    border: 1px solid $brand;
-                    
-                    &:hover {
-                        border: none;
-                        background: $overlay-blue-light;
-                        
-                    }
-
-                }
-                i {
-                    color: $span-gold;
-                    color: $text-light;
-                }
-            }
         }
     }
 
