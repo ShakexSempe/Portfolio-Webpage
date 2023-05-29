@@ -2798,6 +2798,7 @@ hamburger
   text-transform: capitalize;
   font-size: 1rem;
   transition: 0.25s;
+  position: relative;
 }
 .contact .contact-items .contact-item .title i {
   transform: translateY(-1rem) scale(1.1);
@@ -2805,6 +2806,17 @@ hamburger
   filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2));
   margin-bottom: 0.5rem;
   transition: 0.25s ease-in-out;
+}
+.contact .contact-items .contact-item .title::after {
+  content: attr(data-info);
+  position: absolute;
+  top: 1rem;
+  right: 5vw;
+  color: rgba(41, 50, 61, 0.08);
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  transition: 0.5s;
+  opacity: 0.5;
 }
 .contact .contact-items .contact-item .contact-info p {
   margin: 0.5rem 0;
@@ -2819,6 +2831,10 @@ hamburger
 .contact .contact-items .contact-item:hover .title i {
   transform: translateY(0rem) scale(1);
   filter: drop-shadow(0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.35));
+}
+.contact .contact-items .contact-item:hover .title::after {
+  letter-spacing: normal;
+  opacity: 1;
 }
 .contact .contact-items .contact-item:hover .contact-info .btn i {
   opacity: 1;

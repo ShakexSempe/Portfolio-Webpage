@@ -50,13 +50,26 @@
                     text-transform: capitalize;
                     font-size: 1rem;
                     transition: .25s;
-                    
+                    position: relative;
                     i {
                         transform: translateY(-1rem) scale(1.1);
                         font-size: 2rem;
                         filter: drop-shadow(.25rem .25rem .25rem rgba(0, 0, 0, .2));
                         margin-bottom: .5rem;
                         transition: .25s ease-in-out;
+                    }
+                    
+                    &::after {
+                        content: attr(data-info);
+                        position: absolute;
+                        top: 1rem;
+                        right: 5vw;
+                        color: hsla(212, 19%, 20%, .08);
+                        font-size: 3rem;
+                        letter-spacing: 1rem;
+                        transition: .5s;
+                        opacity: .5;
+                        // transform: rotate(-40deg);
                     }
                 }
 
@@ -80,6 +93,10 @@
                         i {
                             transform: translateY(0rem) scale(1);
                             filter: drop-shadow(.125rem .125rem .125rem rgba(0, 0, 0, .35));
+                        }
+                        &::after {
+                            letter-spacing: normal;
+                            opacity: 1;
                         }
                     }
 
