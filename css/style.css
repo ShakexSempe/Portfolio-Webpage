@@ -1172,7 +1172,7 @@ hamburger
 .banner .hero .hero-content .hero-title .hero-title-header {
   line-height: 1.25;
   font-size: 0.95rem;
-  font-size: clamp(.95rem, 2vw, 1rem);
+  font-size: clamp(.95rem, 2vw, 1.1rem);
   font-weight: 400;
   color: #b3c0cc;
 }
@@ -1938,12 +1938,12 @@ hamburger
 }
 @media (min-width: 768px) {
   .skills-section .skills-content .skills-intro .skills-article {
-    width: 70%;
+    width: 60%;
   }
 }
 .skills-section .skills-content .skills-intro .skills-article p {
-  font-size: clamp(.95rem, 2vw, 1rem);
   font-size: 0.95rem;
+  font-size: clamp(.95rem, 2vw, 1.1rem);
   font-weight: 500;
   line-height: 1.6;
   overflow: hidden;
@@ -1996,7 +1996,7 @@ hamburger
   text-align: left;
   color: #ead2a1;
   font-size: 1rem;
-  font-size: clamp(.95rem, 2vw, 1rem);
+  font-size: clamp(.95rem, 2vw, 1.1rem);
 }
 .skills-section .skills-content .skills-intro .skills-drop .skills-drop-p {
   font-weight: 500;

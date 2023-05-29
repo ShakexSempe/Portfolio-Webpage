@@ -28,13 +28,13 @@
 
             .skills-article {
                 @include md {
-                    width: 70%;
+                    width: 60%;
                 }
 
                 p {
                     // font-size: clamp(.95rem, 1.5vw, 1.15rem);
-                    font-size: $font-clamp-sm;
                     font-size: .95rem;
+                    font-size: $font-clamp-sm;
                     font-weight: 500;
                     line-height: 1.6;
                     overflow: hidden;
