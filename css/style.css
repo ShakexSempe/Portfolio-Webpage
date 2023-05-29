@@ -718,6 +718,11 @@ hamburger
   overflow: hidden;
   transition: 0.5s;
 }
+@media (min-width: 768px) {
+  .header .navbar #nav .logo p {
+    font-size: 1.25rem;
+  }
+}
 .header .navbar #nav .logo p span {
   padding-right: 0.25rem;
   background: linear-gradient(#f4f4f4, #fff);
@@ -986,7 +991,7 @@ hamburger
     opacity: 1;
   }
   .header .navbar #nav .nav-list ul li a {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     padding: 0.25rem;
     margin: 0 auto;
     display: block;

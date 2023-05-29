@@ -142,11 +142,13 @@
                     font-size: 1rem;
                     font-weight: 400;
                     text-transform: capitalize;
-                    
                     border-radius: $border-radius-sm;
                     overflow: hidden;
                     transition: .5s;
                     // text-shadow: 0 0 5px $text-shadow-red;
+                    @include md {
+                        font-size: 1.25rem;
+                    }
 
                     span {
                         padding-right: .25rem;
@@ -513,7 +515,7 @@
                             // end of list item underline
                             
                             a {
-                                font-size: .85rem;
+                                font-size: .95rem;
                                 padding: .25rem;
                                 margin: 0 auto;
                                 display: block;
