@@ -4452,8 +4452,8 @@ form .input-div input, form .input-div textarea {
   font-weight: 500;
   letter-spacing: 0.15em;
   background: #1f252d;
-  outline: 2px solid #ead2a1;
-  color: #ead2a1;
+  outline: 1px solid #b3c0cc;
+  color: #f4f4f4;
 }
 form .input-div input:invalid, form .input-div textarea:invalid {
   background-color: #ead2a1;
