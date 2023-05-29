@@ -2802,9 +2802,9 @@ hamburger
 .contact .contact-items .contact-item .title i {
   transform: translateY(-1rem) scale(1.1);
   font-size: 2rem;
-  transition: 0.25s;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2));
   margin-bottom: 0.5rem;
+  transition: 0.25s ease-in-out;
 }
 .contact .contact-items .contact-item .contact-info p {
   margin: 0.5rem 0;
@@ -2818,7 +2818,7 @@ hamburger
 }
 .contact .contact-items .contact-item:hover .title i {
   transform: translateY(0rem) scale(1);
-  filter: drop-shadow(0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.35));
 }
 .contact .contact-items .contact-item:hover .contact-info .btn i {
   opacity: 1;
