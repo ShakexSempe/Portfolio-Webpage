@@ -4294,7 +4294,7 @@ hamburger
 }
 #footer .footer .footer-bottom .footer-item .footer-list li a {
   color: #f4f4f4;
-  cursor: pointer;
+  transition: 0.25s;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li:hover a {
   color: #b3c0cc;

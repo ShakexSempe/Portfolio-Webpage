@@ -399,12 +399,12 @@
                         }
                         a {
                             color: $text-light;
-                            cursor: pointer;
+                            transition: .25s;
                         }
                         
                         &:hover {
                             a {
-                                color: $brand;;
+                                color: $brand;
                             }
                             i {
                                 color: $text-light;
