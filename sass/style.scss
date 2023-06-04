@@ -26,6 +26,10 @@ html {
 body {
     font-family: $font-content;
     color: $overlay-blue-darker;
+
+    img {
+        max-width: 100%;
+    }
     a {
         text-decoration: none;
         transition: .25s;
