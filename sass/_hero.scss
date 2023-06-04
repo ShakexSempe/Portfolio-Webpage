@@ -435,8 +435,8 @@
         top: 10vh;
         color: #fff;
         text-transform: capitalize;
-        @include lg {
-            top: 10vh;
+        @include xlg {
+            top: 20vh;
         }
         span {
             color: $brand;
@@ -445,8 +445,8 @@
         .content-title {
             // border: 2px solid pink;
             margin-bottom: 25vh;
-            @include lg {
-                margin-bottom: 15vh;
+            @include xlg {
+                margin-bottom: 5vh;
             }
             h1 {
                 font-size: 1rem;

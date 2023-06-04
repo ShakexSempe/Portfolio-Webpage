@@ -1343,9 +1343,9 @@ hamburger
   color: #fff;
   text-transform: capitalize;
 }
-@media (min-width: 820px) {
+@media (min-width: 1024px) {
   .hero .hero-index-content {
-    top: 10vh;
+    top: 20vh;
   }
 }
 .hero .hero-index-content span {
@@ -1354,9 +1354,9 @@ hamburger
 .hero .hero-index-content .content-title {
   margin-bottom: 25vh;
 }
-@media (min-width: 820px) {
+@media (min-width: 1024px) {
   .hero .hero-index-content .content-title {
-    margin-bottom: 15vh;
+    margin-bottom: 5vh;
   }
 }
 .hero .hero-index-content .content-title h1 {
