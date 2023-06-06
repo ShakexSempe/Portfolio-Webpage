@@ -506,7 +506,7 @@
         background: $overlay-blue-dark;
         img {
             // border: 5px solid green;
-            mix-blend-mode: overlay;
+            // mix-blend-mode: overlay;
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -530,6 +530,7 @@
                 opacity: .8;
                 position: relative;
                 right: -20vw;
+                aspect-ratio: 16/9;
             }
         }
 

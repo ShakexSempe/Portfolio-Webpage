@@ -1407,7 +1407,6 @@ hamburger
   background: #29323d;
 }
 .hero .hero-image img {
-  mix-blend-mode: overlay;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -1427,6 +1426,7 @@ hamburger
     opacity: 0.8;
     position: relative;
     right: -20vw;
+    aspect-ratio: 16/9;
   }
 }
 
