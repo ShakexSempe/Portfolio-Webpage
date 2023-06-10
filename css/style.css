@@ -4330,7 +4330,6 @@ hamburger
   opacity: 1;
 }
 #footer .footer .brand h3 {
-  font-family: "Gruppo", cursive;
   text-shadow: none;
   letter-spacing: 0.1em;
   position: relative;
@@ -4367,7 +4366,6 @@ hamburger
   color: #dc143c;
 }
 #footer .footer .brand h2 {
-  font-family: "Ubuntu", sans-serif;
   color: #b3c0cc;
   font-weight: 500;
   font-size: 1.2em;

@@ -467,7 +467,6 @@
             // end of brand hover state
             // title (h3)
             h3 {
-                font-family: $font-gruppo;
                 text-shadow: none;
                 letter-spacing: .1em;
                 position: relative;
@@ -517,7 +516,6 @@
             // end of h3 message slide in on hover
             // h2 pop up messsage
             h2 {
-                font-family: $font-ubuntu;
                 color: $brand;
                 font-weight: 500;
                 font-size: 1.2em;
@@ -539,9 +537,6 @@
                 }
             }
         }
-        // end of footer thank you message
-        
-        // end of social icons 
     }
 }
 // end of bs21
