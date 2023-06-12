@@ -1,12 +1,6 @@
-/*
-section containers
-progress bar
-section title and section title reflect
-hamburger 
 
-*/ 
 
-// hamburger toggle
+// HAMBURGER TOGGLE
 #header .hamburger {
     font-size: 10px;
     height: 3em;
@@ -151,19 +145,6 @@ hamburger
         // end of hamburger bars active state
     // end of hamburger bars
 }
-// end of hamburger toggle 
-
-// section containers
-.container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // overflow: hidden;
-}
-// end of section containers 
-
 /*progress bar*/
 /* The progress container (grey background) */
 .progress-container {
@@ -194,111 +175,6 @@ hamburger
 }
 /* end of progress bar*/
 
-/*bootstrap scrollbar*/
-.custom-scrollbar-js {
-    height: 200px;
-}
-// back to top button
-.top-link {
-    @media (max-width: 768px){
-        display: none;
-    }
-    position: fixed;
-    bottom: 5vh;
-    right: 5vw;
-    background: $button-crimson;
-    display: grid;
-    place-items: center;
-    border-radius: .25rem;
-    // animation: bounce 2s ease-in-out infinite;
-    transition: .5s ease-in;
-    opacity: 1;
-    transform: translateY(15vh);
-    // visibility: hidden;
-    z-index: 30;
-    isolation: isolate;
-    // PSEUDO BG
-    &::before, &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: .25rem;
-        transition: .25s;
-        z-index: -1;
-    }
-    &::before {
-        background: $button-crimson;
-        box-shadow: $box-light-top-sm;
-    }
-    &::after {
-        background: $button-crimson-hover;
-        box-shadow: $box-light-top-sm-hover;
-        opacity: 0;
-    }
-    i {
-        color: #ddd;
-        padding: .5rem;
-        font-size: 1rem;
-    }
-
-    &.show-link {
-        transition: all .5s ease-in-out;
-        // visibility: visible;
-        // z-index: 5;
-        opacity: 1;
-        transform: translateY(0);
-        transition: 1.5s;
-        // z-index: 30;
-
-        // HOVER AND ACTIVE STATE
-        // MOBILE ACTIVE CLASS
-        @media (max-width: 768px) {
-            &:active {
-                transition: .2s;
-                transform: translateY(0) scale(.95);
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-            }
-        }
-        // DESKTOP HOVER STATE
-        @media (min-width: 768px) {
-            &:hover {
-                transition: .2s;
-                transform: translateY(0) scale(.95);
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-            }
-        }
-    }
-    @keyframes bounce {
-        0% {
-            transform: scale(1);
-        }
-
-        50% {
-            transform: scale(1.2);
-        }
-
-        100% {
-            transform: scale(1);
-        }
-    }
-    @media (min-width: 768px) {
-        &:hover {
-            animation: none;
-            // transform: translateY(-100%);
-    
-            i {
-                transform: scale(.97);
-                transition: .2s;
-            }
-        }
-
-    }
-}
 // end of back to top button
 
 // BUTTONS CONTAINER
@@ -556,21 +432,6 @@ hamburger
 
 
 
-// SCROLL OUT
-[data-scroll] {
-    transition: 1s;
-    transform: scale(.5);
-}
-
-[data-scroll="in"] {
-    opacity: 1;
-    transform: scale(1);
-}
-
-[data-scroll="out"] {
-    opacity: 0;
-}
-// END OF SCROLL OUT
 
 // LOADER
 .loader_bg {
@@ -579,143 +440,124 @@ hamburger
     left: 0;
     width: 100%;
     height: 100vh;
-    // background-color: $overlay-blue-darker;
-    // background: #0008;
     z-index: 100;
     display: grid;
     place-items: center;
     overflow: hidden;
     isolation: isolate;
-    &::after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: $overlay-blue-darkest;
-        z-index: -1;
-        animation: zoom-out 2s ease 4s forwards;
-        @keyframes zoom-out {
-            100% {
-                // transform: scale(0);
-                opacity: 0;
-                // border-radius: 50%;
-            }
-        }
-    }
-
-    .spinner {
-        // border: .25rem solid red;
-        height: 5rem;
-        width: 5rem;
-        position: relative;
-        display: grid;
-        place-items: center;
-        isolation: isolate;
-        color: $brand;
-        text-transform: capitalize;
-        animation: spinner-out 1s ease 4s forwards;
-        @keyframes spinner-out {
-            100% {
-                transform: scale(0);
-            }
-        }
-        .sector {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            // background-color: #333;
-            border-radius: 50%;
-            border: .25rem solid transparent;
-            animation: rotate 3s infinite;
-            mix-blend-mode: overlay;
-
-            &.sector-1 {
-                border-top-color: $dark-crimson;
-                animation-duration: 1.5s;
-                animation-timing-function: ease-in-out;
-            }
-            &.sector-2 {
-                border-right-color: $span-light;
-                animation-duration: 2s;
-                animation-timing-function: ease-in;
-
-            }
-            &.sector-3 {
-                border-left-color: $overlay-blue-light;
-                animation-duration: 2.5s;
-                animation-timing-function: ease-out;
-            }
-
-            @keyframes rotate {
-                0% {
-                    transform: rotate(0);
-                }
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
-        }
-    }
-
-    .loader {
-        border: 1rem solid $span-gold;
-        border: none;
-        height: 3.5rem;
-        width: 3.5rem;
-        border-radius: 50%;
-        position: relative;
-
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: .25rem solid $span-gold;
-            border-radius: 50%;
+}
+.loader_bg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $overlay-blue-darkest;
+    z-index: -1;
+    animation: zoom-out 2s ease 4s forwards;
+    @keyframes zoom-out {
+        100% {
             opacity: 0;
-            animation: loader 2s linear infinite;
         }
-
-        &::before {
-            animation-delay: .5s;
-        }
-
-        @keyframes loader {
-            0% {
-                transform: scale(0);
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 0;
-            }
-        }
-    }
-
-    p {
-        position: absolute;
-        color: $span-gold;
-        bottom: 0vh;
-        left: 50%;
-        transform: translateX(-50%) translateY(20vh);
-        text-align: center;
-        text-transform: capitalize;
-        width: 20rem;
-        // border: 2px solid red;
-        font-size: 1.5rem;
     }
 }
 
+.spinner {
+    // border: .25rem solid red;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    color: $brand;
+    text-transform: capitalize;
+    animation: spinner-out 1s ease 4s forwards;
+    @keyframes spinner-out {
+        100% {
+            transform: scale(0);
+        }
+    }
+    .sector {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // background-color: #333;
+        border-radius: 50%;
+        border: .25rem solid transparent;
+        animation: rotate 3s infinite;
+        mix-blend-mode: overlay;
 
+        &.sector-1 {
+            border-top-color: $dark-crimson;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+        }
+        &.sector-2 {
+            border-right-color: $span-light;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+
+        }
+        &.sector-3 {
+            border-left-color: $overlay-blue-light;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.loader {
+    border: 1rem solid $span-gold;
+    border: none;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: .25rem solid $span-gold;
+        border-radius: 50%;
+        opacity: 0;
+        animation: loader 2s linear infinite;
+    }
+
+    &::before {
+        animation-delay: .5s;
+    }
+
+    @keyframes loader {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+}
 
 
