@@ -23,7 +23,6 @@
             margin-top: 5vh;
             &::after {
                 width: 80%;
-                // margin: 0 auto;
             }
         }
         // end of section title
@@ -291,13 +290,15 @@
     }
     // COL LEFT = ABOUT IMAGE(S)
     .col-left {
-        // border: 2px solid red;
+        // border: 2px solid #0005;
         border-radius: .25rem;
         width: 100%;
-        height: 70vh;
+        height: 60vh;
         margin-top: 0;
         z-index: 20;
-        transform-style: preserve-3d;
+        @include xsm {
+            height: 40vh;
+        }
         @include md {
             width: 100%;
             height: 70vh;
@@ -309,7 +310,7 @@
         .about-img {
             border: none;
             // border: 2px solid blue;
-            width: 100%;
+            width: 70%;
             height: 100%;
             margin-inline: auto;
             position: relative;
@@ -349,6 +350,7 @@
                 // DESKTOP IMAGE
                 @include sm {
                     object-fit: contain;
+                    object-position: top;
                 }
             }
 

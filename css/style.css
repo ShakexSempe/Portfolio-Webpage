@@ -3730,10 +3730,14 @@
 .about .col-left {
   border-radius: 0.25rem;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   margin-top: 0;
   z-index: 20;
-  transform-style: preserve-3d;
+}
+@media (max-width: 450px) {
+  .about .col-left {
+    height: 40vh;
+  }
 }
 @media (min-width: 768px) {
   .about .col-left {
@@ -3745,7 +3749,7 @@
 }
 .about .col-left .about-img {
   border: none;
-  width: 100%;
+  width: 70%;
   height: 100%;
   margin-inline: auto;
   position: relative;
@@ -3783,6 +3787,7 @@
 @media (min-width: 576px) {
   .about .col-left .about-img img {
     object-fit: contain;
+    object-position: top;
   }
 }
 .about .col-left .about-img:hover img {
