@@ -903,14 +903,12 @@
 }
 
 .banner {
-  padding: 0;
   width: 100%;
   height: 95vh;
-  background: linear-gradient(90deg, #0009 50%, #0004 80%);
   background: #1f252d;
   position: relative;
-  z-index: 1;
   overflow: hidden;
+  isolation: isolate;
 }
 @media (max-width: 1024px) {
   .banner.about-banner::after {

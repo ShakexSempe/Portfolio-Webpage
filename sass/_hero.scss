@@ -1,14 +1,11 @@
 // HERO
 .banner {
-    // border: 4px solid yellow;
-    padding: 0;
     width: 100%;
     height: 95vh;
-    background: linear-gradient( 90deg, #0009 50%, #0004 80%);
     background: $overlay-blue-darker;
     position: relative;
-    z-index: 1;
     overflow: hidden;
+    isolation: isolate;
 
     // ABOUT PAGE BANNER
     &.about-banner {
@@ -69,12 +66,8 @@
             }
         }
     }
-
-    
 }
 .hero {
-    // overflow: hidden;
-    // position: relative;
     color: #fff;
     // ANIMATED INTRO
     .hero-content {
@@ -201,8 +194,6 @@
         }
     }
 
-    // end of animated h1 
-    // welcome section button & shadow
     .hero-cta {
         @media (max-width: 576px){
             margin: 20vh 0 0;
