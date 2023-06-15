@@ -22,7 +22,6 @@
                 align-items: center;
                 justify-content: space-between;
                 gap: 1rem;
-                // border: 2px solid red;
                 border-radius: .25rem;
             }
             
@@ -30,17 +29,12 @@
 
         .item {
             // border: 2px solid blue;
-            // height: auto;
             overflow: hidden;
             border-radius: .25rem;
             background: #fff;
             box-shadow: $box-shadow-item-md;
             position: relative;
             margin-bottom: 10vh;
-            // padding-bottom: 5vh;
-            // &:first-child {
-            //     margin-bottom: 15vh;
-            // }
             @include sm {
                 padding: .5rem;
             }
@@ -145,7 +139,7 @@
                     margin: .5rem 0 1rem;
                     p {
                         color: $overlay-blue-light;
-                        font-weight: 500;
+                        font-weight: 400;
                         font-size: 1rem;
                         font-size: clamp(.95rem, 1.5vw, 1.05rem);
                         &::first-letter {

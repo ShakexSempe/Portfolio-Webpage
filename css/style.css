@@ -2916,7 +2916,7 @@
 }
 .work .work-container .item .item-header .item-description p {
   color: #475462;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   font-size: clamp(.95rem, 1.5vw, 1.05rem);
 }
