@@ -131,7 +131,7 @@
 .progress-bar {
   height: 3px;
   background: #29323d;
-  background: linear-gradient(90deg, #29323d, hwb(211 28% 61%), #29323d);
+  background: linear-gradient(90deg, #29323d, #475462, #29323d);
   opacity: 0.1;
   width: 0%;
   transition: 0.5s;
@@ -359,7 +359,7 @@
 }
 
 .skip-link {
-  background: hwb(211 28% 61%);
+  background: #475462;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -375,122 +375,6 @@
 }
 .skip-link:focus {
   transform: translateY(0);
-}
-
-.loader_bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 100;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.loader_bg::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #15191e;
-  z-index: -1;
-  animation: zoom-out 2s ease 4s forwards;
-}
-@keyframes zoom-out {
-  100% {
-    opacity: 0;
-  }
-}
-
-.spinner {
-  height: 5rem;
-  width: 5rem;
-  position: relative;
-  display: grid;
-  place-items: center;
-  isolation: isolate;
-  color: #b3c0cc;
-  text-transform: capitalize;
-  animation: spinner-out 1s ease 4s forwards;
-}
-@keyframes spinner-out {
-  100% {
-    transform: scale(0);
-  }
-}
-.spinner .sector {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 0.25rem solid transparent;
-  animation: rotate 3s infinite;
-  mix-blend-mode: overlay;
-}
-.spinner .sector.sector-1 {
-  border-top-color: #b60f30;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-}
-.spinner .sector.sector-2 {
-  border-right-color: #b3bfcb;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-}
-.spinner .sector.sector-3 {
-  border-left-color: hwb(211 28% 61%);
-  animation-duration: 2.5s;
-  animation-timing-function: ease-out;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.loader {
-  border: 1rem solid #ead2a1;
-  border: none;
-  height: 3.5rem;
-  width: 3.5rem;
-  border-radius: 50%;
-  position: relative;
-}
-.loader::before, .loader::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0.25rem solid #ead2a1;
-  border-radius: 50%;
-  opacity: 0;
-  animation: loader 2s linear infinite;
-}
-.loader::before {
-  animation-delay: 0.5s;
-}
-@keyframes loader {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
 }
 
 .header {
@@ -2211,7 +2095,7 @@
   text-transform: capitalize;
 }
 .skills-section .skills-content .skills-items .skills-item ul li::marker {
-  color: hwb(211 28% 61%);
+  color: #475462;
 }
 @media (min-width: 820px) {
   .skills-section .skills-content .skills-items .skills-item ul li {
@@ -2541,7 +2425,7 @@
   filter: drop-shadow(0rem 0.25rem 0.15rem rgba(0, 0, 51, 0.25));
 }
 .skill-section .skill-section-content .skill-article:hover ul li {
-  border-color: hwb(211 28% 61%);
+  border-color: #475462;
   transition: 0.5s;
 }
 .skill-section .skill-section-content .skill-article:hover ul li::marker {
@@ -3012,7 +2896,7 @@
   text-transform: capitalize;
 }
 .work .work-container .item .item-header .item-meta-data p:hover {
-  background: hwb(211 28% 61%);
+  background: #475462;
 }
 .work .work-container .item .item-header .item-meta-data li {
   border: 1px solid #000;
@@ -3031,7 +2915,7 @@
   margin: 0.5rem 0 1rem;
 }
 .work .work-container .item .item-header .item-description p {
-  color: hwb(211 28% 61%);
+  color: #475462;
   font-weight: 500;
   font-size: 1rem;
   font-size: clamp(.95rem, 1.5vw, 1.05rem);
@@ -3260,12 +3144,12 @@
   }
 }
 .work .work-items .work-item .work-title p {
-  color: hwb(211 28% 61%);
+  color: #475462;
   font-size: 1rem;
 }
 .work .work-items .work-item .work-title p a {
   position: relative;
-  color: hwb(211 28% 61%);
+  color: #475462;
   transition: 0.25s;
 }
 .work .work-items .work-item .work-title p a::after {
@@ -3685,7 +3569,7 @@
   padding-bottom: 0.5rem;
   margin-bottom: 5vh;
   position: relative;
-  border-bottom: 1px solid hwb(211 28% 61%);
+  border-bottom: 1px solid #475462;
 }
 @media (min-width: 820px) {
   .about .col-right .article-container article .article-body .body-item {

@@ -434,130 +434,88 @@
 
 
 // LOADER
-.loader_bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    isolation: isolate;
-}
-.loader_bg::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: $overlay-blue-darkest;
-    z-index: -1;
-    animation: zoom-out 2s ease 4s forwards;
-    @keyframes zoom-out {
-        100% {
-            opacity: 0;
-        }
-    }
-}
+// .loader_bg {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     z-index: 100;
+//     display: grid;
+//     place-items: center;
+//     overflow: hidden;
+//     isolation: isolate;
+// }
+// .loader_bg::after{
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     background: $overlay-blue-darkest;
+//     z-index: -1;
+//     animation: zoom-out 2s ease 4s forwards;
+//     @keyframes zoom-out {
+//         100% {
+//             opacity: 0;
+//         }
+//     }
+// }
 
-.spinner {
-    // border: .25rem solid red;
-    height: 5rem;
-    width: 5rem;
-    position: relative;
-    display: grid;
-    place-items: center;
-    isolation: isolate;
-    color: $brand;
-    text-transform: capitalize;
-    animation: spinner-out 1s ease 4s forwards;
-    @keyframes spinner-out {
-        100% {
-            transform: scale(0);
-        }
-    }
-    .sector {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        // background-color: #333;
-        border-radius: 50%;
-        border: .25rem solid transparent;
-        animation: rotate 3s infinite;
-        mix-blend-mode: overlay;
+// .spinner {
+//     // border: .25rem solid red;
+//     height: 5rem;
+//     width: 5rem;
+//     position: relative;
+//     display: grid;
+//     place-items: center;
+//     isolation: isolate;
+//     color: $brand;
+//     text-transform: capitalize;
+//     animation: spinner-out 1s ease 4s forwards;
+//     @keyframes spinner-out {
+//         100% {
+//             transform: scale(0);
+//         }
+//     }
+//     .sector {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         // background-color: #333;
+//         border-radius: 50%;
+//         border: .25rem solid transparent;
+//         animation: rotate 3s infinite;
+//         mix-blend-mode: overlay;
 
-        &.sector-1 {
-            border-top-color: $dark-crimson;
-            animation-duration: 1.5s;
-            animation-timing-function: ease-in-out;
-        }
-        &.sector-2 {
-            border-right-color: $span-light;
-            animation-duration: 2s;
-            animation-timing-function: ease-in;
+//         &.sector-1 {
+//             border-top-color: $dark-crimson;
+//             animation-duration: 1.5s;
+//             animation-timing-function: ease-in-out;
+//         }
+//         &.sector-2 {
+//             border-right-color: $span-light;
+//             animation-duration: 2s;
+//             animation-timing-function: ease-in;
 
-        }
-        &.sector-3 {
-            border-left-color: $overlay-blue-light;
-            animation-duration: 2.5s;
-            animation-timing-function: ease-out;
-        }
+//         }
+//         &.sector-3 {
+//             border-left-color: $overlay-blue-light;
+//             animation-duration: 2.5s;
+//             animation-timing-function: ease-out;
+//         }
 
-        @keyframes rotate {
-            0% {
-                transform: rotate(0);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    }
-}
+//         @keyframes rotate {
+//             0% {
+//                 transform: rotate(0);
+//             }
+//             100% {
+//                 transform: rotate(360deg);
+//             }
+//         }
+//     }
+// }
 
-.loader {
-    border: 1rem solid $span-gold;
-    border: none;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    position: relative;
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: .25rem solid $span-gold;
-        border-radius: 50%;
-        opacity: 0;
-        animation: loader 2s linear infinite;
-    }
-
-    &::before {
-        animation-delay: .5s;
-    }
-
-    @keyframes loader {
-        0% {
-            transform: scale(0);
-            opacity: 0;
-        }
-
-        50% {
-            opacity: 1;
-        }
-
-        100% {
-            transform: scale(1);
-            opacity: 0;
-        }
-    }
-}
 
 
