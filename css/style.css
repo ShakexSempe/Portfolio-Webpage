@@ -3379,6 +3379,9 @@
   opacity: 0;
   animation: none;
 }
+.about .col-left .about-img.about-page-img img {
+  animation: none;
+}
 
 #footer {
   background: #15191e;
