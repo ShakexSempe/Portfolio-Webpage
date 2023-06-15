@@ -235,13 +235,15 @@
                         padding-bottom: .5rem;
                         margin-bottom: 5vh;
                         position: relative;
-                        border-bottom: 1px solid $overlay-blue-light;
+                        border-bottom: 1px solid hsla(240, 100%, 25%, .2);
+                        transition: border .5s;
+                        
                         @include lg {
                             margin-bottom: 10vh;
                         }
                         i {
                             font-size: 2rem;
-                            margin-bottom: .25rem;
+                            margin-bottom: .5rem;
                             color: $overlay-blue-dark;
                         }
                         .body-item-title {
@@ -258,7 +260,7 @@
 
                         a {
                             // border: 2px solid red;
-                            color: inherit;
+                            color: $overlay-blue-light;
                             i {
                                 font-size: 1rem;
                                 margin-right: .5rem;
@@ -271,6 +273,11 @@
                                     opacity: .9;
                                 }
                             }
+                        }
+
+                        // BODY ITEM HOVER 
+                        &:hover {
+                            border-bottom: 1px solid hsla(240, 100%, 25%, 1);
                         }
                     }
                 }
@@ -366,6 +373,7 @@
                 }
             }
 
+            // ABOUT PAGE IMAGE - NO ANIMATION
             &.about-page-img {
                 img {
                     animation: none;
