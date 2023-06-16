@@ -75,124 +75,17 @@
       color: #f4f4f4;
     }
 
-    .box {
-        width: 100%;
-        height: 4rem;
-        /* border: 2px solid #0005; */
-        margin-inline: auto;
-        margin-bottom: 1rem;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-
-      }
-      .inbox {
-          border: .15rem solid transparent;
-          width: 25%;
-          height: 100%;
-          margin-inline: auto;
-      }
-      
-      .inbox.inbox-1 {
-          border-width: .25rem;
-          border-top-color: hsl(209, 20%, 75%);
-          border-left-color: hsl(209, 20%, 75%);
-          border-bottom-color: hsl(209, 20%, 75%);
-          border-top-left-radius: .5rem;
-          border-bottom-left-radius: .5rem;
-          position: relative;
-          animation: box-1 1.25s ease forwards 1.5s;
-          opacity: 0;
-      }
-
-      .inbox.inbox-2 {
-          border-color: transparent;
-          border-top-color: #f4f4f4;
-          border-right-color: #f4f4f4;
-          border-bottom-color: #f4f4f4;
-          border-top-right-radius: .5rem;
-          border-bottom-right-radius: .5rem;
-          transform: translateX(.25rem) translateY(-.25rem);
-          animation: box-2 1.25s ease forwards 1.5s;
-          opacity: 0;
-      }
-
-    .loader_bg .title {
-      position: relative;
-    }
-
-    .loader_bg .title::after {
-      content: '';
-      position: absolute;
-      bottom: -1rem;
-      left: 0;
-      width: 100%;
-      height: .125rem;
-      background: linear-gradient(90deg, transparent, hsl(209, 20%, 75%), transparent);
-      animation: underline 1.5s ease forwards 2.25s;
-      opacity: 0;
-    }
-
-    .title h1 {
-      margin-bottom: .5rem;
-      color: #f4f4f4;
-    }
-
-    .title h1 span {
-      color: hsl(209, 20%, 75%);
-    }
-
-
-    .title p {
-      text-transform: uppercase;
-      color: hsl(209, 20%, 75%);
-    }
-
-    @keyframes underline {
-      0% {
-        transform: scaleX(0);
-      }
-      100% {
-        transform: scaleX(1);
-        opacity: 1;
-      }
-    }
-
-    @keyframes box-1 {
-      0% {
-        transform: translateX(-.5rem);
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    @keyframes box-2 {
-      0% {
-        transform: translateX(.5rem) translateY(-.25rem);
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
   </style>
 </head>
 
 <body>
   <!-- LOADER -->
   <div class="loader_bg">
-    <div id="logo">
-        <div class="box">
-            <div class="inbox inbox-1"></div>
-            <div class="inbox inbox-2"></div>
-        </div>
-        <div class="title">
-            <h1>Shakex<span>Sempe</span></h1>
-            <p>web developer</p>
-        </div>
-    </div>
+    <div class="spinner">
+      <div class="sector sector-1"></div>
+      <div class="sector sector-2"></div>
+      <div class="sector sector-3"></div>
+      </div>
   </div>
   <!-- HEADER -->
   <header id="header" data-header class="header">
