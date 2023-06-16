@@ -3321,7 +3321,7 @@
 }
 @media (max-width: 450px) {
   .about .col-left {
-    height: 40vh;
+    height: 50vh;
   }
 }
 @media (min-width: 768px) {
