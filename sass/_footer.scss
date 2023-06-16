@@ -363,10 +363,12 @@
                 gap: 1rem;
             }
             img {
+                padding-top: 5vh;
                 width: 10rem;
                 border-radius: $border-radius-sm;
                 @include lg {
                     width: 15rem;
+                    padding-top: 0;
                 }
             }
             

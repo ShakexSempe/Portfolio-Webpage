@@ -3660,12 +3660,14 @@
   }
 }
 #footer .footer .footer-bottom img {
+  padding-top: 5vh;
   width: 10rem;
   border-radius: 0.25rem;
 }
 @media (min-width: 820px) {
   #footer .footer .footer-bottom img {
     width: 15rem;
+    padding-top: 0;
   }
 }
 #footer .footer .footer-bottom .footer-item {
