@@ -87,7 +87,7 @@
             
             .item-header {
                 // border: 2px solid red;
-                padding: 1rem .5rem 2rem;
+                padding: 1rem .5rem 1rem;
                 @include sm {
                     padding: 1rem;
                 }
@@ -118,6 +118,7 @@
                 .item-meta-data {
                     // border: 2px solid yellow;
                     display: flex;
+                    display: none;
                     align-items: center;
                     justify-content: space-evenly;
                     gap: 1rem;
@@ -182,7 +183,8 @@
                     h4 {
                         text-transform: capitalize;
                         color: #0008;
-                        font-size: 1rem;
+                        font-size: .925rem;
+                        font-size: clamp(.925rem, 2vw, 1rem);
                     }
                     p {
                         color: $overlay-blue-light;
@@ -200,7 +202,8 @@
                             margin-bottom: .25rem;
                             a {
                                 text-transform: capitalize;
-                                font-size: 1rem;
+                                font-size: .95rem;
+                                font-size: clamp(.95rem, 1.5vw, 1.05rem);
                                 color: inherit;
                             }
                             i {

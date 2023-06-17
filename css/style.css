@@ -2403,7 +2403,7 @@
   }
 }
 .work .work-container .item .item-header {
-  padding: 1rem 0.5rem 2rem;
+  padding: 1rem 0.5rem 1rem;
 }
 @media (min-width: 576px) {
   .work .work-container .item .item-header {
@@ -2430,6 +2430,7 @@
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
+  display: none;
   align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
@@ -2494,7 +2495,8 @@
 .work .work-container .item .item-header .item-description h4 {
   text-transform: capitalize;
   color: #0008;
-  font-size: 1rem;
+  font-size: 0.925rem;
+  font-size: clamp(.925rem, 2vw, 1rem);
 }
 .work .work-container .item .item-header .item-description p {
   color: #475462;
@@ -2513,7 +2515,8 @@
 }
 .work .work-container .item .item-header .item-description ul li a {
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-size: clamp(.95rem, 1.5vw, 1.05rem);
   color: inherit;
 }
 .work .work-container .item .item-header .item-description ul li i {
