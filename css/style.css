@@ -2491,6 +2491,11 @@
 .work .work-container .item .item-header .item-description {
   margin: 0.5rem 0 1rem;
 }
+.work .work-container .item .item-header .item-description h4 {
+  text-transform: capitalize;
+  color: #0008;
+  font-size: 1rem;
+}
 .work .work-container .item .item-header .item-description p {
   color: #475462;
   font-weight: 400;
@@ -2499,6 +2504,21 @@
 }
 .work .work-container .item .item-header .item-description p::first-letter {
   text-transform: capitalize;
+}
+.work .work-container .item .item-header .item-description ul {
+  margin: 1rem;
+}
+.work .work-container .item .item-header .item-description ul li {
+  margin-bottom: 0.25rem;
+}
+.work .work-container .item .item-header .item-description ul li a {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: inherit;
+}
+.work .work-container .item .item-header .item-description ul li i {
+  margin-left: 0.5rem;
+  color: #b3c0cc;
 }
 .work .work-container .item .item-header .item-cta {
   display: flex;

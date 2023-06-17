@@ -179,6 +179,11 @@
                 .item-description {
                     // border: 1px solid pink;
                     margin: .5rem 0 1rem;
+                    h4 {
+                        text-transform: capitalize;
+                        color: #0008;
+                        font-size: 1rem;
+                    }
                     p {
                         color: $overlay-blue-light;
                         font-weight: 400;
@@ -186,6 +191,22 @@
                         font-size: clamp(.95rem, 1.5vw, 1.05rem);
                         &::first-letter {
                             text-transform: capitalize;
+                        }
+                    }
+
+                    ul {
+                        margin: 1rem;
+                        li {
+                            margin-bottom: .25rem;
+                            a {
+                                text-transform: capitalize;
+                                font-size: 1rem;
+                                color: inherit;
+                            }
+                            i {
+                                margin-left: .5rem;
+                                color: $brand;
+                            }
                         }
                     }
                 }
