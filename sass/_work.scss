@@ -8,6 +8,32 @@
     padding: 10vh 5vw 10vh;
     }
 
+    .work-intro {
+        // border: 2px solid red;
+        h3 {
+            text-transform: capitalize;
+            font-size: 1.25rem;
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            text-align: center;
+            position: relative;
+            width: max-content;
+            margin-inline: auto;
+            span {
+                color: #0007;
+                text-transform: capitalize;
+                font-family: $font-title;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -.25rem;
+                left: 0;
+                width: 100%;
+                height: .125rem;
+                background: #0007;
+            }
+        }
+    }
     .work-container {
         // border: 2px solid red;
         margin-top: 10vh;
