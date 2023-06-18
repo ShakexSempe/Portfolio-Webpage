@@ -2627,9 +2627,6 @@
     opacity: 1;
   }
 }
-.work .work-container .item .item-content {
-  width: 100%;
-}
 @media (min-width: 820px) {
   .work .work-container .item .item-content {
     width: 50%;
@@ -2639,12 +2636,14 @@
 .work .work-container .item .item-content .item-image {
   overflow: hidden;
   width: 100%;
+  height: 100%;
 }
 .work .work-container .item .item-content .item-image img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  object-position: center;
+  transition: 0.25s;
 }
 @media (min-width: 820px) {
   .work .work-container .item .item-content .item-image img {

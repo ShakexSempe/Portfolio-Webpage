@@ -325,26 +325,21 @@
                 }
             }
             .item-content {
-                // border: 2px solid yellow;
-                width: 100%;
+                // width: 100%;
                 @include lg {
-                    // border: 2px solid yellow;
                     width: 50%;
                     padding: 1rem;
                 }
                 .item-image {
-                    // height: 50vh;
                     overflow: hidden;
                     width: 100%;
-                    // border: 2px solid #0001;
-                    // border-radius: .25rem;
-                    // margin: 0 auto;
+                    height: 100%;
                     img {
                         width: 100%;
-                        height: 50%;
+                        height: 100%;
                         object-fit: cover;
-                        transition: .5s;
-                        // border: 2px solid pink;
+                        object-position: center;
+                        transition: .25s;
                         @include lg {
                             border: 1px solid #0002;
                             border-radius: .25rem;
