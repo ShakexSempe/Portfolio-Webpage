@@ -183,8 +183,8 @@
                     h4 {
                         text-transform: capitalize;
                         color: #0008;
-                        font-size: .925rem;
-                        font-size: clamp(.925rem, 2vw, 1rem);
+                        font-size: .9rem;
+                        font-size: clamp(.9rem, 2vw, 1.125rem);
                     }
                     p {
                         color: $overlay-blue-light;
@@ -202,13 +202,23 @@
                             margin-bottom: .25rem;
                             a {
                                 text-transform: capitalize;
-                                font-size: .95rem;
-                                font-size: clamp(.95rem, 1.5vw, 1.05rem);
+                                font-size: .9rem;
+                                font-size: clamp(.9rem, 1.5vw, 1.125rem);
                                 color: inherit;
                             }
                             i {
                                 margin-left: .5rem;
                                 color: $brand;
+                                transform: scale(.85);
+                                transition: .25s;
+                            }
+
+                            // LI HOVER
+                            &:hover {
+                                i {
+                                    color: $span-crimson;
+                                    transform: scale(1);
+                                }
                             }
                         }
                     }

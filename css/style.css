@@ -2495,8 +2495,8 @@
 .work .work-container .item .item-header .item-description h4 {
   text-transform: capitalize;
   color: #0008;
-  font-size: 0.925rem;
-  font-size: clamp(.925rem, 2vw, 1rem);
+  font-size: 0.9rem;
+  font-size: clamp(.9rem, 2vw, 1.125rem);
 }
 .work .work-container .item .item-header .item-description p {
   color: #475462;
@@ -2515,13 +2515,19 @@
 }
 .work .work-container .item .item-header .item-description ul li a {
   text-transform: capitalize;
-  font-size: 0.95rem;
-  font-size: clamp(.95rem, 1.5vw, 1.05rem);
+  font-size: 0.9rem;
+  font-size: clamp(.9rem, 1.5vw, 1.125rem);
   color: inherit;
 }
 .work .work-container .item .item-header .item-description ul li i {
   margin-left: 0.5rem;
   color: #b3c0cc;
+  transform: scale(0.85);
+  transition: 0.25s;
+}
+.work .work-container .item .item-header .item-description ul li:hover i {
+  color: #dc143c;
+  transform: scale(1);
 }
 .work .work-container .item .item-header .item-cta {
   display: flex;
