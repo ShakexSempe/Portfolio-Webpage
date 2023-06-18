@@ -2646,6 +2646,9 @@
   transition: 0.25s;
 }
 @media (min-width: 820px) {
+  .work .work-container .item .item-content .item-image {
+    border-radius: 0.25rem;
+  }
   .work .work-container .item .item-content .item-image img {
     border: 1px solid #0002;
     border-radius: 0.25rem;

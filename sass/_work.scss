@@ -325,7 +325,6 @@
                 }
             }
             .item-content {
-                // width: 100%;
                 @include lg {
                     width: 50%;
                     padding: 1rem;
@@ -340,7 +339,10 @@
                         object-fit: cover;
                         object-position: center;
                         transition: .25s;
-                        @include lg {
+                    }
+                    @include lg {
+                        border-radius: .25rem;
+                        img {
                             border: 1px solid #0002;
                             border-radius: .25rem;
                         }
