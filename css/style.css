@@ -1151,9 +1151,10 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: #29323d;
+  background: #475462;
 }
 .hero .hero-image img {
+  mix-blend-mode: overlay;
   height: 100%;
   width: 100%;
   object-fit: cover;
