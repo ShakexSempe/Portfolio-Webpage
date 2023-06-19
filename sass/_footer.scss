@@ -13,17 +13,12 @@
         @media (min-width: 1024px) {
             padding: 10vh 5vw 5vh;
         }
-        // section title
+        // SECTION-TITLE
         .footer-section-title {
                 color: #ffff;
-                // text-align: center;
                 text-transform: capitalize;
-                margin-bottom: 1.5em;
-                font-size: 2em;
-                &[data-scroll] {
-                    transition: 1.5s;
-                    transform: scale(1);
-                }
+                margin-bottom: 10vh;
+                font-size: 2rem;
         }
         .footer-top {
 
@@ -373,9 +368,6 @@
             
             .footer-item {
                 flex-grow: 1;
-                // background: $overlay-blue-darker;
-                // border: 2px solid red;
-                // padding: 1rem 0;
                 h3 {
                     text-transform: capitalize;
                     margin-bottom: 1rem;
@@ -422,5 +414,3 @@
         }
     }
 }
-// end of bs21
-// end of footer

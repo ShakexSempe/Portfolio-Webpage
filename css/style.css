@@ -3307,12 +3307,8 @@
 #footer .footer .footer-section-title {
   color: #ffff;
   text-transform: capitalize;
-  margin-bottom: 1.5em;
-  font-size: 2em;
-}
-#footer .footer .footer-section-title[data-scroll] {
-  transition: 1.5s;
-  transform: scale(1);
+  margin-bottom: 10vh;
+  font-size: 2rem;
 }
 #footer .footer .footer-top .socialMedia-links {
   grid-template-columns: 1fr;
