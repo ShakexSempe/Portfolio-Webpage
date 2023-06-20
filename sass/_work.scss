@@ -106,14 +106,9 @@
                 }
                 .item-title {
                     text-transform: capitalize;
-                    // margin-bottom: .5rem;
                     font-weight: 700;
                     font-size: 1.05rem;
                     font-size: clamp(1.05rem, 2vw, 2rem);
-                    @include md {
-                    // margin-bottom: .5rem;
-                        // font-size: 1.5rem;
-                    }
                 }
                 .item-meta-data {
                     // border: 2px solid yellow;
@@ -245,17 +240,13 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        @include sm {
-                            // padding: 1rem;
+                        @include xsm {
+                            cursor: default;
                         }
                         @include md {
-                            // justify-content: space-between;
-                            // gap: 1rem;
-                            // padding: 1rem .5rem;
                             width: 10rem;
                         }
                         i {
-                            // transform: translateX(.5rem);
                             transition: .25s;
                         }
                         &.cta-primary {

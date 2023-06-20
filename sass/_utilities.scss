@@ -225,6 +225,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include xsm {
+        cursor: default;
+    }
 
     &::before, &::after {
         content: '';
