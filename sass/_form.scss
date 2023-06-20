@@ -74,26 +74,6 @@ form {
                 }
             }
         }
-
-        // textarea {
-        //     padding: .5em;
-        //     margin: .5em 0;
-        //     width: 100%;
-        //     border-radius: 5px;
-        //     border: none;
-        //     outline: none;
-        //     overflow: hidden;
-
-        //     &:focus {
-        //         outline: 3px dashed #fffa;
-        //         border: none;
-        //     }
-        //     &:invalid {
-        //         // background-color: $background-invalid;
-        //         background-color: $span-gold;
-        //         color: $text-invalid;
-        //     }
-        // }
         // input hover state
         &:hover, &:focus {
             label {
@@ -101,8 +81,6 @@ form {
                 color: $text-light;
             }
         }
-        // end of input hover state
-        
     }
 
     button {
@@ -127,11 +105,9 @@ form {
         isolation: isolate;
 
         i {
-            // margin-left: .5rem;
             transition: .25s ease;
             position: relative;
             color: transparent;
-            // width: 1rem;
             &::before, &::after {
                 content: '';
                 position: absolute;
