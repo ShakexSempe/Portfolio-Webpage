@@ -3222,6 +3222,10 @@
   transform: translate(0) scale(1);
 }
 
+#contact {
+  scroll-margin-top: 5vh;
+}
+
 .contact {
   flex-direction: column;
   justify-content: start;
@@ -3237,10 +3241,7 @@
   }
 }
 .contact .contact-header {
-  width: 100%;
-  height: auto;
-  background: #f4f4f4;
-  z-index: 10;
+  margin-bottom: 10vh;
 }
 .contact .contact-items {
   width: 100%;
