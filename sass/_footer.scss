@@ -18,8 +18,7 @@
         }
         .footer-top {
 
-            // border: 2px solid red;
-            // social media links
+            // SOCIAL MEDIA LINKS
             .socialMedia-links {
                 @include xlg {
                     width: 100%;
@@ -28,18 +27,13 @@
 
                 grid-template-columns: 1fr;
                 background-color: $overlay-blue-dark;
-                // border: 1px solid $span-gold;
-                // border-radius: 0;
                 width: 100%;
-                // margin: 2em 5vw;
                 padding: 10vh 5vw;
 
                 .links-grid {
-                    // border: 1px solid yellow;
                     display: grid;
                     gap: 5vh;
 
-                    // display: none;
                     @include lg {
                         width: 100%;
                         grid-template-columns: 1fr 1fr;
@@ -48,9 +42,6 @@
                 }
 
                 .socialMedia-item {
-                    // border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
-                    // overflow: hidden;
-                    // margin: 1rem auto;
                     position: relative;
                     transition: .3s;
                     width: 100%;
@@ -80,48 +71,32 @@
 
                     p {
                         font-size: 1.25rem;
-                        margin-bottom: .25rem;
+                        margin-bottom: .5rem;
                         text-transform: capitalize;
                         color: $text-light;
-                        color: $brand;
                         font-weight: 400;
-                        // text-align: center;
                         font-family: $font-title;
-                        // width: 100%;
-                        transition: 1s ease;
                     }
 
                     a {
                         background: $overlay-blue-dark;
-                        display: block;
-                        text-align: center;
                         padding: .7rem;
                         width: 13rem;
-                        // margin: 0 auto;
-                        color: #fff;
+                        color: $text-light;
                         text-transform: capitalize;
-                        opacity: 1;
                         border-radius: .5rem;
                         position: relative;
-                        transition: .25s ease;
-                        letter-spacing: 1rem;
                         isolation: isolate;
-                        // translate out of view leaving only icon
-                        // transform: translateX(150%);
                         transition: .25s ease;
                         display: flex;
                         align-items: center;
-
-                        // justify-content: center;
-                        // tablet links
+                        @include xsm {
+                            cursor: default;
+                        }
                         @media (min-width: 768px) {
                             width: 14rem;
                             padding: 1rem;
                         }
-
-                        // end of tablet links
-                        // desktop links
-
                         i {
                             color: #fff;
                             opacity: .3;
@@ -196,8 +171,7 @@
                         }
                     }
 
-                    // end of link item hover state
-                    // link colors
+                    // LINK BRAND COLORS
                     &.codepen {
                         a {
                             color: #f4f4f4;
@@ -289,8 +263,6 @@
                         }
 
                     }
-
-                    // end of link colors
                     // ITEM HOVER STATE
                     &:hover {
                         p {

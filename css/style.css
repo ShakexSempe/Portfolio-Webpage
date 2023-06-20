@@ -3311,31 +3311,29 @@
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item p {
   font-size: 1.25rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   text-transform: capitalize;
   color: #f4f4f4;
-  color: #b3c0cc;
   font-weight: 400;
   font-family: "Kanit", sans-serif;
-  transition: 1s ease;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a {
   background: #29323d;
-  display: block;
-  text-align: center;
   padding: 0.7rem;
   width: 13rem;
-  color: #fff;
+  color: #f4f4f4;
   text-transform: capitalize;
-  opacity: 1;
   border-radius: 0.5rem;
   position: relative;
-  transition: 0.25s ease;
-  letter-spacing: 1rem;
   isolation: isolate;
   transition: 0.25s ease;
   display: flex;
   align-items: center;
+}
+@media (max-width: 450px) {
+  #footer .footer .footer-top .socialMedia-links .socialMedia-item a {
+    cursor: default;
+  }
 }
 @media (min-width: 768px) {
   #footer .footer .footer-top .socialMedia-links .socialMedia-item a {
