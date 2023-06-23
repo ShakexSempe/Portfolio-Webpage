@@ -1135,11 +1135,11 @@
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 200;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .hero .hero-index-content .content-title h2 {
-  font-size: 1.95rem;
-  font-size: clamp(1.95rem, 5vw, 2.5rem);
+  font-size: 1.9rem;
+  font-size: clamp(1.9rem, 5vw, 2.5rem);
 }
 .hero .hero-index-content .content-value p {
   color: #fff;
