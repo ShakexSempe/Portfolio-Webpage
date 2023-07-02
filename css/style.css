@@ -3555,6 +3555,108 @@
   text-transform: capitalize;
 }
 
+.design-container {
+  min-height: 100vh;
+  background: #1f252d;
+  color: #f4f4f4;
+}
+
+.design-section {
+  min-height: 50vh;
+  display: grid;
+}
+.design-section .box {
+  isolation: isolate;
+  position: relative;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+.design-section h2 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  color: #ddd;
+}
+
+.contrast-section {
+  place-items: center;
+  background: #15191e;
+}
+.contrast-section .box {
+  overflow: hidden;
+  overflow: hidden;
+  isolation: isolate;
+  position: relative;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+}
+.contrast-section .box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #b3c0cc;
+  z-index: -1;
+  border-radius: 0.25rem;
+  transform: translateX(95%);
+  transition: 1.5s ease;
+}
+.contrast-section .box:hover::after {
+  transform: translateX(0);
+}
+.contrast-section h2 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  color: #f4f4f4;
+  mix-blend-mode: difference;
+}
+
+.repeat-section {
+  border: 2px solid #dc143c;
+  overflow: hidden;
+  place-items: center;
+  padding: 10vh 5vw;
+}
+.repeat-section h2 {
+  color: #b3c0cc;
+  color: #fff4;
+  transition: 0.5s;
+  animation: h2 5s infinite;
+}
+@keyframes h2 {
+  50% {
+    color: #fff1;
+  }
+}
+.repeat-section h2 span {
+  color: #dc143c;
+}
+.repeat-section h2:nth-child(2) {
+  transform: translateX(-1.5rem);
+}
+.repeat-section h2:nth-child(3) {
+  transform: translateX(-3rem);
+}
+.repeat-section h2:nth-child(4) {
+  transform: translateX(-4.8rem);
+}
+.repeat-section h2:nth-child(5) {
+  transform: translateX(-6.25rem);
+}
+.repeat-section h2:nth-child(6) {
+  transform: translateX(-7.25rem);
+}
+.repeat-section h2:nth-child(7) {
+  transform: translateX(-8.25rem);
+}
+.repeat-section h2:nth-child(8) {
+  transform: translateX(-9.5rem);
+}
+.repeat-section h2:nth-child(9) {
+  transform: translateX(-10.6rem);
+}
+.repeat-section h2:nth-child(10) {
+  transform: translateX(-12.25rem);
+}
+
 form {
   z-index: 2;
   background-color: #29323d;
