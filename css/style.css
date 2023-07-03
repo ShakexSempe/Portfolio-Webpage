@@ -3707,14 +3707,13 @@
   }
   35% {
     transform: translateX(-35%) translateY(-40%);
-    opacity: 0.5;
   }
   50% {
     transform: translateX(-40%) translateY(-40%);
   }
   65% {
+    opacity: 0.1;
     transform: translateX(-45%) translateY(-65%);
-    opacity: 0.7;
   }
   100% {
     opacity: 1;
