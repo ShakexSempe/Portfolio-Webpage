@@ -78,7 +78,9 @@
     border: 2px solid $span-crimson;
     overflow: hidden;
     place-items: center;
-    padding: 10vh 5vw;
+    padding: 5vh 5vw;
+    margin: 5vh 5vw;
+    border-radius: .125rem;
     h2 {
         color: $brand;
         color: #fff4;
