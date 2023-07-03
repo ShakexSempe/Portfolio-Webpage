@@ -3573,7 +3573,6 @@
 .design-section h2 {
   text-transform: uppercase;
   font-size: 2.25rem;
-  color: #ddd;
 }
 
 .contrast-section {
@@ -3679,7 +3678,7 @@
   background: #15191e;
 }
 .align-section .box {
-  border: 2px solid #b3c0cc;
+  background: #1f252d;
   position: relative;
   height: 100%;
   width: 100%;
@@ -3753,6 +3752,53 @@
 }
 .align-section .box.active-item h2 {
   animation: align 5s forwards;
+}
+
+.prox-section {
+  padding: 10vh 5vw;
+  display: grid;
+  place-items: center;
+}
+.prox-section .box {
+  display: grid;
+  gap: 5vh;
+  text-align: center;
+}
+@media (min-width: 820px) {
+  .prox-section .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    position: relative;
+  }
+  .prox-section .box::after {
+    content: "";
+    position: absolute;
+    bottom: -10vh;
+    left: 0;
+    width: 100%;
+    height: 0.25rem;
+    background: linear-gradient(90deg, transparent, #fff1, transparent);
+  }
+}
+.prox-section h2 {
+  margin-bottom: 1rem;
+  letter-spacing: -0.05rem;
+  text-transform: lowercase;
+}
+.prox-section p {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.prox-section .item-1 {
+  color: #b3c0cc;
+}
+.prox-section .item-2 {
+  color: #f4f4f4;
+}
+.prox-section .item-3 {
+  color: #b3c0cc;
 }
 
 form {
