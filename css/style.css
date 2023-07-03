@@ -3562,13 +3562,13 @@
 }
 
 .design-section {
-  min-height: 50vh;
+  min-height: 80vh;
   display: grid;
 }
 .design-section .box {
   isolation: isolate;
   position: relative;
-  border-radius: 0.25rem;
+  border-radius: 0.125rem;
   padding: 0.25rem 0.5rem;
 }
 .design-section h2 {
@@ -3582,8 +3582,6 @@
   background: #15191e;
 }
 .contrast-section .box {
-  overflow: hidden;
-  overflow: hidden;
   isolation: isolate;
   position: relative;
   border-radius: 0.25rem;
@@ -3594,19 +3592,31 @@
   position: absolute;
   inset: 0;
   background: #b3c0cc;
+  background: #ddd;
   z-index: -1;
-  border-radius: 0.25rem;
-  transform: translateX(95%);
+  border-radius: inherit;
   transition: 1.5s ease;
 }
-.contrast-section .box:hover::after {
-  transform: translateX(0);
-}
-.contrast-section h2 {
+.contrast-section .box h2 {
   text-transform: uppercase;
   font-size: 2.25rem;
   color: #f4f4f4;
   mix-blend-mode: difference;
+  transition: 1.5s;
+}
+.contrast-section .box.io-item h2 {
+  transform: translateY(-150%);
+}
+.contrast-section .box.active-item h2 {
+  transform: translateY(0);
+}
+.contrast-section .box.active-item:hover::after {
+  animation: contrast 5s infinite;
+}
+@keyframes contrast {
+  50% {
+    transform: translateX(2.5rem);
+  }
 }
 
 .repeat-section {

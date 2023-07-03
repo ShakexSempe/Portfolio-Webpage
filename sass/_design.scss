@@ -6,12 +6,12 @@
 }
 
 .design-section {
-    min-height: 50vh;
+    min-height: 80vh;
     display: grid;
     .box {
         isolation: isolate;
         position: relative;
-        border-radius: .25rem;
+        border-radius: .125rem;
         padding: .25rem .5rem;
     }
     h2 {
@@ -27,11 +27,7 @@
     background: $overlay-blue-darkest;
 
     .box {
-        overflow: hidden;
-
-        // background: #000;
         // border: 2px solid red;
-        overflow: hidden;
         isolation: isolate;
         position: relative;
         // background: #fff;
@@ -42,22 +38,39 @@
             position: absolute;
             inset: 0;
             background: $brand;
+            background: #ddd;
             z-index: -1;
-            border-radius: .25rem;
-            transform: translateX(95%);
+            border-radius: inherit;
             transition: 1.5s ease;
         }
-        &:hover {
-            &::after {
-            transform: translateX(0);
+        h2 {
+            text-transform: uppercase;
+            font-size: 2.25rem;
+            color: $text-light;
+            mix-blend-mode: difference;
+            transition: 1.5s;
         }
-    }
-    }
-    h2 {
-        text-transform: uppercase;
-        font-size: 2.25rem;
-        color: $text-light;
-        mix-blend-mode: difference;
+        
+        &.io-item {
+            h2 {
+                transform: translateY(-150%);
+            }
+        }
+        &.active-item {
+            h2 {
+                transform: translateY(0);
+            }
+            &:hover {
+                &::after {
+                    animation:  contrast 5s infinite;
+                    @keyframes contrast {
+                        50% {
+                            transform: translateX(2.5rem);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
