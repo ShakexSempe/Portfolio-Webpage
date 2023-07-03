@@ -147,10 +147,39 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%) translateY(-50%);
             color: $text-light;
             letter-spacing: -.05rem;
             transition: 5s ease forwards;
+
+            @keyframes align {
+                0%, 100% {
+                    transform: translateX(-50%) translateY(-50%);
+                }
+                10% {
+                    transform: translateX(-30%) translateY(-30%);
+                    opacity: .1;
+                }
+                25% {
+                    transform: translateX(-35%) translateY(-30%);
+                    
+                }
+                35%{
+                    transform: translateX(-35%) translateY(-40%);
+                    opacity: .5;
+                }
+                50%{
+                    transform: translateX(-40%) translateY(-40%);
+                }
+                65%{
+                    transform: translateX(-45%) translateY(-65%);
+                    opacity: .7;
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+            }
         }
 
         h3 {
@@ -182,13 +211,12 @@
 
         &.io-item {
             h2 {
-                transform: rotate(10deg) translate(-80%, -50%);
+                opacity: .2;
             }
         }
         &.active-item {
             h2 {
-                transform: translate(-50%, -50%);
-                transition: 2s;
+                animation: align 5s forwards;
             }
         }
 
