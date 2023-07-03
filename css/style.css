@@ -3791,6 +3791,24 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+.prox-section .prox-item.io-item h2 {
+  letter-spacing: 0.25rem;
+  transition: 1s ease;
+}
+.prox-section .prox-item.io-item p {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: 1s ease;
+}
+.prox-section .prox-item.active-item h2 {
+  letter-spacing: 0;
+  transition: 1s ease;
+}
+.prox-section .prox-item.active-item p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease 0.5s;
+}
 .prox-section .item-1 {
   color: #b3c0cc;
 }

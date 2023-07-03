@@ -255,6 +255,33 @@
         text-transform: uppercase;
     }
 
+    .prox-item {
+        &.io-item {
+            h2 {
+                letter-spacing: .25rem;
+                transition: 1s ease;
+            }
+
+            p {
+                opacity: 0;
+                transform: translateY(1rem);
+                transition: 1s ease;
+            }
+        }
+        &.active-item {
+            h2 {
+                letter-spacing: 0;
+                transition: 1s ease;
+            }
+
+            p {
+                opacity: 1;
+                transform: translateY(0);
+                transition: 1s ease .5s;
+            }
+        }
+    }
+
     .item-1 {
         color: $brand;
     }
