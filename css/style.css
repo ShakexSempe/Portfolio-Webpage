@@ -3557,7 +3557,7 @@
 
 .design-container {
   min-height: 100vh;
-  background: #1f252d;
+  background: #15191e;
   color: #f4f4f4;
 }
 
@@ -3623,11 +3623,11 @@
   height: 80vh;
   display: grid;
   place-items: center;
-  border: 2px solid #dc143c;
   overflow: hidden;
   padding: 5vh 5vw;
   margin: 10vh 5vw;
   border-radius: 0.125rem;
+  background: #1f252d;
 }
 .repeat-section h2 {
   color: #b3c0cc;

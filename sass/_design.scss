@@ -1,7 +1,7 @@
 .design-container {
     // border: 3px solid red;
     min-height: 100vh;
-    background: $overlay-blue-darker;
+    background: $overlay-blue-darkest;
     color: $text-light;
 }
 
@@ -78,11 +78,12 @@
     height: 80vh;
     display: grid;
     place-items: center;
-    border: 2px solid $span-crimson;
+    // border: 2px solid $span-crimson;
     overflow: hidden;
     padding: 5vh 5vw;
     margin: 10vh 5vw;
     border-radius: .125rem;
+    background: $overlay-blue-darker;
     h2 {
         color: $brand;
         color: #fff4;
