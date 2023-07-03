@@ -150,6 +150,7 @@
             transform: translate(-50%, -50%);
             color: $text-light;
             letter-spacing: -.05rem;
+            transition: 5s ease forwards;
         }
 
         h3 {
@@ -176,6 +177,18 @@
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
+            }
+        }
+
+        &.io-item {
+            h2 {
+                transform: rotate(10deg) translate(-80%, -50%);
+            }
+        }
+        &.active-item {
+            h2 {
+                transform: translate(-50%, -50%);
+                transition: 2s;
             }
         }
 

@@ -3693,6 +3693,7 @@
   transform: translate(-50%, -50%);
   color: #f4f4f4;
   letter-spacing: -0.05rem;
+  transition: 5s ease forwards;
 }
 .align-section .box h3 {
   position: absolute;
@@ -3719,6 +3720,13 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+.align-section .box.io-item h2 {
+  transform: rotate(10deg) translate(-80%, -50%);
+}
+.align-section .box.active-item h2 {
+  transform: translate(-50%, -50%);
+  transition: 2s;
 }
 
 form {
