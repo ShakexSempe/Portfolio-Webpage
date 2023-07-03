@@ -42,6 +42,12 @@
             z-index: -1;
             border-radius: inherit;
             transition: 1.5s ease;
+            animation: con-box 5s infinite;
+            @keyframes con-box {
+                50% {
+                    transform: translateX(2.5rem);
+                }
+            }
         }
         h2 {
             text-transform: uppercase;
@@ -49,25 +55,10 @@
             color: $text-light;
             mix-blend-mode: difference;
             transition: 1.5s;
-        }
-        
-        &.io-item {
-            h2 {
-                transform: translateY(-150%);
-            }
-        }
-        &.active-item {
-            h2 {
-                transform: translateY(0);
-            }
-            &:hover {
-                &::after {
-                    animation:  contrast 5s infinite;
-                    @keyframes contrast {
-                        50% {
-                            transform: translateX(2.5rem);
-                        }
-                    }
+            animation: con-h2 5s infinite;
+            @keyframes con-h2 {
+                50% {
+                    transform: translateY(-110%);
                 }
             }
         }
@@ -86,16 +77,18 @@
     background: $overlay-blue-darker;
     h2 {
         color: $brand;
-        color: #fff4;
+        color: #fff5;
         transition: .5s;
-        animation: h2 5s infinite;
-        @keyframes h2 {
-            50% {
-                color: #fff1;
-            }
-        }
         span {
             color: $span-crimson;
+            transition: 1s;
+            &.io-item {
+                color: inherit;
+            }
+            &.active-item {
+                color: $span-crimson;
+                transition: 1.5s;
+            }
         }
         &:nth-child(2) {
             transform: translateX(-1.5rem);
@@ -125,6 +118,7 @@
             transform: translateX(-12.25rem);
         }
     }
+
 
 }
 

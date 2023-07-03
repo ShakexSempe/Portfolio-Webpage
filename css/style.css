@@ -3596,6 +3596,12 @@
   z-index: -1;
   border-radius: inherit;
   transition: 1.5s ease;
+  animation: con-box 5s infinite;
+}
+@keyframes con-box {
+  50% {
+    transform: translateX(2.5rem);
+  }
 }
 .contrast-section .box h2 {
   text-transform: uppercase;
@@ -3603,19 +3609,11 @@
   color: #f4f4f4;
   mix-blend-mode: difference;
   transition: 1.5s;
+  animation: con-h2 5s infinite;
 }
-.contrast-section .box.io-item h2 {
-  transform: translateY(-150%);
-}
-.contrast-section .box.active-item h2 {
-  transform: translateY(0);
-}
-.contrast-section .box.active-item:hover::after {
-  animation: contrast 5s infinite;
-}
-@keyframes contrast {
+@keyframes con-h2 {
   50% {
-    transform: translateX(2.5rem);
+    transform: translateY(-110%);
   }
 }
 
@@ -3631,17 +3629,19 @@
 }
 .repeat-section h2 {
   color: #b3c0cc;
-  color: #fff4;
+  color: #fff5;
   transition: 0.5s;
-  animation: h2 5s infinite;
-}
-@keyframes h2 {
-  50% {
-    color: #fff1;
-  }
 }
 .repeat-section h2 span {
   color: #dc143c;
+  transition: 1s;
+}
+.repeat-section h2 span.io-item {
+  color: inherit;
+}
+.repeat-section h2 span.active-item {
+  color: #dc143c;
+  transition: 1.5s;
 }
 .repeat-section h2:nth-child(2) {
   transform: translateX(-1.5rem);
