@@ -1138,8 +1138,9 @@
   margin-bottom: 0.5rem;
 }
 .hero .hero-index-content .content-title h2 {
-  font-size: 1.9rem;
-  font-size: clamp(1.9rem, 5vw, 2.5rem);
+  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  letter-spacing: -0.05rem;
 }
 .hero .hero-index-content .content-value p {
   color: #fff;

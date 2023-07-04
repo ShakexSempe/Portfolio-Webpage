@@ -375,8 +375,9 @@
                 margin-bottom: .5rem;
             }
             h2 {
-                font-size: 1.9rem;
-                font-size: clamp(1.9rem, 5vw, 2.5rem);
+                font-size: 2rem;
+                font-size: clamp(2rem, 5vw, 2.5rem);
+                letter-spacing: -0.05rem;
             }
         }
 
