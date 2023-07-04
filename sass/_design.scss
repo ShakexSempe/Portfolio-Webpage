@@ -139,6 +139,7 @@
         margin-inline: auto;
         
         h2 {
+            font-size: 2rem;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -252,6 +253,7 @@
     p {
         font-weight: 400;
         text-transform: uppercase;
+        max-width: 350px;
     }
     // IO CLASS
     .prox-item {

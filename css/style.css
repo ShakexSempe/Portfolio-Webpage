@@ -3687,6 +3687,7 @@
   margin-inline: auto;
 }
 .align-section .box h2 {
+  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3790,6 +3791,7 @@
 .prox-section p {
   font-weight: 400;
   text-transform: uppercase;
+  max-width: 350px;
 }
 .prox-section .prox-item.io-item h2 {
   letter-spacing: 0.25rem;
