@@ -1198,19 +1198,20 @@
 }
 .hero .hero-index-content .content-title h1 {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1rem, 2vw, 1.115rem);
   font-weight: 200;
   margin-bottom: 0.5rem;
 }
 .hero .hero-index-content .content-title h2 {
-  font-size: 1.9rem;
-  font-size: clamp(1.9rem, 5vw, 2.5rem);
+  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  letter-spacing: -0.05rem;
 }
 .hero .hero-index-content .content-value p {
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.12rem);
+  font-size: clamp(1rem, 2vw, 1.115rem);
 }
 .hero .hero-index-content .content-value .cta {
   width: 12rem;
@@ -3618,6 +3619,281 @@
 }
 #footer .footer .footer-bottom .footer-item .footer-list.browse-list {
   text-transform: capitalize;
+}
+
+.design-container {
+  min-height: 100vh;
+  background: #15191e;
+  color: #f4f4f4;
+}
+
+.design-section {
+  min-height: 85vh;
+  padding: 10vh 5vw;
+}
+.design-section .box {
+  isolation: isolate;
+  position: relative;
+  border-radius: 0.125rem;
+  padding: 0.25rem 0.5rem;
+}
+.design-section h2 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+}
+
+.contrast-section {
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  gap: 5vh;
+  background: #15191e;
+}
+.contrast-section .box {
+  isolation: isolate;
+  position: relative;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+}
+.contrast-section .box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #b3c0cc;
+  background: #ddd;
+  z-index: -1;
+  border-radius: inherit;
+  transition: 1.5s ease;
+  animation: con-box 5s infinite;
+}
+@keyframes con-box {
+  50% {
+    transform: translateX(2.5rem);
+  }
+}
+.contrast-section .box h2 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  color: #f4f4f4;
+  mix-blend-mode: difference;
+  transition: 1.5s;
+  animation: con-h2 5s infinite;
+}
+@keyframes con-h2 {
+  50% {
+    transform: translateY(-110%);
+  }
+}
+.contrast-section p {
+  text-transform: lowercase;
+  color: #f4f4f4;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+.repeat-section {
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 5vh 5vw;
+  margin: 10vh 5vw;
+  border-radius: 0.125rem;
+  background: #1f252d;
+}
+.repeat-section h2 {
+  color: #b3c0cc;
+  color: #fff5;
+  transition: 0.5s;
+}
+.repeat-section h2 span {
+  color: #dc143c;
+  transition: 1s;
+}
+.repeat-section h2 span.io-item {
+  color: inherit;
+}
+.repeat-section h2 span.active-item {
+  color: #dc143c;
+  transition: 1.5s;
+}
+.repeat-section h2:nth-child(2) {
+  transform: translateX(-1.5rem);
+}
+.repeat-section h2:nth-child(3) {
+  transform: translateX(-3rem);
+}
+.repeat-section h2:nth-child(4) {
+  transform: translateX(-4.8rem);
+}
+.repeat-section h2:nth-child(5) {
+  transform: translateX(-6.25rem);
+}
+.repeat-section h2:nth-child(6) {
+  transform: translateX(-7.25rem);
+}
+.repeat-section h2:nth-child(7) {
+  transform: translateX(-8.25rem);
+}
+.repeat-section h2:nth-child(8) {
+  transform: translateX(-9.5rem);
+}
+.repeat-section h2:nth-child(9) {
+  transform: translateX(-10.6rem);
+}
+.repeat-section h2:nth-child(10) {
+  transform: translateX(-12.25rem);
+}
+
+.align-section {
+  padding: 10vh 5vw;
+  height: 80vh;
+  max-height: 550px;
+  background: #15191e;
+}
+.align-section .box {
+  background: #1f252d;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+}
+.align-section .box h2 {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #f4f4f4;
+  letter-spacing: -0.05rem;
+  transition: 5s ease forwards;
+}
+@keyframes align {
+  0%, 100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  10% {
+    transform: translateX(-30%) translateY(-30%);
+    opacity: 0.1;
+  }
+  25% {
+    transform: translateX(-35%) translateY(-30%);
+  }
+  35% {
+    transform: translateX(-35%) translateY(-40%);
+  }
+  50% {
+    transform: translateX(-40%) translateY(-40%);
+  }
+  65% {
+    opacity: 0.1;
+    transform: translateX(-45%) translateY(-65%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+.align-section .box h3 {
+  position: absolute;
+  opacity: 0.1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.align-section .box h3:nth-child(2) {
+  writing-mode: vertical-rl;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.align-section .box h3:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.align-section .box h3:nth-child(4) {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.align-section .box.io-item h2 {
+  opacity: 0.2;
+}
+.align-section .box.active-item h2 {
+  animation: align 5s forwards;
+}
+
+.prox-section {
+  padding: 10vh 5vw;
+  display: grid;
+  place-items: center;
+}
+.prox-section .box {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+@media (min-width: 820px) {
+  .prox-section .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    position: relative;
+  }
+  .prox-section .box::after {
+    content: "";
+    position: absolute;
+    bottom: -10vh;
+    left: 0;
+    width: 100%;
+    height: 0.25rem;
+    background: linear-gradient(90deg, transparent, #fff1, transparent);
+  }
+}
+.prox-section h2 {
+  margin-bottom: 1rem;
+  letter-spacing: -0.05rem;
+  text-transform: lowercase;
+}
+.prox-section p {
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 350px;
+}
+.prox-section .prox-item.io-item h2 {
+  letter-spacing: 0.25rem;
+  transition: 1s ease;
+}
+.prox-section .prox-item.io-item p {
+  opacity: 0.8;
+  transform: translateY(1rem);
+  transition: 1s ease;
+}
+.prox-section .prox-item.active-item h2 {
+  letter-spacing: 0;
+  transition: 1s ease;
+}
+.prox-section .prox-item.active-item p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease 0.5s;
+}
+.prox-section .item-1 {
+  color: #b3c0cc;
+}
+.prox-section .item-2 {
+  color: #f4f4f4;
+}
+.prox-section .item-3 {
+  color: #b3c0cc;
 }
 
 form {
