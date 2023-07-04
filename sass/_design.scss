@@ -7,6 +7,7 @@
 
 .design-section {
     min-height: 85vh;
+    padding: 10vh 5vw;
     .box {
         isolation: isolate;
         position: relative;
@@ -24,6 +25,8 @@
     height: 80vh;
     display: grid;
     place-items: center;
+    place-content: center;
+    gap: 5vh;
     background: $overlay-blue-darkest;
 
     .box {
@@ -62,6 +65,14 @@
                 }
             }
         }
+    }
+
+    p {
+        text-transform: lowercase;
+        color: $text-light;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 200;
     }
 }
 

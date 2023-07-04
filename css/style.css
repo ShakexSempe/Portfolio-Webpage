@@ -3564,6 +3564,7 @@
 
 .design-section {
   min-height: 85vh;
+  padding: 10vh 5vw;
 }
 .design-section .box {
   isolation: isolate;
@@ -3580,6 +3581,8 @@
   height: 80vh;
   display: grid;
   place-items: center;
+  place-content: center;
+  gap: 5vh;
   background: #15191e;
 }
 .contrast-section .box {
@@ -3616,6 +3619,13 @@
   50% {
     transform: translateY(-110%);
   }
+}
+.contrast-section p {
+  text-transform: lowercase;
+  color: #f4f4f4;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 200;
 }
 
 .repeat-section {
