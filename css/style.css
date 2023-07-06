@@ -2337,6 +2337,10 @@
   transition: 0.25s;
   position: relative;
 }
+.contact .contact-items .contact-item .title h3 {
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
 .contact .contact-items .contact-item .title i {
   transform: translateY(-1rem) scale(1.1);
   font-size: 2rem;
