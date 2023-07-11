@@ -1916,7 +1916,7 @@
   color: #29323d;
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  font-size: clamp(1rem, 4vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .about .col-right .article-container article .article-body .body-item p {
   margin: 0.5rem 0;

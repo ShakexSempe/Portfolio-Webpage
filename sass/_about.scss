@@ -1,6 +1,5 @@
 // ABOUT SECTION
 .about {
-    // border: 2px solid red;
     display: flex;
     flex-direction: column-reverse;
     gap: 5vh;
@@ -23,13 +22,13 @@
                     margin-top: .5rem;
                 }
                 .about-intro {
-                    // border: 2px solid red;
                     p {
+
                         // border: 2px solid red;
                         // CAPITAL B FIRST LETTER
                         &.intro {
                             font-weight: 500;
-    
+
                             &.intro::first-letter {
                                 font-size: 2rem;
                                 font-size: clamp(2rem, 5vw, 2.25rem);
@@ -42,13 +41,12 @@
                                 box-shadow: 3px 3px 3px rgba(0, 0, 0, .100);
                             }
                         }
-                        
-                        
+
+
                     }
                 }
 
                 .buttons-container {
-                    // border: 2px solid blue;
                     padding: 0;
                     margin: 1rem 0;
                 }
@@ -57,7 +55,6 @@
                     color: $overlay-blue-darker;
                     margin-top: 5vh;
                     .body-item {
-                        // border: 2px solid yellow;
                         padding-bottom: .5rem;
                         margin-bottom: 5vh;
                         position: relative;
@@ -76,7 +73,7 @@
                             color: $overlay-blue-dark;
                             margin-bottom: .5rem;
                             font-size: 1rem;
-                            font-size: clamp(1rem, 4vw, 1.125rem);
+                            font-size: $font-clamp-sm;
                         }
 
                         p {
