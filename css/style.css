@@ -1870,33 +1870,8 @@
 .about .col-right {
   position: relative;
 }
-.about .col-right .article-container article .about-intro p {
-  font-weight: 500;
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.5;
-  transition: 1.5s;
-}
-@media (min-width: 768px) {
-  .about .col-right .article-container article .about-intro p .title-break {
-    display: none;
-  }
-}
-.about .col-right .article-container article .about-intro p .item-title {
-  font-weight: 600;
-  color: #1f252d;
-  display: block;
-}
-.about .col-right .article-container article .about-intro p a {
+.about .col-right .article-container article .cv-btn {
   margin-top: 0.5rem;
-  font-weight: 500;
-  padding: 0.5rem 0.5rem;
-  transition: 0.2s;
-  font-size: 0.85rem;
-  width: 8rem;
-}
-.about .col-right .article-container article .about-intro p a i {
-  color: #f4f4f4;
 }
 .about .col-right .article-container article .about-intro p.intro {
   font-weight: 500;
@@ -1910,7 +1885,7 @@
   padding: 0 0.1em;
   margin-right: 0.1em;
   border-radius: 0.25rem;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 .about .col-right .article-container article .buttons-container {
   padding: 0;
@@ -1924,17 +1899,8 @@
   padding-bottom: 0.5rem;
   margin-bottom: 5vh;
   position: relative;
-  border-bottom: 1px solid #b3c0cc;
+  border-bottom: 1px solid #475462;
   transition: border 0.5s;
-}
-.about .col-right .article-container article .article-body .body-item::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #fafafa;
-  z-index: -1;
-  opacity: 0;
-  transition: 0.25s;
 }
 @media (min-width: 820px) {
   .about .col-right .article-container article .article-body .body-item {
@@ -1954,7 +1920,6 @@
 }
 .about .col-right .article-container article .article-body .body-item p {
   margin: 0.5rem 0;
-  font-weight: 400;
 }
 .about .col-right .article-container article .article-body .body-item a {
   color: #475462;
@@ -1972,8 +1937,9 @@
   opacity: 0.9;
 }
 .about .col-right .article-container article .article-body .body-item:hover {
-  border-bottom-color: #475462;
   background: #fafafa;
+  border-bottom-color: transparent;
+  transition: 0.25s;
 }
 .about .col-right .article-container article .article-body .body-item:hover::after {
   opacity: 1;

@@ -18,43 +18,14 @@
         position: relative;
         // ARTICLE CONTAINER
         .article-container {
-            // border: 2px solid red;
             article {
-                // ABOUT P
+                .cv-btn {
+                    margin-top: .5rem;
+                }
                 .about-intro {
                     // border: 2px solid red;
                     p {
                         // border: 2px solid red;
-                        font-weight: 500;
-                        text-align: left;
-                        font-size: 1rem;
-                        line-height: 1.5;
-                        transition: 1.5s;
-                        
-    
-                        @include md {
-                            .title-break {
-                                display: none;
-                            }
-                        }
-                        .item-title{
-                            font-weight: 600;
-                            color: $overlay-blue-darker;
-                            display: block;
-                        }
-    
-                        a {
-                            // border: 2px solid red;
-                            margin-top: .5rem;
-                            font-weight: 500;
-                            padding: .5rem .5rem;
-                            transition: .2s;
-                            font-size: .85rem;
-                            width: 8rem;
-                            i {
-                                color: $text-light;
-                            }
-                        }
                         // CAPITAL B FIRST LETTER
                         &.intro {
                             font-weight: 500;
@@ -68,7 +39,7 @@
                                 padding: 0 .1em;
                                 margin-right: .1em;
                                 border-radius: .25rem;
-                                box-shadow: 3px 3px 0 rgba(0, 0, 0, .100);
+                                box-shadow: 3px 3px 3px rgba(0, 0, 0, .100);
                             }
                         }
                         
@@ -90,18 +61,8 @@
                         padding-bottom: .5rem;
                         margin-bottom: 5vh;
                         position: relative;
-                        border-bottom: 1px solid $brand;
+                        border-bottom: 1px solid $overlay-blue-light;
                         transition: border .5s;
-                        // ITEM PSEUDO BG
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            inset: 0;
-                            background: #fafafa;
-                            z-index: -1;
-                            opacity: 0;
-                            transition: .25s;
-                        }
                         
                         @include lg {
                             margin-bottom: 10vh;
@@ -120,7 +81,6 @@
 
                         p {
                             margin: .5rem 0;
-                            font-weight: 400;
                         }
 
                         a {
@@ -142,8 +102,9 @@
 
                         // BODY ITEM HOVER 
                         &:hover {
-                            border-bottom-color: $overlay-blue-light;
                             background: #fafafa;
+                            border-bottom-color: transparent;
+                            transition: .25s;
                             &::after {
                                 opacity: 1;
                             }
