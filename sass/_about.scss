@@ -1,4 +1,4 @@
-// about 
+// ABOUT SECTION
 .about {
     // border: 2px solid red;
     display: flex;
@@ -7,43 +7,18 @@
     padding: 10vh 5vw;
     background-color: $background-light;
     position: relative;
-    min-height: 100vh;
     
-    // DESKTOP
+    // DESKTOP FLEX
     @include md {
         flex-direction: row;
         align-items: flex-start;
     }
     // COL RIGHT = TITLE & ARTICLE
     .col-right {
-        // section title
-        .section-title {
-            // border: 2px solid red;
-            text-align: left;
-            margin-top: 5vh;
-            &::after {
-                width: 80%;
-            }
-        }
-        // end of section title
-        width: 100%;
-        height: auto;
-        z-index: 20;
-        background: $background-light;
-        border-radius: 5px;
         position: relative;
-        // desktop
-        @include md {
-            width: 100%;
-            margin: 0;
-            height: 100%;
-            // overflow: hidden;
-            // border: 2px solid yellow;
-        }
         // ARTICLE CONTAINER
         .article-container {
             // border: 2px solid red;
-            // overflow: hidden;
             article {
                 // ABOUT P
                 .about-intro {
@@ -178,25 +153,15 @@
             }
 
         }
-        // cv download button on h2 hover 
-        &:hover {
-            #cv-download {
-                transition: 1s ease;
-                transform: translateY(100%);
-                opacity: 1;
-            }
-        }
-        // end of cv download button on h2 hover 
 
     }
     // COL LEFT = ABOUT IMAGE(S)
     .col-left {
-        // border: 2px solid #0005;
-        border-radius: .25rem;
-        width: 100%;
+        border-radius: $brand-br;
+        width: 70%;
         height: 60vh;
-        margin-top: 0;
-        z-index: 20;
+        margin-inline: auto;
+        margin-bottom: 5vh;
         @include xsm {
             height: 50vh;
         }
@@ -205,42 +170,37 @@
             height: 70vh;
             position: sticky;
             top: 15vh;
-            // border: 2px solid blue;
         }
-        // about images
+        // ABOUT IMG
         .about-img {
-            border: none;
-            // border: 2px solid blue;
-            width: 70%;
+            width: 100%;
             height: 100%;
-            margin-inline: auto;
             position: relative;
-            border-radius: .25rem;
+            border-radius: $brand-br;
             transition: .5s ease;
-            transform: preserve-3d;
-            overflow: hidden;
-            
+
             img {
-                $fade-speed: 2s;
                 position: absolute;
                 inset: 0;
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
                 object-position: center;
-                border-radius: .25rem;
+                border-radius: inherit;
                 transition: 1s;
                 animation: fade-1 4s infinite;
-                    @keyframes fade-1 {
-                        50% {
-                            opacity: 0;
-                        }
+
+                @keyframes fade-1 {
+                    50% {
+                        opacity: 0;
                     }
-                
+                }
+
                 &.about-img-2 {
                     opacity: 0;
                     object-position: top;
                     animation: fade-2 4s infinite;
+
                     @keyframes fade-2 {
                         50% {
                             opacity: 1;
@@ -274,6 +234,6 @@
                 }
             }
 
-    }
+        }
     }
 }
