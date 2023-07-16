@@ -11,39 +11,36 @@
     // skills container
     .skills-content {
         // border: 2px solid blue;
-        background: $background-light;
-
-
+        @include lg {
+            background: url('../img/keyboard-mouse.jpg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 50%;
+            background-attachment: fixed;
+        }
         // SKILLS INTRO
         .skills-intro {
             // border: 2px solid red;
             padding: 0 2.5vw 5vh 5vw;
-            // padding: 1rem;
             position: relative;
-            z-index: 30;
 
             @include sm {
                 padding: 0vh 5vw 5vh;
             }
 
             .skills-article {
-                @include md {
-                    width: 60%;
-                }
-
                 p {
-                    // font-size: clamp(.95rem, 1.5vw, 1.15rem);
-                    font-size: .95rem;
-                    font-size: $font-clamp-sm;
-                    font-weight: 500;
-                    line-height: 1.6;
-                    overflow: hidden;
+                    font-size: $font-clamp-xsm;
 
                     span {
-                        font-size: .95rem;
-                        font-size: inherit;
-                        font-weight: 700;
+                        font-weight: 600;
                         color: inherit;
+                    }
+                    @include lg {
+                        max-width: 350px;
+                    }
+                    @include xlg {
+                        max-width: 450px;
                     }
 
                 }
@@ -51,51 +48,24 @@
 
             .skills-icons {
                 // border: 1px solid $overlay-blue-dark;
-                // background-image: linear-gradient(0deg, #f4f4f4, #fafafa, #f4f4f4);
-                // background: #fafafa;
                 display: flex;
-                // display: none;
                 align-items: center;
                 justify-content: space-around;
-                padding: .5rem 0;
-                margin: .25rem auto 1rem;
                 margin: 0 auto 1rem;
                 border-radius: $border-radius-sm;
 
                 @include md {
                     justify-content: flex-start;
                     gap: 5vw;
-                    // margin: 5vh auto;
-                    // position: absolute;
-                    // flex-direction: column;
-                    // gap: 5vh;
-                    // top: -15vh;
-                    // right: 5vw;
                 }
 
-                // @include xlg {
-                //     right: 20vw;
-                // }
-
                 svg {
-                    // width: 100%;
-                    // border: 1px solid red;
                     height: 5rem;
-                    // height: clamp(5rem, 8vw, 8rem);
                     width: auto;
                     fill: $overlay-blue-darker;
-                    // stroke: green;
                     transition: .25s;
                     filter: drop-shadow(.25rem .25rem .25rem hsla(212, 19%, 20%, .25));
 
-                    // border-radius: $border-radius-sm;
-                    @include md {
-                        // height: 8rem;
-                    }
-
-                    // #SVGRepo_iconCarrier {
-                    //     fill: yellow;
-                    // }
                 }
 
                 // SKILLS ICONS IO
@@ -124,573 +94,7 @@
                     }
                 }
             }
-
-            .skills-drop {
-                // border: 2px solid red;
-                text-align: left;
-                color: $span-gold;
-                font-size: 1rem;
-                // font-size: clamp(.95rem, 2vw, 1.15rem);
-                font-size: $font-clamp-sm;
-
-                @include md {
-                    // text-align: center;
-                }
-
-
-                .skills-drop-p {
-                    font-weight: 500;
-                    font-size: inherit;
-                    // font-size: .95rem;
-                }
-            }
         }
-
-
-        // DROPDOWN BUTTON
-        .skills-cta {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: .5rem 1rem;
-            width: 10rem;
-            width: clamp(10rem, 20vw, 12rem);
-
-            background: $overlay-blue-dark;
-            color: $text-light;
-            font-size: 1.1rem;
-            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
-            font-weight: 400;
-            text-transform: capitalize;
-            font-family: $font-title;
-
-            border: none;
-            border-radius: $brand-br;
-            cursor: pointer;
-            transition: .25s;
-            position: relative;
-            isolation: isolate;
-
-            i {
-                font-weight: 800;
-                margin-left: 1rem;
-                font-size: 1rem;
-                transition: .25s;
-            }
-
-            &.page-cta {
-                // background: #f4f4f4;
-                border: none;
-                transition: .25s;
-                position: relative;
-
-                // DROPDOWN BTN SHADOWS
-                &::before,
-                &::after {
-                    position: absolute;
-                    content: '';
-                    z-index: -1;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: $brand-br;
-                    border: none;
-                    outline: none;
-                    transition: .2s;
-                }
-
-                &::before {
-                    background: $button-crimson;
-                    box-shadow: $box-light-top-sm;
-                }
-
-                &::after {
-                    background: $button-crimson-hover;
-                    opacity: 0;
-                    box-shadow: $box-light-top-sm-hover;
-                }
-
-                &:hover {
-                    transform: scale(.98);
-
-                }
-            }
-
-            &.dropbtn {
-                background: transparent;
-                color: $overlay-blue-dark;
-                border: 1px solid;
-                // border-radius: 0;
-                transition: .5s;
-
-                &.active {
-                    transform: scale(.98);
-                    border-color: transparent;
-
-                    // color: $brand;
-                    @media (max-width: 768px) {
-                        // width: 90%;
-                    }
-
-                    i {
-                        // color: $text-light;
-                        transform: rotate(-180deg);
-                    }
-                }
-            }
-
-
-        }
-
-        // end of skills top section
-        // DROPDOWN SECTION
-        .dropdown {
-            position: relative;
-            // margin: 5vh auto 0;
-            z-index: 4;
-            width: 100%;
-            // border: 2px solid red;
-
-            // SKILLS-TOP DATA-SCROLL
-            &.io-item {
-                transform: scale(.7) translateY(5vh);
-                opacity: 1;
-                transition: 1s;
-            }
-
-            &.active-item {
-                opacity: 1;
-                transition: 1.5s;
-                transform: scale(1) translateY(0);
-            }
-
-
-
-            // end of dropdown button
-            // dropdown content ( ie. skills items)
-            .dropdown-content {
-
-                // show-contents
-                &.show {
-                    display: block;
-                }
-
-                // end of show-contents
-                display: none;
-                width: 100%;
-                z-index: 1;
-                // justify-content: center;
-                // align-items: center;
-                background: $overlay-blue-darkest;
-                position: relative;
-
-                // padding-bottom: 10vh;
-                // border: 2px solid yellow;
-                padding: 10vh 5vw;
-
-                @include lg {
-                    padding: 10vh 5vw;
-                }
-
-
-                // BACK TO TOP BUTTON
-                .top-btn {
-                    // border: 2px solid red;
-                    position: sticky;
-                    top: 10vh;
-                    width: 100%;
-                    margin: 0;
-                    z-index: 5;
-                    text-align: right;
-                    margin: 0;
-                    padding: 0 .25rem;
-
-                    a {
-                        color: $span-crimson;
-                        background: #fff;
-                        outline: 4px solid $overlay-blue-darker;
-                        outline-offset: -1px;
-                        border-radius: 50%;
-                        // font-size: 1rem;
-                        // padding: .25rem;
-                        font-size: 1.5rem;
-
-                        // box-shadow: $box-light-top-sm;
-                        // border-radius: 50%;
-                        &:hover {
-                            background: transparent;
-                        }
-                    }
-
-                    // @include sm {
-                    //     display: none;
-                    // }
-                }
-
-                // end of skills items container
-
-            }
-        }
-
-        .skills-page-container {
-            // border: 2px solid red;
-            padding: 5vh 5vw;
-            margin: 5vh 0;
-            background: $overlay-blue-darker;
-
-            .skills-bottom {
-                position: relative;
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 10vh;
-
-                @include md {
-                    gap: 1.5rem;
-                    grid-template-columns: 1fr 1fr;
-                }
-
-                @include xlg {
-                    gap: 1.5rem;
-                    grid-template-columns: 1fr 1fr 1fr;
-                }
-
-                // SKILLS ITEMS
-                .skills-item {
-                    // flex-basis: 100%;
-                    width: 100%;
-                    // display: flex;
-                    // align-items: center;
-                    // align-items: flex-start;
-                    // justify-content: space-between;
-                    // justify-content: center;
-                    // flex-direction: column;
-                    padding: 2rem .5rem 2rem 2rem;
-                    background: transparent;
-                    background-size: cover;
-                    // margin: 10vh 5vw;
-                    position: relative;
-                    z-index: 1;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    border-radius: $border-radius-sm;
-                    height: auto;
-                    transform-style: preserve-3d;
-
-                    // IO CLASS
-                    &.io-item {
-                        transform: translateY(5vh);
-                        opacity: 0;
-                        transition: .5s;
-                    }
-
-                    &.active-item {
-                        transform: translateY(0);
-                        opacity: 1;
-                        transition: 1.5s;
-                    }
-
-                    // line-height: 1.3;
-                    @include sm {
-                        padding: 1rem .5rem .5rem 1.5rem;
-                    }
-
-                    @include lg {
-                        padding: 1rem .5rem 1rem 2rem;
-                    }
-
-                    isolation: isolate;
-
-                    ul {
-                        // border: 2px solid red;
-                        margin: 0;
-                        padding: 0;
-                        z-index: 5;
-                        height: 50%;
-                        width: 100%;
-
-                        li {
-                            color: #fff;
-                            font-size: 1rem;
-                            text-align: left;
-                            // margin-bottom: 1rem;
-                            line-height: 1.7;
-                            // margin: .5em;
-                            // padding: .2em .4em;
-                            text-transform: capitalize;
-
-                            @include lg {
-                                font-size: .85rem;
-                            }
-
-                            a {
-                                color: #f4f4f4;
-                            }
-
-                            &::marker {
-                                color: $brand;
-                                color: #fff4;
-                            }
-                        }
-
-                    }
-
-                    // SKILLS ITEM PSEUDO BG & BOX SHADOW
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        height: 100%;
-                        width: 100%;
-                        background: $skill-item-overlay;
-                        border-radius: $border-radius-md;
-                        opacity: 0.8;
-                        z-index: -1;
-                        box-shadow: $box-light-top-sm;
-                    }
-
-                    .icon {
-                        display: grid;
-                        place-items: center;
-                        height: 4rem;
-                        width: 4rem;
-                        border: none;
-                        outline: none;
-                        border-radius: 50%;
-                        padding: 1rem;
-                        margin-bottom: 1rem;
-                        // margin-top: 15px;
-                        // margin-bottom: 20px;
-                        position: relative;
-                        isolation: isolate;
-
-                        @include sm {
-                            padding: 10px;
-                        }
-
-                        // icon img
-                        img {
-                            width: 80%;
-                        }
-
-                        // end of icon img
-                        i {
-                            color: $span-gold;
-                            font-size: 2rem;
-                        }
-
-                        @include sm {
-                            height: 4rem;
-                            width: 4rem;
-
-                            i {
-                                font-size: 2.25rem;
-                            }
-                        }
-
-                        // ICON BOX SHADOW & BG
-                        &::before,
-                        &::after {
-                            position: absolute;
-                            content: '';
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 50%;
-                        }
-
-                        &::before {
-                            z-index: -1;
-                            box-shadow:
-                                inset 2px 2px 3px rgba(255, 255, 255, .125),
-                                inset -2px -2px 5px rgba(0, 0, 0, 0.125),
-                                3px 3px 4px rgba(0, 0, 0, .125);
-                            animation: skill-icon 10s linear infinite;
-
-                            @keyframes skill-icon {
-                                25% {
-                                    box-shadow:
-                                        inset -2px 3px 3px rgba(255, 255, 255, .15),
-                                        inset 2px -2px 5px rgba(0, 0, 0, 0.15),
-                                        -3px 3px 4px rgba(0, 0, 0, .125);
-                                }
-
-                                50% {
-                                    box-shadow: inset 0px -1px 3px rgba(255, 255, 255, .15),
-                                        inset 0px 2px 5px rgba(0, 0, 0, 0.15),
-                                        0 2px 4px rgba(0, 0, 0, .125);
-                                }
-
-                                75% {
-                                    box-shadow: inset 2px 0px 3px rgba(255, 255, 255, .15),
-                                        inset -2px 0px 5px rgba(0, 0, 0, 0.15),
-                                        -2px 2px 4px rgba(0, 0, 0, .125);
-                                }
-                            }
-                        }
-
-                        &::after {
-                            // background-color: $overlay-blue-darker;
-                            background: $overlay-dark;
-                            z-index: -2;
-                            opacity: 1;
-                        }
-
-                        // end of icon box shadow
-
-                    }
-
-                    // end of item icon
-                    // skills item title (h2)
-                    h3 {
-                        font-size: 1.25rem;
-                        font-weight: 400;
-                        color: $span-gold;
-                        margin-bottom: .5rem;
-                        text-transform: capitalize;
-                        font-family: $font-title;
-
-                        // text-decoration: underline $span-gold;
-                        // text-underline-offset: .1em;
-                        @include lg {
-                            font-size: 1.25rem;
-                        }
-                    }
-
-                    // end of skills item title (h2)
-                    // skills items on tablets
-                    @media (min-width:768px) {
-                        // flex-basis: 45%;
-                        // margin: 2.5%;
-                        height: auto;
-                    }
-
-                    // end of skills items on tablets
-                    // skills items on desktop
-                    @media (min-width: 1024px) {
-                        // flex-basis: 25%;
-                        width: 100%;
-                        margin: 0;
-                        // height: 300px;
-                        // height: 55vh;
-                        // justify-content: space-evenly;
-                        pointer-events: visible;
-                        cursor: pointer;
-                        transition: .2s;
-
-                        &:hover {
-                            transition: .2s;
-                            transform: scale(1.0255);
-                        }
-                    }
-
-                    // end of skills items on desktop
-                }
-
-                // end of skills-items
-            }
-        }
-
-        .skills-items {
-            // border: 1px solid red;
-            display: grid;
-            gap: 10vh;
-
-            @include md {
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-            }
-
-            @include xlg {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
-            .skills-item {
-                // border: 2px solid yellow;
-                background: $overlay-blue-darker;
-                border-radius: $border-radius-sm;
-                color: #fff;
-                padding: 0 .25rem 1rem 1rem;
-                box-shadow: .025rem .5rem .8rem hsla(0, 0%, 0%, .2);
-                transition: transform .5s, box-shadow .25s;
-
-                .icon {
-                    transform: translateY(-1rem);
-                    transition: .5s;
-
-                    i {
-                        font-size: 2.5rem;
-                        color: #ddd;
-                        transition: .25s;
-                        // margin-top: -1rem;
-                        // margin: -1rem 0 1rem;
-                    }
-
-                    img,
-                    svg {
-                        // border: 2px solid red;
-                        width: 2.5rem;
-                        transition: .25s;
-                    }
-
-                    // ITEM ICON DROP SHADOWS
-                    i,
-                    img,
-                    svg {
-                        filter: drop-shadow(.125rem .5rem .25rem #0006);
-                    }
-                }
-
-                h3 {
-                    margin-bottom: 1rem;
-                }
-
-                ul {
-                    // border: 2px solid red;
-                    padding: .5rem 0rem 1rem 1rem;
-
-                    li {
-                        margin-bottom: .5rem;
-                        font-size: .95rem;
-                        line-height: 1.5;
-                        text-transform: capitalize;
-
-                        &::marker {
-                            color: $overlay-blue-light;
-                        }
-
-                        @include lg {
-                            font-size: .95rem;
-                        }
-                    }
-                }
-
-                &:hover {
-                    transform: scale(.99);
-                    box-shadow: .025rem .5rem .5rem hsla(0, 0%, 0%, .25);
-
-                    .icon {
-                        transform: translateY(-.5rem);
-
-                        i,
-                        svg,
-                        img {
-                            filter: drop-shadow(0rem .25rem .15rem #0008);
-                        }
-                    }
-                }
-            }
-        }
-
-        // skills items container
-        // SECTION IO TRANSITIONS 
-
-    }
-
-    &.skills-page-section {
-        padding: 10vh 0;
     }
 }
 
@@ -710,42 +114,10 @@
             border-color: $overlay-blue-dark;
         }
     }
-
-    .skills-btn {
-        background: #fff;
-        // border: 2px solid red;
-        border-radius: .25rem;
-        padding: .5rem;
-        // width: 6rem;
-        // width: clamp(6rem, 15vw, 10rem);
-        margin: 5vh 5vw 10vh auto;
-        text-transform: uppercase;
-        font-family: $font-title;
-        font-size: 1rem;
-        color: $overlay-blue-dark;
-        font-weight: 600;
-        mix-blend-mode: difference;
-        z-index: 10;
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        position: sticky;
-        top: 60vh;
-        left: 90vw;
-        letter-spacing: .05rem;
-        transition: .25s;
-
-        display: none;
-        &:hover {
-            letter-spacing: normal;
-        }
-    }
 }
 
 .skill-section {
-    // border: 3px solid yellow;    
-    // padding: 5vh 5vw;
-    // min-height: 100vh;
+    // border: 3px solid yellow;
     background: $overlay-blue-darkest;
     color: $text-light;
     border-bottom: .125rem solid $brand;
@@ -785,27 +157,19 @@
         h3 {
             text-transform: capitalize;
             line-height: 1.5;
-            font-size: 1.6rem;
-            font-size: clamp(1.6rem, 4vw, 2.25rem);
+            font-size: 1.5rem;
+            font-size: $font-clamp-md;
             margin-bottom: 1rem;
         }
 
         p {
-            // width: 80%;
-            color: inherit;
-
             &::first-letter {
                 text-transform: capitalize;
-            }
-
-            @include md {
-                // width: 60%;
-                font-size: 1.15rem;
             }
         }
 
         ul {
-            // border: 2px solid red;
+            border: 2px solid red;
             margin-top: 1rem;
             padding: 0 1rem;
             display: flex;
@@ -815,6 +179,8 @@
             li {
                 // padding-bottom: .25rem;
                 padding: .25rem 1rem;
+                font-size: .1rem;
+                border: 2px solid red;
 
                 &::marker {
                     color: $brand;
@@ -839,11 +205,8 @@
             width: 12rem;
             width: clamp(12rem, 10vw, 12rem);
             font-weight: 600;
-            // position: absolute;
-            // bottom: 10vh;
-
-            // position: sticky;
-            // top: 50vh;
+            font-size: 1rem;
+            font-size: $font-clamp-sm;
 
         }
 
@@ -1007,7 +370,6 @@
         }
 
         .skill-article {
-            padding: .5rem .5rem 1rem;
             padding: 1rem;
             border-radius: .25rem;
             background: $overlay-blue-dark;
@@ -1031,8 +393,7 @@
 
                 h4 {
                     text-transform: capitalize;
-                    // margin-bottom: .5rem;
-                    font-weight: bold;
+                    font-weight: 700;
                     font-size: 1.25rem;
                 }
                 
@@ -1172,5 +533,3 @@
 
 
 }
-
-// end of skills

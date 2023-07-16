@@ -67,9 +67,32 @@
         }
     }
 }
+
 .hero {
-    color: #fff;
-    // ANIMATED INTRO
+    color: $text-light;
+    text-transform: capitalize;
+    h1 {
+        font-size: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+        font-weight: 200;
+        margin-bottom: .5rem;
+    }
+    h2 {
+        font-size: 2rem;
+        font-size: clamp(2rem, 5vw, 2.5rem);
+        letter-spacing: -0.05rem;
+    }
+    p {
+        font-size: 1rem;
+        font-size: $font-clamp-sm;
+    }
+    a {
+        color: inherit;
+    }
+    span {
+        color: $brand;
+    }
+    // PAGE HERO CONTENT
     .hero-content {
         // border: 1px solid #fff;
         background: transparent;
@@ -77,221 +100,79 @@
         position: relative;
         top: 5vh;
         width: 100%;
-        text-transform: capitalize;
 
         @include md {
             width: max-content;
-            top: 5vh;
+            top: 10vh;
         }
 
         @include xlg {
             top: 15vh;
         }
 
-        // SLOGAN 
-        .hero-title {
-            // border: 1px solid #fff;
-            margin-bottom: .25rem;
-            width: 100%;
-            // opacity: 0;
-            // animation: slogan 5s linear 14s forwards;
-
-            .hero-title-header {
-                // font-size: clamp(.85rem, 2vw, 1.15rem);
-                // border: 2px solid red;
-                line-height: 1.25;
-                font-size: .95rem;
-                font-size: $font-clamp-sm;
-                font-weight: 400;
-                color: $brand;
-                // animation: header 4s ease forwards 4s;
-                a {
-                    color: inherit;
-                    font-size: inherit;
-                }
-
-                @keyframes header {
-                    0%, 20% {
-                        opacity: 1;
-                        transform: translateY(1rem);
-                    }
-                    50% {
-                        transform: translateY(0rem);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            }
-
-            .hero-description {
-                // margin-bottom: .25rem;
-                text-transform: capitalize;
-                text-align: center;
-                text-align: left;
-                line-height: 1.25;
-                font-family: $font-title;
-                font-weight: 500;
-                font-size: 2.25rem;
-                font-size: clamp(2.25rem, 6vw, 3rem);
-                font-size: $font-clamp-lg;
-                color: $text-light;
-                // animation: name 8s ease forwards 4s;
-
-                @keyframes name {
-                    0%, 15% {
-                        opacity: 1;
-                        transform: translateY(1rem);
-                    }
-                    50% {
-                        transform: translateY(0rem);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            }
-
-            // DESKTOP SLOGAN
-            @media (min-width: 1024px) {
-                top: 15vh;
-
-                // left: 50%;
-                // transform: translateX(-50%);
-                p {
-                    text-align: center;
-                    text-align: left;
-                }
-            }
-        }
-
         // "AKA" SPAN
         .hero-meta-description {
-            display: inline-block;
-            font-size: 1.25rem;
-            font-size: $font-clamp-md;
-            position: relative;
             color: $brand;
-            margin-top: .5rem;
-            font-family: $font-content;
-            // animation: meta 8s ease forwards 4s;
-
-            @keyframes meta {
-                0%, 20% {
-                    transform: translateY(1rem);
-                    opacity: 1;
-                }
-                50% {
-                    transform: translateX(0rem);
-                }
-                100% {
-                    transform: translateY(0);
-                    opacity: 1;
-                }
-            }
+            margin-top: 1rem;
         }
     }
 
+    // ANIMATED CTA
     .hero-cta {
+        background: $span-crimson;
+        margin: 20vh 0 0;
+        position: relative;
+        display: block;
+        padding: .5em 2rem .5rem 1rem;
+        width: max-content;
+        border-radius: 1rem;
+        transition: .25s linear;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+        z-index: 2;
         @media (max-width: 576px){
             margin: 20vh 0 0;
         }
         @include sm {
             margin: 20vh 0 0;
         }
-        @include md {
-            font-size: 1.5em;
-            width: 20rem;
-            text-align: center;
-            margin: 25vh 0 0;
-        }
-        @include xlg {
+        @include lg {
             margin: 15vh 0 0;
         }
-        background: $span-crimson;
-        margin: 20vh 0 0;
-        position: relative;
-        display: block;
-        text-align: left;
-        padding: .5em 2rem .5rem 1rem;
-        width: auto;
-        width:max-content;
-        border-radius: 1rem;
-        border: none;
-        outline: none;
-        animation-fill-mode: forwards;
-        transition: .3s linear;
-        cursor: pointer;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-        z-index: 2;
-
-        // show cta
-        @keyframes show-cta {
-            0%, 30% {
-                opacity: 1;
-                transform:  translateX(1rem);
-            }
-            50% {
-                transform: translateX(0);
-            }
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        // end of show cta
-        // button shadows
+        // PAGE CTA BTN SHADOWS
         &::before,
         &::after {
             position: absolute;
             content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            inset: 0;
             border-radius: 1rem;
-            // border-top-right-radius: 5rem;
-            // border-bottom-right-radius: 1rem;
-            transition: .3s ease;
-            border: none;
-            outline: none;
+            transition: .25s ease;
         }
 
         // ::before = box shadow
         &::before {
             box-shadow: $box-light-top-sm;
             background: $button-crimson;
-            // background: linear-gradient(0deg, #581212, #dc134c);
         }
         &::after {
             opacity: 1;
             z-index: -1;
-            animation: 3s cta-btn infinite;
-            animation-delay: 6s;
-            transition: .3s;
-            outline: none;
-            border: none;
+            animation: 1s cta-btn infinite;
+            transition: .25s;
             background: $button-crimson-hover;
-            // background: linear-gradient(0deg, #dc134c, #581212);
             box-shadow: $box-light-top-sm-hover;
         }
 
-        // end of button shadows
-        // animated button text 
+        // ANIMATED BTN TEXT
         span {
             position: relative;
             display: inline-block;
             text-transform: none;
             color: $text-light;
-            font-family: $font-content;
             font-size: 2.5rem;
+            font-size: $font-clamp-lg;
             font-weight: 500;
             animation: animate 3s ease-in-out infinite;
-            animation-delay: calc(4s + .2s * var(--i));
-            animation-delay: calc(2s + .2s * var(--i));
+            animation-delay: calc(1s + .2s * var(--i));
 
             /* cta keyframes*/
             @keyframes animate {
@@ -308,11 +189,7 @@
                     transform: translateY(0);
                 }
             }
-
-            /* end of cta keyframes*/
         }
-
-        // end of animated button text 
 
         // HOVER AND ACTIVE CLASS
         @media (max-width: 820px) {
@@ -349,64 +226,35 @@
     }
 
     .hero-index-content {
-        // border: 2px solid yellow;
         padding: 5vh 5vw;
         position: relative;
         top: 10vh;
-        color: #fff;
-        text-transform: capitalize;
+
         @include xlg {
             top: 20vh;
         }
-        span {
-            color: $brand;
-        }
 
         .content-title {
-            // border: 2px solid pink;
             margin-bottom: 25vh;
+
             @include xlg {
                 margin-bottom: 5vh;
             }
-            h1 {
-                font-size: 1rem;
-                font-size: clamp(1rem, 2vw, 1.115rem);
-                font-weight: 200;
-                margin-bottom: .5rem;
-            }
-            h2 {
-                font-size: 2rem;
-                font-size: clamp(2rem, 5vw, 2.5rem);
-                letter-spacing: -0.05rem;
-            }
         }
 
 
-
         .content-value {
-            // border: 2px solid green;
-            p {
-                color: #fff;
-                font-weight: 500;
-                font-size: 1rem;
-                font-size: clamp(1rem, 2vw, 1.115rem);
-            }
-
             .cta {
                 width: 12rem;
-                // border: 2px solid yellow;
                 margin-top: 1rem;
                 @include lg {
                     width: 14rem;
                 }
                 .btn {
                     width: 100%;
-                    color: #fff;
                     padding: 1rem;
-                    font-size: 1rem, 3vw, 1.25rem;
-                    i {
-                        color: #fff;
-                    }
+                    font-size: 1rem;
+                    font-size: $font-clamp-sm;
                     &::before {
                         background: $button-crimson;
                     }
@@ -431,7 +279,6 @@
             width: 100%;
             object-fit: cover;
             object-position: 10% 50%;
-            // opacity: .8;
         }
 
 
@@ -446,7 +293,6 @@
                 object-fit: cover;
                 width: 100%;
                 object-position: 10% 40%;
-                // object-position: right;
                 opacity: .8;
                 position: relative;
                 right: -20vw;
@@ -457,405 +303,3 @@
     }
 }
 // END OF HERO
-// SKILLS PAGE HERO
-.skills-hero {
-    background: $overlay-blue-dark;
-    // padding: 10vh 5vw 5vh;
-    // padding: 0;
-    display: flex;
-    align-items: center;
-
-    .skills-menu {
-        margin-left: clamp(4rem, 20vw, 48rem);
-        z-index: 2;
-        // border: 2px solid blue;
-        .menu-item {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            color: #f4f4f4;
-            display: block;
-            padding: clamp(.25rem, .5vw, 1rem) 0rem;
-        }
-        
-
-        // MENU BACKGROUND
-        .menu-background {
-            height: 100vh;
-            width: 100vw;
-            // border: 2px solid red;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background-image: radial-gradient(
-                rgba(255, 255, 255, .1) 9%,
-                transparent 9%
-            );
-            background-position: 0% 0%;
-            background-size: 12vmin 12vmin;
-            transition: opacity 800ms ease, 
-            background-size 800ms ease;
-            transition: all 800ms ease;
-        
-        }
-        // REDUCE OPACITY OF MENU ITEMS WHEN MENU IS HOVERED THEN
-        // ADD OPACITY TO ACTIVE LINK
-        &:hover {
-            .menu-item {
-                opacity: .3;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-            .menu-background {
-                background-size: 11vmin 11vmin;
-                opacity: .5;
-            }
-        }
-
-        &[data-active-index="0"] {
-            .menu-background {
-                background-position: 0% -25%;
-            }
-        }
-        &[data-active-index="1"] {
-            .menu-background {
-                background-position: 0% -50%;
-            }
-        }
-        &[data-active-index="2"] {
-            .menu-background {
-                background-position: 0% -75%;
-            }
-        }
-        &[data-active-index="3"] {
-            .menu-background {
-                background-position: 0% -100%;
-            }
-        }
-    }
-}
-// MENU 
-#menu {
-    // border: 2px solid yellow;
-    min-height: 100vh;
-    padding: 0;
-    z-index: 5;
-    .menu-section {
-        border-bottom: 2px solid#000;
-        height: 100vh;
-        padding: 10vh 0;
-        background-color: $overlay-blue-dark;
-        position: relative;
-        text-align: center;
-        text-align: left;
-        isolation: isolate;
-        // GENERAL MENU IMG STYLE
-        .menu-img {
-            figure {
-                // overflow: hidden;
-                // border: 1px solid green;
-                width: 100%;
-                height: 100%;
-                position: relative;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
-                
-                
-            }
-            
-            // INTERSECTION OBSERVER CLASSES
-            &.io-item {
-                img {
-                    transform: scale(.5);
-                    transition: .3s;
-                }
-            }
-            &.active-item {
-                // FIGURE ANIMATIONS = CLASS = .FIG
-                // RESPONSE STYLE
-                figure {
-                &.fig-response {
-                    animation: responseTransition 5s infinite;
-                    @keyframes responseTransition {
-                        5% {
-                            transform: scaleY(140%);
-                        }
-                        30% {
-                            transform: scaleX(110%);
-                        }
-                        40% {
-                            transform: scaleY(1);
-                        }
-                    }
-                }
-                // IMMERSIVE STYLE
-                &.fig-js {
-                    img {
-                        filter: drop-shadow(0 .5rem .15rem #000);
-
-                        transform-style: preserve-3d;
-                        animation: cssTransition 3s infinite;
-                        @keyframes cssTransition {
-                            50% {
-                                filter: drop-shadow(.5rem 1rem .25rem rgba(0,0,0,.250));
-                                transform: rotateY(10deg) scale(1.08);
-                            }
-                        }
-                    }
-                }
-                // ENGAGING STYLE
-                &.fig-css {
-                    img {
-                        animation: imageTransition 3s infinite;
-                        filter: drop-shadow(.5rem .5rem .15rem #000);
-                        transform-style: preserve-3d;
-                        transition: 1s;
-                    }
-                    // FIGURE ANIMATION KEYFRAMES
-                    @keyframes imageTransition {
-                        50% {
-                            filter: drop-shadow(0 1rem .25rem #000);
-                            transform: translateY(-2rem) rotateY(10deg);
-                        }
-                    }
-                }
-            }
-                // IMAGE ZOOMS IN ON IO
-                img {
-                    transition: 1s ease-out;
-                    transform: scale(1);
-                }
-            }
-        }
-        // GENERAL CONTENT DIV STYLE
-        .menu-content {
-            .menu-title {
-                overflow: hidden;
-                h2 {
-                    text-transform: capitalize;
-                    color: #fff;
-                    margin-bottom: .5rem;
-                    font-weight: 700;
-                    // font-family: $font-title;
-                }
-
-                p {
-                    color: #f4f4f4;
-                }
-                // INTERSECTION OBSERVER CLASSES
-                &.io-item {
-                    h2 {
-                        opacity: 0;
-                        transform: translateY(5vh);
-                        transition: .3s;
-                    }
-                    p {
-                        opacity: 0;
-                        transform: translateY(-5vh);
-                        transition: .3s;
-                    }
-                }
-
-                &.active-item {
-                    h2 {
-                        opacity: 1;
-                        transform: translateY(0);
-                        transition: 1s;
-                    }
-                    p {
-                        opacity: 1;
-                        transform: translateY(0);
-                        transition: 1s;
-                    }
-                }
-            }
-
-            .menu-cta {
-                .btn {
-                    color: $span-gold;
-                    display: none;
-                }
-
-                .page-btn {
-                    width: 10rem;
-                    color: #fff;
-                    text-transform: capitalize;
-                    border: none;
-                    border-radius: .5rem;
-                    padding: .5rem 1rem;
-                    letter-spacing: .05rem;
-                    text-align: center;
-                    transition: .25s;
-                    position: relative;
-                    isolation: isolate;
-                    // BUTTON PSEUDO BG & SHADOW
-                    &::before, &::after {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        transition: .25s;
-                        border-radius: .5rem;
-                        z-index: -1;
-                    }
-                    &::before {
-                        background: $button-crimson;
-                        box-shadow: $box-light-top-sm;
-                    }
-                    &::after {
-                        background: $button-crimson-hover;
-                        box-shadow: $box-light-top-sm-hover;
-                        opacity: 0;
-                    }
-                    // DESKTOP HOVER
-                    @media (min-width: 820px){
-                        width: 15rem;
-                        padding: .7rem 1rem;
-                        &:hover {
-                            transform: scale(.98);
-                            letter-spacing: normal;
-                            &::before {opacity: 0;}
-                            &::after {opacity: 1;}
-                        }
-                    }
-                    // MOBILE ACTIVE CLASS
-                    @media (max-width: 820px){
-                        &:active {
-                            transform: scale(.98) translateX(-50%);
-                            letter-spacing: normal;
-                            &::before {opacity: 0;}
-                            &::after {opacity: 1;}
-                        }
-                    }
-                }
-            }
-        }
-        // MOBILE MENU SECTION
-        @media (max-width: 1024px){
-            // POSITION IMG DIV IN THE MIDDLE OF EACH MENU SECTION
-            .menu-img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 19rem;
-                height: 19rem;
-            }
-            
-            .menu-content {
-                .menu-title {
-                    text-align: center;
-                }
-                .menu-cta {
-                    position: absolute;
-                    bottom: 20vh;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    // border: 1px solid red;
-                    width: 19rem;
-                    display: flex;
-                    justify-content: space-between;
-                    gap: .5rem;
-
-                    .btn {
-                        width: 100%;
-                        
-                    }
-                    .page-btn {
-                        position: absolute;
-                        bottom: -10vh;
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
-                }
-            }
-        }
-
-        // DESKTOP MENU SECTION STYLE
-        @media (min-width: 1024px) {
-            .menu-img {
-                position: absolute;
-                right: 5vw;
-                top: 50%;
-                transform: translateY(-50%);
-                // display: none;
-                width: 45%;
-                height: 50%;
-                // overflow: hidden;
-                // border: 1px solid#fff;
-                border-radius: .5rem;
-
-                figure {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
-                    }
-                }
-            }
-            .menu-content {
-                width: 50%;
-                text-align: center;
-                position: relative;
-                top: 15vh;
-                .menu-title {
-                    h2 {
-                        font-size: 2rem;
-                    }
-                }
-                .menu-cta {
-                    position: relative;
-                    top: 20vh;
-                    // border: 2px solid red;
-                    display: flex;
-                    justify-content: center;
-                    gap: 1rem;
-
-                    .btn {
-                        width: 10rem;
-                    }
-                }
-
-            }
-
-            background-size: 50%;
-            background-position: right;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                right: 0;
-                width: 50%;
-                height: 100%;
-                background: rgba(0, 0, 0, .3);
-                z-index: -1;
-            }
-
-            // MENU SECTION DESKTOP IMAGE BACKGROUNDS
-            // MENU 1 - RESPONSIVE
-            &#menu-1 {
-                // background-image: url(../hero/peter-bo-faMPQuSe4Wo-unsplash-bg.jpg);
-            }
-            // MENU 2 - IMMERSIVE
-            &#menu-2 {
-                // background-image: url(../hero/walling-XLqiL-rz4V8-unsplash.jpg);
-            }
-            // MENU 3 - ENGAGING
-            &#menu-3 {
-                // background-image: url(../img/altumcode-U0tBTn8UR8I-unsplash.jpg);
-            }
-        }
-    }
-}
