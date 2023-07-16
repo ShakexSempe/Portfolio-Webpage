@@ -1086,7 +1086,7 @@
 .skills-section .skills-header {
   padding: 0 5vw;
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   .skills-section .skills-content {
     background: url("../img/keyboard-mouse.jpg");
     background-repeat: no-repeat;
@@ -1105,12 +1105,21 @@
   }
 }
 .skills-section .skills-content .skills-intro .skills-article p {
-  max-width: 400px;
   font-size: clamp(.95rem, 1.5vw, 1.125rem);
 }
 .skills-section .skills-content .skills-intro .skills-article p span {
   font-weight: 600;
   color: inherit;
+}
+@media (min-width: 820px) {
+  .skills-section .skills-content .skills-intro .skills-article p {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .skills-section .skills-content .skills-intro .skills-article p {
+    max-width: 450px;
+  }
 }
 .skills-section .skills-content .skills-intro .skills-icons {
   display: flex;

@@ -11,7 +11,7 @@
     // skills container
     .skills-content {
         // border: 2px solid blue;
-        @include xlg {
+        @include lg {
             background: url('../img/keyboard-mouse.jpg');
             background-repeat: no-repeat;
             background-position: right;
@@ -30,12 +30,17 @@
 
             .skills-article {
                 p {
-                    max-width: 400px;
                     font-size: $font-clamp-xsm;
 
                     span {
                         font-weight: 600;
                         color: inherit;
+                    }
+                    @include lg {
+                        max-width: 350px;
+                    }
+                    @include xlg {
+                        max-width: 450px;
                     }
 
                 }
