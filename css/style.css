@@ -1105,7 +1105,8 @@
   }
 }
 .skills-section .skills-content .skills-intro .skills-article p {
-  max-width: 500px;
+  max-width: 400px;
+  font-size: clamp(.95rem, 1.5vw, 1.125rem);
 }
 .skills-section .skills-content .skills-intro .skills-article p span {
   font-weight: 600;

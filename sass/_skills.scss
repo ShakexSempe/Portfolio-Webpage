@@ -30,7 +30,8 @@
 
             .skills-article {
                 p {
-                    max-width: 500px;
+                    max-width: 400px;
+                    font-size: $font-clamp-xsm;
 
                     span {
                         font-weight: 600;
