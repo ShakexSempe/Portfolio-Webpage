@@ -481,9 +481,8 @@
   transition: 1s;
 }
 .header .navbar #nav .logo p {
-  background-color: #15191e;
+  background-color: #0a0d0f;
   color: #f4f4f4;
-  border: 1px solid rgba(179, 191, 203, 0.5);
   padding-left: 0.25rem;
   padding-block: 0.15rem;
   font-family: "Kanit", sans-serif;
@@ -1882,6 +1881,9 @@
 }
 .about .col-right .article-container article .cv-btn {
   margin-top: 0.5rem;
+}
+.about .col-right .article-container article .about-intro p {
+  font-size: clamp(.95rem, 1.5vw, 1.125rem);
 }
 .about .col-right .article-container article .about-intro p.intro {
   font-weight: 500;
