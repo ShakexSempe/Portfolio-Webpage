@@ -11,24 +11,24 @@ html {
     scroll-behavior: smooth;
     font-family: abstracts.$font-content;
 }
-
 body {
     color: abstracts.$overlay-blue-darker;
-    img {
-        display: block;
-        max-width: 100%;
-    }
-    a {
-        text-decoration: none;
-        transition: .25s;
-    }
+}
 
-    p {
-        line-height: 1.8;
-        font-weight: 400;
-        font-size: 1rem;
-        font-size: abstracts.$font-clamp-sm;
-    }
+img {
+    display: block;
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    transition: .25s;
+}
+
+p {
+    font-size: 1rem;
+    font-size: abstracts.$font-clamp-sm;
+    font-weight: 400;
+    line-height: 1.8;
 }
 main {
     scroll-margin-top: 5vh;
