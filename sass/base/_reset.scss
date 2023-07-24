@@ -1,5 +1,6 @@
 @use '../abstracts';
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Montserrat:wght@200;500;700&display=swap');
+
 *, ::before, ::after {
     padding: 0;
     margin: 0;
@@ -33,11 +34,9 @@ main {
     scroll-margin-top: 5vh;
 }
 section {
-    // padding: 5vh 0;
     width: 100%;
 
     .section-title {
-        // border: 2px solid red;
         font-size: 2.25rem;
         @media (min-width:768px) {
             font-size: 2.5rem;
@@ -45,7 +44,6 @@ section {
 
         font-weight: 500;
         color: abstracts.$overlay-blue-dark;
-        // margin: 5vh 0 10vh;
         margin-bottom: 10vh;
         overflow: hidden;
         text-transform: uppercase;
