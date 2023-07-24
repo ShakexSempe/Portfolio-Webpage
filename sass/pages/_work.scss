@@ -1,4 +1,5 @@
 @use '../abstracts';
+@use '../base';
 .work {
     min-height: 100vh;
     // background: #ddd;
@@ -22,7 +23,7 @@
             span {
                 color: #0007;
                 text-transform: capitalize;
-                font-family: abstracts.$font-title;
+                font-family: base.$font-title;
             }
             &::after {
                 content: '';

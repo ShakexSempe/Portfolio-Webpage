@@ -1,6 +1,8 @@
 @use '../abstracts';
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Montserrat:wght@200;500;700&display=swap');
-
+// fonts 
+$font-title:  'Kanit', sans-serif;
+$font-content: 'Montserrat', sans-serif;
 *, ::before, ::after {
     padding: 0;
     margin: 0;
@@ -9,7 +11,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: abstracts.$font-content;
+    font-family: $font-content;
 }
 body {
     color: abstracts.$overlay-blue-darker;
@@ -47,7 +49,7 @@ section {
         margin-bottom: 10vh;
         overflow: hidden;
         text-transform: uppercase;
-        font-family: abstracts.$font-title;
+        font-family: $font-title;
         -webkit-box-reflect: below -.9rem linear-gradient(transparent, #0003);
 
         span {
