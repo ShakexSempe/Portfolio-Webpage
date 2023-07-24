@@ -1,3 +1,4 @@
+@use '../abstracts';
 // projects
 #projects {
     // border: 2px solid red;
@@ -7,7 +8,7 @@
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-        // background-color: $background-light;
+        // background-color: abstracts.$background-light;
         // background-color: #fafafa;
         position: relative;
         
@@ -31,7 +32,7 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column-reverse;
-                border: 1px solid $overlay-blue-dark;
+                border: 1px solid abstracts.$overlay-blue-dark;
                 outline: none;
                 border-radius: .5rem;
                 overflow: hidden;
@@ -52,7 +53,7 @@
                 overflow: hidden;
                 // project tile
                 .project-tile {
-                    // border: 3px solid $span-gold;
+                    // border: 3px solid abstracts.$span-gold;
                     @media (min-width: 768px){
                         // flex-basis: 50%;
                         padding: 2em;
@@ -67,20 +68,20 @@
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    // background-color: $overlay-blue-dark;
-                    background: $overlay-dark;
+                    // background-color: abstracts.$overlay-blue-dark;
+                    background: abstracts.$overlay-dark;
                     // project Title (h1)
                     h3 {
                         font-size: 1.15rem;
                         width: 100%;
-                        color: $text-light;
+                        color: abstracts.$text-light;
                         @media (min-width: 768px){
                             font-size: 1.5rem;
                         }
                         font-weight: 500;
                         text-transform: capitalize;
                         line-height: 1em;
-                        font-family: $font-title;
+                        font-family: abstracts.$font-title;
                         letter-spacing: .05rem;
                         margin-bottom: 1rem;
                         padding-bottom: .5rem;
@@ -95,7 +96,7 @@
                         font-weight: 500;
                         margin: .5rem 0;
                         text-transform: capitalize;
-                        color: $brand;
+                        color: abstracts.$brand;
                         transition: .3s;
                         @media (min-width:768px){
                             font-size: 1.25rem;
@@ -115,8 +116,8 @@
                     // project link icon
                     
                     .project-info {
-                        color: $text-white;
-                        background: $overlay-blue-darker;
+                        color: abstracts.$text-white;
+                        background: abstracts.$overlay-blue-darker;
                         margin: .5em 0 .5em;
                         padding: .5em;
                         width: 100%;
@@ -134,7 +135,7 @@
                             border-radius: .5rem;
                             font-weight: 500;
                             text-transform: capitalize;
-                            color: $text-light;
+                            color: abstracts.$text-light;
                             position: relative;
                             isolation: isolate;
                             i {
@@ -208,7 +209,7 @@
 
                         li {
                             font-size: .8em;
-                            color: $brand;
+                            color: abstracts.$brand;
                             list-style: none;
                             padding: .4em .3em;
                             margin-right: .1em;

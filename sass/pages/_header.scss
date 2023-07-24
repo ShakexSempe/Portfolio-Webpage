@@ -1,3 +1,4 @@
+@use '../abstracts';
 // header
 .header {
     position: fixed;
@@ -15,7 +16,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: $overlay-blue-darkest;
+        background: abstracts.$overlay-blue-darkest;
         box-shadow: 0rem .5rem 1rem transparent;
         z-index: -1;
         // opacity: 0;
@@ -34,10 +35,7 @@
             background: transparent;
             box-shadow: 0rem 1rem 1rem green;
             box-shadow: 0rem 1rem 1rem transparent;
-            // PSUEDO BG HEIGHT ON DESKTOP
-            @include md {
-                // transform: translateY(-15vh);
-            }
+            
         }
         .navbar {
             // background: transparent;
@@ -52,7 +50,7 @@
     &.header-io {
         &::after {
             opacity: 1;
-            background: $overlay-blue-darkest;
+            background: abstracts.$overlay-blue-darkest;
             box-shadow: .015rem .015rem .5rem rgba(41, 50, 60, .2),
                     0rem .25rem .5rem rgba(0, 0, 0, .2);
         }
@@ -63,10 +61,6 @@
 
             #nav {
                 .nav-list {
-                    ul {
-                        // transform: translateY(1rem);
-                        // height: inherit;
-                    }
                     .contact-links {
                         transform: translateY(-100vh);
                         display: none;
@@ -97,7 +91,7 @@
         // DARK HEADER BACKGROUND WHEN SIDEBAR VISIBLE
         &.active-header {
             // &::after {
-            //     background: $overlay-blue-darkest;
+            //     background: abstracts.$overlay-blue-darkest;
             // }
             #nav {
                 .logo {
@@ -120,7 +114,7 @@
             height: 100%;
             padding: .5rem 5vw;
             z-index: 5;
-            @include xsm {
+            @include abstracts.xsm {
                 padding: .5rem 5vw;
             }
 
@@ -132,22 +126,22 @@
                 transition: 1s;
                 // border: 2px solid red;
                 p {
-                    background-color: $overlay-blue-black;
-                    color: $text-light;
-                    // border: 1px solid $brand-border;
+                    background-color: abstracts.$overlay-blue-black;
+                    color: abstracts.$text-light;
+                    // border: 1px solid abstracts.$brand-border;
                     
                     padding-left: .25rem;
                     padding-block: .15rem;
                     
-                    font-family: $font-title;
+                    font-family: abstracts.$font-title;
                     font-size: 1rem;
                     font-weight: 400;
                     text-transform: capitalize;
-                    border-radius: $border-radius-sm;
+                    border-radius: abstracts.$border-radius-sm;
                     overflow: hidden;
                     transition: .5s;
-                    // text-shadow: 0 0 5px $text-shadow-red;
-                    @include md {
+                    // text-shadow: 0 0 5px abstracts.$text-shadow-red;
+                    @include abstracts.md {
                         font-size: 1.25rem;
                     }
 
@@ -155,7 +149,7 @@
                         padding-right: .25rem;
                         background: linear-gradient( #f4f4f4, #fff);
                         background: inherit;
-                        color: $brand;
+                        color: abstracts.$brand;
                         border-radius: 0;
                         transition: .2s;
                     }
@@ -171,15 +165,15 @@
                         left: 100%;
                         width: 100vw;
                         height: 100vh;
-                        background-color: $nav-active-background;
-                        background-color: $overlay-blue-darkest;
+                        background-color: abstracts.$nav-active-background;
+                        background-color: abstracts.$overlay-blue-darkest;
                         transition: .5s ease;
                         // overflow-y: auto;
                         z-index: 5;
 
                         ul {
                             margin: 1rem 5vw 1rem;
-                            background: $overlay-blue-dark;
+                            background: abstracts.$overlay-blue-dark;
                             padding: .5rem 0;
                             height: max-content;
                             display: flex;
@@ -193,11 +187,11 @@
                             outline: none;
                             overflow-y: auto;
                             overflow-x: hidden;
-                            // border: 2px solid $border;
+                            // border: 2px solid abstracts.$border;
 
                             // list items active transition
                             li {
-                                // border: 2px solid $border;
+                                // border: 2px solid abstracts.$border;
                                 transform: translateX(1.5rem);
                                 opacity: 0;
                                 transition: .5s;
@@ -215,8 +209,8 @@
                                     display: block;
                                     font-size: 1rem;
                                     font-weight: 400;
-                                    font-family: $font-content;
-                                    font-family: $font-title;
+                                    font-family: abstracts.$font-content;
+                                    font-family: abstracts.$font-title;
                                     text-transform: capitalize;
 
                                     // LINK HOVER EFFECT
@@ -234,7 +228,7 @@
                                     }
 
                                     &.active {
-                                        color: $brand;
+                                        color: abstracts.$brand;
                                         // &::after {
                                         // color: rgba(240, 248, 255, 0.05);
                                         //     transform: translate(-50%, -50%) scale(1.4);
@@ -247,8 +241,8 @@
                                     width: 2.5rem;
                                     text-align: center;
                                     padding: .5rem;
-                                    color: $text-light;
-                                    background: $overlay-blue-darkest;
+                                    color: abstracts.$text-light;
+                                    background: abstracts.$overlay-blue-darkest;
 
                                 }
                             }
@@ -257,7 +251,7 @@
                         // CONTACT LINKS
                         .contact-links {
                             // border: 2px solid red;
-                            background: $overlay-blue-dark;
+                            background: abstracts.$overlay-blue-dark;
                             overflow-x: hidden;
                             overflow-y: auto;
                             margin: 1rem 5vw;
@@ -269,7 +263,7 @@
                             a {
                                 opacity: 0;
                                 transform: translateY(1rem);
-                                color: $text-light;
+                                color: abstracts.$text-light;
                                 font-size: 1rem;
                                 // letter-spacing: .1rem;
                                 margin-bottom: 1rem;
@@ -279,7 +273,7 @@
                                     margin-right: .25rem;
                                     padding-right: .25rem;
                                     width: 1.5rem;
-                                    border-right: 1px solid $brand;
+                                    border-right: 1px solid abstracts.$brand;
                                 }
                             }
                         }
@@ -369,7 +363,7 @@
                                     &:hover {
                                         i {
                                             transition: .25s;
-                                            color: $brand;
+                                            color: abstracts.$brand;
                                         }
                                     }
                                 }
@@ -393,8 +387,8 @@
                         transition: 1s ease;
                         outline: none;
                         overflow: hidden;
-                        border: 2px solid $border;
-                        background: $overlay-blue-dark;
+                        border: 2px solid abstracts.$border;
+                        background: abstracts.$overlay-blue-dark;
 
                         img {
                             width: 100%;
@@ -420,11 +414,11 @@
 
                         a {
                             text-decoration: none;
-                            color: $text-light;
+                            color: abstracts.$text-light;
                             text-transform: capitalize;
                             display: block;
                             text-align: left;
-                            font-family: $font-content;
+                            font-family: abstracts.$font-content;
                             transition: .2s ease-in-out;
                             // border: 1px solid red;
 
@@ -441,7 +435,7 @@
                         // LIST ITEM HOVER 
                         &:hover {
                             a {
-                                color: $brand;
+                                color: abstracts.$brand;
                                 transition: .25s;
 
                                 &::after {
@@ -450,14 +444,14 @@
                                 }
 
                                 i {
-                                    color: $brand;
+                                    color: abstracts.$brand;
                                 }
                             }
                         }
                     }
                 }
                 // end of mobile screens style
-                // DESKTOP NAVLIST
+                // DESKTOP NAV LIST
                 @media (min-width: 820px){
                     // border: 2px solid yellow;
                     padding: 1rem 0;
@@ -503,7 +497,7 @@
                                 width: 0%;
                                 // opacity: 0;
                                 height: 2px;
-                                background-color: $brand;
+                                background-color: abstracts.$brand;
                                 transition: .3s ease;
                             }
                             
@@ -522,7 +516,7 @@
                                 display: block;
                                 letter-spacing: normal;
                                 float: left;
-                                color: $text-light;
+                                color: abstracts.$text-light;
                                 transition: .25s;
 
                                 &::after {
@@ -530,7 +524,7 @@
                                 }
 
                                 &.active {
-                                    color: $brand;
+                                    color: abstracts.$brand;
                                     &::before {
                                         width: 50%;
                                         opacity: 1;
@@ -549,21 +543,21 @@
                             &:hover {
                                 a {
                                     transition: .3s ease;
-                                    color: $text-light;
+                                    color: abstracts.$text-light;
                                 }
                                 i {
                                     transition: .3s;
-                                    color: $span-gold;
+                                    color: abstracts.$span-gold;
                                 }
                             }
                             // links and icon hover state
                             
                             &.active {
                                 a {
-                                color: $span-gold;
+                                color: abstracts.$span-gold;
                                 }
                                 i {
-                                    color: $span-gold;
+                                    color: abstracts.$span-gold;
                                 }
                             }
                         }
