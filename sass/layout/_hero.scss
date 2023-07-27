@@ -61,34 +61,32 @@
     }
 }
 
+// HERO SECTION
 .hero {
-    // border: 5px solid red;
     color: abstracts.$text-light;
     text-transform: capitalize;
     h1 {
         font-size: 1rem;
-        font-size: clamp(1rem, 2.5vw, 1.25rem);
-        font-weight: 900;
+        font-size: abstracts.$font-clamp-xsm;
+        font-weight: 300;
         margin-bottom: .5rem;
     }
     h2 {
         font-size: 2rem;
         font-size: clamp(2rem, 5vw, 2.5rem);
+        font-size: abstracts.$font-clamp-lg;
         letter-spacing: -0.05rem;
     }
     p {
         font-size: 1rem;
         font-size: abstracts.$font-clamp-sm;
     }
-    a {
-        color: inherit;
-    }
     span {
         color: abstracts.$brand;
     }
     // PAGE HERO CONTENT
     .hero-content {
-        border: 1px solid #fff;
+        // border: 1px solid #fff;
         background: transparent;
         padding: 5vh 5vw;
         position: relative;

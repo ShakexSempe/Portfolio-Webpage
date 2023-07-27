@@ -1,5 +1,4 @@
 @use '../abstracts';
-@use '../base';
 // FOOTER
 #footer {
     background: abstracts.$overlay-blue-darkest;
@@ -77,7 +76,7 @@
                         text-transform: capitalize;
                         color: abstracts.$text-light;
                         font-weight: 400;
-                        font-family: base.$font-title;
+                        font-family: abstracts.$font-title;
                     }
 
                     a {

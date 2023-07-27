@@ -1,5 +1,4 @@
 @use '../abstracts';
-@use '../base';
 // header
 .header {
     position: fixed;
@@ -134,7 +133,7 @@
                     padding-left: .25rem;
                     padding-block: .15rem;
                     
-                    font-family: base.$font-title;
+                    font-family: abstracts.$font-title;
                     font-size: 1rem;
                     font-weight: 400;
                     text-transform: capitalize;
@@ -210,7 +209,7 @@
                                     display: block;
                                     font-size: 1rem;
                                     font-weight: 400;
-                                    font-family: base.$font-title;
+                                    font-family: abstracts.$font-title;
                                     text-transform: capitalize;
 
                                     // LINK HOVER EFFECT
@@ -418,7 +417,7 @@
                             text-transform: capitalize;
                             display: block;
                             text-align: left;
-                            font-family: base.$font-content;
+                            font-family: abstracts.$font-content;
                             transition: .2s ease-in-out;
                             // border: 1px solid red;
 
