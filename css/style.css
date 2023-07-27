@@ -1291,11 +1291,12 @@ form button:hover::after {
 
 .header {
   position: fixed;
-  z-index: 50;
   left: 0;
   top: 0;
   width: 100%;
   isolation: isolate;
+  transition: 0.25s;
+  z-index: 50;
 }
 .header::after {
   content: "";
@@ -1303,51 +1304,17 @@ form button:hover::after {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #15191e;
+  background-color: #15191e;
   box-shadow: 0rem 0.5rem 1rem transparent;
   z-index: -1;
-  transition: background 0.15s, box-shadow 1s;
+  transition: background-color 0.15s, box-shadow 1s;
 }
-.header.hero-header::after {
-  background: transparent;
-  box-shadow: 0rem 1rem 1rem green;
-  box-shadow: 0rem 1rem 1rem transparent;
-}
-.header.hero-header .navbar #nav .logo {
-  transform: translateY(-10vh);
-}
-.header.header-io::after {
-  opacity: 1;
-  background: #15191e;
-  box-shadow: 0.015rem 0.015rem 0.5rem rgba(41, 50, 60, 0.2), 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 1024px) {
-  .header.header-io {
-    height: 8vh;
-    transition: 0.25s;
-    border: none;
-  }
-  .header.header-io #nav .nav-list .contact-links {
-    transform: translateY(-100vh);
-    display: none;
-  }
-}
-.header.header-io .header #nav .logo {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 1s;
-}
-.header.header-io .header #nav .nav-list ul li {
-  opacity: 1;
-}
-.header.header-io.active-header #nav .logo {
-  transform: translateY(0);
-}
-.header .navbar {
+
+.navbar {
   height: 100%;
   transition: 1s ease background-color;
 }
-.header .navbar #nav {
+.navbar #nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1357,16 +1324,16 @@ form button:hover::after {
   z-index: 5;
 }
 @media (max-width: 450px) {
-  .header .navbar #nav {
+  .navbar #nav {
     padding: 0.5rem 5vw;
   }
 }
-.header .navbar #nav .logo {
+.navbar #nav .logo {
   transition: 1s ease;
   opacity: 1;
   transition: 1s;
 }
-.header .navbar #nav .logo p {
+.navbar #nav .logo p {
   background-color: #0a0d0f;
   color: #f4f4f4;
   padding-left: 0.25rem;
@@ -1380,11 +1347,11 @@ form button:hover::after {
   transition: 0.5s;
 }
 @media (min-width: 768px) {
-  .header .navbar #nav .logo p {
+  .navbar #nav .logo p {
     font-size: 1.25rem;
   }
 }
-.header .navbar #nav .logo p span {
+.navbar #nav .logo p span {
   padding-right: 0.25rem;
   background: linear-gradient(#f4f4f4, #fff);
   background: inherit;
@@ -1393,7 +1360,7 @@ form button:hover::after {
   transition: 0.2s;
 }
 @media (max-width: 820px) {
-  .header .navbar #nav .nav-list .links-container {
+  .navbar #nav .nav-list .links-container {
     position: absolute;
     top: 7vh;
     left: 100%;
@@ -1404,7 +1371,7 @@ form button:hover::after {
     transition: 0.5s ease;
     z-index: 5;
   }
-  .header .navbar #nav .nav-list .links-container ul {
+  .navbar #nav .nav-list .links-container ul {
     margin: 1rem 5vw 1rem;
     background: #29323d;
     padding: 0.5rem 0;
@@ -1421,7 +1388,7 @@ form button:hover::after {
     overflow-y: auto;
     overflow-x: hidden;
   }
-  .header .navbar #nav .nav-list .links-container ul li {
+  .navbar #nav .nav-list .links-container ul li {
     transform: translateX(1.5rem);
     opacity: 0;
     transition: 0.5s;
@@ -1431,7 +1398,7 @@ form button:hover::after {
     margin: 0 auto 0.25rem;
     width: 95%;
   }
-  .header .navbar #nav .nav-list .links-container ul li a {
+  .navbar #nav .nav-list .links-container ul li a {
     margin-right: auto;
     padding: 0;
     width: 50%;
@@ -1441,7 +1408,7 @@ form button:hover::after {
     font-family: "Kanit", sans-serif;
     text-transform: capitalize;
   }
-  .header .navbar #nav .nav-list .links-container ul li a::after {
+  .navbar #nav .nav-list .links-container ul li a::after {
     content: attr(data-after);
     position: absolute;
     top: 50%;
@@ -1453,17 +1420,17 @@ form button:hover::after {
     z-index: -1;
     transition: 0.3s ease letter-spacing;
   }
-  .header .navbar #nav .nav-list .links-container ul li a.active {
+  .navbar #nav .nav-list .links-container ul li a.active {
     color: #b3c0cc;
   }
-  .header .navbar #nav .nav-list .links-container ul li i {
+  .navbar #nav .nav-list .links-container ul li i {
     width: 2.5rem;
     text-align: center;
     padding: 0.5rem;
     color: #f4f4f4;
     background: #15191e;
   }
-  .header .navbar #nav .nav-list .links-container .contact-links {
+  .navbar #nav .nav-list .links-container .contact-links {
     background: #29323d;
     overflow-x: hidden;
     overflow-y: auto;
@@ -1473,7 +1440,7 @@ form button:hover::after {
     padding: 1rem;
     border-radius: 0.5rem;
   }
-  .header .navbar #nav .nav-list .links-container .contact-links a {
+  .navbar #nav .nav-list .links-container .contact-links a {
     opacity: 0;
     transform: translateY(1rem);
     color: #f4f4f4;
@@ -1481,72 +1448,72 @@ form button:hover::after {
     margin-bottom: 1rem;
     transition: 0.5s;
   }
-  .header .navbar #nav .nav-list .links-container .contact-links a i {
+  .navbar #nav .nav-list .links-container .contact-links a i {
     margin-right: 0.25rem;
     padding-right: 0.25rem;
     width: 1.5rem;
     border-right: 1px solid #b3c0cc;
   }
-  .header .navbar #nav .nav-list .links-container.active {
+  .navbar #nav .nav-list .links-container.active {
     left: 0;
     z-index: 50;
   }
-  .header .navbar #nav .nav-list .links-container.active .nav-logo {
+  .navbar #nav .nav-list .links-container.active .nav-logo {
     transition: 1.5s;
     opacity: 1;
     transform: translateX(0);
   }
-  .header .navbar #nav .nav-list .links-container.active ul li {
+  .navbar #nav .nav-list .links-container.active ul li {
     transition: 0.5s;
     transform: translateX(0);
     opacity: 1;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li i {
+  .navbar #nav .nav-list .links-container.active ul li i {
     transition: 1s ease 0.8s;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li:nth-child(1) {
+  .navbar #nav .nav-list .links-container.active ul li:nth-child(1) {
     transition-delay: 0.3s;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li:nth-child(2) {
+  .navbar #nav .nav-list .links-container.active ul li:nth-child(2) {
     transition-delay: 0.35s;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li:nth-child(3) {
+  .navbar #nav .nav-list .links-container.active ul li:nth-child(3) {
     transition-delay: 0.4s;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li:nth-child(4) {
+  .navbar #nav .nav-list .links-container.active ul li:nth-child(4) {
     transition-delay: 0.45s;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li:nth-child(5) {
+  .navbar #nav .nav-list .links-container.active ul li:nth-child(5) {
     transition-delay: 0.5s;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li:nth-child(6) {
+  .navbar #nav .nav-list .links-container.active ul li:nth-child(6) {
     transition-delay: 0.55s;
   }
-  .header .navbar #nav .nav-list .links-container.active ul li:nth-child(7) {
+  .navbar #nav .nav-list .links-container.active ul li:nth-child(7) {
     transition-delay: 0.6s;
   }
-  .header .navbar #nav .nav-list .links-container.active .contact-links a {
+  .navbar #nav .nav-list .links-container.active .contact-links a {
     opacity: 1;
     transform: translateY(0);
   }
-  .header .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(1) {
+  .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(1) {
     transition-delay: 0.6s;
   }
-  .header .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(2) {
+  .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(2) {
     transition-delay: 0.65s;
   }
-  .header .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(3) {
+  .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(3) {
     transition-delay: 0.7s;
   }
-  .header .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(4) {
+  .navbar #nav .nav-list .links-container.active .contact-links a:nth-child(4) {
     transition-delay: 0.75s;
   }
-  .header .navbar #nav .nav-list .links-container.active .contact-links a:hover i {
+  .navbar #nav .nav-list .links-container.active .contact-links a:hover i {
     transition: 0.25s;
     color: #b3c0cc;
   }
 }
-.header .navbar #nav .nav-list .links-container .nav-logo {
+.navbar #nav .nav-list .links-container .nav-logo {
   margin: 0.5rem 5vw 1rem;
   opacity: 1;
   z-index: 1;
@@ -1561,62 +1528,63 @@ form button:hover::after {
   border: 2px solid #ead2a15e;
   background: #29323d;
 }
-.header .navbar #nav .nav-list .links-container .nav-logo img {
+.navbar #nav .nav-list .links-container .nav-logo img {
   width: 100%;
   height: auto;
 }
 @media (min-width: 768px) {
-  .header .navbar #nav .nav-list .links-container .nav-logo {
+  .navbar #nav .nav-list .links-container .nav-logo {
     width: 20%;
   }
 }
-.header .navbar #nav .nav-list ul {
+.navbar #nav .nav-list ul {
   transition: 0.5s;
 }
-.header .navbar #nav .nav-list ul li {
+.navbar #nav .nav-list ul li {
   list-style: none;
   display: flex;
   align-items: center;
   padding: 0.25rem;
 }
-.header .navbar #nav .nav-list ul li a {
+.navbar #nav .nav-list ul li a {
   text-decoration: none;
   color: #f4f4f4;
   text-transform: capitalize;
   display: block;
+  font-weight: 400;
   text-align: left;
   font-family: "Montserrat", sans-serif;
   transition: 0.2s ease-in-out;
 }
-.header .navbar #nav .nav-list ul li i {
+.navbar #nav .nav-list ul li i {
   margin-right: 0.5em;
   padding: 0;
   text-align: left;
   border-radius: 5px;
 }
-.header .navbar #nav .nav-list ul li:hover a {
+.navbar #nav .nav-list ul li:hover a {
   color: #b3c0cc;
   transition: 0.25s;
 }
-.header .navbar #nav .nav-list ul li:hover a::after {
+.navbar #nav .nav-list ul li:hover a::after {
   transform: translate(-50%, -50%) scale(1);
   letter-spacing: initial;
 }
-.header .navbar #nav .nav-list ul li:hover a i {
+.navbar #nav .nav-list ul li:hover a i {
   color: #b3c0cc;
 }
 @media (min-width: 820px) {
-  .header .navbar #nav .nav-list {
+  .navbar #nav .nav-list {
     padding: 1rem 0;
     height: 100%;
   }
-  .header .navbar #nav .nav-list .nav-logo {
+  .navbar #nav .nav-list .nav-logo {
     display: none;
   }
-  .header .navbar #nav .nav-list .hamburger {
+  .navbar #nav .nav-list .hamburger {
     display: none;
   }
-  .header .navbar #nav .nav-list ul {
+  .navbar #nav .nav-list ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -1630,12 +1598,12 @@ form button:hover::after {
     top: 50%;
     transform: translateY(-50%);
   }
-  .header .navbar #nav .nav-list ul li {
+  .navbar #nav .nav-list ul li {
     position: relative;
     display: flex;
     align-items: center;
   }
-  .header .navbar #nav .nav-list ul li::before {
+  .navbar #nav .nav-list ul li::before {
     position: absolute;
     content: "";
     bottom: 0rem;
@@ -1646,11 +1614,11 @@ form button:hover::after {
     background-color: #b3c0cc;
     transition: 0.3s ease;
   }
-  .header .navbar #nav .nav-list ul li:hover::before {
+  .navbar #nav .nav-list ul li:hover::before {
     width: 50%;
     opacity: 1;
   }
-  .header .navbar #nav .nav-list ul li a {
+  .navbar #nav .nav-list ul li a {
     font-size: 0.95rem;
     padding: 0.25rem;
     margin: 0 auto;
@@ -1660,40 +1628,72 @@ form button:hover::after {
     color: #f4f4f4;
     transition: 0.25s;
   }
-  .header .navbar #nav .nav-list ul li a::after {
+  .navbar #nav .nav-list ul li a::after {
     display: none;
   }
-  .header .navbar #nav .nav-list ul li a.active {
+  .navbar #nav .nav-list ul li a.active {
     color: #b3c0cc;
   }
-  .header .navbar #nav .nav-list ul li a.active::before {
+  .navbar #nav .nav-list ul li a.active::before {
     width: 50%;
     opacity: 1;
   }
-  .header .navbar #nav .nav-list ul li i {
+  .navbar #nav .nav-list ul li i {
     display: none;
   }
-  .header .navbar #nav .nav-list ul li:hover a {
+  .navbar #nav .nav-list ul li:hover a {
     transition: 0.3s ease;
     color: #f4f4f4;
   }
-  .header .navbar #nav .nav-list ul li:hover i {
+  .navbar #nav .nav-list ul li:hover i {
     transition: 0.3s;
     color: #ead2a1;
   }
-  .header .navbar #nav .nav-list ul li.active a {
+  .navbar #nav .nav-list ul li.active a {
     color: #ead2a1;
   }
-  .header .navbar #nav .nav-list ul li.active i {
+  .navbar #nav .nav-list ul li.active i {
     color: #ead2a1;
   }
-  .header .navbar #nav .nav-list ul.active {
+  .navbar #nav .nav-list ul.active {
     background: none;
     box-shadow: none;
   }
-  .header .navbar #nav .nav-list .contact-links {
+  .navbar #nav .nav-list .contact-links {
     display: none;
   }
+}
+
+.hero-header::after {
+  background: transparent;
+  box-shadow: 0rem 1rem 1rem transparent;
+}
+.hero-header .navbar #nav .logo {
+  transform: translateY(-10vh);
+}
+
+.header-io::after {
+  opacity: 1;
+  background: #15191e;
+  box-shadow: 0.015rem 0.015rem 0.5rem rgba(41, 50, 60, 0.2), 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1024px) {
+  .header-io {
+    height: 8vh;
+    transition: 0.25s;
+    border: none;
+  }
+}
+.header-io .header #nav .logo {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+.header-io .header #nav .nav-list ul li {
+  opacity: 1;
+}
+.header-io.active-header #nav .logo {
+  transform: translateY(0);
 }
 
 .banner {

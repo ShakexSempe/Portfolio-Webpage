@@ -1,14 +1,14 @@
 @use '../abstracts';
-// header
+// WEBSITE HEADER
+// .HEADER = LOGO + NAV[DESKTOP LIST & MOBILE SIDEBAR]
 .header {
     position: fixed;
-    z-index: 50;
     left: 0;
     top: 0;
     width: 100%;
-    // min-height: 8vh;
-    // overflow: hidden;
     isolation: isolate;
+    transition: .25s;
+    z-index: 50;
     // PSEUDO BACKGROUND COLOR
     &::after {
         content: '';
@@ -16,97 +16,18 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: abstracts.$overlay-blue-darkest;
+        background-color: abstracts.$overlay-blue-darkest;
         box-shadow: 0rem .5rem 1rem transparent;
         z-index: -1;
-        // opacity: 0;
-        transition: background .15s, box-shadow 1s;
+        transition: background-color .15s, box-shadow 1s;
     }
-    // DESKTOP HEADER HEIGHT
-    @media (min-width: 1024px) {
-        // min-height: 15vh;
-        // border: 2px solid red;
-    }
-    // INTERSECTION CLASS
-    // HERO = IO
-    // TRANSPARENT BACKGROUND AND NO LOGO IN DISPLAY
-    &.hero-header {
-        &::after {
-            background: transparent;
-            box-shadow: 0rem 1rem 1rem green;
-            box-shadow: 0rem 1rem 1rem transparent;
-            
-        }
-        .navbar {
-            // background: transparent;
-            #nav {
-                .logo {
-                    transform: translateY(-10vh);
-                }
-            }
-        }
-    }
-    // MAIN IO
-    &.header-io {
-        &::after {
-            opacity: 1;
-            background: abstracts.$overlay-blue-darkest;
-            box-shadow: .015rem .015rem .5rem rgba(41, 50, 60, .2),
-                    0rem .25rem .5rem rgba(0, 0, 0, .2);
-        }
-        @media (min-width: 1024px) {
-            height: 8vh;
-            transition: .25s;
-            border: none;
-
-            #nav {
-                .nav-list {
-                    .contact-links {
-                        transform: translateY(-100vh);
-                        display: none;
-                    }
-                }
-            }
-        }
-        .header {
-            #nav {
-                .logo {
-                    opacity: 1;
-                    transform: translateY(0);
-                    transition: 1s;
-                }
-
-                .nav-list {
-                    ul {
-                        li {
-                            opacity: 1;
-                        }
-                    }
-
-                }
-
-                
-            }
-        }
-        // DARK HEADER BACKGROUND WHEN SIDEBAR VISIBLE
-        &.active-header {
-            // &::after {
-            //     background: abstracts.$overlay-blue-darkest;
-            // }
-            #nav {
-                .logo {
-                    transform: translateY(0);
-                }
-            }
-        }
-    }
+}
     // END OF INTERSECTION CLASS
 
     .navbar {
         height: 100%;
         transition: 1s ease background-color;
         #nav {
-            // border: 2px solid red;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -416,11 +337,10 @@
                             color: abstracts.$text-light;
                             text-transform: capitalize;
                             display: block;
+                            font-weight: 400;
                             text-align: left;
                             font-family: abstracts.$font-content;
                             transition: .2s ease-in-out;
-                            // border: 1px solid red;
-
                         }
 
                         i {
@@ -452,7 +372,6 @@
                 // end of mobile screens style
                 // DESKTOP NAV LIST
                 @media (min-width: 820px){
-                    // border: 2px solid yellow;
                     padding: 1rem 0;
                     height: 100%;
                     // HIDE LOGO AND HAMBURGER ON DESKTOP
@@ -574,5 +493,68 @@
             }
         }
     }
-}
-// end of header
+
+
+// INTERSECTION CLASS
+    // HERO = IO
+    // TRANSPARENT BACKGROUND + NO LOGO ON HERO SECTION
+    .hero-header {
+        &::after {
+            background: transparent;
+            box-shadow: 0rem 1rem 1rem transparent;
+        }
+        // NAVBAR LOGO TRANSITIONS OUT OF VIEW ON HERO SECTION
+        .navbar {
+            #nav {
+                .logo {
+                    transform: translateY(-10vh);
+                }
+            }
+        }
+    }
+    // MAIN SECTION HEADER IO
+    .header-io {
+        &::after {
+            opacity: 1;
+            background: abstracts.$overlay-blue-darkest;
+            box-shadow: .015rem .015rem .5rem rgba(41, 50, 60, .2),
+                            0rem .25rem .5rem rgba(0, 0, 0, .2);
+        }
+        // DESKTOP MAIN SECTION HEADER 
+        @media (min-width: 1024px) {
+            height: 8vh;
+            transition: .25s;
+            border: none;
+        }
+        .header {
+            #nav {
+                .logo {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition: 1s;
+                }
+
+                .nav-list {
+                    ul {
+                        li {
+                            opacity: 1;
+                        }
+                    }
+
+                }
+
+                
+            }
+        }
+        // DARK HEADER BACKGROUND WHEN SIDEBAR VISIBLE
+        &.active-header {
+            // &::after {
+            //     background: abstracts.$overlay-blue-darkest;
+            // }
+            #nav {
+                .logo {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
