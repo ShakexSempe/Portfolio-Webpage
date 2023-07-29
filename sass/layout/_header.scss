@@ -42,38 +42,27 @@
     // HEADER LOGO
     .logo {
         transition: 1s ease;
-        opacity: 1;
-        // transform: translateY(-11vh);
-        transition: 1s;
 
-        // border: 2px solid red;
         p {
             background-color: abstracts.$overlay-blue-black;
             color: abstracts.$text-light;
-            // border: 1px solid abstracts.$brand-border;
+            border: 1px solid abstracts.$brand-border;
 
             padding-left: .25rem;
             padding-block: .15rem;
 
             font-family: abstracts.$font-title;
-            font-size: 1rem;
+            font-size: 1.125rem;
+            font-size: clamp(1rem, 2vw, 1.125rem);
             font-weight: 400;
             text-transform: capitalize;
             border-radius: abstracts.$border-radius-sm;
             overflow: hidden;
             transition: .5s;
 
-            // text-shadow: 0 0 5px abstracts.$text-shadow-red;
-            @include abstracts.md {
-                font-size: 1.25rem;
-            }
-
             span {
                 padding-right: .25rem;
-                background: linear-gradient(#f4f4f4, #fff);
-                background: inherit;
                 color: abstracts.$brand;
-                border-radius: 0;
                 transition: .2s;
             }
 
@@ -97,9 +86,10 @@
                     font-family: abstracts.$font-content;
                 }
 
-                
+
             }
         }
+
         // MOBILE NAV CONTAINER
         .links-container {
             @media (max-width: 820px) {
@@ -129,7 +119,7 @@
                     outline: none;
                     overflow-y: auto;
                     overflow-x: hidden;
-                    
+
                     li {
                         opacity: 0;
                         transition: .5s;
@@ -177,7 +167,8 @@
                             padding: .5rem;
                             color: abstracts.$text-light;
                             background: abstracts.$overlay-blue-darkest;
-                            margin-right: .5em;;
+                            margin-right: .5em;
+                            ;
                             border-radius: .25rem;
                         }
 
@@ -245,10 +236,12 @@
                         li {
                             transition: .5s;
                             opacity: 1;
+
                             a {
                                 transform: translateX(0);
                                 opacity: 1;
                             }
+
                             i {
                                 transition: 1s ease .8s;
                             }
@@ -353,7 +346,7 @@
                 align-items: center;
                 gap: 1rem;
                 background-color: transparent;
-                
+
                 li {
                     position: relative;
 
@@ -387,6 +380,7 @@
                         float: left;
                         color: abstracts.$text-light;
                         transition: .25s;
+
                         // TURN OFF DISPLAY OF DATA-AFTER TEXT ON BIGGER SCREENS THATS VISIBLE IN SIDEBAR LINK HOVER
                         &::after {
                             display: none;
@@ -401,6 +395,7 @@
                             }
                         }
                     }
+
                     // SWITCH OFF DISPLAY OF ICONS USED IN SIDEBAR NAV
                     i {
                         display: none;
@@ -440,6 +435,7 @@
 
         }
     }
+    
 }
 
 // INTERSECTION CLASS

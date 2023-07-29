@@ -1326,33 +1326,25 @@ form button:hover::after {
 }
 #nav .logo {
   transition: 1s ease;
-  opacity: 1;
-  transition: 1s;
 }
 #nav .logo p {
   background-color: #0a0d0f;
   color: #f4f4f4;
+  border: 1px solid rgba(179, 191, 203, 0.5);
   padding-left: 0.25rem;
   padding-block: 0.15rem;
   font-family: "Kanit", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 400;
   text-transform: capitalize;
   border-radius: 0.25rem;
   overflow: hidden;
   transition: 0.5s;
 }
-@media (min-width: 768px) {
-  #nav .logo p {
-    font-size: 1.25rem;
-  }
-}
 #nav .logo p span {
   padding-right: 0.25rem;
-  background: linear-gradient(#f4f4f4, #fff);
-  background: inherit;
   color: #b3c0cc;
-  border-radius: 0;
   transition: 0.2s;
 }
 #nav .nav-list ul {
