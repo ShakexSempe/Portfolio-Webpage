@@ -455,3 +455,169 @@
     }
     
 }
+<<<<<<< HEAD:sass/_utilities.scss
+
+
+
+
+/* LOADER SCREEN PSEUDO BACKGROUND */
+.loader_bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: hsl(213, 18%, 10%);
+    z-index: -1;
+    animation: zoom-out 2s ease 4s forwards;
+  }
+//   /* 3 SECTOR SPINNER */
+  .loader_bg .spinner {
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    animation: spinner-out 1s ease 4s forwards;
+  }
+//   /* GENERAL SECTOR STYLE */
+  .spinner .sector {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: .25rem solid transparent;
+    animation: rotate 3s infinite;
+    mix-blend-mode: overlay;
+  }
+//   /* SECTOR 1 */
+  .sector.sector-1 {
+    border-top-color: #b60f30;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+  }
+//   /* SECTOR 2 */
+  .sector.sector-2 {
+    border-right-color: hsl(210, 19%, 75%);
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+  }
+//   /* SECTOR 3 */
+  .sector.sector-3 {
+    border-left-color: hsl(210, 16%, 33%);
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+  }
+
+  /* LOADER PSEUDO BG FADE OUT */
+  @keyframes zoom-out {
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* ROTATE SPINNER */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* SPINNER FADE OUT */
+  @keyframes spinner-out {
+    100% {
+      transform: scale(0);
+    }
+  }
+
+// LOADER
+// .loader_bg {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     z-index: 100;
+//     display: grid;
+//     place-items: center;
+//     overflow: hidden;
+//     isolation: isolate;
+// }
+// .loader_bg::after{
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     background: $overlay-blue-darkest;
+//     z-index: -1;
+//     animation: zoom-out 2s ease 4s forwards;
+//     @keyframes zoom-out {
+//         100% {
+//             opacity: 0;
+//         }
+//     }
+// }
+
+// .spinner {
+//     // border: .25rem solid red;
+//     height: 5rem;
+//     width: 5rem;
+//     position: relative;
+//     display: grid;
+//     place-items: center;
+//     isolation: isolate;
+//     color: $brand;
+//     text-transform: capitalize;
+//     animation: spinner-out 1s ease 4s forwards;
+//     @keyframes spinner-out {
+//         100% {
+//             transform: scale(0);
+//         }
+//     }
+//     .sector {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         // background-color: #333;
+//         border-radius: 50%;
+//         border: .25rem solid transparent;
+//         animation: rotate 3s infinite;
+//         mix-blend-mode: overlay;
+
+//         &.sector-1 {
+//             border-top-color: $dark-crimson;
+//             animation-duration: 1.5s;
+//             animation-timing-function: ease-in-out;
+//         }
+//         &.sector-2 {
+//             border-right-color: $span-light;
+//             animation-duration: 2s;
+//             animation-timing-function: ease-in;
+
+//         }
+//         &.sector-3 {
+//             border-left-color: $overlay-blue-light;
+//             animation-duration: 2.5s;
+//             animation-timing-function: ease-out;
+//         }
+
+//         @keyframes rotate {
+//             0% {
+//                 transform: rotate(0);
+//             }
+//             100% {
+//                 transform: rotate(360deg);
+//             }
+//         }
+//     }
+// }
+
+
+
+=======
+>>>>>>> f1a82b156c0d4b0cf799a46f5762f06e4589770d:sass/components/_utilities.scss
