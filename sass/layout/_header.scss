@@ -41,7 +41,7 @@
 
     // HEADER LOGO
     .logo {
-        transition: 1s ease;
+        transition: 2s ease;
 
         p {
             background-color: abstracts.$overlay-blue-black;
@@ -440,7 +440,6 @@
 }
 
 // INTERSECTION CLASS
-// HERO = IO
 // TRANSPARENT BACKGROUND + NO LOGO ON HERO SECTION
 .hero-header {
     &::after {

@@ -1325,7 +1325,7 @@ form button:hover::after {
   }
 }
 #nav .logo {
-  transition: 1s ease;
+  transition: 2s ease;
 }
 #nav .logo p {
   background-color: #0a0d0f;
