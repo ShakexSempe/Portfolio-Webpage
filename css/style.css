@@ -1321,7 +1321,7 @@ form button:hover::after {
 }
 @media (max-width: 450px) {
   #nav {
-    padding: 0.5rem 5vw;
+    padding: 0.25rem 5vw;
   }
 }
 #nav .logo {
@@ -1335,6 +1335,7 @@ form button:hover::after {
   padding-block: 0.15rem;
   font-family: "Kanit", sans-serif;
   font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 400;
   text-transform: capitalize;
