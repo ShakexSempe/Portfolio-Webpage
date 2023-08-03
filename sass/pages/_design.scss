@@ -1,8 +1,9 @@
+@use '../abstracts';
 .design-container {
     // border: 3px solid red;
     min-height: 100vh;
-    background: $overlay-blue-darkest;
-    color: $text-light;
+    background: abstracts.$overlay-blue-darkest;
+    color: abstracts.$text-light;
 
 }
 
@@ -38,13 +39,13 @@
         object-position: 30%;
         z-index: -1;
         opacity: .5;
-        @include lg {
+        @include abstracts.lg {
             object-fit: contain;
             object-position: 70%;
             display: none;
         }
     }
-    @include lg {
+    @include abstracts.lg {
         background: url('../img/face_600.jpg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -70,7 +71,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: $brand;
+            background: abstracts.$brand;
             background: #f4f4f4;
             z-index: -1;
             border-radius: inherit;
@@ -89,7 +90,7 @@
             text-transform: uppercase;
             font-size: 4vw;
             font-size: clamp(2.25rem, 4vw, 4rem);
-            color: $text-light;
+            color: abstracts.$text-light;
             mix-blend-mode: difference;
             transition: 1.5s;
             // animation: con-h2 5s infinite;
@@ -102,7 +103,7 @@
     }
 
     p {
-        color: $text-light;
+        color: abstracts.$text-light;
         text-transform: capitalize;
         font-weight: 200;
         font-size: 1rem;
@@ -114,24 +115,24 @@
     height: 80vh;
     display: grid;
     place-items: center;
-    // border: 2px solid $span-crimson;
+    // border: 2px solid abstracts.$span-crimson;
     overflow: hidden;
     padding: 5vh 5vw;
     margin: 10vh 5vw;
     border-radius: .125rem;
-    background: $overlay-blue-darker;
+    background: abstracts.$overlay-blue-darker;
     h2 {
-        color: $brand;
+        color: abstracts.$brand;
         color: #fff5;
         transition: .5s;
         span {
-            color: $span-crimson;
+            color: abstracts.$span-crimson;
             transition: 1s;
             &.io-item {
                 color: inherit;
             }
             &.active-item {
-                color: $span-crimson;
+                color: abstracts.$span-crimson;
                 transition: 1.5s;
             }
         }
@@ -172,10 +173,10 @@
     padding: 10vh 5vw;
     height: 80vh;
     max-height: 550px;
-    background: $overlay-blue-darkest;
+    background: abstracts.$overlay-blue-darkest;
     .box {
-        background: $overlay-blue-darker;
-        // border: 2px solid $brand;
+        background: abstracts.$overlay-blue-darker;
+        // border: 2px solid abstracts.$brand;
         // display: flex;
         position: relative;
         height: 100%;
@@ -189,7 +190,7 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            color: $text-light;
+            color: abstracts.$text-light;
             letter-spacing: -.05rem;
             transition: 5s ease forwards;
 
@@ -272,7 +273,7 @@
         display: grid;
         gap: 2rem;
         text-align: center;
-        @include lg {
+        @include abstracts.lg {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -329,12 +330,12 @@
     }
 
     .item-1 {
-        color: $brand;
+        color: abstracts.$brand;
     }
     .item-2 {
-        color: $text-light;
+        color: abstracts.$text-light;
     }
     .item-3 {
-        color: $brand;
+        color: abstracts.$brand;
     }
 }

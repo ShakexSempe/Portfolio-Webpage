@@ -1,3 +1,4 @@
+@use '../abstracts';
 // HAMBURGER TOGGLE
 #header .hamburger {
     font-size: 10px;
@@ -7,7 +8,7 @@
     display: inline-block;
     border-radius: 50%;
     position: relative;
-    background: $overlay-blue-dark;
+    background: abstracts.$overlay-blue-dark;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +38,7 @@
     // end of hamburger box shadow
     // pulse 
     &.hamburger:before {
-        border: 1px solid $brand;
+        border: 1px solid abstracts.$brand;
         opacity: 0;
         animation: ham-pulse 2.5s ease infinite;
         @keyframes ham-pulse {
@@ -128,12 +129,12 @@
                 transform-style: preserve-3d;
                 height: .3em;
                 &::before {
-                    // background-color: $brand;
+                    // background-color: abstracts.$brand;
                     transform: translateY(0) skewY(40deg) ;
                 }
 
                 &::after {
-                    // background-color: $brand;
+                    // background-color: abstracts.$brand;
                     transform: translateY(0) skewY(-40deg);
 
                 }
@@ -145,7 +146,7 @@
 }
 // SKIP LINK
 .skip-link {
-    background: $overlay-blue-light;
+    background: abstracts.$overlay-blue-light;
     position: fixed;
     z-index: 99;
     top: 0;
@@ -173,8 +174,8 @@
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 3px;
-    background: $overlay-blue-dark;
-    background: linear-gradient(90deg, $overlay-blue-dark, $overlay-blue-light, $overlay-blue-dark);
+    background: abstracts.$overlay-blue-dark;
+    background: linear-gradient(90deg, abstracts.$overlay-blue-dark, abstracts.$overlay-blue-light, abstracts.$overlay-blue-dark);
     // background: red; 
     opacity: .1;
     width: 0%;
@@ -202,7 +203,7 @@
     padding: 2.5vh 5vw;
     gap: 1rem;
     margin: 1.5rem 0 0;
-    @include sm {
+    @include abstracts.sm {
         justify-content: start;
         gap: 2rem;
     }
@@ -224,9 +225,9 @@
 
     position: relative;
     isolation: isolate;
-    border-radius: $brand-br;
+    border-radius: abstracts.$brand-br;
     transition: .25s;
-    @include xsm {
+    @include abstracts.xsm {
         cursor: default;
     }
 
@@ -242,29 +243,29 @@
         z-index: -1;
     }
     &::before {
-        box-shadow: $box-light-top-sm;
+        box-shadow: abstracts.$box-light-top-sm;
         background: linear-gradient(0deg, #000a, rgba(0, 0, 0, .300));
     }
     &::after {
-        box-shadow: $box-light-top-sm-hover;
+        box-shadow: abstracts.$box-light-top-sm-hover;
         opacity: 0;
     }
 
     &.btn-primary {
-        color: $text-light;
+        color: abstracts.$text-light;
         &::before {
-            background: $button-crimson
+            background: abstracts.$button-crimson
         }
         &::after {
-            background: $button-crimson-hover;
+            background: abstracts.$button-crimson-hover;
         }
     }
     &.btn-secondary {
-        color: $overlay-blue-dark;
+        color: abstracts.$overlay-blue-dark;
         &::before {
             background: #ffff;
             box-shadow: none;
-            border: 1px solid $overlay-blue-dark;
+            border: 1px solid abstracts.$overlay-blue-dark;
         }
         &::after {
             background: #fafafa;
@@ -273,23 +274,23 @@
         }
     }
     &.btn-dark {
-        color: $text-light;
+        color: abstracts.$text-light;
         &::before {
-            background: $overlay-btn;
+            background: abstracts.$overlay-btn;
         }
         &::after {
-            background: $overlay-btn-hover;
+            background: abstracts.$overlay-btn-hover;
         }
     }
     &.btn-light {
-        color: $overlay-blue-dark;
+        color: abstracts.$overlay-blue-dark;
         &::before {
-            background: $button-light;
+            background: abstracts.$button-light;
             box-shadow: none;
-            border: 1px solid $overlay-blue-dark;
+            border: 1px solid abstracts.$overlay-blue-dark;
         }
         &::after {
-            background: $button-light-hover;
+            background: abstracts.$button-light-hover;
             box-shadow: none;
             border: none;
         }
@@ -318,7 +319,7 @@
 
 // BOTTOM NAV
 .bottom-nav {
-    @include lg {
+    @include abstracts.lg {
         display: none;
         height: 7vh;
     }
@@ -327,7 +328,7 @@
     height: 6vh;
     height: auto;
     width: 100%;
-    background: $overlay-footer;
+    background: abstracts.$overlay-footer;
     z-index: 40;
     display: flex;
     justify-content: space-between;
@@ -349,7 +350,7 @@
 
         a {
             // border: 2px solid red;
-            color: $text-light;
+            color: abstracts.$text-light;
             font-size: .75rem;
             text-transform: capitalize;
             display: grid;
@@ -370,7 +371,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: $overlay-blue-dark;
+                background: abstracts.$overlay-blue-dark;
                 border-radius: 1rem;
                 z-index: -1;
                 transition: .125s;
@@ -381,10 +382,10 @@
             i {
                 font-size: 1.125rem;
                 font-weight: 700;
-                color: $brand;
+                color: abstracts.$brand;
                 transition: .125s;
             }
-            @include lg {
+            @include abstracts.lg {
                 padding: .5rem 5rem;
             }
 
@@ -402,7 +403,7 @@
 
             &:hover {
                 i {
-                    color: $text-light;
+                    color: abstracts.$text-light;
                 }
 
                 &::after {
@@ -454,6 +455,7 @@
     }
     
 }
+<<<<<<< HEAD:sass/_utilities.scss
 
 
 
@@ -617,3 +619,5 @@
 
 
 
+=======
+>>>>>>> f1a82b156c0d4b0cf799a46f5762f06e4589770d:sass/components/_utilities.scss

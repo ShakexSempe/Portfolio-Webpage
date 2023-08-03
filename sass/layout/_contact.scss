@@ -1,3 +1,4 @@
+@use '../abstracts';
 // contact
     #contact {
         // border: 2px solid red;
@@ -12,7 +13,7 @@
         transform-style: preserve-3d;
         background: #f4f4f4;
         padding: 10vh 5vw;
-        @include lg {
+        @include abstracts.lg {
             padding: 10vh 5vw 5vh;
         }
         // section-title
@@ -26,7 +27,7 @@
             display: grid;
             gap: 10vh;
             width: 100%;
-            @include md {
+            @include abstracts.md {
                 grid-template-columns: 1fr 1fr 1fr;
                 column-gap: 5vw;
             }
@@ -48,7 +49,7 @@
                     position: relative;
                     h3 {
                         font-size: 1rem;
-                        font-size: $font-clamp-sm;
+                        font-size: abstracts.$font-clamp-sm;
                     }
                     i {
                         transform: translateY(-1rem) scale(1.1);

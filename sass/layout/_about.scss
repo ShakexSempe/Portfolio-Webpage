@@ -1,14 +1,15 @@
+@use '../abstracts';
 // ABOUT SECTION
 .about {
     display: flex;
     flex-direction: column-reverse;
     gap: 5vh;
     padding: 10vh 5vw;
-    background-color: $background-light;
+    background-color: abstracts.$background-light;
     position: relative;
     
     // DESKTOP FLEX
-    @include md {
+    @include abstracts.md {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -23,7 +24,7 @@
                 }
                 .about-intro {
                     p {
-                        font-size: $font-clamp-xsm;
+                        font-size: abstracts.$font-clamp-xsm;
                         // CAPITAL B FIRST LETTER
                         &.intro {
                             font-weight: 500;
@@ -32,8 +33,8 @@
                                 font-size: 2rem;
                                 font-size: clamp(2rem, 5vw, 2.25rem);
                                 float: left;
-                                background: $overlay-blue-darker;
-                                color: $text-light;
+                                background: abstracts.$overlay-blue-darker;
+                                color: abstracts.$text-light;
                                 padding: 0 .1em;
                                 margin-right: .1em;
                                 border-radius: .25rem;
@@ -51,28 +52,28 @@
                 }
 
                 .article-body {
-                    color: $overlay-blue-darker;
+                    color: abstracts.$overlay-blue-darker;
                     margin-top: 5vh;
                     .body-item {
                         padding-bottom: .5rem;
                         margin-bottom: 5vh;
                         position: relative;
-                        border-bottom: 1px solid $overlay-blue-light;
+                        border-bottom: 1px solid abstracts.$overlay-blue-light;
                         transition: border .5s;
                         
-                        @include lg {
+                        @include abstracts.lg {
                             margin-bottom: 10vh;
                         }
                         i {
                             font-size: 2rem;
                             margin-bottom: .5rem;
-                            color: $overlay-blue-dark;
+                            color: abstracts.$overlay-blue-dark;
                         }
                         .body-item-title {
-                            color: $overlay-blue-dark;
+                            color: abstracts.$overlay-blue-dark;
                             margin-bottom: .5rem;
                             font-size: 1rem;
-                            font-size: $font-clamp-sm;
+                            font-size: abstracts.$font-clamp-sm;
                         }
 
                         p {
@@ -81,14 +82,14 @@
 
                         a {
                             // border: 2px solid red;
-                            color: $overlay-blue-light;
+                            color: abstracts.$overlay-blue-light;
                             i {
                                 font-size: 1rem;
                                 margin-right: .5rem;
                                 transition: .25s;
                             }
                             &:hover {
-                                color: $span-crimson;
+                                color: abstracts.$span-crimson;
                                 i {
                                     transform: translateX(.25rem);
                                     opacity: .9;
@@ -114,15 +115,15 @@
     }
     // COL LEFT = ABOUT IMAGE(S)
     .col-left {
-        border-radius: $brand-br;
+        border-radius: abstracts.$brand-br;
         width: 70%;
         height: 60vh;
         margin-inline: auto;
         margin-bottom: 5vh;
-        @include xsm {
+        @include abstracts.xsm {
             height: 50vh;
         }
-        @include md {
+        @include abstracts.md {
             width: 100%;
             height: 70vh;
             position: sticky;
@@ -133,7 +134,7 @@
             width: 100%;
             height: 100%;
             position: relative;
-            border-radius: $brand-br;
+            border-radius: abstracts.$brand-br;
             transition: .5s ease;
 
             img {
@@ -166,7 +167,7 @@
                 }
 
                 // DESKTOP IMAGE
-                @include sm {
+                @include abstracts.sm {
                     object-fit: contain;
                     object-position: top;
                 }
