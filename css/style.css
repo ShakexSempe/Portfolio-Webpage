@@ -169,6 +169,106 @@ section .section-title.active-item span {
   box-sizing: border-box;
 }
 
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(0deg, #000, #15191e);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 5vw;
+  transform: translateY(15vh);
+  transition: 1s;
+}
+@media (min-width: 820px) {
+  .bottom-nav {
+    display: none;
+    height: 7vh;
+  }
+}
+.bottom-nav .link-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: 0.25s;
+  position: relative;
+  transform: translateY(1rem);
+}
+.bottom-nav .link-item a {
+  color: #f4f4f4;
+  font-size: 0.75rem;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  cursor: default;
+  position: relative;
+  transition: 0.25s;
+}
+.bottom-nav .link-item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #29323d;
+  border-radius: 1rem;
+  z-index: -1;
+  transition: 0.125s;
+  transform: scaleX(0.5);
+  opacity: 0;
+}
+.bottom-nav .link-item a i {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #b3c0cc;
+  transition: 0.125s;
+}
+.bottom-nav .link-item a:active {
+  transition: 0.25s;
+}
+.bottom-nav .link-item a:active::after {
+  transform: scaleX(1);
+  transition: 0.125s;
+  opacity: 0.5;
+}
+.bottom-nav .link-item a:hover i {
+  color: #f4f4f4;
+}
+.bottom-nav .link-item a:hover::after {
+  animation: click 0.25s;
+}
+@keyframes click {
+  0% {
+    transform: scaleX(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  80% {
+    opacity: 0.5;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(1);
+  }
+}
+.bottom-nav.active-bottom-nav {
+  transform: translateY(0vh);
+}
+.bottom-nav.active-bottom-nav .link-item {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.5s;
+}
+
 .btn-bg::before, .btn-bg::after {
   content: "";
   position: absolute;
@@ -600,118 +700,6 @@ form button:hover::after {
   .btn:active::after {
     opacity: 1;
   }
-}
-
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  height: 6vh;
-  height: auto;
-  width: 100%;
-  background: linear-gradient(0deg, #000, #15191e);
-  z-index: 40;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.25rem 5vw;
-  transform: translateY(15vh);
-  transition: 1s;
-}
-@media (min-width: 820px) {
-  .bottom-nav {
-    display: none;
-    height: 7vh;
-  }
-}
-.bottom-nav .link-item {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  opacity: 0;
-  transition: 0.25s;
-  position: relative;
-  transform: translateY(1rem);
-}
-.bottom-nav .link-item a {
-  color: #f4f4f4;
-  font-size: 0.75rem;
-  text-transform: capitalize;
-  display: grid;
-  place-content: center;
-  place-items: center;
-  transition: 0.25s;
-  padding: 0.5rem 2rem;
-  transition: 0.25s;
-  width: 100%;
-  cursor: default;
-  border-radius: 1rem;
-  position: relative;
-}
-.bottom-nav .link-item a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #29323d;
-  border-radius: 1rem;
-  z-index: -1;
-  transition: 0.125s;
-  transform: scaleX(0.5);
-  opacity: 0;
-}
-.bottom-nav .link-item a i {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #b3c0cc;
-  transition: 0.125s;
-}
-@media (min-width: 820px) {
-  .bottom-nav .link-item a {
-    padding: 0.5rem 5rem;
-  }
-}
-.bottom-nav .link-item a:active {
-  transition: 0.25s;
-}
-.bottom-nav .link-item a:active::after {
-  transform: scaleX(1);
-  transition: 0.125s;
-  opacity: 0.5;
-}
-.bottom-nav .link-item a:hover i {
-  color: #f4f4f4;
-}
-.bottom-nav .link-item a:hover::after {
-  animation: click 0.25s;
-}
-@keyframes click {
-  0% {
-    transform: scaleX(0.5);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
-  80% {
-    opacity: 0.5;
-    transform: scaleX(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scaleX(1);
-  }
-}
-.bottom-nav.active-bottom-nav {
-  transform: translateY(0vh);
-}
-.bottom-nav.active-bottom-nav .link-item {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 0.5s;
 }
 
 .about {
