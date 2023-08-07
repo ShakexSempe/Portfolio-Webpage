@@ -16,6 +16,7 @@
                 text-transform: capitalize;
                 margin-bottom: 10vh;
                 font-size: 2rem;
+                font-size: clamp(2rem, 4vw, 2.25rem);
         }
         .footer-top {
 

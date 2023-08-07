@@ -2,21 +2,21 @@
 
 // FORM
 form {
-    @media (min-width: 1024px) {
+    @include abstracts.sm {
         width: 50%;
-        border-radius: 5px;
+        border-radius: .25rem;
     }
     background-color: abstracts.$overlay-blue-dark;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 10vh auto 5vh;
-    padding: 10vh 5vw;
+    padding: 5vh 5vw;
 
     .input-div {
         position: relative;
-        padding: 1rem 0;
-        margin-bottom: 1rem;
+        padding: 1rem 0 0;
+        margin-bottom: 2rem;
 
         
         label {
@@ -28,9 +28,8 @@ form {
         }
 
         input, textarea {
-            padding: 1rem .5rem;
+            padding: .65rem .5rem;
             width: 100%;
-            margin: .5em 0;
             border-radius: .25rem;
             transition: .5s;
             border: none;
@@ -39,6 +38,10 @@ form {
             background: abstracts.$overlay-blue-darker;
             outline: 1px solid abstracts.$brand;
             color: abstracts.$text-light;
+            // WIDE SCREENS INPUT = SMALLER PADDING
+            @include abstracts.sm {
+                padding: .5rem;
+            }
 
             &:invalid {
                 background-color:#ddd;
@@ -49,7 +52,6 @@ form {
                 font-weight: 500;
                 color: #000;
                 text-transform: capitalize;
-                // letter-spacing: .15rem;
                 opacity: 0;
                 transition: .25s;
 
@@ -125,7 +127,7 @@ form {
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: abstracts.$border-radius-md;
+            border-radius: inherit;
             border: none;
             outline: none;
             z-index: -1;
