@@ -2,25 +2,20 @@
 
 // FORM
 form {
-    z-index: 2;
     @media (min-width: 1024px) {
         width: 50%;
         border-radius: 5px;
     }
     background-color: abstracts.$overlay-blue-dark;
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     margin: 10vh auto 5vh;
     padding: 10vh 5vw;
-    border-radius: 0;
-    // border: 1px solid abstracts.$span-gold;
-    overflow: hidden;
 
     .input-div {
         position: relative;
-        padding: 1em 0 .5em;
+        padding: 1rem 0;
         margin-bottom: 1rem;
 
         
@@ -28,35 +23,26 @@ form {
             position: absolute;
             top: 0%;
             transform: translateY(-.5em);
-            color: #fff;
-            font-weight: 400;
-
-            font-family: abstracts.$font-title;
             text-transform: capitalize;
-            transition: .3s;
+            transition: .25s;
         }
 
         input, textarea {
-            padding: 1em;
+            padding: 1rem .5rem;
             width: 100%;
             margin: .5em 0;
-            border-radius: 5px;
+            border-radius: .25rem;
             transition: .5s;
             border: none;
-            outline: none;
+            font-size: 1rem;
             font-weight: 500;
-            letter-spacing: .15em;
             background: abstracts.$overlay-blue-darker;
             outline: 1px solid abstracts.$brand;
             color: abstracts.$text-light;
-            // overflow: hidden;
 
             &:invalid {
-                // background-color: abstracts.$background-invalid;
-                background-color: abstracts.$span-gold;
                 background-color:#ddd;
                 color: abstracts.$text-invalid;
-                outline: none;
             }
             
             &::placeholder {
@@ -72,7 +58,6 @@ form {
             &:focus, &:hover {
                 &::placeholder {
                     opacity: .6;
-                    // letter-spacing: normal;
                 }
             }
         }
@@ -87,24 +72,27 @@ form {
 
     button {
         width: 11rem;
-        position: relative;
-        padding:  1rem;
-        color: #eee;
-        background-color: abstracts.$span-crimson-dark;
-
-        font-weight: 500;
-        font-size: 1rem;
-        letter-spacing: .025rem;
-        text-transform: capitalize;
-        border: none;
-        outline: none;
         display: flex;
         justify-content: space-between;
+        padding:  1rem;
+        position: relative;
+
+        color: inherit;
+        background-color: abstracts.$span-crimson-dark;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: capitalize;
+        
+        border: none;
         border-radius: abstracts.$border-radius-md;
-        // opacity: .9;
         transition: .25s ease;
-        cursor: pointer;
+        cursor: default;
         isolation: isolate;
+        // WIDE SCREEN CURSOR
+        @include abstracts.sm {
+            cursor: pointer;
+        }
 
         i {
             transition: .25s ease;
@@ -152,12 +140,12 @@ form {
             box-shadow: abstracts.$box-dark-top-sm;
             opacity: 0;
         }
-        // end of form button box shadow
+
         &:hover {
             transform: scale(.98);
             letter-spacing: 0;
             i {
-                transform: translateX(-.25rem);
+                transform: translateX(-.125rem);
                 &::before {opacity: 0;}
                 &::after {opacity: 1;}
             }

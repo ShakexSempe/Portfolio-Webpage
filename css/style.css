@@ -288,17 +288,135 @@ section .section-title.active-item span {
   opacity: 0;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5vh 5vw;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+@media (min-width: 576px) {
+  .buttons-container {
+    justify-content: start;
+    gap: 2rem;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  min-width: 9.5rem;
+  width: 10rem;
+  text-align: center;
+  letter-spacing: 0.025rem;
+  text-transform: capitalize;
+  position: relative;
+  isolation: isolate;
+  border-radius: 0.25rem;
+  transition: 0.25s;
+}
+@media (max-width: 450px) {
+  .btn {
+    cursor: default;
+  }
+}
+.btn::before, .btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transition: 0.2s;
+  z-index: -1;
+}
+.btn::before {
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.3));
+}
+.btn::after {
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0.025rem 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
+  opacity: 0;
+}
+.btn.btn-primary {
+  color: #f4f4f4;
+}
+.btn.btn-primary::before {
+  background: linear-gradient(0deg, #3f0d0d, #dc134c);
+}
+.btn.btn-primary::after {
+  background: linear-gradient(0deg, #dc134c, #3f0d0d);
+}
+.btn.btn-secondary {
+  color: #29323d;
+}
+.btn.btn-secondary::before {
+  background: #ffff;
+  box-shadow: none;
+  border: 1px solid #29323d;
+}
+.btn.btn-secondary::after {
+  background: #fafafa;
+  box-shadow: none;
+  border: none;
+}
+.btn.btn-dark {
+  color: #f4f4f4;
+}
+.btn.btn-dark::before {
+  background: linear-gradient(0deg, #20262e, #485563);
+}
+.btn.btn-dark::after {
+  background: linear-gradient(0deg, #485563, #20262e);
+}
+.btn.btn-light {
+  color: #29323d;
+}
+.btn.btn-light::before {
+  background: linear-gradient(0deg, #ddd, #f4f4f4);
+  box-shadow: none;
+  border: 1px solid #29323d;
+}
+.btn.btn-light::after {
+  background: linear-gradient(0deg, #f4f4f4, #ddd);
+  box-shadow: none;
+  border: none;
+}
+@media (min-width: 820px) {
+  .btn:hover {
+    transform: scale(0.97);
+    letter-spacing: normal;
+  }
+  .btn:hover::before {
+    opacity: 0;
+  }
+  .btn:hover::after {
+    opacity: 1;
+  }
+}
+@media (max-width: 820px) {
+  .btn:active {
+    transform: scale(0.97);
+    letter-spacing: normal;
+  }
+  .btn:active::before {
+    opacity: 0;
+  }
+  .btn:active::after {
+    opacity: 1;
+  }
+}
+
 form {
-  z-index: 2;
   background-color: #29323d;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   margin: 10vh auto 5vh;
   padding: 10vh 5vw;
-  border-radius: 0;
-  overflow: hidden;
 }
 @media (min-width: 1024px) {
   form {
@@ -308,38 +426,32 @@ form {
 }
 form .input-div {
   position: relative;
-  padding: 1em 0 0.5em;
+  padding: 1rem 0;
   margin-bottom: 1rem;
 }
 form .input-div label {
   position: absolute;
   top: 0%;
   transform: translateY(-0.5em);
-  color: #fff;
-  font-weight: 400;
-  font-family: "Kanit", sans-serif;
   text-transform: capitalize;
-  transition: 0.3s;
+  transition: 0.25s;
 }
 form .input-div input, form .input-div textarea {
-  padding: 1em;
+  padding: 1rem 0.5rem;
   width: 100%;
   margin: 0.5em 0;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   transition: 0.5s;
   border: none;
-  outline: none;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
   background: #1f252d;
   outline: 1px solid #b3c0cc;
   color: #f4f4f4;
 }
 form .input-div input:invalid, form .input-div textarea:invalid {
-  background-color: #ead2a1;
   background-color: #ddd;
   color: #000;
-  outline: none;
 }
 form .input-div input::placeholder, form .input-div textarea::placeholder {
   font-weight: 500;
@@ -357,22 +469,26 @@ form .input-div:hover label, form .input-div:focus label {
 }
 form button {
   width: 11rem;
-  position: relative;
-  padding: 1rem;
-  color: #eee;
-  background-color: #dc143c8c;
-  font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 0.025rem;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  color: inherit;
+  background-color: #dc143c8c;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: none;
   border-radius: 0.5rem;
   transition: 0.25s ease;
-  cursor: pointer;
+  cursor: default;
   isolation: isolate;
+}
+@media (min-width: 576px) {
+  form button {
+    cursor: pointer;
+  }
 }
 form button i {
   transition: 0.25s ease;
@@ -424,7 +540,7 @@ form button:hover {
   letter-spacing: 0;
 }
 form button:hover i {
-  transform: translateX(-0.25rem);
+  transform: translateX(-0.125rem);
 }
 form button:hover i::before {
   opacity: 0;
@@ -580,128 +696,6 @@ form button:hover::after {
 }
 
 /* end of progress bar*/
-.buttons-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 2.5vh 5vw;
-  gap: 1rem;
-  margin: 1.5rem 0 0;
-}
-@media (min-width: 576px) {
-  .buttons-container {
-    justify-content: start;
-    gap: 2rem;
-  }
-}
-
-.btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 1rem;
-  min-width: 9.5rem;
-  width: 10rem;
-  text-align: center;
-  letter-spacing: 0.025rem;
-  text-transform: capitalize;
-  position: relative;
-  isolation: isolate;
-  border-radius: 0.25rem;
-  transition: 0.25s;
-}
-@media (max-width: 450px) {
-  .btn {
-    cursor: default;
-  }
-}
-.btn::before, .btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  transition: 0.2s;
-  z-index: -1;
-}
-.btn::before {
-  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
-  background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.3));
-}
-.btn::after {
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2), inset -2px -2px 3px rgba(225, 225, 225, 0.2), 0.025rem 0.225rem 0.25rem rgba(0, 0, 0, 0.25);
-  opacity: 0;
-}
-.btn.btn-primary {
-  color: #f4f4f4;
-}
-.btn.btn-primary::before {
-  background: linear-gradient(0deg, #3f0d0d, #dc134c);
-}
-.btn.btn-primary::after {
-  background: linear-gradient(0deg, #dc134c, #3f0d0d);
-}
-.btn.btn-secondary {
-  color: #29323d;
-}
-.btn.btn-secondary::before {
-  background: #ffff;
-  box-shadow: none;
-  border: 1px solid #29323d;
-}
-.btn.btn-secondary::after {
-  background: #fafafa;
-  box-shadow: none;
-  border: none;
-}
-.btn.btn-dark {
-  color: #f4f4f4;
-}
-.btn.btn-dark::before {
-  background: linear-gradient(0deg, #20262e, #485563);
-}
-.btn.btn-dark::after {
-  background: linear-gradient(0deg, #485563, #20262e);
-}
-.btn.btn-light {
-  color: #29323d;
-}
-.btn.btn-light::before {
-  background: linear-gradient(0deg, #ddd, #f4f4f4);
-  box-shadow: none;
-  border: 1px solid #29323d;
-}
-.btn.btn-light::after {
-  background: linear-gradient(0deg, #f4f4f4, #ddd);
-  box-shadow: none;
-  border: none;
-}
-@media (min-width: 820px) {
-  .btn:hover {
-    transform: scale(0.97);
-    letter-spacing: normal;
-  }
-  .btn:hover::before {
-    opacity: 0;
-  }
-  .btn:hover::after {
-    opacity: 1;
-  }
-}
-@media (max-width: 820px) {
-  .btn:active {
-    transform: scale(0.97);
-    letter-spacing: normal;
-  }
-  .btn:active::before {
-    opacity: 0;
-  }
-  .btn:active::after {
-    opacity: 1;
-  }
-}
-
 .about {
   display: flex;
   flex-direction: column-reverse;
