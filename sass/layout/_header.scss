@@ -26,6 +26,7 @@
     }
 }
 
+// NAV = LOGO + NAV-LIST
 #nav {
     display: flex;
     align-items: center;
@@ -35,41 +36,33 @@
     padding: .5rem 5vw;
     z-index: 5;
 
-    @include abstracts.xsm {
-        padding: .25rem 5vw;
-    }
-
     // HEADER LOGO
+    // LOGO = LINK(A) WITH EMBEDDED P{+span($brand)}
     .logo {
-        transition: 2s ease;
-
+        transition: 1s ease;
+        background-color: abstracts.$overlay-blue-black;
+        border-radius: abstracts.$border-radius-sm;
+        border: 1px solid abstracts.$brand-border;
+        a {
+            padding: 0 .5rem;
+            display: block;
+        }
         p {
-            background-color: abstracts.$overlay-blue-black;
             color: abstracts.$text-light;
-            border: 1px solid abstracts.$brand-border;
-
-            padding-left: .25rem;
-            padding-block: .15rem;
-
             font-family: abstracts.$font-title;
             font-size: 1.125rem;
-            font-size: clamp(1rem, 2vw, 1.125rem);
             font-size: abstracts.$font-clamp-sm;
-            font-weight: 400;
             text-transform: capitalize;
-            border-radius: abstracts.$border-radius-sm;
-            overflow: hidden;
             transition: .5s;
 
             span {
-                padding-right: .25rem;
                 color: abstracts.$brand;
-                transition: .2s;
             }
 
         }
     }
 
+    // NAV-LIST = ASIDE ON SMALL SCREENS AND ROW LIST ON WIDER SCREENS
     .nav-list {
 
         ul {
