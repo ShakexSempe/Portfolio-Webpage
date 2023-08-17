@@ -92,27 +92,28 @@
                 left: 100%;
                 width: 100vw;
                 height: 100vh;
-                background-color: abstracts.$nav-active-background;
                 background-color: abstracts.$overlay-blue-darkest;
+                color: abstracts.$text-light;
                 transition: .5s ease;
                 z-index: 5;
 
                 ul {
-                    margin: 1rem 5vw 1rem;
                     background: abstracts.$overlay-blue-dark;
-                    padding: .5rem 0;
-                    height: max-content;
+
+                    margin: 1rem 5vw 5vh;
+                    padding: 1rem .5rem;
+                    
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: right;
-                    border-radius: .5rem;
-                    z-index: 1;
+                    align-items: start;
+                    gap: 1rem;
+
+                    border-radius: abstracts.$border-radius-sm;
                     transition: 0.5s ease left;
                     position: relative;
-                    outline: none;
-                    overflow-y: auto;
-                    overflow-x: hidden;
+                    z-index: 1;
+                    overflow: hidden;
 
                     li {
                         opacity: 0;
@@ -120,9 +121,10 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        margin: 0 auto .5rem;
-                        width: 95%;
+                        // border: 2px solid blue;
+                        width: 100%;
 
+                        // LINKS = SAME FONTS AS SECTION TITLES
                         a {
                             transform: translateX(1.5rem);
                             opacity: 0;
@@ -141,7 +143,7 @@
                                 content: attr(data-after);
                                 position: absolute;
                                 top: 50%;
-                                left: 50%;
+                                left: 60%;
                                 transform: translate(-50%, -50%) scale(0);
                                 color: #f0f8ff1a;
                                 font-size: 2.5rem;
@@ -187,22 +189,19 @@
 
                 // CONTACT LINKS
                 .contact-links {
-                    // border: 2px solid red;
                     background: abstracts.$overlay-blue-dark;
-                    overflow-x: hidden;
-                    overflow-y: auto;
                     margin: 1rem 5vw;
+                    padding: 1rem;
+
                     display: flex;
                     flex-direction: column;
-                    padding: 1rem;
-                    border-radius: .5rem;
+
+                    border-radius: abstracts.$border-radius-sm;
 
                     a {
                         opacity: 0;
                         transform: translateY(1rem);
-                        color: abstracts.$text-light;
                         font-size: 1rem;
-                        // letter-spacing: .1rem;
                         margin-bottom: 1rem;
                         transition: .5s;
 
@@ -212,34 +211,34 @@
                             width: 1.5rem;
                             border-right: 1px solid abstracts.$brand;
                         }
+                        
                     }
+
                 }
 
-                // ACTIVE ASIDE
+                // ACTIVE ASIDE = TRANSITION INTO VIEW - LEFT = 0
                 &.active {
                     left: 0;
-                    z-index: 50;
 
+                    // LOGO TRANSITIONS INTO VIEW - OPACITY AND TRANSFORM
                     .nav-logo {
                         transition: 1.5s;
                         opacity: 1;
                         transform: translateX(0);
                     }
-
+                    // PAGE LINKS LI TRANSITIONS INTO VIEW 
                     ul {
+                        // LI TRANSITIONS INTO VIEW - TRANSLATE-X(0)
                         li {
                             transition: .5s;
                             opacity: 1;
-
+                            // LINKS OPACITY = 1 AND TRANSLATE = 0  
                             a {
                                 transform: translateX(0);
                                 opacity: 1;
                             }
 
-                            i {
-                                transition: 1s ease .8s;
-                            }
-
+                            // LI ITEMS HAVE DELAYED TRANSITIONS
                             &:nth-child(1) {
                                 a {
                                     transition-delay: .3s;
@@ -285,6 +284,8 @@
                         }
                     }
 
+                    // CONTACT LINKS
+                    // A LINKS TRANSITION INTO VIEW WITH DELAYED TIMING
                     .contact-links {
                         a {
                             opacity: 1;
@@ -310,6 +311,9 @@
                                 i {
                                     transition: .25s;
                                     color: abstracts.$brand;
+                                    border-right-color: abstracts.$span-crimson;
+                                    border-right-color: transparent;
+                                    transform: translateX(.25rem);
                                 }
                             }
                         }
@@ -319,7 +323,6 @@
             }
 
         }
-
 
         // DESKTOP NAV LIST
         @media (min-width: 820px) {
