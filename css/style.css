@@ -558,22 +558,20 @@ form button:hover::after {
   opacity: 1;
 }
 
-#header .hamburger {
+.hamburger {
   font-size: 10px;
   height: 3em;
   width: 3em;
-  display: inline-block;
-  border-radius: 50%;
-  position: relative;
   background: #29323d;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 51;
-  cursor: pointer;
+  border-radius: 50%;
+  isolation: isolate;
   transition: 0.25s ease;
 }
-#header .hamburger.hamburger:after, #header .hamburger.hamburger:before {
+.hamburger.hamburger:after, .hamburger.hamburger:before {
   position: absolute;
   content: "";
   height: 100%;
@@ -583,7 +581,7 @@ form button:hover::after {
   outline: none;
   transition: 0.25s ease;
 }
-#header .hamburger.hamburger:before {
+.hamburger.hamburger:before {
   border: 1px solid #b3c0cc;
   opacity: 0;
   animation: ham-pulse 2.5s ease infinite;
@@ -597,59 +595,56 @@ form button:hover::after {
     transform: scale(1.25);
   }
 }
-#header .hamburger.no-pulse.hamburger::before {
+.hamburger.no-pulse.hamburger::before {
   animation: none;
   animation-fill-mode: forwards;
 }
-#header .hamburger:hover::after, #header .hamburger:focus::after {
-  opacity: 0.6;
-}
-#header .hamburger:active {
+.hamburger:active {
   transform: scale(0.8);
   transition: 0.25s;
 }
-#header .hamburger:active::before {
+.hamburger:active::before {
   animation: none;
 }
-#header .hamburger .bar {
+.hamburger .bar {
   height: 0.2em;
   width: 1.5em;
   position: relative;
   background-color: #f4f4f4;
-  border-radius: 10px;
+  border-radius: 1rem;
   z-index: -1;
   transform-style: preserve-3d;
 }
-#header .hamburger .bar::before, #header .hamburger .bar::after {
+.hamburger .bar::before, .hamburger .bar::after {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
-  border-radius: 10px;
   bottom: 0;
   background-color: #f4f4f4;
+  border-radius: inherit;
   transition: 0.5s ease;
   transform-style: preserve-3d;
 }
-#header .hamburger .bar::before {
+.hamburger .bar::before {
   transform: translateY(-0.5em);
 }
-#header .hamburger .bar::after {
+.hamburger .bar::after {
   transform: translateY(0.5em);
 }
-#header .hamburger.active::before {
+.hamburger.active::before {
   animation: none;
 }
-#header .hamburger.active .bar {
+.hamburger.active .bar {
   background-color: transparent;
   transform-style: preserve-3d;
   height: 0.3em;
 }
-#header .hamburger.active .bar::before {
+.hamburger.active .bar::before {
   transform: translateY(0) skewY(40deg);
 }
-#header .hamburger.active .bar::after {
+.hamburger.active .bar::after {
   transform: translateY(0) skewY(-40deg);
 }
 

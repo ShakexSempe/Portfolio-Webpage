@@ -1,0 +1,125 @@
+@use '../abstracts';
+
+// HAMBURGER = CIRCLE SHAPE WITH ANIMATED PSEUDO ELEMENT
+.hamburger {
+    font-size: 10px;
+    height: 3em;
+    width: 3em;
+    background: abstracts.$overlay-blue-dark;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    isolation: isolate;
+    transition: .25s ease;
+
+    // PULSE = PSEUDO RADIUS WITH ANIMATION
+    &.hamburger:after,
+    &.hamburger:before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        transition: .25s ease;
+    }
+    // PULSE STYLE AND KEYFRAMES 
+    &.hamburger:before {
+        border: 1px solid abstracts.$brand;
+        opacity: 0;
+        animation: ham-pulse 2.5s ease infinite;
+        // PULSE KEYFRAMES
+        @keyframes ham-pulse {
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.25);
+            }
+        }
+    }
+
+    // .NO-PULSE = JS ACTIVE CLASS 
+    // = REMOVE ANIMATION CLASS
+    &.no-pulse {
+        &.hamburger::before {
+            animation: none;
+            animation-fill-mode: forwards;
+        }
+    }
+    // { USER CLICK } ACTIVE PSEUDO CLASS = SCALE ITEM DOWN AND REMOVE ANIMATION
+    &:active {
+        transform: scale(.8);
+        transition: .25s;  
+        // NO PULSE ON ACTIVE STATE
+        &::before {
+            animation: none;
+        } 
+    }
+    
+    // HAMBURGER BARS
+    .bar {
+        height: .2em;
+        width: 1.5em;
+        position: relative;
+        background-color: #f4f4f4;
+        border-radius: 1rem;
+        z-index: -1;
+        transform-style: preserve-3d;
+        // TOP AND BOTTOM BARS = PSEUDO ELEMENTS
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: #f4f4f4;
+            border-radius: inherit;
+            transition: .5s ease;
+            transform-style: preserve-3d;
+        }
+        // TRANSLATE ELEMENTS = ::BEFORE UP(Y -.5em) & ::AFTER DOWN(Y .5em) 
+        &::before {
+            transform: translateY(-.5em);
+        }
+        &::after {
+            transform: translateY(.5em);
+        }
+
+    }
+
+    // HAMBURGER ACTIVE STATE = JAVASCRIPT CLASS
+    // 1. NO PULSE ANIMATION [::BEFORE]
+    // 2. MIDDLE BAR = TRANSPARENT AND INCREASE HEIGHT TO OFFSET TRANSFORM
+    // 3. TRANSFORM PSEUDO BARS INTO 'X' SHAPE
+        &.active {
+            // REMOVE PULSE ANIMATION
+            &::before {
+                animation: none;
+            }
+            // TRANSPARENT MIDDLE BAR + THICKER BARS
+            .bar {
+                background-color: transparent;
+                transform-style: preserve-3d;
+                height: .3em;
+                // TRANSLATE(TRANSLATE 0 & SKEW) BARS TO FORM 'X' SHAPE 
+                &::before {
+                    transform: translateY(0) skewY(40deg) ;
+                }
+
+                &::after {
+                    transform: translateY(0) skewY(-40deg);
+
+                }
+            }
+        }
+}
