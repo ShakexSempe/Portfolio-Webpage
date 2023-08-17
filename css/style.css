@@ -1732,31 +1732,16 @@ form button:hover::after {
   display: block;
   padding: 0.5em 2rem 0.5rem 1rem;
   width: max-content;
-  border-radius: 1rem;
+  border-radius: 0.25rem;
   transition: 0.25s linear;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   z-index: 2;
-}
-@media (max-width: 576px) {
-  .hero .hero-cta {
-    margin: 20vh 0 0;
-  }
-}
-@media (min-width: 576px) {
-  .hero .hero-cta {
-    margin: 20vh 0 0;
-  }
-}
-@media (min-width: 820px) {
-  .hero .hero-cta {
-    margin: 15vh 0 0;
-  }
 }
 .hero .hero-cta::before, .hero .hero-cta::after {
   position: absolute;
   content: "";
   inset: 0;
-  border-radius: 1rem;
+  border-radius: inherit;
   transition: 0.25s ease;
 }
 .hero .hero-cta::before {
