@@ -1349,11 +1349,10 @@ form button:hover::after {
     color: #f4f4f4;
     transition: 0.5s ease;
     z-index: 5;
-    border-top: 1px solid #29323d;
   }
   #nav .nav-list .links-container ul {
     background: #29323d;
-    margin: 1rem 5vw 2rem;
+    margin: 2rem 5vw;
     padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
