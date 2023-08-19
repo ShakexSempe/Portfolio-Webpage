@@ -1386,6 +1386,7 @@ form button:hover::after {
     font-family: "Kanit", sans-serif;
     text-transform: capitalize;
     transition: 0.5s;
+    cursor: default;
   }
   #nav .nav-list .links-container ul li a::after {
     content: attr(data-after);
@@ -1435,6 +1436,7 @@ form button:hover::after {
     opacity: 0;
     transform: translateY(1rem);
     font-size: 1rem;
+    cursor: default;
     transition: 0.5s;
   }
   #nav .nav-list .links-container .contact-links a i {

@@ -138,6 +138,7 @@
                             font-family: abstracts.$font-title;
                             text-transform: capitalize;
                             transition: .5s;
+                            cursor: default;
 
                             // LINK HOVER EFFECT
                             &::after {
@@ -204,6 +205,7 @@
                         opacity: 0;
                         transform: translateY(1rem);
                         font-size: 1rem;
+                        cursor: default;
                         transition: .5s;
 
                         i {
