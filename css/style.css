@@ -1858,6 +1858,75 @@ form button:hover::after {
   }
 }
 
+.prices {
+  border: 2px solid blue;
+  min-height: 90vh;
+  padding: 5vh 5vw;
+}
+
+.price-container {
+  border-color: red;
+}
+.price-container .container-title {
+  background: #1f252d;
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media (min-width: 768px) {
+  .price-container .container-title {
+    margin-bottom: 10vh;
+  }
+}
+.price-container .grid-container {
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .price-container .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.price-container .grid-container .price-group {
+  background-color: #f4f4f4;
+  border-radius: 0.25rem;
+  padding: 1rem 0.5rem;
+  text-transform: capitalize;
+}
+.price-container .grid-container .price-group h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.price-container .grid-container .price-group ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0004;
+  transition: 0.25s;
+}
+.price-container .grid-container .price-group ul li h4 {
+  font-weight: 400;
+  transition: 0.25s;
+}
+.price-container .grid-container .price-group ul li p {
+  transition: 0.25s;
+}
+.price-container .grid-container .price-group ul li:hover {
+  border-bottom-color: transparent;
+}
+.price-container .grid-container .price-group ul li:hover p {
+  transform: translateX(-1rem);
+}
+.price-container .grid-container .price-group ul li:hover h4 {
+  transform: translateX(1rem);
+}
+
 #projects {
   padding: 10vh 5vw 10vh;
 }
