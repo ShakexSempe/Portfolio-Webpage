@@ -86,7 +86,10 @@
     text-transform: capitalize;
     // border: 3px solid yellow;
     background: abstracts.$overlay-blue-black;
-    background: linear-gradient(0deg, #000 70%, abstracts.$overlay-blue-darker);
+    background: linear-gradient(0deg, #000 70%, abstracts.$overlay-blue-darkest);
+    @include abstracts.sm {
+        background: #000;
+    }
     // background: #000;
     
     // PAGE HERO CONTENT

@@ -1685,7 +1685,12 @@ form button:hover::after {
   color: #f4f4f4;
   text-transform: capitalize;
   background: #0a0d0f;
-  background: linear-gradient(0deg, #000 70%, #1f252d);
+  background: linear-gradient(0deg, #000 70%, #15191e);
+}
+@media (min-width: 576px) {
+  .hero {
+    background: #000;
+  }
 }
 
 .hero-grid {
