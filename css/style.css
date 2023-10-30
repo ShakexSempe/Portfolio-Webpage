@@ -34,7 +34,7 @@ section {
 section .section-title {
   font-size: 2.5rem;
   font-size: clamp(2rem, 5vw, 2.5rem);
-  color: #29323d;
+  color: hwb(213 16% 76%);
   margin-bottom: 10vh;
   text-transform: uppercase;
   -webkit-box-reflect: below -0.9rem linear-gradient(transparent, #0003);
@@ -55,16 +55,16 @@ section .section-title span {
   45% {
     top: -20px;
     opacity: 0;
-    color: #29323d;
+    color: hwb(213 16% 76%);
   }
   46% {
     top: 20px;
     opacity: 0;
     color: #dc143c;
-    color: #29323d;
+    color: hwb(213 16% 76%);
   }
   65% {
-    color: #29323d;
+    color: hwb(213 16% 76%);
   }
 }
 section .section-title.io-item {
@@ -122,7 +122,7 @@ section .section-title.active-item span {
 .section-pad.pad-logo {
   overflow: hidden;
   height: 60vh;
-  background-color: #29323d;
+  background-color: hwb(213 16% 76%);
 }
 .section-pad.pad-logo figure {
   margin: 0 auto;
@@ -214,7 +214,7 @@ section .section-title.active-item span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #29323d;
+  background: hwb(213 16% 76%);
   border-radius: 1rem;
   z-index: -1;
   transition: 0.125s;
@@ -350,12 +350,12 @@ section .section-title.active-item span {
   background: linear-gradient(0deg, #dc134c, #3f0d0d);
 }
 .btn.btn-secondary {
-  color: #29323d;
+  color: hwb(213 16% 76%);
 }
 .btn.btn-secondary::before {
   background: #ffff;
   box-shadow: none;
-  border: 1px solid #29323d;
+  border: 1px solid hwb(213 16% 76%);
 }
 .btn.btn-secondary::after {
   background: #fafafa;
@@ -372,12 +372,12 @@ section .section-title.active-item span {
   background: linear-gradient(0deg, #485563, #20262e);
 }
 .btn.btn-light {
-  color: #29323d;
+  color: hwb(213 16% 76%);
 }
 .btn.btn-light::before {
   background: linear-gradient(0deg, #ddd, #f4f4f4);
   box-shadow: none;
-  border: 1px solid #29323d;
+  border: 1px solid hwb(213 16% 76%);
 }
 .btn.btn-light::after {
   background: linear-gradient(0deg, #f4f4f4, #ddd);
@@ -410,7 +410,7 @@ section .section-title.active-item span {
 }
 
 form {
-  background-color: #29323d;
+  background-color: hwb(213 16% 76%);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -562,7 +562,7 @@ form button:hover::after {
   font-size: 10px;
   height: 3em;
   width: 3em;
-  background: #29323d;
+  background: hwb(213 16% 76%);
   position: relative;
   display: flex;
   align-items: center;
@@ -678,8 +678,8 @@ form button:hover::after {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 3px;
-  background: #29323d;
-  background: linear-gradient(90deg, #29323d, #475462, #29323d);
+  background: hwb(213 16% 76%);
+  background: linear-gradient(90deg, hwb(213 16% 76%), #475462, hwb(213 16% 76%));
   opacity: 0.1;
   width: 0%;
   transition: 0.5s;
@@ -754,10 +754,10 @@ form button:hover::after {
 .about .col-right .article-container article .article-body .body-item i {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #29323d;
+  color: hwb(213 16% 76%);
 }
 .about .col-right .article-container article .article-body .body-item .body-item-title {
-  color: #29323d;
+  color: hwb(213 16% 76%);
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
@@ -977,7 +977,7 @@ form button:hover::after {
 }
 #footer .footer .footer-top .socialMedia-links {
   grid-template-columns: 1fr;
-  background-color: #29323d;
+  background-color: hwb(213 16% 76%);
   width: 100%;
   padding: 10vh 5vw;
 }
@@ -1036,7 +1036,7 @@ form button:hover::after {
   font-family: "Kanit", sans-serif;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item a {
-  background: #29323d;
+  background: hwb(213 16% 76%);
   padding: 0.7rem;
   width: 13rem;
   color: #f4f4f4;
@@ -1351,7 +1351,7 @@ form button:hover::after {
     z-index: 5;
   }
   #nav .nav-list .links-container ul {
-    background: #29323d;
+    background: hwb(213 16% 76%);
     margin: 2rem 5vw;
     padding: 1rem 0.5rem;
     display: flex;
@@ -1423,7 +1423,7 @@ form button:hover::after {
     color: #b3c0cc;
   }
   #nav .nav-list .links-container .contact-links {
-    background: #29323d;
+    background: hwb(213 16% 76%);
     margin: 0 5vw;
     padding: 1rem;
     display: flex;
@@ -1953,7 +1953,7 @@ form button:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
-  border: 1px solid #29323d;
+  border: 1px solid hwb(213 16% 76%);
   outline: none;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -2225,7 +2225,7 @@ form button:hover::after {
   border: 0.125rem solid #b3c0cc;
 }
 .skill-section-container.border.border-dark {
-  border-color: #29323d;
+  border-color: hwb(213 16% 76%);
 }
 
 .skill-section {
@@ -2248,7 +2248,7 @@ form button:hover::after {
     padding: 20vh 5vw 10vh;
     height: 90vh;
     height: 100vh;
-    background: linear-gradient(140deg, #1f252d 20%, #29323d);
+    background: linear-gradient(140deg, #1f252d 20%, hwb(213 16% 76%));
   }
   .skill-section .skill-section-title::after {
     content: "";
@@ -2447,7 +2447,7 @@ form button:hover::after {
 .skill-section .skill-section-content .skill-article {
   padding: 1rem;
   border-radius: 0.25rem;
-  background: #29323d;
+  background: hwb(213 16% 76%);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 26, 0.1);
   transition: 0.25s;
 }
@@ -2479,7 +2479,7 @@ form button:hover::after {
   border-bottom: 1px solid #15191e;
 }
 .skill-section .skill-section-content .skill-article ul li::marker {
-  color: #29323d;
+  color: hwb(213 16% 76%);
   transition: 0.25s;
 }
 .skill-section .skill-section-content .skill-article ul li:last-of-type {
@@ -2502,8 +2502,8 @@ form button:hover::after {
 }
 .skill-section.light-section {
   background: #f4f4f4;
-  color: #29323d;
-  border-bottom: 0.125rem solid #29323d;
+  color: hwb(213 16% 76%);
+  border-bottom: 0.125rem solid hwb(213 16% 76%);
 }
 .skill-section.light-section:last-of-type {
   border-bottom: none;
@@ -2823,7 +2823,7 @@ form button:hover::after {
   opacity: 0;
 }
 .work .work-container .item .item-header .item-cta a.cta-secondary {
-  border: 1px solid #29323d;
+  border: 1px solid hwb(213 16% 76%);
   color: #1f252d;
 }
 .work .work-container .item .item-header .item-cta a.cta-secondary i {

@@ -217,7 +217,7 @@
 
 <body>
   <!-- LOADER -->
-  <div class="loader_bg">
+  <!-- <div class="loader_bg">
     <div id="logo">
       <div class="box">
         <div class="inbox inbox-1"></div>
@@ -228,7 +228,8 @@
         <p>Web Developer</p>
       </div>
     </div>
-  </div>
+  </div> -->
+  
   <!-- HEADER -->
   <header id="header" data-header class="header">
     <!-- SKIP TO MAIN LINK -->
@@ -303,14 +304,19 @@
       <div class="progress-bar index-bar" id="myBar"></div>
     </div> 
   </header>
+
   <!--HERO-->
   <section id="home" data-hero class="banner index-banner">
+
     <div class="hero">
+
+      <!-- HERO TITLE -->
       <div class="hero-index-content">
         <div class="content-title">
           <h1>Front-End Web Developer</h1>
           <h2>Boitumelo<span> Shakex</span><br>Sempe</h2>
         </div>
+
         <div class="content-value">
           <p>Accessible, Immersive & Engaging <br>
             <span>responsive web design</span></p>
@@ -318,18 +324,27 @@
               <a href="#main" id="hero-cta" class="btn">get started<i class="fa-solid fa-angles-right"></i></a>
             </div>
         </div>
+
       </div>
+      <!-- HERO IMAGE  -->
       <picture class="hero-image">
         <source
-          srcset="img/hero_1900.jpg"
-          media="(min-width: 820px)"
-          width="1920"
-          height="1359"
+          srcset="hero/hero-desktop.webp"
+          media="(min-width: 500.1px)"
+          width="900"
+          height="637"
         >
-        <img src="img/hero_450.jpg" width="450" height="318" alt="Laptop">
+        <source
+          srcset="hero/hero-mobile.webp"
+          media="(max-width: 500px)"
+          width="400"
+          height="283"
+        >
+        <img src="hero/hero-mobile.jpg" width="450" height="318" alt="Laptop">
       </picture>
     </div>
   </section>
+  
   <!-- MAIN SECTION = SKILLS + WORK + ABOUT + CONTACT + PROJECTS + FOOTER -->
   <!-- SECTIONS SEPARATED BY '.SKILLS-SECTION-CONTAINERS' -->
   <main id="main" data-main>
@@ -825,20 +840,21 @@
     </div>
   </section>
 
-</main>
-<!-- BOTTOM NAVIGATION -->
-<div class="bottom-nav" id="bottom-nav">
-  <figure class="link-item io-item item io-item-1">
-    <!-- <a href="https://wa.me/+27716876941"><i class="fa-brands fa-whatsapp"></i></a> -->
-    <a href="#contact" title="Contact Info"><i class="fas fa-envelope"></i></a>
-  </figure>
-  <figure class="link-item io-item item io-item-2">
-    <a href="#home" title="Home"><i class="fas fa-house"></i></a>
-  </figure>
-  <figure class="link-item io-item item io-item-3">
-    <a title="Footer" href="#footer-bottom"><i class="fa-solid fa-circle-question"></i></a>
-  </figure>
-</div>
+  </main>
+
+  <!-- BOTTOM NAVIGATION -->
+  <div class="bottom-nav" id="bottom-nav">
+    <figure class="link-item io-item item io-item-1">
+      <!-- <a href="https://wa.me/+27716876941"><i class="fa-brands fa-whatsapp"></i></a> -->
+      <a href="#contact" title="Contact Info"><i class="fas fa-envelope"></i></a>
+    </figure>
+    <figure class="link-item io-item item io-item-2">
+      <a href="#home" title="Home"><i class="fas fa-house"></i></a>
+    </figure>
+    <figure class="link-item io-item item io-item-3">
+      <a title="Footer" href="#footer-bottom"><i class="fa-solid fa-circle-question"></i></a>
+    </figure>
+  </div>
   
 <!-- PRELOADER SCRIPT -->
   <script>
