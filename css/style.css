@@ -1694,7 +1694,7 @@ form button:hover::after {
   padding: 15vh 5vw 5vh;
   display: grid;
   grid-template-rows: auto 40% 40%;
-  row-gap: 2rem;
+  row-gap: 1rem;
   grid-template-areas: "grid-title" "grid-image" "grid-subtitle";
 }
 @media (min-width: 768px) {

@@ -301,7 +301,7 @@
 
     display: grid;
     grid-template-rows: auto 40% 40%;
-    row-gap: 2rem;
+    row-gap: 1rem;
     grid-template-areas: 'grid-title' 'grid-image' 'grid-subtitle';
 
     @include abstracts.md {
