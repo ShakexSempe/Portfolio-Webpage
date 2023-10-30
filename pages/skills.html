@@ -135,35 +135,51 @@
     <!-- END OF PROGRESS BAR-->
   </header>
   <!-- END OF HERO-->
-
   <!--HERO-->
   <section id="home" data-hero class="banner index-banner">
-    <div class="hero">
-      <div class="hero-index-content">
+
+    <div class="hero hero-grid">
+
+      <!-- HERO TITLE -->
+      <div class="grid-title ">
         <div class="content-title">
           <h1>Front-End Web Developer</h1>
-          <h2>Boitumelo<span> Shakex</span><br>Sempe</h2>
+          <h2>Boitumelo<span> Shakex</span> Sempe</h2>
         </div>
-        <div class="content-value">
-          <p>Accessible, Immersive & Engaging <br>
-            <span>responsive web design</span></p>
-            <div class="cta">
-              <a href="#main" class="btn">view skills<i class="fa-solid fa-angles-right"></i></a>
-            </div>
-        </div>
+
+        
       </div>
-      <picture class="hero-image">
+      
+      <div class=" grid-subtitle">
+        <p>Accessible, Immersive & Engaging <br>
+          <span>responsive web design</span></p>
+          
+          <div class="cta">
+            <a href="#main" id="hero-cta" class="btn btn-primary">my skills<i class="fa-solid fa-angles-right"></i></a>
+          </div>
+      </div>
+
+      <!-- HERO IMAGE  -->
+      <picture class=" grid-image ">
         <source
-          srcset="../img/hero_1900.jpg"
-          media="(min-width: 820px)"
-          width="1900"
-          height="1359"
+          srcset="../hero/hero-desktop.webp"
+          media="(min-width: 500.1px)"
+          width="900"
+          height="637"
         >
-        <img src="../img/hero_450.jpg" width="450" height="318" alt="Laptop">
+        <source
+          srcset="../hero/hero-mobile.webp"
+          media="(max-width: 500px)"
+          width="400"
+          height="283"
+        >
+        <img src="../hero/hero-mobile.jpg" width="450" height="318" alt="Laptop">
       </picture>
+
     </div>
+
   </section>
-  <!-- END OF HERO-->
+
   <!--  END OF MENU -->
   <main id="main" data-main>
     <!-- SKILLS SECTION-->

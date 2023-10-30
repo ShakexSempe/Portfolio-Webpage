@@ -119,28 +119,45 @@
             <div class="progress-bar index-bar" id="myBar"></div>
         </div>
     </header>
+
     <!--HERO-->
-    <section id="home" data-hero class="banner about-banner">
-        <div class="hero">
-            <div class="hero-content">
-                <div class="hero-title">
-                    <h1 class="hero-title-header">Front-end web developer</h1>
-                    <h2 class="hero-description">
-                        my name is<br>boitumelo sempe
-                    </h2>
-                    <p class="hero-meta-description" id="aka">a.k.a</p>
+    <section id="home" data-hero class="banner index-banner">
+
+        <div class="hero hero-grid">
+
+            <!-- HERO TITLE -->
+            <div class="grid-title ">
+
+                <div class="content-title">
+                    <h1>Front-End Web Developer</h1>
+                    <h2>Boitumelo<span> Shakex</span> Sempe</h2>
                 </div>
-                <a href="#main" class="scroll-link hero-cta" type="button" title="Main Content" id="cta-header">
-                    <span style="--i:1;">S</span>
-                    <span style="--i:2;">h</span>
-                    <span style="--i:3;">a</span>
-                    <span style="--i:4;">k</span>
-                    <span style="--i:5;">e</span>
-                    <span style="--i:6;">x</span>
-                </a>
+
             </div>
+
+            <div class=" grid-subtitle">
+                <p>Accessible, Immersive & Engaging <br>
+                    <span>responsive web design</span>
+                </p>
+
+                <div class="cta">
+                    <a href="#main" id="hero-cta" class="btn btn-primary">about me<i
+                            class="fa-solid fa-angles-right"></i></a>
+                </div>
+
+            </div>
+
+            <!-- HERO IMAGE  -->
+            <picture class=" grid-image ">
+                <source srcset="../hero/hero-desktop.webp" media="(min-width: 500.1px)" width="900" height="637">
+                <source srcset="../hero/hero-mobile.webp" media="(max-width: 500px)" width="400" height="283">
+                <img src="../hero/hero-mobile.jpg" width="450" height="318" alt="Laptop">
+            </picture>
+
         </div>
+
     </section>
+
     <main id="main" data-main>
         <!-- ABOUT SECTION-->
         <section class="link-section" id="about">
@@ -398,6 +415,7 @@
         </section>
         <!-- END OF FOOTER-->
     </main>
+
     <!-- BOTTOM NAVIGATION -->
     <div class="bottom-nav" id="bottom-nav">
         <figure class="link-item io-item item io-item-2">
