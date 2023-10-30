@@ -85,6 +85,7 @@
         box-shadow: abstracts.$box-light-top-sm-hover;
         opacity: 0;
     }
+    
 
     &.btn-primary {
         color: abstracts.$text-light;
@@ -95,6 +96,7 @@
             background: abstracts.$button-crimson-hover;
         }
     }
+
     &.btn-secondary {
         color: abstracts.$overlay-blue-dark;
         &::before {
