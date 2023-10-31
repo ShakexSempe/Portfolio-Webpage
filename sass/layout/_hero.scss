@@ -309,7 +309,7 @@
     grid-template-areas: 'grid-title' 'grid-image' 'grid-subtitle';
 
     @include abstracts.md {
-        padding: 20vh 5vw;
+        padding: 15vh 5vw;
         grid-template-columns: 45% auto;
         grid-template-rows:  1fr 1fr;
         column-gap: 1rem;
