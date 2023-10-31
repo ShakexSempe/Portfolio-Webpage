@@ -25,7 +25,7 @@ body p {
 }
 body .icon {
   width: 1.125rem;
-  height: 1.125rem;
+  height: auto;
 }
 
 main {
@@ -1745,6 +1745,9 @@ form button:hover::after {
 }
 .hero-grid .grid-subtitle .btn {
   margin: 0.5rem 0 0;
+}
+.hero-grid .grid-subtitle .btn .icon {
+  width: 1rem;
 }
 
 .prices {

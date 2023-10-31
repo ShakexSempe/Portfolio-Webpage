@@ -352,6 +352,10 @@
         grid-area: grid-subtitle;
         .btn {
             margin: .5rem 0 0;
+
+            .icon {
+                width: 1rem;
+            }
         }
     }
 
