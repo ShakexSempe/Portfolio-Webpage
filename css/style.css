@@ -1743,11 +1743,14 @@ form button:hover::after {
 .hero-grid .grid-subtitle {
   grid-area: grid-subtitle;
 }
+.hero-grid .grid-subtitle p {
+  line-height: 1.6;
+}
 .hero-grid .grid-subtitle .btn {
-  margin: 0.5rem 0 0;
+  margin: 1rem 0 0;
 }
 .hero-grid .grid-subtitle .btn .icon {
-  width: 1rem;
+  width: 0.95rem;
 }
 
 .prices {
