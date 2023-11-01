@@ -356,6 +356,8 @@
         }
         .btn {
             margin: 1rem 0 0;
+            width: 10.5rem;
+            width: clamp(10.5rem, 25vw, 12rem);
 
             .icon {
                 width: .95rem;
