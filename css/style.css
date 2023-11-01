@@ -26,6 +26,7 @@ body p {
 body .icon {
   width: 1.125rem;
   height: auto;
+  transition: 0.25s;
 }
 
 main {
@@ -88,7 +89,7 @@ section .section-title.active-item span {
 .section-pad {
   height: 90vh;
   width: 100%;
-  background-color: #fff;
+  background-color: #f4f4f4;
   padding: 10vh 20vw 5vh;
   display: grid;
   place-items: center;
@@ -377,6 +378,7 @@ section .section-title.active-item span {
 }
 .btn.btn-light {
   color: #29323d;
+  background: #f4f4f4;
 }
 .btn.btn-light::before {
   background: linear-gradient(0deg, #ddd, #f4f4f4);
@@ -703,7 +705,7 @@ form button:hover::after {
   flex-direction: column-reverse;
   gap: 5vh;
   padding: 10vh 5vw;
-  background-color: #fff;
+  background-color: #f4f4f4;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -2452,7 +2454,7 @@ form button:hover::after {
 .work {
   min-height: 100vh;
   padding: 10vh 5vw 10vh;
-  background: #fff;
+  background: #f4f4f4;
   background: #fafafa;
 }
 @media (min-width: 768px) {

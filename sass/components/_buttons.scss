@@ -121,6 +121,7 @@
     }
     &.btn-light {
         color: abstracts.$overlay-blue-dark;
+        background: abstracts.$background-light;
         &::before {
             background: abstracts.$button-light;
             box-shadow: none;
