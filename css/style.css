@@ -1591,7 +1591,7 @@ form button:hover::after {
     width: 50%;
     opacity: 1;
   }
-  #nav .nav-list ul li i {
+  #nav .nav-list ul li i, #nav .nav-list ul li .icon {
     display: none;
   }
   #nav .nav-list ul li:hover a {
