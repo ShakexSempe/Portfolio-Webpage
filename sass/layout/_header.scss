@@ -123,6 +123,9 @@
                         align-items: center;
                         // border: 2px solid blue;
                         width: 100%;
+                        border-radius: .25rem;
+                        padding: 0.25rem 0;
+                        background: linear-gradient(90deg, abstracts.$overlay-blue-darkest 10%, transparent 15%);
 
                         // LINKS = SAME FONTS AS SECTION TITLES
                         a {
@@ -165,8 +168,16 @@
                             color: abstracts.$text-light;
                             background: abstracts.$overlay-blue-darkest;
                             margin-right: .5em;
-                            ;
                             border-radius: .25rem;
+                        }
+
+                        .icon {
+                            // background: abstracts.$overlay-blue-darkest;
+                            // margin-right: .5em;
+                            border-radius: .25rem;
+                            margin: 0 1rem 0 0.5rem;
+                            position: relative;
+                            opacity: .7;
                         }
 
                         // LIST ITEM HOVER 
