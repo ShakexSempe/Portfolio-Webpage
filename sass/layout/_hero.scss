@@ -86,7 +86,7 @@
     text-transform: capitalize;
     // border: 3px solid yellow;
     background: abstracts.$overlay-blue-black;
-    background: linear-gradient(0deg, #000 65%, abstracts.$overlay-blue-darkest);
+    background: linear-gradient(0deg, #000 60%, abstracts.$overlay-blue-darkest);
     @include abstracts.sm {
         background: #000;
     }
