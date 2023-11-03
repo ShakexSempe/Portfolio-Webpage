@@ -1420,6 +1420,7 @@ form button:hover::after {
     color: #f4f4f4;
     background: #15191e;
     margin-right: 0.5em;
+    opacity: 0.5;
     border-radius: 0.25rem;
   }
   #nav .nav-list .links-container ul li .icon {
@@ -1439,7 +1440,7 @@ form button:hover::after {
   #nav .nav-list .links-container ul li:hover a i {
     color: #b3c0cc;
   }
-  #nav .nav-list .links-container ul li:has(a.active) .icon {
+  #nav .nav-list .links-container ul li:has(a.active) .icon, #nav .nav-list .links-container ul li:has(a.active) i {
     opacity: 1;
   }
   #nav .nav-list .links-container .contact-links {

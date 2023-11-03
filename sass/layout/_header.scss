@@ -167,6 +167,7 @@
                             color: abstracts.$text-light;
                             background: abstracts.$overlay-blue-darkest;
                             margin-right: .5em;
+                            opacity: .5;
                             border-radius: .25rem;
                         }
 
@@ -201,7 +202,7 @@
 
                     // OPACITY OF .ICON WHEN LI HAS ACTIVE LINKS
                     li:has(a.active) {
-                        .icon {
+                        .icon, i {
                             opacity: 1;
                         }
                     }
