@@ -232,6 +232,9 @@ section .section-title.active-item span {
   color: #b3c0cc;
   transition: 0.125s;
 }
+.bottom-nav .link-item a .icon {
+  opacity: 0.7;
+}
 .bottom-nav .link-item a:active {
   transition: 0.25s;
 }
@@ -242,6 +245,9 @@ section .section-title.active-item span {
 }
 .bottom-nav .link-item a:hover i {
   color: #f4f4f4;
+}
+.bottom-nav .link-item a:hover .icon {
+  opacity: 1;
 }
 .bottom-nav .link-item a:hover::after {
   animation: click 0.25s;

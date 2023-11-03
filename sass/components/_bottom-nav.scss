@@ -69,7 +69,7 @@
             }
 
             .icon {
-                // opacity: 0.9;
+                opacity: 0.7;
             }
 
 
@@ -89,6 +89,10 @@
             &:hover {
                 i {
                     color: abstracts.$text-light;
+                }
+
+                .icon {
+                    opacity: 1;
                 }
 
                 &::after {
