@@ -1341,7 +1341,7 @@ form button:hover::after {
 }
 #nav .nav-list ul li a {
   text-decoration: none;
-  color: #f4f4f4;
+  color: #e6e6e6;
   text-transform: capitalize;
   display: block;
   font-weight: 400;
@@ -1355,7 +1355,7 @@ form button:hover::after {
     width: 100vw;
     height: 100vh;
     background-color: #15191e;
-    color: #f4f4f4;
+    color: #e6e6e6;
     transition: 0.5s ease;
     z-index: 5;
   }
@@ -1393,7 +1393,6 @@ form button:hover::after {
     width: 50%;
     display: block;
     font-size: 1rem;
-    font-weight: 400;
     font-family: "Kanit", sans-serif;
     text-transform: capitalize;
     transition: 0.5s;
@@ -1427,7 +1426,7 @@ form button:hover::after {
     border-radius: 0.25rem;
     margin: 0 1rem 0 0.5rem;
     position: relative;
-    opacity: 0.7;
+    opacity: 0.5;
   }
   #nav .nav-list .links-container ul li:hover a {
     color: #b3c0cc;
@@ -1439,6 +1438,9 @@ form button:hover::after {
   }
   #nav .nav-list .links-container ul li:hover a i {
     color: #b3c0cc;
+  }
+  #nav .nav-list .links-container ul li:has(a.active) .icon {
+    opacity: 1;
   }
   #nav .nav-list .links-container .contact-links {
     background: #29323d;

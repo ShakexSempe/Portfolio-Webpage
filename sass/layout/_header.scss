@@ -73,7 +73,7 @@
 
                 a {
                     text-decoration: none;
-                    color: abstracts.$text-light;
+                    color: abstracts.$nav-links;
                     text-transform: capitalize;
                     display: block;
                     font-weight: 400;
@@ -93,7 +93,7 @@
                 width: 100vw;
                 height: 100vh;
                 background-color: abstracts.$overlay-blue-darkest;
-                color: abstracts.$text-light;
+                color: abstracts.$nav-links;
                 transition: .5s ease;
                 z-index: 5;
 
@@ -136,7 +136,6 @@
                             width: 50%;
                             display: block;
                             font-size: 1rem;
-                            font-weight: 400;
                             font-family: abstracts.$font-title;
                             text-transform: capitalize;
                             transition: .5s;
@@ -177,9 +176,11 @@
                             border-radius: .25rem;
                             margin: 0 1rem 0 0.5rem;
                             position: relative;
-                            opacity: .7;
+                            opacity: .5;
                         }
 
+
+                        
                         // LIST ITEM HOVER 
                         &:hover {
                             a {
@@ -197,6 +198,14 @@
                             }
                         }
                     }
+
+                    // OPACITY OF .ICON WHEN LI HAS ACTIVE LINKS
+                    li:has(a.active) {
+                        .icon {
+                            opacity: 1;
+                        }
+                    }
+
                 }
 
                 // CONTACT LINKS
