@@ -2240,7 +2240,7 @@ form button:hover::after {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
 }
-.skill-section .skill-section-title img {
+.skill-section .skill-section-title .section-title-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -2250,14 +2250,14 @@ form button:hover::after {
   object-fit: cover;
 }
 @media (min-width: 820px) {
-  .skill-section .skill-section-title img {
+  .skill-section .skill-section-title .section-title-image {
     display: none;
   }
 }
 .skill-section .skill-section-title.section-title-1 {
   height: 70vh;
 }
-.skill-section .skill-section-title.section-title-1 img {
+.skill-section .skill-section-title.section-title-1 .section-title-image {
   mix-blend-mode: overlay;
   opacity: 0.4;
 }

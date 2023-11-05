@@ -211,7 +211,7 @@
 
         }
 
-        img {
+        .section-title-image {
             // border: 2px solid red;
             position: absolute;
             top: 0;
@@ -229,7 +229,7 @@
         &.section-title-1 {
             height: 70vh;
 
-            img {
+            .section-title-image {
                 // border: 3px solid yellow;
                 mix-blend-mode: overlay;
                 opacity: .4;
