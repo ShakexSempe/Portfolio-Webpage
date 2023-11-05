@@ -2280,7 +2280,7 @@ form button:hover::after {
     height: 95vh;
   }
 }
-.skill-section .skill-section-title.section-title-2 img {
+.skill-section .skill-section-title.section-title-2 .section-title-image {
   object-position: center top;
   object-position: center bottom;
   object-position: 50% 5%;
@@ -2288,7 +2288,7 @@ form button:hover::after {
   mix-blend-mode: overlay;
 }
 @media (min-width: 576px) {
-  .skill-section .skill-section-title.section-title-2 img {
+  .skill-section .skill-section-title.section-title-2 .section-title-image {
     object-position: 50% 45%;
   }
 }
@@ -2310,7 +2310,7 @@ form button:hover::after {
   background: #fafafa;
   height: 80vh;
 }
-.skill-section .skill-section-title.section-title-3 img {
+.skill-section .skill-section-title.section-title-3 .section-title-image {
   object-fit: cover;
   object-position: 95% 5%;
   mix-blend-mode: overlay;
@@ -2318,7 +2318,7 @@ form button:hover::after {
   opacity: 0.5;
 }
 @media (min-width: 576px) {
-  .skill-section .skill-section-title.section-title-3 img {
+  .skill-section .skill-section-title.section-title-3 .section-title-image {
     object-position: 85% 25%;
     opacity: 0.8;
   }
@@ -2341,7 +2341,7 @@ form button:hover::after {
   background: #fff000;
   background: linear-gradient(140deg, #fff 20%, #fafafa);
 }
-.skill-section .skill-section-title.section-title-4 img {
+.skill-section .skill-section-title.section-title-4 .section-title-image {
   object-position: center;
   object-position: 60% 95%;
   mix-blend-mode: overlay;

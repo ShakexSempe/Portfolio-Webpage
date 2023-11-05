@@ -255,7 +255,7 @@
                 height: 95vh;
             }
 
-            img {
+            .section-title-image {
                 // border: 3px solid yellow;
                 object-position: center top;
                 object-position: center bottom;
@@ -289,7 +289,7 @@
             background: #fafafa;
             height: 80vh;
 
-            img {
+            .section-title-image {
                 object-fit: cover;
                 object-position: 95% 5%;
                 mix-blend-mode: overlay;
@@ -328,7 +328,7 @@
             background: linear-gradient(140deg, #fff 20%, #fafafa);
 
             // border: 2px solid red;
-            img {
+            .section-title-image {
                 // border: 2px solid blue;
                 object-position: center;
                 object-position: 60% 95%;
