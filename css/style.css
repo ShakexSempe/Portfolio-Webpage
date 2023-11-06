@@ -181,8 +181,8 @@ section .section-title.active-item span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.125rem 5vw;
-  height: 7vh;
+  gap: 0.5rem;
+  padding: 0 5vw;
   transform: translateY(15vh);
   transition: 1s;
 }
@@ -193,21 +193,22 @@ section .section-title.active-item span {
   }
 }
 .bottom-nav .link-item {
+  position: relative;
+  display: grid;
   width: 100%;
   height: 100%;
-  display: grid;
-  border-radius: 1rem;
   opacity: 0;
-  transition: 0.25s;
-  position: relative;
+  border-radius: 1rem;
   transform: translateY(1rem);
+  transition: 0.25s;
 }
 .bottom-nav .link-item a {
   color: #f4f4f4;
+  padding: 1rem 0;
   display: grid;
   place-content: center;
   place-items: center;
-  border-radius: 1rem;
+  border-radius: 2rem;
   cursor: default;
   position: relative;
   transition: 0.25s;
@@ -220,7 +221,7 @@ section .section-title.active-item span {
   width: 100%;
   height: 100%;
   background: #29323d;
-  border-radius: 1rem;
+  border-radius: inherit;
   z-index: -1;
   transition: 0.125s;
   transform: scaleX(0.5);
