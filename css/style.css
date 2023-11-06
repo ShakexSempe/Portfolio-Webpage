@@ -303,9 +303,8 @@ section .section-title.active-item span {
 .buttons-container {
   display: flex;
   justify-content: space-between;
-  padding: 2.5vh 5vw;
   gap: 1rem;
-  margin: 1.5rem 0 0;
+  margin: 1.5rem auto 0;
 }
 @media (min-width: 576px) {
   .buttons-container {
