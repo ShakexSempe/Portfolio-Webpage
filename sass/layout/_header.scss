@@ -165,21 +165,19 @@
                         i {
                             width: 2.5rem;
                             text-align: center;
-                            padding: .5rem;
+                            padding: 0.5rem;
                             color: abstracts.$text-light;
                             background: abstracts.$overlay-blue-darkest;
-                            margin-right: .5em;
-                            opacity: .5;
-                            border-radius: .25rem;
+                            margin-right: 0.5em;
+                            opacity: 0.7;
+                            border-radius: 0.25rem;
                         }
 
                         .icon {
-                            // background: abstracts.$overlay-blue-darkest;
-                            // margin-right: .5em;
                             border-radius: 0.25rem;
                             margin: 0 1rem 0 0.5rem;
                             position: relative;
-                            opacity: 0.5;
+                            opacity: 0.7;
                         }
 
 
@@ -235,7 +233,7 @@
 
                         span {
                             height: 1rem;
-                            border: 1px solid abstracts.$brand;
+                            border-right: 1px solid abstracts.$brand;
                         }
                         
                         i {
