@@ -776,10 +776,18 @@ form button:hover::after {
   font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .about .col-right .article-container article .article-body .body-item p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  font-size: clamp(.98rem, 1.5vw, 1.125rem);
+  line-height: 1.5;
 }
 .about .col-right .article-container article .article-body .body-item a {
   color: #475462;
+  font-size: 0.95rem;
+  font-size: clamp(.98rem, 1.5vw, 1.125rem);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .about .col-right .article-container article .article-body .body-item a i {
   font-size: 1rem;
