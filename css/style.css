@@ -934,12 +934,15 @@ form button:hover::after {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
 }
-.contact .contact-items .contact-item .title i {
+.contact .contact-items .contact-item .title i, .contact .contact-items .contact-item .title img {
   transform: translateY(-1rem) scale(1.1);
   font-size: 2rem;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1));
   margin-bottom: 0.5rem;
   transition: 0.25s ease-in-out;
+}
+.contact .contact-items .contact-item .title .icon {
+  width: 2rem;
 }
 .contact .contact-items .contact-item .title::after {
   content: attr(data-info);
@@ -956,14 +959,14 @@ form button:hover::after {
 .contact .contact-items .contact-item .contact-info p {
   margin: 0.5rem 0;
 }
-.contact .contact-items .contact-item .contact-info .btn i {
+.contact .contact-items .contact-item .contact-info .btn i, .contact .contact-items .contact-item .contact-info .btn .icon {
   opacity: 0.5;
   transition: 0.25s;
 }
 .contact .contact-items .contact-item:hover {
   transform: scale(0.99);
 }
-.contact .contact-items .contact-item:hover .title i {
+.contact .contact-items .contact-item:hover .title i, .contact .contact-items .contact-item:hover .title .icon {
   transform: translateY(0rem) scale(1);
   filter: drop-shadow(0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.35));
 }
@@ -971,7 +974,7 @@ form button:hover::after {
   letter-spacing: normal;
   opacity: 1;
 }
-.contact .contact-items .contact-item:hover .contact-info .btn i {
+.contact .contact-items .contact-item:hover .contact-info .btn i, .contact .contact-items .contact-item:hover .contact-info .btn .icon {
   opacity: 1;
 }
 
