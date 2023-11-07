@@ -75,7 +75,8 @@ displayProjects = (projectsItems) => {
                     ${project.desc}
                 </p>
                 <a class="btn btn-primary" href=${project.link} title="view project" target="_blank">
-                view project <i class="fas fa-link"></i>
+                view project 
+                <img src="icons/outline/icons8-right-button-48-light.png" height="48" width="48" alt="right button icon" class="icon">
                 </a>
             </div>
         </div>

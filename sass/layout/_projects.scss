@@ -129,22 +129,23 @@
                         // border: 2px solid red;
                         // PROJECT LINK
                         a {
-                            // width: 15rem;
-                            font-size: .85rem;
-                            padding: .5rem;
+                            font-size: 0.85rem;
+                            padding: 0.75rem;
                             margin: 1rem 0;
-                            border-radius: .5rem;
+                            border-radius: 0.5rem;
                             font-weight: 500;
                             text-transform: capitalize;
                             color: abstracts.$text-light;
                             position: relative;
                             isolation: isolate;
                             i {
-                                font-size: .85rem;
-                                transition: .25s;
-                                opacity: .6;
+                                font-size: 0.85rem;
+                                transition: 0.25s;
+                                opacity: 0.6;
                             }
-                            
+                            .icon {
+                                opacity: 0.6;
+                            }
                         }
 
                     }
@@ -244,7 +245,7 @@
                         .project-tile {
                             .project-info {
                                 a {
-                                    i {
+                                    i, .icon {
                                         opacity: 1;
                                         transform: translate(0) scale(1);
                                     }
