@@ -1248,6 +1248,7 @@ form button:hover::after {
 }
 #footer .footer .footer-bottom img {
   width: 12rem;
+  height: 100%;
   border-radius: 0.25rem;
 }
 @media (min-width: 820px) {
@@ -1255,6 +1256,9 @@ form button:hover::after {
     width: 15rem;
     padding-top: 0;
   }
+}
+#footer .footer .footer-bottom .icon {
+  width: 1rem;
 }
 #footer .footer .footer-bottom .footer-item {
   flex-grow: 1;
@@ -1276,9 +1280,11 @@ form button:hover::after {
 }
 #footer .footer .footer-bottom .footer-item .footer-list li {
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li i {
-  width: 1.5rem;
   color: #b3c0cc;
   transition: 0.25s;
 }
@@ -1286,12 +1292,19 @@ form button:hover::after {
   color: #f4f4f4;
   transition: 0.25s;
 }
+#footer .footer .footer-bottom .footer-item .footer-list li .icon {
+  opacity: 0.7;
+}
 #footer .footer .footer-bottom .footer-item .footer-list li:hover a {
   color: #b3c0cc;
 }
 #footer .footer .footer-bottom .footer-item .footer-list li:hover i {
   color: #f4f4f4;
   transform: translateX(0.25rem);
+}
+#footer .footer .footer-bottom .footer-item .footer-list li:hover .icon {
+  transform: translateX(0.25rem);
+  opacity: 1;
 }
 #footer .footer .footer-bottom .footer-item .footer-list.browse-list {
   text-transform: capitalize;

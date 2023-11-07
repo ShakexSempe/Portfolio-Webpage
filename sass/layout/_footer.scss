@@ -313,6 +313,7 @@
                 }
             }
         }
+        
         .footer-bottom {
             scroll-margin-top: 5vh;
             padding: 5vh 5vw;
@@ -329,11 +330,16 @@
             }
             img {
                 width: 12rem;
+                height: 100%;
                 border-radius: abstracts.$border-radius-sm;
                 @include abstracts.lg {
                     width: 15rem;
                     padding-top: 0;
                 }
+            }
+
+            .icon {
+                width: 1rem;
             }
             
             .footer-item {
@@ -355,14 +361,22 @@
                     list-style: none;
                     li {
                         margin-bottom: .5rem;
+
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
                         i {
-                            width: 1.5rem;
+                            // width: 1.5rem;
                             color: abstracts.$brand;
                             transition: .25s;
                         }
                         a {
                             color: abstracts.$text-light;
                             transition: .25s;
+                        }
+
+                        .icon {
+                            opacity: 0.7;
                         }
                         
                         &:hover {
@@ -372,6 +386,11 @@
                             i {
                                 color: abstracts.$text-light;
                                 transform: translateX(.25rem);
+                            }
+
+                            .icon {
+                                transform: translateX(.25rem);
+                                opacity: 1;
                             }
                         }
                     }
