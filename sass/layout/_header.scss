@@ -98,7 +98,7 @@
                 z-index: 5;
 
                 ul {
-                    background: abstracts.$overlay-blue-dark;
+                    background: abstracts.$overlay-blue-darker;
 
                     margin: 2rem 5vw;
                     padding: 1rem .5rem;
@@ -107,7 +107,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: start;
-                    gap: .5rem;
+                    gap: 1rem;
 
                     border-radius: abstracts.$border-radius-sm;
                     transition: 0.5s ease left;
@@ -121,11 +121,10 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        // border: 2px solid blue;
+                        border-bottom: 1px solid transparent;
                         width: 100%;
-                        border-radius: .25rem;
-                        padding: 0.25rem 0;
-                        background: linear-gradient(90deg, abstracts.$overlay-blue-darkest 10%, transparent 15%);
+                        padding-bottom: 0.5rem;
+                        // background: linear-gradient(90deg, abstracts.$overlay-blue-darkest 10%, transparent 15%);
 
                         // LINKS = SAME FONTS AS SECTION TITLES
                         a {
@@ -198,13 +197,22 @@
                                 }
                             }
                         }
+
+                        &:has(a.active){
+                            // opacity: .1;
+                            border-bottom-color: #fff4;
+                            a {
+                                
+                            }
+                        .icon, i {
+                            opacity: 1;
+                        }
+                        }
                     }
 
                     // OPACITY OF .ICON WHEN LI HAS ACTIVE LINKS
                     li:has(a.active) {
-                        .icon, i {
-                            opacity: 1;
-                        }
+                        
                     }
 
                 }

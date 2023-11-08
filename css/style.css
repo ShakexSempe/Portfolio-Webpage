@@ -1388,14 +1388,14 @@ form button:hover::after {
     z-index: 5;
   }
   #nav .nav-list .links-container ul {
-    background: #29323d;
+    background: #1f252d;
     margin: 2rem 5vw;
     padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 0.5rem;
+    gap: 1rem;
     border-radius: 0.25rem;
     transition: 0.5s ease left;
     position: relative;
@@ -1408,10 +1408,9 @@ form button:hover::after {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border-bottom: 1px solid transparent;
     width: 100%;
-    border-radius: 0.25rem;
-    padding: 0.25rem 0;
-    background: linear-gradient(90deg, #15191e 10%, transparent 15%);
+    padding-bottom: 0.5rem;
   }
   #nav .nav-list .links-container ul li a {
     transform: translateX(1.5rem);
@@ -1469,6 +1468,9 @@ form button:hover::after {
   }
   #nav .nav-list .links-container ul li:hover a i {
     color: #b3c0cc;
+  }
+  #nav .nav-list .links-container ul li:has(a.active) {
+    border-bottom-color: #fff4;
   }
   #nav .nav-list .links-container ul li:has(a.active) .icon, #nav .nav-list .links-container ul li:has(a.active) i {
     opacity: 1;
