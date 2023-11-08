@@ -116,7 +116,6 @@
                     overflow: hidden;
 
                     li {
-                        opacity: 0;
                         transition: 0.5s;
                         display: flex;
                         justify-content: flex-start;
@@ -125,11 +124,13 @@
                         border-bottom: 1px solid transparent;
                         width: 100%;
                         // background: linear-gradient(90deg, abstracts.$overlay-blue-darkest 10%, transparent 15%);
+                        transform: translateX(1.5rem);
+                        opacity: 0;
 
                         // LINKS = SAME FONTS AS SECTION TITLES
                         a {
-                            transform: translateX(1.5rem);
-                            opacity: 0;
+                            // transform: translateX(1.5rem);
+                            // opacity: 0;
                             // margin-right: auto;
                             // padding: 0.5rem;
                             padding-bottom: 0.25rem;
@@ -279,55 +280,38 @@
                     ul {
                         // LI TRANSITIONS INTO VIEW - TRANSLATE-X(0)
                         li {
-                            transition: .5s;
+                            // transition: 0.5s;
                             opacity: 1;
                             // LINKS OPACITY = 1 AND TRANSLATE = 0  
-                            a {
-                                transform: translateX(0);
-                                opacity: 1;
-                            }
+                            transform: translateX(0);
                             
                             // LI ITEMS HAVE DELAYED TRANSITIONS
                             &:nth-child(1) {
-                                a {
-                                    transition-delay: .3s;
-                                }
+                                transition-delay: .3s;
                             }
 
                             &:nth-child(2) {
-                                a {
-                                    transition-delay: .35s;
-                                }
+                                transition-delay: .35s;
                             }
 
                             &:nth-child(3) {
-                                a {
-                                    transition-delay: .4s;
-                                }
+                                transition-delay: .4s;
                             }
 
                             &:nth-child(4) {
-                                a {
-                                    transition-delay: .45s;
-                                }
+                                transition-delay: .45s;
                             }
 
                             &:nth-child(5) {
-                                a {
-                                    transition-delay: .5s;
-                                }
+                                transition-delay: .5s;
                             }
 
                             &:nth-child(6) {
-                                a {
-                                    transition-delay: .55s;
-                                }
+                                transition-delay: .55s;
                             }
 
                             &:nth-child(7) {
-                                a {
-                                    transition-delay: .6s;
-                                }
+                                transition-delay: .6s;
                             }
                         }
                     }
@@ -518,7 +502,7 @@
         .nav-list {
             ul {
                 li {
-                    opacity: 1;
+                    // opacity: 1;
                 }
             }
 
