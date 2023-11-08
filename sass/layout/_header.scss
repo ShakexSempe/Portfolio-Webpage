@@ -117,22 +117,24 @@
 
                     li {
                         opacity: 0;
-                        transition: .5s;
+                        transition: 0.5s;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
+
                         border-bottom: 1px solid transparent;
                         width: 100%;
-                        padding-bottom: 0.5rem;
                         // background: linear-gradient(90deg, abstracts.$overlay-blue-darkest 10%, transparent 15%);
 
                         // LINKS = SAME FONTS AS SECTION TITLES
                         a {
                             transform: translateX(1.5rem);
                             opacity: 0;
-                            margin-right: auto;
-                            padding: 0;
-                            width: 50%;
+                            // margin-right: auto;
+                            // padding: 0.5rem;
+                            padding-bottom: 0.5rem;
+
+                            width: 70%;
                             display: block;
                             font-size: 1rem;
                             color: abstracts.$brand;
@@ -140,6 +142,11 @@
                             text-transform: capitalize;
                             transition: .5s;
                             cursor: default;
+                            display: flex;
+                            align-items: center;
+                            // border: 1px solid red;
+                        // background: linear-gradient(90deg, abstracts.$overlay-blue-darkest 10%, transparent 15%);
+                        // background: linear-gradient(90deg, #fff5 10%, red 15%);
 
                             // LINK HOVER EFFECT
                             &::after {
@@ -158,6 +165,10 @@
                             &.active {
                                 color: abstracts.$brand;
                                 color: abstracts.$text-light;
+                                border-bottom: 1px solid abstracts.$overlay-blue-light;
+                                .icon {
+                                    opacity: 1;
+                                }
                             }
                         }
 
@@ -176,7 +187,7 @@
                             border-radius: 0.25rem;
                             margin: 0 1rem 0 0.5rem;
                             position: relative;
-                            opacity: 0.7;
+                            opacity: 0.6;
                         }
 
 
@@ -184,7 +195,7 @@
                         // LIST ITEM HOVER 
                         &:hover {
                             a {
-                                color: abstracts.$brand;
+                                color: abstracts.$text-light;
                                 transition: .25s;
 
                                 &::after {
@@ -198,21 +209,6 @@
                             }
                         }
 
-                        &:has(a.active){
-                            // opacity: .1;
-                            border-bottom-color: #fff4;
-                            a {
-                                
-                            }
-                        .icon, i {
-                            opacity: 1;
-                        }
-                        }
-                    }
-
-                    // OPACITY OF .ICON WHEN LI HAS ACTIVE LINKS
-                    li:has(a.active) {
-                        
                     }
 
                 }
@@ -290,7 +286,7 @@
                                 transform: translateX(0);
                                 opacity: 1;
                             }
-
+                            
                             // LI ITEMS HAVE DELAYED TRANSITIONS
                             &:nth-child(1) {
                                 a {
@@ -333,7 +329,6 @@
                                     transition-delay: .6s;
                                 }
                             }
-
                         }
                     }
 

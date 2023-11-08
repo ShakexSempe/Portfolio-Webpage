@@ -1410,14 +1410,12 @@ form button:hover::after {
     align-items: center;
     border-bottom: 1px solid transparent;
     width: 100%;
-    padding-bottom: 0.5rem;
   }
   #nav .nav-list .links-container ul li a {
     transform: translateX(1.5rem);
     opacity: 0;
-    margin-right: auto;
-    padding: 0;
-    width: 50%;
+    padding-bottom: 0.5rem;
+    width: 70%;
     display: block;
     font-size: 1rem;
     color: #b3c0cc;
@@ -1425,6 +1423,8 @@ form button:hover::after {
     text-transform: capitalize;
     transition: 0.5s;
     cursor: default;
+    display: flex;
+    align-items: center;
   }
   #nav .nav-list .links-container ul li a::after {
     content: attr(data-after);
@@ -1441,6 +1441,10 @@ form button:hover::after {
   #nav .nav-list .links-container ul li a.active {
     color: #b3c0cc;
     color: #f4f4f4;
+    border-bottom: 1px solid #475462;
+  }
+  #nav .nav-list .links-container ul li a.active .icon {
+    opacity: 1;
   }
   #nav .nav-list .links-container ul li i {
     width: 2.5rem;
@@ -1456,10 +1460,10 @@ form button:hover::after {
     border-radius: 0.25rem;
     margin: 0 1rem 0 0.5rem;
     position: relative;
-    opacity: 0.7;
+    opacity: 0.6;
   }
   #nav .nav-list .links-container ul li:hover a {
-    color: #b3c0cc;
+    color: #f4f4f4;
     transition: 0.25s;
   }
   #nav .nav-list .links-container ul li:hover a::after {
@@ -1468,12 +1472,6 @@ form button:hover::after {
   }
   #nav .nav-list .links-container ul li:hover a i {
     color: #b3c0cc;
-  }
-  #nav .nav-list .links-container ul li:has(a.active) {
-    border-bottom-color: #fff4;
-  }
-  #nav .nav-list .links-container ul li:has(a.active) .icon, #nav .nav-list .links-container ul li:has(a.active) i {
-    opacity: 1;
   }
   #nav .nav-list .links-container .contact-links {
     background: #29323d;
