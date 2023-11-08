@@ -1395,7 +1395,7 @@ form button:hover::after {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 1rem;
+    gap: 0.5rem;
     border-radius: 0.25rem;
     transition: 0.5s ease left;
     position: relative;
@@ -1414,7 +1414,7 @@ form button:hover::after {
   #nav .nav-list .links-container ul li a {
     transform: translateX(1.5rem);
     opacity: 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
     width: 70%;
     display: block;
     font-size: 1rem;

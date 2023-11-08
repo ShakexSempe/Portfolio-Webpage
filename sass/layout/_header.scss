@@ -107,7 +107,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: start;
-                    gap: 1rem;
+                    gap: 0.5rem;
 
                     border-radius: abstracts.$border-radius-sm;
                     transition: 0.5s ease left;
@@ -132,7 +132,7 @@
                             opacity: 0;
                             // margin-right: auto;
                             // padding: 0.5rem;
-                            padding-bottom: 0.5rem;
+                            padding-bottom: 0.25rem;
 
                             width: 70%;
                             display: block;
