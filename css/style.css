@@ -21,7 +21,7 @@ body p {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 body .icon {
   width: 1.025rem;
@@ -779,7 +779,6 @@ form button:hover::after {
   margin: 0.5rem 0 1rem;
   font-size: 0.95rem;
   font-size: clamp(.98rem, 1.5vw, 1.125rem);
-  line-height: 1.5;
 }
 .about .col-right .article-container article .article-body .body-item a {
   color: #475462;
@@ -1797,9 +1796,6 @@ form button:hover::after {
 .hero-grid .grid-subtitle {
   grid-area: grid-subtitle;
 }
-.hero-grid .grid-subtitle p {
-  line-height: 1.6;
-}
 .hero-grid .grid-subtitle .btn {
   margin: 1rem 0 0;
   width: 10.5rem;
@@ -1807,6 +1803,7 @@ form button:hover::after {
 }
 .hero-grid .grid-subtitle .btn .icon {
   width: 0.95rem;
+  width: clamp(0.95rem, 2vw, 1rem);
 }
 
 .prices {
@@ -2114,6 +2111,7 @@ form button:hover::after {
   }
 }
 .skills-section .skills-content .skills-intro .skills-article p {
+  line-height: 1.8;
   font-size: clamp(.98rem, 1.5vw, 1.125rem);
 }
 .skills-section .skills-content .skills-intro .skills-article p span {
@@ -2253,8 +2251,8 @@ form button:hover::after {
 }
 .skill-section .skill-section-title .btn {
   margin-top: 1rem;
-  width: 10.5rem;
-  width: clamp(10.5rem, 10vw, 12rem);
+  width: 11rem;
+  width: clamp(11rem, 10vw, 12rem);
   font-weight: 600;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);

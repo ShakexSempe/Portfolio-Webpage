@@ -19,6 +19,7 @@
             background-size: 50%;
             background-attachment: fixed;
         }
+
         // SKILLS INTRO
         .skills-intro {
             // border: 2px solid red;
@@ -31,6 +32,7 @@
 
             .skills-article {
                 p {
+                    line-height: 1.8;
                     font-size: abstracts.$font-clamp-xsm;
 
                     span {
@@ -96,6 +98,7 @@
                 }
             }
         }
+
     }
 }
 
@@ -203,8 +206,8 @@
 
         .btn {
             margin-top: 1rem;
-            width: 10.5rem;
-            width: clamp(10.5rem, 10vw, 12rem);
+            width: 11rem;
+            width: clamp(11rem, 10vw, 12rem);
             font-weight: 600;
             font-size: 1rem;
             font-size: abstracts.$font-clamp-sm;
