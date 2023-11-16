@@ -81,7 +81,7 @@ displayProjects = (projectsItems) => {
             </div>
         </div>
         <div class="project-img">
-            <img src=${project.img} alt="img" loading="lazy"/>
+            <img src=${project.img} alt="img"/>
             
         </div>
         </div>`
