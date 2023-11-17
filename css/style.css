@@ -1793,7 +1793,6 @@ form button:hover::after {
 }
 
 .hero-grid {
-  outline: 3px solid green;
   height: 100%;
   width: 100%;
   padding: 15vh 5vw 5vh;
@@ -1821,11 +1820,15 @@ form button:hover::after {
   grid-area: grid-title;
 }
 .hero-grid .grid-title h2 {
-  font-size: 5vw;
   font-size: 2.5rem;
-  font-size: 1.5rem;
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   text-wrap: balance;
+  max-width: 500px;
+}
+@media (min-width: 820px) {
+  .hero-grid .grid-title {
+    place-self: center left;
+  }
 }
 .hero-grid .grid-image {
   grid-area: grid-image;

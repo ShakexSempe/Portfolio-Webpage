@@ -298,7 +298,7 @@
 
 
 .hero-grid {
-    outline: 3px solid green;
+    // outline: 3px solid green;
     height: 100%;
     width: 100%;
     padding: 15vh 5vw 5vh;
@@ -323,13 +323,18 @@
     }
     .grid-title {
         grid-area: grid-title;
-
+        // border: 1px solid yellow;
         h2 {
-            font-size: 5vw;
             font-size: 2.5rem;
-            font-size: 1.5rem;
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
             text-wrap: balance;
+            max-width: 500px;
+        }
+
+        @include abstracts.lg {
+            // position: relative;
+            // top: 10vh;
+            place-self: center left;
         }
     }
 
@@ -345,12 +350,14 @@
             // mix-blend-mode: darken;
             // opacity: .8;
             // max-width: 300px;
+            @include abstracts.lg {
+            }
         }
     }
 
     .grid-subtitle {
         grid-area: grid-subtitle;
-
+        // border: 1px solid red;
         .btn {
             margin: 1rem 0 0;
             width: 10.5rem;
