@@ -18,6 +18,8 @@
                 font-size: 2rem;
                 font-size: clamp(2rem, 4vw, 2.25rem);
         }
+
+        // FOOTER SOCIAL MEDIA LINKS
         .footer-top {
 
             // SOCIAL MEDIA LINKS
@@ -47,9 +49,36 @@
                     position: relative;
                     transition: .3s;
                     width: 100%;
+                    border-bottom: 1px solid #fff4;
+                    padding-bottom: 1rem;
+                    overflow: hidden;
+                    position: relative;
+                    @include abstracts.xlg {
+                        width: 85%;
+                        border: 1px solid #fff4;
+                        padding: 0.5rem;
+                        border-radius: abstracts.$border-radius-sm;
+                        &:hover {
+                            background: abstracts.$overlay-blue-darkest;
+                        }
+                    }
 
-                    // border: 1px solid red;
+                    .item-title {
+                        // border: 1px solid blue;
+
+                        .icon {
+                            position: absolute;
+                            opacity: 0.3;
+                            width: 4rem;
+                            right: 1rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+
                     .bg-i {
+                    // border: 1px solid red;
+
                         position: absolute;
                         right: 1rem;
                         top: 1rem;
@@ -71,8 +100,9 @@
                         }
                     }
 
-                    p {
+                    p, h3 {
                         font-size: 1.25rem;
+                        font-size: clamp(1.125rem, 2.5vw, 1.25rem);
                         margin-bottom: .5rem;
                         text-transform: capitalize;
                         color: abstracts.$text-light;
@@ -92,6 +122,7 @@
                         transition: .25s ease;
                         display: flex;
                         align-items: center;
+                        gap: 0.5rem;
                         @include abstracts.xsm {
                             cursor: default;
                         }
@@ -110,6 +141,10 @@
                             @media (min-width: 768px) {
                                 font-size: 1.5rem;
                             }
+                        }
+
+                        .icon {
+                            opacity: 0.3;
                         }
 
                         // LINK PSEUDO SHADOW AND BG
@@ -278,10 +313,20 @@
                             transition: .5s;
                         }
 
+                        .item-title {
+                            .title-icon {
+                                opacity: 0.8;
+                            }
+
+                        }
+
                         a {
                             i {
                                 opacity: 1;
                                 transform: scale(1.1);
+                            }
+                            .icon {
+                                opacity: 1;
                             }
                         }
                     }
@@ -289,7 +334,12 @@
                     &.io-item {
                         .bg-i {
                             transform: translateX(5vw);
+                            // opacity: 0;
+                        }
+                        .title-icon {
+                            transform: translateY(-50%) translateX(5vw);
                             opacity: 0;
+                            transition: 1s;
                         }
                     }
 
@@ -301,6 +351,11 @@
                             transition: 1s;
                         }
 
+                        .title-icon {
+                            transform: translateY(-50%);
+                            opacity: 0.4;
+                        }
+
                         &:hover {
                             .bg-i {
                                 opacity: .8;
@@ -308,12 +363,15 @@
                                 transition-timing-function: ease-in;
                                 transition: .5s;
                             }
+
+                            
                         }
                     }
                 }
             }
         }
         
+        // WEBSITE FOOTER
         .footer-bottom {
             scroll-margin-top: 5vh;
             padding: 5vh 5vw;
