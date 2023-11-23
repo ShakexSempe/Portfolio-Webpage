@@ -74,7 +74,6 @@
         }
 
         .item {
-            // border: 2px solid blue;
             overflow: hidden;
             border-radius: .25rem;
             background: #fff;
@@ -82,7 +81,7 @@
             position: relative;
             margin-bottom: 10vh;
             @include abstracts.sm {
-                padding: .5rem;
+                // padding: .5rem;
             }
             @include abstracts.md {
                 background: #ffff;
@@ -112,7 +111,7 @@
                     text-transform: capitalize;
                     font-weight: 700;
                     font-size: 1.05rem;
-                    font-size: clamp(1.05rem, 2vw, 2rem);
+                    font-size: clamp(1.025rem, 2vw, 1.25rem);
                 }
                 .item-meta-data {
                     // border: 2px solid yellow;
@@ -329,6 +328,7 @@
                     width: 100%;
                     height: 100%;
                     img {
+                        border: 1px  solid red;
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
