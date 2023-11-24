@@ -2863,7 +2863,6 @@ form button:hover::after {
   height: 100%;
 }
 .work .work-container .item .item-content .item-image img {
-  border: 1px solid red;
   width: 100%;
   height: 100%;
   object-fit: cover;
