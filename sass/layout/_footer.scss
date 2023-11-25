@@ -59,6 +59,7 @@
                         padding: 0.5rem;
                         border-radius: abstracts.$border-radius-sm;
                         &:hover {
+                            border-color: transparent;
                             background: abstracts.$overlay-blue-darkest;
                         }
                     }
@@ -87,17 +88,6 @@
                         opacity: .1;
                         transition: .25s;
 
-                        @include abstracts.md {
-                            right: 45vw;
-                        }
-
-                        @include abstracts.lg {
-                            right: 4vw;
-                        }
-
-                        @include abstracts.xlg {
-                            right: 10vw;
-                        }
                     }
 
                     p, h3 {
@@ -333,11 +323,11 @@
 
                     &.io-item {
                         .bg-i {
-                            transform: translateX(5vw);
-                            // opacity: 0;
+                            transform: translateY(5vh);
+                            opacity: 0;
                         }
                         .title-icon {
-                            transform: translateY(-50%) translateX(5vw);
+                            transform: translateY(5vh);
                             opacity: 0;
                             transition: 1s;
                         }
@@ -345,7 +335,7 @@
 
                     &.active-item {
                         .bg-i {
-                            transform: translateX(0);
+                            transform: translateY(0);
                             transition-timing-function: ease;
                             opacity: .2;
                             transition: 1s;

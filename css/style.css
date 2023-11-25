@@ -1038,6 +1038,7 @@ form button:hover::after {
     border-radius: 0.25rem;
   }
   #footer .footer .footer-top .socialMedia-links .socialMedia-item:hover {
+    border-color: transparent;
     background: #15191e;
   }
 }
@@ -1057,21 +1058,6 @@ form button:hover::after {
   color: #b3c0cc;
   opacity: 0.1;
   transition: 0.25s;
-}
-@media (min-width: 768px) {
-  #footer .footer .footer-top .socialMedia-links .socialMedia-item .bg-i {
-    right: 45vw;
-  }
-}
-@media (min-width: 820px) {
-  #footer .footer .footer-top .socialMedia-links .socialMedia-item .bg-i {
-    right: 4vw;
-  }
-}
-@media (min-width: 1024px) {
-  #footer .footer .footer-top .socialMedia-links .socialMedia-item .bg-i {
-    right: 10vw;
-  }
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item p, #footer .footer .footer-top .socialMedia-links .socialMedia-item h3 {
   font-size: 1.25rem;
@@ -1247,15 +1233,16 @@ form button:hover::after {
   opacity: 1;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item.io-item .bg-i {
-  transform: translateX(5vw);
+  transform: translateY(5vh);
+  opacity: 0;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item.io-item .title-icon {
-  transform: translateY(-50%) translateX(5vw);
+  transform: translateY(5vh);
   opacity: 0;
   transition: 1s;
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item.active-item .bg-i {
-  transform: translateX(0);
+  transform: translateY(0);
   transition-timing-function: ease;
   opacity: 0.2;
   transition: 1s;
