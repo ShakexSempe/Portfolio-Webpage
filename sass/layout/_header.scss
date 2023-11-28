@@ -50,9 +50,8 @@
         p {
             color: abstracts.$text-light;
             // font-family: abstracts.$font-title;
+            font-size: 0.95rem;
             font-size: abstracts.$font-clamp-xsm;
-            font-size: 0.75rem;
-            font-size: clamp(0.75rem, 2vw, 1rem);
             text-transform: capitalize;
             transition: .5s;
 

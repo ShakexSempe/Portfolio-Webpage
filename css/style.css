@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Content";
-  src: url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2-variations"), url("/fonts/Montserrat-Regular.woff2") format("woff");
+  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Montserrat-Regular.woff2") format("woff");
   font-style: normal;
   font-weight: 100 1000;
   font-display: swap;
@@ -1385,9 +1385,8 @@ form button:hover::after {
 }
 #nav .logo p {
   color: #f4f4f4;
+  font-size: 0.95rem;
   font-size: clamp(.975rem, 1.5vw, 1.125rem);
-  font-size: 0.75rem;
-  font-size: clamp(0.75rem, 2vw, 1rem);
   text-transform: capitalize;
   transition: 0.5s;
 }
