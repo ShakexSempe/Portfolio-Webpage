@@ -91,13 +91,13 @@
                     }
 
                     p, h3 {
+                        // font-family: abstracts.$font-title;
                         font-size: 1.25rem;
                         font-size: clamp(1.125rem, 2.5vw, 1.25rem);
                         margin-bottom: .5rem;
                         text-transform: capitalize;
                         color: abstracts.$text-light;
                         font-weight: 400;
-                        font-family: abstracts.$font-title;
                     }
 
                     a {

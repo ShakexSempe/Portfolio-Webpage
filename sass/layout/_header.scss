@@ -49,9 +49,10 @@
         }
         p {
             color: abstracts.$text-light;
-            font-family: abstracts.$font-title;
-            font-size: 1.125rem;
-            font-size: abstracts.$font-clamp-sm;
+            // font-family: abstracts.$font-title;
+            font-size: abstracts.$font-clamp-xsm;
+            font-size: 0.75rem;
+            font-size: clamp(0.75rem, 2vw, 1rem);
             text-transform: capitalize;
             transition: .5s;
 
@@ -77,7 +78,7 @@
                     text-transform: capitalize;
                     display: block;
                     font-weight: 400;
-                    font-family: abstracts.$font-content;
+                    // font-family: abstracts.$font-content;
                 }
 
 
@@ -139,7 +140,7 @@
                             display: block;
                             font-size: 1rem;
                             color: abstracts.$brand;
-                            font-family: abstracts.$font-title;
+                            // font-family: abstracts.$font-title;
                             text-transform: capitalize;
                             transition: .5s;
                             cursor: default;
