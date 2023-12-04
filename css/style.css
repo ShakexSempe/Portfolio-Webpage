@@ -2151,6 +2151,7 @@ form button:hover::after {
 }
 .skills-section .skills-content .skills-intro .skills-article p {
   line-height: 1.8;
+  text-wrap: balance;
   font-size: clamp(.975rem, 1.5vw, 1.05rem);
 }
 .skills-section .skills-content .skills-intro .skills-article p span {
@@ -2160,11 +2161,12 @@ form button:hover::after {
 @media (min-width: 820px) {
   .skills-section .skills-content .skills-intro .skills-article p {
     max-width: 350px;
+    line-height: 2;
   }
 }
 @media (min-width: 1024px) {
   .skills-section .skills-content .skills-intro .skills-article p {
-    max-width: 450px;
+    max-width: 50%;
   }
 }
 .skills-section .skills-content .skills-intro .skills-icons {

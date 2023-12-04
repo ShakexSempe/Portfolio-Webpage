@@ -33,17 +33,18 @@
             .skills-article {
                 p {
                     line-height: 1.8;
+                    text-wrap: balance;
                     font-size: abstracts.$font-clamp-xsm;
-
                     span {
                         font-weight: 600;
                         color: inherit;
                     }
                     @include abstracts.lg {
                         max-width: 350px;
+                        line-height: 2;
                     }
                     @include abstracts.xlg {
-                        max-width: 450px;
+                        max-width: 50%;
                     }
 
                 }
