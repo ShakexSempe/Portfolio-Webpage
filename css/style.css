@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Content";
   src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
-  font-weight: 100 1000;
+  font-weight: 0 1000;
   font-display: swap;
 }
 html {
@@ -733,7 +733,7 @@ form button:hover::after {
   margin-top: 0.5rem;
 }
 .about .col-right .article-container article .about-intro p {
-  font-size: clamp(.975rem, 1.5vw, 1.125rem);
+  font-size: clamp(.975rem, 1.5vw, 1.05rem);
 }
 .about .col-right .article-container article .about-intro p.intro {
   font-weight: 500;
@@ -783,12 +783,12 @@ form button:hover::after {
 .about .col-right .article-container article .article-body .body-item p {
   margin: 0.5rem 0 1rem;
   font-size: 0.95rem;
-  font-size: clamp(.975rem, 1.5vw, 1.125rem);
+  font-size: clamp(.975rem, 1.5vw, 1.05rem);
 }
 .about .col-right .article-container article .article-body .body-item a {
   color: #475462;
   font-size: 0.95rem;
-  font-size: clamp(.975rem, 1.5vw, 1.125rem);
+  font-size: clamp(.975rem, 1.5vw, 1.05rem);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1384,10 +1384,11 @@ form button:hover::after {
 }
 #nav .logo p {
   color: #f4f4f4;
+  font-weight: 500;
   font-size: 0.95rem;
-  font-size: clamp(.975rem, 1.5vw, 1.125rem);
+  font-size: clamp(.975rem, 1.5vw, 1.05rem);
   text-transform: capitalize;
-  transition: 0.5s;
+  transition: 500ms;
 }
 #nav .logo p span {
   color: #b3c0cc;
@@ -1621,21 +1622,18 @@ form button:hover::after {
     width: 0%;
     height: 2px;
     background-color: #b3c0cc;
-    transition: 0.25s ease;
-  }
-  #nav .nav-list ul li:hover::before {
-    width: 50%;
-    opacity: 1;
+    transition: 250ms ease;
   }
   #nav .nav-list ul li a {
     font-size: 0.95rem;
+    font-size: clamp(0.95rem, 1.125vw, 1rem);
     padding: 0.25rem;
     margin: 0 auto;
     display: block;
     letter-spacing: normal;
     float: left;
     color: #f4f4f4;
-    transition: 0.25s;
+    transition: 250ms;
   }
   #nav .nav-list ul li a::after {
     display: none;
@@ -1651,12 +1649,12 @@ form button:hover::after {
     display: none;
   }
   #nav .nav-list ul li:hover a {
-    transition: 0.3s ease;
+    transition: 250ms ease;
     color: #f4f4f4;
   }
-  #nav .nav-list ul li:hover i {
-    transition: 0.3s;
-    color: #ead2a1;
+  #nav .nav-list ul li:hover::before {
+    width: 50%;
+    opacity: 1;
   }
   #nav .nav-list ul li.active a {
     color: #ead2a1;
@@ -1750,7 +1748,7 @@ form button:hover::after {
 }
 .banner h1 {
   font-size: 1rem;
-  font-size: clamp(.975rem, 1.5vw, 1.125rem);
+  font-size: clamp(.975rem, 1.5vw, 1.05rem);
   font-weight: 300;
   margin-bottom: 0.5rem;
 }
@@ -1807,11 +1805,13 @@ form button:hover::after {
 .hero-grid .grid-title {
   grid-area: grid-title;
 }
+.hero-grid .grid-title h1 {
+  font-weight: 300;
+}
 .hero-grid .grid-title h2 {
   font-size: 2.5rem;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   text-wrap: balance;
-  max-width: 500px;
 }
 @media (min-width: 820px) {
   .hero-grid .grid-title {
@@ -2144,7 +2144,7 @@ form button:hover::after {
 }
 .skills-section .skills-content .skills-intro .skills-article p {
   line-height: 1.8;
-  font-size: clamp(.975rem, 1.5vw, 1.125rem);
+  font-size: clamp(.975rem, 1.5vw, 1.05rem);
 }
 .skills-section .skills-content .skills-intro .skills-article p span {
   font-weight: 600;
