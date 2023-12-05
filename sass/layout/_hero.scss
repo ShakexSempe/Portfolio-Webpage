@@ -87,8 +87,8 @@
     // border: 3px solid yellow;
     background: abstracts.$overlay-blue-black;
     background: linear-gradient(0deg, #000 60%, abstracts.$overlay-blue-darkest);
+    background: #000;
     @include abstracts.sm {
-        background: #000;
     }
     // background: #000;
     

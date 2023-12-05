@@ -1772,13 +1772,8 @@ form button:hover::after {
   text-transform: capitalize;
   background: #0a0d0f;
   background: linear-gradient(0deg, #000 60%, #15191e);
+  background: #000;
 }
-@media (min-width: 576px) {
-  .hero {
-    background: #000;
-  }
-}
-
 .hero-grid {
   height: 100%;
   width: 100%;
