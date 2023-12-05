@@ -24,11 +24,11 @@
   <!-- META AUTHOR -->
   <meta name="author" content="Boitumelo Shakex Sempe">
   <!-- PRELOAD ITEMS -->
-  <link rel="preload" href="fonts/Montserrat-VariableFont_wght.woff2" as="woff2">
+  <link rel="preload" href="fonts/Montserrat-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
   <link rel="preload" href="css/style.css" as="style" />
   <link rel="preload" href="js/app.js" as="script" />
-  <link rel="preload" href="hero/hero-mobile.webp" as="image/webp" media="(max-width: 500px)" fetchpriority="high">
-  <link rel="preload" href="hero/hero-desktop.webp" as="image/webp" media="(min-width: 500.1px)" fetchpriority="high">
+  <link rel="preload" href="hero/hero-mobile.webp" as="image" media="(max-width: 500px)" fetchpriority="high">
+  <link rel="preload" href="hero/hero-desktop.webp" as="image" media="(min-width: 500.1px)" fetchpriority="high">
   <link rel="preload" href="img/hero_450.jpg" as="image" media="(max-width: 450px)">
   <link rel="preload" href="img/hero_1900.jpg" as="image" media="(min-width: 450.1px)">
 
@@ -48,192 +48,17 @@
   <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+
+  <!-- STYLESHEET -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <!-- JAVASCRIPT -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" defer referrerpolicy="no-referrer"></script>
   <script src="js/projects.js" defer></script>
   <script src="js/app.js" defer></script>
 
-  
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Montserrat:wght@200;500;700&display=swap"
-    rel="stylesheet"> -->
-
-  <!-- STYLES -->
-  <style>
-    html {
-      font-family: 'Content', sans-serif;
-    }
-
-    /* LOADER SCREEN */
-    .loader_bg {
-      position: fixed;
-      inset: 0;
-      background: hsl(213, 18%, 10%);
-      text-align: center;
-      color: #f4f4f4;
-      display: grid;
-      place-items: center;
-      isolation: isolate;
-      z-index: 100;
-    }
-
-    .box {
-      width: 100%;
-      height: 4rem;
-      margin-inline: auto;
-      margin-bottom: 1rem;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-
-    }
-
-    .inbox {
-      border: .15rem solid transparent;
-      width: 25%;
-      height: 100%;
-      margin-inline: auto;
-      position: relative;
-    }
-
-    .inbox.inbox-1 {
-      border-width: .25rem;
-      border-top-color: hsl(209, 20%, 75%);
-      border-left-color: hsl(209, 20%, 75%);
-      border-bottom-color: hsl(209, 20%, 75%);
-      border-top-left-radius: .5rem;
-      border-bottom-left-radius: .5rem;
-      animation: box-1 1.25s ease forwards 1s;
-      opacity: 0;
-    }
-
-    .inbox.inbox-2 {
-      border-color: transparent;
-      border-top-color: #f4f4f4;
-      border-right-color: #f4f4f4;
-      border-bottom-color: #f4f4f4;
-      border-top-right-radius: .5rem;
-      border-bottom-right-radius: .5rem;
-      transform: translateX(.25rem) translateY(-.25rem);
-      animation: box-2 1.25s ease forwards 1.05s;
-      opacity: 0;
-    }
-
-    .loader_bg .title {
-      position: relative;
-    }
-
-    .loader_bg .title::after {
-      content: '';
-      position: absolute;
-      bottom: -1rem;
-      left: 0;
-      width: 100%;
-      height: .125rem;
-      background: linear-gradient(90deg, transparent, hsl(209, 20%, 75%), transparent);
-      animation: underline 2.5s ease forwards 1.25s;
-      opacity: 0;
-    }
-
-    .loader_bg .title h1 {
-      margin-bottom: .5rem;
-      color: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      /* gap: 1rem; */
-      animation: title-h1 1.25s forwards 1.75s;
-      /* opacity: 0; */
-    }
-
-    .loader_bg .title h1 span {
-      color: hsl(209, 20%, 75%);
-    }
-
-    .loader_bg .title p {
-      text-transform: uppercase;
-      color: hsl(209, 20%, 75%);
-      letter-spacing: .25rem;
-      /* animation: title-p 1.25s forwards 2.25s; */
-      /* opacity: 0; */
-    }
-
-    /* @keyframes title-h1 {
-      0% {
-        opacity: 0;
-        gap: 1rem;
-      }
-
-      100% {
-        gap: 0;
-        opacity: 1;
-      }
-    } */
-
-    @keyframes title-p {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-        letter-spacing: normal;
-      }
-    }
-
-    @keyframes underline {
-      0% {
-        transform: scaleX(0);
-      }
-
-      100% {
-        transform: scaleX(1);
-        opacity: 1;
-      }
-    }
-
-    @keyframes box-1 {
-      0% {
-        transform: translateX(-.5rem);
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes box-2 {
-      0% {
-        transform: translateX(.5rem) translateY(-.25rem);
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-  </style>
 </head>
 
 <body>
-  <!-- LOADER -->
-  <!-- <div class="loader_bg">
-    <div id="logo">
-      <div class="box">
-        <div class="inbox inbox-1"></div>
-        <div class="inbox inbox-2"></div>
-      </div>
-      <div class="title">
-        <h1>Shakex<span>Sempe</span></h1>
-        <p>Web Developer</p>
-      </div>
-    </div>
-  </div> -->
+  
   
   <!-- HEADER -->
   <header id="header" data-header class="header">
@@ -1047,12 +872,7 @@
 
   </div>
   
-<!-- PRELOADER SCRIPT -->
-  <!-- <script>
-    setTimeout(function () {
-      $('.loader_bg').fadeToggle();
-    }, 3500);
-  </script> -->
+
 
   </body>
 
