@@ -133,6 +133,7 @@ $header-height: 7vh;
                         
                         // LINKS = SAME FONTS AS SECTION TITLES
                         a {
+                            position: relative;
                             display: flex;
                             align-items: center;
                             color: abstracts.$brand;
@@ -151,14 +152,14 @@ $header-height: 7vh;
                             &::after {
                                 content: attr(data-after);
                                 position: absolute;
-                                top: 50%;
+                                top: 30%;
                                 left: 60%;
                                 transform: translate(-50%, -50%) scale(0);
                                 color: #f0f8ff1a;
                                 font-size: 2.5rem;
                                 letter-spacing: 1rem;
                                 z-index: -1;
-                                transition: 0.3s ease letter-spacing;
+                                transition: 350ms ease letter-spacing;
                             }
 
                             &.active {

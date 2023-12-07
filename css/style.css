@@ -1447,6 +1447,7 @@ form button:hover::after {
     opacity: 0;
   }
   #nav .nav-list .links-container ul li a {
+    position: relative;
     display: flex;
     align-items: center;
     color: #b3c0cc;
@@ -1461,14 +1462,14 @@ form button:hover::after {
   #nav .nav-list .links-container ul li a::after {
     content: attr(data-after);
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 60%;
     transform: translate(-50%, -50%) scale(0);
     color: #f0f8ff1a;
     font-size: 2.5rem;
     letter-spacing: 1rem;
     z-index: -1;
-    transition: 0.3s ease letter-spacing;
+    transition: 350ms ease letter-spacing;
   }
   #nav .nav-list .links-container ul li a.active {
     color: #b3c0cc;
