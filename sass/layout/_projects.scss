@@ -2,18 +2,16 @@
 
 // PROJECTS SECTION
 #projects {
-    // border: 2px solid red;
     padding: 10vh 5vw 10vh;
-    // projects container
+    
+    // PROJECTS CONTAINER
     .projects {
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-        // background-color: abstracts.$background-light;
-        // background-color: #fafafa;
         position: relative;
         
-        // project items
+        // PROJECT ITEMS
         .all-projects {
             display: flex;
             align-items: center;
@@ -29,14 +27,14 @@
             align-items: center;
             justify-content: center;
             flex-direction: column-reverse;
+
             border: 2px solid abstracts.$overlay-blue-dark;
             border-radius: .5rem;
-            // overflow: hidden;
             box-shadow: 0rem .5rem .5rem rgba(72, 85, 99, .15);
             transition: box-shadow .5s ease;
             overflow: hidden;
             
-            // project items on desktop : row
+            // DESKTOP LAYOUT - DISPLAY ROW
             @media (min-width: 768px) {
                 height: 350px;
                 width: 100%;
@@ -50,17 +48,16 @@
 
             // PROJECT TILE
             .project-tile {
-
-                padding: 1.5rem 1rem 1rem;
-                flex-basis: 50%;
-                width: 100%;
-                height: 100%;
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
                 flex-direction: column;
+                flex-basis: 50%;
+
+                padding: 1.5rem 1rem 1rem;
+                width: 100%;
+                height: 100%;
                 background: abstracts.$overlay-dark;
-                // border: 4px solid red;
 
                 @include abstracts.md {
                     padding: 2rem;
@@ -83,7 +80,7 @@
                     
                 }
 
-                // project details (h2 and p)
+                // PROJECTS DETAILS (h2 and p)
                 h4 {
                     font-size: 1rem;
                     font-size: abstracts.$font-clamp-sm;
@@ -100,11 +97,8 @@
                     color: #ffff;
                     margin: 0 0 0.5rem;
                 }
-                // end of project details (h2 and p)
-                // project link icon
                 
                 .project-info {
-                    // border: 2px solid yellow;
                     color: abstracts.$text-white;
                     background: abstracts.$overlay-blue-darker;
                     
@@ -124,23 +118,19 @@
                         color: abstracts.$text-light;
                         position: relative;
                         isolation: isolate;
-                        i {
-                            font-size: 0.85rem;
-                            transition: 0.25s;
-                            opacity: 0.6;
-                        }
+
                         .icon {
                             opacity: 0.6;
                         }
+
                     }
 
                 }
 
             }
-            // end of project tile 
-            // project image
+
+            // PROJECTS IMAGE
             .project-img {
-                // border: 4px solid green;
                 flex-basis: 50%;
                 width: 100%;
                 height: 100%;
@@ -167,6 +157,7 @@
                     transition: 500ms ease;
                     z-index: 1;
                 }
+
             }
 
             // project tech list
@@ -191,7 +182,7 @@
             }
 
 
-            // project item img hover state
+            // PROJECT ITEM HOVER CLASS
             &:hover {
                 &.project-item {
                     box-shadow: 0rem .25rem .5rem rgba(72, 85, 99, .45);
@@ -223,10 +214,8 @@
                     }
                 }
             }
-            // end of project item img hover state 
+
         }
-        // end of project items
+
     }
-    // end of projects container
 } 
-// end of projects 
