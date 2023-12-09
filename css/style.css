@@ -187,7 +187,7 @@ section .section-title.active-item span {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  padding: 0 5vw;
+  padding: 0.25rem 5vw;
   transform: translateY(15vh);
   transition: 1s;
 }
@@ -241,6 +241,10 @@ section .section-title.active-item span {
 .bottom-nav .link-item a .icon {
   opacity: 0.7;
   width: 1.125rem;
+  position: absolute;
+}
+.bottom-nav .link-item a .solid-icon {
+  opacity: 0;
 }
 .bottom-nav .link-item a:active {
   transition: 0.25s;
@@ -254,6 +258,12 @@ section .section-title.active-item span {
   color: #f4f4f4;
 }
 .bottom-nav .link-item a:hover .icon {
+  opacity: 1;
+}
+.bottom-nav .link-item a:hover .outline-icon {
+  opacity: 0;
+}
+.bottom-nav .link-item a:hover .solid-icon {
   opacity: 1;
 }
 .bottom-nav .link-item a:hover::after {

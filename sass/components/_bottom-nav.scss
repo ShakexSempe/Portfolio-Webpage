@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    padding: 0 5vw;
+    padding: 0.25rem 5vw;
     transform: translateY(15vh);
     transition: 1s;
 
@@ -71,9 +71,14 @@
             .icon {
                 opacity: 0.7;
                 width: 1.125rem;
+                position: absolute;
+
             }
 
-
+            
+            .solid-icon {
+                opacity: 0;
+            }
             // HOVER AND ACTIVE
             // ACTIVE CLASS
             &:active {
@@ -93,6 +98,13 @@
                 }
 
                 .icon {
+                    opacity: 1;
+                }
+
+                .outline-icon {
+                    opacity: 0;
+                }
+                .solid-icon {
                     opacity: 1;
                 }
 
