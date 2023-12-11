@@ -2128,6 +2128,18 @@ form button:hover::after {
     max-width: 50%;
   }
 }
+.skills-section .skills-content .skills-intro .skills-article p::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 10%;
+  width: 15rem;
+  height: 15rem;
+  background: radial-gradient(#f0f2f4, #fff);
+  filter: blur(30px);
+  border-radius: 50%;
+  z-index: -1;
+}
 .skills-section .skills-content .skills-intro .skills-icons {
   display: flex;
   align-items: center;
