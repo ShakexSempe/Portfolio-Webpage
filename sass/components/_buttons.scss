@@ -54,8 +54,10 @@
     min-width: 9.5rem;
     width: 10rem;
 
-    text-align: center;
+    text-align: left;
     font-weight: 500;
+    font-size: 1rem;
+    font-size: abstracts.$font-clamp-sm;
     letter-spacing: .025rem;
     text-transform: capitalize;
 

@@ -335,8 +335,10 @@ section .section-title.active-item span {
   padding: 0.8rem 1rem;
   min-width: 9.5rem;
   width: 10rem;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   letter-spacing: 0.025rem;
   text-transform: capitalize;
   position: relative;
