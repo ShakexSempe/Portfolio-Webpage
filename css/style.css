@@ -1485,7 +1485,7 @@ form button:hover::after {
     color: #b3c0cc;
     color: #f4f4f4;
     border-bottom: 1px solid #475462;
-    border-bottom: 1px solid rgba(179, 191, 203, 0.5);
+    border-bottom: 1px solid #dc143c8c;
   }
   #nav .nav-list .links-container ul li a.active .icon {
     opacity: 1;
