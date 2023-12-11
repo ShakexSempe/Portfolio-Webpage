@@ -114,10 +114,12 @@
                 // TRANSLATE(TRANSLATE 0 & SKEW) BARS TO FORM 'X' SHAPE 
                 &::before {
                     transform: translateY(0) skewY(40deg) ;
+                    background: abstracts.$span-crimson;
                 }
 
                 &::after {
                     transform: translateY(0) skewY(-40deg);
+                    background: abstracts.$span-crimson;
 
                 }
             }

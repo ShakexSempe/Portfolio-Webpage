@@ -674,9 +674,11 @@ form button:hover::after {
 }
 .hamburger.active .bar::before {
   transform: translateY(0) skewY(40deg);
+  background: #dc143c;
 }
 .hamburger.active .bar::after {
   transform: translateY(0) skewY(-40deg);
+  background: #dc143c;
 }
 
 .skip-link {
