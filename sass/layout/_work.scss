@@ -319,11 +319,15 @@
                 }
             }
             .item-content {
+                padding: 0.5rem;
                 @include abstracts.lg {
                     width: 50%;
-                    // padding: 1rem;
+                    padding: 2rem;
                 }
+
                 .item-image {
+                    border: 1px solid abstracts.$overlay-blue-light;
+                    border-radius: 0.25rem;
                     overflow: hidden;
                     width: 100%;
                     height: 100%;
