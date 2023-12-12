@@ -2830,11 +2830,11 @@ form button:hover::after {
   }
 }
 .work .work-container .item .item-content .item-image {
-  border: 1px solid #475462;
   border-radius: 0.25rem;
   overflow: hidden;
   width: 100%;
   height: 100%;
+  box-shadow: 0 0.25rem 0.5rem rgba(71, 84, 98, 0.35);
 }
 .work .work-container .item .item-content .item-image img {
   width: 100%;
