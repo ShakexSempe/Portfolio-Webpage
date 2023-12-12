@@ -2137,7 +2137,7 @@ form button:hover::after {
   left: 10%;
   width: 15rem;
   height: 15rem;
-  background: radial-gradient(#f0f2f4, #fff);
+  background: radial-gradient(#e7eaee, #fff);
   filter: blur(30px);
   border-radius: 50%;
   z-index: -1;
