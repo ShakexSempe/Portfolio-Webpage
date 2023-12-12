@@ -2179,6 +2179,31 @@ form button:hover::after {
 .skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(3) {
   transition-delay: 0.45s;
 }
+.skills-section .skills-content .skills-intro dialog {
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  padding: 1rem;
+  color: #29323d;
+  border-radius: 0.25rem;
+}
+.skills-section .skills-content .skills-intro dialog [aria-label=close] {
+  float: right;
+  margin: 0;
+  border: 2px solid blue;
+}
+.skills-section .skills-content .skills-intro dialog button {
+  text-transform: capitalize;
+  padding: 0.125rem;
+  margin: 2rem 0;
+}
+.skills-section .skills-content .skills-intro dialog h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.skills-section .skills-content .skills-intro dialog h4 {
+  font-size: 1.5rem;
+}
 
 .skill-section-container {
   position: relative;
