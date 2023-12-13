@@ -97,19 +97,22 @@
                     width: 100%;
                     height: 2px;
                     background: linear-gradient(90deg, #fff, abstracts.$overlay-blue-light, #fff);
-                    max-width: 350px;
+                    max-width: 300px;
                     border-radius: 2rem;
-                    opacity: 0.45;
+                    opacity: 0.25;
+                    opacity: 1;
                     z-index: -1;
-                    transform: translateX(-100%);
+                    transform: translateX(-150%);
                     transition: 250ms;
 
                     @keyframes icons-line  {
                         0%{
-                            transform: translateX(-100%);
+                            transform: translateX(-150%);
                         }
+
+
                         100% {
-                            transform: translateX(100%);
+                            transform: translateX(150%);
                         }
                     } 
                 }
@@ -143,12 +146,11 @@
                 &.active-item {
                     
                     &::after {
-                        animation: icons-line 2s infinite;
-                        animation-delay: 1s;
+                        animation: icons-line 2500ms infinite ease-in-out;
+                        animation-delay: 750ms;
                     }
                     
                     svg {
-                        animation: svg-img 1s infinite;
                         transform: scale(1);
 
                         &:nth-child(1) {

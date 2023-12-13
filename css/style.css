@@ -442,14 +442,20 @@ section .section-title.active-item span {
 
 dialog {
   width: 100%;
-  height: 80vh;
-  margin: auto;
+  height: 60vh;
+  margin: auto 5vw;
   padding: 1rem;
   color: #475462;
   border-radius: 0.25rem;
+  background: linear-gradient(-30deg, #ddd, #fff 60%);
+}
+@media (min-width: 576px) {
+  dialog {
+    max-width: 500px;
+  }
 }
 dialog::backdrop {
-  background: rgba(41, 50, 61, 0.673);
+  background: rgba(21, 25, 30, 0.773);
 }
 dialog [aria-label=close] {
   float: right;
@@ -2200,19 +2206,20 @@ form button:hover::after {
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, #fff, #475462, #fff);
-  max-width: 350px;
+  max-width: 300px;
   border-radius: 2rem;
-  opacity: 0.45;
+  opacity: 0.25;
+  opacity: 1;
   z-index: -1;
-  transform: translateX(-100%);
+  transform: translateX(-150%);
   transition: 250ms;
 }
 @keyframes icons-line {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(150%);
   }
 }
 .skills-section .skills-content .skills-intro .skills-icons:hover::after {
@@ -2231,11 +2238,10 @@ form button:hover::after {
   transition: 1s;
 }
 .skills-section .skills-content .skills-intro .skills-icons.active-item::after {
-  animation: icons-line 2s infinite;
-  animation-delay: 1s;
+  animation: icons-line 2500ms infinite ease-in-out;
+  animation-delay: 750ms;
 }
 .skills-section .skills-content .skills-intro .skills-icons.active-item svg {
-  animation: svg-img 1s infinite;
   transform: scale(1);
 }
 .skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(1) {
