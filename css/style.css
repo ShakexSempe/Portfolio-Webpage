@@ -465,6 +465,7 @@ dialog button {
   text-transform: capitalize;
   padding: 0.125rem;
   margin: 2rem 0;
+  cursor: pointer;
 }
 dialog h3 {
   font-size: 2rem;
