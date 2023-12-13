@@ -74,12 +74,51 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-                margin: 0 auto 1rem;
+                margin: 0 5vw 1rem;
+                padding-bottom: 1rem;
                 border-radius: abstracts.$border-radius-sm;
+                position: relative;
+                // border: 1px solid green;
+                overflow: hidden;
 
-                @include abstracts.md {
+                @include abstracts.sm {
                     justify-content: flex-start;
                     gap: 5vw;
+                    margin: 0;
+                    max-width: 400px;
+                }
+
+                // UNDERLINE
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(90deg, #fff, abstracts.$overlay-blue-light, #fff);
+                    max-width: 350px;
+                    border-radius: 2rem;
+                    opacity: 0.45;
+                    z-index: -1;
+                    transform: translateX(-100%);
+                    transition: 250ms;
+
+                    @keyframes icons-line  {
+                        0%{
+                            transform: translateX(-100%);
+                        }
+                        100% {
+                            transform: translateX(100%);
+                        }
+                    } 
+                }
+
+
+                &:hover {
+                    &::after {
+                        opacity: 0.25;
+                    }
                 }
 
                 svg {
@@ -87,20 +126,29 @@
                     width: auto;
                     fill: abstracts.$overlay-blue-darker;
                     transition: .25s;
-                    filter: drop-shadow(.25rem .25rem .25rem hsla(212, 19%, 20%, .25));
-
+                    filter: drop-shadow(.25rem .25rem .5rem hsla(212, 19%, 20%, .25));
+                    cursor: pointer;
                 }
 
                 // SKILLS ICONS IO
                 &.io-item {
+
                     svg {
                         transform: scale(.8);
                         transition: 1s;
                     }
+
                 }
 
                 &.active-item {
+                    
+                    &::after {
+                        animation: icons-line 2s infinite;
+                        animation-delay: 1s;
+                    }
+                    
                     svg {
+                        animation: svg-img 1s infinite;
                         transform: scale(1);
 
                         &:nth-child(1) {
@@ -113,6 +161,11 @@
 
                         &:nth-child(3) {
                             transition-delay: .45s;
+                        }
+
+                        &:hover {
+                            transform: scale(0.98);
+                            transition: 250ms;
                         }
                     }
                 }
