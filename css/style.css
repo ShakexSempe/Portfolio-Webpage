@@ -440,6 +440,37 @@ section .section-title.active-item span {
   }
 }
 
+dialog {
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  padding: 1rem;
+  color: #475462;
+  border-radius: 0.25rem;
+}
+dialog::backdrop {
+  background: rgba(41, 50, 61, 0.673);
+}
+dialog [aria-label=close] {
+  float: right;
+  margin: 0;
+}
+dialog button {
+  text-transform: capitalize;
+  padding: 0.125rem;
+  margin: 2rem 0;
+}
+dialog h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+dialog h4 {
+  font-size: 1.5rem;
+}
+dialog p::first-letter {
+  text-transform: capitalize;
+}
+
 form {
   background-color: #29323d;
   width: 100%;
@@ -2219,31 +2250,6 @@ form button:hover::after {
 .skills-section .skills-content .skills-intro .skills-icons.active-item svg:hover {
   transform: scale(0.98);
   transition: 250ms;
-}
-.skills-section .skills-content .skills-intro dialog {
-  width: 100%;
-  height: 80vh;
-  margin: auto;
-  padding: 1rem;
-  color: #29323d;
-  border-radius: 0.25rem;
-}
-.skills-section .skills-content .skills-intro dialog [aria-label=close] {
-  float: right;
-  margin: 0;
-  border: 2px solid blue;
-}
-.skills-section .skills-content .skills-intro dialog button {
-  text-transform: capitalize;
-  padding: 0.125rem;
-  margin: 2rem 0;
-}
-.skills-section .skills-content .skills-intro dialog h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.skills-section .skills-content .skills-intro dialog h4 {
-  font-size: 1.5rem;
 }
 
 .skill-section-container {
