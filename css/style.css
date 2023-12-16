@@ -2148,12 +2148,16 @@ form button:hover::after {
     padding: 0vh 5vw 5vh;
   }
 }
+.skills-section .skills-content .skills-intro .skills-article {
+  margin-bottom: 1rem;
+}
 .skills-section .skills-content .skills-intro .skills-article p {
+  margin-bottom: 0.5rem;
   line-height: 1.8;
   text-wrap: balance;
   font-size: clamp(.975rem, 1.5vw, 1.05rem);
 }
-.skills-section .skills-content .skills-intro .skills-article p span {
+.skills-section .skills-content .skills-intro .skills-article p strong {
   font-weight: 600;
   color: inherit;
 }
@@ -2186,7 +2190,7 @@ form button:hover::after {
   align-items: center;
   justify-content: space-around;
   margin: 0 5vw 1rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   border-radius: 0.25rem;
   position: relative;
   overflow: hidden;
@@ -2202,7 +2206,7 @@ form button:hover::after {
 .skills-section .skills-content .skills-intro .skills-icons::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 0.5rem;
   left: 0;
   width: 100%;
   height: 2px;
@@ -2216,11 +2220,13 @@ form button:hover::after {
   animation: icons-line 2500ms infinite ease-in-out;
 }
 @keyframes icons-line {
-  0% {
+  0%, 100% {
     transform: translateX(-150%);
+    opacity: 0;
   }
   50% {
     transform: translateX(150%);
+    opacity: 1;
   }
 }
 .skills-section .skills-content .skills-intro .skills-icons:hover::after {
@@ -2231,7 +2237,7 @@ form button:hover::after {
   width: auto;
   fill: #1f252d;
   transition: 250ms;
-  filter: drop-shadow(0.25rem 0.5rem 0.5rem rgba(41, 50, 61, 0.25));
+  filter: drop-shadow(0.25rem 0.5rem 0.5rem rgba(41, 50, 61, 0.2));
   cursor: pointer;
 }
 .skills-section .skills-content .skills-intro .skills-icons svg:hover {

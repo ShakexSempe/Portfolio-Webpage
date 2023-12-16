@@ -31,17 +31,19 @@
             }
 
             .skills-article {
-                
+                margin-bottom: 1rem;
+
                 p {
-                    // border: 2px solid red;
-                    
+                    margin-bottom: 0.5rem;
                     line-height: 1.8;
                     text-wrap: balance;
                     font-size: abstracts.$font-clamp-xsm;
-                    span {
+                    
+                    strong {
                         font-weight: 600;
                         color: inherit;
                     }
+
                     @include abstracts.lg {
                         max-width: 350px;
                         line-height: 2;
@@ -75,7 +77,7 @@
                 align-items: center;
                 justify-content: space-around;
                 margin: 0 5vw 1rem;
-                padding: 1rem 0;
+                padding: 1.5rem 0 ;
                 border-radius: abstracts.$border-radius-sm;
                 position: relative;
                 // border: 1px solid green;
@@ -92,7 +94,7 @@
                 &::after {
                     content: '';
                     position: absolute;
-                    bottom: 0;
+                    bottom: 0.5rem;
                     left: 0;
                     width: 100%;
                     height: 2px;
@@ -106,13 +108,15 @@
                     animation: icons-line 2500ms infinite ease-in-out;
 
                     @keyframes icons-line  {
-                        0%{
+                        0%, 100%{
                             transform: translateX(-150%);
+                            opacity: 0;
                         }
 
 
                         50% {
                             transform: translateX(150%);
+                            opacity: 1;
                         }
                     } 
                 }
@@ -129,7 +133,7 @@
                     width: auto;
                     fill: abstracts.$overlay-blue-darker;
                     transition: 250ms;
-                    filter: drop-shadow(.25rem .5rem .5rem hsla(212, 19%, 20%, .25));
+                    filter: drop-shadow(.25rem .5rem .5rem hsla(212, 19%, 20%, .2));
                     cursor: pointer;
 
                     &:hover {
