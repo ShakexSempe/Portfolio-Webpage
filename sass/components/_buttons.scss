@@ -3,6 +3,8 @@
 // BUTTON BACKGROUND
 .btn-bg {
 
+    position: relative;
+
     &::before,
     &::after {
         content: '';

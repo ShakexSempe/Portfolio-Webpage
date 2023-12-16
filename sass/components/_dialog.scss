@@ -29,7 +29,13 @@ dialog {
         padding: 0.125rem;
         margin: 2rem 0;
         cursor: pointer;
-        
+        border-radius: 0.25rem;
+
+        &.modal-btn {
+            background: abstracts.$button-crimson;
+            padding: 0.5rem 1rem;
+            color: #fff;
+        }
     }
 
     h3 {

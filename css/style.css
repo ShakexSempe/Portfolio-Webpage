@@ -296,6 +296,9 @@ section .section-title.active-item span {
   transition: 0.5s;
 }
 
+.btn-bg {
+  position: relative;
+}
 .btn-bg::before, .btn-bg::after {
   content: "";
   position: absolute;
@@ -466,6 +469,12 @@ dialog button {
   padding: 0.125rem;
   margin: 2rem 0;
   cursor: pointer;
+  border-radius: 0.25rem;
+}
+dialog button.modal-btn {
+  background: linear-gradient(0deg, #3f0d0d, #dc134c);
+  padding: 0.5rem 1rem;
+  color: #fff;
 }
 dialog h3 {
   font-size: 2rem;
