@@ -2186,7 +2186,7 @@ form button:hover::after {
   align-items: center;
   justify-content: space-around;
   margin: 0 5vw 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   border-radius: 0.25rem;
   position: relative;
   overflow: hidden;
@@ -2209,17 +2209,17 @@ form button:hover::after {
   background: linear-gradient(90deg, #fff, #475462, #fff);
   max-width: 300px;
   border-radius: 2rem;
-  opacity: 0.25;
-  opacity: 1;
+  opacity: 0.5;
   z-index: -1;
   transform: translateX(-150%);
   transition: 250ms;
+  animation: icons-line 2500ms infinite ease-in-out;
 }
 @keyframes icons-line {
   0% {
     transform: translateX(-150%);
   }
-  100% {
+  50% {
     transform: translateX(150%);
   }
 }
@@ -2230,33 +2230,13 @@ form button:hover::after {
   height: 5rem;
   width: auto;
   fill: #1f252d;
-  transition: 0.25s;
-  filter: drop-shadow(0.25rem 0.25rem 0.5rem rgba(41, 50, 61, 0.25));
+  transition: 250ms;
+  filter: drop-shadow(0.25rem 0.5rem 0.5rem rgba(41, 50, 61, 0.25));
   cursor: pointer;
 }
-.skills-section .skills-content .skills-intro .skills-icons.io-item svg {
-  transform: scale(0.8);
-  transition: 1s;
-}
-.skills-section .skills-content .skills-intro .skills-icons.active-item::after {
-  animation: icons-line 2500ms infinite ease-in-out;
-  animation-delay: 750ms;
-}
-.skills-section .skills-content .skills-intro .skills-icons.active-item svg {
-  transform: scale(1);
-}
-.skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(1) {
-  transition-delay: 0.25s;
-}
-.skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(2) {
-  transition-delay: 0.35s;
-}
-.skills-section .skills-content .skills-intro .skills-icons.active-item svg:nth-child(3) {
-  transition-delay: 0.45s;
-}
-.skills-section .skills-content .skills-intro .skills-icons.active-item svg:hover {
-  transform: scale(0.98);
-  transition: 250ms;
+.skills-section .skills-content .skills-intro .skills-icons svg:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0.125rem 0.25rem 0.25rem rgba(41, 50, 61, 0.5));
 }
 
 .skill-section-container {

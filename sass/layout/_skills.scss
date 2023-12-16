@@ -75,7 +75,7 @@
                 align-items: center;
                 justify-content: space-around;
                 margin: 0 5vw 1rem;
-                padding-bottom: 1rem;
+                padding: 1rem 0;
                 border-radius: abstracts.$border-radius-sm;
                 position: relative;
                 // border: 1px solid green;
@@ -99,11 +99,11 @@
                     background: linear-gradient(90deg, #fff, abstracts.$overlay-blue-light, #fff);
                     max-width: 300px;
                     border-radius: 2rem;
-                    opacity: 0.25;
-                    opacity: 1;
+                    opacity: 0.5;
                     z-index: -1;
                     transform: translateX(-150%);
                     transition: 250ms;
+                    animation: icons-line 2500ms infinite ease-in-out;
 
                     @keyframes icons-line  {
                         0%{
@@ -111,7 +111,7 @@
                         }
 
 
-                        100% {
+                        50% {
                             transform: translateX(150%);
                         }
                     } 
@@ -128,49 +128,17 @@
                     height: 5rem;
                     width: auto;
                     fill: abstracts.$overlay-blue-darker;
-                    transition: .25s;
-                    filter: drop-shadow(.25rem .25rem .5rem hsla(212, 19%, 20%, .25));
+                    transition: 250ms;
+                    filter: drop-shadow(.25rem .5rem .5rem hsla(212, 19%, 20%, .25));
                     cursor: pointer;
-                }
 
-                // SKILLS ICONS IO
-                &.io-item {
-
-                    svg {
-                        transform: scale(.8);
-                        transition: 1s;
-                    }
-
-                }
-
-                &.active-item {
-                    
-                    &::after {
-                        animation: icons-line 2500ms infinite ease-in-out;
-                        animation-delay: 750ms;
-                    }
-                    
-                    svg {
-                        transform: scale(1);
-
-                        &:nth-child(1) {
-                            transition-delay: .25s;
-                        }
-
-                        &:nth-child(2) {
-                            transition-delay: .35s;
-                        }
-
-                        &:nth-child(3) {
-                            transition-delay: .45s;
-                        }
-
-                        &:hover {
-                            transform: scale(0.98);
-                            transition: 250ms;
-                        }
+                    &:hover {
+                        transform: scale(1.05);
+                        filter: drop-shadow(.125rem .25rem .25rem hsla(212, 19%, 20%, .5));
                     }
                 }
+
+                
             }
 
             
