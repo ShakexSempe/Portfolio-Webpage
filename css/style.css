@@ -447,7 +447,7 @@ dialog {
   padding: 1rem;
   color: #475462;
   border-radius: 0.25rem;
-  background: linear-gradient(-30deg, #ddd, #fff 60%);
+  background: radial-gradient(#f4f4f4, #fff 50%);
 }
 @media (min-width: 576px) {
   dialog {
