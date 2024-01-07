@@ -655,45 +655,47 @@ form button:hover::after {
   }
 }
 .hamburger.hamburger:after, .hamburger.hamburger:before {
-  position: absolute;
   content: "";
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  inset: 0;
   border-radius: 50%;
-  border: none;
-  outline: none;
-  transition: 0.25s ease;
+  transition: 250ms ease;
+  z-index: -1;
 }
-.hamburger.hamburger:before {
+.hamburger::before {
+  box-shadow: inset 2px 2px 2px #fff2, inset -2px -2px 2px #0002;
+}
+.hamburger.hamburger:after {
   border: 1px solid #b3c0cc;
   opacity: 0;
-  animation: ham-pulse 2500ms ease infinite;
+  animation: ham-pulse 2000ms linear infinite;
 }
 @keyframes ham-pulse {
   50% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
     opacity: 0;
     transform: scale(1.25);
   }
 }
-.hamburger.no-pulse.hamburger::before {
+.hamburger.no-pulse.hamburger::after {
   animation: none;
   animation-fill-mode: forwards;
 }
 .hamburger:active {
   transform: scale(0.8);
-  transition: 0.25s;
+  transition: 250ms;
 }
-.hamburger:active::before {
+.hamburger:active::after {
   animation: none;
 }
 .hamburger .bar {
   height: 0.2em;
   width: 1.5em;
   position: relative;
-  background-color: #f4f4f4;
+  background-color: #fff;
   border-radius: 1rem;
   z-index: -1;
   transform-style: preserve-3d;
@@ -701,13 +703,10 @@ form button:hover::after {
 .hamburger .bar::before, .hamburger .bar::after {
   content: "";
   position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: #f4f4f4;
+  inset: 0;
+  background-color: inherit;
   border-radius: inherit;
-  transition: 0.5s ease;
+  transition: 500ms ease;
   transform-style: preserve-3d;
 }
 .hamburger .bar::before {
@@ -716,7 +715,7 @@ form button:hover::after {
 .hamburger .bar::after {
   transform: translateY(0.5em);
 }
-.hamburger.active::before {
+.hamburger.active::after {
   animation: none;
 }
 .hamburger.active .bar {
@@ -726,11 +725,11 @@ form button:hover::after {
 }
 .hamburger.active .bar::before {
   transform: translateY(0) skewY(40deg);
-  background: #dc143c;
+  background: #b3c0cc;
 }
 .hamburger.active .bar::after {
   transform: translateY(0) skewY(-40deg);
-  background: #dc143c;
+  background: #b3c0cc;
 }
 
 .skip-link {
