@@ -2138,7 +2138,17 @@ form button:hover::after {
 }
 
 .skills-section {
-  padding: 10vh 0 0;
+  padding: 10vh 0 5vh;
+  background: #fff;
+  background: linear-gradient(140deg, #fff 60%, #ececec 70%);
+  background: linear-gradient(0deg, #ececec 30%, #fff);
+  background: linear-gradient(25deg, red 25%, #0000ff 50%);
+  background: linear-gradient(25deg, #ececec 28%, #fff 45%);
+}
+@media (min-width: 768px) {
+  .skills-section {
+    background: linear-gradient(0deg, #ececec 10%, #fff 20%);
+  }
 }
 .skills-section .skills-header {
   padding: 0 5vw;
@@ -2184,19 +2194,6 @@ form button:hover::after {
   .skills-section .skills-content .skills-intro .skills-article p {
     max-width: 50%;
   }
-}
-.skills-section .skills-content .skills-intro .skills-article p::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  left: 10%;
-  top: 10%;
-  width: 15rem;
-  height: 15rem;
-  background: radial-gradient(#edf0f2, #fff);
-  filter: blur(30px);
-  border-radius: 50%;
-  z-index: -1;
 }
 .skills-section .skills-content .skills-intro .skills-icons {
   display: flex;
@@ -2259,12 +2256,8 @@ form button:hover::after {
 }
 
 .skill-section-container {
+  border: 2px solid yellow;
   position: relative;
-}
-@media (min-width: 768px) {
-  .skill-section-container {
-    margin-top: 10vh;
-  }
 }
 .skill-section-container.border {
   border: 0.125rem solid #b3c0cc;
@@ -2602,6 +2595,7 @@ form button:hover::after {
   padding: 10vh 5vw 10vh;
   background: #f4f4f4;
   background: #fafafa;
+  background: #ececec;
 }
 @media (min-width: 768px) {
   .work {

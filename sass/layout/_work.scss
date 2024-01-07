@@ -7,8 +7,10 @@
     padding: 10vh 5vw 10vh;
     background: abstracts.$background-light;
     background: #fafafa;
-    @media (min-width: 768px) {
-    padding: 10vh 5vw 10vh;
+    background: hsl(0, 0%, 92.5%);
+
+    @include abstracts.md {
+        padding: 10vh 5vw 10vh;
     }
 
     .work-intro {
