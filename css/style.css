@@ -641,11 +641,10 @@ form button:hover::after {
   height: 3em;
   width: 3em;
   background: #29323d;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   border-radius: 50%;
+  position: relative;
   isolation: isolate;
   transition: 250ms ease;
 }
@@ -695,10 +694,11 @@ form button:hover::after {
   height: 0.2em;
   width: 1.5em;
   position: relative;
-  background-color: #fff;
+  background-color: #f4f4f4;
   border-radius: 1rem;
   z-index: -1;
   transform-style: preserve-3d;
+  transition: 250ms;
 }
 .hamburger .bar::before, .hamburger .bar::after {
   content: "";
@@ -722,6 +722,7 @@ form button:hover::after {
   background-color: transparent;
   transform-style: preserve-3d;
   height: 0.3em;
+  transition: 0s;
 }
 .hamburger.active .bar::before {
   transform: translateY(0) skewY(40deg);
