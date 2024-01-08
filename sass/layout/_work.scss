@@ -112,8 +112,8 @@
                 .item-title {
                     text-transform: capitalize;
                     font-weight: 700;
-                    font-size: 1.05rem;
-                    font-size: clamp(1.025rem, 2vw, 1.25rem);
+                    font-size: 1rem;
+                    font-size: clamp(1rem, 2vw, 1.25rem);
                 }
                 .item-meta-data {
                     // border: 2px solid yellow;

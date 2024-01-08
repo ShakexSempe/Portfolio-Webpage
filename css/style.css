@@ -2253,7 +2253,7 @@ form button:hover::after {
 }
 
 .skill-section-container {
-  border: 2px solid yellow;
+  border: 2px solid #0005;
   position: relative;
 }
 .skill-section-container.border {
@@ -2682,8 +2682,8 @@ form button:hover::after {
 .work .work-container .item .item-header .item-title {
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 1.05rem;
-  font-size: clamp(1.025rem, 2vw, 1.25rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 .work .work-container .item .item-header .item-meta-data {
   display: flex;
