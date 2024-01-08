@@ -2,11 +2,6 @@
 // SKILLS SECTION
 .skills-section {
     padding: 10vh 0 5vh;
-    background: #fff;
-    // background: linear-gradient(140deg, #ff0000 50%, hsl(0, 0%, 92.5%) 60%);
-    background: linear-gradient(140deg, #fff 60%, hsl(0, 0%, 92.5%) 70%);
-    background: linear-gradient(0deg, hsl(0, 0%, 92.5%) 30%, #fff);
-    background: linear-gradient(25deg, red 25%, #0000ff 50%);
     background: linear-gradient(25deg, #ececec 28%, #fff 45%);
 
     // DESKTOP BACKGROUND
@@ -19,9 +14,9 @@
         padding: 0 5vw;
     }
 
-    // skills container
+    // SKILLS CONTENT CONTAINER
     .skills-content {
-        // border: 2px solid blue;
+
         @include abstracts.lg {
             background: url('../img/keyboard-mouse.jpg');
             background-repeat: no-repeat;
@@ -32,7 +27,6 @@
 
         // SKILLS INTRO
         .skills-intro {
-            // border: 2px solid red;
             padding: 0 2.5vw 5vh 5vw;
             position: relative;
 
@@ -46,7 +40,7 @@
                 p {
                     margin-bottom: 0.5rem;
                     line-height: 1.8;
-                    text-wrap: balance;
+                    text-wrap: pretty;
                     font-size: abstracts.$font-clamp-xsm;
                     
                     strong {
@@ -82,7 +76,6 @@
             }
 
             .skills-icons {
-                // border: 1px solid abstracts.$overlay-blue-dark;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
@@ -90,8 +83,8 @@
                 padding: 1.5rem 0 ;
                 border-radius: abstracts.$border-radius-sm;
                 position: relative;
-                // border: 1px solid green;
                 overflow: hidden;
+                isolation: isolate;
 
                 @include abstracts.sm {
                     justify-content: flex-start;

@@ -664,7 +664,7 @@ form button:hover::after {
   z-index: -1;
 }
 .hamburger::before {
-  box-shadow: inset 2px 2px 2px #fff2, inset -2px -2px 2px #0002;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.125), inset -2px -2px 2px rgba(0, 0, 0, 0.125);
 }
 .hamburger.hamburger:after {
   border: 1px solid #b3c0cc;
@@ -673,7 +673,7 @@ form button:hover::after {
 }
 @keyframes ham-pulse {
   50% {
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
@@ -2138,10 +2138,6 @@ form button:hover::after {
 
 .skills-section {
   padding: 10vh 0 5vh;
-  background: #fff;
-  background: linear-gradient(140deg, #fff 60%, #ececec 70%);
-  background: linear-gradient(0deg, #ececec 30%, #fff);
-  background: linear-gradient(25deg, red 25%, #0000ff 50%);
   background: linear-gradient(25deg, #ececec 28%, #fff 45%);
 }
 @media (min-width: 768px) {
@@ -2176,7 +2172,7 @@ form button:hover::after {
 .skills-section .skills-content .skills-intro .skills-article p {
   margin-bottom: 0.5rem;
   line-height: 1.8;
-  text-wrap: balance;
+  text-wrap: pretty;
   font-size: clamp(.975rem, 1.5vw, 1.05rem);
 }
 .skills-section .skills-content .skills-intro .skills-article p strong {
@@ -2203,6 +2199,7 @@ form button:hover::after {
   border-radius: 0.25rem;
   position: relative;
   overflow: hidden;
+  isolation: isolate;
 }
 @media (min-width: 576px) {
   .skills-section .skills-content .skills-intro .skills-icons {
