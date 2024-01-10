@@ -2,6 +2,7 @@
 
 dialog {
     width: 100%;
+    display: block;
     // max-width: 500px;
     height: 70vh;
     margin: auto 5vw;
@@ -9,9 +10,18 @@ dialog {
     color: abstracts.$overlay-blue-light;
     border-radius: 0.25rem;
     background: radial-gradient( #f4f4f4, #fff 50%);
+    scale: .95;
+    opacity: 0;
+    transition: all 300ms;
     
+    &[open] {
+        opacity: 1;
+        scale: 1;
+    }
+
     @include abstracts.sm {
         max-width: 500px;
+        margin-inline: auto;
     }
 
     &::backdrop {
@@ -45,13 +55,23 @@ dialog {
 
     h4 {
         font-size: 1rem;
+        text-wrap: pretty;
+        text-wrap: balance;
         text-transform: capitalize;
         margin-bottom: 0.5rem;
+        line-height: 1.4;
+
+        span {
+            color: abstracts.$brand;
+        }
     }
 
     p {
         &::first-letter {
             text-transform: capitalize;
+        }
+        &::after {
+            content: '.';
         }
     }
 }

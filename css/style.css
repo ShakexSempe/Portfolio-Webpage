@@ -449,16 +449,25 @@ section .section-title.active-item span {
 
 dialog {
   width: 100%;
+  display: block;
   height: 70vh;
   margin: auto 5vw;
   padding: 1rem;
   color: #475462;
   border-radius: 0.25rem;
   background: radial-gradient(#f4f4f4, #fff 50%);
+  scale: 0.95;
+  opacity: 0;
+  transition: all 300ms;
+}
+dialog[open] {
+  opacity: 1;
+  scale: 1;
 }
 @media (min-width: 576px) {
   dialog {
     max-width: 500px;
+    margin-inline: auto;
   }
 }
 dialog::backdrop {
@@ -486,11 +495,20 @@ dialog h3 {
 }
 dialog h4 {
   font-size: 1rem;
+  text-wrap: pretty;
+  text-wrap: balance;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+dialog h4 span {
+  color: #b3c0cc;
 }
 dialog p::first-letter {
   text-transform: capitalize;
+}
+dialog p::after {
+  content: ".";
 }
 
 form {
@@ -2231,7 +2249,7 @@ form button:hover::after {
 }
 
 .skill-section-container {
-  border: 2px solid #0005;
+  border-bottom: 0.125rem solid #b3c0cc;
   position: relative;
 }
 .skill-section-container.border {
