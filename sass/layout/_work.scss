@@ -3,10 +3,7 @@
 // WORK SECTION 
 .work {
     min-height: 100vh;
-    // background: #ddd;
     padding: 10vh 5vw 10vh;
-    background: abstracts.$background-light;
-    background: #fafafa;
     background: hsl(0, 0%, 92.5%);
 
     @include abstracts.md {
@@ -14,20 +11,23 @@
     }
 
     .work-intro {
-        // border: 2px solid red;
+
         h3 {
             text-transform: capitalize;
+            text-align: center;
+
             font-size: 1.8rem;
             font-size: clamp(1.8rem, 4vw, 2rem);
-            text-align: center;
+
             position: relative;
             width: max-content;
             margin-inline: auto;
+
             span {
                 color: #0007;
                 text-transform: capitalize;
-                // font-family: abstracts.$font-title;
             }
+
             &::after {
                 content: '';
                 position: absolute;
@@ -37,33 +37,40 @@
                 height: .125rem;
                 background: linear-gradient(90deg, transparent, #0007, transparent);
             }
+
         }
 
         &.io-item {
+
             h3 {
                 &::after {
                     transform: scaleX(0);
                     transition: 1.5s;
                 }
             }
+
         }
+
         &.active-item {
+            
             h3 {
                 &::after {
                     transform: scaleX(1);
                 }
             }
+
         }
     }
     
     .work-container {
-        // border: 2px solid red;
         margin-top: 10vh;
+
         @include abstracts.lg {
             margin-top: 15vh;
         }
+
         .item-flex-container {
-            // background: abstracts.$background-light;
+
             @include abstracts.lg {
                 display: flex;
                 flex-direction: row-reverse;
@@ -82,39 +89,39 @@
             box-shadow: abstracts.$box-shadow-item-md;
             position: relative;
             margin-bottom: 10vh;
+
             @include abstracts.sm {
-                // padding: .5rem;
+                padding: .5rem;
             }
+
             @include abstracts.md {
                 background: #ffff;
-
             }
             
             .item-header {
-                // border: 2px solid red;
                 padding: 1rem .5rem 1rem;
+
                 @include abstracts.sm {
                     padding: 1rem;
                 }
+
                 @include abstracts.md {
                     display:flex;
                     flex-direction: column;
                     justify-content: space-between;
                 }
+
                 @include abstracts.lg {
-                    // border: 2px solid pink;
                     width: 50%;
                 }
-                @include abstracts.xlg {
-                    // padding: 5vh 5vw 5vh 0;
-                    
-                }
+
                 .item-title {
                     text-transform: capitalize;
                     font-weight: 700;
                     font-size: 1rem;
                     font-size: clamp(1rem, 2vw, 1.25rem);
                 }
+
                 .item-meta-data {
                     // border: 2px solid yellow;
                     display: flex;
@@ -133,17 +140,21 @@
                     background: abstracts.$overlay-blue-darker;
                     width: 100%;
                     left: 0;
+
                     @include abstracts.lg {
                         gap: 1rem;
                         background: transparent;
                         // bottom: -1rem;
                     }
+
                     @include abstracts.lg {
                         justify-content: start;
                     }
+
                     @include abstracts.xlg {
                         bottom: -1rem;
                     }
+
                     p {
                         background: abstracts.$overlay-blue-darker;
                         color: abstracts.$text-light;
@@ -175,29 +186,36 @@
                         &:hover {
                             color: abstracts.$brand;
                         }
+
                     }
+
                 }
+
                 .item-description {
-                    // border: 1px solid pink;
                     margin: .5rem 0 1rem;
+
                     h4 {
                         text-transform: capitalize;
                         color: #0008;
                         font-size: .9rem;
                         font-size: clamp(.9rem, 2vw, 1.125rem);
                     }
+
                     p {
                         color: abstracts.$overlay-blue-light;
                         font-weight: 400;
                         font-size: 1rem;
                         font-size: clamp(.95rem, 1.5vw, 1.05rem);
+
                         &::first-letter {
                             text-transform: capitalize;
                         }
+
                     }
 
                     ul {
                         margin: 1rem;
+
                         li {
                             margin-bottom: .25rem;
                             a {
@@ -206,6 +224,7 @@
                                 font-size: clamp(.9rem, 1.5vw, 1.125rem);
                                 color: inherit;
                             }
+
                             i {
                                 margin-left: .5rem;
                                 color: abstracts.$brand;
@@ -220,40 +239,53 @@
                                     transform: scale(1);
                                 }
                             }
+
                         }
+
                     }
+
                 }
+
                 .item-cta {
-                    // border: 2px solid blue;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     gap: 1rem;
+
                     @include abstracts.md {
                         justify-content: start;
                     }
+
                     a {
-                        padding: .65rem 1rem;
-                        text-transform: capitalize;
-                        font-size: .95rem;
-                        font-size: clamp(.95rem, 1vw, 1.15rem);
-                        border-radius: abstracts.$border-radius-sm;
-                        width: 100%;
-                        text-align: center;
-                        letter-spacing: .025rem;
-                        transition: .25s;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+
+                        padding: .65rem 1rem;
+                        width: 100%;
+                        
+                        text-transform: capitalize;
+                        text-align: center;
+                        letter-spacing: .025rem;
+
+                        font-size: .95rem;
+                        font-size: clamp(.95rem, 1vw, 1.15rem);
+                        
+                        border-radius: abstracts.$border-radius-sm;
+                        transition: .250ms;
+
                         @include abstracts.xsm {
                             cursor: default;
                         }
+
                         @include abstracts.md {
                             width: 10rem;
                         }
+
                         i {
                             transition: .25s;
                         }
+
                         &.cta-primary {
                             background: abstracts.$span-crimson;
                             border: none;
@@ -261,16 +293,14 @@
                             font-weight: 500;
                             position: relative;
                             isolation: isolate;
+
                             // PSEUDO BG
                             &::after, &::before {
                                 content: '';
                                 position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
+                                inset: 0;
                                 border-radius: abstracts.$border-radius-sm;
-                                transition: .25s ease;
+                                transition: 250ms ease;
                                 z-index: -1;
                             }
                             &::before {
@@ -282,18 +312,14 @@
                                 box-shadow: abstracts.$box-light-top-sm-hover;
                                 opacity: 0;
                             }
+
                         }
+
                         &.cta-secondary {
                             border: 1px solid abstracts.$overlay-blue-dark;
-                            // font-size: .8rem;
-                            // padding: .7rem;
-                            // text-decoration: underline;
                             color: abstracts.$overlay-blue-darker;
-                            i {
-                                // font-size: .85rem;
-                                font-weight: 600;
-                            }
                         }
+
                         // BUTTON HOVER AND ACTIVE CLASSES
                         @media (min-width: 768px) {
                             &:hover {
@@ -318,37 +344,61 @@
                             }
                         }
                     }
+
                 }
+
             }
+
+            // ITEM IMAGE
             .item-content {
                 padding: 0.5rem;
+
+                // WIDE SCREENS CONTENT STYLE
                 @include abstracts.lg {
                     width: 50%;
-                    padding: 2rem;
                 }
 
                 .item-image {
-                    // border: 1px solid abstracts.$overlay-blue-light;
-                    border-radius: 0.25rem;
-                    overflow: hidden;
                     width: 100%;
                     height: 100%;
-                    box-shadow: 0 0.25rem 0.5rem abstracts.$brand-shadow;
+
+                    transform: scale(1.1);
+                    transition: 250ms;
+                    border-radius: 0.25rem;
+                    position: relative;
+                    isolation: isolate;
+
+                    
+
+                    // PSEUDO SHADOW
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        box-shadow: 0 0.25rem 0.5rem abstracts.$brand-shadow;
+                        opacity: 0;
+                        border-radius: inherit;
+                        transition: 250ms;
+                    }
+
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        border-radius: 0.25rem;
                         object-position: center;
-                        transition: .25s;
+                        transition: 350ms;
                     }
-                    @include abstracts.lg {
-                        // border-radius: .25rem;
+                    
+                    // WIDE SCREENS
+                    @include abstracts.md {
+                        transform: scale(1.125);
                         img {
-                            // border: 1px solid #0002;
-                            // border-radius: .25rem;
+                            border-radius: 0;
                         }
                     }
                 }
+
             }
 
             // SMALL SCREEN IO
@@ -389,6 +439,25 @@
                     .item-content {
                         opacity: 1;
                         transform: translateX(0);
+                    }
+                }
+            }
+
+            &:hover {
+                .item-content {
+                    .item-image {
+                        transform: scale(1);
+                        transition: 500ms;
+                        &::after {
+                            opacity: 1;
+                            transition: 500ms ease-out;
+                        }
+                    }
+                    // WIDE SCREENS
+                    @include abstracts.md {
+                        img {
+                            border-radius: 0.25rem;
+                        }
                     }
                 }
             }
