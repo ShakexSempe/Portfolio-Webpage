@@ -2218,11 +2218,16 @@ form button:hover::after {
   fill: #1f252d;
   transition: 250ms;
   filter: drop-shadow(0.25rem 0.5rem 0.5rem rgba(41, 50, 61, 0.2));
-  cursor: pointer;
+  cursor: default;
+}
+@media (min-width: 576px) {
+  .skills-section .skills-content .skills-intro .skills-icons svg {
+    cursor: pointer;
+  }
 }
 .skills-section .skills-content .skills-intro .skills-icons svg:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0.125rem 0.25rem 0.25rem rgba(41, 50, 61, 0.5));
+  filter: drop-shadow(0.125rem 0.25rem 0.25rem rgba(41, 50, 61, 0.45));
 }
 
 .skill-section-container {
