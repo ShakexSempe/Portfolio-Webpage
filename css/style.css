@@ -2112,7 +2112,7 @@ form button:hover::after {
 
 .skills-section {
   padding: 10vh 0 5vh;
-  background: linear-gradient(25deg, #ececec 28%, #fff 45%);
+  background: linear-gradient(25deg, #ececec 25%, #fff 40%);
 }
 @media (min-width: 768px) {
   .skills-section {
