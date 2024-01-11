@@ -6,6 +6,7 @@
 
     // DESKTOP BACKGROUND
     @include abstracts.md {
+        padding: 10vh 0;
         background: linear-gradient(0deg, hsl(0, 0%, 92.5%) 10%, #fff 20%);
     }
 
@@ -43,9 +44,13 @@
                     text-wrap: pretty;
                     font-size: abstracts.$font-clamp-xsm;
                     
-                    strong {
+                    .modal-link {
                         font-weight: 600;
                         color: inherit;
+
+                        &:hover, &:focus {
+                            color: abstracts.$span-crimson;
+                        }
                     }
 
                     @include abstracts.lg {
@@ -72,7 +77,33 @@
                     // }
 
                 }
+
+
                 
+                .page-link {
+                    @include abstracts.xsm {
+                        display: none;
+                    }
+                    display: flex;
+                    gap: 0.5rem;
+
+                    margin-top: 0.5rem;
+                    width: max-content;
+                    text-transform: capitalize;
+                    text-decoration: underline;
+
+                    transition: 250ms;
+
+                    &:hover {
+                        color: abstracts.$span-crimson;
+                        text-decoration-color: transparent;
+
+                        .icon {
+                            translate: 0.25rem 0;
+                        }
+                    }
+                }
+
             }
 
             .skills-icons {
@@ -261,9 +292,6 @@
             width: 11rem;
             width: clamp(11rem, 10vw, 12rem);
             font-weight: 600;
-            font-size: 1rem;
-            font-size: abstracts.$font-clamp-sm;
-
         }
 
         .section-title-image {
