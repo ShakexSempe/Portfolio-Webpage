@@ -458,11 +458,11 @@ dialog {
   background: radial-gradient(#f4f4f4, #fff 50%);
   scale: 0.95;
   opacity: 0;
-  transition: all 300ms;
 }
 dialog[open] {
   opacity: 1;
   scale: 1;
+  transition: all 300ms;
 }
 @media (min-width: 576px) {
   dialog {
