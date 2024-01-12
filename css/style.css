@@ -2206,11 +2206,12 @@ form button:hover::after {
     display: none;
   }
 }
-.skills-section .skills-content .skills-intro .skills-article .page-link:hover {
+.skills-section .skills-content .skills-intro .skills-article .page-link:hover, .skills-section .skills-content .skills-intro .skills-article .page-link:focus {
+  outline-color: #b3c0cc;
   color: #dc143c;
   text-decoration-color: transparent;
 }
-.skills-section .skills-content .skills-intro .skills-article .page-link:hover .icon {
+.skills-section .skills-content .skills-intro .skills-article .page-link:hover .icon, .skills-section .skills-content .skills-intro .skills-article .page-link:focus .icon {
   translate: 0.25rem 0;
 }
 .skills-section .skills-content .skills-intro .skills-icons {

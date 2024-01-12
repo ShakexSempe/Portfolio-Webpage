@@ -94,7 +94,8 @@
 
                     transition: 250ms;
 
-                    &:hover {
+                    &:hover, &:focus {
+                        outline-color: abstracts.$brand;
                         color: abstracts.$span-crimson;
                         text-decoration-color: transparent;
 
