@@ -345,7 +345,6 @@ section .section-title.active-item span {
   text-align: left;
   font-weight: 500;
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
   letter-spacing: 0.025rem;
   text-transform: capitalize;
   position: relative;
@@ -846,10 +845,6 @@ form button:hover::after {
   border-radius: 0.25rem;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
-.about .col-right .article-container article .buttons-container {
-  padding: 0;
-  margin: 1rem 0;
-}
 .about .col-right .article-container article .article-body {
   color: #1f252d;
   margin-top: 5vh;
@@ -909,6 +904,13 @@ form button:hover::after {
 }
 .about .col-right .article-container article .article-body .body-item:hover::after {
   opacity: 1;
+}
+.about .col-right .article-container .buttons-container {
+  margin: 1rem 0;
+}
+.about .col-right .article-container .buttons-container a {
+  width: 11rem;
+  width: clamp(11rem, 15vw, 12rem);
 }
 .about .col-left {
   border-radius: 0.25rem;

@@ -18,6 +18,7 @@
         position: relative;
         // ARTICLE CONTAINER
         .article-container {
+            
             article {
                 .cv-btn {
                     margin-top: .5rem;
@@ -46,10 +47,7 @@
                     }
                 }
 
-                .buttons-container {
-                    padding: 0;
-                    margin: 1rem 0;
-                }
+            
 
                 .article-body {
                     color: abstracts.$overlay-blue-darker;
@@ -114,6 +112,15 @@
                             }
                         }
                     }
+                }
+            }
+
+            .buttons-container {
+                margin: 1rem 0;
+
+                a {
+                    width: 11rem;
+                    width: clamp(11rem, 15vw, 12rem);
                 }
             }
 
