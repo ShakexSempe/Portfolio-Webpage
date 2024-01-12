@@ -10,458 +10,461 @@
         padding: 10vh 5vw 10vh;
     }
 
-    .work-intro {
+}
+
+.work-intro {
+
+    h3 {
+        text-transform: capitalize;
+        text-align: center;
+
+        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 4vw, 2rem);
+
+        position: relative;
+        width: max-content;
+        margin-inline: auto;
+
+        span {
+            color: #0007;
+            text-transform: capitalize;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.5rem;
+            left: 0;
+            width: 100%;
+            height: .125rem;
+            background: linear-gradient(90deg, transparent, #0007, transparent);
+        }
+
+    }
+
+    &.io-item {
 
         h3 {
-            text-transform: capitalize;
-            text-align: center;
-
-            font-size: 1.8rem;
-            font-size: clamp(1.8rem, 4vw, 2rem);
-
-            position: relative;
-            width: max-content;
-            margin-inline: auto;
-
-            span {
-                color: #0007;
-                text-transform: capitalize;
-            }
-
             &::after {
-                content: '';
-                position: absolute;
-                bottom: -.5rem;
-                left: 0;
-                width: 100%;
-                height: .125rem;
-                background: linear-gradient(90deg, transparent, #0007, transparent);
+                transform: scaleX(0);
+                transition: 1.5s;
             }
-
         }
 
-        &.io-item {
-
-            h3 {
-                &::after {
-                    transform: scaleX(0);
-                    transition: 1.5s;
-                }
-            }
-
-        }
-
-        &.active-item {
-            
-            h3 {
-                &::after {
-                    transform: scaleX(1);
-                }
-            }
-
-        }
     }
-    
-    .work-container {
-        margin-top: 10vh;
+
+    &.active-item {
+        
+        h3 {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+
+    }
+}
+
+// WORK ITEMS CONTAINER
+.work-container {
+    margin-top: 10vh;
+
+    @include abstracts.lg {
+        margin-top: 15vh;
+    }
+
+    .item-flex-container {
 
         @include abstracts.lg {
-            margin-top: 15vh;
-        }
-
-        .item-flex-container {
-
-            @include abstracts.lg {
-                display: flex;
-                flex-direction: row-reverse;
-                align-items: center;
-                justify-content: space-between;
-                gap: 1rem;
-                border-radius: .25rem;
-            }
-            
-        }
-
-        .item {
-            overflow: hidden;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
             border-radius: .25rem;
-            background: #fff;
-            box-shadow: abstracts.$box-shadow-item-md;
-            position: relative;
-            margin-bottom: 10vh;
+        }
+        
+    }
+
+    .item {
+        overflow: hidden;
+        border-radius: .25rem;
+        background: #fff;
+        box-shadow: abstracts.$box-shadow-item-md;
+        position: relative;
+        margin-bottom: 10vh;
+
+        @include abstracts.sm {
+            padding: .5rem;
+        }
+
+        @include abstracts.md {
+            background: #ffff;
+        }
+        
+        .item-header {
+            padding: 1rem;
 
             @include abstracts.sm {
-                padding: .5rem;
+                padding: 1rem;
             }
 
             @include abstracts.md {
-                background: #ffff;
+                // display:flex;
+                // flex-direction: column;
+                // justify-content: space-between;
             }
-            
-            .item-header {
-                padding: 1rem .5rem 1rem;
 
-                @include abstracts.sm {
-                    padding: 1rem;
-                }
+            @include abstracts.lg {
+                width: 50%;
+                height: 100%;
+            }
 
-                @include abstracts.md {
-                    display:flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+            .item-title {
+                text-transform: capitalize;
+                font-weight: 700;
+                font-size: 1rem;
+                font-size: clamp(1rem, 2vw, 1.25rem);
+            }
+
+            .item-meta-data {
+                // border: 2px solid yellow;
+                display: flex;
+                display: none;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 1rem;
+                flex-wrap: wrap;
+                
+                margin: 1.5rem 0 0;
+                padding: .5rem 1rem;
+                list-style: none;
+                
+                position: absolute;
+                bottom: 0;
+                background: abstracts.$overlay-blue-darker;
+                width: 100%;
+                left: 0;
+
+                @include abstracts.lg {
+                    gap: 1rem;
+                    background: transparent;
+                    // bottom: -1rem;
                 }
 
                 @include abstracts.lg {
-                    width: 50%;
+                    justify-content: start;
                 }
 
-                .item-title {
-                    text-transform: capitalize;
-                    font-weight: 700;
-                    font-size: 1rem;
-                    font-size: clamp(1rem, 2vw, 1.25rem);
+                @include abstracts.xlg {
+                    bottom: -1rem;
                 }
 
-                .item-meta-data {
-                    // border: 2px solid yellow;
-                    display: flex;
-                    display: none;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    gap: 1rem;
-                    flex-wrap: wrap;
-                    
-                    margin: 1.5rem 0 0;
-                    padding: .5rem 1rem;
-                    list-style: none;
-                    
-                    position: absolute;
-                    bottom: 0;
+                p {
                     background: abstracts.$overlay-blue-darker;
-                    width: 100%;
-                    left: 0;
+                    color: abstracts.$text-light;
+                    padding: .25rem .5rem;
+                    border-radius: .25rem;
+                    font-size: .75rem;
+                    text-transform: lowercase;
+                    box-shadow: abstracts.$box-shadow-item-sm;
+                    &::first-letter {
+                        text-transform: capitalize;
+                    }
+                    text-transform: uppercase;
 
-                    @include abstracts.lg {
-                        gap: 1rem;
-                        background: transparent;
-                        // bottom: -1rem;
+                    &:hover {
+                        background: abstracts.$overlay-blue-light;
+                    }
+                }
+
+                li {
+                    border: 1px solid #000;
+                    border-radius: .25rem;
+                    padding: .25rem .5rem;
+                    font-size: .8rem;
+                    text-transform: uppercase;
+                    background: abstracts.$overlay-blue-darker;
+                    color: abstracts.$text-light;
+                    transition: .25s;
+                    
+                    &:hover {
+                        color: abstracts.$brand;
                     }
 
-                    @include abstracts.lg {
-                        justify-content: start;
+                }
+
+            }
+
+            .item-description {
+                margin: .5rem 0 1rem;
+
+                h4 {
+                    text-transform: capitalize;
+                    color: #0008;
+                    font-size: .9rem;
+                    font-size: clamp(.9rem, 2vw, 1.125rem);
+                }
+
+                p {
+                    color: abstracts.$overlay-blue-light;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    font-size: clamp(.95rem, 1.5vw, 1.05rem);
+
+                    &::first-letter {
+                        text-transform: capitalize;
                     }
 
-                    @include abstracts.xlg {
-                        bottom: -1rem;
-                    }
+                }
 
-                    p {
-                        background: abstracts.$overlay-blue-darker;
-                        color: abstracts.$text-light;
-                        padding: .25rem .5rem;
-                        border-radius: .25rem;
-                        font-size: .75rem;
-                        text-transform: lowercase;
-                        box-shadow: abstracts.$box-shadow-item-sm;
-                        &::first-letter {
-                            text-transform: capitalize;
-                        }
-                        text-transform: uppercase;
-
-                        &:hover {
-                            background: abstracts.$overlay-blue-light;
-                        }
-                    }
+                ul {
+                    margin: 1rem;
 
                     li {
-                        border: 1px solid #000;
-                        border-radius: .25rem;
-                        padding: .25rem .5rem;
-                        font-size: .8rem;
-                        text-transform: uppercase;
-                        background: abstracts.$overlay-blue-darker;
-                        color: abstracts.$text-light;
-                        transition: .25s;
-                        
-                        &:hover {
-                            color: abstracts.$brand;
-                        }
-
-                    }
-
-                }
-
-                .item-description {
-                    margin: .5rem 0 1rem;
-
-                    h4 {
-                        text-transform: capitalize;
-                        color: #0008;
-                        font-size: .9rem;
-                        font-size: clamp(.9rem, 2vw, 1.125rem);
-                    }
-
-                    p {
-                        color: abstracts.$overlay-blue-light;
-                        font-weight: 400;
-                        font-size: 1rem;
-                        font-size: clamp(.95rem, 1.5vw, 1.05rem);
-
-                        &::first-letter {
+                        margin-bottom: .25rem;
+                        a {
                             text-transform: capitalize;
-                        }
-
-                    }
-
-                    ul {
-                        margin: 1rem;
-
-                        li {
-                            margin-bottom: .25rem;
-                            a {
-                                text-transform: capitalize;
-                                font-size: .9rem;
-                                font-size: clamp(.9rem, 1.5vw, 1.125rem);
-                                color: inherit;
-                            }
-
-                            i {
-                                margin-left: .5rem;
-                                color: abstracts.$brand;
-                                transform: scale(.85);
-                                transition: .25s;
-                            }
-
-                            // LI HOVER
-                            &:hover {
-                                i {
-                                    color: abstracts.$span-crimson;
-                                    transform: scale(1);
-                                }
-                            }
-
-                        }
-
-                    }
-
-                }
-
-                .item-cta {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 1rem;
-
-                    @include abstracts.md {
-                        justify-content: start;
-                    }
-
-                    a {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-
-                        padding: .65rem 1rem;
-                        width: 100%;
-                        
-                        text-transform: capitalize;
-                        text-align: center;
-                        letter-spacing: .025rem;
-
-                        font-size: .95rem;
-                        font-size: clamp(.95rem, 1vw, 1.15rem);
-                        
-                        border-radius: abstracts.$border-radius-sm;
-                        transition: .250ms;
-
-                        @include abstracts.xsm {
-                            cursor: default;
-                        }
-
-                        @include abstracts.md {
-                            width: 10rem;
+                            font-size: .9rem;
+                            font-size: clamp(.9rem, 1.5vw, 1.125rem);
+                            color: inherit;
                         }
 
                         i {
+                            margin-left: .5rem;
+                            color: abstracts.$brand;
+                            transform: scale(.85);
                             transition: .25s;
                         }
 
-                        &.cta-primary {
-                            background: abstracts.$span-crimson;
-                            border: none;
-                            color: abstracts.$text-light;
-                            font-weight: 500;
-                            position: relative;
-                            isolation: isolate;
-
-                            // PSEUDO BG
-                            &::after, &::before {
-                                content: '';
-                                position: absolute;
-                                inset: 0;
-                                border-radius: abstracts.$border-radius-sm;
-                                transition: 250ms ease;
-                                z-index: -1;
-                            }
-                            &::before {
-                                background: abstracts.$button-crimson;
-                                box-shadow: abstracts.$box-light-top-sm;
-                            }
-                            &::after {
-                                background: abstracts.$button-crimson-hover;
-                                box-shadow: abstracts.$box-light-top-sm-hover;
-                                opacity: 0;
-                            }
-
-                        }
-
-                        &.cta-secondary {
-                            border: 1px solid abstracts.$overlay-blue-dark;
-                            color: abstracts.$overlay-blue-darker;
-                        }
-
-                        // BUTTON HOVER AND ACTIVE CLASSES
-                        @media (min-width: 768px) {
-                            &:hover {
-                                transform: scale(.98);
-                                letter-spacing: normal;
-                                i {
-                                    transform: translateX(-.25rem);
-                                }
-                                &::before {opacity: 0;}
-                                &::after {opacity: 1;}
+                        // LI HOVER
+                        &:hover {
+                            i {
+                                color: abstracts.$span-crimson;
+                                transform: scale(1);
                             }
                         }
-                        @media (max-width: 768px) {
-                            &:active {
-                                transform: scale(.98);
-                                letter-spacing: normal;
-                                i {
-                                    transform: translateX(-.25rem);
-                                }
-                                &::before {opacity: 0;}
-                                &::after {opacity: 1;}
-                            }
-                        }
+
                     }
 
                 }
 
             }
 
-            // ITEM IMAGE
-            .item-content {
-                padding: 0.5rem;
+            .item-cta {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
 
-                // WIDE SCREENS CONTENT STYLE
-                @include abstracts.lg {
-                    width: 50%;
+                @include abstracts.md {
+                    justify-content: start;
                 }
 
-                .item-image {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    padding: .65rem 1rem;
+                    width: 100%;
+                    
+                    text-transform: capitalize;
+                    text-align: center;
+                    letter-spacing: .025rem;
+
+                    font-size: .95rem;
+                    font-size: clamp(.95rem, 1vw, 1.15rem);
+                    
+                    border-radius: abstracts.$border-radius-sm;
+                    transition: .250ms;
+
+                    @include abstracts.xsm {
+                        cursor: default;
+                    }
+
+                    @include abstracts.md {
+                        width: 10rem;
+                    }
+
+                    i {
+                        transition: .25s;
+                    }
+
+                    &.cta-primary {
+                        background: abstracts.$span-crimson;
+                        border: none;
+                        color: abstracts.$text-light;
+                        font-weight: 500;
+                        position: relative;
+                        isolation: isolate;
+
+                        // PSEUDO BG
+                        &::after, &::before {
+                            content: '';
+                            position: absolute;
+                            inset: 0;
+                            border-radius: abstracts.$border-radius-sm;
+                            transition: 250ms ease;
+                            z-index: -1;
+                        }
+                        &::before {
+                            background: abstracts.$button-crimson;
+                            box-shadow: abstracts.$box-light-top-sm;
+                        }
+                        &::after {
+                            background: abstracts.$button-crimson-hover;
+                            box-shadow: abstracts.$box-light-top-sm-hover;
+                            opacity: 0;
+                        }
+
+                    }
+
+                    &.cta-secondary {
+                        border: 1px solid abstracts.$overlay-blue-dark;
+                        color: abstracts.$overlay-blue-darker;
+                    }
+
+                    // BUTTON HOVER AND ACTIVE CLASSES
+                    @media (min-width: 768px) {
+                        &:hover {
+                            transform: scale(.98);
+                            letter-spacing: normal;
+                            i {
+                                transform: translateX(-.25rem);
+                            }
+                            &::before {opacity: 0;}
+                            &::after {opacity: 1;}
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        &:active {
+                            transform: scale(.98);
+                            letter-spacing: normal;
+                            i {
+                                transform: translateX(-.25rem);
+                            }
+                            &::before {opacity: 0;}
+                            &::after {opacity: 1;}
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        // ITEM IMAGE
+        .item-content {
+            padding: 0.5rem;
+
+            // WIDE SCREENS CONTENT STYLE
+            @include abstracts.lg {
+                width: 50%;
+            }
+
+            .item-image {
+                width: 100%;
+                height: 100%;
+
+                transform: scale(1.1);
+                transition: 250ms;
+                border-radius: 0.25rem;
+                position: relative;
+                isolation: isolate;
+
+                
+
+                // PSEUDO SHADOW
+                &::after {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    box-shadow: 0 0.25rem 0.5rem abstracts.$brand-shadow;
+                    opacity: 0;
+                    border-radius: inherit;
+                    transition: 250ms;
+                }
+
+                img {
                     width: 100%;
                     height: 100%;
-
-                    transform: scale(1.1);
-                    transition: 250ms;
+                    object-fit: cover;
                     border-radius: 0.25rem;
-                    position: relative;
-                    isolation: isolate;
-
-                    
-
-                    // PSEUDO SHADOW
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        inset: 0;
-                        box-shadow: 0 0.25rem 0.5rem abstracts.$brand-shadow;
-                        opacity: 0;
-                        border-radius: inherit;
-                        transition: 250ms;
-                    }
-
+                    object-position: center;
+                    transition: 350ms;
+                }
+                
+                // WIDE SCREENS
+                @include abstracts.md {
+                    transform: scale(1.125);
                     img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 0.25rem;
-                        object-position: center;
-                        transition: 350ms;
-                    }
-                    
-                    // WIDE SCREENS
-                    @include abstracts.md {
-                        transform: scale(1.125);
-                        img {
-                            border-radius: 0;
-                        }
+                        border-radius: 0;
                     }
                 }
-
             }
 
-            // SMALL SCREEN IO
-            @media (max-width: abstracts.$screen-lg-min){
-                // IO CLASS
-                &.io-item {
+        }
+
+        // SMALL SCREEN IO
+        @media (max-width: abstracts.$screen-lg-min){
+            // IO CLASS
+            &.io-item {
+                opacity: 1;
+                transform: translateY(5vh);
+                transition: 1.25s;
+                
+            }
+            // ACTIVE ITEM
+            &.active-item {
+                opacity: 1;
+                transform: translateY(0);
+                
+            }
+        }
+        // DESKTOP IO
+        @include abstracts.lg {
+            &.io-item {
+                .item-header {
                     opacity: 1;
-                    transform: translateY(5vh);
-                    transition: 1.25s;
-                    
+                    transform: translateX(5vw);
+                    transition: 1s;
                 }
-                // ACTIVE ITEM
-                &.active-item {
-                    opacity: 1;
-                    transform: translateY(0);
-                    
-                }
-            }
-            // DESKTOP IO
-            @include abstracts.lg {
-                &.io-item {
-                    .item-header {
-                        opacity: 1;
-                        transform: translateX(5vw);
-                        transition: 1s;
-                    }
-                    .item-content {
-                        opacity: 1;
-                        transform: translateX(-5vw);
-                        transition: 1s;
-                    }
-                }
-                &.active-item {
-                    .item-header {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                    .item-content {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-            }
-
-            &:hover {
                 .item-content {
-                    .item-image {
-                        transform: scale(1);
-                        transition: 500ms;
-                        &::after {
-                            opacity: 1;
-                            transition: 500ms ease-out;
-                        }
+                    opacity: 1;
+                    transform: translateX(-5vw);
+                    transition: 1s;
+                }
+            }
+            &.active-item {
+                .item-header {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+                .item-content {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        &:hover {
+            .item-content {
+                .item-image {
+                    transform: scale(1);
+                    transition: 500ms;
+                    &::after {
+                        opacity: 1;
+                        transition: 500ms ease-out;
                     }
-                    // WIDE SCREENS
-                    @include abstracts.md {
-                        img {
-                            border-radius: 0.25rem;
-                        }
+                }
+                // WIDE SCREENS
+                @include abstracts.md {
+                    img {
+                        border-radius: 0.25rem;
                     }
                 }
             }
         }
     }
-
 }
