@@ -999,6 +999,7 @@ form button:hover::after {
   width: 100%;
   position: relative;
   transform-style: preserve-3d;
+  perspective-origin: 10rem;
 }
 .contact .contact-header {
   margin-bottom: 10vh;
@@ -1009,6 +1010,7 @@ form button:hover::after {
   gap: 10vh;
   width: 100%;
   margin-top: 5vh;
+  perspective-origin: 10rem;
 }
 @media (min-width: 768px) {
   .contact .contact-items {
@@ -1017,35 +1019,57 @@ form button:hover::after {
     margin-top: 20vh;
   }
 }
-.contact .contact-items .contact-item {
+.contact .contact-item {
   padding: 0.25rem 0.5rem 1rem 1rem;
   background: #fff;
   border-radius: 0.25rem;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
-  transition: 0.25s;
+  transition: 250ms;
+  isolation: isolate;
+  position: relative;
+  transform-style: preserve-3d;
 }
-.contact .contact-items .contact-item .title {
+.contact .contact-item::before, .contact .contact-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transition: 250ms;
+  z-index: -1;
+}
+.contact .contact-item::before {
+  opacity: 1;
+  background: #fff;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.067);
+}
+.contact .contact-item::after {
+  opacity: 0;
+  background: #fff;
+  background: radial-gradient(#fff000, #ff0000 50%);
+  background: radial-gradient(#f4f4f4, #fff 50%);
+  box-shadow: 0.25rem 0.5rem 0.25rem #0002;
+}
+.contact .contact-item .title {
   text-transform: capitalize;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
   transition: 0.25s;
   position: relative;
 }
-.contact .contact-items .contact-item .title h3 {
+.contact .contact-item .title h3 {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
 }
-.contact .contact-items .contact-item .title i, .contact .contact-items .contact-item .title img {
+.contact .contact-item .title i, .contact .contact-item .title img {
   transform: translateY(-1rem) scale(1.1);
   font-size: 2rem;
   filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1));
   margin-bottom: 0.5rem;
   transition: 0.25s ease-in-out;
 }
-.contact .contact-items .contact-item .title .icon {
+.contact .contact-item .title .icon {
   width: 2rem;
 }
-.contact .contact-items .contact-item .title::after {
+.contact .contact-item .title::after {
   content: attr(data-info);
   position: absolute;
   top: 1rem;
@@ -1057,28 +1081,54 @@ form button:hover::after {
   transition: 0.5s;
   opacity: 0.5;
 }
-.contact .contact-items .contact-item .contact-info p {
+.contact .contact-item .contact-info p {
   margin: 0.5rem 0;
 }
-.contact .contact-items .contact-item .contact-info .btn i, .contact .contact-items .contact-item .contact-info .btn .icon {
+.contact .contact-item .contact-info .btn i, .contact .contact-item .contact-info .btn .icon {
   opacity: 0.5;
   transition: 0.25s;
 }
-.contact .contact-items .contact-item:hover {
-  transform: scale(0.99);
+.contact .contact-item:hover {
+  animation: card-hover 500ms forwards;
 }
-.contact .contact-items .contact-item:hover .title i, .contact .contact-items .contact-item:hover .title .icon {
+@media (prefers-reduced-motion) {
+  .contact .contact-item:hover {
+    animation: none;
+  }
+}
+.contact .contact-item:hover::before {
+  opacity: 0;
+}
+.contact .contact-item:hover::after {
+  opacity: 1;
+  transition-delay: 250ms;
+}
+.contact .contact-item:hover .title i, .contact .contact-item:hover .title .icon {
+  transition-delay: 300ms;
   transform: translateY(0rem) scale(1);
   filter: drop-shadow(0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.35));
 }
-.contact .contact-items .contact-item:hover .title::after {
+.contact .contact-item:hover .title::after {
   letter-spacing: normal;
   opacity: 1;
+  transition-delay: 200ms;
 }
-.contact .contact-items .contact-item:hover .contact-info .btn i, .contact .contact-items .contact-item:hover .contact-info .btn .icon {
+.contact .contact-item:hover .contact-info .btn i, .contact .contact-item:hover .contact-info .btn .icon {
   opacity: 1;
 }
 
+@keyframes card-hover {
+  50% {
+    scale: 1.05;
+    animation-timing-function: ease-in;
+  }
+  85% {
+    scale: 1.025;
+  }
+  75%, 100% {
+    scale: 1;
+  }
+}
 #footer {
   background: #15191e;
   padding: 0 0 5vh 0;
