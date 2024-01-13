@@ -1041,14 +1041,14 @@ form button:hover::after {
 .contact .contact-item::before {
   opacity: 1;
   background: #fff;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.067);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .contact .contact-item::after {
   opacity: 0;
   background: #fff;
   background: radial-gradient(#fff000, #ff0000 50%);
   background: radial-gradient(#f4f4f4, #fff 50%);
-  box-shadow: 0.25rem 0.5rem 0.25rem #0002;
+  box-shadow: 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 .contact .contact-item .title {
   text-transform: capitalize;
@@ -2744,7 +2744,7 @@ form button:hover::after {
   }
 }
 .work-container .item .item-header {
-  padding: 1rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
 @media (min-width: 576px) {
   .work-container .item .item-header {

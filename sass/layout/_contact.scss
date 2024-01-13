@@ -71,7 +71,7 @@
                 // box-shadow: inset 3px 3px 3px #0003,
                 //             inset -3px -3px 3px #0005,
                 //             0.5rem 0.5rem 0.5rem #0002;
-                box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.067)
+                box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
             }
 
             &::after {
@@ -80,7 +80,7 @@
                 background: radial-gradient(#fff000, #ff0000 50%);
                 background: radial-gradient(#f4f4f4, #fff 50%);
                 box-shadow: 
-                            0.25rem 0.5rem 0.25rem #0002;
+                            0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
             }
 
             // TITLE = ICON + H3 + PSEUDO TEXT 
@@ -169,6 +169,7 @@
                         }
                     }
                 }
+                
             }
             
         }
