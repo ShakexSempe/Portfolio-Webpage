@@ -1117,6 +1117,7 @@ form button:hover::after {
 }
 .contact .contact-item:hover .contact-info .btn i, .contact .contact-item:hover .contact-info .btn .icon {
   opacity: 1;
+  transition-delay: 350ms;
 }
 
 @keyframes card-hover {
