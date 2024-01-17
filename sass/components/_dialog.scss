@@ -1,15 +1,17 @@
 @use '../abstracts';
 
 dialog {
-    width: 100%;
     display: block;
-    // max-width: 500px;
-    height: 70vh;
-    margin: auto 5vw;
+    width: 100%;
+    max-width: 350px;
+    margin: auto ;
     padding: 1rem;
-    color: abstracts.$overlay-blue-light;
-    border-radius: 0.25rem;
+    
     background: radial-gradient( #f4f4f4, #fff 50%);
+    color: abstracts.$overlay-blue-light;
+    
+    border-color: abstracts.$overlay-blue-darker;
+    border-radius: 0.5rem;
     scale: .95;
     opacity: 0;
     

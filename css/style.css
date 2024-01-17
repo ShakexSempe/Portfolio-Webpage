@@ -12,6 +12,7 @@ html {
 
 body {
   color: #1f252d;
+  max-width: 100%;
 }
 body img {
   display: block;
@@ -447,14 +448,15 @@ section .section-title.active-item span {
 }
 
 dialog {
-  width: 100%;
   display: block;
-  height: 70vh;
-  margin: auto 5vw;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
   padding: 1rem;
-  color: #475462;
-  border-radius: 0.25rem;
   background: radial-gradient(#f4f4f4, #fff 50%);
+  color: #475462;
+  border-color: #1f252d;
+  border-radius: 0.5rem;
   scale: 0.95;
   opacity: 0;
 }
@@ -2383,6 +2385,10 @@ form button:hover::after {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   margin-bottom: 1rem;
+}
+.skill-section .skill-section-title p {
+  width: 300px;
+  width: clamp(300px, 50vw, 400px);
 }
 .skill-section .skill-section-title p::first-letter {
   text-transform: capitalize;

@@ -251,6 +251,8 @@
         }
 
         p {
+            width: 300px;
+            width: clamp(300px, 50vw, 400px);
             &::first-letter {
                 text-transform: capitalize;
             }
