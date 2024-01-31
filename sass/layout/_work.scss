@@ -104,6 +104,8 @@
         
         .item-header {
             padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+            padding: 0.5rem 0.5rem 1rem ;
+            padding: 1rem 0.5rem 4rem;
 
             @include abstracts.sm {
                 padding: 1rem;
@@ -128,7 +130,7 @@
             }
 
             .item-meta-data {
-                // border: 2px solid yellow;
+                border: 2px solid yellow;
                 display: flex;
                 display: none;
                 align-items: center;
@@ -136,13 +138,14 @@
                 gap: 1rem;
                 flex-wrap: wrap;
                 
+                background: abstracts.$overlay-blue-darker;
+                
                 margin: 1.5rem 0 0;
                 padding: .5rem 1rem;
                 list-style: none;
                 
                 position: absolute;
                 bottom: 0;
-                background: abstracts.$overlay-blue-darker;
                 width: 100%;
                 left: 0;
 
@@ -211,6 +214,9 @@
                     font-weight: 400;
                     font-size: 1rem;
                     font-size: clamp(.95rem, 1.5vw, 1.05rem);
+                    margin-bottom: 0.5rem;
+                    // border: 2px solid red;
+
 
                     &::first-letter {
                         text-transform: capitalize;
