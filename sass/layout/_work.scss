@@ -104,17 +104,19 @@
         
         .item-header {
             padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+            // padding: 1rem 0.5rem 4rem;
             padding: 0.5rem 0.5rem 1rem ;
-            padding: 1rem 0.5rem 4rem;
+            padding: 1rem 0.5rem 3rem;
 
             @include abstracts.sm {
-                padding: 1rem;
+                // padding: 1rem;
             }
 
             @include abstracts.md {
-                // display:flex;
-                // flex-direction: column;
-                // justify-content: space-between;
+                display:flex;
+                flex-direction: column;
+                // border: 2px solid red;
+                // padding: 1rem;
             }
 
             @include abstracts.lg {
@@ -129,75 +131,7 @@
                 font-size: clamp(1rem, 2vw, 1.25rem);
             }
 
-            .item-meta-data {
-                border: 2px solid yellow;
-                display: flex;
-                display: none;
-                align-items: center;
-                justify-content: space-evenly;
-                gap: 1rem;
-                flex-wrap: wrap;
-                
-                background: abstracts.$overlay-blue-darker;
-                
-                margin: 1.5rem 0 0;
-                padding: .5rem 1rem;
-                list-style: none;
-                
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                left: 0;
-
-                @include abstracts.lg {
-                    gap: 1rem;
-                    background: transparent;
-                    // bottom: -1rem;
-                }
-
-                @include abstracts.lg {
-                    justify-content: start;
-                }
-
-                @include abstracts.xlg {
-                    bottom: -1rem;
-                }
-
-                p {
-                    background: abstracts.$overlay-blue-darker;
-                    color: abstracts.$text-light;
-                    padding: .25rem .5rem;
-                    border-radius: .25rem;
-                    font-size: .75rem;
-                    text-transform: lowercase;
-                    box-shadow: abstracts.$box-shadow-item-sm;
-                    &::first-letter {
-                        text-transform: capitalize;
-                    }
-                    text-transform: uppercase;
-
-                    &:hover {
-                        background: abstracts.$overlay-blue-light;
-                    }
-                }
-
-                li {
-                    border: 1px solid #000;
-                    border-radius: .25rem;
-                    padding: .25rem .5rem;
-                    font-size: .8rem;
-                    text-transform: uppercase;
-                    background: abstracts.$overlay-blue-darker;
-                    color: abstracts.$text-light;
-                    transition: .25s;
-                    
-                    &:hover {
-                        color: abstracts.$brand;
-                    }
-
-                }
-
-            }
+            
 
             .item-description {
                 margin: .5rem 0 1rem;
@@ -221,6 +155,8 @@
                     &::first-letter {
                         text-transform: capitalize;
                     }
+
+
 
                 }
 
@@ -358,6 +294,71 @@
 
             }
 
+            .item-meta-data {
+                display: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+                
+                background: abstracts.$overlay-blue-darker;
+                
+                padding: .25rem 1rem;
+                list-style: none;
+                
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+
+                @include abstracts.lg {
+                    gap: 1rem;
+                    border-radius: 0.25rem;
+                    left: 0.5rem;
+                    width: 95%;
+                    background: transparent;
+                    // bottom: -1rem;
+                }
+
+                @include abstracts.lg {
+                    justify-content: start;
+                }
+
+                @include abstracts.xlg {
+                    bottom: -1rem;
+                }
+
+                p {
+                    background: abstracts.$overlay-blue-darker;
+                    color: abstracts.$text-light;
+                    padding: .25rem .5rem;
+                    border-radius: .25rem;
+                    font-size: .65rem;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background: abstracts.$overlay-blue-light;
+                    }
+                }
+
+                li {
+                    border: 1px solid #000;
+                    border-radius: .25rem;
+                    padding: .25rem .5rem;
+                    font-size: .8rem;
+                    text-transform: uppercase;
+                    background: abstracts.$overlay-blue-darker;
+                    color: abstracts.$text-light;
+                    transition: .25s;
+                    
+                    &:hover {
+                        color: abstracts.$brand;
+                    }
+
+                }
+
+            }
         }
 
         // ITEM IMAGE
