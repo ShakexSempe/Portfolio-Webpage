@@ -1915,8 +1915,8 @@ form button:hover::after {
 }
 .grid-title h2 {
   line-height: 1.2;
-  font-size: 1.8rem;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
   font-weight: 700;
 }
 @media (min-width: 820px) {
