@@ -10,6 +10,10 @@
         padding: 10vh 5vw 10vh;
     }
 
+    @include abstracts.dark {
+        background: abstracts.$overlay-blue-light;
+    }
+
 }
 
 .work-intro {
@@ -89,7 +93,7 @@
     .item {
         overflow: hidden;
         border-radius: .25rem;
-        background: #fff;
+        background: abstracts.$overlay-blue-darkest;
         box-shadow: abstracts.$box-shadow-item-md;
         position: relative;
         margin-bottom: 10vh;
@@ -138,13 +142,12 @@
 
                 h4 {
                     text-transform: capitalize;
-                    color: #0008;
                     font-size: .9rem;
                     font-size: clamp(.9rem, 2vw, 1.125rem);
                 }
 
                 p {
-                    color: abstracts.$overlay-blue-light;
+                    // color: abstracts.$overlay-blue-light;
                     font-weight: 400;
                     font-size: 1rem;
                     font-size: clamp(.95rem, 1.5vw, 1.05rem);
@@ -265,6 +268,8 @@
                     &.cta-secondary {
                         border: 1px solid abstracts.$overlay-blue-dark;
                         color: abstracts.$overlay-blue-darker;
+                        
+                        color: inherit;
                     }
 
                     // BUTTON HOVER AND ACTIVE CLASSES
@@ -279,6 +284,7 @@
                             &::after {opacity: 1;}
                         }
                     }
+
                     @media (max-width: 768px) {
                         &:active {
                             transform: scale(.98);
@@ -290,6 +296,7 @@
                             &::after {opacity: 1;}
                         }
                     }
+                    
                 }
 
             }

@@ -4,12 +4,17 @@
 #projects {
     padding: 10vh 5vw 10vh;
     
+    @include abstracts.dark {
+        background: abstracts.$overlay-blue-darkest;
+    }
+
     // PROJECTS CONTAINER
     .projects {
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
         position: relative;
+
         
         // PROJECT ITEMS
         .all-projects {

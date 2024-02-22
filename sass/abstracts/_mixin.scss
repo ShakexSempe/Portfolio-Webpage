@@ -54,3 +54,10 @@ $screen-xlg-min: 1024px;
     grid-template-columns: repeat($columns, 1fr);
 }
 
+
+// COLOR SCHEME MIXIN
+@mixin dark {
+    @media (prefers-color-scheme: dark) {
+        @content
+    }
+}

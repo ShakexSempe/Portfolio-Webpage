@@ -5,8 +5,13 @@
     flex-direction: column-reverse;
     gap: 5vh;
     padding: 10vh 5vw;
-    background-color: abstracts.$background-light;
+    background: abstracts.$background-light;
     position: relative;
+
+    @include abstracts.dark {
+        background: abstracts.$overlay-blue-darkest;
+        color: #ddd;
+    }
     
     // DESKTOP FLEX
     @include abstracts.md {
@@ -50,7 +55,7 @@
             
 
                 .article-body {
-                    color: abstracts.$overlay-blue-darker;
+                    // color: abstracts.$overlay-blue-darker;
                     margin-top: 5vh;
                     .body-item {
                         padding-bottom: .5rem;
@@ -72,6 +77,10 @@
                             margin-bottom: .5rem;
                             font-size: 1rem;
                             font-size: abstracts.$font-clamp-sm;
+
+                            @include abstracts.dark {
+                                color: #fafafa;
+                            }
                         }
 
                         p {
@@ -82,7 +91,7 @@
 
                         a {
                             // border: 2px solid red;
-                            color: abstracts.$overlay-blue-light;
+                            // color: abstracts.$overlay-blue-light;
                             font-size: 0.95rem;
                             font-size: abstracts.$font-clamp-xsm;
                             display: flex;
@@ -109,6 +118,10 @@
                             transition: .25s;
                             &::after {
                                 opacity: 1;
+                            }
+
+                            @include abstracts.dark {
+                                background: abstracts.$overlay-blue-dark;
                             }
                         }
                     }

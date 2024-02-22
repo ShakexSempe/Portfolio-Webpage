@@ -28,7 +28,8 @@ body {
         font-size: 1rem;
         font-size: abstracts.$font-clamp-sm;
         font-weight: 400;
-        line-height: 1.6;
+
+        line-height: 1.8;
         text-wrap: pretty;
     }
 
@@ -42,10 +43,21 @@ body {
 
 main {
     scroll-margin-top: 5vh;
+
+    @include abstracts.dark {
+        color: #f4f4f4;
+    }
+
 }
 
 section {
     width: 100%;
+    background: #fafafa;
+
+    @include abstracts.dark {
+        background: abstracts.$overlay-blue-dark;
+        color: #f4f4f4;
+    }
 
     .section-title {
         font-size: 2.5rem;
@@ -55,6 +67,10 @@ section {
         margin-bottom: 10vh;
         text-transform: uppercase;
         -webkit-box-reflect: below -.9rem linear-gradient(transparent, #0003);
+
+        @include abstracts.dark {
+            color: #f4f4f4;
+        }
 
         span {
             position: relative;
@@ -112,6 +128,7 @@ section {
         }
     }
 }
+
 // SECTION IMAGE PAD 
 .section-pad {
     height: 90vh;

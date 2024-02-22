@@ -28,9 +28,9 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 body p {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.8;
   text-wrap: pretty;
 }
 body .icon {
@@ -42,9 +42,21 @@ body .icon {
 main {
   scroll-margin-top: 5vh;
 }
+@media (prefers-color-scheme: dark) {
+  main {
+    color: #f4f4f4;
+  }
+}
 
 section {
   width: 100%;
+  background: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+  section {
+    background: #29323d;
+    color: #f4f4f4;
+  }
 }
 section .section-title {
   font-size: 2.5rem;
@@ -53,6 +65,11 @@ section .section-title {
   margin-bottom: 10vh;
   text-transform: uppercase;
   -webkit-box-reflect: below -0.9rem linear-gradient(transparent, #0003);
+}
+@media (prefers-color-scheme: dark) {
+  section .section-title {
+    color: #f4f4f4;
+  }
 }
 section .section-title span {
   position: relative;
@@ -501,7 +518,7 @@ dialog h3 {
 }
 dialog h4 {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
   text-wrap: pretty;
   text-wrap: balance;
   text-transform: capitalize;
@@ -815,8 +832,14 @@ form button:hover::after {
   flex-direction: column-reverse;
   gap: 5vh;
   padding: 10vh 5vw;
-  background-color: #f4f4f4;
+  background: #f4f4f4;
   position: relative;
+}
+@media (prefers-color-scheme: dark) {
+  .about {
+    background: #15191e;
+    color: #ddd;
+  }
 }
 @media (min-width: 768px) {
   .about {
@@ -831,7 +854,7 @@ form button:hover::after {
   margin-top: 0.5rem;
 }
 .about .col-right .article-container article .about-intro p {
-  font-size: clamp(.975rem, 1.5vw, 1.05rem);
+  font-size: clamp(.975rem, 1.5vw, 1.015rem);
 }
 .about .col-right .article-container article .about-intro p.intro {
   font-weight: 500;
@@ -848,7 +871,6 @@ form button:hover::after {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 .about .col-right .article-container article .article-body {
-  color: #1f252d;
   margin-top: 5vh;
 }
 .about .col-right .article-container article .article-body .body-item {
@@ -872,17 +894,21 @@ form button:hover::after {
   color: #29323d;
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
+}
+@media (prefers-color-scheme: dark) {
+  .about .col-right .article-container article .article-body .body-item .body-item-title {
+    color: #fafafa;
+  }
 }
 .about .col-right .article-container article .article-body .body-item p {
   margin: 0.5rem 0 1rem;
   font-size: 0.95rem;
-  font-size: clamp(.975rem, 1.5vw, 1.05rem);
+  font-size: clamp(.975rem, 1.5vw, 1.015rem);
 }
 .about .col-right .article-container article .article-body .body-item a {
-  color: #475462;
   font-size: 0.95rem;
-  font-size: clamp(.975rem, 1.5vw, 1.05rem);
+  font-size: clamp(.975rem, 1.5vw, 1.015rem);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -906,6 +932,11 @@ form button:hover::after {
 }
 .about .col-right .article-container article .article-body .body-item:hover::after {
   opacity: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .about .col-right .article-container article .article-body .body-item:hover {
+    background: #29323d;
+  }
 }
 .about .col-right .article-container .buttons-container {
   margin: 1rem 0;
@@ -987,13 +1018,17 @@ form button:hover::after {
 
 #contact {
   scroll-margin-top: 5vh;
-  background: #f4f4f4;
   padding: 10vh 5vw;
   min-height: 90vh;
 }
 @media (min-width: 820px) {
   #contact {
     padding: 10vh 5vw 5vh;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #contact {
+    background: #1f252d;
   }
 }
 
@@ -1052,16 +1087,27 @@ form button:hover::after {
   background: radial-gradient(#f4f4f4, #fff 50%);
   box-shadow: 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
 }
+@media (prefers-color-scheme: dark) {
+  .contact .contact-item {
+    background: #475462;
+  }
+  .contact .contact-item::before {
+    background: #475462;
+  }
+  .contact .contact-item::after {
+    background: linear-gradient(0deg, #29323c 0%, #485563 100%);
+  }
+}
 .contact .contact-item .title {
   text-transform: capitalize;
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
   transition: 0.25s;
   position: relative;
 }
 .contact .contact-item .title h3 {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 .contact .contact-item .title i, .contact .contact-item .title img {
   transform: translateY(-1rem) scale(1.1);
@@ -1849,7 +1895,7 @@ form button:hover::after {
 }
 .banner h1 {
   font-size: 1rem;
-  font-size: clamp(.975rem, 1.5vw, 1.05rem);
+  font-size: clamp(.975rem, 1.5vw, 1.015rem);
   font-weight: 300;
   margin-bottom: 0.5rem;
 }
@@ -1860,7 +1906,7 @@ form button:hover::after {
 }
 .banner p {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 .banner span {
   color: #b3c0cc;
@@ -2029,6 +2075,11 @@ form button:hover::after {
 #projects {
   padding: 10vh 5vw 10vh;
 }
+@media (prefers-color-scheme: dark) {
+  #projects {
+    background: #15191e;
+  }
+}
 #projects .projects {
   flex-direction: column;
   width: 100%;
@@ -2094,7 +2145,7 @@ form button:hover::after {
 }
 #projects .projects .project-item .project-tile h4 {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
   font-weight: 500;
   margin: 0.5rem 0 1rem;
   text-transform: capitalize;
@@ -2102,7 +2153,7 @@ form button:hover::after {
 }
 #projects .projects .project-item .project-tile p {
   font-size: 0.9rem;
-  font-size: clamp(.975rem, 1.5vw, 1.05rem);
+  font-size: clamp(.975rem, 1.5vw, 1.015rem);
   font-weight: 400;
   color: #ffff;
   margin: 0 0 0.5rem;
@@ -2190,11 +2241,12 @@ form button:hover::after {
 .skills-section {
   padding: 10vh 0 0;
   background: linear-gradient(25deg, #ececec 25%, #fff 40%);
+  background: #fafafa;
 }
-@media (min-width: 768px) {
+@media (prefers-color-scheme: dark) {
   .skills-section {
-    padding: 10vh 0;
-    background: linear-gradient(0deg, #ececec 10%, #fff 20%);
+    background: #1f252d;
+    color: #ddd;
   }
 }
 .skills-section .skills-header {
@@ -2211,6 +2263,7 @@ form button:hover::after {
 }
 .skills-section .skills-content .skills-intro {
   padding: 0 2.5vw 5vh 5vw;
+  padding: 0 5vw 5vh 5vw;
   position: relative;
 }
 @media (min-width: 576px) {
@@ -2223,9 +2276,6 @@ form button:hover::after {
 }
 .skills-section .skills-content .skills-intro .skills-article p {
   margin-bottom: 0.5rem;
-  line-height: 1.8;
-  text-wrap: pretty;
-  font-size: clamp(.975rem, 1.5vw, 1.05rem);
 }
 .skills-section .skills-content .skills-intro .skills-article p .modal-link {
   font-weight: 600;
@@ -2277,6 +2327,11 @@ form button:hover::after {
   position: relative;
   overflow: hidden;
   isolation: isolate;
+}
+@media (prefers-color-scheme: dark) {
+  .skills-section .skills-content .skills-intro .skills-icons {
+    display: none;
+  }
 }
 @media (min-width: 576px) {
   .skills-section .skills-content .skills-intro .skills-icons {
@@ -2680,6 +2735,11 @@ form button:hover::after {
     padding: 10vh 5vw 10vh;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .work {
+    background: #475462;
+  }
+}
 
 .work-intro h3 {
   text-transform: capitalize;
@@ -2733,7 +2793,7 @@ form button:hover::after {
 .work-container .item {
   overflow: hidden;
   border-radius: 0.25rem;
-  background: #fff;
+  background: #15191e;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   margin-bottom: 10vh;
@@ -2776,12 +2836,10 @@ form button:hover::after {
 }
 .work-container .item .item-header .item-description h4 {
   text-transform: capitalize;
-  color: #0008;
   font-size: 0.9rem;
   font-size: clamp(.9rem, 2vw, 1.125rem);
 }
 .work-container .item .item-header .item-description p {
-  color: #475462;
   font-weight: 400;
   font-size: 1rem;
   font-size: clamp(.95rem, 1.5vw, 1.05rem);
@@ -2878,6 +2936,7 @@ form button:hover::after {
 .work-container .item .item-header .item-cta a.cta-secondary {
   border: 1px solid #29323d;
   color: #1f252d;
+  color: inherit;
 }
 @media (min-width: 768px) {
   .work-container .item .item-header .item-cta a:hover {

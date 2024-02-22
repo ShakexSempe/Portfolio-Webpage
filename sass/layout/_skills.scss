@@ -3,21 +3,24 @@
 .skills-section {
     padding: 10vh 0 0;
     background: linear-gradient(25deg, #ececec 25%, #fff 40%);
+    background: #fafafa;
 
-    // DESKTOP BACKGROUND
-    @include abstracts.md {
-        padding: 10vh 0;
-        background: linear-gradient(0deg, hsl(0, 0%, 92.5%) 10%, #fff 20%);
+
+    @include abstracts.dark {
+        background: abstracts.$overlay-blue-darker;
+        color: #ddd;
     }
+    
 
+    // ADD PADDING TO SECTION TITLE
     .skills-header {
-        // border: 2px solid red;
         padding: 0 5vw;
     }
 
     // SKILLS CONTENT CONTAINER
     .skills-content {
 
+        // FIXED BACKGROUND IMAGE ON LARGER SCREENS
         @include abstracts.lg {
             background: url('../img/keyboard-mouse.jpg');
             background-repeat: no-repeat;
@@ -27,8 +30,10 @@
         }
 
         // SKILLS INTRO
+        // ADD PADDING TO SKILLS PARAGRAPHS
         .skills-intro {
             padding: 0 2.5vw 5vh 5vw;
+            padding: 0 5vw 5vh 5vw;
             position: relative;
 
             @include abstracts.sm {
@@ -40,9 +45,7 @@
 
                 p {
                     margin-bottom: 0.5rem;
-                    line-height: 1.8;
-                    text-wrap: pretty;
-                    font-size: abstracts.$font-clamp-xsm;
+                    // font-size: abstracts.$font-clamp-xsm;
                     
                     .modal-link {
                         font-weight: 600;
@@ -108,6 +111,11 @@
             }
 
             .skills-icons {
+
+                @include abstracts.dark {
+                    display: none;
+                }
+
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
