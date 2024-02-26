@@ -1031,12 +1031,6 @@ form button:hover::after {
     padding: 10vh 5vw 5vh;
   }
 }
-@media (prefers-color-scheme: dark) {
-  #contact {
-    background: #1f252d;
-  }
-}
-
 .contact {
   flex-direction: column;
   justify-content: start;
@@ -1144,7 +1138,7 @@ form button:hover::after {
   transition: 0.25s;
 }
 .contact .contact-item:hover {
-  animation: card-hover 500ms forwards;
+  animation: card-hover 400ms ease-in-out forwards;
 }
 @media (prefers-reduced-motion) {
   .contact .contact-item:hover {
@@ -1176,13 +1170,6 @@ form button:hover::after {
 @keyframes card-hover {
   50% {
     scale: 1.05;
-    animation-timing-function: ease-in;
-  }
-  85% {
-    scale: 1.025;
-  }
-  75%, 100% {
-    scale: 1;
   }
 }
 #footer {
