@@ -2,13 +2,17 @@
 
 html {
     scroll-behavior: smooth;
-    // font-family: abstracts.$font-content;
     font-family: 'Content', sans-serif;
 }
 
 body {
     color: abstracts.$overlay-blue-darker;
     max-width: 100%;
+
+    @include abstracts.dark {
+        color: abstracts.$text-light;
+    }
+
     img {
         display: block;
         max-width: 100%;
@@ -31,6 +35,13 @@ body {
 
         line-height: 1.8;
         text-wrap: pretty;
+
+        // color: abstracts.$overlay-blue-darker;
+
+        @include abstracts.dark {
+            color: #ddd;
+        }
+
     }
 
     .icon {
@@ -44,19 +55,16 @@ body {
 main {
     scroll-margin-top: 5vh;
 
-    @include abstracts.dark {
-        color: #f4f4f4;
-    }
-
 }
 
 section {
     width: 100%;
     background: #fafafa;
+    
 
     @include abstracts.dark {
-        background: abstracts.$overlay-blue-dark;
-        color: #f4f4f4;
+        background: yellow;
+        background: abstracts.$overlay-blue-darker;
     }
 
     .section-title {

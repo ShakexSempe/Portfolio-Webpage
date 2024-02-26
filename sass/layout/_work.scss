@@ -11,7 +11,7 @@
     }
 
     @include abstracts.dark {
-        background: abstracts.$overlay-blue-light;
+        background: abstracts.$overlay-blue-darker
     }
 
 }
@@ -91,12 +91,18 @@
     }
 
     .item {
-        overflow: hidden;
-        border-radius: .25rem;
-        background: abstracts.$overlay-blue-darkest;
-        box-shadow: abstracts.$box-shadow-item-md;
-        position: relative;
         margin-bottom: 10vh;
+        background: #ffff;
+        // background: abstracts.$overlay-blue-darkest;
+        // color: abstracts.$text-light;
+
+        
+        
+        border-radius: .25rem;
+        box-shadow: abstracts.$box-shadow-item-md;
+        
+        position: relative;
+        overflow: hidden;
 
         @include abstracts.sm {
             padding: .5rem;
@@ -106,6 +112,18 @@
             background: #ffff;
         }
         
+        // ITEM DARK THEME
+        @include abstracts.dark {
+            background: #f4f4f4;
+            color: abstracts.$overlay-blue-dark;
+            box-shadow: abstracts.$dark-theme-shadow;
+
+            p {
+                color: inherit;
+            }
+            
+        }
+
         .item-header {
             padding: 0.5rem 0.25rem 0.5rem 0.5rem;
             // padding: 1rem 0.5rem 4rem;
@@ -152,7 +170,7 @@
                     font-size: 1rem;
                     font-size: clamp(.95rem, 1.5vw, 1.05rem);
                     margin-bottom: 0.5rem;
-                    // border: 2px solid red;
+                    
 
 
                     &::first-letter {
@@ -381,7 +399,7 @@
                 width: 100%;
                 height: 100%;
 
-                transform: scale(1.1);
+                // transform: scale(1.1);
                 transition: 250ms;
                 border-radius: 0.25rem;
                 position: relative;
@@ -481,4 +499,5 @@
             }
         }
     }
+
 }

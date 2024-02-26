@@ -2,14 +2,8 @@
 // SKILLS SECTION
 .skills-section {
     padding: 10vh 0 0;
-    background: linear-gradient(25deg, #ececec 25%, #fff 40%);
-    background: #fafafa;
-
-
-    @include abstracts.dark {
-        background: abstracts.$overlay-blue-darker;
-        color: #ddd;
-    }
+    // background: linear-gradient(25deg, #ececec 25%, #fff 40%);
+    // background: #fafafa;
     
 
     // ADD PADDING TO SECTION TITLE
@@ -32,8 +26,8 @@
         // SKILLS INTRO
         // ADD PADDING TO SKILLS PARAGRAPHS
         .skills-intro {
-            padding: 0 2.5vw 5vh 5vw;
             padding: 0 5vw 5vh 5vw;
+            padding: 0 2.5vw 5vh 5vw;
             position: relative;
 
             @include abstracts.sm {
@@ -223,12 +217,13 @@
     }
 
     .skill-section-title {
-        // border: 1px solid red;
+        background: linear-gradient(140deg, abstracts.$overlay-blue-darkest 40%, transparent);
+
+        height: 85vh;
         padding: 5vh 5vw;
+
         position: relative;
         isolation: isolate;
-        height: 85vh;
-        background: linear-gradient(140deg, abstracts.$overlay-blue-darkest 40%, transparent);
 
         @include abstracts.lg {
             padding: 20vh 5vw 10vh;

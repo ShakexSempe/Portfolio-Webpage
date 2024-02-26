@@ -54,15 +54,17 @@
             // PROJECT TILE
             .project-tile {
                 display: flex;
-                align-items: flex-start;
-                justify-content: center;
                 flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
                 flex-basis: 50%;
+                
+                background: abstracts.$overlay-dark;
 
                 padding: 1.5rem 1rem 1rem;
                 width: 100%;
                 height: 100%;
-                background: abstracts.$overlay-dark;
+                
 
                 @include abstracts.md {
                     padding: 2rem;
