@@ -139,30 +139,108 @@
     <!-- END OF HERO-->
 
     <!--HERO-->
-    <section id="home" data-hero class="banner">
-        <div class="hero">
-            <div class="hero-index-content">
+    <section id="home" data-hero class="banner index-banner">
+
+        <div class="hero hero-grid">
+
+            <!-- HERO TITLE -->
+            <div class="grid-title ">
                 <div class="content-title">
-                    <h1>web development</h1>
-                    <h2>Responsive<span> Web</span><br>Design</h2>
+
+                    <h1>websites & landing pages</h1>
+                    <h2>design & development <br> <span>Price-list</span></h1>
+
                 </div>
-                <div class="content-value">
-                    <p>Accessible, Immersive & Engaging <br>
-                        <span>responsive web design</span></p>
-                    <div class="cta">
-                        <a href="#main" class="btn">Let's work<i class="fa-solid fa-angles-right"></i></a>
-                    </div>
+
+
+            </div>
+
+            <!-- HERO SUBTITLE -->
+            <div class=" grid-subtitle">
+                <p>Accessible, Immersive & Engaging <br>
+                    <span>responsive web design</span></p>
+                <div class="cta">
+                    <a href="#main" id="hero-cta" class="btn btn-primary">get started
+                        <img class="icon" src="../icons/solid/icons8-double-right-48-light.png" height="48" width="48"
+                            alt="double right icon">
+                    </a>
                 </div>
             </div>
-            <picture class="hero-image">
-                <source srcset="../img/hero_1900.jpg" media="(min-width: 820px)" width="1900" height="1359">
-                <img src="../img/hero_450.jpg" width="450" height="318" alt="Laptop">
+
+            <!-- HERO IMAGE  -->
+            <picture class=" grid-image ">
+                <source srcset="../hero/hero-desktop.webp" media="(min-width: 500.1px)" width="900" height="637">
+                <source srcset="../hero/hero-mobile.webp" media="(max-width: 500px)" width="400" height="283">
+                <img src="../hero/hero-mobile.jpg" width="450" height="318" alt="Laptop">
             </picture>
+
         </div>
+
     </section>
-    <!-- END OF HERO-->
-    <!--  END OF MENU -->
+
+    <!--  MAIN -->
     <main id="main" data-main>
+
+        <div class="core-list">
+            <!-- SECTION TITLE -->
+            <h2 class="core-list-title">Price-list <span>web development services</span></h2>
+            
+            <!-- GRID CONTAINER -->
+            <div class="core-list-grid">
+
+                <!-- GRID-ITEMS = TITLE[H3] + UL -->
+
+                <!-- GRID-ITEM -->
+                <div class="list-grid-item">
+                    
+                    <h3 class="list-item-title light-title">basic 
+                        <span class="list-item-price">R2400</span>
+                    </h3>
+
+                    <ul class="list-item-content">
+                        <li>responsive design</li>
+                        <li>Accessibility & in-page SEO</li>
+                        <li>monthly hosting <span>R150</span></li>
+                    </ul>
+
+                </div>
+
+                <!-- GRID-ITEM -->
+                <div class="list-grid-item">
+                    
+                    <h3 class="list-item-title brand-title">Premium 
+                        <span class="list-item-price">R4800</span>
+                    </h3>
+
+                    <ul class="list-item-content">
+                        <li>responsive design</li>
+                        <li>Accessibility & in-page SEO</li>
+                        <li>monthly hosting <span>R150</span></li>
+                    </ul>
+
+                </div>
+
+                <!-- GRID-ITEM -->
+                <div class="list-grid-item">
+                    
+                    <h3 class="list-item-title dark-title">Elite 
+                        <span class="list-item-price">R7400</span>
+                    </h3>
+
+                    <ul class="list-item-content">
+                        <li>responsive design</li>
+                        <li>Accessibility & Full SEO</li>
+                        <li>monthly hosting <span>R150</span></li>
+                    </ul>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+
         <section class="prices">
 
             <div class="price-container">
@@ -408,17 +486,42 @@
         </section>
         <!-- END OF FOOTER-->
     </main>
+    
     <!-- BOTTOM NAVIGATION -->
     <div class="bottom-nav" id="bottom-nav">
-        <div class="link-item io-item item io-item-2">
-            <a href="../index.html"><i class="fas fa-house"></i></a>
-        </div>
-        <div class="link-item io-item item io-item-1">
-            <a href="#main"><i class="fas fa-arrow-up"></i></a>
-        </div>
-        <div class="link-item io-item item io-item-3">
-            <a href="#contact"><i class="fas fa-envelope"></i></a>
-        </div>
+
+        <!-- NAV-ITEM -->
+        <figure class="link-item io-item item io-item-1">
+            <a href="#contact" title="Contact Info">
+                <img class="icon outline-icon" src="../icons/outline/icons8-envelope-48-light.png" height="48"
+                    width="48" alt="envelope icon">
+                <img class="icon solid-icon" src="../icons/solid/icons8-envelope-48-light.png" height="48" width="48"
+                    alt="envelope icon">
+            </a>
+        </figure>
+
+        <!-- NAV-ITEM -->
+        <figure class="link-item io-item item io-item-2">
+            <a href="#home" title="Home">
+                <img class="icon outline-icon" src="../icons/outline/icons8-homepage-48-light-2.png" height="48"
+                    width="48" alt="home page icon">
+                <img class="icon solid-icon" src="../icons/solid/icons8-homepage-48-light.png" height="48" width="48"
+                    alt="home page icon">
+            </a>
+        </figure>
+
+        <!-- NAV ITEM -->
+        <figure class="link-item io-item item io-item-3">
+
+            <a title="Footer" href="#footer-bottom">
+                <img class="icon outline-icon" src="../icons/outline/icons8-info-squared-48-light.png" height="48"
+                    width="48" alt="four squares icon">
+                <img class="icon solid-icon" src="../icons/solid/icons8-info-squared-48-light.png" height="48"
+                    width="48" alt="four squares icon">
+            </a>
+
+        </figure>
+
     </div>
 
 </body>

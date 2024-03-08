@@ -1,8 +1,95 @@
 @use '../abstracts';
 
+.core-list {
+    background-color: #f4f4f4;
+    padding: 5vh 5vw;
+    min-height: 90vh;
+
+    .core-list-title {
+        text-transform: capitalize;
+        line-height: 1.4;
+        span {
+            display: block;
+            font-size: small;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.core-list-grid {
+    margin-top: 10vh;
+
+    display: grid;
+    gap: 5vh;
+
+    @include abstracts.md {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .list-grid-item {
+        background-color: #fafafa;
+        border-radius: .25rem;
+        overflow: hidden;
+        border: 1px solid abstracts.$overlay-blue-light;
+        box-shadow: 0px 0.5rem 0.5rem #0001;
+        transition: 350ms;
+
+        .list-item-title {
+            position: relative;
+            text-transform: uppercase;
+            background-color: abstracts.$overlay-blue-light;
+            color: abstracts.$text-light;
+            padding: 0.5rem;
+
+            span {
+                position: absolute;
+                right: 1rem;
+            }
+            
+            &.light-title {
+                background-color: abstracts.$overlay-blue-lighter;
+                color: abstracts.$text-dark;
+
+            }
+            &.brand-title {
+                background-color: abstracts.$overlay-blue-light;
+            }
+
+            &.dark-title {
+                background-color: abstracts.$overlay-blue-black;
+            }
+
+        }
+
+        ul {
+            list-style: none;
+            padding-block: 1rem;
+            li {
+                margin-bottom: 0.5rem;
+                padding: 0.25rem 0.5rem;
+                text-transform: capitalize;
+                text-wrap: balance;
+
+                &:nth-child(even){
+                    background-color: hsl(0, 0%, 90%);
+                }
+            }
+        }
+
+        // ITEM HOVER
+        &:hover {
+            background-color: #fff;
+            transform: scale(1.0125);
+            box-shadow: 0px 0.25rem 0.5rem #0001;
+        }
+    }
+
+}
 
 .prices {
-    border: 2px solid blue;
+    // border: 2px solid blue;
     min-height: 90vh;
     padding: 5vh 5vw;
 }

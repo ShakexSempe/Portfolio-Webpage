@@ -1995,8 +1995,81 @@ form button:hover::after {
   width: clamp(0.95rem, 2vw, 1rem);
 }
 
+.core-list {
+  background-color: #f4f4f4;
+  padding: 5vh 5vw;
+  min-height: 90vh;
+}
+.core-list .core-list-title {
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+.core-list .core-list-title span {
+  display: block;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.core-list-grid {
+  margin-top: 10vh;
+  display: grid;
+  gap: 5vh;
+}
+@media (min-width: 768px) {
+  .core-list-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.core-list-grid .list-grid-item {
+  background-color: #fafafa;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border: 1px solid #475462;
+  box-shadow: 0px 0.5rem 0.5rem #0001;
+  transition: 350ms;
+}
+.core-list-grid .list-grid-item .list-item-title {
+  position: relative;
+  text-transform: uppercase;
+  background-color: #475462;
+  color: #f4f4f4;
+  padding: 0.5rem;
+}
+.core-list-grid .list-grid-item .list-item-title span {
+  position: absolute;
+  right: 1rem;
+}
+.core-list-grid .list-grid-item .list-item-title.light-title {
+  background-color: #b5bfc9;
+  color: #000;
+}
+.core-list-grid .list-grid-item .list-item-title.brand-title {
+  background-color: #475462;
+}
+.core-list-grid .list-grid-item .list-item-title.dark-title {
+  background-color: #0a0d0f;
+}
+.core-list-grid .list-grid-item ul {
+  list-style: none;
+  padding-block: 1rem;
+}
+.core-list-grid .list-grid-item ul li {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  text-wrap: balance;
+}
+.core-list-grid .list-grid-item ul li:nth-child(even) {
+  background-color: #e6e6e6;
+}
+.core-list-grid .list-grid-item:hover {
+  background-color: #fff;
+  transform: scale(1.0125);
+  box-shadow: 0px 0.25rem 0.5rem #0001;
+}
+
 .prices {
-  border: 2px solid blue;
   min-height: 90vh;
   padding: 5vh 5vw;
 }
