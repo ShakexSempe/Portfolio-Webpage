@@ -2045,7 +2045,7 @@ form button:hover::after {
   color: #000;
 }
 .core-list-grid .list-grid-item .list-item-title.brand-title {
-  background-color: #475462;
+  background: linear-gradient(0deg, #29323c 0%, #485563 100%);
 }
 .core-list-grid .list-grid-item .list-item-title.dark-title {
   background-color: #0a0d0f;
