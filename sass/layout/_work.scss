@@ -16,6 +16,42 @@
 
 }
 
+
+// INTRO ARTICLE
+.work-article {
+    // border: 1px solid red;
+    max-width: 550px;
+
+    position: relative;
+    isolation: isolate;
+
+    // ARTICLE BG
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fffa;
+        filter: blur(1rem);
+        border-radius: 40%;
+        z-index: -1;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+
+    
+
+
+
+}
+
 .work-intro {
 
     h3 {
