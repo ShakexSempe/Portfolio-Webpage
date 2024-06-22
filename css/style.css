@@ -33,7 +33,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 body p {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
   font-weight: 400;
   line-height: 1.8;
   text-wrap: pretty;
@@ -859,7 +859,7 @@ form button:hover::after {
   margin-top: 0.5rem;
 }
 .about .col-right .article-container article .about-intro p {
-  font-size: clamp(.975rem, 1.5vw, 1.015rem);
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
 }
 .about .col-right .article-container article .about-intro p.intro {
   font-weight: 500;
@@ -909,11 +909,11 @@ form button:hover::after {
 .about .col-right .article-container article .article-body .body-item p {
   margin: 0.5rem 0 1rem;
   font-size: 0.95rem;
-  font-size: clamp(.975rem, 1.5vw, 1.015rem);
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
 }
 .about .col-right .article-container article .article-body .body-item a {
   font-size: 0.95rem;
-  font-size: clamp(.975rem, 1.5vw, 1.015rem);
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1887,7 +1887,7 @@ form button:hover::after {
 }
 .banner h1 {
   font-size: 1rem;
-  font-size: clamp(.975rem, 1.5vw, 1.015rem);
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
   font-weight: 300;
   margin-bottom: 0.5rem;
 }
@@ -2218,7 +2218,7 @@ form button:hover::after {
 }
 #projects .projects .project-item .project-tile p {
   font-size: 0.9rem;
-  font-size: clamp(.975rem, 1.5vw, 1.015rem);
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
   font-weight: 400;
   color: #ffff;
   margin: 0 0 0.5rem;
