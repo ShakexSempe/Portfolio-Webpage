@@ -562,9 +562,10 @@ form .input-div {
 form .input-div label {
   position: absolute;
   top: 0%;
-  transform: translateY(-0.5em);
+  transform: translateY(-1rem);
   text-transform: capitalize;
-  transition: 0.25s;
+  opacity: 0.85;
+  transition: 250ms;
 }
 form .input-div input, form .input-div textarea {
   padding: 0.65rem 0.5rem;
@@ -598,8 +599,8 @@ form .input-div input:focus::placeholder, form .input-div input:hover::placehold
   opacity: 0.6;
 }
 form .input-div:hover label, form .input-div:focus label {
-  transform: translateX(1em) translateY(-0.2em);
-  color: #f4f4f4;
+  transform: translateX(0.25rem) translateY(-0.5rem);
+  opacity: 1;
 }
 form button {
   width: 11rem;
@@ -1218,12 +1219,12 @@ form button:hover::after {
 }
 #footer .footer .footer-top .socialMedia-links .socialMedia-item {
   position: relative;
-  transition: 0.3s;
   width: 100%;
   border-bottom: 1px solid #fff4;
   padding-bottom: 1rem;
   overflow: hidden;
   position: relative;
+  transition: 250ms;
 }
 @media (min-width: 1024px) {
   #footer .footer .footer-top .socialMedia-links .socialMedia-item {
@@ -2235,7 +2236,7 @@ form button:hover::after {
   font-size: 0.85rem;
   padding: 0.75rem;
   margin: 1rem 0;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   font-weight: 500;
   text-transform: capitalize;
   color: #f4f4f4;

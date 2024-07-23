@@ -47,12 +47,12 @@
 
                 .socialMedia-item {
                     position: relative;
-                    transition: .3s;
                     width: 100%;
                     border-bottom: 1px solid #fff4;
                     padding-bottom: 1rem;
                     overflow: hidden;
                     position: relative;
+                    transition: 250ms;
                     @include abstracts.xlg {
                         width: 85%;
                         border: 1px solid #fff4;

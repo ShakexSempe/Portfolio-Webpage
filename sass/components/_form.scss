@@ -22,9 +22,10 @@ form {
         label {
             position: absolute;
             top: 0%;
-            transform: translateY(-.5em);
+            transform: translateY(-1rem);
             text-transform: capitalize;
-            transition: .25s;
+            opacity: 0.85;
+            transition: 250ms;
         }
 
         input, textarea {
@@ -66,8 +67,8 @@ form {
         // input hover state
         &:hover, &:focus {
             label {
-                transform: translateX(1em) translateY(-.2em);
-                color: abstracts.$text-light;
+                transform: translateX(0.25rem) translateY(-0.5rem);
+                opacity: 1;
             }
         }
     }
