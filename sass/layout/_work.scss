@@ -38,6 +38,10 @@
         filter: blur(1rem);
         border-radius: 40%;
         z-index: -1;
+
+        @include abstracts.dark {
+            background-color: abstracts.$overlay-blue-dark;
+        }
     }
 
     h3 {

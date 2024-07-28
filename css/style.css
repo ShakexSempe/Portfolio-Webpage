@@ -2817,6 +2817,11 @@ form button:hover::after {
   border-radius: 40%;
   z-index: -1;
 }
+@media (prefers-color-scheme: dark) {
+  .work-article::after {
+    background-color: #29323d;
+  }
+}
 .work-article h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
