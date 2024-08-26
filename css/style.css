@@ -2972,6 +2972,7 @@ form button:hover::after {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .work-container .item .item-header .item-cta {
@@ -2989,8 +2990,9 @@ form button:hover::after {
   letter-spacing: 0.025rem;
   font-size: 0.95rem;
   font-size: clamp(.95rem, 1vw, 1.15rem);
+  font-weight: 500;
   border-radius: 0.25rem;
-  transition: 0.25ms;
+  transition: 100ms ease;
 }
 @media (max-width: 450px) {
   .work-container .item .item-header .item-cta a {
@@ -3031,9 +3033,11 @@ form button:hover::after {
   opacity: 0;
 }
 .work-container .item .item-header .item-cta a.cta-secondary {
-  border: 1px solid #29323d;
   color: #1f252d;
+  background: linear-gradient(0deg, #bfbfbf, #d9d9d9);
   color: inherit;
+  box-shadow: 0.25rem 0.5rem 0.25rem red;
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 768px) {
   .work-container .item .item-header .item-cta a:hover {
@@ -3066,26 +3070,27 @@ form button:hover::after {
   }
 }
 .work-container .item .item-header .item-meta-data {
-  display: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  background: #1f252d;
-  padding: 0.25rem 1rem;
-  list-style: none;
   position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #1f252d;
+  padding: 0.25rem 1rem;
+  list-style: none;
 }
 @media (min-width: 820px) {
   .work-container .item .item-header .item-meta-data {
-    gap: 1rem;
-    border-radius: 0.25rem;
     left: 0.5rem;
     width: 95%;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0;
+    border-radius: 0.25rem;
     background: transparent;
   }
 }

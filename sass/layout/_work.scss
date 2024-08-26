@@ -255,6 +255,7 @@
                 justify-content: space-between;
                 align-items: center;
                 gap: 1rem;
+                margin-bottom: 0.5rem;
 
                 @include abstracts.md {
                     justify-content: start;
@@ -274,9 +275,10 @@
 
                     font-size: .95rem;
                     font-size: clamp(.95rem, 1vw, 1.15rem);
+                    font-weight: 500;
                     
                     border-radius: abstracts.$border-radius-sm;
-                    transition: .250ms;
+                    transition: 100ms ease;
 
                     @include abstracts.xsm {
                         cursor: default;
@@ -320,10 +322,14 @@
                     }
 
                     &.cta-secondary {
-                        border: 1px solid abstracts.$overlay-blue-dark;
+                        // border: 1px solid abstracts.$overlay-blue-dark;
                         color: abstracts.$overlay-blue-darker;
                         
+                        background: linear-gradient(0deg, hsl(0, 0%, 75%), hsl(0, 0%, 85%));
                         color: inherit;
+                        box-shadow: 0.25rem 0.5rem 0.25rem red;
+                        box-shadow: abstracts.$box-light-top-sm;
+
                     }
 
                     // BUTTON HOVER AND ACTIVE CLASSES
@@ -356,30 +362,35 @@
             }
 
             .item-meta-data {
-                display: none;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 1rem;
                 flex-wrap: wrap;
+                gap: 1rem;
+
                 
                 background: abstracts.$overlay-blue-darker;
                 
                 padding: .25rem 1rem;
                 list-style: none;
                 
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                left: 0;
 
                 @include abstracts.lg {
-                    gap: 1rem;
-                    border-radius: 0.25rem;
                     left: 0.5rem;
                     width: 95%;
+
+                    justify-content: start;
+                    gap: 1rem;
+
+                    padding: 0;
+
+                    border-radius: 0.25rem;
                     background: transparent;
-                    // bottom: -1rem;
                 }
 
                 @include abstracts.lg {
@@ -524,7 +535,7 @@
                         border-radius: 0.25rem;
                     }
                 }
-                
+
             }
         }
     }
