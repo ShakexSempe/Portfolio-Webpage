@@ -132,11 +132,7 @@
 
     .item {
         margin-bottom: 10vh;
-        background: #ffff;
-        // background: abstracts.$overlay-blue-darkest;
-        // color: abstracts.$text-light;
-
-        
+        background: #fff;
         
         border-radius: .25rem;
         box-shadow: abstracts.$box-shadow-item-md;
@@ -453,7 +449,6 @@
                     position: absolute;
                     inset: 0;
                     box-shadow: 0 0.25rem 0.5rem abstracts.$brand-shadow;
-                    opacity: 0;
                     border-radius: inherit;
                     transition: 250ms;
                 }
@@ -522,20 +517,14 @@
 
         &:hover {
             .item-content {
-                .item-image {
-                    transform: scale(1);
-                    transition: 500ms;
-                    &::after {
-                        opacity: 1;
-                        transition: 500ms ease-out;
-                    }
-                }
+
                 // WIDE SCREENS
                 @include abstracts.md {
                     img {
                         border-radius: 0.25rem;
                     }
                 }
+                
             }
         }
     }

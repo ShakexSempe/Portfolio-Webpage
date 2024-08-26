@@ -2879,7 +2879,7 @@ form button:hover::after {
 }
 .work-container .item {
   margin-bottom: 10vh;
-  background: #ffff;
+  background: #fff;
   border-radius: 0.25rem;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
@@ -3144,7 +3144,6 @@ form button:hover::after {
   position: absolute;
   inset: 0;
   box-shadow: 0 0.25rem 0.5rem rgba(71, 84, 98, 0.35);
-  opacity: 0;
   border-radius: inherit;
   transition: 250ms;
 }
@@ -3194,14 +3193,6 @@ form button:hover::after {
     opacity: 1;
     transform: translateX(0);
   }
-}
-.work-container .item:hover .item-content .item-image {
-  transform: scale(1);
-  transition: 500ms;
-}
-.work-container .item:hover .item-content .item-image::after {
-  opacity: 1;
-  transition: 500ms ease-out;
 }
 @media (min-width: 768px) {
   .work-container .item:hover .item-content img {
