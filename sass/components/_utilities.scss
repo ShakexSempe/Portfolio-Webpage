@@ -33,7 +33,7 @@
     height: 3px;
     background: abstracts.$overlay-blue-dark;
     background: linear-gradient(90deg, abstracts.$overlay-blue-dark, abstracts.$overlay-blue-light, abstracts.$overlay-blue-dark);
-    // background: red; 
+    background: abstracts.$brand;
     opacity: .1;
     width: 0%;
     transition: .5s;

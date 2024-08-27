@@ -38,6 +38,11 @@ $header-height: 8vh;
     padding: 0.5rem 5vw;
     z-index: 5;
 
+    // DESKTOP
+    @include abstracts.lg {
+        padding: 0.5rem 10vw;
+    }
+
     // HEADER LOGO
     // LOGO = LINK(A) WITH EMBEDDED P{+span($brand)}
     .logo {
