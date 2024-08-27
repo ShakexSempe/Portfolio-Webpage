@@ -14,9 +14,10 @@
     }
     
     // DESKTOP FLEX
-    @include abstracts.md {
+    @include abstracts.lg {
         flex-direction: row;
         align-items: flex-start;
+        padding: 10vh 10vw;
     }
     // COL RIGHT = TITLE & ARTICLE
     .col-right {
@@ -150,7 +151,7 @@
         @include abstracts.xsm {
             height: 50vh;
         }
-        @include abstracts.md {
+        @include abstracts.lg {
             width: 100%;
             height: 70vh;
             position: sticky;
@@ -221,4 +222,5 @@
 
         }
     }
+    
 }

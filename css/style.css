@@ -848,10 +848,11 @@ form button:hover::after {
     color: #ddd;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .about {
     flex-direction: row;
     align-items: flex-start;
+    padding: 10vh 10vw;
   }
 }
 .about .col-right {
@@ -964,7 +965,7 @@ form button:hover::after {
     height: 50vh;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .about .col-left {
     width: 100%;
     height: 70vh;
