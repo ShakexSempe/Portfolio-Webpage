@@ -1193,7 +1193,7 @@ form button:hover::after {
   width: 100%;
   color: #eee;
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #footer .footer {
     padding: 10vh 5vw 5vh;
   }
