@@ -8,12 +8,17 @@
         background: abstracts.$overlay-blue-darkest;
     }
 
+    @include abstracts.lg {
+        padding: 10vh 10vw;
+    }
+
     // PROJECTS CONTAINER
     .projects {
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
         position: relative;
+
 
         
         // PROJECT ITEMS

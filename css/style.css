@@ -1028,12 +1028,21 @@ form button:hover::after {
   scroll-margin-top: 5vh;
   padding: 10vh 5vw;
   min-height: 90vh;
+  background-color: #e6e6e6;
 }
 @media (min-width: 820px) {
   #contact {
-    padding: 10vh 5vw 5vh;
+    padding: 10vh 10vw 5vh;
+    background: linear-gradient(0deg, #b3b3b3, white);
   }
 }
+@media (prefers-color-scheme: dark) {
+  #contact {
+    background-color: #4d4d4d;
+    background: #1f252d;
+  }
+}
+
 .contact {
   flex-direction: column;
   justify-content: start;
@@ -2154,6 +2163,11 @@ form button:hover::after {
     background: #15191e;
   }
 }
+@media (min-width: 820px) {
+  #projects {
+    padding: 10vh 10vw;
+  }
+}
 #projects .projects {
   flex-direction: column;
   width: 100%;
@@ -2886,6 +2900,11 @@ form button:hover::after {
   flex-direction: column;
   gap: 0.5rem;
 }
+@media (prefers-color-scheme: dark) {
+  .work-container .item-flex-container {
+    background: #e6e6e6;
+  }
+}
 @media (min-width: 820px) {
   .work-container .item-flex-container {
     flex-direction: row-reverse;
@@ -2899,16 +2918,10 @@ form button:hover::after {
 
 .work-item {
   margin-bottom: 10vh;
-  background: #fff;
   border-radius: 0.25rem;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-}
-@media (min-width: 768px) {
-  .work-item {
-    background: #ffff;
-  }
 }
 @media (prefers-color-scheme: dark) {
   .work-item {

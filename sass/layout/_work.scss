@@ -122,6 +122,12 @@
         flex-direction: column;
         gap: 0.5rem;
 
+        @include abstracts.dark {
+            background: hsl(0, 0%, 90%);
+            // background: abstracts.$overlay-blue-light;
+            // color: abstracts.$text-light;
+        }
+
         @include abstracts.lg {
             flex-direction: row-reverse;
             align-items: center;
@@ -137,8 +143,7 @@
 
 .work-item {
     margin-bottom: 10vh;
-    background: #fff;
-    
+
     border-radius: .25rem;
     box-shadow: abstracts.$box-shadow-item-md;
     
@@ -150,7 +155,7 @@
     }
 
     @include abstracts.md {
-        background: #ffff;
+        // background: #ffff;
     }
     
     // ITEM DARK THEME
