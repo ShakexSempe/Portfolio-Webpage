@@ -546,6 +546,10 @@
         color: abstracts.$overlay-blue-dark;
         border-bottom: .125rem solid abstracts.$overlay-blue-dark;
 
+        @include abstracts.dark {
+            color: abstracts.$overlay-blue-dark;
+        }
+
         &:last-of-type {
             border-bottom: none;
         }
@@ -553,6 +557,11 @@
         .skill-section-title {
             p {
                 font-weight: 500;
+
+                @include abstracts.dark {
+                    color: abstracts.$overlay-blue-dark;
+                }
+
             }
 
             ul {

@@ -2764,11 +2764,21 @@ form button:hover::after {
   color: #29323d;
   border-bottom: 0.125rem solid #29323d;
 }
+@media (prefers-color-scheme: dark) {
+  .skill-section.light-section {
+    color: #29323d;
+  }
+}
 .skill-section.light-section:last-of-type {
   border-bottom: none;
 }
 .skill-section.light-section .skill-section-title p {
   font-weight: 500;
+}
+@media (prefers-color-scheme: dark) {
+  .skill-section.light-section .skill-section-title p {
+    color: #29323d;
+  }
 }
 .skill-section.light-section .skill-section-title ul li {
   font-weight: 600;
