@@ -39,6 +39,10 @@
     // WIDER SCREENS
     @include abstracts.md {
         background: linear-gradient(0deg, #000 85%, abstracts.$overlay-blue-darkest);
+        background: linear-gradient(0deg, abstracts.$overlay-blue-dark 10%, abstracts.$overlay-blue-darkest 55%);
+        background: linear-gradient(10deg, abstracts.$overlay-blue-black 5%, abstracts.$overlay-blue-darkest 25%, abstracts.$overlay-black 70%);
+        // background: #222;
+        // background: conic-gradient(#000 100deg, yellow 130deg, #ff0000 280deg, #0000ff 300deg);
     }
 
 }
@@ -66,7 +70,12 @@
     }
 
     @include abstracts.lg {
-        grid-template-rows:  1fr auto;
+        padding: 15vh 10vw 0 10vw;
+        grid-template-rows:  auto;
+
+        // * {
+        //     border:  1px solid red;
+        // }
     }
 
 }
@@ -108,7 +117,7 @@
 
 // HERO IMAGE
 .grid-image {
-    // border: 1px solid red;
+    // border: 1px solid #fff2;
     grid-area: grid-image;
 
     -webkit-mask: linear-gradient(0deg, transparent, white 30%, white 70%, transparent);
@@ -118,8 +127,8 @@
     @include abstracts.lg {
 
         -webkit-mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
-        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    
+        mask: linear-gradient(90deg, transparent, white 10%, white 95%, transparent);
+        // mask: none;
     }
 
     img {
@@ -128,6 +137,15 @@
         object-fit: cover;
         z-index: 10;
         opacity: 0.85;
+
+        @include abstracts.lg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 55%;
+            // border: 2px solid yellow;
+        }
+
     }
 }
 

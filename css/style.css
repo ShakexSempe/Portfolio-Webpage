@@ -1929,6 +1929,8 @@ form button:hover::after {
 @media (min-width: 768px) {
   .hero {
     background: linear-gradient(0deg, #000 85%, #15191e);
+    background: linear-gradient(0deg, #29323d 10%, #15191e 55%);
+    background: linear-gradient(10deg, #0a0d0f 5%, #15191e 25%, #020303 70%);
   }
 }
 
@@ -1954,7 +1956,8 @@ form button:hover::after {
 }
 @media (min-width: 820px) {
   .hero-grid {
-    grid-template-rows: 1fr auto;
+    padding: 15vh 10vw 0 10vw;
+    grid-template-rows: auto;
   }
 }
 
@@ -1989,7 +1992,7 @@ form button:hover::after {
 @media (min-width: 820px) {
   .grid-image {
     -webkit-mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 10%, white 95%, transparent);
   }
 }
 .grid-image img {
@@ -1998,6 +2001,14 @@ form button:hover::after {
   object-fit: cover;
   z-index: 10;
   opacity: 0.85;
+}
+@media (min-width: 820px) {
+  .grid-image img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+  }
 }
 
 .grid-subtitle {
