@@ -371,12 +371,13 @@
             display: flex;
             flex-direction: column;
             gap: 5vh;
+
             @include abstracts.xlg {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 align-items: flex-start;
-                padding: 5vh 0 0;
+                padding: 15vh 0 5vh;
                 gap: 1rem;
             }
             img {
