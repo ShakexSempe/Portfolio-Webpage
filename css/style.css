@@ -1928,9 +1928,11 @@ form button:hover::after {
 }
 @media (min-width: 768px) {
   .hero {
-    background: linear-gradient(0deg, #000 85%, #15191e);
     background: linear-gradient(0deg, #29323d 10%, #15191e 55%);
-    background: linear-gradient(10deg, #0a0d0f 5%, #15191e 25%, #020303 70%);
+    background: linear-gradient(10deg, red 5%, green 20% 50%, purple 70%);
+    background: linear-gradient(10deg, #0a0d0f 15%, #15191e 30% 50%, #020303 70%);
+    background: #0a0d0f;
+    background: linear-gradient(25deg, #0a0d0f 40%, #000 60%);
   }
 }
 
@@ -1958,6 +1960,7 @@ form button:hover::after {
   .hero-grid {
     padding: 15vh 10vw 0 10vw;
     grid-template-rows: auto;
+    row-gap: 10vh;
   }
 }
 
@@ -1981,6 +1984,7 @@ form button:hover::after {
 @media (min-width: 820px) {
   .grid-title {
     place-self: center left;
+    place-self: end left;
   }
 }
 
@@ -2007,7 +2011,7 @@ form button:hover::after {
     position: absolute;
     right: 0;
     top: 0;
-    width: 55%;
+    width: 60%;
   }
 }
 

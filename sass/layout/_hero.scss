@@ -38,11 +38,12 @@
     
     // WIDER SCREENS
     @include abstracts.md {
-        background: linear-gradient(0deg, #000 85%, abstracts.$overlay-blue-darkest);
         background: linear-gradient(0deg, abstracts.$overlay-blue-dark 10%, abstracts.$overlay-blue-darkest 55%);
-        background: linear-gradient(10deg, abstracts.$overlay-blue-black 5%, abstracts.$overlay-blue-darkest 25%, abstracts.$overlay-black 70%);
-        // background: #222;
-        // background: conic-gradient(#000 100deg, yellow 130deg, #ff0000 280deg, #0000ff 300deg);
+        background: linear-gradient(10deg, red 5%, green 20% 50%, purple 70%);
+        background: linear-gradient(10deg, abstracts.$overlay-blue-black 15%, abstracts.$overlay-blue-darkest 30% 50%, abstracts.$overlay-black 70%);
+        background: abstracts.$overlay-blue-black;
+        background: linear-gradient(25deg, abstracts.$overlay-blue-black 40%, #000 60%);
+        // background: conic-gradient(#000 100deg, yellow 130deg, #ff0000 280deg, #000 300deg);
     }
 
 }
@@ -72,10 +73,12 @@
     @include abstracts.lg {
         padding: 15vh 10vw 0 10vw;
         grid-template-rows:  auto;
+        row-gap: 10vh;
 
         // * {
         //     border:  1px solid red;
         // }
+
     }
 
 }
@@ -105,14 +108,9 @@
     // WIDE SCREEN LAYOUT
     @include abstracts.lg {
         place-self: center left;
+        place-self: end left;
     }
 
-    // TITLE HOVER
-    // &:hover {
-    //     h1 {
-    //         font-weight: 500;
-    //     }
-    // }
 }
 
 // HERO IMAGE
@@ -142,8 +140,7 @@
             position: absolute;
             right: 0;
             top: 0;
-            width: 55%;
-            // border: 2px solid yellow;
+            width: 60%;
         }
 
     }
