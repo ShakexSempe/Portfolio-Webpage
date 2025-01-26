@@ -199,6 +199,10 @@ section .section-title.active-item span {
   margin-right: 0.5rem;
 }
 
+:root {
+  interpolate-size: allow-keywords;
+}
+
 *, ::before, ::after {
   padding: 0;
   margin: 0;
@@ -1022,6 +1026,46 @@ form button:hover::after {
 }
 .about .col-left .about-img.about-page-img img {
   animation: none;
+}
+
+.details {
+  border-bottom: 1px solid #475462;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.details summary {
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}
+.details .details-content {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background: #e6e6e6;
+  border-radius: 0.25rem;
+}
+.details .details-content .details-content-title {
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.025rem);
+  margin-bottom: 0.25rem;
+}
+.details .details-content .details-content-link {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+.details::details-content {
+  display: block;
+  block-size: 0;
+  transition-property: block-size, content-visibility;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-behavior: allow-discrete;
+}
+.details[open]::details-content {
+  block-size: calc-size(auto);
+  block-size: auto;
 }
 
 #contact {

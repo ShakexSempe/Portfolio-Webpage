@@ -224,3 +224,55 @@
     }
     
 }
+
+.details {
+    border-bottom: 1px solid abstracts.$overlay-blue-light;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    overflow: hidden;
+
+    summary {
+        text-transform: capitalize;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    // DETAILS ELEMENT IN DOM
+    .details-content {
+
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        background: hsl(0, 0%, 90%);
+        border-radius: 0.25rem;
+
+        .details-content-title {
+            font-size: 1rem;
+            font-size: abstracts.$font-clamp-sm;
+            margin-bottom: 0.25rem;
+        }
+
+        .details-content-link {
+            display: flex;
+            gap: 0.25rem;
+            margin-top: 0.25rem;
+        }
+    }
+
+    // DETAILS PSEUDO ELEMENT IN SHADOW DOM
+    // DETAILS CONTENT IS SET BY DEFAULT TO "DISPLAY CONTENTS" ie = no box
+    &::details-content {
+        display: block;
+        block-size: 0;
+        transition-property: block-size, content-visibility;
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+        transition-behavior: allow-discrete;
+    }
+
+    // DETAILS OPEN STATE
+    &[open]::details-content {
+        block-size: calc-size(auto);
+        block-size: auto;
+    }
+
+}
