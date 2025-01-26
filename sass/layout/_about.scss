@@ -232,9 +232,36 @@
     overflow: hidden;
 
     summary {
+        position: relative;
+        padding-inline: 1.5rem;
         text-transform: capitalize;
         font-weight: 600;
+        // inset-inline-start: 1rem;
+        
+        @include abstracts.sm {
         cursor: pointer;
+
+        }
+
+        &::marker {
+            transition: color 250ms;
+            content: '';
+        }
+
+        &::before {
+            content: '>>';
+            position: absolute;
+            left: 0;
+            // inset-inline-start: 1.5rem;
+            inset-block-start: 0.125rem;
+            font-size: 0.75rem;
+            font-size: abstracts.$font-clamp-xsm;
+            transition: 
+                        rotate 250ms,
+                        color 250ms;
+            // margin-right: 0.25rem;
+            // rotate: 90deg;
+        }
     }
 
     // DETAILS ELEMENT IN DOM
@@ -244,6 +271,7 @@
         margin-top: 0.5rem;
         background: hsl(0, 0%, 90%);
         border-radius: 0.25rem;
+        overflow: hidden;
 
         .details-content-title {
             font-size: 1rem;
@@ -261,6 +289,7 @@
     // DETAILS PSEUDO ELEMENT IN SHADOW DOM
     // DETAILS CONTENT IS SET BY DEFAULT TO "DISPLAY CONTENTS" ie = no box
     &::details-content {
+        overflow: hidden;
         display: block;
         block-size: 0;
         transition-property: block-size, content-visibility;
@@ -273,6 +302,11 @@
     &[open]::details-content {
         block-size: calc-size(auto);
         block-size: auto;
+    }
+
+    &[open] summary::before {
+        color: abstracts.$span-crimson;
+        rotate: 90deg;
     }
 
 }

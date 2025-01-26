@@ -1035,15 +1035,35 @@ form button:hover::after {
   overflow: hidden;
 }
 .details summary {
+  position: relative;
+  padding-inline: 1.5rem;
   text-transform: capitalize;
   font-weight: 600;
-  cursor: pointer;
+}
+@media (min-width: 576px) {
+  .details summary {
+    cursor: pointer;
+  }
+}
+.details summary::marker {
+  transition: color 250ms;
+  content: "";
+}
+.details summary::before {
+  content: ">>";
+  position: absolute;
+  left: 0;
+  inset-block-start: 0.125rem;
+  font-size: 0.75rem;
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
+  transition: rotate 250ms, color 250ms;
 }
 .details .details-content {
   padding: 0.5rem;
   margin-top: 0.5rem;
   background: #e6e6e6;
   border-radius: 0.25rem;
+  overflow: hidden;
 }
 .details .details-content .details-content-title {
   font-size: 1rem;
@@ -1056,6 +1076,7 @@ form button:hover::after {
   margin-top: 0.25rem;
 }
 .details::details-content {
+  overflow: hidden;
   display: block;
   block-size: 0;
   transition-property: block-size, content-visibility;
@@ -1066,6 +1087,10 @@ form button:hover::after {
 .details[open]::details-content {
   block-size: calc-size(auto);
   block-size: auto;
+}
+.details[open] summary::before {
+  color: #dc143c;
+  rotate: 90deg;
 }
 
 #contact {
