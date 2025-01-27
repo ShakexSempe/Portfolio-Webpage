@@ -1044,8 +1044,11 @@ form button:hover::after {
   position: absolute;
   top: -1rem;
   right: 0;
-  opacity: 0.65;
-  transition: opacity 250ms ease;
+  opacity: 0.5;
+  transition: opacity 250ms ease, scale 500ms;
+}
+.details summary:hover .details-icon, .details summary:focus .details-icon {
+  opacity: 0.75;
 }
 @media (min-width: 576px) {
   .details summary {
@@ -1073,10 +1076,13 @@ form button:hover::after {
   border-radius: 0.25rem;
   overflow: hidden;
 }
+.details .details-content p {
+  line-height: 1.4;
+}
 .details .details-content .details-content-title {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.025rem);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 .details .details-content .details-content-title span {
   font-weight: 500;
@@ -1085,7 +1091,7 @@ form button:hover::after {
 .details .details-content .details-content-link {
   display: flex;
   gap: 0.5rem;
-  margin-block: 0.5rem 0;
+  margin-block: 0.75rem 0;
 }
 .details .details-content .details-content-link:hover, .details .details-content .details-content-link:focus {
   color: #dc143c;
@@ -1113,6 +1119,7 @@ form button:hover::after {
 }
 .details[open] summary > .details-icon {
   opacity: 1;
+  scale: 0.75;
 }
 
 #contact {
