@@ -1040,6 +1040,13 @@ form button:hover::after {
   text-transform: capitalize;
   font-weight: 600;
 }
+.details summary .details-icon {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  opacity: 0.65;
+  transition: opacity 250ms ease;
+}
 @media (min-width: 576px) {
   .details summary {
     cursor: pointer;
@@ -1059,6 +1066,7 @@ form button:hover::after {
   transition: rotate 250ms, color 250ms;
 }
 .details .details-content {
+  position: relative;
   padding: 0.5rem;
   margin-top: 0.5rem;
   background: #e6e6e6;
@@ -1068,12 +1076,23 @@ form button:hover::after {
 .details .details-content .details-content-title {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.025rem);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.details .details-content .details-content-title span {
+  font-weight: 500;
+  font-size: clamp(.985rem, 1.5vw, 1.015rem);
 }
 .details .details-content .details-content-link {
   display: flex;
-  gap: 0.25rem;
-  margin-top: 0.25rem;
+  gap: 0.5rem;
+  margin-block: 0.5rem 0;
+}
+.details .details-content .details-content-link:hover, .details .details-content .details-content-link:focus {
+  color: #dc143c;
+}
+.details .details-content .details-content-link:hover .icon, .details .details-content .details-content-link:focus .icon {
+  translate: 0.25rem;
+  opacity: 0.65;
 }
 .details::details-content {
   display: block;
@@ -1086,10 +1105,14 @@ form button:hover::after {
 .details[open]::details-content {
   block-size: auto;
   block-size: calc-size(auto);
+  scale: 1;
 }
 .details[open] summary::before {
   color: #dc143c;
   rotate: 90deg;
+}
+.details[open] summary > .details-icon {
+  opacity: 1;
 }
 
 #contact {
