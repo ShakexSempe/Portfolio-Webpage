@@ -244,6 +244,10 @@
                 right: 0;
                 opacity: 0.5;
                 transition: opacity 250ms ease, scale 500ms;
+
+                @include abstracts.dark {
+                    opacity: 1;
+                }
             }
         
         &:hover, &:focus {
@@ -285,6 +289,10 @@
         border-radius: 0.25rem;
         overflow: hidden;
 
+        @include abstracts.dark {
+            background: abstracts.$overlay-blue-dark;
+        }
+
         p {
             line-height: 1.4;
         }
@@ -311,6 +319,7 @@
                 .icon {
                     translate: 0.25rem;
                     opacity: 0.65;
+                    
                 }
             }
         }

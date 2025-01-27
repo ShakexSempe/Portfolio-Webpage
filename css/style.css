@@ -1047,6 +1047,11 @@ form button:hover::after {
   opacity: 0.5;
   transition: opacity 250ms ease, scale 500ms;
 }
+@media (prefers-color-scheme: dark) {
+  .details summary .details-icon {
+    opacity: 1;
+  }
+}
 .details summary:hover .details-icon, .details summary:focus .details-icon {
   opacity: 0.75;
 }
@@ -1075,6 +1080,11 @@ form button:hover::after {
   background: #e6e6e6;
   border-radius: 0.25rem;
   overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .details .details-content {
+    background: #29323d;
+  }
 }
 .details .details-content p {
   line-height: 1.4;
