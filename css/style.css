@@ -1076,17 +1076,16 @@ form button:hover::after {
   margin-top: 0.25rem;
 }
 .details::details-content {
-  overflow: hidden;
   display: block;
   block-size: 0;
   transition-property: block-size, content-visibility;
   transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
   transition-behavior: allow-discrete;
 }
 .details[open]::details-content {
-  block-size: calc-size(auto);
   block-size: auto;
+  block-size: calc-size(auto);
 }
 .details[open] summary::before {
   color: #dc143c;
