@@ -1052,9 +1052,6 @@ form button:hover::after {
     opacity: 1;
   }
 }
-.details summary:hover .details-icon, .details summary:focus .details-icon {
-  opacity: 0.75;
-}
 @media (min-width: 576px) {
   .details summary {
     cursor: pointer;

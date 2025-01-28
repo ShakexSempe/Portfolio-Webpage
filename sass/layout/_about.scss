@@ -249,13 +249,6 @@
                     opacity: 1;
                 }
             }
-        
-        &:hover, &:focus {
-            .details-icon {
-                opacity: 0.75;
-            }
-        }
-
 
         @include abstracts.sm {
             cursor: pointer;
