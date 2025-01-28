@@ -383,7 +383,6 @@
             .section-title-image {
                 object-fit: cover;
                 object-position: 95% 5%;
-                mix-blend-mode: overlay;
                 mix-blend-mode: darken;
                 opacity: .5;
 
@@ -391,6 +390,17 @@
                     object-position: 85% 25%;
                     opacity: .8;
                 }
+            }
+
+            @include abstracts.dark {
+                background: abstracts.$overlay-blue-dark;
+                color: abstracts.$text-light;
+
+                .section-title-image {
+                    mix-blend-mode: overlay;
+                    // opacity: .9;
+                }
+
             }
 
             @include abstracts.lg {
@@ -418,14 +428,21 @@
             background: #fff000;
             background: linear-gradient(140deg, #fff 20%, #fafafa);
 
-            // border: 2px solid red;
+            @include abstracts.dark {
+                background: abstracts.$overlay-blue-light;
+            }
+
             .section-title-image {
                 // border: 2px solid blue;
                 object-position: center;
                 object-position: 60% 95%;
-                mix-blend-mode: overlay;
                 mix-blend-mode: darken;
                 opacity: .5;
+
+                @include abstracts.dark {
+                    mix-blend-mode: overlay;
+                }
+                
             }
 
             @include abstracts.lg {
@@ -447,7 +464,6 @@
     }
 
     .skill-section-content {
-        // border: 1px solid blue;
         margin: 5vh 5vw;
         display: grid;
         gap: 10vh;
@@ -546,7 +562,8 @@
         border-bottom: .125rem solid abstracts.$overlay-blue-dark;
 
         @include abstracts.dark {
-            color: abstracts.$overlay-blue-dark;
+            background: abstracts.$overlay-blue-dark;
+            color: abstracts.$text-light;
         }
 
         &:last-of-type {
@@ -556,10 +573,6 @@
         .skill-section-title {
             p {
                 font-weight: 500;
-
-                @include abstracts.dark {
-                    color: abstracts.$overlay-blue-dark;
-                }
 
             }
 
@@ -572,14 +585,19 @@
 
         .skill-section-content {
             .skill-article {
-                background: #fff;
+                background: abstracts.$background-light;
+                @include abstracts.dark {
+                    background: abstracts.$overlay-blue-darkest;
+                }
             }
 
             ul {
                 li {
                     border-bottom: 1px solid #ddd;
+                    
                 }
             }
+
         }
     }
 

@@ -2768,7 +2768,6 @@ form button:hover::after {
 .skill-section .skill-section-title.section-title-3 .section-title-image {
   object-fit: cover;
   object-position: 95% 5%;
-  mix-blend-mode: overlay;
   mix-blend-mode: darken;
   opacity: 0.5;
 }
@@ -2776,6 +2775,15 @@ form button:hover::after {
   .skill-section .skill-section-title.section-title-3 .section-title-image {
     object-position: 85% 25%;
     opacity: 0.8;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .skill-section .skill-section-title.section-title-3 {
+    background: #29323d;
+    color: #f4f4f4;
+  }
+  .skill-section .skill-section-title.section-title-3 .section-title-image {
+    mix-blend-mode: overlay;
   }
 }
 @media (min-width: 820px) {
@@ -2796,12 +2804,21 @@ form button:hover::after {
   background: #fff000;
   background: linear-gradient(140deg, #fff 20%, #fafafa);
 }
+@media (prefers-color-scheme: dark) {
+  .skill-section .skill-section-title.section-title-4 {
+    background: #475462;
+  }
+}
 .skill-section .skill-section-title.section-title-4 .section-title-image {
   object-position: center;
   object-position: 60% 95%;
-  mix-blend-mode: overlay;
   mix-blend-mode: darken;
   opacity: 0.5;
+}
+@media (prefers-color-scheme: dark) {
+  .skill-section .skill-section-title.section-title-4 .section-title-image {
+    mix-blend-mode: overlay;
+  }
 }
 @media (min-width: 820px) {
   .skill-section .skill-section-title.section-title-4 {
@@ -2897,7 +2914,8 @@ form button:hover::after {
 }
 @media (prefers-color-scheme: dark) {
   .skill-section.light-section {
-    color: #29323d;
+    background: #29323d;
+    color: #f4f4f4;
   }
 }
 .skill-section.light-section:last-of-type {
@@ -2906,16 +2924,16 @@ form button:hover::after {
 .skill-section.light-section .skill-section-title p {
   font-weight: 500;
 }
-@media (prefers-color-scheme: dark) {
-  .skill-section.light-section .skill-section-title p {
-    color: #29323d;
-  }
-}
 .skill-section.light-section .skill-section-title ul li {
   font-weight: 600;
 }
 .skill-section.light-section .skill-section-content .skill-article {
-  background: #fff;
+  background: #f4f4f4;
+}
+@media (prefers-color-scheme: dark) {
+  .skill-section.light-section .skill-section-content .skill-article {
+    background: #15191e;
+  }
 }
 .skill-section.light-section .skill-section-content ul li {
   border-bottom: 1px solid #ddd;
