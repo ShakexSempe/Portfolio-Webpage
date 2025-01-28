@@ -406,6 +406,11 @@
             @include abstracts.lg {
                 // height: 90vh;
                 background: #ddd;
+                color: abstracts.$overlay-blue-dark;
+
+                p {
+                    color: inherit;
+                }
 
                 &::after {
                     background-image: url('../img/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg');
@@ -442,7 +447,7 @@
                 @include abstracts.dark {
                     mix-blend-mode: overlay;
                 }
-                
+
             }
 
             @include abstracts.lg {
@@ -459,6 +464,14 @@
                     mix-blend-mode: darken;
                     // opacity: .6;
                 }
+
+                @include abstracts.dark {
+                    background: abstracts.$overlay-blue-light;
+                    &::after {
+                        mix-blend-mode: overlay;
+                    }
+                }
+
             }
         }
     }

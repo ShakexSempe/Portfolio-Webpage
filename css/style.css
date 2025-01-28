@@ -2789,6 +2789,10 @@ form button:hover::after {
 @media (min-width: 820px) {
   .skill-section .skill-section-title.section-title-3 {
     background: #ddd;
+    color: #29323d;
+  }
+  .skill-section .skill-section-title.section-title-3 p {
+    color: inherit;
   }
   .skill-section .skill-section-title.section-title-3::after {
     background-image: url("../img/hugo-barbosa-TnG2q8FtXsg-unsplash.jpg");
@@ -2833,6 +2837,14 @@ form button:hover::after {
     background-size: cover;
     background-size: 60%;
     mix-blend-mode: darken;
+  }
+}
+@media (min-width: 820px) and (prefers-color-scheme: dark) {
+  .skill-section .skill-section-title.section-title-4 {
+    background: #475462;
+  }
+  .skill-section .skill-section-title.section-title-4::after {
+    mix-blend-mode: overlay;
   }
 }
 .skill-section .skill-section-content {
