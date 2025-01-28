@@ -3044,6 +3044,7 @@ form button:hover::after {
 @media (prefers-color-scheme: dark) {
   .work-container .item-flex-container {
     background: #e6e6e6;
+    background: #475462;
   }
 }
 @media (min-width: 820px) {
@@ -3066,12 +3067,9 @@ form button:hover::after {
 }
 @media (prefers-color-scheme: dark) {
   .work-item {
-    background: #f4f4f4;
     color: #29323d;
-    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05);
-  }
-  .work-item p {
     color: inherit;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05);
   }
 }
 .work-item .item-header {
@@ -3095,6 +3093,7 @@ form button:hover::after {
   font-weight: 700;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.25rem);
+  color: inherit;
 }
 .work-item .item-header .item-description {
   margin: 0.5rem 0 1rem;
@@ -3201,10 +3200,8 @@ form button:hover::after {
   opacity: 0;
 }
 .work-item .item-header .item-cta a.cta-secondary {
-  color: #1f252d;
   background: linear-gradient(0deg, #bfbfbf, #d9d9d9);
-  color: inherit;
-  box-shadow: 0.25rem 0.5rem 0.25rem red;
+  color: #1f252d;
   box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.05), inset -2px -2px 3px rgba(0, 0, 0, 0.15), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 768px) {
@@ -3242,14 +3239,19 @@ form button:hover::after {
   bottom: 0;
   width: 100%;
   left: 0;
+  padding: 0.25rem 1rem;
+  background: #1f252d;
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  background: #1f252d;
-  padding: 0.25rem 1rem;
-  list-style: none;
+}
+@media (prefers-color-scheme: dark) {
+  .work-item .item-header .item-meta-data {
+    background: #15191e;
+  }
 }
 @media (min-width: 820px) {
   .work-item .item-header .item-meta-data {
@@ -3269,12 +3271,13 @@ form button:hover::after {
   }
 }
 .work-item .item-header .item-meta-data p {
-  background: #1f252d;
+  background: inherit;
   color: #f4f4f4;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.65rem;
   text-transform: uppercase;
+  transition: 250ms ease;
 }
 .work-item .item-header .item-meta-data p:hover {
   background: #475462;
@@ -3315,6 +3318,11 @@ form button:hover::after {
   box-shadow: 0 0.25rem 0.5rem rgba(71, 84, 98, 0.35);
   border-radius: inherit;
   transition: 250ms;
+}
+@media (prefers-color-scheme: dark) {
+  .work-item .item-content .item-image::after {
+    box-shadow: 0 0.25rem 0.5rem #0006;
+  }
 }
 .work-item .item-content .item-image img {
   width: 100%;

@@ -19,7 +19,6 @@
 
 // INTRO ARTICLE
 .work-article {
-    // border: 1px solid red;
     max-width: 550px;
 
     position: relative;
@@ -124,7 +123,7 @@
 
         @include abstracts.dark {
             background: hsl(0, 0%, 90%);
-            // background: abstracts.$overlay-blue-light;
+            background: abstracts.$overlay-blue-light;
             // color: abstracts.$text-light;
         }
 
@@ -160,19 +159,13 @@
     
     // ITEM DARK THEME
     @include abstracts.dark {
-        background: #f4f4f4;
         color: abstracts.$overlay-blue-dark;
+        color: inherit;
         box-shadow: abstracts.$dark-theme-shadow;
-
-        p {
-            color: inherit;
-        }
-        
     }
 
 
     .item-header {
-        // border: 2px solid blue;
         padding: 0.25rem 0.5rem 3rem;
 
         @include abstracts.sm {
@@ -194,6 +187,7 @@
             font-weight: 700;
             font-size: 1rem;
             font-size: clamp(1rem, 2vw, 1.25rem);
+            color: inherit;
         }
 
         
@@ -208,7 +202,6 @@
             }
 
             p {
-                // color: abstracts.$overlay-blue-light;
                 font-weight: 400;
                 font-size: 1rem;
                 font-size: clamp(.95rem, 1.5vw, 1.05rem);
@@ -219,8 +212,6 @@
                 &::first-letter {
                     text-transform: capitalize;
                 }
-
-
 
             }
 
@@ -329,14 +320,9 @@
                 }
 
                 &.cta-secondary {
-                    // border: 1px solid abstracts.$overlay-blue-dark;
-                    color: abstracts.$overlay-blue-darker;
-                    
                     background: linear-gradient(0deg, hsl(0, 0%, 75%), hsl(0, 0%, 85%));
-                    color: inherit;
-                    box-shadow: 0.25rem 0.5rem 0.25rem red;
+                    color: abstracts.$overlay-blue-darker;
                     box-shadow: abstracts.$box-light-top-sm;
-
                 }
 
                 // BUTTON HOVER AND ACTIVE CLASSES
@@ -373,19 +359,20 @@
             bottom: 0;
             width: 100%;
             left: 0;
+            
+            padding: .25rem 1rem;
+            background: abstracts.$overlay-blue-darker;
+            list-style: none;
 
             display: flex;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
             gap: 1rem;
-
             
-            background: abstracts.$overlay-blue-darker;
-            
-            padding: .25rem 1rem;
-            list-style: none;
-            
+            @include abstracts.dark {
+                background: abstracts.$overlay-blue-darkest;
+            }
 
             @include abstracts.lg {
                 left: 1rem;
@@ -405,21 +392,20 @@
                 justify-content: start;
             }
 
-            @include abstracts.xlg {
-                // bottom: -1rem;
-            }
-
             p {
-                background: abstracts.$overlay-blue-darker;
+                // background: abstracts.$overlay-blue-darker;
+                background: inherit;
                 color: abstracts.$text-light;
                 padding: .25rem .5rem;
                 border-radius: .25rem;
                 font-size: .65rem;
                 text-transform: uppercase;
+                transition: 250ms ease;
 
                 &:hover {
                     background: abstracts.$overlay-blue-light;
                 }
+
             }
 
             li {
@@ -470,6 +456,10 @@
                 box-shadow: 0 0.25rem 0.5rem abstracts.$brand-shadow;
                 border-radius: inherit;
                 transition: 250ms;
+
+                @include abstracts.dark {
+                box-shadow: 0 0.25rem 0.5rem #0006;
+                }
             }
 
             img {
